@@ -1,0 +1,165 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="SIMULATION INTERPOLATION" />
+	<_field_custom name="High level settings" />
+	<_field_real name="position_client_ignore_tolerance" />
+	<_field_real name="angular_speed_threshold_for_temporarily_ignoring_rotation_updates" />
+	<_field_custom name="Warp Thresholds" />
+	<_field_explanation name="WARP THRESHOLDS" />
+	<_field_real name="position_warp_threshold" />
+	<_field_real name="position_warp_threshold_xy" />
+	<_field_real name="rotation_warp_threshold" />
+	<_field_custom name="" />
+	<_field_custom name="" />
+	<_field_custom name="Position while controlled" />
+	<_field_struct name="position_while_controlled">
+		<_field_explanation name="SINGLE DOMAIN INTERPOLATION" />
+		<_field_real name="discrepancy_threshold_above_which_we_use_blending" />
+		<_field_real name="coming_to_rest_speed" />
+		<_field_real name="minimum engaged throttle magnitude" />
+		<_field_real name="coming_to_rest_maximum_ignorable_error" />
+		<_field_custom name="Velocity bumps" />
+		<_field_struct name="velocity bumps">
+			<_field_explanation name="SINGLE DOMAIN VELOCITY BUMPS" />
+			<_field_byte_flags name="flags">
+				<Item Name="manual" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padedec" length="3" />
+			<_field_real name="velocity_scale" />
+			<_field_real name="velocity_min" />
+			<_field_real name="velocity_max" />
+			<_field_explanation name="Velocity Bump Suppression" />
+			<_field_real name="velocity_difference_ignore_threshold" />
+			<_field_real name="velocity_difference_absolute_ignore_threshold" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Blending" />
+		<_field_struct name="blending">
+			<_field_explanation name="SINGLE DOMAIN BLENDING CONFIGURATION" />
+			<_field_real name="min_object_speed" />
+			<_field_real name="max_object_speed" />
+			<_field_real name="fraction_at_min_object_speed" />
+			<_field_real name="fraction_at_max_object_speed" />
+			<_field_real name="min_speed_at_min_object_speed" />
+			<_field_real name="min_speed_at_max_object_speed" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="Rotation while controlled" />
+	<_field_struct name="rotation_while_controlled">
+		<_field_explanation name="SINGLE DOMAIN INTERPOLATION" />
+		<_field_real name="discrepancy_threshold_above_which_we_use_blending" />
+		<_field_real name="coming_to_rest_speed" />
+		<_field_real name="minimum engaged throttle magnitude" />
+		<_field_real name="coming_to_rest_maximum_ignorable_error" />
+		<_field_custom name="Velocity bumps" />
+		<_field_struct name="velocity bumps">
+			<_field_explanation name="SINGLE DOMAIN VELOCITY BUMPS" />
+			<_field_byte_flags name="flags">
+				<Item Name="manual" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padedec" length="3" />
+			<_field_real name="velocity_scale" />
+			<_field_real name="velocity_min" />
+			<_field_real name="velocity_max" />
+			<_field_explanation name="Velocity Bump Suppression" />
+			<_field_real name="velocity_difference_ignore_threshold" />
+			<_field_real name="velocity_difference_absolute_ignore_threshold" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Blending" />
+		<_field_struct name="blending">
+			<_field_explanation name="SINGLE DOMAIN BLENDING CONFIGURATION" />
+			<_field_real name="min_object_speed" />
+			<_field_real name="max_object_speed" />
+			<_field_real name="fraction_at_min_object_speed" />
+			<_field_real name="fraction_at_max_object_speed" />
+			<_field_real name="min_speed_at_min_object_speed" />
+			<_field_real name="min_speed_at_max_object_speed" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="Position while not controlled" />
+	<_field_struct name="position_while_uncontrolled">
+		<_field_explanation name="SINGLE DOMAIN INTERPOLATION" />
+		<_field_real name="discrepancy_threshold_above_which_we_use_blending" />
+		<_field_real name="coming_to_rest_speed" />
+		<_field_real name="minimum engaged throttle magnitude" />
+		<_field_real name="coming_to_rest_maximum_ignorable_error" />
+		<_field_custom name="Velocity bumps" />
+		<_field_struct name="velocity bumps">
+			<_field_explanation name="SINGLE DOMAIN VELOCITY BUMPS" />
+			<_field_byte_flags name="flags">
+				<Item Name="manual" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padedec" length="3" />
+			<_field_real name="velocity_scale" />
+			<_field_real name="velocity_min" />
+			<_field_real name="velocity_max" />
+			<_field_explanation name="Velocity Bump Suppression" />
+			<_field_real name="velocity_difference_ignore_threshold" />
+			<_field_real name="velocity_difference_absolute_ignore_threshold" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Blending" />
+		<_field_struct name="blending">
+			<_field_explanation name="SINGLE DOMAIN BLENDING CONFIGURATION" />
+			<_field_real name="min_object_speed" />
+			<_field_real name="max_object_speed" />
+			<_field_real name="fraction_at_min_object_speed" />
+			<_field_real name="fraction_at_max_object_speed" />
+			<_field_real name="min_speed_at_min_object_speed" />
+			<_field_real name="min_speed_at_max_object_speed" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="Rotation while not controlled" />
+	<_field_struct name="rotation_while_uncontrolled">
+		<_field_explanation name="SINGLE DOMAIN INTERPOLATION" />
+		<_field_real name="discrepancy_threshold_above_which_we_use_blending" />
+		<_field_real name="coming_to_rest_speed" />
+		<_field_real name="minimum engaged throttle magnitude" />
+		<_field_real name="coming_to_rest_maximum_ignorable_error" />
+		<_field_custom name="Velocity bumps" />
+		<_field_struct name="velocity bumps">
+			<_field_explanation name="SINGLE DOMAIN VELOCITY BUMPS" />
+			<_field_byte_flags name="flags">
+				<Item Name="manual" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padedec" length="3" />
+			<_field_real name="velocity_scale" />
+			<_field_real name="velocity_min" />
+			<_field_real name="velocity_max" />
+			<_field_explanation name="Velocity Bump Suppression" />
+			<_field_real name="velocity_difference_ignore_threshold" />
+			<_field_real name="velocity_difference_absolute_ignore_threshold" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Blending" />
+		<_field_struct name="blending">
+			<_field_explanation name="SINGLE DOMAIN BLENDING CONFIGURATION" />
+			<_field_real name="min_object_speed" />
+			<_field_real name="max_object_speed" />
+			<_field_real name="fraction_at_min_object_speed" />
+			<_field_real name="fraction_at_max_object_speed" />
+			<_field_real name="min_speed_at_min_object_speed" />
+			<_field_real name="min_speed_at_max_object_speed" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="UCN" />
+	<_field_tag_reference_64 name="Authority Trust Settings" />
+	<_field_tag_reference_64 name="Credulous Authority Settings" />
+	<_field_custom name="" />
+	<_field_pad name="generated_padaa60" length="4" />
+	</plugin>

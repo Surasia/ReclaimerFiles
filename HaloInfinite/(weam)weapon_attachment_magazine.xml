@@ -1,0 +1,169 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="weapon attachment component">
+		<_field_custom name="Weapon Attachment" />
+		<_field_string_id name="variant region name" />
+		<_field_string_id name="variant permutation name" />
+		<_field_block_64 name="region permutations">
+			<_field_string_id name="region name" />
+			<_field_string_id name="permutation name" />
+			</_field_block_64>
+		<_field_block_64 name="attachments">
+			<_field_string_id name="name" />
+			<_field_tag_reference_64 name="type" />
+			<_field_tag_reference_64 name="tag graph output" />
+			<_field_string_id name="output node name" />
+			<_field_block_64 name="tag graph float params">
+				<_field_string_id name="name" />
+				<_field_real name="value" />
+				</_field_block_64>
+			<_field_block_64 name="tag graph bool params">
+				<_field_string_id name="name" />
+				<_field_byte_flags name="value">
+					<Item Name="value" />
+				</_field_byte_flags>
+				<_field_pad name="generated_pad0473" length="3" />
+				</_field_block_64>
+			<_field_block_64 name="taggraph instance variables - strings">
+				<_field_string_id name="name" />
+				<_field_string_id name="value" />
+				</_field_block_64>
+			<_field_block_64 name="taggraph instance variables - tag references">
+				<_field_string_id name="name" />
+				<_field_tag_reference_64 name="value" />
+				</_field_block_64>
+			<_field_tag_reference_64 name="override type" />
+			<_field_explanation name="variant names" />
+			<_field_block_64 name="variant names">
+				<_field_string_id name="variant name" />
+				</_field_block_64>
+			<_field_custom name="" />
+			<_field_string_id name="marker" />
+			<_field_char_enum name="change color">
+				<Item Name="none" />
+				<Item Name="primary" />
+				<Item Name="secondary" />
+				<Item Name="tertiary" />
+				<Item Name="quaternary" />
+			</_field_char_enum>
+			<_field_byte_flags name="flags">
+				<Item Name="always create" />
+				<Item Name="effect size scale from object scale" />
+				<Item Name="update on create" />
+				<Item Name="always update" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padbd3f" length="2" />
+			<_field_string_id name="primary scale" />
+			<_field_string_id name="secondary scale" />
+			</_field_block_64>
+		<_field_explanation name="Attachment Name" />
+		<_field_struct name="attachmentName">
+			<_field_string_id name="Attachment Name" />
+			</_field_struct>
+		<_field_block_64 name="attachment object">
+			<_field_tag_reference_64 name="object" />
+			<_field_string_id name="weapon marker" />
+			<_field_string_id name="attachment marker" />
+			</_field_block_64>
+		<_field_block_64 name="accuracy modifiers">
+			<_field_real name="accuracy spread" />
+			</_field_block_64>
+		<_field_block_64 name="precision aim modifiers">
+			<_field_real name="precision transition in time modifier" />
+			<_field_real name="precision transition out time modifier" />
+			</_field_block_64>
+		<_field_block_64 name="unit modifiers">
+			<_field_real name="move speed scale modifier" />
+			<_field_real name="turn rate scale modifier" />
+			<_field_real name="simulated input scale modifier" />
+			</_field_block_64>
+		<_field_block_64 name="aim assist modifiers">
+			<_field_real name="autoaim angle" />
+			<_field_real name="prioritization angle" />
+			<_field_real name="autoaim range" />
+			<_field_real name="autoaim falloff range" />
+			<_field_real name="autoaim near falloff range" />
+			<_field_real name="magnetism angle" />
+			<_field_real name="magnetism range" />
+			<_field_real name="magnetism falloff range" />
+			<_field_real name="magnetism near falloff range" />
+			<_field_real name="deviation angle" />
+			</_field_block_64>
+		<_field_tag_reference_64 name="aim assist reference" />
+		<_field_block_64 name="recoil view kick modifiers">
+			<_field_real name="view kick deceleration modifier" />
+			<_field_real name="view kick return to center modifier" />
+			</_field_block_64>
+		<_field_block_64 name="recoil gunkick modifiers">
+			<_field_real name="gunkick spring constant modifier" />
+			</_field_block_64>
+		<_field_block_64 name="animation modifiers">
+			<_field_real name="ready playback speed modifier" />
+			<_field_real name="ready initial playback modifier" />
+			<_field_real name="put away playback speed modifier" />
+			<_field_real name="reload playback speed modifier" />
+			<_field_real name="reload while empty playback speed modifier" />
+			</_field_block_64>
+		<_field_block_64 name="heat modifiers">
+			<_field_real name="heat loss per second modifier" />
+			<_field_real name="overheated heat loss per second modifier" />
+			<_field_real name="heat generated per round modifier" />
+			</_field_block_64>
+		<_field_block_64 name="UI display info">
+			<_field_string_id name="name" />
+			<_field_string_id name="alt name " />
+			<_field_string_id name="description" />
+			<_field_string_id name="help text" />
+			<_field_string_id name="icon string id" />
+			<_field_tag_reference_64 name="sprite" />
+			<_field_long_integer name="sprite index" />
+			<_field_tag_reference_64 name="alt sprite" />
+			<_field_long_integer name="alt sprite index" />
+			<_field_long_integer name="damage sprite index" />
+			<_field_tag_reference_64 name="ui vehicle screen reference" />
+			</_field_block_64>
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_struct name="weapon attachment magazine component">
+		<_field_custom name="Weapon Magazine" />
+		<_field_block_64 name="primary magazine override">
+			<_field_short_integer name="rounds total initial" />
+			<_field_short_integer name="rounds total maximum" />
+			<_field_short_integer name="rounds loaded maximum" />
+			<_field_short_integer name="magazine partitions" />
+			<_field_short_integer name="rounds inventory maximum" />
+			<_field_short_integer name="rounds reloaded" />
+			<_field_short_enum name="ammo refill type">
+				<Item Name="None" />
+				<Item Name="Kinetic" />
+				<Item Name="Plasma" />
+				<Item Name="Hard light" />
+				<Item Name="Shock" />
+				<Item Name="Power weapon" />
+			</_field_short_enum>
+			</_field_block_64>
+		<_field_block_64 name="secondary magazine override">
+			<_field_short_integer name="rounds total initial" />
+			<_field_short_integer name="rounds total maximum" />
+			<_field_short_integer name="rounds loaded maximum" />
+			<_field_short_integer name="magazine partitions" />
+			<_field_short_integer name="rounds inventory maximum" />
+			<_field_short_integer name="rounds reloaded" />
+			<_field_short_enum name="ammo refill type">
+				<Item Name="None" />
+				<Item Name="Kinetic" />
+				<Item Name="Plasma" />
+				<Item Name="Hard light" />
+				<Item Name="Shock" />
+				<Item Name="Power weapon" />
+			</_field_short_enum>
+			</_field_block_64>
+		<_field_custom name="" />
+		</_field_struct>
+	</plugin>

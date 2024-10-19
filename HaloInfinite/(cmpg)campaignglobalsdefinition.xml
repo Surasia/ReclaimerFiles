@@ -1,0 +1,25 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="campaign globals">
+		<_field_block_64 name="maps">
+			<_field_long_integer name="map id" />
+			<_field_string_id name="map name" />
+			</_field_block_64>
+		<_field_string_id name="mission name" />
+		<_field_string_id name="mission description" />
+		<_field_string_id name="mission background image uri" />
+		<_field_string_id name="mission CMS guid" />
+		<_field_string_id name="mission team" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Influencer default spawn settings" />
+	<_field_tag_reference_64 name="Campaign Upgrades Definition" />
+	<_field_tag_reference_64 name="Collectibles" />
+	<_field_tag_reference_64 name="Valor Rewards Definition" />
+	<_field_tag_reference_64 name="Gameplay Menu UI Info" />
+	</plugin>

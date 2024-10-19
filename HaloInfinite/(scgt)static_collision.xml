@@ -1,0 +1,33 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Collision material overrides">
+		<_field_string_id name="name" />
+		</_field_block_64>
+	<_field_short_integer name="numCollisionMaterials" />
+	<_field_byte_flags name="flags">
+		<Item Name="Allow decals" />
+		<Item Name="Is Trigger Volume" />
+	</_field_byte_flags>
+	<_field_pad name="generated_pad05b3" length="1" />
+	<_field_block_64 name="Havok Collision Geometry Types">
+		<_field_int64_integer name="field pointer skip" />
+		<_field_dword_integer name="collision type" />
+		<_field_dword_integer name="number of shapes" />
+		<_field_char_enum name="who will reload the shape, the parent tag or this struct?">
+			<Item Name="Me" />
+			<Item Name="Parent tag" />
+		</_field_char_enum>
+		<_field_pad name="generated_padb5d1" length="3" />
+		<_field_data_64 name="Havok Data" />
+		<_field_pad name="generated_pad9bf0" length="4" />
+		</_field_block_64>
+	<_field_real_point_3d name="Shape bounds min" />
+	<_field_real_point_3d name="Shape bounds max" />
+	<_field_pad name="generated_padb8fe" length="4" />
+	</plugin>

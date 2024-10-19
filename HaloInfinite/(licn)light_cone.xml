@@ -1,0 +1,369 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_byte_flags name="flags">
+		<Item Name="disabled in split-screen" />
+	</_field_byte_flags>
+	<_field_pad name="generated_pad258a" length="3" />
+	<_field_custom name="material" />
+	<_field_custom name="" />
+	<_field_struct name="actual material?">
+		<_field_tag_reference_64 name="material shader" />
+		<_field_block_64 name="material parameters">
+			<_field_string_id name="parameter name" />
+			<_field_long_enum name="parameter type">
+				<Item Name="bitmap" />
+				<Item Name="real" />
+				<Item Name="int" />
+				<Item Name="bool" />
+				<Item Name="color" />
+				<Item Name="scalar gpu property" />
+				<Item Name="color gpu property" />
+				<Item Name="string" />
+				<Item Name="preset" />
+			</_field_long_enum>
+			<_field_tag_reference_64 name="bitmap" />
+			<_field_real_argb_color name="color" />
+			<_field_real name="real" />
+			<_field_real_vector_3d name="vector" />
+			<_field_long_integer name="int/bool" />
+			<_field_data_64 name="string" />
+			<_field_word_integer name="bitmap flags" />
+			<_field_word_integer name="bitmap filter mode" />
+			<_field_word_integer name="bitmap address mode" />
+			<_field_word_integer name="bitmap address mode x" />
+			<_field_word_integer name="bitmap address mode y" />
+			<_field_byte_integer name="bitmap extern mode" />
+			<_field_byte_integer name="bitmap min mipmap" />
+			<_field_byte_integer name="bitmap max mipmap" />
+			<_field_pad name="generated_padea44" length="3" />
+			<_field_real name="bitmap blur and sharpen" />
+			<_field_byte_flags name="parameter flags">
+				<Item Name="texture array" />
+				<Item Name="force bitmap clamp" />
+				<Item Name="disabled" />
+				<Item Name="has transform function" />
+				<Item Name="bindless" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad0425" length="3" />
+			<_field_dword_integer name="render phases used" />
+			<_field_dword_integer name="shader types used" />
+			<_field_block_64 name="function parameters">
+				<_field_long_enum name="type">
+					<Item Name="value" />
+					<Item Name="color" />
+					<Item Name="scale uniform" />
+					<Item Name="scale u" />
+					<Item Name="scale v" />
+					<Item Name="offset u" />
+					<Item Name="offset v" />
+					<Item Name="frame index" />
+					<Item Name="alpha" />
+				</_field_long_enum>
+				<_field_string_id name="input name" />
+				<_field_string_id name="range name" />
+				<_field_char_enum name="Output Modifier">
+					<Item Name=" " />
+					<Item Name="Add" />
+					<Item Name="Multiply" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad8305" length="3" />
+				<_field_string_id name="Output Modifier Input" />
+				<_field_real name="time period" />
+				<_field_explanation name="FUNCTION" />
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_block_64>
+			<_field_word_integer name="register offset" />
+			<_field_word_integer name="register size" />
+			<_field_byte_integer name="bitmap extern index" />
+			<_field_pad name="generated_pad50da" length="3" />
+			</_field_block_64>
+		<_field_block_64 name="postprocess definition">
+			<_field_block_64 name="textures">
+				<_field_tag_reference_64 name="bitmap reference" />
+				<_field_dword_integer name="render phase mask" />
+				<_field_dword_integer name="shader stage mask" />
+				<_field_word_integer name="frame index parameter" />
+				<_field_word_integer name="sampler index" />
+				<_field_word_integer name="transform register index" />
+				<_field_word_integer name="bindless parameter register offset" />
+				<_field_byte_integer name="extern texture mode" />
+				<_field_byte_integer name="extern texture index" />
+				<_field_pad name="generated_pad0c27" length="2" />
+				<_field_int64_integer name="m_samplerStateView" />
+				</_field_block_64>
+			<_field_long_integer name="textures to clear" />
+			<_field_block_64 name="functions">
+				<_field_long_enum name="type">
+					<Item Name="value" />
+					<Item Name="color" />
+					<Item Name="scale uniform" />
+					<Item Name="scale u" />
+					<Item Name="scale v" />
+					<Item Name="offset u" />
+					<Item Name="offset v" />
+					<Item Name="frame index" />
+					<Item Name="alpha" />
+				</_field_long_enum>
+				<_field_string_id name="input name" />
+				<_field_string_id name="range name" />
+				<_field_char_enum name="Output Modifier">
+					<Item Name=" " />
+					<Item Name="Add" />
+					<Item Name="Multiply" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad8305" length="3" />
+				<_field_string_id name="Output Modifier Input" />
+				<_field_real name="time period" />
+				<_field_explanation name="FUNCTION" />
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="function parameters">
+				<_field_byte_integer name="function index" />
+				<_field_byte_integer name="register offset" />
+				<_field_byte_integer name="parameter group" />
+				<_field_pad name="generated_padfe04" length="1" />
+				<_field_dword_integer name="render phase mask" />
+				</_field_block_64>
+			<_field_block_64 name="extern parameters">
+				<_field_byte_integer name="extern index" />
+				<_field_byte_integer name="extern offset" />
+				<_field_byte_integer name="parameter group" />
+				<_field_pad name="generated_paddcf2" length="1" />
+				<_field_word_integer name="bindless parameter register offset" />
+				<_field_pad name="generated_pad29a7" length="2" />
+				<_field_dword_integer name="render phase mask" />
+				</_field_block_64>
+			<_field_char_enum name="alpha blend mode">
+				<Item Name="opaque" />
+				<Item Name="additive" />
+				<Item Name="multiply" />
+				<Item Name="alpha_blend" />
+				<Item Name="double_multiply" />
+				<Item Name="pre_multiplied_alpha" />
+				<Item Name="maximum" />
+				<Item Name="multiply_add" />
+				<Item Name="add_src_times_dstalpha" />
+				<Item Name="add_src_times_srcalpha" />
+				<Item Name="inv_alpha_blend" />
+				<Item Name="overdraw_apply" />
+				<Item Name="decal" />
+				<Item Name="minimum" />
+				<Item Name="revsubtract" />
+				<Item Name="alpha_blend_max" />
+				<Item Name="opaque_alpha_blend" />
+				<Item Name="alpha_blend_additive_transparent" />
+				<Item Name="unused0" />
+				<Item Name="decal_alpha_blend" />
+				<Item Name="decal_add_src_times_src_alpha" />
+				<Item Name="decal_multiply_add" />
+				<Item Name="wpf_no_color_blend_mode" />
+				<Item Name="decal opaque" />
+				<Item Name="accumulate_pre_multiplied_alpha" />
+				<Item Name="wpf_blend_mode" />
+				<Item Name="accumulate_multiply_add" />
+				<Item Name="accumulate_alpha_blend" />
+				<Item Name="accumulate_inverse_alpha_blend" />
+				<Item Name="accumulate_additive" />
+				<Item Name="accumulate_additive_transparent" />
+				<Item Name="accumulate_add_src_times_srcalpha" />
+				<Item Name="accumulate_multiply" />
+				<Item Name="alpha_blend_for_display_planes" />
+				<Item Name="texturePainter_SrcAddDestMult" />
+				<Item Name="texturePainter_DestMultSubSrc" />
+				<Item Name="logical OR" />
+				<Item Name="logical AND" />
+				<Item Name="decal_multiply" />
+				<Item Name="decal_double_multiply" />
+				<Item Name="fourChannelAdditive" />
+				<Item Name="wpf_additive_blend_mode" />
+				<Item Name="cloud apply" />
+				<Item Name="subsurfaceScattering_convolution" />
+				<Item Name="reflectionOcclusionMask" />
+				<Item Name="TAA mask Additive" />
+				<Item Name="TAA mask RevSubtract" />
+				<Item Name="TAA mask Multiply" />
+				<Item Name="TAA mask DoubleMultiply" />
+				<Item Name="TAA mask PreMultipliedAlpha" />
+				<Item Name="TAA mask MultiplyAdd" />
+				<Item Name="TAA mask AlphaBlend" />
+				<Item Name="TAA mask AddSrcTimesDstAlpha" />
+				<Item Name="TAA mask AddSrcTimesSrcAlpha" />
+				<Item Name="TAA mask AdditiveTransparent" />
+				<Item Name="TAA mask Alpha Blend for Display Plane" />
+				<Item Name="TAA Velocity Additive" />
+				<Item Name="TAA Velocity RevSubtract" />
+				<Item Name="TAA Velocity Multiply" />
+				<Item Name="TAA Velocity DoubleMultiply" />
+				<Item Name="TAA Velocity PreMultipliedAlpha" />
+				<Item Name="TAA Velocity MultiplyAdd" />
+				<Item Name="TAA Velocity AlphaBlend" />
+				<Item Name="TAA Velocity AddSrcTimesDstAlpha" />
+				<Item Name="TAA Velocity AddSrcTimesSrcAlpha" />
+				<Item Name="TAA Velocity AdditiveTransparent" />
+				<Item Name="TAA Velocity Alpha Blend for Display Plane" />
+				<Item Name="DeferredDecalsResolve" />
+				<Item Name="decal_ao_opaque" />
+				<Item Name="decal_ao_alpha_blend" />
+				<Item Name="decal_sss_blend" />
+				<Item Name="Hud Damage Alpha Blend" />
+			</_field_char_enum>
+			<_field_byte_flags name="runtime flags">
+				<Item Name="bindless indices are up to date" />
+			</_field_byte_flags>
+			<_field_word_flags name="flags">
+				<Item Name="has material constant functions" />
+				<Item Name="has texture frame functions" />
+				<Item Name="disable atmosphere fog" />
+				<Item Name="material is variable" />
+				<Item Name="has variable material constant functions" />
+				<Item Name="has at least one extern texture used" />
+				<Item Name="is alpha clip" />
+				<Item Name="enable_taa_mask" />
+				<Item Name="has damage map" />
+				<Item Name="has per placement material constant functions" />
+			</_field_word_flags>
+			<_field_block_64 name="material constants">
+				<_field_real_quaternion name="register" />
+				</_field_block_64>
+			<_field_block_64 name="alternate constants">
+				<_field_real_quaternion name="register" />
+				</_field_block_64>
+			<_field_int64_integer name="materialConstantBuffer" />
+			<_field_int64_integer name="alternateConstantBuffer" />
+			<_field_dword_integer name="material constant shader stage mask" />
+			<_field_array name="runtime queryable properties table">
+				<_field_byte_integer name="index" />
+				<_field_byte_integer name="index" />
+				<_field_byte_integer name="index" />
+				<_field_byte_integer name="index" />
+				</_field_array>
+			<_field_struct name="alpha clip descriptor">
+				<_field_byte_integer name="textureIndex" />
+				<_field_byte_integer name="textureChannel" />
+				<_field_pad name="generated_pad14ce" length="2" />
+				<_field_long_integer name="thresholdIndex" />
+				</_field_struct>
+			</_field_block_64>
+		<_field_string_id name="physics material name" />
+		<_field_string_id name="physics material name 2" />
+		<_field_string_id name="physics material name 3" />
+		<_field_string_id name="physics material name 4" />
+		<_field_real name="sort offset" />
+		<_field_char_enum name="alpha blend mode">
+			<Item Name="opaque" />
+			<Item Name="additive" />
+			<Item Name="multiply" />
+			<Item Name="alpha_blend" />
+			<Item Name="double_multiply" />
+			<Item Name="pre_multiplied_alpha" />
+			<Item Name="maximum" />
+			<Item Name="multiply_add" />
+			<Item Name="add_src_times_dstalpha" />
+			<Item Name="add_src_times_srcalpha" />
+			<Item Name="inv_alpha_blend" />
+			<Item Name="overdraw_apply" />
+			<Item Name="decal" />
+			<Item Name="minimum" />
+			<Item Name="revsubtract" />
+			<Item Name="alpha_blend_max" />
+			<Item Name="opaque_alpha_blend" />
+			<Item Name="alpha_blend_additive_transparent" />
+			<Item Name="unused0" />
+			<Item Name="decal_alpha_blend" />
+			<Item Name="decal_add_src_times_src_alpha" />
+			<Item Name="decal_multiply_add" />
+			<Item Name="wpf_no_color_blend_mode" />
+			<Item Name="decal opaque" />
+			<Item Name="accumulate_pre_multiplied_alpha" />
+			<Item Name="wpf_blend_mode" />
+			<Item Name="accumulate_multiply_add" />
+			<Item Name="accumulate_alpha_blend" />
+			<Item Name="accumulate_inverse_alpha_blend" />
+			<Item Name="accumulate_additive" />
+			<Item Name="accumulate_additive_transparent" />
+			<Item Name="accumulate_add_src_times_srcalpha" />
+			<Item Name="accumulate_multiply" />
+			<Item Name="alpha_blend_for_display_planes" />
+			<Item Name="texturePainter_SrcAddDestMult" />
+			<Item Name="texturePainter_DestMultSubSrc" />
+			<Item Name="logical OR" />
+			<Item Name="logical AND" />
+			<Item Name="decal_multiply" />
+			<Item Name="decal_double_multiply" />
+			<Item Name="fourChannelAdditive" />
+			<Item Name="wpf_additive_blend_mode" />
+			<Item Name="cloud apply" />
+			<Item Name="subsurfaceScattering_convolution" />
+			<Item Name="reflectionOcclusionMask" />
+			<Item Name="TAA mask Additive" />
+			<Item Name="TAA mask RevSubtract" />
+			<Item Name="TAA mask Multiply" />
+			<Item Name="TAA mask DoubleMultiply" />
+			<Item Name="TAA mask PreMultipliedAlpha" />
+			<Item Name="TAA mask MultiplyAdd" />
+			<Item Name="TAA mask AlphaBlend" />
+			<Item Name="TAA mask AddSrcTimesDstAlpha" />
+			<Item Name="TAA mask AddSrcTimesSrcAlpha" />
+			<Item Name="TAA mask AdditiveTransparent" />
+			<Item Name="TAA mask Alpha Blend for Display Plane" />
+			<Item Name="TAA Velocity Additive" />
+			<Item Name="TAA Velocity RevSubtract" />
+			<Item Name="TAA Velocity Multiply" />
+			<Item Name="TAA Velocity DoubleMultiply" />
+			<Item Name="TAA Velocity PreMultipliedAlpha" />
+			<Item Name="TAA Velocity MultiplyAdd" />
+			<Item Name="TAA Velocity AlphaBlend" />
+			<Item Name="TAA Velocity AddSrcTimesDstAlpha" />
+			<Item Name="TAA Velocity AddSrcTimesSrcAlpha" />
+			<Item Name="TAA Velocity AdditiveTransparent" />
+			<Item Name="TAA Velocity Alpha Blend for Display Plane" />
+			<Item Name="DeferredDecalsResolve" />
+			<Item Name="decal_ao_opaque" />
+			<Item Name="decal_ao_alpha_blend" />
+			<Item Name="decal_sss_blend" />
+			<Item Name="Hud Damage Alpha Blend" />
+		</_field_char_enum>
+		<_field_char_enum name="sort layer">
+			<Item Name="invalid" />
+			<Item Name="pre-pass" />
+			<Item Name="normal" />
+			<Item Name="post-pass" />
+		</_field_char_enum>
+		<_field_byte_flags name="flags">
+			<Item Name="converted from shader" />
+			<Item Name="decal post lighting" />
+			<Item Name="runtime generated" />
+		</_field_byte_flags>
+		<_field_byte_flags name="render flags">
+			<Item Name="no atmosphere fog" />
+			<Item Name="cull shields" />
+			<Item Name="cull active camo" />
+			<Item Name="mask TAA for transparents" />
+			<Item Name="force render velocity for TAA" />
+			<Item Name="render depth info when transparent" />
+			<Item Name="disable VRS on platforms that supports it" />
+		</_field_byte_flags>
+		<_field_real name="taa mask threshold start" />
+		<_field_real name="taa mask threshold end" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_real name="angle fade range" />
+	<_field_real name="angle fade cutoff" />
+	<_field_int64_integer name="m_pipelineStates" />
+	</plugin>

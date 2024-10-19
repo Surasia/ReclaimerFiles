@@ -1,0 +1,18 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="flyby enter sound" />
+	<_field_tag_reference_64 name="flyby exit sound" />
+	<_field_string_id name="flyby switch container name" />
+	<_field_short_integer name="flyby sound variations" />
+	<_field_short_integer name="Avoid repeating the last" />
+	<_field_real name="flyby sound stereo width/pan" />
+	<_field_real name="flyby sound enter offset" />
+	<_field_real name="flyby sound exit offset" />
+	<_field_pad name="generated_pad9d4f" length="4" />
+	</plugin>

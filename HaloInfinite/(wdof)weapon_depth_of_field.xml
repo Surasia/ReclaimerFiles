@@ -1,0 +1,24 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="dof">
+		<_field_explanation name="depth of field" />
+		<_field_real name="world blur aperture" />
+		<_field_real name="world blur focus max distance" />
+		<_field_real_fraction name="World blur focus smoothing value" />
+		<_field_real_fraction name="World blur trend smoothing value" />
+		<_field_real_fraction name="world blur half width ratio" />
+		<_field_real name="weapon blur aperture" />
+		<_field_real name="weapon blur focus distance" />
+		<_field_real name="weapon blur half width" />
+		<_field_explanation name="vignette" />
+		<_field_real_fraction_bounds name="vignette radius bounds" />
+		<_field_real_fraction name="vignette intensity" />
+		</_field_struct>
+	<_field_pad name="generated_paddff6" length="4" />
+	</plugin>

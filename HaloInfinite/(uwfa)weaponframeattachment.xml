@@ -1,0 +1,18 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_char_enum name="Slot">
+		<Item Name="Primary" />
+		<Item Name="Secondary" />
+		<Item Name="Backpack" />
+	</_field_char_enum>
+	<_field_pad name="generated_pad89c5" length="3" />
+	<_field_tag_reference_64 name="Weapon" />
+	<_field_tag_reference_64 name="Configuration" />
+	<_field_pad name="generated_pad6fe4" length="4" />
+	</plugin>

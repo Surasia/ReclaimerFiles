@@ -1,0 +1,59 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="font references">
+		<_field_tag_reference_64 name="font" />
+		<_field_long_flags name="WPF All Languages">
+			<Item Name="All" />
+		</_field_long_flags>
+		<_field_long_flags name="WPF Flags">
+			<Item Name="English" />
+			<Item Name="Japanese" />
+			<Item Name="German" />
+			<Item Name="French" />
+			<Item Name="Spanish" />
+			<Item Name="Mexican-Spanish" />
+			<Item Name="Italian" />
+			<Item Name="Korean" />
+			<Item Name="Traditional-Chinese" />
+			<Item Name="Simplified-Chinese" />
+			<Item Name="Portuguese" />
+			<Item Name="Polish" />
+			<Item Name="Russian" />
+			<Item Name="Danish" />
+			<Item Name="Finnish" />
+			<Item Name="Dutch" />
+			<Item Name="Norwegian" />
+			<Item Name="Brazilian-Portuguese" />
+		</_field_long_flags>
+		<_field_long_flags name="FastHud All Languages">
+			<Item Name="All" />
+		</_field_long_flags>
+		<_field_long_flags name="FastHud Flags">
+			<Item Name="English" />
+			<Item Name="Japanese" />
+			<Item Name="German" />
+			<Item Name="French" />
+			<Item Name="Spanish" />
+			<Item Name="Mexican-Spanish" />
+			<Item Name="Italian" />
+			<Item Name="Korean" />
+			<Item Name="Traditional-Chinese" />
+			<Item Name="Simplified-Chinese" />
+			<Item Name="Portuguese" />
+			<Item Name="Polish" />
+			<Item Name="Russian" />
+			<Item Name="Danish" />
+			<Item Name="Finnish" />
+			<Item Name="Dutch" />
+			<Item Name="Norwegian" />
+			<Item Name="Brazilian-Portuguese" />
+		</_field_long_flags>
+		</_field_block_64>
+	<_field_pad name="generated_padab5f" length="4" />
+	</plugin>

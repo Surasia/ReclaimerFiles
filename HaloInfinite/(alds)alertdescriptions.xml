@@ -1,0 +1,34 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="Alerts" />
+	<_field_block_64 name="descriptions">
+		<_field_string_id name="error name" />
+		<_field_byte_flags name="flags">
+			<Item Name="allow auto dismissal" />
+			<Item Name="show spinner" />
+		</_field_byte_flags>
+		<_field_char_enum name="error category">
+			<Item Name="default" />
+			<Item Name="networking" />
+			<Item Name="storage (reading/writing failure)" />
+			<Item Name="controller" />
+		</_field_char_enum>
+		<_field_char_enum name="error icon">
+			<Item Name="default alert" />
+			<Item Name="downloading" />
+			<Item Name="paused" />
+			<Item Name="uploading" />
+			<Item Name="completed" />
+		</_field_char_enum>
+		<_field_pad name="generated_padd9db" length="1" />
+		<_field_string_id name="title" />
+		<_field_string_id name="message" />
+		</_field_block_64>
+	<_field_pad name="generated_pad8bc4" length="4" />
+	</plugin>

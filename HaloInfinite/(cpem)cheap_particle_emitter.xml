@@ -1,0 +1,68 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_word_flags name="flags">
+		<Item Name="correlate position and velocity" />
+		<Item Name="position texture in local space" />
+		<Item Name="velocity texture in local space" />
+		<Item Name="normalize velocity before scaling" />
+		<Item Name="randomly rotate emitter about up vector" />
+	</_field_word_flags>
+	<_field_word_integer name="version" />
+	<_field_real name="spawn rate" />
+	<_field_explanation name="SPAWN RATE" />
+	<_field_struct name="spawnrate">
+		<_field_string_id name="Input Variable" />
+		<_field_string_id name="Range Variable" />
+		<_field_custom name="Mapping" />
+		<_field_struct name="Mapping">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="LOD" />
+	<_field_real name="distance fade start" />
+	<_field_real name="distance fade end" />
+	<_field_explanation name="TYPES" />
+	<_field_custom name="types" />
+	<_field_string_id name="type 0" />
+	<_field_real name="weight 0" />
+	<_field_string_id name="type 1" />
+	<_field_real name="weight 1" />
+	<_field_string_id name="type 2" />
+	<_field_real name="weight 2" />
+	<_field_string_id name="type 3" />
+	<_field_real name="weight 3" />
+	<_field_custom name="" />
+	<_field_explanation name="LIFETIME" />
+	<_field_real_bounds name="lifetime" />
+	<_field_explanation name="EMITTER PARAMETERS" />
+	<_field_tag_reference_64 name="position texture" />
+	<_field_real name="position scale" />
+	<_field_real name="position flatten" />
+	<_field_tag_reference_64 name="velocity texture" />
+	<_field_real_bounds name="directionality" />
+	<_field_real_bounds name="speed scale" />
+	<_field_real_bounds name="subframe offset" />
+	<_field_explanation name="PARTICLE PARAMETERS" />
+	<_field_real name="rotation randomness" />
+	<_field_real name="particle scale modifier" />
+	<_field_explanation name="LIGHTING PARAMETERS" />
+	<_field_real name="lighting contrast" />
+	<_field_real name="lighting offset" />
+	<_field_real name="lighting min" />
+	<_field_real name="lighting max" />
+	<_field_real_quaternion name="spawn_params0" />
+	<_field_real_quaternion name="spawn_params1" />
+	<_field_real_quaternion name="spawn_params2" />
+	<_field_real_quaternion name="spawn_params3" />
+	<_field_real_quaternion name="spawn_params4" />
+	<_field_tag_reference_64 name="global type library" />
+	<_field_pad name="generated_pad1e19" length="4" />
+	</plugin>

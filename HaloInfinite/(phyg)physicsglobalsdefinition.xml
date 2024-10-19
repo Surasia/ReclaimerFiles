@@ -1,0 +1,32 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="Shape density configuration" />
+	<_field_explanation name="Shape density configuration" />
+	<_field_explanation name="Play collision density thresholds for assets" />
+	<_field_struct name="Play collision thresholds for assets">
+		<_field_real name="Shape density error threshold" />
+		<_field_real name="Shape density warning threshold" />
+		</_field_struct>
+	<_field_explanation name="Bullet collision density thresholds for assets" />
+	<_field_struct name="Bullet collision thresholds for assets">
+		<_field_real name="Shape density error threshold" />
+		<_field_real name="Shape density warning threshold" />
+		</_field_struct>
+	<_field_explanation name="Play collision density thresholds for levels" />
+	<_field_struct name="Play collision thresholds for levels">
+		<_field_real name="Shape density error threshold" />
+		<_field_real name="Shape density warning threshold" />
+		</_field_struct>
+	<_field_explanation name="Bullet collision density thresholds for levels" />
+	<_field_struct name="Bullet collision thresholds for levels">
+		<_field_real name="Shape density error threshold" />
+		<_field_real name="Shape density warning threshold" />
+		</_field_struct>
+	<_field_custom name="" />
+	</plugin>

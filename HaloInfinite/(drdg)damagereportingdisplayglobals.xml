@@ -1,0 +1,48 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="Damage Reporting Display Map" />
+	<_field_block_64 name="damageDisplayMap">
+		<_field_custom name="Damage Source" />
+		<_field_explanation name="Explanation" />
+		<_field_struct name="damageSource">
+			<_field_explanation name="NOTE" />
+			<_field_string_id name="Damage Source Name" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_block_64 name="displayByAttachmentList">
+			<_field_custom name="Attachment List" />
+			<_field_explanation name="Explanation" />
+			<_field_block_64 name="attachmentList">
+				<_field_custom name="Attachment Name" />
+				<_field_explanation name="Explanation" />
+				<_field_struct name="attachmentName">
+					<_field_explanation name="NOTE" />
+					<_field_string_id name="Attachment Name" />
+					</_field_struct>
+				<_field_custom name="" />
+				</_field_block_64>
+			<_field_custom name="" />
+			<_field_block_64 name="displayByDamageType">
+				<_field_custom name="Damage Type" />
+				<_field_explanation name="Explanation" />
+				<_field_struct name="damageType">
+					<_field_explanation name="NOTE" />
+					<_field_string_id name="Damage Type Name" />
+					</_field_struct>
+				<_field_custom name="" />
+				<_field_struct name="displayDefinition">
+					<_field_string_id name="display name" />
+					<_field_tag_reference_64 name="sprite sheet" />
+					<_field_long_integer name="sprite index" />
+					</_field_struct>
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_pad name="generated_padfae4" length="4" />
+	</plugin>

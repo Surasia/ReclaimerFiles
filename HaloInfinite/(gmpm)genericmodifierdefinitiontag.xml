@@ -1,0 +1,61 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="modifiers">
+		<_field_block_64 name="modifiers float">
+			<_field_struct name="modifier float">
+				<_field_string_id name="property" />
+				<_field_char_enum name="scope">
+					<Item Name="global" />
+					<Item Name="object" />
+					<Item Name="player" />
+					<Item Name="team" />
+					<Item Name="mount" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad531a" length="3" />
+				<_field_real name="duration" />
+				<_field_real name="modifier" />
+				</_field_struct>
+			</_field_block_64>
+		<_field_block_64 name="modifiers int">
+			<_field_struct name="modifier int">
+				<_field_string_id name="property" />
+				<_field_char_enum name="scope">
+					<Item Name="global" />
+					<Item Name="object" />
+					<Item Name="player" />
+					<Item Name="team" />
+					<Item Name="mount" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad531a" length="3" />
+				<_field_real name="duration" />
+				<_field_long_integer name="modifier" />
+				</_field_struct>
+			</_field_block_64>
+		<_field_block_64 name="modifiers bool">
+			<_field_struct name="modifier bool">
+				<_field_string_id name="property" />
+				<_field_char_enum name="scope">
+					<Item Name="global" />
+					<Item Name="object" />
+					<Item Name="player" />
+					<Item Name="team" />
+					<Item Name="mount" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad531a" length="3" />
+				<_field_real name="duration" />
+				<_field_char_enum name="modifier">
+					<Item Name="false" />
+					<Item Name="true" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad900e" length="3" />
+				</_field_struct>
+			</_field_block_64>
+		</_field_struct>
+	<_field_pad name="generated_pad3c2c" length="4" />
+	</plugin>

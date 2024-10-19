@@ -1,0 +1,141 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_string_id name="name" />
+	<_field_block_64 name="limits">
+		<_field_string_id name="type" />
+		<_field_byte_integer name="max" />
+		<_field_byte_flags name="flags">
+			<Item Name="hide category from UI" />
+			<Item Name="add attachments in category to inventory swapper UI" />
+			<Item Name="add attachments in category to nav point displays" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad2c79" length="2" />
+		</_field_block_64>
+	<_field_block_64 name="frame attachments">
+		<_field_tag_reference_64 name="frame attachment" />
+		<_field_char_enum name="set">
+			<Item Name="normal" />
+			<Item Name="initial" />
+			<Item Name="permanent" />
+		</_field_char_enum>
+		<_field_char_enum name="initial input slot">
+			<Item Name="none" />
+			<Item Name="equipment" />
+			<Item Name="grenade" />
+			<Item Name="powerup" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad5209" length="2" />
+		</_field_block_64>
+	<_field_block_64 name="UI display info">
+		<_field_string_id name="name" />
+		<_field_string_id name="alt name " />
+		<_field_string_id name="description" />
+		<_field_string_id name="help text" />
+		<_field_string_id name="icon string id" />
+		<_field_tag_reference_64 name="sprite" />
+		<_field_long_integer name="sprite index" />
+		<_field_tag_reference_64 name="alt sprite" />
+		<_field_long_integer name="alt sprite index" />
+		<_field_long_integer name="damage sprite index" />
+		<_field_tag_reference_64 name="ui vehicle screen reference" />
+		</_field_block_64>
+	<_field_long_enum name="Nav Point Sequence Index">
+		<Item Name="TacticalObjective" />
+		<Item Name="SubObjective" />
+		<Item Name="MainObjective" />
+		<Item Name="SupplyCache" />
+		<Item Name="MoveToIndicator" />
+		<Item Name="ChatterIndicator" />
+		<Item Name="AttackCommandFg" />
+		<Item Name="ReviveFg" />
+		<Item Name="ReviveBg" />
+		<Item Name="BleedoutTimerStroke" />
+		<Item Name="ReviveCommand" />
+		<Item Name="ReviveHelpPulse" />
+		<Item Name="WzBossFg" />
+		<Item Name="WzBossBg" />
+		<Item Name="WzReqFg" />
+		<Item Name="WzHomeBaseFg" />
+		<Item Name="AttackFg" />
+		<Item Name="DefendFg" />
+		<Item Name="CircleBg" />
+		<Item Name="DiamondBg" />
+		<Item Name="SquareBg" />
+		<Item Name="HexBg" />
+		<Item Name="CircleStroke" />
+		<Item Name="DiamondStroke" />
+		<Item Name="SquareStroke" />
+		<Item Name="HexStroke" />
+		<Item Name="ExclamationFg" />
+		<Item Name="DeadIndicator" />
+		<Item Name="SpeakingIndicator" />
+		<Item Name="WeaponPadFg" />
+		<Item Name="CubeFg" />
+		<Item Name="FlagFg" />
+		<Item Name="LetterAFg" />
+		<Item Name="LetterBFg" />
+		<Item Name="LetterCFg" />
+		<Item Name="BombFg" />
+		<Item Name="CrownFg" />
+		<Item Name="SmallOffscreenArrow" />
+		<Item Name="FriendlyArrow" />
+		<Item Name="EnemyArrow" />
+		<Item Name="SeekIndicator" />
+		<Item Name="LockOnIndicator" />
+		<Item Name="ReqBg" />
+		<Item Name="Num0Fg" />
+		<Item Name="Num1Fg" />
+		<Item Name="Num2Fg" />
+		<Item Name="Num3Fg" />
+		<Item Name="Num4Fg" />
+		<Item Name="Num5Fg" />
+		<Item Name="Num6Fg" />
+		<Item Name="Num7Fg" />
+		<Item Name="Num8Fg" />
+		<Item Name="Num9Fg" />
+		<Item Name="FrameIdentifier1" />
+		<Item Name="FrameIdentifier2" />
+		<Item Name="FrameIdentifier3" />
+		<Item Name="FrameIdentifier4" />
+		<Item Name="AbilityAutoTurret" />
+		<Item Name="AbilityCloak" />
+		<Item Name="AbilityGravSphere" />
+		<Item Name="AbilityHealthBlast" />
+		<Item Name="AbilityHex" />
+		<Item Name="AbilityHologram" />
+		<Item Name="AbilityLocationDart" />
+		<Item Name="AbilityMedicDrone" />
+		<Item Name="AbilityTrap" />
+		<Item Name="Flipbook1" />
+		<Item Name="Flipbook2" />
+		<Item Name="Flipbook3" />
+		<Item Name="Flipbook4" />
+		<Item Name="Flipbook5" />
+		<Item Name="Flipbook6" />
+		<Item Name="Flipbook7" />
+		<Item Name="Flipbook8" />
+		<Item Name="Flipbook9" />
+		<Item Name="Flipbook10" />
+		<Item Name="Flipbook11" />
+		<Item Name="Flipbook12" />
+		<Item Name="Flipbook13" />
+		<Item Name="Flipbook14" />
+		<Item Name="Flipbook15" />
+		<Item Name="Flipbook16" />
+		<Item Name="Flipbook17" />
+		<Item Name="Flipbook18" />
+		<Item Name="Flipbook19" />
+		<Item Name="Flipbook20" />
+		<Item Name="Flipbook21" />
+		<Item Name="Flipbook22" />
+		<Item Name="Flipbook23" />
+		<Item Name="Flipbook24" />
+	</_field_long_enum>
+	<_field_pad name="generated_pad0c49" length="4" />
+	</plugin>

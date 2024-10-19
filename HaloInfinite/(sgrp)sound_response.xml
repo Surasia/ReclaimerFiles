@@ -1,0 +1,40 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="responses">
+		<_field_string_id name="name" />
+		<_field_string_id name="channel" />
+		<_field_string_id name="category" />
+		<_field_long_integer name="category priority" />
+		<_field_real name="queue timeout" />
+		<_field_real name="consideration time" />
+		<_field_real name="gap after sound" />
+		<_field_byte_flags name="queue behavior">
+			<Item Name="bypass queue" />
+			<Item Name="clear queue" />
+			<Item Name="stop active sound" />
+			<Item Name="do not track" />
+		</_field_byte_flags>
+		<_field_pad name="generated_padb18f" length="3" />
+		<_field_block_64 name="potential responses">
+			<_field_tag_reference_64 name="sound" />
+			<_field_tag_reference_64 name="music" />
+			</_field_block_64>
+		<_field_block_64 name="combiners">
+			<_field_string_id name="name" />
+			<_field_byte_flags name="response behavior">
+				<Item Name="cancel queued" />
+				<Item Name="cancel active" />
+				<Item Name="cancel new" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad9b20" length="3" />
+			<_field_tag_reference_64 name="response" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_pad name="generated_pad2940" length="4" />
+	</plugin>

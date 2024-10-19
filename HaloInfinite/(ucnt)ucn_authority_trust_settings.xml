@@ -1,0 +1,76 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="UCN AUTHORITY TRUST SETTINGS" />
+	<_field_real_bounds name="velocity interpolation range" />
+	<_field_explanation name="Lowest velocity values" />
+	<_field_struct name="interpolation min values">
+		<_field_real name="position delta max" />
+		<_field_angle name="rotation delta max" />
+		<_field_real name="linear velocity delta max" />
+		<_field_angle name="angular velocity delta max" />
+		</_field_struct>
+	<_field_explanation name="Highest velocity values" />
+	<_field_struct name="interpolation max values">
+		<_field_real name="position delta max" />
+		<_field_angle name="rotation delta max" />
+		<_field_real name="linear velocity delta max" />
+		<_field_angle name="angular velocity delta max" />
+		</_field_struct>
+	<_field_real_fraction name="cumulative limit fraction" />
+	<_field_explanation name="Situational Overrides" />
+	<_field_block_64 name="situational overrides">
+		<_field_char_enum name="Situation">
+			<Item Name="Player near physics volume" />
+			<Item Name="Melee lunge" />
+			<Item Name="Credulous Player near dynamic body" />
+			<Item Name="Credulous Out of inputs" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad752f" length="3" />
+		<_field_real name="Check distance" />
+		<_field_explanation name="Lowest velocity values" />
+		<_field_struct name="Override interpolation min values">
+			<_field_real name="position delta max" />
+			<_field_angle name="rotation delta max" />
+			<_field_real name="linear velocity delta max" />
+			<_field_angle name="angular velocity delta max" />
+			</_field_struct>
+		<_field_explanation name="Highest velocity values" />
+		<_field_struct name="Override interpolation max values">
+			<_field_real name="position delta max" />
+			<_field_angle name="rotation delta max" />
+			<_field_real name="linear velocity delta max" />
+			<_field_angle name="angular velocity delta max" />
+			</_field_struct>
+		</_field_block_64>
+	<_field_block_64 name="credulous overrides">
+		<_field_char_enum name="Situation">
+			<Item Name="Player near physics volume" />
+			<Item Name="Melee lunge" />
+			<Item Name="Credulous Player near dynamic body" />
+			<Item Name="Credulous Out of inputs" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad752f" length="3" />
+		<_field_real name="Check distance" />
+		<_field_explanation name="Lowest velocity values" />
+		<_field_struct name="Override interpolation min values">
+			<_field_real name="position delta max" />
+			<_field_angle name="rotation delta max" />
+			<_field_real name="linear velocity delta max" />
+			<_field_angle name="angular velocity delta max" />
+			</_field_struct>
+		<_field_explanation name="Highest velocity values" />
+		<_field_struct name="Override interpolation max values">
+			<_field_real name="position delta max" />
+			<_field_angle name="rotation delta max" />
+			<_field_real name="linear velocity delta max" />
+			<_field_angle name="angular velocity delta max" />
+			</_field_struct>
+		</_field_block_64>
+	<_field_pad name="generated_pad799c" length="4" />
+	</plugin>

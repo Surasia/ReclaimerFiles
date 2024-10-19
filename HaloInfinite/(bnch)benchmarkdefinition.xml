@@ -1,0 +1,21 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Benchmarks">
+		<_field_long_string name="Map" />
+		<_field_block_64 name="Benchmark Compositions">
+			<_field_long_string name="Display Name" />
+			<_field_string_id name="Composition ID" />
+			<_field_byte_flags name="Flags">
+				<Item Name="Start Analytic Capture Paused" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad3ea5" length="3" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_pad name="generated_pad1294" length="4" />
+	</plugin>

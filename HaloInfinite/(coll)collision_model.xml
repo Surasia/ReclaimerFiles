@@ -1,0 +1,590 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_long_integer name="import_info_checksum" />
+	<_field_block_64 name="errors">
+		<_field_long_string name="name" />
+		<_field_char_enum name="report type">
+			<Item Name="silent" />
+			<Item Name="comment" />
+			<Item Name="warning" />
+			<Item Name="error" />
+		</_field_char_enum>
+		<_field_pad name="generated_padf276" length="1" />
+		<_field_word_flags name="flags">
+			<Item Name="rendered" />
+			<Item Name="tangent-space" />
+			<Item Name="non-critical" />
+			<Item Name="lightmap light" />
+			<Item Name="report key is valid" />
+		</_field_word_flags>
+		<_field_word_integer name="runtime generation flags" />
+		<_field_pad name="generated_pad3f2b" length="2" />
+		<_field_long_integer name="runtime something" />
+		<_field_block_64 name="reports">
+			<_field_char_enum name="type">
+				<Item Name="silent" />
+				<Item Name="comment" />
+				<Item Name="warning" />
+				<Item Name="error" />
+			</_field_char_enum>
+			<_field_char_enum name="source">
+				<Item Name="none" />
+				<Item Name="structure" />
+				<Item Name="poop" />
+				<Item Name="lightmap" />
+				<Item Name="pathfinding" />
+			</_field_char_enum>
+			<_field_word_flags name="flags">
+				<Item Name="rendered" />
+				<Item Name="tangent-space" />
+				<Item Name="non-critical" />
+				<Item Name="lightmap light" />
+				<Item Name="report key is valid" />
+			</_field_word_flags>
+			<_field_data_64 name="text" />
+			<_field_long_integer name="source identifier" />
+			<_field_string name="source filename" />
+			<_field_long_integer name="source line number" />
+			<_field_block_64 name="vertices">
+				<_field_struct name="point">
+					<_field_real_point_3d name="position" />
+					<_field_array name="node indices">
+						<_field_byte_integer name="node index" />
+						<_field_byte_integer name="node index" />
+						<_field_byte_integer name="node index" />
+						<_field_byte_integer name="node index" />
+						</_field_array>
+					<_field_array name="node weights">
+						<_field_real name="node weight" />
+						<_field_real name="node weight" />
+						<_field_real name="node weight" />
+						<_field_real name="node weight" />
+						</_field_array>
+					</_field_struct>
+				<_field_real_argb_color name="color" />
+				<_field_real name="screen size" />
+				</_field_block_64>
+			<_field_block_64 name="vectors">
+				<_field_struct name="point">
+					<_field_real_point_3d name="position" />
+					<_field_array name="node indices">
+						<_field_byte_integer name="node index" />
+						<_field_byte_integer name="node index" />
+						<_field_byte_integer name="node index" />
+						<_field_byte_integer name="node index" />
+						</_field_array>
+					<_field_array name="node weights">
+						<_field_real name="node weight" />
+						<_field_real name="node weight" />
+						<_field_real name="node weight" />
+						<_field_real name="node weight" />
+						</_field_array>
+					</_field_struct>
+				<_field_real_argb_color name="color" />
+				<_field_real_vector_3d name="normal" />
+				<_field_real name="screen length" />
+				</_field_block_64>
+			<_field_block_64 name="lines">
+				<_field_array name="points">
+					<_field_struct name="point">
+						<_field_real_point_3d name="position" />
+						<_field_array name="node indices">
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							</_field_array>
+						<_field_array name="node weights">
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							</_field_array>
+						</_field_struct>
+					<_field_struct name="point">
+						<_field_real_point_3d name="position" />
+						<_field_array name="node indices">
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							</_field_array>
+						<_field_array name="node weights">
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							</_field_array>
+						</_field_struct>
+					</_field_array>
+				<_field_real_argb_color name="color" />
+				</_field_block_64>
+			<_field_block_64 name="triangles">
+				<_field_array name="points">
+					<_field_struct name="point">
+						<_field_real_point_3d name="position" />
+						<_field_array name="node indices">
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							</_field_array>
+						<_field_array name="node weights">
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							</_field_array>
+						</_field_struct>
+					<_field_struct name="point">
+						<_field_real_point_3d name="position" />
+						<_field_array name="node indices">
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							</_field_array>
+						<_field_array name="node weights">
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							</_field_array>
+						</_field_struct>
+					<_field_struct name="point">
+						<_field_real_point_3d name="position" />
+						<_field_array name="node indices">
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							</_field_array>
+						<_field_array name="node weights">
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							</_field_array>
+						</_field_struct>
+					</_field_array>
+				<_field_real_argb_color name="color" />
+				</_field_block_64>
+			<_field_block_64 name="quads">
+				<_field_array name="points">
+					<_field_struct name="point">
+						<_field_real_point_3d name="position" />
+						<_field_array name="node indices">
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							</_field_array>
+						<_field_array name="node weights">
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							</_field_array>
+						</_field_struct>
+					<_field_struct name="point">
+						<_field_real_point_3d name="position" />
+						<_field_array name="node indices">
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							</_field_array>
+						<_field_array name="node weights">
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							</_field_array>
+						</_field_struct>
+					<_field_struct name="point">
+						<_field_real_point_3d name="position" />
+						<_field_array name="node indices">
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							</_field_array>
+						<_field_array name="node weights">
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							</_field_array>
+						</_field_struct>
+					<_field_struct name="point">
+						<_field_real_point_3d name="position" />
+						<_field_array name="node indices">
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							<_field_byte_integer name="node index" />
+							</_field_array>
+						<_field_array name="node weights">
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							<_field_real name="node weight" />
+							</_field_array>
+						</_field_struct>
+					</_field_array>
+				<_field_real_argb_color name="color" />
+				</_field_block_64>
+			<_field_block_64 name="comments">
+				<_field_data_64 name="text" />
+				<_field_struct name="point">
+					<_field_real_point_3d name="position" />
+					<_field_array name="node indices">
+						<_field_byte_integer name="node index" />
+						<_field_byte_integer name="node index" />
+						<_field_byte_integer name="node index" />
+						<_field_byte_integer name="node index" />
+						</_field_array>
+					<_field_array name="node weights">
+						<_field_real name="node weight" />
+						<_field_real name="node weight" />
+						<_field_real name="node weight" />
+						<_field_real name="node weight" />
+						</_field_array>
+					</_field_struct>
+				<_field_real_argb_color name="color" />
+				</_field_block_64>
+			<_field_long_integer name="report key" />
+			<_field_long_integer name="node index" />
+			<_field_real_bounds name="bounds x" />
+			<_field_real_bounds name="bounds y" />
+			<_field_real_bounds name="bounds z" />
+			<_field_real_argb_color name="color" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_long_flags name="flags">
+		<Item Name="contains open edges" />
+		<Item Name="physics built" />
+		<Item Name="physics in use" />
+		<Item Name="processed" />
+		<Item Name="has two sided surfaces" />
+	</_field_long_flags>
+	<_field_block_64 name="materials">
+		<_field_string_id name="name" />
+		</_field_block_64>
+	<_field_block_64 name="regions">
+		<_field_string_id name="name" />
+		<_field_block_64 name="permutations">
+			<_field_string_id name="name" />
+			<_field_short_integer name="resourceBspOffset" />
+			<_field_short_integer name="resourceBspCount" />
+			<_field_block_64 name="bsps">
+				<_field_short_integer name="node index" />
+				<_field_pad name="generated_pad8a4c" length="2" />
+				<_field_struct name="bsp">
+					<_field_block_64 name="bsp3d nodes">
+						<_field_int64_integer name="node data designator" />
+						</_field_block_64>
+					<_field_block_64 name="bsp3d supernodes">
+						<_field_real name="plane 0" />
+						<_field_real name="plane 1" />
+						<_field_real name="plane 2" />
+						<_field_real name="plane 3" />
+						<_field_real name="plane 4" />
+						<_field_real name="plane 5" />
+						<_field_real name="plane 6" />
+						<_field_real name="plane 7" />
+						<_field_real name="plane 8" />
+						<_field_real name="plane 9" />
+						<_field_real name="plane10" />
+						<_field_real name="plane11" />
+						<_field_real name="plane12" />
+						<_field_real name="plane13" />
+						<_field_real name="plane14" />
+						<_field_long_integer name="plane dimensions" />
+						<_field_long_integer name="child index 0" />
+						<_field_long_integer name="child index 1" />
+						<_field_long_integer name="child index 2" />
+						<_field_long_integer name="child index 3" />
+						<_field_long_integer name="child index 4" />
+						<_field_long_integer name="child index 5" />
+						<_field_long_integer name="child index 6" />
+						<_field_long_integer name="child index 7" />
+						<_field_long_integer name="child index 8" />
+						<_field_long_integer name="child index 9" />
+						<_field_long_integer name="child index10" />
+						<_field_long_integer name="child index11" />
+						<_field_long_integer name="child index12" />
+						<_field_long_integer name="child index13" />
+						<_field_long_integer name="child index14" />
+						<_field_long_integer name="child index15" />
+						</_field_block_64>
+					<_field_block_64 name="planes">
+						<_field_real_plane_3d name="plane" />
+						</_field_block_64>
+					<_field_block_64 name="leaves">
+						<_field_byte_flags name="flags">
+							<Item Name="contains double-sided surfaces" />
+						</_field_byte_flags>
+						<_field_pad name="generated_padd325" length="1" />
+						<_field_word_integer name="bsp2d reference count" />
+						<_field_dword_integer name="first bsp2d reference" />
+						</_field_block_64>
+					<_field_block_64 name="bsp2d references">
+						<_field_short_integer name="plane" />
+						<_field_short_integer name="bsp2d node" />
+						</_field_block_64>
+					<_field_block_64 name="bsp2d nodes">
+						<_field_real_plane_2d name="plane" />
+						<_field_short_integer name="left child" />
+						<_field_short_integer name="right child" />
+						</_field_block_64>
+					<_field_block_64 name="surfaces">
+						<_field_word_integer name="plane index" />
+						<_field_word_integer name="first edge" />
+						<_field_short_integer name="material" />
+						<_field_byte_flags name="flags">
+							<Item Name="two sided" />
+							<Item Name="invisible" />
+							<Item Name="climbable" />
+							<Item Name="invalid" />
+							<Item Name="conveyor" />
+							<Item Name="slip" />
+							<Item Name="plane negated" />
+						</_field_byte_flags>
+						<_field_byte_integer name="best plane calculation vertex index " />
+						</_field_block_64>
+					<_field_block_64 name="edges">
+						<_field_word_integer name="start vertex" />
+						<_field_word_integer name="end vertex" />
+						<_field_word_integer name="forward edge" />
+						<_field_word_integer name="reverse edge" />
+						<_field_word_integer name="left surface" />
+						<_field_word_integer name="right surface" />
+						</_field_block_64>
+					<_field_block_64 name="vertices">
+						<_field_real_point_3d name="point" />
+						<_field_word_integer name="first edge" />
+						<_field_short_integer name="sink" />
+						</_field_block_64>
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="mopp_codes">
+				<_field_int64_integer name="field pointer skip" />
+				<_field_int64_integer name="property bag skip" />
+				<_field_short_integer name="size" />
+				<_field_short_integer name="count" />
+				<_field_pad name="pad0" length="12" />
+				<_field_real name="v.i" />
+				<_field_real name="v.j" />
+				<_field_real name="v.k" />
+				<_field_real name="v.w" />
+				<_field_pad name="pad64_0" length="4" />
+				<_field_int64_integer name="m_data pointer" />
+				<_field_long_integer name="int m_size" />
+				<_field_long_integer name="int m_capacityAndFlags" />
+				<_field_char_integer name="int8 m_buildType" />
+				<_field_pad name="pad1_0" length="1" />
+				<_field_pad name="pad1_1" length="2" />
+				<_field_pad name="pad1_2" length="4" />
+				<_field_pad name="pad64_1" length="4" />
+				<_field_custom name="" />
+				<_field_block_64 name="mopp data block ">
+					<_field_byte_integer name="mopp data" />
+					</_field_block_64>
+				<_field_custom name="" />
+				<_field_char_integer name="mopp build type" />
+				<_field_pad name="pad2_0" length="1" />
+				<_field_pad name="pad2_1" length="2" />
+				<_field_pad name="generated_pad27be" length="8" />
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="cookie cutters">
+		<_field_string_id name="name" />
+		<_field_block_64 name="permutations">
+			<_field_string_id name="name" />
+			<_field_short_integer name="resourceBspOffset" />
+			<_field_short_integer name="resourceBspCount" />
+			<_field_block_64 name="bsps">
+				<_field_short_integer name="node index" />
+				<_field_pad name="generated_pad8a4c" length="2" />
+				<_field_struct name="bsp">
+					<_field_block_64 name="bsp3d nodes">
+						<_field_int64_integer name="node data designator" />
+						</_field_block_64>
+					<_field_block_64 name="bsp3d supernodes">
+						<_field_real name="plane 0" />
+						<_field_real name="plane 1" />
+						<_field_real name="plane 2" />
+						<_field_real name="plane 3" />
+						<_field_real name="plane 4" />
+						<_field_real name="plane 5" />
+						<_field_real name="plane 6" />
+						<_field_real name="plane 7" />
+						<_field_real name="plane 8" />
+						<_field_real name="plane 9" />
+						<_field_real name="plane10" />
+						<_field_real name="plane11" />
+						<_field_real name="plane12" />
+						<_field_real name="plane13" />
+						<_field_real name="plane14" />
+						<_field_long_integer name="plane dimensions" />
+						<_field_long_integer name="child index 0" />
+						<_field_long_integer name="child index 1" />
+						<_field_long_integer name="child index 2" />
+						<_field_long_integer name="child index 3" />
+						<_field_long_integer name="child index 4" />
+						<_field_long_integer name="child index 5" />
+						<_field_long_integer name="child index 6" />
+						<_field_long_integer name="child index 7" />
+						<_field_long_integer name="child index 8" />
+						<_field_long_integer name="child index 9" />
+						<_field_long_integer name="child index10" />
+						<_field_long_integer name="child index11" />
+						<_field_long_integer name="child index12" />
+						<_field_long_integer name="child index13" />
+						<_field_long_integer name="child index14" />
+						<_field_long_integer name="child index15" />
+						</_field_block_64>
+					<_field_block_64 name="planes">
+						<_field_real_plane_3d name="plane" />
+						</_field_block_64>
+					<_field_block_64 name="leaves">
+						<_field_byte_flags name="flags">
+							<Item Name="contains double-sided surfaces" />
+						</_field_byte_flags>
+						<_field_pad name="generated_padd325" length="1" />
+						<_field_word_integer name="bsp2d reference count" />
+						<_field_dword_integer name="first bsp2d reference" />
+						</_field_block_64>
+					<_field_block_64 name="bsp2d references">
+						<_field_short_integer name="plane" />
+						<_field_short_integer name="bsp2d node" />
+						</_field_block_64>
+					<_field_block_64 name="bsp2d nodes">
+						<_field_real_plane_2d name="plane" />
+						<_field_short_integer name="left child" />
+						<_field_short_integer name="right child" />
+						</_field_block_64>
+					<_field_block_64 name="surfaces">
+						<_field_word_integer name="plane index" />
+						<_field_word_integer name="first edge" />
+						<_field_short_integer name="material" />
+						<_field_byte_flags name="flags">
+							<Item Name="two sided" />
+							<Item Name="invisible" />
+							<Item Name="climbable" />
+							<Item Name="invalid" />
+							<Item Name="conveyor" />
+							<Item Name="slip" />
+							<Item Name="plane negated" />
+						</_field_byte_flags>
+						<_field_byte_integer name="best plane calculation vertex index " />
+						</_field_block_64>
+					<_field_block_64 name="edges">
+						<_field_word_integer name="start vertex" />
+						<_field_word_integer name="end vertex" />
+						<_field_word_integer name="forward edge" />
+						<_field_word_integer name="reverse edge" />
+						<_field_word_integer name="left surface" />
+						<_field_word_integer name="right surface" />
+						</_field_block_64>
+					<_field_block_64 name="vertices">
+						<_field_real_point_3d name="point" />
+						<_field_word_integer name="first edge" />
+						<_field_short_integer name="sink" />
+						</_field_block_64>
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="mopp_codes">
+				<_field_int64_integer name="field pointer skip" />
+				<_field_int64_integer name="property bag skip" />
+				<_field_short_integer name="size" />
+				<_field_short_integer name="count" />
+				<_field_pad name="pad0" length="12" />
+				<_field_real name="v.i" />
+				<_field_real name="v.j" />
+				<_field_real name="v.k" />
+				<_field_real name="v.w" />
+				<_field_pad name="pad64_0" length="4" />
+				<_field_int64_integer name="m_data pointer" />
+				<_field_long_integer name="int m_size" />
+				<_field_long_integer name="int m_capacityAndFlags" />
+				<_field_char_integer name="int8 m_buildType" />
+				<_field_pad name="pad1_0" length="1" />
+				<_field_pad name="pad1_1" length="2" />
+				<_field_pad name="pad1_2" length="4" />
+				<_field_pad name="pad64_1" length="4" />
+				<_field_custom name="" />
+				<_field_block_64 name="mopp data block ">
+					<_field_byte_integer name="mopp data" />
+					</_field_block_64>
+				<_field_custom name="" />
+				<_field_char_integer name="mopp build type" />
+				<_field_pad name="pad2_0" length="1" />
+				<_field_pad name="pad2_1" length="2" />
+				<_field_pad name="generated_pad27be" length="8" />
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="pathfinding spheres">
+		<_field_short_block_index name="node" />
+		<_field_word_flags name="flags">
+			<Item Name="remains when open" />
+			<Item Name="vehicle only" />
+			<Item Name="with sectors" />
+		</_field_word_flags>
+		<_field_real_point_3d name="center" />
+		<_field_real name="radius" />
+		</_field_block_64>
+	<_field_block_64 name="nodes">
+		<_field_string_id name="name" />
+		<_field_word_flags name="flags">
+			<Item Name="Generate Nav Mesh" />
+		</_field_word_flags>
+		<_field_short_block_index name="parent node" />
+		<_field_short_block_index name="next sibling node" />
+		<_field_short_block_index name="first child node" />
+		</_field_block_64>
+	<_field_pageable_resource_64 name="regions resource" />
+	<_field_array name="flags for nodes driving collision geo">
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		</_field_array>
+	</plugin>

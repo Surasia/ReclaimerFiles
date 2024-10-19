@@ -1,0 +1,177 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="spartan render model" />
+	<_field_tag_reference_64 name="elite render model" />
+	<_field_block_64 name="helmet selections">
+		<_field_string_id name="selection name" />
+		<_field_block_64 name="customized bits">
+			<_field_string_id name="region name" />
+			<_field_string_id name="permutation name" />
+			<_field_byte_flags name="flags">
+				<Item Name="male_only" />
+				<Item Name="female_only" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad5691" length="3" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="chest selections">
+		<_field_string_id name="selection name" />
+		<_field_block_64 name="customized bits">
+			<_field_string_id name="region name" />
+			<_field_string_id name="permutation name" />
+			<_field_byte_flags name="flags">
+				<Item Name="male_only" />
+				<Item Name="female_only" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad5691" length="3" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="elite selections">
+		<_field_string_id name="selection name" />
+		<_field_block_64 name="customized bits">
+			<_field_string_id name="region name" />
+			<_field_string_id name="permutation name" />
+			<_field_byte_flags name="flags">
+				<Item Name="male_only" />
+				<Item Name="female_only" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad5691" length="3" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="left shoulder">
+		<_field_string_id name="selection name" />
+		<_field_block_64 name="customized bits">
+			<_field_string_id name="region name" />
+			<_field_string_id name="permutation name" />
+			<_field_byte_flags name="flags">
+				<Item Name="male_only" />
+				<Item Name="female_only" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad5691" length="3" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="right shoulder">
+		<_field_string_id name="selection name" />
+		<_field_block_64 name="customized bits">
+			<_field_string_id name="region name" />
+			<_field_string_id name="permutation name" />
+			<_field_byte_flags name="flags">
+				<Item Name="male_only" />
+				<Item Name="female_only" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad5691" length="3" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="arms">
+		<_field_string_id name="selection name" />
+		<_field_block_64 name="customized bits">
+			<_field_string_id name="region name" />
+			<_field_string_id name="permutation name" />
+			<_field_byte_flags name="flags">
+				<Item Name="male_only" />
+				<Item Name="female_only" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad5691" length="3" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="legs">
+		<_field_string_id name="selection name" />
+		<_field_block_64 name="customized bits">
+			<_field_string_id name="region name" />
+			<_field_string_id name="permutation name" />
+			<_field_byte_flags name="flags">
+				<Item Name="male_only" />
+				<Item Name="female_only" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad5691" length="3" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="unused 5">
+		<_field_string_id name="selection name" />
+		<_field_block_64 name="customized bits">
+			<_field_string_id name="region name" />
+			<_field_string_id name="permutation name" />
+			<_field_byte_flags name="flags">
+				<Item Name="male_only" />
+				<Item Name="female_only" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad5691" length="3" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="spartan armor effect selections">
+		<_field_string_id name="selection name" />
+		<_field_block_64 name="customized bits">
+			<_field_string_id name="region name" />
+			<_field_string_id name="permutation name" />
+			<_field_byte_flags name="flags">
+				<Item Name="male_only" />
+				<Item Name="female_only" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad5691" length="3" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="elite armor effect selections">
+		<_field_string_id name="selection name" />
+		<_field_block_64 name="customized bits">
+			<_field_string_id name="region name" />
+			<_field_string_id name="permutation name" />
+			<_field_byte_flags name="flags">
+				<Item Name="male_only" />
+				<Item Name="female_only" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad5691" length="3" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="male spartan selections">
+		<_field_string_id name="region name" />
+		<_field_string_id name="permutation name" />
+		<_field_byte_flags name="flags">
+			<Item Name="male_only" />
+			<Item Name="female_only" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad5691" length="3" />
+		</_field_block_64>
+	<_field_block_64 name="female spartan selections">
+		<_field_string_id name="region name" />
+		<_field_string_id name="permutation name" />
+		<_field_byte_flags name="flags">
+			<Item Name="male_only" />
+			<Item Name="female_only" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad5691" length="3" />
+		</_field_block_64>
+	<_field_block_64 name="spartan model defaults">
+		<_field_string_id name="Default Theme Name" />
+		<_field_string_id name="Default variant id" />
+		<_field_string_id name="Default style id" />
+		<_field_string_id name="Title" />
+		<_field_string_id name="Description" />
+		<_field_tag_reference_64 name="Default RenderModelDefinition" />
+		<_field_long_string name="CMS Id" />
+		<_field_block_64 name="Permutation Regions">
+			<_field_string_id name="Title" />
+			<_field_string_id name="Description" />
+			<_field_long_integer name="CMS Customization Item Type" />
+			<_field_long_string name="CMS Path" />
+			<_field_block_64 name="Permutation Regions">
+				<_field_string_id name="Permutation Region" />
+				<_field_string_id name="Default Permutation Name" />
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="elite model defaults">
+		<_field_string_id name="region name" />
+		<_field_string_id name="permutation name" />
+		<_field_byte_flags name="flags">
+			<Item Name="male_only" />
+			<Item Name="female_only" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad5691" length="3" />
+		</_field_block_64>
+	</plugin>

@@ -1,0 +1,159 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_long_string name="name" />
+	<_field_real_vector_3d name="position" />
+	<_field_real_vector_2d name="terrain size" />
+	<_field_real name="terrain height" />
+	<_field_dword_integer name="Tile X Count" />
+	<_field_dword_integer name="Tile Y Count" />
+	<_field_block_64 name="Tiles">
+		<_field_tag_reference_64 name="Tile" />
+		</_field_block_64>
+	<_field_block_64 name="Shared Parameters">
+		<_field_struct name="Parameter">
+			<_field_string_id name="Name" />
+			<_field_long_enum name="Type">
+				<Item Name="None" />
+				<Item Name="Any" />
+				<Item Name="Boolean" />
+				<Item Name="Integer" />
+				<Item Name="Float" />
+				<Item Name="Float2" />
+				<Item Name="Float3" />
+				<Item Name="Float4" />
+				<Item Name="Material" />
+				<Item Name="MaterialPreset" />
+				<Item Name="RenderGraph" />
+				<Item Name="Buffer" />
+				<Item Name="Surface" />
+				<Item Name="DataBlob" />
+				<Item Name="Viewport" />
+				<Item Name="Rect" />
+				<Item Name="DrawParameters" />
+				<Item Name="DispatchParameters" />
+				<Item Name="SamplerStateView" />
+				<Item Name="TerrainChunk" />
+				<Item Name="DrawableList" />
+				<Item Name="TextureDataPath" />
+			</_field_long_enum>
+			<_field_long_integer name="Int" />
+			<_field_real name="Float" />
+			<_field_real_vector_3d name="Float3" />
+			<_field_tag_reference_64 name="Tag" />
+			<_field_data_64 name="DataPath" />
+			<_field_string_id name="String" />
+			</_field_struct>
+		</_field_block_64>
+	<_field_block_64 name="Source Texture Settings">
+		<_field_string_id name="Surface Id" />
+		<_field_dword_integer name="Texel Density" />
+		<_field_long_flags name="Flags">
+			<Item Name="Disabled" />
+			<Item Name="Can Edit" />
+		</_field_long_flags>
+		</_field_block_64>
+	<_field_block_64 name="Intermediate Texture Settings">
+		<_field_string_id name="Surface Id" />
+		<_field_dword_integer name="Texel Density" />
+		<_field_long_flags name="Flags">
+			<Item Name="Disabled" />
+			<Item Name="Can Edit" />
+		</_field_long_flags>
+		</_field_block_64>
+	<_field_tag_reference_64 name="Sculpt Graph" />
+	<_field_tag_reference_64 name="GPU Surfacing Graph" />
+	<_field_tag_reference_64 name="Render Material" />
+	<_field_tag_reference_64 name="Masks Composite Material" />
+	<_field_real name="Macro Color Near Distance" />
+	<_field_real name="Macro Color Far Distance" />
+	<_field_real name="Macro Color Near Opacity" />
+	<_field_real name="Macro Color Far Opacity" />
+	<_field_struct name="Micro Height Vertex Density">
+		<_field_custom name="Single Player" />
+		<_field_struct name="Single Player">
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen">
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen">
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen">
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_struct name="Micro Height Radius">
+		<_field_custom name="Single Player" />
+		<_field_struct name="Single Player">
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen">
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen">
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen">
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_struct name="Micro Height Mip Level">
+		<_field_long_integer name="Low" />
+		<_field_long_integer name="Medium" />
+		<_field_long_integer name="High" />
+		<_field_long_integer name="Ultra" />
+		<_field_real name="2 Player Splitscreen" />
+		<_field_real name="3 Player Splitscreen" />
+		<_field_real name="4 Player Splitscreen" />
+		</_field_struct>
+	<_field_real name="Micro Height Scale" />
+	<_field_long_flags name="Flags">
+		<Item Name="Enable Erosion" />
+	</_field_long_flags>
+	<_field_pad name="generated_pad544d" length="4" />
+	</plugin>

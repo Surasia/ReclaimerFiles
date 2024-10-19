@@ -1,0 +1,99 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_long_flags name="flags">
+		<Item Name="clang save both if both died" />
+		<Item Name="enable predictable rebound" />
+		<Item Name="enable damage acceleration with predictable rebound" />
+		<Item Name="use predictable collision pill" />
+		<Item Name="enable legacy pvp lunge distance calculation" />
+	</_field_long_flags>
+	<_field_char_enum name="head position calculation method">
+		<Item Name="from head marker" />
+		<Item Name="as offset from base position" />
+		<Item Name="sight position" />
+	</_field_char_enum>
+	<_field_char_enum name="head position calculation method (parented)">
+		<Item Name="from head marker" />
+		<Item Name="as offset from base position" />
+		<Item Name="sight position" />
+	</_field_char_enum>
+	<_field_pad name="generated_paded36" length="2" />
+	<_field_real name="melee death acceleration" />
+	<_field_real name="uber melee death acceleration" />
+	<_field_custom name="clang" />
+	<_field_explanation name="clang" />
+	<_field_explanation name="Network sensitive fields" />
+	<_field_real name="clang simultaneous death vitality threshold" />
+	<_field_custom name="" />
+	<_field_struct name="targeting">
+		<_field_custom name="targeting" />
+		<_field_angle_bounds name="yaw angles" />
+		<_field_angle_bounds name="yaw angles lunging" />
+		<_field_angle_bounds name="pitch angles" />
+		<_field_angle_bounds name="pitch angles lunging" />
+		<_field_angle name="ground pitch down max" />
+		<_field_explanation name="aim bending" />
+		<_field_angle name="aim bend yaw max speed" />
+		<_field_angle name="aim bend yaw max" />
+		<_field_angle name="aim bend yaw pitch speed" />
+		<_field_angle name="aim bend yaw pitch up max" />
+		<_field_angle name="aim bend yaw pitch down max" />
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_struct name="physics">
+		<_field_custom name="physics" />
+		<_field_real name="lunge maximum speed" />
+		<_field_real name="uber lunge maximum speed" />
+		<_field_real name="lunge acceleration time" />
+		<_field_real name="lunge deceleration time" />
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_custom name="default melee damage" />
+	<_field_block_64 name="default damage">
+		<_field_word_flags name="flags">
+			<Item Name="play lunge explosion on all melee attacks" />
+		</_field_word_flags>
+		<_field_pad name="generated_padd2d1" length="2" />
+		<_field_explanation name="melee damage parameters" />
+		<_field_real_euler_angles_2d name="damage pyramid angles" />
+		<_field_real name="damage pyramid depth" />
+		<_field_real name="damage pyramid depth when lunging" />
+		<_field_real name="maximum lunge range" />
+		<_field_real name="damage lunge explosive depth" />
+		<_field_real name="runtime damage lunge explosive fraction" />
+		<_field_tag_reference_64 name="melee damage" />
+		<_field_tag_reference_64 name="melee response" />
+		<_field_tag_reference_64 name="lunge melee damage" />
+		<_field_tag_reference_64 name="lunge melee response" />
+		<_field_tag_reference_64 name="empty melee damage" />
+		<_field_tag_reference_64 name="empty melee response" />
+		<_field_tag_reference_64 name="clang melee damage" />
+		<_field_tag_reference_64 name="clang melee response" />
+		<_field_tag_reference_64 name="clang melee against melee weapon damage" />
+		<_field_tag_reference_64 name="clang melee against melee weapon damage response" />
+		<_field_tag_reference_64 name="lunge melee explosive damage" />
+		<_field_tag_reference_64 name="melee attack effect" />
+		<_field_tag_reference_64 name="biped melee hit effect" />
+		</_field_block_64>
+	<_field_custom name="" />
+	<_field_custom name="predictable rebound" />
+	<_field_explanation name="predictable rebound" />
+	<_field_angle name="rebound angle" />
+	<_field_real name="rebound speed" />
+	<_field_real name="rebound ignore throttle time" />
+	<_field_custom name="" />
+	<_field_custom name="lunge raycast fallback" />
+	<_field_explanation name="lunge raycast fallback" />
+	<_field_angle name="lunge raycast fallback max angle" />
+	<_field_block_64 name="lunge raycast fallback markers">
+		<_field_string_id name="marker" />
+		</_field_block_64>
+	<_field_custom name="" />
+	<_field_pad name="generated_pad39eb" length="4" />
+	</plugin>

@@ -1,0 +1,18 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_long_integer name="number of games to qualify for CSR" />
+	<_field_block_64 name="skill ranking globals">
+		<_field_string_id name="display_name" />
+		<_field_long_integer name="icon_index" />
+		<_field_block_64 name="tier">
+			<_field_string_id name="display_name " />
+			<_field_long_integer name="beginning_points" />
+			</_field_block_64>
+		</_field_block_64>
+	</plugin>

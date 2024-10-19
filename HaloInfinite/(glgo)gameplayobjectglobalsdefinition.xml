@@ -1,0 +1,152 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Hologram Lighting">
+		<_field_custom name="HOLOGRAM FUNCTIONS" />
+		<_field_string_id name="Intensity" />
+		<_field_custom name="" />
+		<_field_custom name="KEY LIGHT FUNCTIONS" />
+		<_field_struct name="Key Light Functions">
+			<_field_string_id name="Intensity" />
+			<_field_string_id name="Forward" />
+			<_field_string_id name="Right" />
+			<_field_string_id name="Up" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="FILL LIGHT FUNCTIONS" />
+		<_field_struct name="Fill Light Functions">
+			<_field_string_id name="Intensity" />
+			<_field_string_id name="Forward" />
+			<_field_string_id name="Right" />
+			<_field_string_id name="Up" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="RIM LIGHT FUNCTIONS" />
+		<_field_struct name="Rim Light Functions">
+			<_field_string_id name="Intensity" />
+			<_field_string_id name="Forward" />
+			<_field_string_id name="Right" />
+			<_field_string_id name="Up" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="active camo">
+		<_field_real name="biped speed reference" />
+		<_field_real name="active camo ground vertical speed scalar" />
+		<_field_real name="active camo airborne vertical speed scalar" />
+		<_field_real name="vehicle speed reference" />
+		<_field_real_fraction name="camo value for game name" />
+		<_field_struct name="camo value to distortion">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_struct name="camo value to transparency">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_struct name="camo distortion texture strength">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_real_vector_2d name="camo distortion scale" />
+		<_field_real_vector_2d name="camo distortion translate speed" />
+		<_field_tag_reference_64 name="camo distortion texture" />
+		<_field_real name="camo depth bias max distance" />
+		<_field_struct name="camo depth bias function">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_block_64 name="camo levels">
+			<_field_real name="biped speed reference" />
+			<_field_real name="active camo ground vertical speed scalar" />
+			<_field_real name="active camo airborne vertical speed scalar" />
+			<_field_real name="landing protection speed threshold" />
+			<_field_real name="landing protection duration" />
+			<_field_real name="vehicle speed reference" />
+			<_field_real_fraction name="camo value for game name" />
+			<_field_struct name="camo value to distortion">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_struct name="camo value to transparency">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_struct name="camo distortion texture strength">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_real_vector_2d name="camo distortion scale" />
+			<_field_real_vector_2d name="camo distortion translate speed" />
+			<_field_tag_reference_64 name="camo distortion texture" />
+			<_field_real name="camo depth bias max distance" />
+			<_field_struct name="camo depth bias function">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_struct name="speed to maximum camo">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="shield boost">
+		<_field_explanation name="shield boosting" />
+		<_field_real name="shield boost decay" />
+		<_field_real name="shield boost recharge time" />
+		<_field_real name="shield boost stun time" />
+		</_field_block_64>
+	<_field_block_64 name="Item Toss">
+		<_field_custom name="Random Toss Angles" />
+		<_field_explanation name="Possible Toss Directions" />
+		<_field_explanation name="Radial Toss Direction" />
+		<_field_explanation name="Toss Pitch Angle" />
+		<_field_angle_bounds name="Pitch Angle" />
+		<_field_custom name="" />
+		<_field_custom name="Random Toss Speed" />
+		<_field_explanation name="Speed" />
+		<_field_real_bounds name="Speed" />
+		<_field_custom name="" />
+		</_field_block_64>
+	</plugin>

@@ -1,0 +1,39 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="entries">
+		<_field_string_id name="identifier" />
+		<_field_tag_reference_64 name="bitmap" />
+		<_field_short_integer name="bitmap index" />
+		<_field_pad name="generated_pade5bc" length="2" />
+		</_field_block_64>
+	<_field_block_64 name="multi actions">
+		<_field_explanation name="Multi actions" />
+		<_field_string_id name="identifier" />
+		<_field_string_id name="action 1" />
+		<_field_string_id name="action 2" />
+		<_field_string_id name="action 3" />
+		<_field_string_id name="action 4" />
+		<_field_explanation name="Invalid multi action flags" />
+		<_field_word_flags name="Invalidation flags">
+			<Item Name="Controller" />
+			<Item Name="Keyboard/Mouse" />
+			<Item Name="TextChat/PushToTalk on Enter" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad2033" length="2" />
+		</_field_block_64>
+	<_field_block_64 name="combined bitmaps">
+		<_field_explanation name="Combined bitmaps" />
+		<_field_string_id name="bitmap 1" />
+		<_field_string_id name="bitmap 2" />
+		<_field_string_id name="bitmap 3" />
+		<_field_string_id name="bitmap 4" />
+		<_field_string_id name="combined" />
+		</_field_block_64>
+	<_field_pad name="generated_pad39d8" length="4" />
+	</plugin>

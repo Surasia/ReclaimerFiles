@@ -1,0 +1,196 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_string_id name="Default representation" />
+	<_field_custom name="Player Representations" />
+	<_field_explanation name="Notes" />
+	<_field_block_64 name="@player representations">
+		<_field_string_id name="name" />
+		<_field_string_id name="first person interface name" />
+		<_field_string_id name="customization set" />
+		<_field_tag_reference_64 name="customization" />
+		<_field_byte_flags name="flags">
+			<Item Name="can use health packs" />
+			<Item Name="use teammate chatter dialogue" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad3e61" length="3" />
+		<_field_tag_reference_64 name="third person unit" />
+		<_field_string_id name="third person variant" />
+		<_field_block_64 name="additional third person variants">
+			<_field_string_id name="Variant" />
+			</_field_block_64>
+		<_field_tag_reference_64 name="frame override" />
+		<_field_long_block_index name="player information" />
+		<_field_tag_reference_64 name="hud screen reference" />
+		<_field_string_id name="hud transition event name" />
+		<_field_tag_reference_64 name="buddy teleport effects" />
+		<_field_tag_reference_64 name="first person hands model" />
+		<_field_tag_reference_64 name="generatedFirstPersonHandsModel" />
+		<_field_string_id name="first person hands variant" />
+		<_field_string_id name="first person body variant" />
+		<_field_block_64 name="hidden fpBody regions">
+			<_field_string_id name="hidden region" />
+			<_field_byte_flags name="flags">
+				<Item Name="visible in ICS" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad9af5" length="3" />
+			</_field_block_64>
+		<_field_string_id name="override default style id" />
+		<_field_tag_reference_64 name="bot reference" />
+		<_field_tag_reference_64 name="outline to use for enemy" />
+		<_field_tag_reference_64 name="non-occluded outline to use for enemy" />
+		<_field_tag_reference_64 name="outline to use when we need only characters" />
+		<_field_tag_reference_64 name="non-occluded outline to use when we need only characters" />
+		<_field_tag_reference_64 name="outline to use for enemy near reticle" />
+		<_field_tag_reference_64 name="outline to use for enemy flash acquire" />
+		<_field_tag_reference_64 name="outline to use for friendly" />
+		<_field_tag_reference_64 name="outline to use for friendly near reticle" />
+		<_field_tag_reference_64 name="non-occluded outline to use for friendly" />
+		<_field_tag_reference_64 name="occluded outline to use for friendly AI" />
+		<_field_tag_reference_64 name="non-occluded outline to use for friendly AI" />
+		<_field_tag_reference_64 name="outline to use when viewed by spectators" />
+		<_field_tag_reference_64 name="non-occluded outline to use when viewed by spectators" />
+		</_field_block_64>
+	<_field_custom name="" />
+	<_field_block_64 name="@player information">
+		<_field_string_id name="name" />
+		<_field_real name="walking speed" />
+		<_field_real name="run forward" />
+		<_field_real name="run backward" />
+		<_field_real name="run sideways" />
+		<_field_real name="run acceleration" />
+		<_field_real name="sneak forward" />
+		<_field_real name="sneak backward" />
+		<_field_real name="sneak sideways" />
+		<_field_real name="sneak acceleration" />
+		<_field_real name="downed forward" />
+		<_field_real name="downed backward" />
+		<_field_real name="downed sideways" />
+		<_field_real name="downed acceleration" />
+		<_field_real name="airborne acceleration" />
+		<_field_real_point_3d name="grenade origin" />
+		<_field_struct name="grenade aiming">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_real_bounds name="first person idle time" />
+		<_field_real_fraction name="first person skip fraction" />
+		<_field_real name="tracking detection locked decay time" />
+		<_field_real name="tracking detection locking decay time" />
+		</_field_block_64>
+	<_field_block_64 name="@player camera">
+		<_field_explanation name="Default camera values" />
+		<_field_real name="look velocity base (pitch)" />
+		<_field_real name="look velocity step (pitch)" />
+		<_field_real name="look velocity base (yaw)" />
+		<_field_real name="look velocity step (yaw)" />
+		<_field_real name="mouse input velocity scale" />
+		<_field_explanation name="Flying camera pitch values" />
+		<_field_array name="flying camera pitch values">
+			<_field_real name="Angular velocity" />
+			<_field_real name="Angular velocity" />
+			<_field_real name="Angular velocity" />
+			<_field_real name="Angular velocity" />
+			</_field_array>
+		<_field_explanation name="Flying camera yaw values" />
+		<_field_array name="flying camera yaw values">
+			<_field_real name="Angular velocity" />
+			<_field_real name="Angular velocity" />
+			<_field_real name="Angular velocity" />
+			<_field_real name="Angular velocity" />
+			</_field_array>
+		<_field_explanation name="Flying camera speed values" />
+		<_field_array name="flying camera speed values">
+			<_field_real name="Speed" />
+			<_field_real name="Speed" />
+			<_field_real name="Speed" />
+			<_field_real name="Speed" />
+			</_field_array>
+		<_field_explanation name="Flying camera thrust values" />
+		<_field_array name="flying camera thrust values">
+			<_field_real name="Thrust" />
+			<_field_real name="Thrust" />
+			<_field_real name="Thrust" />
+			</_field_array>
+		</_field_block_64>
+	<_field_block_64 name="@first person weapon">
+		<_field_explanation name="Body Render Max FOV" />
+		<_field_real name="body render max fov" />
+		</_field_block_64>
+	<_field_block_64 name="@predictable collisions">
+		<_field_explanation name="Predictable Collision" />
+		<_field_long_flags name="flags">
+			<Item Name="enable" />
+			<Item Name="include ai" />
+		</_field_long_flags>
+		<_field_real name="bounding sphere extrapolation time" />
+		<_field_real name="bounding sphere scalar" />
+		<_field_real name="linear correction velocity max" />
+		</_field_block_64>
+	<_field_struct name="participant malleable properties">
+		<_field_custom name="motion tracker normal range" />
+		<_field_struct name="motion tracker normal range">
+			<_field_real name="Base Value" />
+			<_field_real_bounds name="Value Bounds" />
+			</_field_struct>
+		<_field_custom name="motion tracker extended range" />
+		<_field_struct name="motion tracker extended range">
+			<_field_real name="Base Value" />
+			<_field_real_bounds name="Value Bounds" />
+			</_field_struct>
+		<_field_custom name="motion tracker vehicle range" />
+		<_field_struct name="motion tracker vehicle range">
+			<_field_real name="Base Value" />
+			<_field_real_bounds name="Value Bounds" />
+			</_field_struct>
+		<_field_custom name="motion tracker threshold speed (friendly)" />
+		<_field_struct name="motion tracker threshold speed (friendly)">
+			<_field_real name="Base Value" />
+			<_field_real_bounds name="Value Bounds" />
+			</_field_struct>
+		<_field_custom name="motion tracker threshold speed (enemy)" />
+		<_field_struct name="motion tracker threshold speed (enemy)">
+			<_field_real name="Base Value" />
+			<_field_real_bounds name="Value Bounds" />
+			</_field_struct>
+		<_field_custom name="motion tracker visibility scalar" />
+		<_field_struct name="motion tracker visibility scalar">
+			<_field_real name="Base Value" />
+			<_field_real_bounds name="Value Bounds" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="inventory limits">
+		<_field_byte_integer name="maximum allowed weapons per player" />
+		</_field_struct>
+	<_field_struct name="interaction priorities">
+		<_field_explanation name="Interaction Priorities" />
+		<_field_byte_integer name="None" />
+		<_field_byte_integer name="WeaponPickUpDisabled" />
+		<_field_byte_integer name="DeviceInteractDenied" />
+		<_field_byte_integer name="BannedVehicleEntrance" />
+		<_field_byte_integer name="PickUpGrenade" />
+		<_field_byte_integer name="PickUpWeapon" />
+		<_field_byte_integer name="PickUpAbility" />
+		<_field_byte_integer name="PickUpEquipment" />
+		<_field_byte_integer name="PickUpDispenserWeapon" />
+		<_field_byte_integer name="TouchDevice" />
+		<_field_byte_integer name="EvictFromVehicle" />
+		<_field_byte_integer name="EnterVehicle" />
+		<_field_byte_integer name="TradeWeapon" />
+		<_field_byte_integer name="BoardVehicle" />
+		<_field_byte_integer name="PickUpMultiplayerObject" />
+		<_field_byte_integer name="FlipVehicle" />
+		<_field_byte_integer name="HighPriorityDevice" />
+		<_field_byte_integer name="LookingAt" />
+		</_field_struct>
+	<_field_pad name="generated_pad9d6c" length="5" />
+	</plugin>

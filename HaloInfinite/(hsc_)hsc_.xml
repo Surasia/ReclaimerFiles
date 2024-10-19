@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			<_end_of_struct name="" />
+		</_field_struct>
+		<_end_of_struct name="" />
+	</_field_struct>
+	<_field_int64_integer name="hash" />
+	<_field_byte_flags name="sourceDirectiveFlags">
+		<Item Name="Pre Process" />
+		<Item Name="Object Script" />
+		<Item Name="Debug" />
+	</_field_byte_flags>
+	<_field_struct name="objectScriptDefinition">
+		<_field_long_string name="className" />
+		<_field_long_string name="parentName" />
+		<_end_of_struct name="" />
+	</_field_struct>
+	<_field_pad name="generated_pade272" length="3" />
+	<_field_block_64 name="references with variant">
+		<_field_tag_reference_64 name="reference" />
+		<_field_string_id name="load variant" />
+		<_field_int64_integer name="name hash" />
+		<_end_of_struct name="" />
+	</_field_block_64>
+	<_field_block_64 name="weak references with variant">
+		<_field_tag_reference_64 name="reference" />
+		<_field_string_id name="load variant" />
+		<_field_int64_integer name="name hash" />
+		<_end_of_struct name="" />
+	</_field_block_64>
+	<_field_block_64 name="server remotes">
+		<_field_data_64 name="function name" />
+		<_end_of_struct name="" />
+	</_field_block_64>
+	<_field_block_64 name="client remotes">
+		<_field_data_64 name="function name" />
+		<_end_of_struct name="" />
+	</_field_block_64>
+	<_field_block_64 name="hstructs">
+		<_field_long_string name="name" />
+		<_field_block_64 name="Fields">
+			<_field_long_string name="name" />
+			<_field_long_enum name="Type">
+				<Item Name="Nil" />
+				<Item Name="Bool" />
+				<Item Name="LightUserData" />
+				<Item Name="Number" />
+				<Item Name="String" />
+				<Item Name="Table" />
+				<Item Name="Function" />
+				<Item Name="UserData" />
+				<Item Name="Thread" />
+				<Item Name="IFunction" />
+				<Item Name="CFunction" />
+				<Item Name="UI64" />
+				<Item Name="Struct" />
+				<Item Name="Tag" />
+			</_field_long_enum>
+			<_field_long_string name="TypeName" />
+			<_field_long_string name="PrettyName" />
+			<_field_long_string name="Tooltip" />
+			<_field_long_string name="Group" />
+			<_field_long_enum name="SourceType">
+				<Item Name="Nil" />
+				<Item Name="AllKits" />
+				<Item Name="UserDefinedStrings" />
+				<Item Name="AllChildren" />
+			</_field_long_enum>
+			<_field_block_64 name="UserDefinedStrings">
+				<_field_long_string name="name" />
+				<_end_of_struct name="" />
+			</_field_block_64>
+			<_field_block_64 name="AllowedExtensions">
+				<_field_string name="name" />
+				<_end_of_struct name="" />
+			</_field_block_64>
+			<_field_real name="Min" />
+			<_field_real name="Max" />
+			<_field_real name="Step" />
+			<_field_long_string name="ForgeTagListId" />
+			<_end_of_struct name="" />
+		</_field_block_64>
+		<_end_of_struct name="" />
+	</_field_block_64>
+	<_field_block_64 name="Postprocess Error Messages">
+		<_field_long_string name="error message" />
+		<_end_of_struct name="" />
+	</_field_block_64>
+	<_field_struct name="m_byteCode">
+		<_field_data_64 name="server" />
+		<_field_data_64 name="client" />
+		<_end_of_struct name="" />
+	</_field_struct>
+	<_field_pageable_resource_64 name="m_debugResource" />
+	<_field_pad name="generated_pad2f27" length="4" />
+	<_end_of_struct name="" />
+</plugin>

@@ -1,0 +1,65 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="camera impulse" />
+	<_field_struct name="camera impulse">
+		<_field_real name="impulse duration" />
+		<_field_custom name="Mapping function" />
+		<_field_struct name="mapping">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_angle name="rotation" />
+		<_field_real name="pushback" />
+		<_field_real_bounds name="jitter" />
+		</_field_struct>
+	<_field_explanation name="camera shake" />
+	<_field_struct name="camera shake">
+		<_field_real name="shake duration" />
+		<_field_explanation name="procedural camera shake" />
+		<_field_custom name="Mapping function" />
+		<_field_struct name="mapping">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_real name="random translation" />
+		<_field_angle name="random rotation" />
+		<_field_real name="wobble function period" />
+		<_field_real_fraction name="wobble weight" />
+		<_field_short_enum name="wobble function">
+			<Item Name="one" />
+			<Item Name="zero" />
+			<Item Name="cosine" />
+			<Item Name="cosine (variable period)" />
+			<Item Name="diagonal wave" />
+			<Item Name="diagonal wave (variable period)" />
+			<Item Name="slide" />
+			<Item Name="slide (variable period)" />
+			<Item Name="noise" />
+			<Item Name="jitter" />
+			<Item Name="wander" />
+			<Item Name="spark" />
+		</_field_short_enum>
+		<_field_explanation name="animated camera shake" />
+		<_field_char_enum name="animated shake playback">
+			<Item Name="looping" />
+			<Item Name="frame ratio" />
+		</_field_char_enum>
+		<_field_char_enum name="animated shake weight">
+			<Item Name="effect scale" />
+			<Item Name="full" />
+		</_field_char_enum>
+		<_field_tag_reference_64 name="animation graph" />
+		<_field_string_id name="animation name" />
+		<_field_real name="zoom penalty linear " />
+		<_field_real name="zoom penalty squareroot " />
+		</_field_struct>
+	<_field_pad name="generated_padd4ac" length="4" />
+	</plugin>

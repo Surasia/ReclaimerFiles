@@ -1,0 +1,36 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="linear acceleartions">
+		<_field_real name="acceleration range" />
+		<_field_real name="inverse acceleration range" />
+		<_field_real name="world acceleration scale" />
+		<_field_explanation name="damping" />
+		<_field_struct name="spring damping">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_real name="velocity domain" />
+		<_field_struct name="spring acceleration">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		</_field_block_64>
+	<_field_short_block_index name="x-axis" />
+	<_field_short_block_index name="y-axis" />
+	<_field_short_block_index name="z-axis" />
+	<_field_pad name="generated_pad2bda" length="6" />
+	</plugin>

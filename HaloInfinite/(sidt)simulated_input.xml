@@ -1,0 +1,81 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="Simulated Input (SI)" />
+	<_field_explanation name="Impulse" />
+	<_field_explanation name="Scalers" />
+	<_field_explanation name="Screen Space angles" />
+	<_field_explanation name="Move" />
+	<_field_struct name="move">
+		<_field_long_flags name="flags">
+			<Item Name="ignore base scaler" />
+			<Item Name="ignore area control falloff" />
+			<Item Name="ignore elapsed time function scaler" />
+			<Item Name="ignore zoom scaler" />
+			<Item Name="ignore tick_delta_secs scaler" />
+		</_field_long_flags>
+		<_field_short_enum name="response type">
+			<Item Name="aim vector" />
+			<Item Name="hit vector" />
+			<Item Name="inverse hit vector" />
+			<Item Name="attacker origin to victim origin" />
+			<Item Name="victim origin to attacker origin" />
+		</_field_short_enum>
+		<_field_short_enum name="mapping type">
+			<Item Name="top down" />
+			<Item Name="screen space" />
+		</_field_short_enum>
+		<_field_real_bounds name="angle" />
+		<_field_custom name="Mapping" />
+		<_field_struct name="Mapping">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_real name="duration" />
+		<_field_real name="inverse duration" />
+		<_field_real name="inverse random length" />
+		<_field_real_bounds name="inverse random angle" />
+		<_field_real name="linear zoom penalty" />
+		<_field_real name="square root zoom penalty" />
+		</_field_struct>
+	<_field_explanation name="Look" />
+	<_field_struct name="look">
+		<_field_long_flags name="flags">
+			<Item Name="ignore base scaler" />
+			<Item Name="ignore area control falloff" />
+			<Item Name="ignore elapsed time function scaler" />
+			<Item Name="ignore zoom scaler" />
+			<Item Name="ignore tick_delta_secs scaler" />
+		</_field_long_flags>
+		<_field_short_enum name="response type">
+			<Item Name="aim vector" />
+			<Item Name="hit vector" />
+			<Item Name="inverse hit vector" />
+			<Item Name="attacker origin to victim origin" />
+			<Item Name="victim origin to attacker origin" />
+		</_field_short_enum>
+		<_field_short_enum name="mapping type">
+			<Item Name="top down" />
+			<Item Name="screen space" />
+		</_field_short_enum>
+		<_field_real_bounds name="angle" />
+		<_field_custom name="Mapping" />
+		<_field_struct name="Mapping">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_real name="duration" />
+		<_field_real name="inverse duration" />
+		<_field_real name="inverse random length" />
+		<_field_real_bounds name="inverse random angle" />
+		<_field_real name="linear zoom penalty" />
+		<_field_real name="square root zoom penalty" />
+		</_field_struct>
+	</plugin>

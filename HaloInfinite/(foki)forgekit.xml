@@ -1,0 +1,293 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="Original Kit" />
+	<_field_block_64 name="Kit Groups">
+		<_field_string_id name="Name" />
+		<_field_string_id name="Parent Name" />
+		<_field_long_integer name="Group Index" />
+		<_field_long_integer name="Parent Group Index" />
+		<_field_tag_reference_64 name="Script Tag" />
+		<_field_struct name="Scriptable Properties">
+			<_field_block_64 name="bool properties">
+				<_field_long_string name="name" />
+				<_field_byte_integer name="Value" />
+				</_field_block_64>
+			<_field_block_64 name="numeric properties">
+				<_field_long_string name="name" />
+				<_field_real name="Value" />
+				</_field_block_64>
+			<_field_block_64 name="string properties">
+				<_field_long_string name="name" />
+				<_field_long_string name="Value" />
+				</_field_block_64>
+			<_field_block_64 name="tag properties">
+				<_field_long_string name="name" />
+				<_field_tag_reference_64 name="Value" />
+				<_field_string_id name="load variant" />
+				</_field_block_64>
+			<_field_block_64 name="color properties">
+				<_field_long_string name="name" />
+				<_field_real_argb_color name="Value" />
+				</_field_block_64>
+			<_field_block_64 name="vector properties">
+				<_field_long_string name="name" />
+				<_field_real_vector_3d name="Value" />
+				</_field_block_64>
+			</_field_struct>
+		<_field_block_64 name="Objects">
+			<_field_string_id name="Name" />
+			<_field_tag_reference_64 name="Object" />
+			<_field_string_id name="Asset Variant Name" />
+			<_field_tag_reference_64 name="Asset Geo" />
+			<_field_tag_reference_64 name="Asset Collision Geo" />
+			<_field_tag_reference_64 name="Material Palette" />
+			<_field_real_point_3d name="Position" />
+			<_field_real_euler_angles_3d name="Rotation" />
+			<_field_real_vector_3d name="Scale" />
+			<_field_block_64 name="Scenario Data">
+				<_field_char_enum name="Object Type">
+					<Item Name="biped" />
+					<Item Name="vehicle" />
+					<Item Name="weapon" />
+					<Item Name="equipment" />
+					<Item Name="terminal" />
+					<Item Name="projectile" />
+					<Item Name="scenery" />
+					<Item Name="machine" />
+					<Item Name="control" />
+					<Item Name="dispenser" />
+					<Item Name="crate" />
+					<Item Name="creature" />
+					<Item Name="giant" />
+					<Item Name="effect_scenery" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad6a37" length="3" />
+				<_field_block_64 name="Multiplayer Properties">
+					<_field_explanation name="Multiplayer Data" />
+					<_field_string_id name="megalo label" />
+					<_field_string_id name="megalo label 2" />
+					<_field_string_id name="megalo label 3" />
+					<_field_string_id name="megalo label 4" />
+					<_field_char_enum name="game engine symmetric placement">
+						<Item Name="ignore" />
+						<Item Name="symmetric" />
+						<Item Name="asymmetric" />
+					</_field_char_enum>
+					<_field_char_enum name="owner team">
+						<Item Name="Defender" />
+						<Item Name="Attacker" />
+						<Item Name="ThirdParty" />
+						<Item Name="FourthParty" />
+						<Item Name="FifthParty" />
+						<Item Name="SixthParty" />
+						<Item Name="SeventhParty" />
+						<Item Name="EighthParty" />
+						<Item Name="Neutral" />
+					</_field_char_enum>
+					<_field_char_enum name="owner squad">
+						<Item Name="None" />
+						<Item Name="Alpha" />
+						<Item Name="Bravo" />
+						<Item Name="Charlie" />
+						<Item Name="Delta" />
+						<Item Name="Echo" />
+						<Item Name="Foxtrot" />
+						<Item Name="Gamma" />
+						<Item Name="Hotel" />
+					</_field_char_enum>
+					<_field_pad name="generated_pad2291" length="1" />
+					<_field_word_flags name="spawn flags">
+						<Item Name="unique spawn" />
+						<Item Name="not initially placed" />
+						<Item Name="Deprecated" />
+						<Item Name="is shortcut object" />
+						<Item Name="can spawn on bipeds" />
+						<Item Name="does not respawn" />
+						<Item Name="abandonment timer always active" />
+						<Item Name="override candy monitor defaults" />
+						<Item Name="tracked by candy monitor" />
+					</_field_word_flags>
+					<_field_char_enum name="teleporter channel">
+						<Item Name="alpha" />
+						<Item Name="bravo" />
+						<Item Name="charlie" />
+						<Item Name="delta" />
+						<Item Name="echo" />
+						<Item Name="foxtrot" />
+						<Item Name="golf" />
+						<Item Name="hotel" />
+						<Item Name="india" />
+						<Item Name="juliet" />
+						<Item Name="kilo" />
+						<Item Name="lima" />
+						<Item Name="mike" />
+						<Item Name="november" />
+						<Item Name="oscar" />
+						<Item Name="papa" />
+						<Item Name="quebec" />
+						<Item Name="romeo" />
+						<Item Name="sierra" />
+						<Item Name="tango" />
+						<Item Name="uniform" />
+						<Item Name="victor" />
+						<Item Name="whiskey" />
+						<Item Name="xray" />
+						<Item Name="yankee" />
+						<Item Name="zulu" />
+					</_field_char_enum>
+					<_field_byte_flags name="teleporter passability">
+						<Item Name="disallow players" />
+						<Item Name="allow light land vehicles" />
+						<Item Name="allow heavy land vehicles" />
+						<Item Name="allow flying vehicles" />
+						<Item Name="allow projectiles" />
+					</_field_byte_flags>
+					<_field_char_enum name="trait zone channel">
+						<Item Name="alpha" />
+						<Item Name="bravo" />
+						<Item Name="charlie" />
+						<Item Name="delta" />
+						<Item Name="echo" />
+						<Item Name="foxtrot" />
+						<Item Name="golf" />
+						<Item Name="hotel" />
+						<Item Name="india" />
+						<Item Name="juliet" />
+						<Item Name="kilo" />
+						<Item Name="lima" />
+						<Item Name="mike" />
+						<Item Name="november" />
+						<Item Name="oscar" />
+						<Item Name="papa" />
+						<Item Name="quebec" />
+						<Item Name="romeo" />
+						<Item Name="sierra" />
+						<Item Name="tango" />
+						<Item Name="uniform" />
+						<Item Name="victor" />
+						<Item Name="whiskey" />
+						<Item Name="xray" />
+						<Item Name="yankee" />
+						<Item Name="zulu" />
+					</_field_char_enum>
+					<_field_pad name="generated_pad08b0" length="3" />
+					<_field_real name="trait zone seconds to apply" />
+					<_field_real name="phantomVelocityMultiplier" />
+					<_field_real name="phantomAccelerationMultiplier" />
+					<_field_real name="boundary width or radius" />
+					<_field_real name="boundary box length" />
+					<_field_real name="boundary positive height" />
+					<_field_real name="boundary negative height" />
+					<_field_char_enum name="boundary shape">
+						<Item Name="unused" />
+						<Item Name="sphere" />
+						<Item Name="cylinder" />
+						<Item Name="box" />
+					</_field_char_enum>
+					<_field_pad name="boundary pad" length="1" />
+					<_field_pad name="boundary pad2" length="2" />
+					<_field_short_integer name="initial spawn delay" />
+					<_field_short_integer name="spawn time" />
+					<_field_short_integer name="abandonment time" />
+					<_field_pad name="generated_padbbfb" length="2" />
+					<_field_string_id name="location name" />
+					<_field_block_64 name="spline">
+						<_field_real_point_3d name="position" />
+						<_field_real_euler_angles_3d name="rotation" />
+						<_field_real name="scale" />
+						</_field_block_64>
+					<_field_block_64 name="SpawnPointProperties">
+						<_field_byte_flags name="Spawn Point Flags">
+							<Item Name="Never Spawn In Vehicle" />
+						</_field_byte_flags>
+						</_field_block_64>
+					<_field_real name="respawn weight" />
+					<_field_struct name="warzone objective definition membership">
+						<_field_short_block_index name="warzone objective definition" />
+						<_field_string name="warzone objective label" />
+						</_field_struct>
+					<_field_byte_integer name="spawn order" />
+					<_field_byte_flags name="Multiplayer Property Flags">
+						<Item Name="Deny Spawn Points" />
+						<Item Name="Apply Spawn Zone Properties To Opposing Teams" />
+						<Item Name="Apply Spawn Zone Properties To Initial Spawn" />
+						<Item Name="WeaponPad Initially Disabled" />
+						<Item Name="Ignore Spawn Zone Falloff Function" />
+					</_field_byte_flags>
+					<_field_tag_reference_64 name="WeaponPad object to spawn" />
+					<_field_tag_reference_64 name="WeaponPad object to spawn configuration" />
+					<_field_real name="WeaponPad respawn time" />
+					<_field_block_64 name="terminal redeemable objects">
+						<_field_tag_reference_64 name="redeemable object" />
+						<_field_long_integer name="level requirement" />
+						</_field_block_64>
+					<_field_byte_flags name="MapZones">
+						<Item Name="Zero" />
+						<Item Name="One" />
+						<Item Name="Two" />
+						<Item Name="Three" />
+						<Item Name="Four" />
+						<Item Name="Five" />
+						<Item Name="Six" />
+						<Item Name="Seven" />
+					</_field_byte_flags>
+					<_field_byte_flags name="MapZoneConfigurations">
+						<Item Name="Alpha" />
+						<Item Name="Bravo" />
+						<Item Name="Charlie" />
+						<Item Name="Delta" />
+						<Item Name="Echo" />
+						<Item Name="Foxtrot" />
+						<Item Name="Golf" />
+						<Item Name="Hotel" />
+					</_field_byte_flags>
+					<_field_pad name="generated_pad3c72" length="2" />
+					</_field_block_64>
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="Sound Placements">
+			<_field_string_id name="name" />
+			<_field_long_integer name="guid" />
+			<_field_real_vector_3d name="position" />
+			<_field_real_euler_angles_3d name="facing" />
+			<_field_byte_flags name="placement flags">
+				<Item Name="Subtract" />
+				<Item Name="On all bsps" />
+			</_field_byte_flags>
+			<_field_byte_flags name="flags">
+				<Item Name="Don't create automatically" />
+				<Item Name="Movement radius controls loop start stop" />
+				<Item Name="Tag Processed" />
+			</_field_byte_flags>
+			<_field_pad name="generated_paddbf0" length="2" />
+			<_field_long_block_index name="editor folder" />
+			<_field_tag_reference_64 name="looping sound" />
+			<_field_block_64 name="shape override">
+				<_field_real name="radius" />
+				</_field_block_64>
+			<_field_block_64 name="spline">
+				<_field_real_vector_3d name="position" />
+				</_field_block_64>
+			<_field_block_64 name="EditorMetadata">
+				<_field_long_string name="folder name" />
+				<_field_real_point_3d name="local space pivot point position" />
+				</_field_block_64>
+			<_field_string_id name="moduleId" />
+			<_field_string_id name="Movement RTPC name" />
+			<_field_real name="movement detection radius" />
+			<_field_real name="Movement distance scaling factor" />
+			<_field_struct name="BspMapRuntimeRefCounter">
+				<_field_short_integer name="Bsp Ref Count" />
+				<_field_short_integer name="Layer Ref Count" />
+				</_field_struct>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_long_integer name="Child Object Count" />
+	<_field_tag_reference_64 name="Menu Item Definitions" />
+	</plugin>

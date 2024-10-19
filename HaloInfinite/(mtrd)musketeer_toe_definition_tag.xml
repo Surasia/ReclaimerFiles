@@ -1,0 +1,143 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Musketeer Teams">
+		<_field_block_64 name="Musketeer">
+			<_field_tag_reference_64 name="character" />
+			</_field_block_64>
+		<_field_block_64 name="Difficulty Tunings">
+			<_field_block_64 name="Tuning Sets">
+				<_field_long_enum name="Type">
+					<Item Name="Target visible to any player" />
+					<Item Name="Actor gunning for any player" />
+					<Item Name="Actor following order" />
+					<Item Name="Musketeer" />
+					<Item Name="Actor visible to any player" />
+					<Item Name="Actor not visible to any player" />
+					<Item Name="Moving to revive Player" />
+					<Item Name="Moving to revive Ai" />
+					<Item Name="Reviving Player" />
+					<Item Name="Reviving Ai" />
+				</_field_long_enum>
+				<_field_explanation name="health" />
+				<_field_real name="SCALE enemy damage" />
+				<_field_real name="MIN enemy damage" />
+				<_field_real name="SCALE enemy vitality" />
+				<_field_real name="MIN enemy vitality" />
+				<_field_real name="SCALE enemy shield" />
+				<_field_real name="MIN enemy shield" />
+				<_field_real name="SCALE enemy recharge" />
+				<_field_real name="MIN enemy recharge" />
+				<_field_real name="SCALE friend damage" />
+				<_field_real name="MIN friend damage" />
+				<_field_real name="SCALE friend vitality" />
+				<_field_real name="MIN friend vitality" />
+				<_field_real name="SCALE friend shield" />
+				<_field_real name="MIN friend shield" />
+				<_field_real name="SCALE friend recharge" />
+				<_field_real name="MIN friend recharge" />
+				<_field_pad name="pad0" length="16" />
+				<_field_explanation name="ranged fire" />
+				<_field_real name="SCALE rate of fire" />
+				<_field_real name="MIN rate of fire" />
+				<_field_real name="SCALE projectile error" />
+				<_field_real name="MIN projectile error" />
+				<_field_real name="SCALE burst error" />
+				<_field_real name="MIN burst error" />
+				<_field_real name="SCALE new target delay" />
+				<_field_real name="MIN new target delay" />
+				<_field_real name="SCALE burst separation" />
+				<_field_real name="MIN burst separation" />
+				<_field_real name="SCALE target tracking" />
+				<_field_real name="MIN target tracking" />
+				<_field_real name="SCALE target leading" />
+				<_field_real name="MIN target leading" />
+				<_field_real name="SCALE overcharge chance" />
+				<_field_real name="MIN overcharge chance" />
+				<_field_real name="SCALE special fire delay" />
+				<_field_real name="MIN special fire delay" />
+				<_field_real name="SCALE guidance vs player" />
+				<_field_real name="MIN guidance vs player" />
+				<_field_real name="SCALE melee delay base" />
+				<_field_real name="MIN melee delay base" />
+				<_field_real name="SCALE melee delay scale" />
+				<_field_real name="MIN melee delay scale" />
+				<_field_pad name="pad1" length="8" />
+				<_field_explanation name="grenades" />
+				<_field_real name="SCALE grenade chance scale" />
+				<_field_real name="MIN grenade chance scale" />
+				<_field_real name="SCALE grenade timer scale" />
+				<_field_real name="MIN grenade timer scale" />
+				<_field_real name="SCALE grenade detonation timer scale" />
+				<_field_real name="MIN grenade detonation timer scale" />
+				<_field_real name="SCALE grenade arming timer scale" />
+				<_field_real name="MIN grenade arming timer scale" />
+				<_field_real name="SCALE grenade velocity scale" />
+				<_field_real name="MIN grenade velocity scale" />
+				<_field_explanation name="placement" />
+				<_field_real name="SCALE major upgrade (normal)" />
+				<_field_real name="MIN major upgrade (normal)" />
+				<_field_real name="SCALE major upgrade (few)" />
+				<_field_real name="MIN major upgrade (few)" />
+				<_field_real name="SCALE major upgrade (many)" />
+				<_field_real name="MIN major upgrade (many)" />
+				<_field_explanation name="vehicles" />
+				<_field_real name="SCALE player vehicle ram chance" />
+				<_field_real name="MIN player vehicle ram chance" />
+				<_field_real name="SCALE trick dodge chance scale" />
+				<_field_real name="MIN trick dodge chance scale" />
+				<_field_real name="SCALE vehicle boarding chance" />
+				<_field_real name="MIN vehicle boarding chance" />
+				<_field_explanation name="cover" />
+				<_field_real name="SCALE hide time" />
+				<_field_real name="MIN hide time" />
+				<_field_real name="SCALE shield fraction hide" />
+				<_field_real name="MIN shield fraction hide" />
+				<_field_real name="SCALE cover vitality threshold" />
+				<_field_real name="MIN cover vitality threshold" />
+				<_field_real name="SCALE bunker open duration" />
+				<_field_real name="MIN bunker open duration" />
+				<_field_real name="SCALE bunker closed duration" />
+				<_field_real name="MIN bunker closed duration" />
+				<_field_pad name="pad2" length="8" />
+				<_field_explanation name="global kung fu" />
+				<_field_real name="SCALE max attackers" />
+				<_field_real name="MIN max attackers" />
+				<_field_explanation name="threat tokens" />
+				<_field_real name="SCALE max high tokens" />
+				<_field_real name="MIN max high tokens" />
+				<_field_real name="SCALE max low tokens" />
+				<_field_real name="MIN max low tokens" />
+				<_field_real name="SCALE max engagement tokens" />
+				<_field_real name="MIN max engagement tokens" />
+				<_field_explanation name="grenade tokens" />
+				<_field_real name="SCALE max grenade tokens" />
+				<_field_real name="MIN max grenade tokens" />
+				<_field_real name="SCALE min grenade tokens" />
+				<_field_real name="MIN min grenade tokens" />
+				<_field_real name="SCALE grenade token threshold" />
+				<_field_real name="MIN grenade token threshold" />
+				<_field_real name="SCALE grenade token cooldown" />
+				<_field_real name="MIN grenade token cooldown" />
+				<_field_explanation name="effectiveness tokens" />
+				<_field_real name="SCALE max effectiveness tokens" />
+				<_field_real name="MIN max effectiveness tokens" />
+				<_field_explanation name="weapon fidget" />
+				<_field_real name="SCALE weapon fidget chance per second" />
+				<_field_real name="MIN weapon fidget chance per second" />
+				<_field_explanation name="Damage Scaling" />
+				<_field_real name="SCALE Damage received from enemy AI" />
+				<_field_real name="MIN Damage received from enemy AI" />
+				</_field_block_64>
+			<_field_explanation name="clamps" />
+			<_field_real name="minimum value for starting accuracy" />
+			<_field_real name="minimum value for ending accuracy" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_pad name="generated_pad4122" length="4" />
+	</plugin>

@@ -1,0 +1,287 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Curves 1D">
+		<_field_string_id name="Name" />
+		<_field_struct name="Definition">
+			<_field_block_64 name="control points">
+				<_field_real name="value" />
+				<_field_real name="tangent in" />
+				<_field_real name="tangent out" />
+				<_field_real name="curviness" />
+				<_field_char_enum name="segment type">
+					<Item Name="Spline" />
+					<Item Name="Linear" />
+					<Item Name="Stepped" />
+					<Item Name="SteppedNext" />
+				</_field_char_enum>
+				<_field_char_enum name="tangent mode">
+					<Item Name="AutoStraight" />
+					<Item Name="UserStraight" />
+					<Item Name="UserBroken" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad7103" length="2" />
+				</_field_block_64>
+			</_field_struct>
+		<_field_block_64 name="Metadata">
+			<_field_real name="input" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Curves 2D">
+		<_field_string_id name="Name" />
+		<_field_struct name="Definition">
+			<_field_block_64 name="control points">
+				<_field_real_vector_2d name="value" />
+				<_field_real_vector_2d name="tangent in" />
+				<_field_real_vector_2d name="tangent out" />
+				<_field_real name="curviness" />
+				<_field_char_enum name="segment type x">
+					<Item Name="Spline" />
+					<Item Name="Linear" />
+					<Item Name="Stepped" />
+					<Item Name="SteppedNext" />
+				</_field_char_enum>
+				<_field_char_enum name="segment type y">
+					<Item Name="Spline" />
+					<Item Name="Linear" />
+					<Item Name="Stepped" />
+					<Item Name="SteppedNext" />
+				</_field_char_enum>
+				<_field_char_enum name="tangent mode x">
+					<Item Name="AutoStraight" />
+					<Item Name="UserStraight" />
+					<Item Name="UserBroken" />
+				</_field_char_enum>
+				<_field_char_enum name="tangent mode y">
+					<Item Name="AutoStraight" />
+					<Item Name="UserStraight" />
+					<Item Name="UserBroken" />
+				</_field_char_enum>
+				</_field_block_64>
+			</_field_struct>
+		<_field_block_64 name="Metadata">
+			<_field_real name="input" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Curves 3D">
+		<_field_string_id name="Name" />
+		<_field_struct name="Definition">
+			<_field_block_64 name="control points">
+				<_field_real_vector_3d name="value" />
+				<_field_real_vector_3d name="tangent in" />
+				<_field_real_vector_3d name="tangent out" />
+				<_field_real name="curviness" />
+				<_field_char_enum name="segment type x">
+					<Item Name="Spline" />
+					<Item Name="Linear" />
+					<Item Name="Stepped" />
+					<Item Name="SteppedNext" />
+				</_field_char_enum>
+				<_field_char_enum name="segment type y">
+					<Item Name="Spline" />
+					<Item Name="Linear" />
+					<Item Name="Stepped" />
+					<Item Name="SteppedNext" />
+				</_field_char_enum>
+				<_field_char_enum name="segment type z">
+					<Item Name="Spline" />
+					<Item Name="Linear" />
+					<Item Name="Stepped" />
+					<Item Name="SteppedNext" />
+				</_field_char_enum>
+				<_field_char_enum name="tangent mode x">
+					<Item Name="AutoStraight" />
+					<Item Name="UserStraight" />
+					<Item Name="UserBroken" />
+				</_field_char_enum>
+				<_field_char_enum name="tangent mode y">
+					<Item Name="AutoStraight" />
+					<Item Name="UserStraight" />
+					<Item Name="UserBroken" />
+				</_field_char_enum>
+				<_field_char_enum name="tangent mode z">
+					<Item Name="AutoStraight" />
+					<Item Name="UserStraight" />
+					<Item Name="UserBroken" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad30cd" length="2" />
+				<_field_block_64 name="pointMetadata">
+					<_field_block_64 name="spline road metadata">
+						<_field_real name="width" />
+						<_field_real name="opacity" />
+						<_field_real name="falloffLeft" />
+						<_field_real name="falloffRight" />
+						<_field_real name="bank" />
+						</_field_block_64>
+					<_field_block_64 name="road decal metadata">
+						<_field_block_64 name="Road Decal Textures">
+							<_field_tag_reference_64 name="Reference" />
+							</_field_block_64>
+						<_field_real_vector_2d name="Road Decal Scale" />
+						<_field_real_vector_2d name="Road Decal Offset" />
+						<_field_real name="Road Decal Tile Repeat Count" />
+						<_field_real name="Road Decal Height Strength" />
+						<_field_real name="Road Decal Mask Strength" />
+						<_field_real name="Road Decal Height Contrast" />
+						<_field_real name="Road Decal Mask Contrast" />
+						<_field_real name="Road Decal Edge Fade" />
+						<_field_long_integer name="Road Decal Random Seed" />
+						</_field_block_64>
+					<_field_block_64 name="animated spline metadata">
+						<_field_real name="Time" />
+						</_field_block_64>
+					</_field_block_64>
+				</_field_block_64>
+			</_field_struct>
+		<_field_block_64 name="Metadata">
+			<_field_real name="input" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Curves Transform">
+		<_field_string_id name="Name" />
+		<_field_struct name="Position Definition">
+			<_field_block_64 name="control points">
+				<_field_real_vector_3d name="value" />
+				<_field_real_vector_3d name="tangent in" />
+				<_field_real_vector_3d name="tangent out" />
+				<_field_real name="curviness" />
+				<_field_char_enum name="segment type x">
+					<Item Name="Spline" />
+					<Item Name="Linear" />
+					<Item Name="Stepped" />
+					<Item Name="SteppedNext" />
+				</_field_char_enum>
+				<_field_char_enum name="segment type y">
+					<Item Name="Spline" />
+					<Item Name="Linear" />
+					<Item Name="Stepped" />
+					<Item Name="SteppedNext" />
+				</_field_char_enum>
+				<_field_char_enum name="segment type z">
+					<Item Name="Spline" />
+					<Item Name="Linear" />
+					<Item Name="Stepped" />
+					<Item Name="SteppedNext" />
+				</_field_char_enum>
+				<_field_char_enum name="tangent mode x">
+					<Item Name="AutoStraight" />
+					<Item Name="UserStraight" />
+					<Item Name="UserBroken" />
+				</_field_char_enum>
+				<_field_char_enum name="tangent mode y">
+					<Item Name="AutoStraight" />
+					<Item Name="UserStraight" />
+					<Item Name="UserBroken" />
+				</_field_char_enum>
+				<_field_char_enum name="tangent mode z">
+					<Item Name="AutoStraight" />
+					<Item Name="UserStraight" />
+					<Item Name="UserBroken" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad30cd" length="2" />
+				<_field_block_64 name="pointMetadata">
+					<_field_block_64 name="spline road metadata">
+						<_field_real name="width" />
+						<_field_real name="opacity" />
+						<_field_real name="falloffLeft" />
+						<_field_real name="falloffRight" />
+						<_field_real name="bank" />
+						</_field_block_64>
+					<_field_block_64 name="road decal metadata">
+						<_field_block_64 name="Road Decal Textures">
+							<_field_tag_reference_64 name="Reference" />
+							</_field_block_64>
+						<_field_real_vector_2d name="Road Decal Scale" />
+						<_field_real_vector_2d name="Road Decal Offset" />
+						<_field_real name="Road Decal Tile Repeat Count" />
+						<_field_real name="Road Decal Height Strength" />
+						<_field_real name="Road Decal Mask Strength" />
+						<_field_real name="Road Decal Height Contrast" />
+						<_field_real name="Road Decal Mask Contrast" />
+						<_field_real name="Road Decal Edge Fade" />
+						<_field_long_integer name="Road Decal Random Seed" />
+						</_field_block_64>
+					<_field_block_64 name="animated spline metadata">
+						<_field_real name="Time" />
+						</_field_block_64>
+					</_field_block_64>
+				</_field_block_64>
+			</_field_struct>
+		<_field_struct name="Orientation Definition">
+			<_field_block_64 name="control points">
+				<_field_real_vector_3d name="value" />
+				<_field_real_vector_3d name="tangent in" />
+				<_field_real_vector_3d name="tangent out" />
+				<_field_real name="curviness" />
+				<_field_char_enum name="segment type x">
+					<Item Name="Spline" />
+					<Item Name="Linear" />
+					<Item Name="Stepped" />
+					<Item Name="SteppedNext" />
+				</_field_char_enum>
+				<_field_char_enum name="segment type y">
+					<Item Name="Spline" />
+					<Item Name="Linear" />
+					<Item Name="Stepped" />
+					<Item Name="SteppedNext" />
+				</_field_char_enum>
+				<_field_char_enum name="segment type z">
+					<Item Name="Spline" />
+					<Item Name="Linear" />
+					<Item Name="Stepped" />
+					<Item Name="SteppedNext" />
+				</_field_char_enum>
+				<_field_char_enum name="tangent mode x">
+					<Item Name="AutoStraight" />
+					<Item Name="UserStraight" />
+					<Item Name="UserBroken" />
+				</_field_char_enum>
+				<_field_char_enum name="tangent mode y">
+					<Item Name="AutoStraight" />
+					<Item Name="UserStraight" />
+					<Item Name="UserBroken" />
+				</_field_char_enum>
+				<_field_char_enum name="tangent mode z">
+					<Item Name="AutoStraight" />
+					<Item Name="UserStraight" />
+					<Item Name="UserBroken" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad30cd" length="2" />
+				<_field_block_64 name="pointMetadata">
+					<_field_block_64 name="spline road metadata">
+						<_field_real name="width" />
+						<_field_real name="opacity" />
+						<_field_real name="falloffLeft" />
+						<_field_real name="falloffRight" />
+						<_field_real name="bank" />
+						</_field_block_64>
+					<_field_block_64 name="road decal metadata">
+						<_field_block_64 name="Road Decal Textures">
+							<_field_tag_reference_64 name="Reference" />
+							</_field_block_64>
+						<_field_real_vector_2d name="Road Decal Scale" />
+						<_field_real_vector_2d name="Road Decal Offset" />
+						<_field_real name="Road Decal Tile Repeat Count" />
+						<_field_real name="Road Decal Height Strength" />
+						<_field_real name="Road Decal Mask Strength" />
+						<_field_real name="Road Decal Height Contrast" />
+						<_field_real name="Road Decal Mask Contrast" />
+						<_field_real name="Road Decal Edge Fade" />
+						<_field_long_integer name="Road Decal Random Seed" />
+						</_field_block_64>
+					<_field_block_64 name="animated spline metadata">
+						<_field_real name="Time" />
+						</_field_block_64>
+					</_field_block_64>
+				</_field_block_64>
+			</_field_struct>
+		<_field_block_64 name="Metadata">
+			<_field_real name="input" />
+			</_field_block_64>
+		</_field_block_64>
+	</plugin>

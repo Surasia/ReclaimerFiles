@@ -1,0 +1,137 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_word_flags name="global flags">
+		<Item Name="play sequentially - ignore delay settings" />
+		<Item Name="debug this screen effect" />
+		<Item Name="force delete when attached to dead object" />
+		<Item Name="force max one per object" />
+		<Item Name="force looping (dangerous; lasts forever)" />
+		<Item Name="die when effect ends" />
+	</_field_word_flags>
+	<_field_word_flags name="global hidden flags">
+		<Item Name="update thread" />
+		<Item Name="render thread" />
+	</_field_word_flags>
+	<_field_block_64 name="screen effects">
+		<_field_string_id name="name" />
+		<_field_word_flags name="flags">
+			<Item Name="debug disable" />
+			<Item Name="allow effect outside radius" />
+			<Item Name="unattached" />
+			<Item Name="first person" />
+			<Item Name="third person" />
+			<Item Name="disable camera falloffs" />
+			<Item Name="only affects attached object" />
+			<Item Name="draw precisely one (ask Bill before you check this)" />
+			<Item Name="use player travel direction" />
+			<Item Name="use color override as tint" />
+			<Item Name="don't render for spectators" />
+			<Item Name="multiply maximum distance by parent effect scale" />
+		</_field_word_flags>
+		<_field_word_flags name="hidden flags">
+			<Item Name="update thread" />
+			<Item Name="render thread" />
+		</_field_word_flags>
+		<_field_explanation name="DISTANCE FALLOFF" />
+		<_field_real name="maximum distance" />
+		<_field_struct name="distance falloff">
+			<_field_custom name="Mapping" />
+			<_field_struct name="Mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_explanation name="TIME EVOLUTION" />
+		<_field_real name="delay" />
+		<_field_real name="lifetime" />
+		<_field_struct name="time falloff">
+			<_field_custom name="Mapping" />
+			<_field_struct name="Mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_explanation name="ANGLE FALLOFF" />
+		<_field_struct name="angle falloff">
+			<_field_custom name="Mapping" />
+			<_field_struct name="Mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_explanation name="OBJECT FALLOFF" />
+		<_field_struct name="object falloff">
+			<_field_string_id name="Input Variable" />
+			<_field_string_id name="Range Variable" />
+			<_field_custom name="Mapping" />
+			<_field_struct name="Mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_explanation name="EFFECTS" />
+		<_field_tag_reference_64 name="color grading look-up-texture" />
+		<_field_real name="runtime color grading strength" />
+		<_field_tag_reference_64 name="hdr color grading look-up-texture" />
+		<_field_real name="runtime hdr color grading strength" />
+		<_field_real name="exposure boost" />
+		<_field_real name="exposure deboost" />
+		<_field_real name="hue left" />
+		<_field_real name="hue right" />
+		<_field_real name="saturation" />
+		<_field_real name="desaturation" />
+		<_field_real name="contrast enhance" />
+		<_field_real name="gamma enhance" />
+		<_field_real name="gamma reduce" />
+		<_field_char_enum name="filter color override mode">
+			<Item Name="None" />
+			<Item Name="Color Override 1" />
+			<Item Name="Color Override 2" />
+			<Item Name="Team Color" />
+			<Item Name="DWS Sun Color" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad1d18" length="3" />
+		<_field_real_rgb_color name="color filter" />
+		<_field_char_enum name="floor color override mode">
+			<Item Name="None" />
+			<Item Name="Color Override 1" />
+			<Item Name="Color Override 2" />
+			<Item Name="Team Color" />
+			<Item Name="DWS Sun Color" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad36f9" length="3" />
+		<_field_real_rgb_color name="color floor" />
+		<_field_real_fraction name="color replace strength" />
+		<_field_char_enum name="replace color override mode">
+			<Item Name="None" />
+			<Item Name="Color Override 1" />
+			<Item Name="Color Override 2" />
+			<Item Name="Team Color" />
+			<Item Name="DWS Sun Color" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad83ae" length="3" />
+		<_field_real_rgb_color name="color replace" />
+		<_field_real name="tron" />
+		<_field_real name="radial blur" />
+		<_field_real_vector_3d name="radial blur direction" />
+		<_field_real name="vision mode" />
+		<_field_real name="hud fade" />
+		<_field_real name="fov in" />
+		<_field_real name="fov out" />
+		<_field_real name="screen shake" />
+		<_field_pad name="generated_padb9c9" length="4" />
+		<_field_tag_reference_64 name="shader effect" />
+		<_field_pad name="generated_pad6f0e" length="4" />
+		<_field_int64_integer name="m_pipelineState" />
+		</_field_block_64>
+	</plugin>

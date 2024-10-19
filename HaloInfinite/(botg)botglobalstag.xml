@@ -1,0 +1,275 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="Bot Backfill">
+		<_field_custom name="Bot Backfill" />
+		<_field_real name="MMR threshold for Recruit" />
+		<_field_real name="MMR threshold for Marine" />
+		<_field_real name="MMR threshold for ODST" />
+		<_field_real name="MMR threshold for Spartan" />
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_block_64 name="Difficulty Specific Tuning">
+		<_field_short_enum name="Difficulty Level">
+			<Item Name="Unused 1" />
+			<Item Name="Unused 2" />
+			<Item Name="Unused 3" />
+			<Item Name="Autobot (Campaign test automation)" />
+			<Item Name="Adaptive" />
+			<Item Name="Weapon Drill" />
+			<Item Name="Marine" />
+			<Item Name="ODST" />
+			<Item Name="Spartan" />
+			<Item Name="Recruit" />
+		</_field_short_enum>
+		<_field_pad name="generated_pad637c" length="2" />
+		<_field_long_flags name="Difficulty Specific Flags">
+			<Item Name="can circuit" />
+			<Item Name="can circle strafe" />
+			<Item Name="can throw grenades" />
+			<Item Name="can use equipment" />
+			<Item Name="can jump/crouch in combat" />
+			<Item Name="can use grapple back smack finisher" />
+			<Item Name="can use motion tracker" />
+			<Item Name="can avoid dangerous objects" />
+			<Item Name="can avoid their own or teammates' dangerous objects" />
+			<Item Name="can be aware of their teammates' targets" />
+			<Item Name="can use guard ranking system" />
+			<Item Name="Switch weapons at low ammo mid combat" />
+		</_field_long_flags>
+		<_field_struct name="Hysteresis">
+			<_field_custom name="Hysteresis" />
+			<_field_real name="Hysteresis Max Amount" />
+			<_field_real name="Hysteresis Timeout Seconds" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_struct name="Traversal Tuning">
+			<_field_custom name="Traversal Properties" />
+			<_field_real name="Destination Evaluation Tolerance" />
+			<_field_real name="Random Neighbor Selection Chance" />
+			<_field_real name="Start Sprint Evaluation Tolerance" />
+			<_field_real name="Stop Sprint Evaluation Tolerance" />
+			<_field_angle name="Bot angular turn velocity" />
+			<_field_angle name="Bot angular turn acceleration" />
+			<_field_real name="Bot stuck time timeout" />
+			<_field_real name="Bot end of path tolerance distance sq" />
+			<_field_real name="Wrong path direction timeout" />
+			<_field_real name="Ledge fall distance sq" />
+			<_field_real name="Waypoint path distance" />
+			<_field_angle name="Jump hint facing threshold (no clamber)" />
+			<_field_real name="Low weapon desirabilty to gear up" />
+			<_field_real name="Objective path distance correction threshold" />
+			<_field_real name="Hunt look at ambition distance" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_struct name="Combat Tuning">
+			<_field_custom name="Combat" />
+			<_field_struct name="Melee">
+				<_field_custom name="Melee" />
+				<_field_real name="Melee min delay time" />
+				<_field_real name="Melee max delay time" />
+				<_field_real name="Melee striking distance (no melee weapon)" />
+				<_field_real name="Melee striking distance (with melee weapon)" />
+				<_field_real name="Minimum melee distance" />
+				<_field_real name="Max melee distance (no equipment)" />
+				<_field_real name="Max melee distance (with objective)" />
+				<_field_real name="Min melee grapple distance" />
+				<_field_real name="Max melee distance (with grapple hook)" />
+				<_field_real name="Max enemy health for unarmed grapple" />
+				<_field_real name="Restrict melee knockback weapon desirability min" />
+				<_field_real name="Target 'low shield vitality' threshold" />
+				<_field_real name="'Low confidence' threshold" />
+				<_field_angle name="'Target is facing away' angle threshold" />
+				<_field_custom name="" />
+				</_field_struct>
+			<_field_custom name="Combat Dance" />
+			<_field_real name="Reset initial combat dance delay time" />
+			<_field_custom name="Strafing" />
+			<_field_real name="Strafe min time" />
+			<_field_real name="Strafe max time" />
+			<_field_real name="Halt strafe chance" />
+			<_field_real name="Halt strafe min time" />
+			<_field_real name="Halt strafe max time" />
+			<_field_real name="Halt strafe min time (initial)" />
+			<_field_real name="Halt strafe max time (initial)" />
+			<_field_custom name="" />
+			<_field_custom name="Vertical Movement" />
+			<_field_real name="Vertical movement min delay time" />
+			<_field_real name="Vertical movement max delay time" />
+			<_field_real name="Vertical movement crouch chance" />
+			<_field_real name="Crouch hold time" />
+			<_field_real name="Vertical movement jump check height" />
+			<_field_angle name="Target is aiming check threshold" />
+			<_field_real name="Avoid dangerous object jump chance" />
+			<_field_real name="Avoid dangerous objects jump distance" />
+			<_field_real name="Vehicle avoid position prediction time" />
+			<_field_custom name="" />
+			<_field_custom name="" />
+			<_field_custom name="Grenades" />
+			<_field_real name="Grenade delay min time" />
+			<_field_real name="Grenade delay noise time" />
+			<_field_real name="Grenade min target distance" />
+			<_field_real name="Grenade max target distance" />
+			<_field_real name="Grenade distance in front of target feet" />
+			<_field_real name="'Low ground' height threshold" />
+			<_field_custom name="" />
+			<_field_custom name="Thrown Weapons" />
+			<_field_real name="Thrown weapon delay min time" />
+			<_field_real name="Thrown weapon delay noise time" />
+			<_field_real name="Thrown weapon min target distance" />
+			<_field_real name="Thrown weapon max target distance" />
+			<_field_real name="Thrown weapon 'Low ground' height threshold" />
+			<_field_custom name="" />
+			<_field_angle name="Deploy drop wall aiming tolerance" />
+			<_field_real name="Deploy drop wall confidence threshold" />
+			<_field_real name="Min drop wall delay time" />
+			<_field_real name="Max drop wall delay time" />
+			<_field_real name="Min active camo delay time" />
+			<_field_real name="Max active camo delay time" />
+			<_field_real name="Disengage confidence threshold" />
+			<_field_real name="Evade min delay time" />
+			<_field_real name="Evade max delay time" />
+			<_field_real name="Combat error magnitude" />
+			<_field_real name="Minimum error magnitude" />
+			<_field_real name="Target velocity max noise threshhold sq" />
+			<_field_real name="Targeting error from velocity weight" />
+			<_field_real name="Targeting error recalculation time (min)" />
+			<_field_real name="Targeting error recalculation time (max)" />
+			<_field_angle name="Desired vs actual aiming differential allowance" />
+			<_field_real name="Predictability velocity magnitude change threshold" />
+			<_field_angle name="Predictability velocity direction change threshhold" />
+			<_field_real name="Predictability error gain rate" />
+			<_field_real name="Predictability error decay rate" />
+			<_field_real name="Maximum aiming offset" />
+			<_field_real name="Combat weapon switch desirability delta" />
+			<_field_real name="Combat weapon switch distance delta" />
+			<_field_real name="Weapon switch from objective confidence limit" />
+			<_field_real name="Weapon switch from objective combat distance limit" />
+			<_field_real name="Initial hide point search radius" />
+			<_field_real name="Location Sensor Min Activation Distance Sq" />
+			<_field_real name="Location Sensor Max Activation Distance Sq" />
+			<_field_real name="Min location sensor delay time" />
+			<_field_real name="Max location sensor delay time" />
+			<_field_angle name="Location sensor aiming check threshold" />
+			<_field_real name="Disengage max jump height" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_struct name="Awareness Tuning">
+			<_field_custom name="Awareness" />
+			<_field_real name="Max ground awareness distance" />
+			<_field_real name="Max air awareness distance" />
+			<_field_real name="Max shared awareness distance" />
+			<_field_angle name="FOV Degrees" />
+			<_field_real name="Threat sensor awareness distance" />
+			<_field_real name="Active camo invisibility threshold" />
+			<_field_real name="Danger decay rate per second" />
+			<_field_real name="Clairvoyance max time" />
+			<_field_real name="Clairvoyance max distance" />
+			<_field_real name="Dangerous object awareness distance" />
+			<_field_real name="Dangerous object max time to damage" />
+			<_field_angle name="Dangerous object approaching bot angle" />
+			<_field_real name="Moving dangerous object min speed" />
+			<_field_real name="Chance to notice new dangerous objects per second" />
+			<_field_real name="Dangerous object danger radius scalar" />
+			<_field_real name="Target Hysteresis Max Amount" />
+			<_field_real name="Target Hysteresis Timeout Seconds" />
+			<_field_block_64 name="Target Priority Calculation Inputs">
+				<_field_short_enum name="Input">
+					<Item Name="Distance to Target" />
+					<Item Name="Target Shields Popped" />
+					<Item Name="Target Health" />
+					<Item Name="Target Is Holding Objective" />
+				</_field_short_enum>
+				<_field_pad name="generated_pad9bc9" length="2" />
+				<_field_real name="Weight" />
+				</_field_block_64>
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_struct name="Guard Behavior Tuning">
+			<_field_custom name="Guard" />
+			<_field_real name="Min guard look time" />
+			<_field_real name="Max guard look time" />
+			<_field_real name="Min guard look rotation angle" />
+			<_field_real name="Max guard look rotation angle" />
+			<_field_real name="Guard volume boundary width" />
+			<_field_real name="Max patrol time" />
+			<_field_real name="Min patrol pause time" />
+			<_field_real name="Max patrol pause time" />
+			<_field_real name="Min Guard Distance" />
+			<_field_real name="Guard height difference threshold" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_struct name="Guard Ranked Behavior Tuning">
+			<_field_custom name="GuardRanked" />
+			<_field_real name="Max Guard Distance" />
+			<_field_real name="Non-Owning AmbitionOwnershipState Input Score" />
+			<_field_real name="Owning AmbitionOwnershipState Input Score" />
+			<_field_real name="Max Ally Interaction Radius" />
+			<_field_block_64 name="Ambition Priority Calculation Inputs">
+				<_field_short_enum name="Input">
+					<Item Name="Distance to Ambition" />
+					<Item Name="Ambition Ownership State" />
+					<Item Name="Number of Allies Interacting with Ambition (Inverse Relationship)" />
+				</_field_short_enum>
+				<_field_pad name="generated_padd51d" length="2" />
+				<_field_real name="Weight" />
+				</_field_block_64>
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_struct name="Pickup Tuning">
+			<_field_custom name="Pickup" />
+			<_field_real name="Pickup distance sq" />
+			<_field_real name="Pathless distance sq" />
+			<_field_real name="Item pickup delay" />
+			<_field_real name="Weapon pickup cooldown" />
+			<_field_real name="Item observation radius" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_struct name="Vehicle Tuning">
+			<_field_custom name="Vehicles" />
+			<_field_real name="Vehicle observation radius" />
+			<_field_real name="Max linear velocity for enterable vehicle sq" />
+			<_field_real name="Passenger seat switch delay" />
+			<_field_real name="Friendly objective carrier nearby distance" />
+			<_field_real name="'Active vehicle' min speed" />
+			<_field_real name="Exit inactive vehicle time" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_block_64 name="Weapon Tuning">
+			<_field_tag_reference_64 name="Approved Weapon Definition Tag" />
+			<_field_long_flags name="Weapon usage flags">
+				<Item Name="Aims at head" />
+				<Item Name="Aims at feet" />
+				<Item Name="Aims in front of feet" />
+				<Item Name="Trigger latches" />
+				<Item Name="Melee weapon" />
+				<Item Name="Held objective (Flag, ball, etc)" />
+				<Item Name="Should Throw Weapon" />
+			</_field_long_flags>
+			<_field_real name="Error magnitude" />
+			<_field_real name="Minimum error magnitude" />
+			<_field_real name="Error max velocity (sq) threshold" />
+			<_field_real name="Desirability" />
+			<_field_real name="Min distance sq" />
+			<_field_real name="Max distance sq" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Approved Bot Equipment">
+		<_field_tag_reference_64 name="Approved Equipment Definition Tag" />
+		</_field_block_64>
+	<_field_block_64 name="Adaptive Difficulty Tuning">
+		<_field_custom name="Adaptive Difficulty" />
+		<_field_real name="Player Health Shooting Threshold" />
+		<_field_real name="Max Movement" />
+		<_field_real name="Max Aiming" />
+		<_field_real name="Aiming Coefficient" />
+		<_field_real name="Position Coefficient" />
+		<_field_real name="Engagement Constant" />
+		</_field_block_64>
+	<_field_pad name="generated_pad7603" length="4" />
+	</plugin>

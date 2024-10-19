@@ -1,0 +1,57 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="Links" />
+	<_field_tag_reference_64 name="RenderModel" />
+	<_field_tag_reference_64 name="AnimationGraph" />
+	<_field_long_flags name="pcaFlags">
+		<Item Name="lookup table ready" />
+		<Item Name="resources generated" />
+		<Item Name="resources committed" />
+	</_field_long_flags>
+	<_field_long_integer name="PCA Animation Count" />
+	<_field_long_integer name="PCA Checksum" />
+	<_field_explanation name="Imported Data" />
+	<_field_block_64 name="frame data">
+		<_field_data_64 name="Coefficients" />
+		</_field_block_64>
+	<_field_block_64 name="mesh data">
+		<_field_long_integer name="render mesh index" />
+		<_field_long_integer name="vertices per shape" />
+		<_field_long_integer name="position buffer index" />
+		<_field_long_integer name="normal buffer index" />
+		<_field_real_vector_3d name="position scale" />
+		<_field_real name="tension scale" />
+		<_field_real_vector_3d name="position offset" />
+		<_field_real name="tension offset" />
+		<_field_real_vector_3d name="normal scale" />
+		<_field_real name="stretch scale" />
+		<_field_real_vector_3d name="normal offset" />
+		<_field_real name="stretch offset" />
+		<_field_explanation name="Animations" />
+		<_field_block_64 name="animations">
+			<_field_string_id name="Name" />
+			<_field_long_integer name="Offset" />
+			<_field_long_integer name="Count" />
+			<_field_long_integer name="PCA Shape Offset" />
+			<_field_long_integer name="PCA coefficient Count" />
+			<_field_explanation name="Resource Data" />
+			<_field_pageable_resource_64 name="CoefficientResource" />
+			</_field_block_64>
+		<_field_explanation name="Vertices" />
+		<_field_block_64 name="raw blendshape verts">
+			<_field_real_vector_3d name="position" />
+			<_field_real_vector_3d name="normal" />
+			<_field_real_argb_color name="tension and ambient occlusion" />
+			<_field_dword_integer name="target Id" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_explanation name="Resource Data" />
+	<_field_pageable_resource_64 name="api resource" />
+	<_field_pad name="generated_pad7a1a" length="4" />
+	</plugin>

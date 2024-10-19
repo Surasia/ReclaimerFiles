@@ -1,0 +1,25 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="Decal system" />
+	<_field_custom name="Distance Between Vertices" />
+	<_field_real name="Min distance" />
+	<_field_real name="Max distance" />
+	<_field_real name="Distance velocity scale" />
+	<_field_custom name="" />
+	<_field_custom name="Velocity-based Offset" />
+	<_field_real name="Max offset" />
+	<_field_real name="Offset velocity scale" />
+	<_field_custom name="" />
+	<_field_custom name="Contact Patch" />
+	<_field_real name="Contact patch width" />
+	<_field_real name="Contact patch length" />
+	<_field_custom name="" />
+	<_field_real name="Texture U repeat length" />
+	<_field_pad name="generated_padfea3" length="4" />
+	</plugin>

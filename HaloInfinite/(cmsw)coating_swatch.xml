@@ -1,0 +1,39 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="Parent" />
+	<_field_custom name="Base" />
+	<_field_real_vector_2d name="colorAndRoughnessTextureTransform" />
+	<_field_real_vector_2d name="normalTextureTransform" />
+	<_field_tag_reference_64 name="colorGradientMap" />
+	<_field_real_rgb_color name="gradientTopColor" />
+	<_field_real_rgb_color name="gradientMidColor" />
+	<_field_real_rgb_color name="gradientBottomColor" />
+	<_field_real name="roughnessWhite" />
+	<_field_real name="roughnessBlack" />
+	<_field_tag_reference_64 name="normalDetailMap" />
+	<_field_real name="metallic" />
+	<_field_real name="ior" />
+	<_field_real name="albedoTintSpec" />
+	<_field_custom name="" />
+	<_field_custom name="Scratches" />
+	<_field_real_rgb_color name="scratchColor" />
+	<_field_real name="scratchBrightness" />
+	<_field_real name="scratchRoughness" />
+	<_field_real name="scratchMetallic" />
+	<_field_real name="scratchIOR" />
+	<_field_real name="scratchAlbedoTintSpec" />
+	<_field_custom name="" />
+	<_field_custom name="Subsurface" />
+	<_field_real name="sssIntensity" />
+	<_field_custom name="" />
+	<_field_custom name="Emissive" />
+	<_field_real name="emissiveIntensity" />
+	<_field_real name="emissiveAmount" />
+	<_field_custom name="" />
+	</plugin>

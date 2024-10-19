@@ -1,0 +1,30 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_string_id name="attachment marker name" />
+	<_field_tag_reference_64 name="bitmaps" />
+	<_field_tag_reference_64 name="physics" />
+	<_field_real_fraction name="spring strength coefficient" />
+	<_field_real name="texel to world width scale" />
+	<_field_real name="falloff pixels" />
+	<_field_real name="cutoff pixels" />
+	<_field_real name="point of bend" />
+	<_field_real name="starting bend" />
+	<_field_real name="ending bend" />
+	<_field_real name="runtime total length" />
+	<_field_block_64 name="vertices">
+		<_field_real_euler_angles_2d name="angles" />
+		<_field_real name="length" />
+		<_field_short_integer name="sequence index" />
+		<_field_pad name="generated_padd920" length="2" />
+		<_field_real_argb_color name="color" />
+		<_field_real_argb_color name="LOD color" />
+		<_field_real name="hermite t" />
+		<_field_real_vector_3d name="vector to next" />
+		</_field_block_64>
+	</plugin>

@@ -1,0 +1,205 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="navMeshes">
+		<_field_pageable_resource_64 name="resource data" />
+		<_field_short_integer name="major version" />
+		<_field_short_integer name="minor version" />
+		<_field_long_integer name="structure checksum" />
+		</_field_block_64>
+	<_field_block_64 name="mobileNavMeshes">
+		<_field_pageable_resource_64 name="resource data" />
+		<_field_short_integer name="major version" />
+		<_field_short_integer name="minor version" />
+		<_field_struct name="object id">
+			<_field_long_integer name="unique id" />
+			<_field_short_integer name="origin bsp index" />
+			<_field_char_enum name="type">
+				<Item Name="biped" />
+				<Item Name="vehicle" />
+				<Item Name="weapon" />
+				<Item Name="equipment" />
+				<Item Name="terminal" />
+				<Item Name="projectile" />
+				<Item Name="scenery" />
+				<Item Name="machine" />
+				<Item Name="control" />
+				<Item Name="dispenser" />
+				<Item Name="crate" />
+				<Item Name="creature" />
+				<Item Name="giant" />
+				<Item Name="effect_scenery" />
+			</_field_char_enum>
+			<_field_char_enum name="source">
+				<Item Name="structure" />
+				<Item Name="editor" />
+				<Item Name="dynamic" />
+				<Item Name="legacy" />
+				<Item Name="sky" />
+				<Item Name="parent" />
+			</_field_char_enum>
+			</_field_struct>
+		<_field_long_integer name="nodeIndex" />
+		<_field_byte_flags name="flags">
+			<Item Name="always loaded" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad5c22" length="3" />
+		</_field_block_64>
+	<_field_block_64 name="navVolumes">
+		<_field_long_integer name="navMeshAreaIndex" />
+		<_field_real_vector_3d name="navMeshAreaPosition" />
+		<_field_real name="navMeshAreaHeight" />
+		<_field_real name="navMeshAreaSink" />
+		<_field_short_integer name="major version" />
+		<_field_short_integer name="minor version" />
+		<_field_block_64 name="buckets">
+			<_field_pageable_resource_64 name="resource data" />
+			<_field_char_integer name="bucketID" />
+			<_field_pad name="generated_padfba7" length="3" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="hints">
+		<_field_block_64 name="nav links">
+			<_field_short_enum name="link type">
+				<Item Name="jump link" />
+				<Item Name="force walk link" />
+				<Item Name="force movement link" />
+				<Item Name="vehicle link" />
+				<Item Name="crouch link" />
+			</_field_short_enum>
+			<_field_short_block_index name="Squad group filter" />
+			<_field_long_integer name="hint data 0" />
+			<_field_short_integer name="hint data 1" />
+			<_field_byte_integer name="hint data 2" />
+			<_field_byte_integer name="pad1" />
+			<_field_string_id name="name" />
+			<_field_word_flags name="Flags">
+				<Item Name="bidirectional" />
+			</_field_word_flags>
+			<_field_short_enum name="force jump height">
+				<Item Name="NONE" />
+				<Item Name="very short" />
+				<Item Name="short" />
+				<Item Name="medium short" />
+				<Item Name="medium long" />
+				<Item Name="long" />
+				<Item Name="very long" />
+				<Item Name="infinite" />
+			</_field_short_enum>
+			<_field_word_flags name="control flags">
+				<Item Name="walk down" />
+				<Item Name="bots can't use if slowed" />
+				<Item Name="cheap jump" />
+			</_field_word_flags>
+			<_field_pad name="generated_pad04d0" length="2" />
+			<_field_struct name="geometry">
+				<_field_real_point_3d name="Point 0" />
+				<_field_real_point_3d name="Point 1" />
+				<_field_real_point_3d name="Point 2" />
+				<_field_real_point_3d name="Point 3" />
+				<_field_word_flags name="invalid_points">
+					<Item Name="1" />
+					<Item Name="2" />
+					<Item Name="3" />
+					<Item Name="4" />
+				</_field_word_flags>
+				<_field_pad name="generated_pad733f" length="2" />
+				</_field_struct>
+			<_field_block_64 name="EditorMetadata">
+				<_field_long_string name="folder name" />
+				<_field_real_point_3d name="local space pivot point position" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="cookie cutters">
+			<_field_string_id name="name" />
+			<_field_block_64 name="points">
+				<_field_real_point_3d name="point" />
+				<_field_long_integer name="_navMeshUIDOffaceref" />
+				<_field_long_integer name="_packedKeyOffaceref" />
+				</_field_block_64>
+			<_field_block_64 name="pointsObjectIds">
+				<_field_struct name="object ID">
+					<_field_long_integer name="unique id" />
+					<_field_short_integer name="origin bsp index" />
+					<_field_char_enum name="type">
+						<Item Name="biped" />
+						<Item Name="vehicle" />
+						<Item Name="weapon" />
+						<Item Name="equipment" />
+						<Item Name="terminal" />
+						<Item Name="projectile" />
+						<Item Name="scenery" />
+						<Item Name="machine" />
+						<Item Name="control" />
+						<Item Name="dispenser" />
+						<Item Name="crate" />
+						<Item Name="creature" />
+						<Item Name="giant" />
+						<Item Name="effect_scenery" />
+					</_field_char_enum>
+					<_field_char_enum name="source">
+						<Item Name="structure" />
+						<Item Name="editor" />
+						<Item Name="dynamic" />
+						<Item Name="legacy" />
+						<Item Name="sky" />
+						<Item Name="parent" />
+					</_field_char_enum>
+					</_field_struct>
+				</_field_block_64>
+			<_field_real name="z height" />
+			<_field_real name="z sink" />
+			<_field_short_enum name="type">
+				<Item Name="carve out" />
+				<Item Name="carve air volume" />
+				<Item Name="Remove Auto-Generated Hints" />
+				<Item Name="preserve" />
+			</_field_short_enum>
+			<_field_short_integer name="pad" />
+			<_field_block_64 name="EditorMetadata">
+				<_field_long_string name="folder name" />
+				<_field_real_point_3d name="local space pivot point position" />
+				</_field_block_64>
+			<_field_char_integer name="invalid" />
+			<_field_pad name="generated_pad8e8a" length="3" />
+			</_field_block_64>
+		<_field_block_64 name="navmesh areas">
+			<_field_block_64 name="points">
+				<_field_real_point_3d name="point" />
+				<_field_long_integer name="_navMeshUIDOffaceref" />
+				<_field_long_integer name="_packedKeyOffaceref" />
+				</_field_block_64>
+			<_field_string_id name="name" />
+			<_field_real name="z height" />
+			<_field_real name="z sink" />
+			<_field_long_enum name="type">
+				<Item Name="Generate Ground" />
+				<Item Name="Generate Air" />
+				<Item Name="No Bunkering" />
+				<Item Name="Generate Climb" />
+				<Item Name="Generate Custom Air" />
+				<Item Name="Navmesh Low Res" />
+				<Item Name="Navmesh 2" />
+				<Item Name="Navmesh 3" />
+				<Item Name="Navmesh 4" />
+				<Item Name="Navmesh 5" />
+				<Item Name="Navmesh 6" />
+				<Item Name="Navmesh 7" />
+				<Item Name="Navmesh 8" />
+				<Item Name="Navmesh High Res" />
+				<Item Name="CUSTOM (Recommended)" />
+			</_field_long_enum>
+			<_field_byte_integer name="isValid" />
+			<_field_pad name="generated_pad7d37" length="3" />
+			<_field_block_64 name="EditorMetadata">
+				<_field_long_string name="folder name" />
+				<_field_real_point_3d name="local space pivot point position" />
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	</plugin>

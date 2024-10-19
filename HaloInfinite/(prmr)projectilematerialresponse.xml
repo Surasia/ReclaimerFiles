@@ -1,0 +1,62 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="material response">
+		<_field_explanation name="matching criteria" />
+		<_field_string_id name="material name" />
+		<_field_short_integer name="runtime material index" />
+		<_field_word_flags name="response flags">
+			<Item Name="only against units (except giants)" />
+			<Item Name="never against units (except giants)" />
+			<Item Name="only against bipeds" />
+			<Item Name="only against vehicles" />
+			<Item Name="never against wuss players" />
+			<Item Name="only when tethered" />
+			<Item Name="only when not tethered" />
+			<Item Name="only against dead bipeds" />
+			<Item Name="never against dead bipeds" />
+			<Item Name="only AI projectiles" />
+			<Item Name="never AI projectiles" />
+			<Item Name="only friendly targets" />
+			<Item Name="never friendly targets" />
+		</_field_word_flags>
+		<_field_real_fraction name="chance fraction" />
+		<_field_angle_bounds name="between" />
+		<_field_real_bounds name="and" />
+		<_field_explanation name="response" />
+		<_field_short_enum name="response">
+			<Item Name="impact (detonate)" />
+			<Item Name="fizzle" />
+			<Item Name="overpenetrate" />
+			<Item Name="attach" />
+			<Item Name="bounce" />
+			<Item Name="bounce (dud)" />
+			<Item Name="fizzle (ricochet)" />
+			<Item Name="turn physical" />
+			<Item Name="charge self" />
+		</_field_short_enum>
+		<_field_explanation name="misc" />
+		<_field_short_enum name="scale effects by">
+			<Item Name="damage" />
+			<Item Name="angle" />
+		</_field_short_enum>
+		<_field_angle name="angular noise" />
+		<_field_real name="velocity noise" />
+		<_field_explanation name="overpenetration" />
+		<_field_real name="initial friction" />
+		<_field_explanation name="reflection" />
+		<_field_real name="parallel friction" />
+		<_field_real name="perpendicular friction" />
+		<_field_explanation name="flags" />
+		<_field_byte_flags name="misc flags">
+			<Item Name="orient along normal at rest" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad3f48" length="3" />
+		</_field_block_64>
+	<_field_pad name="generated_padf741" length="4" />
+	</plugin>

@@ -1,0 +1,47 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_dword_integer name="Tile X Index" />
+	<_field_dword_integer name="Tile Y Index" />
+	<_field_block_64 name="Parameters">
+		<_field_struct name="Parameter">
+			<_field_string_id name="Name" />
+			<_field_long_enum name="Type">
+				<Item Name="None" />
+				<Item Name="Any" />
+				<Item Name="Boolean" />
+				<Item Name="Integer" />
+				<Item Name="Float" />
+				<Item Name="Float2" />
+				<Item Name="Float3" />
+				<Item Name="Float4" />
+				<Item Name="Material" />
+				<Item Name="MaterialPreset" />
+				<Item Name="RenderGraph" />
+				<Item Name="Buffer" />
+				<Item Name="Surface" />
+				<Item Name="DataBlob" />
+				<Item Name="Viewport" />
+				<Item Name="Rect" />
+				<Item Name="DrawParameters" />
+				<Item Name="DispatchParameters" />
+				<Item Name="SamplerStateView" />
+				<Item Name="TerrainChunk" />
+				<Item Name="DrawableList" />
+				<Item Name="TextureDataPath" />
+			</_field_long_enum>
+			<_field_long_integer name="Int" />
+			<_field_real name="Float" />
+			<_field_real_vector_3d name="Float3" />
+			<_field_tag_reference_64 name="Tag" />
+			<_field_data_64 name="DataPath" />
+			<_field_string_id name="String" />
+			</_field_struct>
+		</_field_block_64>
+	<_field_pad name="generated_pad4100" length="4" />
+	</plugin>

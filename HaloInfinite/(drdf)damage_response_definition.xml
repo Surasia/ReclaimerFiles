@@ -1,0 +1,117 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="classes">
+		<_field_short_enum name="type">
+			<Item Name="shielded" />
+			<Item Name="unshielded" />
+			<Item Name="all" />
+		</_field_short_enum>
+		<_field_word_flags name="flags">
+			<Item Name="ignore on no damage" />
+			<Item Name="suppress directional damage flashes" />
+			<Item Name="suppress directional damage arrows" />
+			<Item Name="only when zoomed" />
+			<Item Name="sound effect only applied when scale is full" />
+		</_field_word_flags>
+		<_field_explanation name="directional flash" />
+		<_field_struct name="directional flash">
+			<_field_real name="indicator duration" />
+			<_field_real name="flash duration " />
+			<_field_short_enum name="fade function">
+				<Item Name="linear" />
+				<Item Name="late" />
+				<Item Name="very late" />
+				<Item Name="early" />
+				<Item Name="very early" />
+				<Item Name="cosine" />
+				<Item Name="zero" />
+				<Item Name="one" />
+			</_field_short_enum>
+			<_field_pad name="generated_pad5fa7" length="2" />
+			<_field_real name="center size" />
+			<_field_real name="offscreen size" />
+			<_field_real name="center alpha" />
+			<_field_real name="offscreen alpha" />
+			<_field_real name="inner alpha" />
+			<_field_real name="outer alpha" />
+			<_field_real_argb_color name="flash color" />
+			<_field_real_argb_color name="arrow color" />
+			</_field_struct>
+		<_field_explanation name="motion sensor ping" />
+		<_field_struct name="motion sensor ping">
+			<_field_short_integer name="ping duration" />
+			<_field_short_integer name="ping scale" />
+			</_field_struct>
+		<_field_explanation name="rumble" />
+		<_field_tag_reference_64 name="rumble" />
+		<_field_tag_reference_64 name="rumble descope" />
+		<_field_explanation name="camera shake and impulse data" />
+		<_field_tag_reference_64 name="camera shake" />
+		<_field_tag_reference_64 name="camera shake zoomed" />
+		<_field_tag_reference_64 name="camera shake descope" />
+		<_field_explanation name="Flinch" />
+		<_field_tag_reference_64 name="flinch impulse" />
+		<_field_tag_reference_64 name="flinch impulse ads" />
+		<_field_tag_reference_64 name="flinch impulse descope" />
+		<_field_explanation name="simulated input" />
+		<_field_tag_reference_64 name="simulated_input" />
+		<_field_tag_reference_64 name="simulated_input zoomed " />
+		<_field_tag_reference_64 name="simulated_input descope " />
+		<_field_explanation name="global sound effect" />
+		<_field_block_64 name="global sound effect">
+			<_field_string_id name="effect name" />
+			<_field_custom name="scale =&gt; duration" />
+			<_field_struct name="scale =&gt; duration">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="area control">
+		<_field_explanation name="AREA CONTROL" />
+		<_field_word_flags name="flags">
+			<Item Name="distance_falloff" />
+			<Item Name="angle_falloff" />
+			<Item Name="object function falloff" />
+			<Item Name="use unit position" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad1e45" length="2" />
+		<_field_explanation name="Distance Falloff" />
+		<_field_real name="maximum distance" />
+		<_field_struct name="distance falloff">
+			<_field_custom name="Mapping" />
+			<_field_struct name="Mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_explanation name="Angle Falloff" />
+		<_field_struct name="angle falloff">
+			<_field_custom name="Mapping" />
+			<_field_struct name="Mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_explanation name="Object Falloff" />
+		<_field_struct name="object falloff">
+			<_field_string_id name="Input Variable" />
+			<_field_string_id name="Range Variable" />
+			<_field_custom name="Mapping" />
+			<_field_struct name="Mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		</_field_block_64>
+	</plugin>

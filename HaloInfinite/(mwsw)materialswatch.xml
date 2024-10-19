@@ -1,0 +1,40 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="Base" />
+	<_field_real_vector_2d name="colorAndRoughnessTextureTransform" />
+	<_field_real_vector_2d name="normalTextureTransform" />
+	<_field_tag_reference_64 name="color_gradient_map" />
+	<_field_real name="roughness_white" />
+	<_field_real name="roughness_black" />
+	<_field_tag_reference_64 name="normal_detail_map" />
+	<_field_real name="metallic" />
+	<_field_real name="ior" />
+	<_field_real name="albedo_tint_spec" />
+	<_field_real name="sss_strength" />
+	<_field_custom name="" />
+	<_field_custom name="Scratches" />
+	<_field_real_rgb_color name="scratch_color" />
+	<_field_real name="scratch_brightness" />
+	<_field_real name="scratch_roughness" />
+	<_field_real name="scratch_metallic" />
+	<_field_real name="scratch_ior" />
+	<_field_real name="scratch_albedo_tint_spec" />
+	<_field_custom name="" />
+	<_field_custom name="Subsurface" />
+	<_field_real name="sss_intensity" />
+	<_field_custom name="" />
+	<_field_block_64 name="color_variants">
+		<_field_string_id name="name" />
+		<_field_real_rgb_color name="gradient_top_color" />
+		<_field_real_rgb_color name="gradient_mid_color" />
+		<_field_real_rgb_color name="gradient_bottom_color" />
+		<_field_string_id name="notes" />
+		<_field_string_id name="groupName" />
+		</_field_block_64>
+	</plugin>

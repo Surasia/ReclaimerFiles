@@ -1,0 +1,69 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_real_fraction_bounds name="subtitle rect width" />
+	<_field_real_fraction_bounds name="subtitle rect height" />
+	<_field_long_integer name="absolute minimum font size allowed for subtitles" />
+	<_field_long_integer name="default subtitle size" />
+	<_field_long_integer name="maximum font size allowed for subtitles at the minimum horizontal resolution" />
+	<_field_long_integer name="absolute maximum font size allowed at max horizontal resolution (or anything bigger than it)" />
+	<_field_real name="horizontal padding at minimum horizontal resolution" />
+	<_field_real name="horizontal padding at max horizontal resolution" />
+	<_field_real name="vertical padding at minimum horizontal resolution" />
+	<_field_real name="vertical padding at max horizontal resolution" />
+	<_field_char_enum name="default subtitle vertical anchoring">
+		<Item Name="Bottom" />
+		<Item Name="Center" />
+		<Item Name="Top" />
+		<Item Name="Unspecified" />
+	</_field_char_enum>
+	<_field_pad name="generated_padf9a9" length="3" />
+	<_field_real name="minimum horizontal resolution for font and padding scaling purposes" />
+	<_field_real name="maximum horizontal resolution for font and paddingscaling purposes" />
+	<_field_long_integer name="step size for the subtitle slider between font sizes" />
+	<_field_real_rgb_color name="default subtitle color" />
+	<_field_real_rgb_color name="default subtitle shadow color" />
+	<_field_real_argb_color name="default subtitle background color" />
+	<_field_real name="minimum display time per word" />
+	<_field_real name="minimum display time per page of subtitles" />
+	<_field_char_enum name="use uniform durations for autopaginated subtitles">
+		<Item Name="Disabled" />
+		<Item Name="Enabled" />
+	</_field_char_enum>
+	<_field_pad name="generated_paddfc8" length="3" />
+	<_field_real name="time to fade out completed subtitles" />
+	<_field_real name="duplicate subtitles requests are allowed only after this many seconds" />
+	<_field_real name="priority lock cooldown duration" />
+	<_field_long_integer name="minimum subtitle priority threshold" />
+	<_field_char_enum name="pending preservation mode">
+		<Item Name="Disabled" />
+		<Item Name="PreserveHighestOnly" />
+		<Item Name="PreserveAnyAboveThreshold" />
+		<Item Name="PreserveAll" />
+	</_field_char_enum>
+	<_field_pad name="generated_pad9313" length="3" />
+	<_field_real name="percent of a subtitle duration required to pass before we allow it to be ejected" />
+	<_field_short_integer name="max lines of text per page of subtitles" />
+	<_field_pad name="generated_pad138a" length="2" />
+	<_field_real name="subtitle threshold to reset character moniker in seconds" />
+	<_field_tag_reference_64 name="Unicode tag reference to subtitles character IDs list" />
+	<_field_real_rgb_color name="Default subtitle speaker color" />
+	<_field_block_64 name="Subtitle speaker colors">
+		<_field_string_id name="Character Id" />
+		<_field_char_enum name="Disposition">
+			<Item Name="Neutral" />
+			<Item Name="Allied" />
+			<Item Name="Enemy" />
+		</_field_char_enum>
+		<_field_byte_flags name="Allow color override">
+			<Item Name="Enabled" />
+		</_field_byte_flags>
+		<_field_pad name="generated_padc00e" length="2" />
+		<_field_real_rgb_color name="Color" />
+		</_field_block_64>
+	</plugin>

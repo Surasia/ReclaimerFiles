@@ -1,0 +1,46 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="defaultMaterial">
+		<_field_tag_reference_64 name="coatingMaterialTemplate" />
+		<_field_word_flags name="Supported Coating Features Flags">
+			<Item Name="Supports 4 Layers" />
+			<Item Name="Supports 7 Layers" />
+			<Item Name="Supports Scratches" />
+			<Item Name="Supports Grime" />
+			<Item Name="Supports Damage" />
+			<Item Name="Supports Global Emissive" />
+			<Item Name="Supports Layer Emissive" />
+			<Item Name="Supports Forge" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad410b" length="2" />
+		<_field_block_64 name="parameterRegisterInfo">
+			<_field_word_integer name="Register Offset" />
+			<_field_word_integer name="Register Size" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="perLayerEmissiveMaterial">
+		<_field_tag_reference_64 name="coatingMaterialTemplate" />
+		<_field_word_flags name="Supported Coating Features Flags">
+			<Item Name="Supports 4 Layers" />
+			<Item Name="Supports 7 Layers" />
+			<Item Name="Supports Scratches" />
+			<Item Name="Supports Grime" />
+			<Item Name="Supports Damage" />
+			<Item Name="Supports Global Emissive" />
+			<Item Name="Supports Layer Emissive" />
+			<Item Name="Supports Forge" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad410b" length="2" />
+		<_field_block_64 name="parameterRegisterInfo">
+			<_field_word_integer name="Register Offset" />
+			<_field_word_integer name="Register Size" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_int64_integer name="m_pipelineStates" />
+	</plugin>

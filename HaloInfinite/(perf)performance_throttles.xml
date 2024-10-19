@@ -1,0 +1,56 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="Performance Throttles" />
+	<_field_block_64 name="Performance Throttles">
+		<_field_long_flags name="flags">
+			<Item Name="disable object attachment lights" />
+			<Item Name="disable cheap particles" />
+			<Item Name="disable blob shadows" />
+			<Item Name="disable screen distortion" />
+			<Item Name="disable light shafts" />
+			<Item Name="disable first person depth of field" />
+			<Item Name="disable motion blur" />
+			<Item Name="disable particles continue offscreen" />
+			<Item Name="disable light cones" />
+			<Item Name="disable water interraction" />
+			<Item Name="disable water refraction" />
+			<Item Name="disable decorators" />
+			<Item Name="disable instance occlusion queries" />
+			<Item Name="disable structure decals" />
+			<Item Name="disable object decals" />
+		</_field_long_flags>
+		<_field_real name="water tessellation scale" />
+		<_field_real name="decorator fade dist scale" />
+		<_field_real name="effect lod distance scale" />
+		<_field_custom name="Object settings" />
+		<_field_real name="instance fade modifier" />
+		<_field_real name="object fade modifier" />
+		<_field_real name="object detail fade modifier" />
+		<_field_real name="object lighting time limit" />
+		<_field_custom name="" />
+		<_field_custom name="LOD settings" />
+		<_field_real name="LOD modifier" />
+		<_field_real name="LOD vertical modifier" />
+		<_field_long_integer name="Maximum Instance Group LOD draw bundles" />
+		<_field_custom name="" />
+		<_field_custom name="Dynamic light settings" />
+		<_field_long_integer name="max forward dynamic lights" />
+		<_field_real name="forward dynamic light fade distance scale" />
+		<_field_long_integer name="max screenspace dynamic lights" />
+		<_field_real name="screenspace light fade distance scale" />
+		<_field_long_integer name="max effect lights (screenspace)" />
+		<_field_custom name="" />
+		<_field_custom name="Shadow settings" />
+		<_field_long_integer name="max shadow casting objects" />
+		<_field_real name="shadow quality lod" />
+		<_field_real name="floating shadow quality lod" />
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_pad name="generated_pada5ca" length="4" />
+	</plugin>

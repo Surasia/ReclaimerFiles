@@ -1,0 +1,31 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_long_flags name="flags">
+		<Item Name="UNUSED" />
+		<Item Name="collides with structures" />
+		<Item Name="collides with water surface" />
+		<Item Name="uses simple wind" />
+		<Item Name="uses damped wind" />
+		<Item Name="no gravity" />
+	</_field_long_flags>
+	<_field_real name="runtime mass over radius cubed" />
+	<_field_real name="runtime inverse density" />
+	<_field_long_integer name="IGNORE1" />
+	<_field_long_integer name="IGNORE2" />
+	<_field_long_integer name="IGNORE3" />
+	<_field_long_integer name="IGNORE4" />
+	<_field_long_integer name="IGNORE5" />
+	<_field_real name="density" />
+	<_field_real name="air friction" />
+	<_field_real name="water friction" />
+	<_field_real name="surface friction" />
+	<_field_real name="elasticity" />
+	<_field_explanation name="Densities (g/mL)" />
+	<_field_pad name="generated_pad1ff6" length="4" />
+	</plugin>

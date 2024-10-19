@@ -1,0 +1,34 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Scattering Profiles">
+		<_field_string_id name="Name" />
+		<_field_explanation name="Subsurface Layer" />
+		<_field_real_rgb_color name="Subsurface Layer Weight" />
+		<_field_real name="Subsurface Layer Scale" />
+		<_field_explanation name="Shallow Layer" />
+		<_field_real_rgb_color name="Shallow Layer Weight" />
+		<_field_real name="Shallow Layer Scale" />
+		<_field_explanation name="Middle Layer" />
+		<_field_real_rgb_color name="Middle Layer Weight" />
+		<_field_real name="Middle Layer Scale" />
+		<_field_explanation name="Deep Layer" />
+		<_field_real_rgb_color name="Deep Layer Weight" />
+		<_field_real name="Deep Layer Scale" />
+		<_field_real name="Post-Scatter Amount" />
+		<_field_real_rgb_color name="AO Color" />
+		<_field_real name="AO Color Amount" />
+		<_field_real name="AO Specular Power" />
+		<_field_real name="Glancing Roughness" />
+		<_field_real name="Specular Intensity" />
+		<_field_explanation name="Scale Modifiers" />
+		<_field_real name="Scale Modifier (Subsurface and Shallow Layers)" />
+		<_field_real name="Scale Modifier (Middle and Deep Layers)" />
+		</_field_block_64>
+	<_field_pad name="generated_pad7610" length="4" />
+	</plugin>

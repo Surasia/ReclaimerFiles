@@ -1,0 +1,19 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_string_id name="Start Event." />
+	<_field_string_id name="Stop Event." />
+	<_field_string_id name="Player Start Event." />
+	<_field_string_id name="Player Stop Event." />
+	<_field_tag_reference_64 name="Sound bank" />
+	<_field_tag_reference_64 name="Player sound bank" />
+	<_field_real name="maximum radius" />
+	<_field_tag_reference_64 name="Category" />
+	<_field_tag_reference_64 name="Player Category" />
+	<_field_tag_reference_64 name="Sound Tails" />
+	</plugin>

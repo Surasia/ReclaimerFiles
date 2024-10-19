@@ -1,0 +1,48 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_short_integer name="dynamic/analytic gobo texture slots" />
+	<_field_word_flags name="flags">
+		<Item Name="Use volumetric lighting" />
+		<Item Name="Enable DWS" />
+		<Item Name="Enable DWS Indirect Irradiance" />
+		<Item Name="Decouple DWS / Sky Hand Painted" />
+		<Item Name="Decouple DWS / Sky Atm. Scattering" />
+		<Item Name="Decouple DWS / Sky Vol. Clouds" />
+		<Item Name="Disable Sun" />
+		<Item Name="Disallow User to Enable Ray Tracing through UI" />
+	</_field_word_flags>
+	<_field_short_integer name="Volumetric Clouds DWS Sun Index" />
+	<_field_short_integer name="Atmospheric Scattering DWS Sun Index" />
+	<_field_short_integer name="DWS Sun Lens flare Index" />
+	<_field_short_integer name="max gobo resolution" />
+	<_field_char_enum name="gobo bit depth">
+		<Item Name="8-bit" />
+		<Item Name="16-bit" />
+	</_field_char_enum>
+	<_field_char_enum name="single pass lighting mode">
+		<Item Name="sun only" />
+		<Item Name="multiple lights" />
+	</_field_char_enum>
+	<_field_char_enum name="shadow rendering mode">
+		<Item Name="default" />
+		<Item Name="gpu-driven" />
+	</_field_char_enum>
+	<_field_byte_flags name="Enable Shadows For Uncached Lights">
+		<Item Name="Enabled" />
+	</_field_byte_flags>
+	<_field_real name="RT Ray Push Off Modifier" />
+	<_field_real name="RT Hybrid Shadow 2x2 Tile Sigma Modifier" />
+	<_field_real name="RT Hybrid Shadow 4x4 Tile Sigma Modifier" />
+	<_field_real name="RT Denoiser History Damper Weight Modifier" />
+	<_field_short_integer name="RT Alpha Geo Iterations Modifier" />
+	<_field_pad name="generated_pad2aac" length="2" />
+	<_field_real name="RT Alpha Geo Discard Distance Modifier" />
+	<_field_real name="RT Shadow Ray Thickness Modifier" />
+	<_field_pad name="generated_pad448d" length="4" />
+	</plugin>

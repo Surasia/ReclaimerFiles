@@ -1,0 +1,44 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="teleport effects">
+		<_field_explanation name="Target Effects" />
+		<_field_block_64 name="target effects">
+			<_field_real name="radius" />
+			<_field_tag_reference_64 name="disappear effect" />
+			<_field_tag_reference_64 name="appear effect" />
+			</_field_block_64>
+		<_field_string_id name="target effects marker" />
+		<_field_explanation name="Nodegraph Events" />
+		<_field_block_64 name="nodegraph events">
+			<_field_word_flags name="object types">
+				<Item Name="biped" />
+				<Item Name="vehicle" />
+				<Item Name="weapon" />
+				<Item Name="equipment" />
+				<Item Name="terminal" />
+				<Item Name="projectile" />
+				<Item Name="scenery" />
+				<Item Name="machine" />
+				<Item Name="control" />
+				<Item Name="dispenser" />
+				<Item Name="crate" />
+				<Item Name="creature" />
+				<Item Name="giant" />
+				<Item Name="effect_scenery" />
+			</_field_word_flags>
+			<_field_pad name="generated_padaba7" length="2" />
+			<_field_long_flags name="flags">
+				<Item Name="locally controlled" />
+			</_field_long_flags>
+			<_field_string_id name="source object event" />
+			<_field_string_id name="destination object event" />
+			</_field_block_64>
+		</_field_struct>
+	<_field_pad name="generated_pad97e7" length="4" />
+	</plugin>

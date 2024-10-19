@@ -1,0 +1,151 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_long_flags name="flags">
+		<Item Name="is_distortion" />
+		<Item Name="is_decal" />
+		<Item Name="is_water" />
+		<Item Name="is_hologram" />
+		<Item Name="is_wireframe_hologram" />
+		<Item Name="SupportsForgeCoatingCustomization" />
+		<Item Name="is_alpha_clip" />
+		<Item Name="is_explicit_shader" />
+		<Item Name="uses_fade_time" />
+		<Item Name="is_hologram_lofi" />
+		<Item Name="custom_deformer" />
+		<Item Name="has_compute" />
+		<Item Name="is_shield_generator" />
+		<Item Name="is_olympus_effect_lighting" />
+		<Item Name="is_skinned_tree" />
+		<Item Name="is_static_branching_shader" />
+		<Item Name="generator_uses_depth_buffer" />
+		<Item Name="has_subsurface_scattering" />
+		<Item Name="transparent_requires_scene_color" />
+		<Item Name="uses_point_input_patch" />
+		<Item Name="supports_packed_ovt" />
+		<Item Name="uses_deferred_shading" />
+		<Item Name="is_decorator" />
+		<Item Name="is_foliage" />
+		<Item Name="is_composited_card" />
+		<Item Name="is_low_res_lighting_eligible" />
+		<Item Name="is_high_res_lighting_eligible" />
+		<Item Name="is_two_sided_shader" />
+		<Item Name="decorator_requires_zpp" />
+		<Item Name="uses_terrain_sampling" />
+		<Item Name="decal_use_uav_normal" />
+	</_field_long_flags>
+	<_field_long_flags name="compiler flags">
+		<Item Name="validation" />
+		<Item Name="debug" />
+		<Item Name="deoptimize" />
+		<Item Name="generate_pdbs" />
+		<Item Name="iteration" />
+	</_field_long_flags>
+	<_field_block_64 name="shader groups">
+		<_field_block_64 name="shaders">
+			<_field_tag_reference_64 name="shader bytecode" />
+			</_field_block_64>
+		<_field_tag_reference_64 name="root signature" />
+		<_field_byte_integer name="entrypoint index" />
+		<_field_byte_integer name="vertex type" />
+		<_field_byte_integer name="platform marker" />
+		<_field_pad name="generated_pad3c24" length="1" />
+		<_field_dword_integer name="shader reference type offsets" />
+		<_field_string_id name="entrypoint name" />
+		<_field_pad name="generated_pad5605" length="4" />
+		<_field_int64_integer name="m_shaderPipeline" />
+		</_field_block_64>
+	<_field_block_64 name="material parameters">
+		<_field_string_id name="parameter name" />
+		<_field_long_enum name="parameter type">
+			<Item Name="bitmap" />
+			<Item Name="real" />
+			<Item Name="int" />
+			<Item Name="bool" />
+			<Item Name="color" />
+			<Item Name="scalar gpu property" />
+			<Item Name="color gpu property" />
+			<Item Name="string" />
+			<Item Name="preset" />
+		</_field_long_enum>
+		<_field_tag_reference_64 name="bitmap" />
+		<_field_real_argb_color name="color" />
+		<_field_real name="real" />
+		<_field_real_vector_3d name="vector" />
+		<_field_long_integer name="int/bool" />
+		<_field_data_64 name="string" />
+		<_field_word_integer name="bitmap flags" />
+		<_field_word_integer name="bitmap filter mode" />
+		<_field_word_integer name="bitmap address mode" />
+		<_field_word_integer name="bitmap address mode x" />
+		<_field_word_integer name="bitmap address mode y" />
+		<_field_byte_integer name="bitmap extern mode" />
+		<_field_byte_integer name="bitmap min mipmap" />
+		<_field_byte_integer name="bitmap max mipmap" />
+		<_field_pad name="generated_padea44" length="3" />
+		<_field_real name="bitmap blur and sharpen" />
+		<_field_byte_flags name="parameter flags">
+			<Item Name="texture array" />
+			<Item Name="force bitmap clamp" />
+			<Item Name="disabled" />
+			<Item Name="has transform function" />
+			<Item Name="bindless" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad0425" length="3" />
+		<_field_dword_integer name="render phases used" />
+		<_field_dword_integer name="shader types used" />
+		<_field_block_64 name="function parameters">
+			<_field_long_enum name="type">
+				<Item Name="value" />
+				<Item Name="color" />
+				<Item Name="scale uniform" />
+				<Item Name="scale u" />
+				<Item Name="scale v" />
+				<Item Name="offset u" />
+				<Item Name="offset v" />
+				<Item Name="frame index" />
+				<Item Name="alpha" />
+			</_field_long_enum>
+			<_field_string_id name="input name" />
+			<_field_string_id name="range name" />
+			<_field_char_enum name="Output Modifier">
+				<Item Name=" " />
+				<Item Name="Add" />
+				<Item Name="Multiply" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8305" length="3" />
+			<_field_string_id name="Output Modifier Input" />
+			<_field_real name="time period" />
+			<_field_explanation name="FUNCTION" />
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_block_64>
+		<_field_word_integer name="register offset" />
+		<_field_word_integer name="register size" />
+		<_field_byte_integer name="bitmap extern index" />
+		<_field_pad name="generated_pad50da" length="3" />
+		</_field_block_64>
+	<_field_data_64 name="parameter binding data" />
+	<_field_block_64 name="emitter property names">
+		<_field_string_id name="name" />
+		</_field_block_64>
+	<_field_block_64 name="renderer property names">
+		<_field_string_id name="name" />
+		</_field_block_64>
+	<_field_block_64 name="simulator property names">
+		<_field_string_id name="name" />
+		</_field_block_64>
+	<_field_pad name="generated_pad13ee" length="4" />
+	<_field_int64_integer name="runtime pointer" />
+	<_field_pad name="pad" length="4" />
+	<_field_pad name="generated_pad60a3" length="4" />
+	</plugin>

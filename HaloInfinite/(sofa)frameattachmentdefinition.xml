@@ -1,0 +1,137 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_string_id name="name" />
+	<_field_string_id name="type" />
+	<_field_explanation name="NOTE" />
+	<_field_string_id name="malleable property id" />
+	<_field_block_64 name="region permutations">
+		<_field_string_id name="region name" />
+		<_field_string_id name="permutation name" />
+		</_field_block_64>
+	<_field_block_64 name="attachments">
+		<_field_string_id name="name" />
+		<_field_tag_reference_64 name="type" />
+		<_field_tag_reference_64 name="tag graph output" />
+		<_field_string_id name="output node name" />
+		<_field_block_64 name="tag graph float params">
+			<_field_string_id name="name" />
+			<_field_real name="value" />
+			</_field_block_64>
+		<_field_block_64 name="tag graph bool params">
+			<_field_string_id name="name" />
+			<_field_byte_flags name="value">
+				<Item Name="value" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad0473" length="3" />
+			</_field_block_64>
+		<_field_block_64 name="taggraph instance variables - strings">
+			<_field_string_id name="name" />
+			<_field_string_id name="value" />
+			</_field_block_64>
+		<_field_block_64 name="taggraph instance variables - tag references">
+			<_field_string_id name="name" />
+			<_field_tag_reference_64 name="value" />
+			</_field_block_64>
+		<_field_tag_reference_64 name="override type" />
+		<_field_explanation name="variant names" />
+		<_field_block_64 name="variant names">
+			<_field_string_id name="variant name" />
+			</_field_block_64>
+		<_field_custom name="" />
+		<_field_string_id name="marker" />
+		<_field_char_enum name="change color">
+			<Item Name="none" />
+			<Item Name="primary" />
+			<Item Name="secondary" />
+			<Item Name="tertiary" />
+			<Item Name="quaternary" />
+		</_field_char_enum>
+		<_field_byte_flags name="flags">
+			<Item Name="always create" />
+			<Item Name="effect size scale from object scale" />
+			<Item Name="update on create" />
+			<Item Name="always update" />
+		</_field_byte_flags>
+		<_field_pad name="generated_padbd3f" length="2" />
+		<_field_string_id name="primary scale" />
+		<_field_string_id name="secondary scale" />
+		</_field_block_64>
+	<_field_block_64 name="attached objects">
+		<_field_tag_reference_64 name="object" />
+		<_field_tag_reference_64 name="first person render model" />
+		<_field_tag_reference_64 name="first person model animation graph" />
+		<_field_explanation name="FIRST PERSON ASSETS" />
+		<_field_tag_reference_64 name="first person asset" />
+		<_field_tag_reference_64 name="first person animation asset" />
+		<_field_string_id name="variant name" />
+		<_field_long_block_index name="parent override" />
+		<_field_string_id name="default parent marker" />
+		<_field_string_id name="default attachment marker" />
+		<_field_string_id name="secondary parent marker" />
+		<_field_string_id name="secondary attachment marker" />
+		<_field_string_id name="parent damage transfer section" />
+		<_field_byte_flags name="flags">
+			<Item Name="enable physics" />
+			<Item Name="share bones with parent" />
+			<Item Name="visible when implementation active" />
+			<Item Name="visibility controlled by animation" />
+			<Item Name="switch markers on animation keyframe" />
+			<Item Name="always use first person animations in first person" />
+		</_field_byte_flags>
+		<_field_char_enum name="visibility behavior">
+			<Item Name="always visible" />
+			<Item Name="visibility controlled by animation (not visible by default)" />
+			<Item Name="visibility controlled by animation (visible by default)" />
+			<Item Name="visible when implementation active" />
+			<Item Name="hidden when implementation active" />
+			<Item Name="visible when in input slot" />
+		</_field_char_enum>
+		<_field_char_enum name="first person visibility behavior">
+			<Item Name="default" />
+			<Item Name="visibility controlled by first person animation (invisible by default)" />
+			<Item Name="visibility controlled by first person animation (visible by default)" />
+			<Item Name="match third person behavior" />
+			<Item Name="always visible" />
+			<Item Name="never visible" />
+		</_field_char_enum>
+		<_field_pad name="generated_padf323" length="1" />
+		</_field_block_64>
+	<_field_explanation name="NOTE" />
+	<_field_tag_reference_64 name="modifiers" />
+	<_field_tag_reference_64 name="input slot change sound" />
+	<_field_tag_reference_64 name="implementation" />
+	<_field_tag_reference_64 name="metadata tag" />
+	<_field_block_64 name="UI display info">
+		<_field_string_id name="name" />
+		<_field_string_id name="alt name " />
+		<_field_string_id name="description" />
+		<_field_string_id name="help text" />
+		<_field_string_id name="icon string id" />
+		<_field_tag_reference_64 name="sprite" />
+		<_field_long_integer name="sprite index" />
+		<_field_tag_reference_64 name="alt sprite" />
+		<_field_long_integer name="alt sprite index" />
+		<_field_long_integer name="damage sprite index" />
+		<_field_tag_reference_64 name="ui vehicle screen reference" />
+		</_field_block_64>
+	<_field_string_id name="Swapper Menu Activation StringID Override" />
+	<_field_byte_flags name="flags">
+		<Item Name="always show ally nav point shield and health" />
+		<Item Name="not allowed to use dynamic input assignment" />
+		<Item Name="delete on reaching zero uses" />
+		<Item Name="delete on owner death" />
+	</_field_byte_flags>
+	<_field_byte_integer name="attachment priority" />
+	<_field_pad name="generated_pad3276" length="2" />
+	<_field_custom name="object dropping" />
+	<_field_tag_reference_64 name="object to spawn when removed" />
+	<_field_real name="energy per spawned object" />
+	<_field_custom name="" />
+	<_field_pad name="generated_pad7f2b" length="4" />
+	</plugin>

@@ -1,0 +1,241 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="global material types" />
+	<_field_string_id name="global water material" />
+	<_field_string_id name="global air material" />
+	<_field_string_id name="audio material switch group" />
+	<_field_short_integer name="global water material type" />
+	<_field_short_integer name="global air material type" />
+	<_field_block_64 name="runtime materials">
+		<_field_string_id name="name" />
+		<_field_string_id name="parent name" />
+		<_field_string_id name="audio material name" />
+		<_field_string_id name="audio fallback material name" />
+		<_field_short_integer name="audio fallback material index" />
+		<_field_short_integer name="runtime material index" />
+		<_field_word_flags name="flags">
+			<Item Name="does not block spawning" />
+			<Item Name="does not block grapple line of sight" />
+			<Item Name="does not block callout raycasts" />
+			<Item Name="blocks grapple aim assist" />
+			<Item Name="non-physical melee pass through" />
+			<Item Name="does not block seat entry" />
+			<Item Name="does not block object interaction line of sight" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad3ced" length="2" />
+		<_field_string_id name="general armor" />
+		<_field_string_id name="specific armor" />
+		<_field_short_integer name="runtime dry base material index" />
+		<_field_pad name="generated_pad230c" length="2" />
+		<_field_struct name="physics properties">
+			<_field_dword_integer name="flags" />
+			<_field_explanation name="Friction" />
+			<_field_struct name="inheritable friction">
+				<_field_real name="value" />
+				<_field_char_enum name="inherit">
+					<Item Name="disabled" />
+					<Item Name="enabled" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad6e4b" length="3" />
+				</_field_struct>
+			<_field_explanation name="Restitution" />
+			<_field_struct name="inheritable restitution">
+				<_field_real name="value" />
+				<_field_char_enum name="inherit">
+					<Item Name="disabled" />
+					<Item Name="enabled" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad6e4b" length="3" />
+				</_field_struct>
+			<_field_explanation name="Density" />
+			<_field_struct name="inheritable density">
+				<_field_real name="value" />
+				<_field_char_enum name="inherit">
+					<Item Name="disabled" />
+					<Item Name="enabled" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad6e4b" length="3" />
+				</_field_struct>
+			<_field_explanation name="Drag" />
+			<_field_tag_reference_64 name="water physics drag properties" />
+			<_field_block_64 name="drag overrides">
+				<_field_tag_reference_64 name="drag properties" />
+				</_field_block_64>
+			<_field_explanation name="Floatation" />
+			<_field_real name="default" />
+			<_field_real name="super floater" />
+			<_field_real name="floater" />
+			<_field_real name="neutral" />
+			<_field_real name="sinker" />
+			<_field_real name="super sinker" />
+			<_field_pad name="none" length="4" />
+			</_field_struct>
+		<_field_struct name="sweeteners">
+			<_field_tag_reference_64 name="sound sweetener (small)" />
+			<_field_tag_reference_64 name="sound sweetener (medium)" />
+			<_field_tag_reference_64 name="sound sweetener (large)" />
+			<_field_tag_reference_64 name="sound sweetener rolling" />
+			<_field_tag_reference_64 name="sound sweetener grinding" />
+			<_field_tag_reference_64 name="sound sweetener (melee small)" />
+			<_field_tag_reference_64 name="sound sweetener (melee)" />
+			<_field_tag_reference_64 name="sound sweetener (melee large)" />
+			<_field_tag_reference_64 name="effect sweetener (small)" />
+			<_field_tag_reference_64 name="effect sweetener (medium)" />
+			<_field_tag_reference_64 name="effect sweetener (large)" />
+			<_field_tag_reference_64 name="effect sweetener rolling" />
+			<_field_tag_reference_64 name="effect sweetener grinding" />
+			<_field_tag_reference_64 name="effect sweetener (melee)" />
+			<_field_tag_reference_64 name="water ripple (small)" />
+			<_field_tag_reference_64 name="water ripple (medium)" />
+			<_field_tag_reference_64 name="water ripple (large)" />
+			<_field_explanation name="sweetener inheritance flags" />
+			<_field_long_flags name="sweetener inheritance flags">
+				<Item Name="sound_small" />
+				<Item Name="sound_medium" />
+				<Item Name="sound_large" />
+				<Item Name="sound_rolling" />
+				<Item Name="sound_grinding" />
+				<Item Name="sound_melee_small" />
+				<Item Name="sound_melee" />
+				<Item Name="sound_melee_large" />
+				<Item Name="effect_small" />
+				<Item Name="effect_medium" />
+				<Item Name="effect_large" />
+				<Item Name="effect_rolling" />
+				<Item Name="effect_grinding" />
+				<Item Name="effect_melee" />
+				<Item Name="water_ripple_small" />
+				<Item Name="water_ripple_medium" />
+				<Item Name="water_ripple_large" />
+			</_field_long_flags>
+			</_field_struct>
+		<_field_tag_reference_64 name="material effects" />
+		<_field_block_64 name="underwater proxies">
+			<_field_explanation name="when this material is encounted under a material of this type ..." />
+			<_field_string_id name="underwater material" />
+			<_field_explanation name="... we report it as this material" />
+			<_field_string_id name="proxy material" />
+			<_field_short_integer name="underwater material type" />
+			<_field_short_integer name="proxy material type" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="materials">
+		<_field_string_id name="name" />
+		<_field_string_id name="parent name" />
+		<_field_string_id name="audio material name" />
+		<_field_string_id name="audio fallback material name" />
+		<_field_short_integer name="audio fallback material index" />
+		<_field_short_integer name="runtime material index" />
+		<_field_word_flags name="flags">
+			<Item Name="does not block spawning" />
+			<Item Name="does not block grapple line of sight" />
+			<Item Name="does not block callout raycasts" />
+			<Item Name="blocks grapple aim assist" />
+			<Item Name="non-physical melee pass through" />
+			<Item Name="does not block seat entry" />
+			<Item Name="does not block object interaction line of sight" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad3ced" length="2" />
+		<_field_string_id name="general armor" />
+		<_field_string_id name="specific armor" />
+		<_field_short_integer name="runtime dry base material index" />
+		<_field_pad name="generated_pad230c" length="2" />
+		<_field_struct name="physics properties">
+			<_field_dword_integer name="flags" />
+			<_field_explanation name="Friction" />
+			<_field_struct name="inheritable friction">
+				<_field_real name="value" />
+				<_field_char_enum name="inherit">
+					<Item Name="disabled" />
+					<Item Name="enabled" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad6e4b" length="3" />
+				</_field_struct>
+			<_field_explanation name="Restitution" />
+			<_field_struct name="inheritable restitution">
+				<_field_real name="value" />
+				<_field_char_enum name="inherit">
+					<Item Name="disabled" />
+					<Item Name="enabled" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad6e4b" length="3" />
+				</_field_struct>
+			<_field_explanation name="Density" />
+			<_field_struct name="inheritable density">
+				<_field_real name="value" />
+				<_field_char_enum name="inherit">
+					<Item Name="disabled" />
+					<Item Name="enabled" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad6e4b" length="3" />
+				</_field_struct>
+			<_field_explanation name="Drag" />
+			<_field_tag_reference_64 name="water physics drag properties" />
+			<_field_block_64 name="drag overrides">
+				<_field_tag_reference_64 name="drag properties" />
+				</_field_block_64>
+			<_field_explanation name="Floatation" />
+			<_field_real name="default" />
+			<_field_real name="super floater" />
+			<_field_real name="floater" />
+			<_field_real name="neutral" />
+			<_field_real name="sinker" />
+			<_field_real name="super sinker" />
+			<_field_pad name="none" length="4" />
+			</_field_struct>
+		<_field_struct name="sweeteners">
+			<_field_tag_reference_64 name="sound sweetener (small)" />
+			<_field_tag_reference_64 name="sound sweetener (medium)" />
+			<_field_tag_reference_64 name="sound sweetener (large)" />
+			<_field_tag_reference_64 name="sound sweetener rolling" />
+			<_field_tag_reference_64 name="sound sweetener grinding" />
+			<_field_tag_reference_64 name="sound sweetener (melee small)" />
+			<_field_tag_reference_64 name="sound sweetener (melee)" />
+			<_field_tag_reference_64 name="sound sweetener (melee large)" />
+			<_field_tag_reference_64 name="effect sweetener (small)" />
+			<_field_tag_reference_64 name="effect sweetener (medium)" />
+			<_field_tag_reference_64 name="effect sweetener (large)" />
+			<_field_tag_reference_64 name="effect sweetener rolling" />
+			<_field_tag_reference_64 name="effect sweetener grinding" />
+			<_field_tag_reference_64 name="effect sweetener (melee)" />
+			<_field_tag_reference_64 name="water ripple (small)" />
+			<_field_tag_reference_64 name="water ripple (medium)" />
+			<_field_tag_reference_64 name="water ripple (large)" />
+			<_field_explanation name="sweetener inheritance flags" />
+			<_field_long_flags name="sweetener inheritance flags">
+				<Item Name="sound_small" />
+				<Item Name="sound_medium" />
+				<Item Name="sound_large" />
+				<Item Name="sound_rolling" />
+				<Item Name="sound_grinding" />
+				<Item Name="sound_melee_small" />
+				<Item Name="sound_melee" />
+				<Item Name="sound_melee_large" />
+				<Item Name="effect_small" />
+				<Item Name="effect_medium" />
+				<Item Name="effect_large" />
+				<Item Name="effect_rolling" />
+				<Item Name="effect_grinding" />
+				<Item Name="effect_melee" />
+				<Item Name="water_ripple_small" />
+				<Item Name="water_ripple_medium" />
+				<Item Name="water_ripple_large" />
+			</_field_long_flags>
+			</_field_struct>
+		<_field_tag_reference_64 name="material effects" />
+		<_field_block_64 name="underwater proxies">
+			<_field_explanation name="when this material is encounted under a material of this type ..." />
+			<_field_string_id name="underwater material" />
+			<_field_explanation name="... we report it as this material" />
+			<_field_string_id name="proxy material" />
+			<_field_short_integer name="underwater material type" />
+			<_field_short_integer name="proxy material type" />
+			</_field_block_64>
+		</_field_block_64>
+	</plugin>

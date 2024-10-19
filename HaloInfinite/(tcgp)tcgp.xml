@@ -1,0 +1,18 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_byte_flags name="flags">
+		<Item Name="enabled" />
+		<Item Name="protect naked boundaries" />
+		<Item Name="protect material boundaries" />
+	</_field_byte_flags>
+	<_field_pad name="generated_pad7b4e" length="3" />
+	<_field_real name="max distance" />
+	<_field_real name="max shrink" />
+	<_field_pad name="generated_padc803" length="4" />
+	</plugin>

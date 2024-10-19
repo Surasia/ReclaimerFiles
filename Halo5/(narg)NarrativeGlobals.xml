@@ -1,0 +1,18 @@
+<!-- This is a mockup plugin with original field names and such -->
+<!-- Made by Zedd lol -->
+<plugin>
+	<_field_int64_integer name="vtable space*~!" />
+	<_field_struct name="internal struct" srcguid="151d0146-479c-181f-3970-ec869043bc33">
+		<_field_long_integer name="global tag ID!" />
+		<_field_pad name="local tag handle!~" length="4" />
+	</_field_struct>
+	<_field_block_64 name="Narrative Flag Definitions" max="64" srcguid="b43281fc-4268-4c5e-804e-e38495dd6a24" srcName="NarrativeFlagDefinitionBlock">
+		<_field_long_integer name="Index" />
+		<_field_char_enum name="Type">
+			<item Name="Unknown" />
+			<item Name="Terminal" />
+		</_field_char_enum>
+		<_field_pad name="fsarewrsda" length="3" />
+	</_field_block_64>
+	<_field_pad name="pad_tp" length="4" />
+</plugin>

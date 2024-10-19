@@ -1,0 +1,1355 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="content">
+		<_field_custom name="Links and Settings" />
+		<_field_struct name="links">
+			<_field_custom name="Links" />
+			<_field_explanation name="inheritance" />
+			<_field_struct name="inheritance">
+				<_field_block_64 name="inherited graph">
+					<_field_tag_reference_64 name="parent graph" />
+					<_field_long_flags name="inheritance_flags">
+						<Item Name="inherit root trans scale only" />
+						<Item Name="inherit for use on player" />
+					</_field_long_flags>
+					<_field_block_64 name="node map">
+						<_field_short_integer name="local node" />
+						</_field_block_64>
+					<_field_block_64 name="node map flags">
+						<_field_dword_integer name="local node flags" />
+						</_field_block_64>
+					<_field_real name="uniform translation scale" />
+					<_field_long_integer name="alias index" />
+					<_field_long_integer name="base index" />
+					<_field_block_64 name="temp anim list">
+						<_field_string_id name="name" />
+						</_field_block_64>
+					</_field_block_64>
+				</_field_struct>
+			<_field_explanation name="events" />
+			<_field_struct name="events">
+				<_field_tag_reference_64 name="events file" />
+				<_field_block_64 name="sound references">
+					<_field_string_id name="name" />
+					<_field_block_64 name="sounds">
+						<_field_tag_reference_64 name="sound" />
+						<_field_word_flags name="flags">
+							<Item Name="allow on player" />
+							<Item Name="left arm only" />
+							<Item Name="right arm only" />
+							<Item Name="first-person only" />
+							<Item Name="third-person only" />
+							<Item Name="forward only" />
+							<Item Name="reverse only" />
+							<Item Name="fp no aged weapons" />
+						</_field_word_flags>
+						<_field_pad name="generated_padeb82" length="2" />
+						<_field_tag_reference_64 name="model" />
+						<_field_string_id name="model variant" />
+						<_field_tag_reference_64 name="weapon" />
+						<_field_string_id name="weapon variant" />
+						</_field_block_64>
+					</_field_block_64>
+				<_field_block_64 name="dialogue references">
+					<_field_string_id name="vocalization name" />
+					<_field_char_enum name="play restriction">
+						<Item Name="Unrestricted" />
+						<Item Name="Only With Shield" />
+						<Item Name="Only With Shield Empty" />
+					</_field_char_enum>
+					<_field_pad name="generated_padf213" length="3" />
+					</_field_block_64>
+				<_field_block_64 name="effect references">
+					<_field_string_id name="name" />
+					<_field_block_64 name="effects">
+						<_field_tag_reference_64 name="effect" />
+						<_field_word_flags name="flags">
+							<Item Name="allow on player" />
+							<Item Name="left arm only" />
+							<Item Name="right arm only" />
+							<Item Name="first-person only" />
+							<Item Name="third-person only" />
+							<Item Name="forward only" />
+							<Item Name="reverse only" />
+							<Item Name="fp no aged weapons" />
+						</_field_word_flags>
+						<_field_pad name="generated_pad9456" length="2" />
+						<_field_tag_reference_64 name="model" />
+						<_field_string_id name="model variant" />
+						<_field_tag_reference_64 name="weapon" />
+						<_field_string_id name="weapon variant" />
+						</_field_block_64>
+					</_field_block_64>
+				</_field_struct>
+			<_field_explanation name="pca animation" />
+			<_field_struct name="pca">
+				<_field_tag_reference_64 name="pca animation" />
+				</_field_struct>
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_struct name="settings">
+			<_field_custom name="Settings" />
+			<_field_word_flags name="graph flags">
+				<Item Name="use dual mixing boards" />
+			</_field_word_flags>
+			<_field_word_flags name="private flags">
+				<Item Name="prepared for cache" />
+				<Item Name="imported with codec compressors" />
+				<Item Name="written to cache" />
+				<Item Name="animation data reordered" />
+				<Item Name="ready for use" />
+				<Item Name="possesses default ik chains for a biped" />
+				<Item Name="built flat inheritance list" />
+				<Item Name="Updated bone count to use shorts" />
+				<Item Name="model animation graph was built by a chore" />
+				<Item Name="has any transition animations" />
+			</_field_word_flags>
+			<_field_explanation name="Compression" />
+			<_field_short_enum name="force compression setting">
+				<Item Name="none" />
+				<Item Name="medium compression" />
+				<Item Name="rough compression" />
+				<Item Name="light compression" />
+				<Item Name="uncompressed" />
+				<Item Name="ACL auto" />
+				<Item Name="old codec" />
+				<Item Name="reach medium compression" />
+				<Item Name="reach rough compression" />
+			</_field_short_enum>
+			<_field_short_integer name="animation codec pack" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Skeleton and IK" />
+		<_field_explanation name="Warning" />
+		<_field_custom name="local data" />
+		<_field_tag_reference_64 name="skeleton link" />
+		<_field_struct name="skeleton">
+			<_field_long_integer name="skeleton checksum" />
+			<_field_block_64 name="skeleton bones">
+				<_field_string_id name="name" />
+				<_field_short_block_index name="next sibling node index" />
+				<_field_short_block_index name="first child node index" />
+				<_field_short_block_index name="parent node index" />
+				<_field_word_flags name="model flags">
+					<Item Name="primary model" />
+					<Item Name="secondary model" />
+					<Item Name="local root" />
+					<Item Name="left hand" />
+					<Item Name="right hand" />
+					<Item Name="left arm member" />
+					<Item Name="detail joint" />
+				</_field_word_flags>
+				<_field_real name="z_pos" />
+				<_field_long_integer name="frame_ID1" />
+				<_field_long_integer name="frame_ID2" />
+				</_field_block_64>
+			<_field_block_64 name="bone usage">
+				<_field_short_enum name="usage">
+					<Item Name="physics control" />
+					<Item Name="camera control" />
+					<Item Name="origin marker" />
+					<Item Name="left clavicle" />
+					<Item Name="left upperarm" />
+					<Item Name="pose blend pitch" />
+					<Item Name="pose blend yaw" />
+					<Item Name="pedestal" />
+					<Item Name="pelvis" />
+					<Item Name="left foot" />
+					<Item Name="right foot" />
+					<Item Name="damage root gut" />
+					<Item Name="damage root chest" />
+					<Item Name="damage root head" />
+					<Item Name="damage root left shoulder" />
+					<Item Name="damage root left arm" />
+					<Item Name="damage root left leg" />
+					<Item Name="damage root left foot" />
+					<Item Name="damage root right shoulder" />
+					<Item Name="damage root right arm" />
+					<Item Name="damage root right leg" />
+					<Item Name="damage root right foot" />
+					<Item Name="left hand" />
+					<Item Name="right hand" />
+					<Item Name="weapon ik" />
+					<Item Name="head" />
+					<Item Name="helmet" />
+					<Item Name="right clavicle" />
+					<Item Name="left forearm" />
+					<Item Name="right forearm" />
+					<Item Name="left front foot" />
+					<Item Name="right front foot" />
+					<Item Name="left eye" />
+					<Item Name="right eye" />
+					<Item Name="overlay object space parent" />
+				</_field_short_enum>
+				<_field_short_block_index name="node to use" />
+				</_field_block_64>
+			<_field_block_64 name="bone masks">
+				<_field_string_id name="name" />
+				<_field_word_flags name="flags">
+					<Item Name="invert" />
+				</_field_word_flags>
+				<_field_short_block_index name="chain start" />
+				<_field_block_64 name="chain ends">
+					<_field_short_block_index name="node" />
+					</_field_block_64>
+				<_field_block_64 name="nodes">
+					<_field_short_block_index name="node" />
+					</_field_block_64>
+				<_field_short_block_index name="add nodes" />
+				<_field_short_block_index name="remove nodes" />
+				<_field_array name="node flags">
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					</_field_array>
+				</_field_block_64>
+			<_field_block_64 name="user parameters">
+				<_field_string_id name="name" />
+				<_field_real name="default value" />
+				<_field_byte_flags name="flags">
+					<Item Name="SteppedCurve" />
+				</_field_byte_flags>
+				<_field_pad name="generated_pad54cc" length="3" />
+				</_field_block_64>
+			<_field_block_64 name="user parameter masks">
+				<_field_string_id name="name" />
+				<_field_word_flags name="flags">
+					<Item Name="invert" />
+				</_field_word_flags>
+				<_field_pad name="generated_pade566" length="2" />
+				<_field_block_64 name="userparams">
+					<_field_short_block_index name="userparam index" />
+					</_field_block_64>
+				<_field_short_block_index name="add nodes" />
+				<_field_short_block_index name="remove nodes" />
+				<_field_array name="user parameter flags">
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					<_field_long_integer name="flag data" />
+					</_field_array>
+				</_field_block_64>
+			</_field_struct>
+		<_field_struct name="ik">
+			<_field_explanation name="IK Junctions" />
+			<_field_block_64 name="ik junctions">
+				<_field_string_id name="name" />
+				<_field_short_block_index name="pivot node" />
+				<_field_short_block_index name="parent junction" />
+				<_field_short_integer name="supporting chain" />
+				<_field_short_block_index name="supporting node" />
+				<_field_real_fraction name="pull passthrough" />
+				</_field_block_64>
+			<_field_explanation name="IK Chains" />
+			<_field_block_64 name="ik chains">
+				<_field_string_id name="name" />
+				<_field_short_enum name="type">
+					<Item Name="standard" />
+					<Item Name="spine" />
+					<Item Name="spline driven spine" />
+				</_field_short_enum>
+				<_field_short_block_index name="start node" />
+				<_field_short_block_index name="effector node" />
+				<_field_short_block_index name="parent junction" />
+				<_field_short_integer name="rank" />
+				<_field_short_integer name="antecedents" />
+				<_field_block_64 name="special joints">
+					<_field_short_block_index name="joint index" />
+					<_field_word_flags name="flags">
+						<Item Name="static" />
+						<Item Name="hinge" />
+					</_field_word_flags>
+					</_field_block_64>
+				<_field_explanation name="Pull settings" />
+				<_field_real_fraction name="native pull strength" />
+				<_field_real_fraction name="native push strength" />
+				<_field_real_fraction name="over extent pull strength" />
+				<_field_real_fraction name="under extent push strength" />
+				<_field_explanation name="Effector Cone Limits" />
+				<_field_real_fraction name="effector cone limit power" />
+				<_field_angle_bounds name="pitch bounds" />
+				<_field_angle_bounds name="yaw bounds" />
+				<_field_real_bounds name="offset bounds" />
+				<_field_block_64 name="full joint chain">
+					<_field_short_block_index name="joint index" />
+					<_field_word_flags name="flags">
+						<Item Name="static" />
+						<Item Name="hinge" />
+					</_field_word_flags>
+					</_field_block_64>
+				<_field_real_fraction name="spline reversal strength" />
+				</_field_block_64>
+			<_field_block_64 name="ik leg definitions">
+				<_field_long_block_index name="leg ik chain" />
+				<_field_real_bounds name="standing compression limits" />
+				<_field_real_bounds name="crouching compression limits" />
+				<_field_real_bounds name="foot pitch limits" />
+				<_field_real_bounds name="foot yaw limits" />
+				</_field_block_64>
+			<_field_block_64 name="ik arm definitions">
+				<_field_long_block_index name="arm ik chain" />
+				<_field_real name="wrist break threshold" />
+				<_field_string_id name="fixup axis marker" />
+				<_field_real name="ik wrist break acceptable min angle" />
+				</_field_block_64>
+			<_field_explanation name="Points and Sets" />
+			<_field_block_64 name="ik point">
+				<_field_string_id name="name" />
+				<_field_string_id name="source marker" />
+				<_field_long_enum name="attach to">
+					<Item Name="parent" />
+					<Item Name="NYI any child" />
+					<Item Name="primary weapon" />
+					<Item Name="secondary weapon" />
+				</_field_long_enum>
+				<_field_string_id name="destination marker" />
+				<_field_real_point_3d name="pole marker" />
+				<_field_long_block_index name="chain to use" />
+				<_field_custom name="" />
+				<_field_string_id name="weight source object function" />
+				<_field_custom name="" />
+				<_field_string_id name="priority source object function" />
+				</_field_block_64>
+			<_field_block_64 name="ik sets">
+				<_field_string_id name="name" />
+				<_field_long_flags name="flags">
+					<Item Name="Disable Quadruped Footlocking" />
+					<Item Name="Enable Biped Handlocking" />
+				</_field_long_flags>
+				<_field_block_64 name="ik points">
+					<_field_short_block_index name="ik point" />
+					<_field_word_flags name="flags">
+						<Item Name="disable" />
+					</_field_word_flags>
+					</_field_block_64>
+				</_field_block_64>
+			<_field_explanation name="Ground-fit chains" />
+			<_field_block_64 name="groundfit ik chains">
+				<_field_explanation name="Chain Drivers" />
+				<_field_long_block_index name="start junction" />
+				<_field_long_block_index name="end junction" />
+				<_field_real name="probe distance" />
+				<_field_real name="angle threshold" />
+				<_field_real name="maximum rate" />
+				</_field_block_64>
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="" />
+		<_field_custom name="Animation Pool" />
+		<_field_block_64 name="animations">
+			<_field_string_id name="name" />
+			<_field_custom name="Play on player" />
+			<_field_short_integer name="frame count" />
+			<_field_word_integer name="node count" />
+			<_field_char_enum name="animation type">
+				<Item Name="none" />
+				<Item Name="base" />
+				<Item Name="overlay" />
+				<Item Name="replacement" />
+			</_field_char_enum>
+			<_field_char_enum name="frame info type">
+				<Item Name="none" />
+				<Item Name="dx,dy" />
+				<Item Name="dx,dy,dyaw" />
+				<Item Name="dx,dy,dz,dyaw" />
+				<Item Name="dx,dy,dz,dangle-axis" />
+				<Item Name="x,y,z - absolute" />
+				<Item Name="auto" />
+			</_field_char_enum>
+			<_field_char_enum name="desired frame info type">
+				<Item Name="none" />
+				<Item Name="dx,dy" />
+				<Item Name="dx,dy,dyaw" />
+				<Item Name="dx,dy,dz,dyaw" />
+				<Item Name="dx,dy,dz,dangle-axis" />
+				<Item Name="x,y,z - absolute" />
+				<Item Name="auto" />
+			</_field_char_enum>
+			<_field_char_enum name="desired compression">
+				<Item Name="best score" />
+				<Item Name="best compression" />
+				<Item Name="light compression" />
+				<Item Name="best accuracy" />
+				<Item Name="ACL auto" />
+				<Item Name="old codec" />
+				<Item Name="reach medium compression" />
+				<Item Name="reach rough compression" />
+			</_field_char_enum>
+			<_field_char_enum name="current compression">
+				<Item Name="best score" />
+				<Item Name="best compression" />
+				<Item Name="light compression" />
+				<Item Name="best accuracy" />
+				<Item Name="ACL auto" />
+				<Item Name="old codec" />
+				<Item Name="reach medium compression" />
+				<Item Name="reach rough compression" />
+			</_field_char_enum>
+			<_field_pad name="generated_padafd6" length="1" />
+			<_field_short_block_index name="parent animation" />
+			<_field_short_block_index name="next animation" />
+			<_field_short_block_index name="composite" />
+			<_field_real name="weight" />
+			<_field_short_integer name="loop frame index" />
+			<_field_word_flags name="user flags">
+				<Item Name="disable interpolation in" />
+				<Item Name="disable interpolation out" />
+				<Item Name="disable mode ik" />
+				<Item Name="disable weapon ik" />
+				<Item Name="disable weapon aim/1st person" />
+				<Item Name="disable look screen" />
+				<Item Name="force weapon ik on" />
+				<Item Name="enable replacement interpolation" />
+				<Item Name="enable blend-in on replacement anims" />
+				<Item Name="use custom blend-in time" />
+				<Item Name="disable ik sets" />
+				<Item Name="disable ik chains" />
+				<Item Name="translate and scale root only" />
+				<Item Name="enable blend-out on replacement anims" />
+				<Item Name="use custom replacement blend-out time" />
+				<Item Name="override player input" />
+			</_field_word_flags>
+			<_field_long_block_index name="replacement interpolator" />
+			<_field_real name="override blend in time" />
+			<_field_string_id name="replacement blend in weight function" />
+			<_field_real name="override blend out time" />
+			<_field_string_id name="replacement blend out weight function" />
+			<_field_string_id name="pca group name" />
+			<_field_block_64 name="first person overlay channel slider weight function map">
+				<_field_explanation name="FIRST PERSON OVERLAY CHANNEL WEIGHT SCALING" />
+				<_field_string_id name="overlay animation name" />
+				<_field_custom name="" />
+				<_field_string_id name="channel weight scale source" />
+				</_field_block_64>
+			<_field_word_flags name="internal flags">
+				<Item Name="&lt;unused0&gt;" />
+				<Item Name="&lt;unused1&gt;" />
+				<Item Name="&lt;unused2&gt;" />
+				<Item Name="&lt;unused3&gt;" />
+				<Item Name="&lt;unused4&gt;" />
+				<Item Name="&lt;unused5&gt;" />
+				<Item Name="compression disabled" />
+				<Item Name="&lt;unused6&gt;" />
+				<Item Name="valid production checksum" />
+				<Item Name="override force compression" />
+				<Item Name="contains pca data" />
+				<Item Name="authored at 60Hz" />
+				<Item Name="contains bamf function" />
+				<Item Name="whole frame playback" />
+				<Item Name="pose blend overlay" />
+			</_field_word_flags>
+			<_field_word_integer name="compressor_version" />
+			<_field_real_vector_3d name="heading" />
+			<_field_real name="heading angle" />
+			<_field_real name="average translation magnitude" />
+			<_field_real name="average pivot yaw" />
+			<_field_real name="original object space yaw" />
+			<_field_real name="maxElevationOffset" />
+			<_field_long_integer name="uid" />
+			<_field_dword_integer name="node list checksum" />
+			<_field_struct name="resource index">
+				<_field_short_block_index name="resource group" />
+				<_field_short_integer name="resource member index" />
+				</_field_struct>
+			</_field_block_64>
+		<_field_struct name="pca data">
+			<_field_explanation name="PCA Groups" />
+			<_field_block_64 name="PCA Groups">
+				<_field_string_id name="Group Name" />
+				<_field_long_integer name="Desired Mesh Count" />
+				<_field_explanation name="PCA Component Importance" />
+				<_field_real_vector_3d name="Position Importance Scale" />
+				<_field_real_vector_2d name="Normal Importance Scale" />
+				<_field_real_vector_2d name="Tension Importance Scale" />
+				</_field_block_64>
+			<_field_long_integer name="PCA Animation Count" />
+			<_field_long_integer name="PCA Checksum" />
+			</_field_struct>
+		<_field_block_64 name="composites">
+			<_field_string_id name="name" />
+			<_field_block_64 name="axes">
+				<_field_string_id name="name" />
+				<_field_string_id name="animation source" />
+				<_field_custom name="" />
+				<_field_string_id name="input function" />
+				<_field_real_bounds name="animation bounds" />
+				<_field_real_bounds name="input bounds" />
+				<_field_real_bounds name="clamp bounds" />
+				<_field_real name="blend limit" />
+				<_field_block_64 name="dead zones">
+					<_field_real_bounds name="bounds" />
+					<_field_real name="rate" />
+					<_field_real name="center" />
+					<_field_real name="radius" />
+					<_field_real name="amount" />
+					<_field_real name="delay" />
+					</_field_block_64>
+				<_field_byte_integer name="divisions" />
+				<_field_byte_integer name="priority" />
+				<_field_byte_integer name="update" />
+				<_field_byte_integer name="functionIndex" />
+				<_field_long_flags name="flags">
+					<Item Name="wrapped" />
+					<Item Name="clamped" />
+				</_field_long_flags>
+				</_field_block_64>
+			<_field_block_64 name="anims">
+				<_field_string_id name="source" />
+				<_field_block_64 name="values">
+					<_field_real name="value" />
+					</_field_block_64>
+				<_field_long_integer name="overridden" />
+				<_field_short_integer name="animIndex" />
+				<_field_byte_integer name="slideAxis" />
+				<_field_pad name="generated_padd329" length="1" />
+				</_field_block_64>
+			<_field_block_64 name="sets">
+				<_field_string_id name="name" />
+				<_field_string_id name="timing source" />
+				<_field_block_64 name="sync points">
+					<_field_short_enum name="key">
+						<Item Name="none" />
+						<Item Name="primary_keyframe" />
+						<Item Name="secondary_keyframe" />
+						<Item Name="tertiary_keyframe" />
+						<Item Name="left_foot" />
+						<Item Name="right_foot" />
+						<Item Name="allow_interruption" />
+						<Item Name="do_not_allow_interruption" />
+						<Item Name="both_feet_shuffle" />
+						<Item Name="body_impact" />
+						<Item Name="left_foot_lock" />
+						<Item Name="left_foot_unlock" />
+						<Item Name="right_foot_lock" />
+						<Item Name="right_foot_unlock" />
+						<Item Name="blend_range_marker" />
+						<Item Name="stride_expansion" />
+						<Item Name="stride_contraction" />
+						<Item Name="ragdoll_keyframe" />
+						<Item Name="drop_weapon_keyframe" />
+						<Item Name="match_a" />
+						<Item Name="match_b" />
+						<Item Name="match_c" />
+						<Item Name="match_d" />
+						<Item Name="jetpack_closed" />
+						<Item Name="jetpack_open" />
+						<Item Name="sound_event" />
+						<Item Name="effect_event" />
+						<Item Name="left_hand" />
+						<Item Name="right_hand" />
+						<Item Name="grenade" />
+						<Item Name="melee" />
+						<Item Name="interact_device" />
+						<Item Name="shield_raise" />
+						<Item Name="activate_equipment" />
+						<Item Name="aoe_attack" />
+						<Item Name="equipment" />
+						<Item Name="jink_fire" />
+						<Item Name="align_to_target" />
+						<Item Name="block_exiting" />
+						<Item Name="set_interruptable" />
+						<Item Name="disable_shooting" />
+						<Item Name="re_enable_shooting" />
+						<Item Name="skip_crouch_transition" />
+						<Item Name="start_bamf" />
+						<Item Name="end_bamf" />
+						<Item Name="hide" />
+						<Item Name="frame_attachment_objects_show" />
+						<Item Name="frame_attachment_objects_hide" />
+						<Item Name="creature_physics_mode_change" />
+						<Item Name="melee_range" />
+						<Item Name="frame_attachment_switch_to_secondary_parent_marker" />
+						<Item Name="frame_attachment_switch_to_default_parent_marker" />
+						<Item Name="allow_sprint_interrupt" />
+						<Item Name="hide_3p_primary_weapon" />
+						<Item Name="show_3p_primary_weapon" />
+					</_field_short_enum>
+					</_field_block_64>
+				<_field_data_64 name="sync frames" />
+				<_field_data_64 name="facets" />
+				<_field_data_64 name="neighbors" />
+				<_field_data_64 name="containment" />
+				<_field_data_64 name="example grid" />
+				<_field_real_bounds name="normalized bounds" />
+				<_field_byte_integer name="offset" />
+				<_field_pad name="generated_pad597a" length="1" />
+				<_field_short_integer name="timingAnimIndex" />
+				</_field_block_64>
+			<_field_block_64 name="strings">
+				<_field_string_id name="name" />
+				</_field_block_64>
+			<_field_string_id name="timing source" />
+			<_field_short_integer name="timingAnimIndex" />
+			<_field_short_integer name="medianThrottleMag" />
+			</_field_block_64>
+		<_field_block_64 name="action tokens">
+			<_field_string_id name="name" />
+			</_field_block_64>
+		<_field_block_64 name="overlay tokens">
+			<_field_string_id name="name" />
+			</_field_block_64>
+		<_field_block_64 name="poseBlend tokens">
+			<_field_string_id name="name" />
+			</_field_block_64>
+		<_field_custom name="" />
+		<_field_custom name="Blending and Overlays" />
+		<_field_block_64 name="functions">
+			<_field_string_id name="name" />
+			<_field_struct name="function">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			</_field_block_64>
+		<_field_block_64 name="blend screens">
+			<_field_string_id name="name" />
+			<_field_long_flags name="flags">
+				<Item Name="active only when weapon down" />
+				<Item Name="attempt piece-wise blending" />
+				<Item Name="allow parent adjustment" />
+				<Item Name="active only when weapon precise" />
+				<Item Name="generates IK Offsets" />
+			</_field_long_flags>
+			<_field_real name="weight" />
+			<_field_real_fraction name="interpolation rate" />
+			<_field_short_enum name="yaw source">
+				<Item Name="none" />
+				<Item Name="object function" />
+				<Item Name="horizontal test" />
+				<Item Name="vertical test" />
+				<Item Name="aim yaw" />
+				<Item Name="aim pitch" />
+				<Item Name="look yaw" />
+				<Item Name="look pitch" />
+				<Item Name="object yaw" />
+				<Item Name="object pitch" />
+				<Item Name="acceleration yaw" />
+				<Item Name="acceleration pitch" />
+				<Item Name="steering" />
+				<Item Name="velocity yaw" />
+				<Item Name="velocity pitch" />
+				<Item Name="damage gut yaw" />
+				<Item Name="damage gut pitch" />
+				<Item Name="damage chest yaw" />
+				<Item Name="damage chest pitch" />
+				<Item Name="damage head yaw" />
+				<Item Name="damage head pitch" />
+				<Item Name="damage left shoulder yaw" />
+				<Item Name="damage left shoulder pitch" />
+				<Item Name="damage left arm yaw" />
+				<Item Name="damage left arm pitch" />
+				<Item Name="damage left leg yaw" />
+				<Item Name="damage left leg pitch" />
+				<Item Name="damage left foot yaw" />
+				<Item Name="damage left foot pitch" />
+				<Item Name="damage right shoulder yaw" />
+				<Item Name="damage right shoulder pitch" />
+				<Item Name="damage right arm yaw" />
+				<Item Name="damage right arm pitch" />
+				<Item Name="damage right leg yaw" />
+				<Item Name="damage right leg pitch" />
+				<Item Name="damage right foot yaw" />
+				<Item Name="damage right foot pitch" />
+				<Item Name="defense yaw" />
+				<Item Name="defense pitch" />
+				<Item Name="first person pitch" />
+				<Item Name="first person turn" />
+				<Item Name="throttle side" />
+				<Item Name="throttle_forward" />
+				<Item Name="fp_look_offset_yaw" />
+				<Item Name="fp_look_offset_pitch" />
+				<Item Name="fp_look_accel_yaw" />
+				<Item Name="fp_look_accel_pitch" />
+				<Item Name="fp_grapple_target_yaw" />
+				<Item Name="fp_grapple_target_pitch" />
+			</_field_short_enum>
+			<_field_short_enum name="pitch source">
+				<Item Name="none" />
+				<Item Name="object function" />
+				<Item Name="horizontal test" />
+				<Item Name="vertical test" />
+				<Item Name="aim yaw" />
+				<Item Name="aim pitch" />
+				<Item Name="look yaw" />
+				<Item Name="look pitch" />
+				<Item Name="object yaw" />
+				<Item Name="object pitch" />
+				<Item Name="acceleration yaw" />
+				<Item Name="acceleration pitch" />
+				<Item Name="steering" />
+				<Item Name="velocity yaw" />
+				<Item Name="velocity pitch" />
+				<Item Name="damage gut yaw" />
+				<Item Name="damage gut pitch" />
+				<Item Name="damage chest yaw" />
+				<Item Name="damage chest pitch" />
+				<Item Name="damage head yaw" />
+				<Item Name="damage head pitch" />
+				<Item Name="damage left shoulder yaw" />
+				<Item Name="damage left shoulder pitch" />
+				<Item Name="damage left arm yaw" />
+				<Item Name="damage left arm pitch" />
+				<Item Name="damage left leg yaw" />
+				<Item Name="damage left leg pitch" />
+				<Item Name="damage left foot yaw" />
+				<Item Name="damage left foot pitch" />
+				<Item Name="damage right shoulder yaw" />
+				<Item Name="damage right shoulder pitch" />
+				<Item Name="damage right arm yaw" />
+				<Item Name="damage right arm pitch" />
+				<Item Name="damage right leg yaw" />
+				<Item Name="damage right leg pitch" />
+				<Item Name="damage right foot yaw" />
+				<Item Name="damage right foot pitch" />
+				<Item Name="defense yaw" />
+				<Item Name="defense pitch" />
+				<Item Name="first person pitch" />
+				<Item Name="first person turn" />
+				<Item Name="throttle side" />
+				<Item Name="throttle_forward" />
+				<Item Name="fp_look_offset_yaw" />
+				<Item Name="fp_look_offset_pitch" />
+				<Item Name="fp_look_accel_yaw" />
+				<Item Name="fp_look_accel_pitch" />
+				<Item Name="fp_grapple_target_yaw" />
+				<Item Name="fp_grapple_target_pitch" />
+			</_field_short_enum>
+			<_field_custom name="" />
+			<_field_string_id name="yaw source object function" />
+			<_field_custom name="" />
+			<_field_string_id name="pitch source object function" />
+			<_field_short_enum name="weight source">
+				<Item Name="none" />
+				<Item Name="object function" />
+				<Item Name="acceleration magnitude" />
+				<Item Name="velocity magnitude" />
+				<Item Name="state function a" />
+				<Item Name="state function b" />
+				<Item Name="state function c" />
+				<Item Name="state function d" />
+				<Item Name="damage chest(damage focus chest)" />
+				<Item Name="damage gut(damage focus gut)" />
+				<Item Name="damage head(damage focus head)" />
+				<Item Name="damage left shoulder(damage focus left shoulder)" />
+				<Item Name="damage left arm(damage focus left arm)" />
+				<Item Name="damage left leg(damage focus left leg)" />
+				<Item Name="damage left foot(damage focus left foot)" />
+				<Item Name="damage right shoulder(damage focus right shoulder)" />
+				<Item Name="damage right arm(damage focus right arm)" />
+				<Item Name="damage right leg(damage focus right leg)" />
+				<Item Name="damage right foot(damage focus right foot)" />
+				<Item Name="defense" />
+			</_field_short_enum>
+			<_field_short_enum name="secondary weight source">
+				<Item Name="none" />
+				<Item Name="object function" />
+				<Item Name="acceleration magnitude" />
+				<Item Name="velocity magnitude" />
+				<Item Name="state function a" />
+				<Item Name="state function b" />
+				<Item Name="state function c" />
+				<Item Name="state function d" />
+				<Item Name="damage chest(damage focus chest)" />
+				<Item Name="damage gut(damage focus gut)" />
+				<Item Name="damage head(damage focus head)" />
+				<Item Name="damage left shoulder(damage focus left shoulder)" />
+				<Item Name="damage left arm(damage focus left arm)" />
+				<Item Name="damage left leg(damage focus left leg)" />
+				<Item Name="damage left foot(damage focus left foot)" />
+				<Item Name="damage right shoulder(damage focus right shoulder)" />
+				<Item Name="damage right arm(damage focus right arm)" />
+				<Item Name="damage right leg(damage focus right leg)" />
+				<Item Name="damage right foot(damage focus right foot)" />
+				<Item Name="defense" />
+			</_field_short_enum>
+			<_field_custom name="" />
+			<_field_string_id name="weight source object function" />
+			<_field_custom name="" />
+			<_field_string_id name="secondary weight object function" />
+			<_field_short_block_index name="weight function" />
+			<_field_struct name="animation">
+				<_field_short_block_index name="parent graph" />
+				<_field_custom_short_block_index name="animation" />
+				</_field_struct>
+			<_field_pad name="generated_pade4f6" length="2" />
+			<_field_long_block_index name="animation token" />
+			</_field_block_64>
+		<_field_block_64 name="function overlays">
+			<_field_string_id name="name" />
+			<_field_long_flags name="flags">
+				<Item Name="strict looping" />
+				<Item Name="hold last frame" />
+			</_field_long_flags>
+			<_field_custom name="" />
+			<_field_string_id name="frame ratio object function" />
+			<_field_custom name="" />
+			<_field_string_id name="playback speed object function" />
+			<_field_custom name="" />
+			<_field_string_id name="blend weight object function" />
+			<_field_custom name="" />
+			<_field_string_id name="unlock function" />
+			<_field_real_bounds name="unlock range" />
+			<_field_struct name="animation">
+				<_field_short_block_index name="parent graph" />
+				<_field_custom_short_block_index name="animation" />
+				</_field_struct>
+			<_field_long_block_index name="animation token" />
+			<_field_short_integer name="start LOD taper" />
+			<_field_short_integer name="end LOD taper" />
+			</_field_block_64>
+		<_field_block_64 name="overlay groups">
+			<_field_string_id name="name" />
+			<_field_block_64 name="blend screens">
+				<_field_short_block_index name="blend screen" />
+				<_field_word_flags name="flags">
+					<Item Name="disable" />
+				</_field_word_flags>
+				<_field_short_block_index name="node mask" />
+				</_field_block_64>
+			<_field_block_64 name="function overlays">
+				<_field_short_block_index name="function overlay" />
+				<_field_word_flags name="flags">
+					<Item Name="disable" />
+				</_field_word_flags>
+				</_field_block_64>
+			</_field_block_64>
+		<_field_custom name="" />
+		<_field_custom name="Interpolators" />
+		<_field_block_64 name="interpolators">
+			<_field_string_id name="name" />
+			<_field_long_block_index name="bone mask" />
+			<_field_struct name="function">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			</_field_block_64>
+		<_field_block_64 name="interpolation sets">
+			<_field_string_id name="name" />
+			<_field_real name="seconds" />
+			<_field_block_64 name="interpolators">
+				<_field_long_block_index name="interpolator" />
+				</_field_block_64>
+			<_field_struct name="default curve">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			</_field_block_64>
+		<_field_custom name="" />
+		<_field_custom name="Animation Lookup Tables" />
+		<_field_block_64 name="model animation variants">
+			<_field_string_id name="variant name" />
+			<_field_block_64 name="mode or stance aliases">
+				<_field_string_id name="mode or stance" />
+				<_field_string_id name="alias" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="object function variants">
+			<_field_custom name="" />
+			<_field_string_id name="function name" />
+			<_field_block_64 name="mode or stance aliases">
+				<_field_string_id name="mode or stance" />
+				<_field_string_id name="alias" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="modes">
+			<_field_string_id name="label" />
+			<_field_short_block_index name="overlay group" />
+			<_field_short_block_index name="ik set" />
+			<_field_long_flags name="flags">
+				<Item Name="this is a stance" />
+			</_field_long_flags>
+			<_field_block_64 name="weapon class">
+				<_field_string_id name="label" />
+				<_field_short_block_index name="overlay group" />
+				<_field_short_block_index name="ik set" />
+				<_field_block_64 name="weapon type">
+					<_field_string_id name="label" />
+					<_field_short_block_index name="overlay group" />
+					<_field_short_block_index name="ik set" />
+					<_field_block_64 name="sets">
+						<_field_string_id name="label" />
+						<_field_short_block_index name="overlay group" />
+						<_field_short_block_index name="ik set" />
+						<_field_block_64 name="actions">
+							<_field_string_id name="label" />
+							<_field_short_block_index name="overlay group" />
+							<_field_short_block_index name="ik set" />
+							<_field_struct name="animation">
+								<_field_short_block_index name="parent graph" />
+								<_field_custom_short_block_index name="animation" />
+								</_field_struct>
+							</_field_block_64>
+						<_field_block_64 name="overlay animations">
+							<_field_string_id name="label" />
+							<_field_short_block_index name="overlay group" />
+							<_field_short_block_index name="ik set" />
+							<_field_struct name="animation">
+								<_field_short_block_index name="parent graph" />
+								<_field_custom_short_block_index name="animation" />
+								</_field_struct>
+							</_field_block_64>
+						<_field_block_64 name="death and damage">
+							<_field_string_id name="label" />
+							<_field_block_64 name="directions">
+								<_field_block_64 name="regions">
+									<_field_struct name="animation">
+										<_field_short_block_index name="parent graph" />
+										<_field_custom_short_block_index name="animation" />
+										</_field_struct>
+									</_field_block_64>
+								</_field_block_64>
+							</_field_block_64>
+						<_field_block_64 name="transitions">
+							<_field_string_id name="state name" />
+							<_field_block_64 name="destinations">
+								<_field_string_id name="mode name" />
+								<_field_string_id name="state name" />
+								<_field_struct name="transition settings">
+									<_field_long_block_index name="transition lerp" />
+									<_field_struct name="transition anim">
+										<_field_short_block_index name="parent graph" />
+										<_field_custom_short_block_index name="animation" />
+										</_field_struct>
+									<_field_custom name="" />
+									<_field_string_id name="anim timing function" />
+									<_field_long_block_index name="anim lerp in" />
+									<_field_long_block_index name="anim lerp out" />
+									</_field_struct>
+								</_field_block_64>
+							</_field_block_64>
+						<_field_block_64 name="velocity boundaries">
+							<_field_array name="velocity boundary entries">
+								<_field_real name="values" />
+								<_field_real name="values" />
+								<_field_real name="values" />
+								<_field_real name="values" />
+								<_field_real name="values" />
+								<_field_real name="values" />
+								<_field_real name="values" />
+								<_field_real name="values" />
+								</_field_array>
+							</_field_block_64>
+						</_field_block_64>
+					</_field_block_64>
+				<_field_block_64 name="weapon ik">
+					<_field_custom name="" />
+					<_field_string_id name="marker" />
+					<_field_custom name="" />
+					<_field_string_id name="attach to marker" />
+					<_field_custom name="" />
+					<_field_string_id name="weight source object function" />
+					<_field_custom name="" />
+					<_field_string_id name="priority source object function" />
+					</_field_block_64>
+				<_field_block_64 name="ranged actions">
+					<_field_string_id name="label" />
+					<_field_block_64 name="animations">
+						<_field_short_block_index name="overlay group" />
+						<_field_short_block_index name="ik set" />
+						<_field_struct name="animation">
+							<_field_short_block_index name="parent graph" />
+							<_field_custom_short_block_index name="animation" />
+							</_field_struct>
+						<_field_real name="animation parameter" />
+						<_field_real name="animation parameter b" />
+						</_field_block_64>
+					<_field_block_64 name="triangulation data">
+						<_field_block_64 name="points">
+							<_field_real_vector_2d name="point" />
+							</_field_block_64>
+						<_field_block_64 name="triangles">
+							<_field_byte_integer name="vertex1" />
+							<_field_byte_integer name="vertex2" />
+							<_field_byte_integer name="vertex3" />
+							<_field_byte_integer name="link12" />
+							<_field_byte_integer name="link23" />
+							<_field_byte_integer name="link31" />
+							<_field_pad name="padding" length="2" />
+							</_field_block_64>
+						</_field_block_64>
+					<_field_short_enum name="horizontal source">
+						<Item Name="none" />
+						<Item Name="offset x" />
+						<Item Name="offset y" />
+						<Item Name="offset z" />
+						<Item Name="offset horizontal" />
+						<Item Name="negative offset x" />
+						<Item Name="negative offset y" />
+					</_field_short_enum>
+					<_field_short_enum name="vertical source">
+						<Item Name="none" />
+						<Item Name="offset x" />
+						<Item Name="offset y" />
+						<Item Name="offset z" />
+						<Item Name="offset horizontal" />
+						<Item Name="negative offset x" />
+						<Item Name="negative offset y" />
+					</_field_short_enum>
+					<_field_short_enum name="start key">
+						<Item Name="none" />
+						<Item Name="primary_keyframe" />
+						<Item Name="secondary_keyframe" />
+						<Item Name="tertiary_keyframe" />
+						<Item Name="left_foot" />
+						<Item Name="right_foot" />
+						<Item Name="allow_interruption" />
+						<Item Name="do_not_allow_interruption" />
+						<Item Name="both_feet_shuffle" />
+						<Item Name="body_impact" />
+						<Item Name="left_foot_lock" />
+						<Item Name="left_foot_unlock" />
+						<Item Name="right_foot_lock" />
+						<Item Name="right_foot_unlock" />
+						<Item Name="blend_range_marker" />
+						<Item Name="stride_expansion" />
+						<Item Name="stride_contraction" />
+						<Item Name="ragdoll_keyframe" />
+						<Item Name="drop_weapon_keyframe" />
+						<Item Name="match_a" />
+						<Item Name="match_b" />
+						<Item Name="match_c" />
+						<Item Name="match_d" />
+						<Item Name="jetpack_closed" />
+						<Item Name="jetpack_open" />
+						<Item Name="sound_event" />
+						<Item Name="effect_event" />
+						<Item Name="left_hand" />
+						<Item Name="right_hand" />
+						<Item Name="grenade" />
+						<Item Name="melee" />
+						<Item Name="interact_device" />
+						<Item Name="shield_raise" />
+						<Item Name="activate_equipment" />
+						<Item Name="aoe_attack" />
+						<Item Name="equipment" />
+						<Item Name="jink_fire" />
+						<Item Name="align_to_target" />
+						<Item Name="block_exiting" />
+						<Item Name="set_interruptable" />
+						<Item Name="disable_shooting" />
+						<Item Name="re_enable_shooting" />
+						<Item Name="skip_crouch_transition" />
+						<Item Name="start_bamf" />
+						<Item Name="end_bamf" />
+						<Item Name="hide" />
+						<Item Name="frame_attachment_objects_show" />
+						<Item Name="frame_attachment_objects_hide" />
+						<Item Name="creature_physics_mode_change" />
+						<Item Name="melee_range" />
+						<Item Name="frame_attachment_switch_to_secondary_parent_marker" />
+						<Item Name="frame_attachment_switch_to_default_parent_marker" />
+						<Item Name="allow_sprint_interrupt" />
+						<Item Name="hide_3p_primary_weapon" />
+						<Item Name="show_3p_primary_weapon" />
+					</_field_short_enum>
+					<_field_short_enum name="end key">
+						<Item Name="none" />
+						<Item Name="primary_keyframe" />
+						<Item Name="secondary_keyframe" />
+						<Item Name="tertiary_keyframe" />
+						<Item Name="left_foot" />
+						<Item Name="right_foot" />
+						<Item Name="allow_interruption" />
+						<Item Name="do_not_allow_interruption" />
+						<Item Name="both_feet_shuffle" />
+						<Item Name="body_impact" />
+						<Item Name="left_foot_lock" />
+						<Item Name="left_foot_unlock" />
+						<Item Name="right_foot_lock" />
+						<Item Name="right_foot_unlock" />
+						<Item Name="blend_range_marker" />
+						<Item Name="stride_expansion" />
+						<Item Name="stride_contraction" />
+						<Item Name="ragdoll_keyframe" />
+						<Item Name="drop_weapon_keyframe" />
+						<Item Name="match_a" />
+						<Item Name="match_b" />
+						<Item Name="match_c" />
+						<Item Name="match_d" />
+						<Item Name="jetpack_closed" />
+						<Item Name="jetpack_open" />
+						<Item Name="sound_event" />
+						<Item Name="effect_event" />
+						<Item Name="left_hand" />
+						<Item Name="right_hand" />
+						<Item Name="grenade" />
+						<Item Name="melee" />
+						<Item Name="interact_device" />
+						<Item Name="shield_raise" />
+						<Item Name="activate_equipment" />
+						<Item Name="aoe_attack" />
+						<Item Name="equipment" />
+						<Item Name="jink_fire" />
+						<Item Name="align_to_target" />
+						<Item Name="block_exiting" />
+						<Item Name="set_interruptable" />
+						<Item Name="disable_shooting" />
+						<Item Name="re_enable_shooting" />
+						<Item Name="skip_crouch_transition" />
+						<Item Name="start_bamf" />
+						<Item Name="end_bamf" />
+						<Item Name="hide" />
+						<Item Name="frame_attachment_objects_show" />
+						<Item Name="frame_attachment_objects_hide" />
+						<Item Name="creature_physics_mode_change" />
+						<Item Name="melee_range" />
+						<Item Name="frame_attachment_switch_to_secondary_parent_marker" />
+						<Item Name="frame_attachment_switch_to_default_parent_marker" />
+						<Item Name="allow_sprint_interrupt" />
+						<Item Name="hide_3p_primary_weapon" />
+						<Item Name="show_3p_primary_weapon" />
+					</_field_short_enum>
+					</_field_block_64>
+				<_field_block_64 name="sync actions groups">
+					<_field_string_id name="name" />
+					<_field_block_64 name="sync actions">
+						<_field_string_id name="name" />
+						<_field_long_enum name="sync action type">
+							<Item Name="default" />
+							<Item Name="destroy defenses" />
+						</_field_long_enum>
+						<_field_block_64 name="same type participants">
+							<_field_long_flags name="flags">
+								<Item Name="Initiator" />
+								<Item Name="Critical Participant" />
+								<Item Name="Disabled" />
+								<Item Name="Airborne" />
+								<Item Name="Partner" />
+							</_field_long_flags>
+							<_field_struct name="animation">
+								<_field_short_block_index name="parent graph" />
+								<_field_custom_short_block_index name="animation" />
+								</_field_struct>
+							<_field_real_point_3d name="start offset" />
+							<_field_real_vector_3d name="start facing" />
+							<_field_real_point_3d name="end offset" />
+							<_field_real name="time_until_hurt" />
+							<_field_real_point_3d name="apex offset" />
+							</_field_block_64>
+						<_field_block_64 name="other participants">
+							<_field_long_flags name="flags">
+								<Item Name="Supports any type" />
+								<Item Name="Disabled" />
+							</_field_long_flags>
+							<_field_tag_reference_64 name="object type" />
+							</_field_block_64>
+						</_field_block_64>
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="mode ik">
+				<_field_custom name="" />
+				<_field_string_id name="marker" />
+				<_field_custom name="" />
+				<_field_string_id name="attach to marker" />
+				<_field_custom name="" />
+				<_field_string_id name="weight source object function" />
+				<_field_custom name="" />
+				<_field_string_id name="priority source object function" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_custom name="" />
+		<_field_custom name="Special Case Animations" />
+		<_field_block_64 name="vehicle suspension">
+			<_field_string_id name="label" />
+			<_field_struct name="animation">
+				<_field_short_block_index name="parent graph" />
+				<_field_custom_short_block_index name="animation" />
+				</_field_struct>
+			<_field_string_id name="function name" />
+			<_field_custom name="" />
+			<_field_string_id name="marker name" />
+			<_field_custom name="" />
+			<_field_string_id name="contact marker name" />
+			<_field_real name="mass point offset" />
+			<_field_real name="full extension ground_depth" />
+			<_field_real name="full compression ground_depth" />
+			<_field_explanation name="Destroyed Suspension" />
+			<_field_string_id name="region name" />
+			<_field_real name="destroyed mass point offset" />
+			<_field_real name="destroyed full extension ground_depth" />
+			<_field_real name="destroyed full compression ground_depth" />
+			</_field_block_64>
+		<_field_block_64 name="constant overlays">
+			<_field_string_id name="label" />
+			<_field_struct name="animation">
+				<_field_short_block_index name="parent graph" />
+				<_field_custom_short_block_index name="animation" />
+				</_field_struct>
+			<_field_short_enum name="function controls">
+				<Item Name="frame" />
+				<Item Name="scale" />
+			</_field_short_enum>
+			<_field_pad name="generated_padb2fd" length="2" />
+			<_field_string_id name="function" />
+			</_field_block_64>
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_custom name="Runtime Data" />
+	<_field_struct name="run time data">
+		<_field_block_64 name="weapon list">
+			<_field_string_id name="weapon name" />
+			<_field_string_id name="weapon class" />
+			</_field_block_64>
+		<_field_array name="left arm bit vector">
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			</_field_array>
+		<_field_array name="right arm bit vector">
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			</_field_array>
+		</_field_struct>
+	<_field_block_64 name="additional node data">
+		<_field_string_id name="node name" />
+		<_field_real_quaternion name="default rotation" />
+		<_field_real_point_3d name="default translation" />
+		<_field_real name="default scale" />
+		<_field_real_point_3d name="min bounds" />
+		<_field_real_point_3d name="max bounds" />
+		</_field_block_64>
+	<_field_block_64 name="tag resource groups">
+		<_field_long_integer name="reference_count" />
+		<_field_pageable_resource_64 name="tag_resource" />
+		</_field_block_64>
+	<_field_struct name="codec data">
+		<_field_explanation name="CODEC-SPECIFIC DATA" />
+		<_field_struct name="shared_static_codec">
+			<_field_explanation name="Shared Static Codec" />
+			<_field_block_64 name="rotations">
+				<_field_short_integer name="i" />
+				<_field_short_integer name="j" />
+				<_field_short_integer name="k" />
+				<_field_short_integer name="w" />
+				</_field_block_64>
+			<_field_block_64 name="translations">
+				<_field_real name="x" />
+				<_field_real name="y" />
+				<_field_real name="z" />
+				</_field_block_64>
+			<_field_block_64 name="scale">
+				<_field_real name="scale" />
+				</_field_block_64>
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_pad name="generated_pad6f43" length="4" />
+	</plugin>

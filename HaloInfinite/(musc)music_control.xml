@@ -1,0 +1,60 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_long_flags name="flags">
+		<Item Name="Only play when all local players are aligned" />
+		<Item Name="Don't restore priority on load" />
+	</_field_long_flags>
+	<_field_block_64 name="Music action list">
+		<_field_long_enum name="Music action">
+			<Item Name="NoAction" />
+			<Item Name="StartEvent" />
+			<Item Name="StopEvent" />
+			<Item Name="TriggerEventTracked" />
+			<Item Name="SetState" />
+			<Item Name="SetSwitch" />
+			<Item Name="SetRTPC" />
+			<Item Name="ResetPriority" />
+		</_field_long_enum>
+		<_field_string_id name="Name" />
+		<_field_long_integer name="Event or Group Name hash" />
+		<_field_string_id name="Group Value" />
+		<_field_long_integer name="Value" />
+		<_field_real name="Delay Time" />
+		</_field_block_64>
+	<_field_long_integer name="Action priority" />
+	<_field_block_64 name="Campaign Coop Parent Events">
+		<_field_string_id name="Parent Event" />
+		</_field_block_64>
+	<_field_custom name="Damage Listener" />
+	<_field_long_enum name="Force Damage listener">
+		<Item Name="Not Set" />
+		<Item Name="Enabled" />
+		<Item Name="Disabled" />
+	</_field_long_enum>
+	<_field_long_flags name="Damage Listener Flags">
+		<Item Name="Use biped combat intensity bypass flags for encounter" />
+	</_field_long_flags>
+	<_field_short_integer name="Damage Threshold" />
+	<_field_short_integer name="Enemy tracking proximity" />
+	<_field_custom name="" />
+	<_field_custom name="Combat Intensity" />
+	<_field_long_enum name="Enable Combat intensities">
+		<Item Name="Not Set" />
+		<Item Name="Enabled" />
+		<Item Name="Disabled" />
+	</_field_long_enum>
+	<_field_short_integer name="Low Combat Threshold" />
+	<_field_short_integer name="Medium Combat Threshold" />
+	<_field_short_integer name="High Combat Threshold" />
+	<_field_short_integer name="Transition Up Slew" />
+	<_field_short_integer name="Transition Down Slew" />
+	<_field_short_integer name="Tracking Weighted Average Slew Time" />
+	<_field_custom name="" />
+	<_field_tag_reference_64 name="Sound Bank" />
+	</plugin>

@@ -1,0 +1,52 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_real name="Camera distance" />
+	<_field_short_enum name="Number of camera points">
+		<Item Name="13 camera positions" />
+		<Item Name="41 camera positions" />
+		<Item Name="145 camera positions" />
+		<Item Name="181 camera positions" />
+		<Item Name="221 camera positions" />
+	</_field_short_enum>
+	<_field_word_flags name="Texture channels rendered">
+		<Item Name="Alpha" />
+		<Item Name="Albedo" />
+		<Item Name="Normals" />
+		<Item Name="Roughness" />
+		<Item Name="Ambient Occlusion" />
+		<Item Name="Depth" />
+	</_field_word_flags>
+	<_field_short_enum name="Grid shape">
+		<Item Name="Camera placements around hemisphere" />
+	</_field_short_enum>
+	<_field_short_enum name="Texture size">
+		<Item Name="128x128" />
+		<Item Name="256x256" />
+		<Item Name="512x512" />
+	</_field_short_enum>
+	<_field_short_enum name="Maximum LOD index">
+		<Item Name="lod 0" />
+		<Item Name="lod 1" />
+		<Item Name="lod 2" />
+		<Item Name="lod 3" />
+		<Item Name="lod 4" />
+		<Item Name="lod 5" />
+		<Item Name="lod 6" />
+		<Item Name="lod 7" />
+		<Item Name="lod 8" />
+		<Item Name="lod 9" />
+		<Item Name="lod 10" />
+		<Item Name="lod 11" />
+		<Item Name="lod 12" />
+		<Item Name="lod 13" />
+		<Item Name="lod 14" />
+		<Item Name="lod 15" />
+	</_field_short_enum>
+	<_field_pad name="generated_padac96" length="2" />
+	</plugin>

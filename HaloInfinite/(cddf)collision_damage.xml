@@ -1,0 +1,51 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="DamageStruct">
+		<_field_long_flags name="Flags">
+			<Item Name="Don't scale damage" />
+			<Item Name="Object may choose not to deal damage" />
+			<Item Name="Suppress death for non lethal damage" />
+			<Item Name="Replicate material effects to clients" />
+		</_field_long_flags>
+		<_field_real name="minimum velocity for lethal collision" />
+		<_field_explanation name="Game collision damage" />
+		<_field_struct name="game collision damage">
+			<_field_custom name="Mapping function" />
+			<_field_struct name="mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_real_bounds name="game acceleration" />
+		<_field_real name="minimum velocity for game damage" />
+		<_field_explanation name="Game collision damage scaling" />
+		<_field_real name="Apply collision damage scale" />
+		<_field_real name="Friendly apply collision damage scale" />
+		<_field_angle name="Game collision damage normal threshold" />
+		<_field_explanation name="Absolute collision damage" />
+		<_field_struct name="absolute collision damage">
+			<_field_custom name="Mapping function" />
+			<_field_struct name="mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_real_bounds name="absolute acceleration" />
+		<_field_real name="minimum velocity for absolute damage" />
+		<_field_explanation name="Absolute collision damage scaling" />
+		<_field_real name="Apply absolute collision damage scale" />
+		<_field_real name="Friendly apply absolute collision damage scale" />
+		<_field_angle name="Absolute collision damage normal threshold" />
+		<_field_explanation name="Alternative damage effect" />
+		<_field_tag_reference_64 name="alternative damage effect" />
+		</_field_struct>
+	<_field_pad name="generated_padcb8c" length="4" />
+	</plugin>

@@ -1,0 +1,119 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="Explanation" />
+	<_field_explanation name="Death Program Selection" />
+	<_field_custom name="" />
+	<_field_tag_reference_64 name="parent" />
+	<_field_block_64 name="Cause of Death">
+		<_field_long_enum name="Cause of Death">
+			<Item Name="default" />
+			<Item Name="headshot" />
+			<Item Name="melee" />
+			<Item Name="collision" />
+			<Item Name="area of effect" />
+		</_field_long_enum>
+		<_field_block_64 name="damage type">
+			<_field_explanation name="Triggering Damage Source" />
+			<_field_struct name="damageSource">
+				<_field_string_id name="Damage Source Name" />
+				</_field_struct>
+			<_field_explanation name="Damaged Regions" />
+			<_field_block_64 name="damage regions">
+				<_field_char_enum name="Damaged Region">
+					<Item Name="gut" />
+					<Item Name="chest" />
+					<Item Name="head" />
+					<Item Name="left shoulder" />
+					<Item Name="left arm" />
+					<Item Name="left leg" />
+					<Item Name="left foot" />
+					<Item Name="right shoulder" />
+					<Item Name="right arm" />
+					<Item Name="right leg" />
+					<Item Name="right foot" />
+				</_field_char_enum>
+				</_field_block_64>
+			<_field_block_64 name="velocity">
+				<_field_real name="minimum velocity" />
+				<_field_char_enum name="locomotion direction">
+					<Item Name="No specific direction" />
+					<Item Name="Front" />
+					<Item Name="Left" />
+					<Item Name="Right" />
+					<Item Name="Back" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad2cfd" length="3" />
+				<_field_long_enum name="death program">
+					<Item Name="animate then ragdoll" />
+					<Item Name="default ragdoll program" />
+					<Item Name="explosion ragdoll program" />
+					<Item Name="headshot ragdoll program" />
+					<Item Name="melee ragdoll program" />
+					<Item Name="powered ragdoll program" />
+					<Item Name="vehicle ragdoll program" />
+					<Item Name="impaled ragdoll program" />
+				</_field_long_enum>
+				<_field_real name="death program scale" />
+				<_field_real name="acceleration direction adjust z" />
+				<_field_real name="fallback death program scale" />
+				<_field_real name="fallback acceleration direction adjust z" />
+				<_field_real name="powered ragdoll impact radius" />
+				<_field_string_id name="death animation stance" />
+				<_field_byte_flags name="flags">
+					<Item Name="conservatively ragdoll" />
+					<Item Name="continue current animation" />
+					<Item Name="motor driven" />
+					<Item Name="use death ping" />
+					<Item Name="keyframe parentless rigidbodies" />
+					<Item Name="do not ragdoll, only animate" />
+				</_field_byte_flags>
+				<_field_pad name="generated_pad131c" length="3" />
+				<_field_custom name="Animate-then-ragdoll" />
+				<_field_angle name="ragdoll animation bypass angle" />
+				<_field_skip name="Cosine Angle" length="4" />
+				<_field_custom name="" />
+				<_field_custom name="Powered-ragdoll" />
+				<_field_real name="Blend duration" />
+				<_field_explanation name="Blend functions" />
+				<_field_block_64 name="Blend functions">
+					<_field_string_id name="name" />
+					<_field_byte_flags name="flags">
+						<Item Name="affects translation" />
+						<Item Name="affects orientation" />
+					</_field_byte_flags>
+					<_field_pad name="generated_pad9986" length="3" />
+					<_field_struct name="blend function">
+						<_field_custom name="function" />
+						<_field_struct name="function">
+							<_field_custom name="" />
+							<_field_data_64 name="data" />
+							<_field_custom name="" />
+							</_field_struct>
+						</_field_struct>
+					<_field_string_id name="ragdoll subgroup" />
+					</_field_block_64>
+				<_field_custom name="" />
+				<_field_custom name="Motor-driven-ragdoll" />
+				<_field_real_fraction name="Keyframe threshold" />
+				<_field_custom name="" />
+				<_field_custom name="Explosion-ragdoll" />
+				<_field_real name="explosion radius" />
+				<_field_struct name="explosion impulse curve">
+					<_field_custom name="function" />
+					<_field_struct name="function">
+						<_field_custom name="" />
+						<_field_data_64 name="data" />
+						<_field_custom name="" />
+						</_field_struct>
+					</_field_struct>
+				<_field_custom name="" />
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	</plugin>

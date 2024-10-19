@@ -1,0 +1,88 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="TYPE FLAGS" />
+	<_field_long_flags name="flags">
+		<Item Name="ripple drifted by flow" />
+		<Item Name="amplitude changed by pendulum function" />
+		<Item Name="display flash foam" />
+		<Item Name="foam size defined in game unit" />
+	</_field_long_flags>
+	<_field_explanation name="INITIAL SETTINGS" />
+	<_field_real name="initial radius" />
+	<_field_real name="initial amplitude" />
+	<_field_real name="spread speed" />
+	<_field_real name="speed bias" />
+	<_field_real name="position random range" />
+	<_field_real name="max visibility distance" />
+	<_field_explanation name="LIFE SETTINGS" />
+	<_field_real name="duration max" />
+	<_field_real name="duration min" />
+	<_field_real name="rise period ratio" />
+	<_field_short_enum name="rise function">
+		<Item Name="linear" />
+		<Item Name="early" />
+		<Item Name="very early" />
+		<Item Name="late" />
+		<Item Name="very late" />
+		<Item Name="cosine" />
+		<Item Name="one" />
+		<Item Name="zero" />
+	</_field_short_enum>
+	<_field_short_enum name="descend function">
+		<Item Name="linear" />
+		<Item Name="early" />
+		<Item Name="very early" />
+		<Item Name="late" />
+		<Item Name="very late" />
+		<Item Name="cosine" />
+		<Item Name="one" />
+		<Item Name="zero" />
+	</_field_short_enum>
+	<_field_explanation name="PENDULUM SETTINGS" />
+	<_field_real name="phase revolution speed" />
+	<_field_real name="phase repeat along radius" />
+	<_field_explanation name="SHAPE TRANSITION" />
+	<_field_real name="pattern start idx" />
+	<_field_real name="pattern end idx" />
+	<_field_short_enum name="pattern transition">
+		<Item Name="linear" />
+		<Item Name="early" />
+		<Item Name="very early" />
+		<Item Name="late" />
+		<Item Name="very late" />
+		<Item Name="cosine" />
+		<Item Name="one" />
+		<Item Name="zero" />
+	</_field_short_enum>
+	<_field_pad name="generated_pad8f3f" length="2" />
+	<_field_explanation name="FOAM" />
+	<_field_real name="foam out radius" />
+	<_field_real name="foam fade distance" />
+	<_field_real name="foam duration" />
+	<_field_short_enum name="foam rise function">
+		<Item Name="linear" />
+		<Item Name="early" />
+		<Item Name="very early" />
+		<Item Name="late" />
+		<Item Name="very late" />
+		<Item Name="cosine" />
+		<Item Name="one" />
+		<Item Name="zero" />
+	</_field_short_enum>
+	<_field_short_enum name="foam fade function">
+		<Item Name="linear" />
+		<Item Name="early" />
+		<Item Name="very early" />
+		<Item Name="late" />
+		<Item Name="very late" />
+		<Item Name="cosine" />
+		<Item Name="one" />
+		<Item Name="zero" />
+	</_field_short_enum>
+	</plugin>

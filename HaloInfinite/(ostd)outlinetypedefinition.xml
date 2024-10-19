@@ -1,0 +1,65 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_string_id name="material name" />
+	<_field_long_flags name="flags">
+		<Item Name="Vertical Fade" />
+		<Item Name="Scale Outline Distance With Zoom" />
+	</_field_long_flags>
+	<_field_char_enum name="child outlining behaviour">
+		<Item Name="do not outline children" />
+		<Item Name="only children created with parent" />
+		<Item Name="all children" />
+	</_field_char_enum>
+	<_field_pad name="generated_pada225" length="3" />
+	<_field_real name="fade in duration" />
+	<_field_real name="fade out duration" />
+	<_field_real_rgb_color name="Color" />
+	<_field_real name="Opacity" />
+	<_field_real name="Additiveness" />
+	<_field_real name="Intensity" />
+	<_field_real name="Outline Weight" />
+	<_field_real name="Inline Weight" />
+	<_field_real name="Distance Fade Start" />
+	<_field_real name="Distance Fade End" />
+	<_field_real name="Distance Fade End Value" />
+	<_field_real name="Distance Thin Start" />
+	<_field_real name="Distance Thin End" />
+	<_field_real name="Distance Thin End Value" />
+	<_field_char_enum name="Occlusion Mode">
+		<Item Name="draw outline where object is occluded AND visible" />
+		<Item Name="draw outline where object is visible" />
+		<Item Name="draw outline where object is occluded" />
+		<Item Name="do not draw" />
+	</_field_char_enum>
+	<_field_pad name="generated_pad8844" length="3" />
+	<_field_real name="Occlusion Bias" />
+	<_field_real name="Occlusion Fade Range" />
+	<_field_real name="Occlusion Fade Multiplier" />
+	<_field_real_rgb_color name="Fill Color" />
+	<_field_real name="Fill Opacity" />
+	<_field_real name="Fill Intensity" />
+	<_field_real name="Fill Distance Fade Start" />
+	<_field_real name="Fill Distance Fade End" />
+	<_field_real name="Fill Distance Fade End Value" />
+	<_field_char_enum name="Fill Occlusion Mode">
+		<Item Name="draw outline where object is occluded AND visible" />
+		<Item Name="draw outline where object is visible" />
+		<Item Name="draw outline where object is occluded" />
+		<Item Name="do not draw" />
+	</_field_char_enum>
+	<_field_pad name="generated_pad3b8f" length="3" />
+	<_field_real name="Vertical Fade Start" />
+	<_field_real name="Vertical Fade End" />
+	<_field_real name="Vertical Fade End Value" />
+	<_field_real name="Transition To Duration" />
+	<_field_tag_reference_64 name="Outline Override Protanopia" />
+	<_field_tag_reference_64 name="Outline Override Deuteranopia" />
+	<_field_tag_reference_64 name="Outline Override Tritanopia" />
+	<_field_pad name="generated_pad21ae" length="4" />
+	</plugin>

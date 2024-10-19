@@ -1,0 +1,19 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="bundles">
+		<_field_tag_reference_64 name="bundle" />
+		</_field_block_64>
+	<_field_block_64 name="children">
+		<_field_tag_reference_64 name="bundleSet" />
+		</_field_block_64>
+	<_field_block_64 name="flatBundles">
+		<_field_tag_reference_64 name="bundle" />
+		</_field_block_64>
+	<_field_pad name="generated_pade53e" length="4" />
+	</plugin>

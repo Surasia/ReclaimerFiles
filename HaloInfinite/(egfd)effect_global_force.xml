@@ -1,0 +1,30 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="force">
+		<_field_byte_flags name="flags">
+			<Item Name="is infinitely long cylinder" />
+			<Item Name="multiply force by attached object speed" />
+			<Item Name="override force direction" />
+		</_field_byte_flags>
+		<_field_char_enum name="shape">
+			<Item Name="sphere" />
+			<Item Name="cylinder" />
+			<Item Name="plane" />
+		</_field_char_enum>
+		<_field_byte_integer name="version" />
+		<_field_pad name="generated_pad5f24" length="1" />
+		<_field_real name="normal force strength" />
+		<_field_real name="tangent force strength" />
+		<_field_real name="binormal force strength" />
+		<_field_real name="falloff begin" />
+		<_field_real name="falloff end" />
+		<_field_real name="max speed" />
+		<_field_real_vector_3d name="direction override" />
+		</_field_struct>
+	</plugin>

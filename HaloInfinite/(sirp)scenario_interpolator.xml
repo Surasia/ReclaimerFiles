@@ -1,0 +1,43 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="interpolators">
+		<_field_long_flags name="flags">
+			<Item Name="loop" />
+			<Item Name="always active" />
+		</_field_long_flags>
+		<_field_string_id name="name" />
+		<_field_struct name="function">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_real name="duration" />
+		<_field_long_enum name="map reset type">
+			<Item Name="initial" />
+			<Item Name="ending" />
+			<Item Name="custom" />
+		</_field_long_enum>
+		<_field_real name="custom map reset value" />
+		<_field_long_enum name="start type">
+			<Item Name="initial" />
+			<Item Name="unchanged" />
+		</_field_long_enum>
+		<_field_long_enum name="stop type">
+			<Item Name="initial" />
+			<Item Name="hold" />
+			<Item Name="end" />
+			<Item Name="custom" />
+		</_field_long_enum>
+		<_field_real name="custom stop value" />
+		</_field_block_64>
+	<_field_pad name="generated_pad61c1" length="4" />
+	</plugin>

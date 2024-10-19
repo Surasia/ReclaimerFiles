@@ -1,0 +1,31 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="m_vectorVertices">
+		<_field_real_point_2d name="position" />
+		<_field_long_integer name="region index" />
+		<_field_real_point_3d name="texcoord" />
+		<_field_long_integer name="render type" />
+		</_field_block_64>
+	<_field_block_64 name="m_vectorIndices">
+		<_field_word_integer name="index" />
+		</_field_block_64>
+	<_field_block_64 name="m_drawInformation">
+		<_field_word_integer name="entry point" />
+		<_field_word_integer name="vertex start" />
+		<_field_word_integer name="index start" />
+		<_field_word_integer name="index count" />
+		</_field_block_64>
+	<_field_pad name="generated_padc0a6" length="4" />
+	<_field_int64_integer name="vertexBuffer" />
+	<_field_int64_integer name="indexBuffer" />
+	<_field_real name="aspectRatio" />
+	<_field_long_integer name="m_validDrawIndexCount" />
+	<_field_long_integer name="m_validDrawInformationCount" />
+	<_field_pad name="generated_pad0d5b" length="4" />
+	</plugin>

@@ -1,0 +1,86 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_word_flags name="Flags">
+		<Item Name="Auto-play Spawn Animation" />
+		<Item Name="Use Dissolve on Spawn and Despawn" />
+	</_field_word_flags>
+	<_field_pad name="generated_pad7f42" length="2" />
+	<_field_real name="Effect On Spawn Duration" />
+	<_field_real name="Effect On Despawn Duration" />
+	<_field_real name="Gaze Return Orientation Speed" />
+	<_field_real name="Initial Gaze Duration" />
+	<_field_long_integer name="Maximum Base Color Intensity" />
+	<_field_long_integer name="Maximum Face Color Intensity" />
+	<_field_long_integer name="Maximum Glow Color Intensity" />
+	<_field_long_integer name="Maximum Scanline Scale" />
+	<_field_long_integer name="Maximum Scanline Speed" />
+	<_field_long_integer name="Scanline Pattern Count" />
+	<_field_block_64 name="Color Preset Definitions">
+		<_field_string_id name="Color Preset" />
+		<_field_real name="Color Intensity" />
+		<_field_real_rgb_color name="Base Color" />
+		<_field_real name="Glow Color Intensity" />
+		<_field_real_rgb_color name="Glow Color" />
+		<_field_long_integer name="Scanline Pattern" />
+		<_field_real name="Scanline Scale" />
+		<_field_real name="Scanline Speed" />
+		<_field_real name="Face Color Intensity" />
+		<_field_real_rgb_color name="Face Color" />
+		</_field_block_64>
+	<_field_block_64 name="Avatar Configurations">
+		<_field_long_enum name="Avatar Type">
+			<Item Name="Prism" />
+			<Item Name="Pyramid" />
+			<Item Name="Sphere" />
+			<Item Name="Teardrop" />
+			<Item Name="Superintendent" />
+			<Item Name="Mister Chief" />
+			<Item Name="Iratus" />
+			<Item Name="Mati" />
+			<Item Name="Auntie Dot" />
+			<Item Name="Proto1" />
+			<Item Name="Proto2" />
+		</_field_long_enum>
+		<_field_string_id name="Avatar Variant Name" />
+		<_field_long_integer name="Facial Bitmap Index Count" />
+		<_field_string_id name="Facial Animation Parameter" />
+		<_field_long_integer name="Second Facial Bitmap Index Count" />
+		<_field_string_id name="Second Facial Animation Parameter" />
+		<_field_real name="Effect On Spawn Delay" />
+		<_field_real name="Effect On Despawn Delay" />
+		<_field_block_64 name="Animations">
+			<_field_long_enum name="Animation Type">
+				<Item Name="Idle" />
+				<Item Name="Spawn" />
+				<Item Name="Despawn" />
+				<Item Name="DespawnNegative" />
+				<Item Name="DespawnSad" />
+				<Item Name="HackingEnter" />
+				<Item Name="HackingLoop" />
+				<Item Name="HackingSuccess" />
+				<Item Name="HackingFailure" />
+				<Item Name="EmotePanic" />
+				<Item Name="EmoteCelebration" />
+				<Item Name="EmoteGreeting" />
+				<Item Name="EmotePositive" />
+			</_field_long_enum>
+			<_field_string_id name="Body Transition Parameter" />
+			<_field_word_flags name="Flags">
+				<Item Name="Looping" />
+			</_field_word_flags>
+			<_field_pad name="generated_pad60f5" length="2" />
+			<_field_block_64 name="Facial Animation Data">
+				<_field_long_integer name="Bitmap Index" />
+				<_field_long_integer name="Second Bitmap Index" />
+				<_field_real name="Display Frame Length" />
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_pad name="generated_padcbf7" length="4" />
+	</plugin>

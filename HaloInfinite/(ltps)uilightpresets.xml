@@ -1,0 +1,266 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Light Presets Settings">
+		<_field_string_id name="Preset Name" />
+		<_field_short_enum name="Core Type">
+			<Item Name="Unknown" />
+			<Item Name="Armor" />
+			<Item Name="Ai" />
+			<Item Name="WeaponSidekick" />
+			<Item Name="WeaponAR" />
+			<Item Name="WeaponBR" />
+			<Item Name="WeaponCommando" />
+			<Item Name="WeaponSPnKr" />
+			<Item Name="WeaponSniper" />
+			<Item Name="WeaponShotgun" />
+			<Item Name="WeaponHydra" />
+			<Item Name="WeaponBandit" />
+			<Item Name="VehicleWarthog" />
+			<Item Name="VehicleMongoose" />
+			<Item Name="VehicleScorpion" />
+			<Item Name="VehicleWasp" />
+			<Item Name="VehicleRazorBack" />
+			<Item Name="VehicleGungoose" />
+			<Item Name="VehicleRockethog" />
+		</_field_short_enum>
+		<_field_short_enum name="Item Type">
+			<Item Name="None" />
+			<Item Name="ArmorChestAttachment" />
+			<Item Name="ArmorCoating" />
+			<Item Name="ArmorGlove" />
+			<Item Name="ArmorHelmetAttachment" />
+			<Item Name="ArmorHelmet" />
+			<Item Name="ArmorKneePad" />
+			<Item Name="ArmorTheme" />
+			<Item Name="ArmorLeftShoulderPad" />
+			<Item Name="ArmorRightShoulderPad" />
+			<Item Name="ArmorHipAttachment" />
+			<Item Name="ArmorWristAttachment" />
+			<Item Name="ArmorVisor" />
+			<Item Name="ArmorEmblem" />
+			<Item Name="ArmorFx" />
+			<Item Name="ArmorMythicFx" />
+			<Item Name="ArmorCore" />
+			<Item Name="SpartanActionPose" />
+			<Item Name="SpartanStance" />
+			<Item Name="SpartanBackdropImage" />
+			<Item Name="SpartanEmblem" />
+			<Item Name="SpartanVoice" />
+			<Item Name="WeaponCharm" />
+			<Item Name="WeaponAmmoCounterColor" />
+			<Item Name="WeaponCoating" />
+			<Item Name="WeaponDeathFx" />
+			<Item Name="WeaponEmblem" />
+			<Item Name="WeaponTheme" />
+			<Item Name="WeaponStatTracker" />
+			<Item Name="WeaponCore" />
+			<Item Name="WeaponAlternateGeometryRegion" />
+			<Item Name="AiColor" />
+			<Item Name="AiModel" />
+			<Item Name="AiTheme" />
+			<Item Name="AiCore" />
+			<Item Name="VehicleAlternateGeometryRegion" />
+			<Item Name="VehicleCharm" />
+			<Item Name="VehicleCoating" />
+			<Item Name="VehicleEmblem" />
+			<Item Name="VehicleFx" />
+			<Item Name="VehicleHorn" />
+			<Item Name="VehicleTheme" />
+			<Item Name="VehicleCore" />
+			<Item Name="ArmorEmblemCoating" />
+			<Item Name="WeaponEmblemCoating" />
+			<Item Name="VehicleEmblemCoating" />
+			<Item Name="SpartanEmblemCoating" />
+			<Item Name="Consumable" />
+			<Item Name="XPGrant" />
+			<Item Name="XPBoost" />
+			<Item Name="ChallengeReroll" />
+			<Item Name="VirtualCurrency" />
+		</_field_short_enum>
+		<_field_short_enum name="Position Type">
+			<Item Name="Default" />
+			<Item Name="Custom" />
+			<Item Name="Custom1" />
+		</_field_short_enum>
+		<_field_pad name="generated_pad7823" length="2" />
+		<_field_real name="Dimmer transition time" />
+		<_field_byte_flags name="Skip Light Transition">
+			<Item Name="True" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad2b6e" length="3" />
+		<_field_block_64 name="Lights">
+			<_field_string_id name="Light Name" />
+			<_field_real_vector_3d name="Light Position Offset" />
+			<_field_real_euler_angles_3d name="Facing" />
+			<_field_real_rgb_color name="Color" />
+			<_field_real name="Source Energy" />
+			<_field_real name="Dimmer Value" />
+			<_field_real name="Minimum Roughness" />
+			<_field_real name="Fog Intensity" />
+			<_field_real name="Near Attenuation" />
+			<_field_real name="Far Attenuation" />
+			<_field_explanation name="Shared Spot Parameters" />
+			<_field_real name="Inner Cone Angle" />
+			<_field_real name="Outer Cone Angle" />
+			<_field_real name="Shadow Near Clip Plane" />
+			<_field_real name="Shadow Far Clip Plane" />
+			<_field_real name="Shadow Bias Offset" />
+			<_field_real name="Shadow Filter Width" />
+			<_field_real name="Near Begin" />
+			<_field_real name="Far Begin" />
+			<_field_real name="Camera Near Distance Fade End" />
+			<_field_real name="Camera Near Distance Fade Start" />
+			<_field_real name="Camera Distance Fade Start" />
+			<_field_real name="Camera Distance Fade End" />
+			<_field_real name="Area Light Radius" />
+			<_field_real name="Area Light Length" />
+			<_field_real name="Override Source Intensity Multiplier" />
+			</_field_block_64>
+		<_field_block_64 name="Cubemap Volume">
+			<_field_string_id name="Cubemap Name" />
+			<_field_real_vector_3d name="Cubemap Position Offset" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Light Scene Presets Settings">
+		<_field_short_enum name="Scene type">
+			<Item Name="SpartanArmor" />
+			<Item Name="Weapons" />
+			<Item Name="Vehicle" />
+			<Item Name="Ai" />
+			<Item Name="Fireteam" />
+			<Item Name="Presentation" />
+			<Item Name="Inspect" />
+			<Item Name="InspectPlayer" />
+			<Item Name="PGCR" />
+			<Item Name="MainMenu" />
+		</_field_short_enum>
+		<_field_pad name="generated_padf35d" length="2" />
+		<_field_block_64 name="Light Presets Settings">
+			<_field_string_id name="Preset Name" />
+			<_field_short_enum name="Core Type">
+				<Item Name="Unknown" />
+				<Item Name="Armor" />
+				<Item Name="Ai" />
+				<Item Name="WeaponSidekick" />
+				<Item Name="WeaponAR" />
+				<Item Name="WeaponBR" />
+				<Item Name="WeaponCommando" />
+				<Item Name="WeaponSPnKr" />
+				<Item Name="WeaponSniper" />
+				<Item Name="WeaponShotgun" />
+				<Item Name="WeaponHydra" />
+				<Item Name="WeaponBandit" />
+				<Item Name="VehicleWarthog" />
+				<Item Name="VehicleMongoose" />
+				<Item Name="VehicleScorpion" />
+				<Item Name="VehicleWasp" />
+				<Item Name="VehicleRazorBack" />
+				<Item Name="VehicleGungoose" />
+				<Item Name="VehicleRockethog" />
+			</_field_short_enum>
+			<_field_short_enum name="Item Type">
+				<Item Name="None" />
+				<Item Name="ArmorChestAttachment" />
+				<Item Name="ArmorCoating" />
+				<Item Name="ArmorGlove" />
+				<Item Name="ArmorHelmetAttachment" />
+				<Item Name="ArmorHelmet" />
+				<Item Name="ArmorKneePad" />
+				<Item Name="ArmorTheme" />
+				<Item Name="ArmorLeftShoulderPad" />
+				<Item Name="ArmorRightShoulderPad" />
+				<Item Name="ArmorHipAttachment" />
+				<Item Name="ArmorWristAttachment" />
+				<Item Name="ArmorVisor" />
+				<Item Name="ArmorEmblem" />
+				<Item Name="ArmorFx" />
+				<Item Name="ArmorMythicFx" />
+				<Item Name="ArmorCore" />
+				<Item Name="SpartanActionPose" />
+				<Item Name="SpartanStance" />
+				<Item Name="SpartanBackdropImage" />
+				<Item Name="SpartanEmblem" />
+				<Item Name="SpartanVoice" />
+				<Item Name="WeaponCharm" />
+				<Item Name="WeaponAmmoCounterColor" />
+				<Item Name="WeaponCoating" />
+				<Item Name="WeaponDeathFx" />
+				<Item Name="WeaponEmblem" />
+				<Item Name="WeaponTheme" />
+				<Item Name="WeaponStatTracker" />
+				<Item Name="WeaponCore" />
+				<Item Name="WeaponAlternateGeometryRegion" />
+				<Item Name="AiColor" />
+				<Item Name="AiModel" />
+				<Item Name="AiTheme" />
+				<Item Name="AiCore" />
+				<Item Name="VehicleAlternateGeometryRegion" />
+				<Item Name="VehicleCharm" />
+				<Item Name="VehicleCoating" />
+				<Item Name="VehicleEmblem" />
+				<Item Name="VehicleFx" />
+				<Item Name="VehicleHorn" />
+				<Item Name="VehicleTheme" />
+				<Item Name="VehicleCore" />
+				<Item Name="ArmorEmblemCoating" />
+				<Item Name="WeaponEmblemCoating" />
+				<Item Name="VehicleEmblemCoating" />
+				<Item Name="SpartanEmblemCoating" />
+				<Item Name="Consumable" />
+				<Item Name="XPGrant" />
+				<Item Name="XPBoost" />
+				<Item Name="ChallengeReroll" />
+				<Item Name="VirtualCurrency" />
+			</_field_short_enum>
+			<_field_short_enum name="Position Type">
+				<Item Name="Default" />
+				<Item Name="Custom" />
+				<Item Name="Custom1" />
+			</_field_short_enum>
+			<_field_pad name="generated_pad7823" length="2" />
+			<_field_real name="Dimmer transition time" />
+			<_field_byte_flags name="Skip Light Transition">
+				<Item Name="True" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad2b6e" length="3" />
+			<_field_block_64 name="Lights">
+				<_field_string_id name="Light Name" />
+				<_field_real_vector_3d name="Light Position Offset" />
+				<_field_real_euler_angles_3d name="Facing" />
+				<_field_real_rgb_color name="Color" />
+				<_field_real name="Source Energy" />
+				<_field_real name="Dimmer Value" />
+				<_field_real name="Minimum Roughness" />
+				<_field_real name="Fog Intensity" />
+				<_field_real name="Near Attenuation" />
+				<_field_real name="Far Attenuation" />
+				<_field_explanation name="Shared Spot Parameters" />
+				<_field_real name="Inner Cone Angle" />
+				<_field_real name="Outer Cone Angle" />
+				<_field_real name="Shadow Near Clip Plane" />
+				<_field_real name="Shadow Far Clip Plane" />
+				<_field_real name="Shadow Bias Offset" />
+				<_field_real name="Shadow Filter Width" />
+				<_field_real name="Near Begin" />
+				<_field_real name="Far Begin" />
+				<_field_real name="Camera Near Distance Fade End" />
+				<_field_real name="Camera Near Distance Fade Start" />
+				<_field_real name="Camera Distance Fade Start" />
+				<_field_real name="Camera Distance Fade End" />
+				<_field_real name="Area Light Radius" />
+				<_field_real name="Area Light Length" />
+				<_field_real name="Override Source Intensity Multiplier" />
+				</_field_block_64>
+			<_field_block_64 name="Cubemap Volume">
+				<_field_string_id name="Cubemap Name" />
+				<_field_real_vector_3d name="Cubemap Position Offset" />
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	</plugin>

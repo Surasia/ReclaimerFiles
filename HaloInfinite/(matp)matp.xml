@@ -1,0 +1,102 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="material parameters">
+		<_field_string_id name="parameter name" />
+		<_field_long_enum name="parameter type">
+			<Item Name="bitmap" />
+			<Item Name="real" />
+			<Item Name="int" />
+			<Item Name="bool" />
+			<Item Name="color" />
+			<Item Name="scalar gpu property" />
+			<Item Name="color gpu property" />
+			<Item Name="string" />
+			<Item Name="preset" />
+		</_field_long_enum>
+		<_field_tag_reference_64 name="bitmap" />
+		<_field_real_argb_color name="color" />
+		<_field_real name="real" />
+		<_field_real_vector_3d name="vector" />
+		<_field_long_integer name="int/bool" />
+		<_field_data_64 name="string" />
+		<_field_word_integer name="bitmap flags" />
+		<_field_word_integer name="bitmap filter mode" />
+		<_field_word_integer name="bitmap address mode" />
+		<_field_word_integer name="bitmap address mode x" />
+		<_field_word_integer name="bitmap address mode y" />
+		<_field_byte_integer name="bitmap extern mode" />
+		<_field_byte_integer name="bitmap min mipmap" />
+		<_field_byte_integer name="bitmap max mipmap" />
+		<_field_pad name="generated_padea44" length="3" />
+		<_field_real name="bitmap blur and sharpen" />
+		<_field_byte_flags name="parameter flags">
+			<Item Name="texture array" />
+			<Item Name="force bitmap clamp" />
+			<Item Name="disabled" />
+			<Item Name="has transform function" />
+			<Item Name="bindless" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad0425" length="3" />
+		<_field_dword_integer name="render phases used" />
+		<_field_dword_integer name="shader types used" />
+		<_field_block_64 name="function parameters">
+			<_field_long_enum name="type">
+				<Item Name="value" />
+				<Item Name="color" />
+				<Item Name="scale uniform" />
+				<Item Name="scale u" />
+				<Item Name="scale v" />
+				<Item Name="offset u" />
+				<Item Name="offset v" />
+				<Item Name="frame index" />
+				<Item Name="alpha" />
+			</_field_long_enum>
+			<_field_string_id name="input name" />
+			<_field_string_id name="range name" />
+			<_field_char_enum name="Output Modifier">
+				<Item Name=" " />
+				<Item Name="Add" />
+				<Item Name="Multiply" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8305" length="3" />
+			<_field_string_id name="Output Modifier Input" />
+			<_field_real name="time period" />
+			<_field_explanation name="FUNCTION" />
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_block_64>
+		<_field_word_integer name="register offset" />
+		<_field_word_integer name="register size" />
+		<_field_byte_integer name="bitmap extern index" />
+		<_field_pad name="generated_pad50da" length="3" />
+		</_field_block_64>
+	<_field_block_64 name="decorator placement datas">
+		<_field_tag_reference_64 name="decorator asset" />
+		<_field_real name="max density" />
+		<_field_real_vector_2d name="Scale Range" />
+		<_field_real_vector_2d name="Rotation Range" />
+		<_field_char_enum name="Orientation Alignment">
+			<Item Name="AlwaysUp" />
+			<Item Name="AlignToSlope" />
+			<Item Name="Random" />
+		</_field_char_enum>
+		<_field_pad name="generated_pada6fa" length="3" />
+		<_field_real_vector_2d name="Vector Mask Angle" />
+		<_field_real name="Cull Distance Scale" />
+		<_field_char_enum name="Vector Mask Mode">
+			<Item Name="UpFacing" />
+			<Item Name="SideFacing" />
+		</_field_char_enum>
+		<_field_pad name="generated_padf3af" length="3" />
+		</_field_block_64>
+	</plugin>

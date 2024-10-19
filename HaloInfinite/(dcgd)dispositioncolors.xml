@@ -1,0 +1,117 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Enemy Colors">
+		<_field_string_id name="name" />
+		<_field_explanation name="sRGB Colors" />
+		<_field_real_argb_color name="in world color" />
+		<_field_real_argb_color name="outline color" />
+		<_field_real_argb_color name="fx color" />
+		<_field_explanation name="Linear Colors" />
+		<_field_real_argb_color name="bitmap color" />
+		<_field_real_argb_color name="kill feed color" />
+		<_field_real_argb_color name="motion tracker color" />
+		<_field_real_argb_color name="text color" />
+		<_field_real_argb_color name="navpoint color" />
+		</_field_block_64>
+	<_field_block_64 name="Friendly Colors">
+		<_field_string_id name="name" />
+		<_field_explanation name="sRGB Colors" />
+		<_field_real_argb_color name="in world color" />
+		<_field_real_argb_color name="outline color" />
+		<_field_real_argb_color name="fx color" />
+		<_field_explanation name="Linear Colors" />
+		<_field_real_argb_color name="bitmap color" />
+		<_field_real_argb_color name="kill feed color" />
+		<_field_real_argb_color name="motion tracker color" />
+		<_field_real_argb_color name="text color" />
+		<_field_real_argb_color name="navpoint color" />
+		</_field_block_64>
+	<_field_block_64 name="Fireteam Colors">
+		<_field_string_id name="name" />
+		<_field_explanation name="sRGB Colors" />
+		<_field_real_argb_color name="in world color" />
+		<_field_real_argb_color name="outline color" />
+		<_field_real_argb_color name="fx color" />
+		<_field_explanation name="Linear Colors" />
+		<_field_real_argb_color name="bitmap color" />
+		<_field_real_argb_color name="kill feed color" />
+		<_field_real_argb_color name="motion tracker color" />
+		<_field_real_argb_color name="text color" />
+		<_field_real_argb_color name="navpoint color" />
+		</_field_block_64>
+	<_field_block_64 name="Observer Team Colors">
+		<_field_string_id name="name" />
+		<_field_explanation name="sRGB Colors" />
+		<_field_real_argb_color name="in world color" />
+		<_field_real_argb_color name="outline color" />
+		<_field_real_argb_color name="fx color" />
+		<_field_explanation name="Linear Colors" />
+		<_field_real_argb_color name="bitmap color" />
+		<_field_real_argb_color name="kill feed color" />
+		<_field_real_argb_color name="motion tracker color" />
+		<_field_real_argb_color name="text color" />
+		<_field_real_argb_color name="navpoint color" />
+		</_field_block_64>
+	<_field_custom name="Neutral Colors" />
+	<_field_struct name="Neutral Colors">
+		<_field_string_id name="name" />
+		<_field_explanation name="sRGB Colors" />
+		<_field_real_argb_color name="in world color" />
+		<_field_real_argb_color name="outline color" />
+		<_field_real_argb_color name="fx color" />
+		<_field_explanation name="Linear Colors" />
+		<_field_real_argb_color name="bitmap color" />
+		<_field_real_argb_color name="kill feed color" />
+		<_field_real_argb_color name="motion tracker color" />
+		<_field_real_argb_color name="text color" />
+		<_field_real_argb_color name="navpoint color" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="Self Colors" />
+	<_field_struct name="Self Colors">
+		<_field_string_id name="name" />
+		<_field_explanation name="sRGB Colors" />
+		<_field_real_argb_color name="in world color" />
+		<_field_real_argb_color name="outline color" />
+		<_field_real_argb_color name="fx color" />
+		<_field_explanation name="Linear Colors" />
+		<_field_real_argb_color name="bitmap color" />
+		<_field_real_argb_color name="kill feed color" />
+		<_field_real_argb_color name="motion tracker color" />
+		<_field_real_argb_color name="text color" />
+		<_field_real_argb_color name="navpoint color" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_block_64 name="Infected Colors">
+		<_field_string_id name="name" />
+		<_field_explanation name="sRGB Colors" />
+		<_field_real_argb_color name="in world color" />
+		<_field_real_argb_color name="outline color" />
+		<_field_real_argb_color name="fx color" />
+		<_field_explanation name="Linear Colors" />
+		<_field_real_argb_color name="bitmap color" />
+		<_field_real_argb_color name="kill feed color" />
+		<_field_real_argb_color name="motion tracker color" />
+		<_field_real_argb_color name="text color" />
+		<_field_real_argb_color name="navpoint color" />
+		</_field_block_64>
+	<_field_block_64 name="Survivor Colors">
+		<_field_string_id name="name" />
+		<_field_explanation name="sRGB Colors" />
+		<_field_real_argb_color name="in world color" />
+		<_field_real_argb_color name="outline color" />
+		<_field_real_argb_color name="fx color" />
+		<_field_explanation name="Linear Colors" />
+		<_field_real_argb_color name="bitmap color" />
+		<_field_real_argb_color name="kill feed color" />
+		<_field_real_argb_color name="motion tracker color" />
+		<_field_real_argb_color name="text color" />
+		<_field_real_argb_color name="navpoint color" />
+		</_field_block_64>
+	</plugin>

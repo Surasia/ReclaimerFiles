@@ -1,0 +1,43 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_word_flags name="Flags">
+		<Item Name="AllowLuaToOverride" />
+		<Item Name="SurviveForceDisruptingPriorities" />
+		<Item Name="OverrideSceneTypeAiDialog" />
+		<Item Name="DisableAiDialog" />
+		<Item Name="CanStartLatches" />
+		<Item Name="IgnoreCollisions" />
+		<Item Name="DoNotPlayDialog" />
+		<Item Name="BeatsSamePriority" />
+	</_field_word_flags>
+	<_field_char_enum name="Conversation Type">
+		<Item Name="Cinematic" />
+		<Item Name="CriticalScripted" />
+		<Item Name="CollectiblePlay" />
+		<Item Name="Alert" />
+		<Item Name="NoncriticalScripted" />
+		<Item Name="ProceedReminder" />
+		<Item Name="BespokeAivo" />
+		<Item Name="Background" />
+		<Item Name="BloodgateReminder" />
+		<Item Name="FobInteract" />
+		<Item Name="CollectibleAlert" />
+		<Item Name="Chain" />
+	</_field_char_enum>
+	<_field_pad name="generated_pad56e4" length="1" />
+	<_field_short_integer name="Relative Priority" />
+	<_field_short_integer name="Timeout Duration" />
+	<_field_short_integer name="Maximum Duration" />
+	<_field_pad name="generated_pad70c5" length="2" />
+	<_field_real name="Pre-Convo Delay" />
+	<_field_real name="Pre-Convo Delay Max" />
+	<_field_real name="Post-Convo Delay" />
+	<_field_real name="Post-Convo Delay Max" />
+	<_field_pad name="generated_padbd7a" length="4" />
+	</plugin>

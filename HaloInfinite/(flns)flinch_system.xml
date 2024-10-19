@@ -1,0 +1,49 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="flinch system">
+		<_field_custom name="Gun Flinch" />
+		<_field_struct name="gun flinch">
+			<_field_angle_bounds name="yaw bounds" />
+			<_field_angle_bounds name="pitch bounds" />
+			<_field_block_64 name="recoil">
+				<_field_struct name="recoil return">
+					<_field_angle name="deceleration away from center" />
+					<_field_angle name="acceleration to center" />
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="spring damper">
+				<_field_struct name="spring damper">
+					<_field_real name="spring constant" />
+					<_field_real name="damping ratio" />
+					<_field_real name="runtime damping constant" />
+					</_field_struct>
+				</_field_block_64>
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="View Flinch" />
+		<_field_struct name="view flinch">
+			<_field_angle_bounds name="yaw bounds" />
+			<_field_angle_bounds name="pitch bounds" />
+			<_field_block_64 name="recoil">
+				<_field_struct name="recoil return">
+					<_field_angle name="deceleration away from center" />
+					<_field_angle name="acceleration to center" />
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="spring damper">
+				<_field_struct name="spring damper">
+					<_field_real name="spring constant" />
+					<_field_real name="damping ratio" />
+					<_field_real name="runtime damping constant" />
+					</_field_struct>
+				</_field_block_64>
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_struct>
+	</plugin>

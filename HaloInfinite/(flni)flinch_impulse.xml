@@ -1,0 +1,51 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="flinch impulse">
+		<_field_custom name="Gun Flinch" />
+		<_field_struct name="gun flinch">
+			<_field_char_enum name="flinch direction">
+				<Item Name="hit direction" />
+				<Item Name="inverse hit direction" />
+				<Item Name="attacker to victim" />
+				<Item Name="victim to attacker" />
+				<Item Name="absolute" />
+			</_field_char_enum>
+			<_field_char_enum name="flinch mapping">
+				<Item Name="top down" />
+				<Item Name="camera" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad3673" length="2" />
+			<_field_angle_bounds name="magnitude range" />
+			<_field_angle name="random rotation" />
+			<_field_angle name="absolute flinch angle" />
+			<_field_real_vector_2d name="normalized screen relative absolute flinch" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="View Flinch" />
+		<_field_struct name="view flinch">
+			<_field_char_enum name="flinch direction">
+				<Item Name="hit direction" />
+				<Item Name="inverse hit direction" />
+				<Item Name="attacker to victim" />
+				<Item Name="victim to attacker" />
+				<Item Name="absolute" />
+			</_field_char_enum>
+			<_field_char_enum name="flinch mapping">
+				<Item Name="top down" />
+				<Item Name="camera" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad3673" length="2" />
+			<_field_angle_bounds name="magnitude range" />
+			<_field_angle name="random rotation" />
+			<_field_angle name="absolute flinch angle" />
+			<_field_real_vector_2d name="normalized screen relative absolute flinch" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_struct>
+	</plugin>

@@ -1,0 +1,33 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_char_enum name="Simulation Type">
+		<Item Name="Hoist" />
+		<Item Name="Tractor Beam" />
+	</_field_char_enum>
+	<_field_pad name="generated_padc4dc" length="3" />
+	<_field_explanation name="Docking States" />
+	<_field_custom name="Docking State Timing" />
+	<_field_real name="Connection Duration" />
+	<_field_real name="Disconnection Duration" />
+	<_field_real name="Attachment Duration" />
+	<_field_real name="Detachment Duration" />
+	<_field_real name="Docking Duration" />
+	<_field_custom name="" />
+	<_field_struct name="Alignment Points">
+		<_field_string_id name="Slot Marker" />
+		<_field_string_id name="Tab Marker" />
+		</_field_struct>
+	<_field_block_64 name="Connection Points">
+		<_field_string_id name="Origin Marker" />
+		<_field_string_id name="Target Marker" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Connection Effect" />
+	<_field_real name="Attachment Linear Velocity Test" />
+	<_field_real name="Attachment Angular Velocity Test" />
+	</plugin>

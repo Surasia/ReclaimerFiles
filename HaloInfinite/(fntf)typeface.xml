@@ -1,0 +1,75 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="typefaces">
+		<_field_string_id name="Typeface name" />
+		<_field_struct name="Default typeface">
+			<_field_long_string name="font name" />
+			<_field_long_enum name="font weight">
+				<Item Name="ExtraLight (200)" />
+				<Item Name="Thin (250)" />
+				<Item Name="Light (300)" />
+				<Item Name="SemiLight (350)" />
+				<Item Name="Regular (400)" />
+				<Item Name="Medium (500)" />
+				<Item Name="SemiBold (600)" />
+				<Item Name="Bold (700)" />
+				<Item Name="ExtraBold (800)" />
+				<Item Name="Black (900)" />
+				<Item Name="ExtraBlack (950)" />
+			</_field_long_enum>
+			<_field_word_flags name="flags">
+				<Item Name="Italic" />
+			</_field_word_flags>
+			<_field_pad name="generated_pad6635" length="2" />
+			</_field_struct>
+		<_field_block_64 name="Language-specific typefaces">
+			<_field_long_enum name="Language">
+				<Item Name="English" />
+				<Item Name="Japanese" />
+				<Item Name="German" />
+				<Item Name="French" />
+				<Item Name="Spanish" />
+				<Item Name="Mexican-Spanish" />
+				<Item Name="Italian" />
+				<Item Name="Korean" />
+				<Item Name="Traditional-Chinese" />
+				<Item Name="Simplified-Chinese" />
+				<Item Name="Portuguese" />
+				<Item Name="Polish" />
+				<Item Name="Russian" />
+				<Item Name="Danish" />
+				<Item Name="Finnish" />
+				<Item Name="Dutch" />
+				<Item Name="Norwegian" />
+				<Item Name="Brazilian-Portuguese" />
+			</_field_long_enum>
+			<_field_struct name="Replacement typeface">
+				<_field_long_string name="font name" />
+				<_field_long_enum name="font weight">
+					<Item Name="ExtraLight (200)" />
+					<Item Name="Thin (250)" />
+					<Item Name="Light (300)" />
+					<Item Name="SemiLight (350)" />
+					<Item Name="Regular (400)" />
+					<Item Name="Medium (500)" />
+					<Item Name="SemiBold (600)" />
+					<Item Name="Bold (700)" />
+					<Item Name="ExtraBold (800)" />
+					<Item Name="Black (900)" />
+					<Item Name="ExtraBlack (950)" />
+				</_field_long_enum>
+				<_field_word_flags name="flags">
+					<Item Name="Italic" />
+				</_field_word_flags>
+				<_field_pad name="generated_pad6635" length="2" />
+				</_field_struct>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_pad name="generated_padb4d2" length="4" />
+	</plugin>

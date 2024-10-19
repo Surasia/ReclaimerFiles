@@ -1,0 +1,2457 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_long_flags name="Character flags">
+		<Item Name="Flag1" />
+		<Item Name="Disable Velocity/Throttle Alignment" />
+		<Item Name="Use Boss Damage Audio" />
+		<Item Name="Is A Boss" />
+	</_field_long_flags>
+	<_field_tag_reference_64 name="parent character" />
+	<_field_tag_reference_64 name="unit" />
+	<_field_tag_reference_64 name="creature" />
+	<_field_tag_reference_64 name="style" />
+	<_field_tag_reference_64 name="major character" />
+	<_field_tag_reference_64 name="mythic skull character" />
+	<_field_block_64 name="variants">
+		<_field_string_id name="variant name" />
+		<_field_short_integer name="variant index" />
+		<_field_pad name="generated_padedbf" length="2" />
+		<_field_string_id name="Style Id" />
+		<_field_block_64 name="voices">
+			<_field_tag_reference_64 name="dialogue" />
+			<_field_string_id name="designator" />
+			<_field_real name="weight" />
+			<_field_block_64 name="region filters">
+				<_field_string_id name="region name" />
+				<_field_block_64 name="permutation filters">
+					<_field_string_id name="permutation name" />
+					</_field_block_64>
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="voice">
+		<_field_block_64 name="voices">
+			<_field_tag_reference_64 name="dialogue" />
+			<_field_string_id name="designator" />
+			<_field_real name="weight" />
+			<_field_block_64 name="region filters">
+				<_field_string_id name="region name" />
+				<_field_block_64 name="permutation filters">
+					<_field_string_id name="permutation name" />
+					</_field_block_64>
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Development Status">
+		<_field_short_enum name="Stage">
+			<Item Name="Unknown" />
+			<Item Name="Prototype" />
+			<Item Name="Final" />
+			<Item Name="Deprecated" />
+		</_field_short_enum>
+		<_field_pad name="padding1" length="2" />
+		</_field_block_64>
+	<_field_block_64 name="general properties">
+		<_field_long_flags name="general flags">
+			<Item Name="flying" />
+			<Item Name="dual wields" />
+			<Item Name="uses gravemind" />
+			<Item Name="gravemind chorus" />
+			<Item Name="don't trade weapon" />
+			<Item Name="don't stow weapon" />
+			<Item Name="hero character" />
+			<Item Name="leader independent positioning" />
+			<Item Name="has active camo" />
+			<Item Name="use head marker for looking" />
+			<Item Name="space character" />
+			<Item Name="do not drop equipment" />
+			<Item Name="do not allow crouch" />
+			<Item Name="do not allow moving crouch" />
+			<Item Name="critical betrayal" />
+			<Item Name="deathless critical betrayal" />
+			<Item Name="armor prevents assassination" />
+			<Item Name="drop all weapons on death" />
+			<Item Name="drop no weapons on death" />
+			<Item Name="shield prevents assassination" />
+			<Item Name="cannot be assassinated" />
+			<Item Name="infinite ammo" />
+			<Item Name="Effectiveness Token Override" />
+		</_field_long_flags>
+		<_field_short_enum name="type">
+			<Item Name="none" />
+			<Item Name="player" />
+			<Item Name="marine" />
+			<Item Name="crew" />
+			<Item Name="spartan" />
+			<Item Name="elite" />
+			<Item Name="jackal" />
+			<Item Name="jackal sniper" />
+			<Item Name="grunt" />
+			<Item Name="hunter" />
+			<Item Name="prophet" />
+			<Item Name="bugger" />
+			<Item Name="scarab" />
+			<Item Name="engineer" />
+			<Item Name="skirmisher" />
+			<Item Name="bishop" />
+			<Item Name="knight" />
+			<Item Name="pawn" />
+			<Item Name="cavalier" />
+			<Item Name="packmaster" />
+			<Item Name="soldier" />
+			<Item Name="soldier sniper" />
+			<Item Name="soldier officer" />
+			<Item Name="rook" />
+			<Item Name="sentinel" />
+			<Item Name="brute" />
+			<Item Name="hoverer" />
+			<Item Name="crusher" />
+			<Item Name="mule" />
+			<Item Name="mounted_weapon" />
+			<Item Name="octopus" />
+			<Item Name="wildlife" />
+		</_field_short_enum>
+		<_field_short_integer name="rank" />
+		<_field_tag_reference_64 name="prototype script" />
+		<_field_real name="max leader dist" />
+		<_field_real name="absolute max leader dist" />
+		<_field_real name="max player dialogue dist" />
+		<_field_real name="scariness" />
+		<_field_char_enum name="default grenade type">
+			<Item Name="none" />
+			<Item Name="fragmentation grenade" />
+			<Item Name="plasma grenade" />
+			<Item Name="lightning grenade" />
+			<Item Name="spike grenade" />
+			<Item Name="sapper grenade" />
+			<Item Name="stasis grenade" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad6d7e" length="1" />
+		<_field_short_enum name="behavior tree root">
+			<Item Name="Default" />
+			<Item Name="Flying" />
+			<Item Name="Bot" />
+			<Item Name="Test" />
+		</_field_short_enum>
+		<_field_tag_reference_64 name="Data Behavior Tree" />
+		<_field_block_64 name="disallowed weapons from trading">
+			<_field_tag_reference_64 name="weapon" />
+			</_field_block_64>
+		<_field_tag_reference_64 name="Initial Primary Weapon " />
+		<_field_tag_reference_64 name="Primary Weapon Configuration" />
+		<_field_tag_reference_64 name="Initial Secondary Weapon " />
+		<_field_tag_reference_64 name="Secondary Weapon Configuration" />
+		<_field_tag_reference_64 name="Initial Equipment " />
+		<_field_string_id name="Shield Frame Attachment" />
+		<_field_short_integer name="Token Priority" />
+		<_field_pad name="generated_padba33" length="2" />
+		<_field_block_64 name="Designer Metadata">
+			<_field_string_id name="meta label" />
+			</_field_block_64>
+		<_field_block_64 name="Dialogue System Metadata">
+			<_field_string_id name="meta label" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="proto spawn properties">
+		<_field_short_enum name="Proto Spawn Type ">
+			<Item Name="None" />
+			<Item Name="Limbo" />
+			<Item Name="Spawner" />
+			<Item Name="Birther" />
+		</_field_short_enum>
+		</_field_block_64>
+	<_field_block_64 name="interact properties">
+		<_field_byte_flags name="Interact Flags">
+			<Item Name="Do not shoot while moving" />
+		</_field_byte_flags>
+		<_field_pad name="generated_padb4d2" length="3" />
+		<_field_real name="default maximum object interact range" />
+		</_field_block_64>
+	<_field_block_64 name="emotion properties">
+		<_field_block_64 name="situational danger">
+			<_field_short_enum name="highest prop class">
+				<Item Name="none - actor has no targets whatsoever" />
+				<Item Name="dead enemy- my only target is a dead enemy" />
+				<Item Name="non-attacking enemy- I am debilitated and the enemy is not attacking me" />
+				<Item Name="disregarded orphan- did not find my target and gave up searching" />
+				<Item Name="inspected orphan- checked last know position and didn't find target; still searching" />
+				<Item Name="uninspected orphan- can't see target, but have a good idea where they may be" />
+				<Item Name="certain orphan- can't see target, but know exactly where they are" />
+				<Item Name="visible enemy- I can see the target" />
+				<Item Name="nearby enemy- I can see the target, and it's close" />
+				<Item Name="potentially dangerous enemy- target is near and is facing me" />
+				<Item Name="dangerous enemy- target is facing my way and fighting" />
+				<Item Name="attacking enemy- target is aiming at me and shooting me" />
+				<Item Name="very close enemy- enemy is really close" />
+				<Item Name="damaging_enemy- enemy is damaging me" />
+			</_field_short_enum>
+			<_field_pad name="generated_pad78a8" length="2" />
+			<_field_real name="situational danger" />
+			</_field_block_64>
+		<_field_real name="perceived danger increase half-life" />
+		<_field_real name="perceived danger decay half-life" />
+		<_field_real name="Perceived Danger Alert Threshold" />
+		<_field_real name="Perceived Danger Combat Threshold" />
+		</_field_block_64>
+	<_field_block_64 name="vitality properties">
+		<_field_long_flags name="vitality flags">
+			<Item Name="auto resurrect" />
+			<Item Name="disable vitality override" />
+			<Item Name="no friendly damage" />
+		</_field_long_flags>
+		<_field_real name="normal body vitality" />
+		<_field_real name="normal shield vitality" />
+		<_field_real name="legendary body vitality" />
+		<_field_real name="legendary shield vitality" />
+		<_field_real name="body recharge fraction" />
+		<_field_real name="soft ping threshold (with shields)" />
+		<_field_real name="soft ping threshold (no shields)" />
+		<_field_real name="medium ping threshold (with shields)" />
+		<_field_real name="medium ping threshold (no shields)" />
+		<_field_real name="medium ping cooldown time" />
+		<_field_real name="hard ping threshold (with shields)" />
+		<_field_real name="hard ping threshold (no shields)" />
+		<_field_real name="hard ping cooldown time" />
+		<_field_real name="body recharge delay time" />
+		<_field_real name="body recharge time" />
+		<_field_real name="shield recharge delay time" />
+		<_field_real name="shield recharge time" />
+		<_field_real name="extended shield damage threshold" />
+		<_field_real name="extended body damage threshold" />
+		<_field_real name="runtime_body_recharge_velocity" />
+		<_field_real name="runtime_shield_recharge_velocity" />
+		<_field_tag_reference_64 name="resurrect weapon" />
+		<_field_real name="player damage_scale" />
+		<_field_tag_reference_64 name="collision damage override" />
+		<_field_tag_reference_64 name="Knockback Collision Damage Override" />
+		<_field_real name="stun threshold (easy)" />
+		<_field_real name="stun threshold (normal)" />
+		<_field_real name="stun threshold (heroic)" />
+		<_field_real name="stun threshold (legendary)" />
+		<_field_real name="stun time scale (easy)" />
+		<_field_real name="stun time scale (normal)" />
+		<_field_real name="stun time scale (heroic)" />
+		<_field_real name="stun time scale (legendary)" />
+		<_field_real name="stun cooldown (easy)" />
+		<_field_real name="stun cooldown (normal)" />
+		<_field_real name="stun cooldown (heroic)" />
+		<_field_real name="stun cooldown (legendary)" />
+		</_field_block_64>
+	<_field_block_64 name="placement properties">
+		<_field_real name="few upgrade chance (easy)" />
+		<_field_real name="few upgrade chance (normal)" />
+		<_field_real name="few upgrade chance (heroic)" />
+		<_field_real name="few upgrade chance (legendary)" />
+		<_field_real name="normal upgrade chance (easy)" />
+		<_field_real name="normal upgrade chance (normal)" />
+		<_field_real name="normal upgrade chance (heroic)" />
+		<_field_real name="normal upgrade chance (legendary)" />
+		<_field_real name="many upgrade chance (easy)" />
+		<_field_real name="many upgrade chance (normal)" />
+		<_field_real name="many upgrade chance (heroic)" />
+		<_field_real name="many upgrade chance (legendary)" />
+		</_field_block_64>
+	<_field_block_64 name="base perception properties">
+		<_field_byte_flags name="flags">
+			<Item Name="Has Magic Sight" />
+			<Item Name="More Frequent Prop Perception" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad16e5" length="3" />
+		<_field_real name="Silent Movement Speed Threshold" />
+		<_field_real name="Perception Decay Delay" />
+		<_field_real name="Moving Perception Decay Delay" />
+		<_field_real name="Perception Begin To Forget Time" />
+		<_field_real name="Perception Forget Time" />
+		<_field_real name="Combat Status Alert Cooldown" />
+		<_field_real name="Combat Status Active Cooldown" />
+		<_field_real name="Postcombat clump state time" />
+		</_field_block_64>
+	<_field_block_64 name="perception properties">
+		<_field_short_enum name="perception_mode">
+			<Item Name="idle" />
+			<Item Name="alert" />
+			<Item Name="combat" />
+			<Item Name="vehicle idle" />
+			<Item Name="vehicle alert" />
+			<Item Name="vehicle combat" />
+		</_field_short_enum>
+		<_field_word_flags name="flags">
+			<Item Name="character can see in darkness" />
+			<Item Name="ignore tracking projectiles" />
+			<Item Name="ignore minor tracking projectiles" />
+		</_field_word_flags>
+		<_field_real name="maximum vision distance" />
+		<_field_real name="reliable vision distance" />
+		<_field_real name="maximum peripheral vision distance" />
+		<_field_real name="reliable peripheral vision distance" />
+		<_field_real name="max peripheral vision distance at peripheral vision angle" />
+		<_field_real name="max reliable peripheral vision distance at peripheral vision angle" />
+		<_field_real name="Maximum Unmistakable Distance" />
+		<_field_real name="surprise distance" />
+		<_field_real name="Min distance from last known position to surprise" />
+		<_field_real name="Min time from last clump surprise" />
+		<_field_real name="Min time from last seen to surprise" />
+		<_field_real_bounds name="Surprise lerp distance range" />
+		<_field_real_bounds name="Surprise angle range" />
+		<_field_angle name="focus interior angle" />
+		<_field_angle name="focus exterior angle" />
+		<_field_angle name="peripheral vision angle" />
+		<_field_angle name="Vertical Exterior Up Angle" />
+		<_field_angle name="Vertical Exterior Down Angle" />
+		<_field_real name="hearing distance" />
+		<_field_real name="Max Propagation Time" />
+		<_field_real name="Partial Perception Awareness Delay" />
+		<_field_real name="Full Perception Awareness Delay" />
+		<_field_real name="Unmistakable Perception Awareness Delay" />
+		<_field_real name="Partial Perception Acknowledgement Delay" />
+		<_field_real name="Full Perception Acknowledgement Delay" />
+		<_field_real name="Unmistakable Perception Acknowledgement Delay" />
+		<_field_real name="awareness glance level" />
+		<_field_real_fraction name="identify hologram chance" />
+		<_field_real_bounds name="hologram ignore timer" />
+		<_field_real name="hologram ignore timer shot penalty" />
+		<_field_custom name="Parital Perception/Distance distribution function" />
+		<_field_struct name="mapping">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_custom name="Normal active-camo perception" />
+		<_field_struct name="normal active camo perception">
+			<_field_real_fraction name="partial invisibility amount" />
+			<_field_real name="partial invisibility vision distance" />
+			<_field_real_fraction name="full invisibility amount" />
+			<_field_real name="full invisibility vision distance" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Legendary active-camo perception" />
+		<_field_struct name="legendary active camo perception">
+			<_field_real_fraction name="partial invisibility amount" />
+			<_field_real name="partial invisibility vision distance" />
+			<_field_real_fraction name="full invisibility amount" />
+			<_field_real name="full invisibility vision distance" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="target properties">
+		<_field_real name="player preference" />
+		</_field_block_64>
+	<_field_block_64 name="look properties">
+		<_field_real_euler_angles_2d name="maximum aiming deviation" />
+		<_field_real_euler_angles_2d name="maximum looking deviation" />
+		<_field_real_euler_angles_2d name="runtime aiming deviation cosines" />
+		<_field_real_euler_angles_2d name="runtime looking deviation cosines" />
+		<_field_angle name="noncombat look delta L" />
+		<_field_angle name="noncombat look delta R" />
+		<_field_angle name="combat look delta L" />
+		<_field_angle name="combat look delta R" />
+		<_field_real_bounds name="noncombat idle looking" />
+		<_field_real_bounds name="noncombat idle aiming" />
+		<_field_real_bounds name="combat idle looking" />
+		<_field_real_bounds name="combat idle aiming" />
+		</_field_block_64>
+	<_field_block_64 name="hopping properties">
+		<_field_long_flags name="Hopping Flags">
+			<Item Name="to cover path segements" />
+			<Item Name="to end of path" />
+			<Item Name="forward only" />
+			<Item Name="force fire" />
+		</_field_long_flags>
+		<_field_block_64 name="Hopping Definition">
+			<_field_custom name="Default" />
+			<_field_struct name="Default">
+				<_field_real name="Min hop distance" />
+				<_field_real name="Min hop distance to path end" />
+				<_field_real_bounds name="Hop wait timer min/max" />
+				<_field_real name="Max hop distance" />
+				<_field_real name="pad" />
+				</_field_struct>
+			<_field_custom name="" />
+			<_field_custom name="Passive" />
+			<_field_struct name="Passive">
+				<_field_real name="Min hop distance" />
+				<_field_real name="Min hop distance to path end" />
+				<_field_real_bounds name="Hop wait timer min/max" />
+				<_field_real name="Max hop distance" />
+				<_field_real name="pad" />
+				</_field_struct>
+			<_field_custom name="" />
+			<_field_custom name="Aggressive" />
+			<_field_struct name="Aggressive">
+				<_field_real name="Min hop distance" />
+				<_field_real name="Min hop distance to path end" />
+				<_field_real_bounds name="Hop wait timer min/max" />
+				<_field_real name="Max hop distance" />
+				<_field_real name="pad" />
+				</_field_struct>
+			<_field_custom name="" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="warp properties">
+		<_field_block_64 name="Warp Definition">
+			<_field_custom name="Default" />
+			<_field_struct name="Default">
+				<_field_real name="min warp distance" />
+				<_field_real name="max warp distance" />
+				<_field_real name="warp speed" />
+				<_field_real name="run up distance" />
+				<_field_real name="linear distance until cooldown" />
+				<_field_real name="cooldown duration" />
+				<_field_real name="min jump distance" />
+				</_field_struct>
+			<_field_custom name="" />
+			<_field_custom name="Passive" />
+			<_field_struct name="Passive">
+				<_field_real name="min warp distance" />
+				<_field_real name="max warp distance" />
+				<_field_real name="warp speed" />
+				<_field_real name="run up distance" />
+				<_field_real name="linear distance until cooldown" />
+				<_field_real name="cooldown duration" />
+				<_field_real name="min jump distance" />
+				</_field_struct>
+			<_field_custom name="" />
+			<_field_custom name="Aggressive" />
+			<_field_struct name="Aggressive">
+				<_field_real name="min warp distance" />
+				<_field_real name="max warp distance" />
+				<_field_real name="warp speed" />
+				<_field_real name="run up distance" />
+				<_field_real name="linear distance until cooldown" />
+				<_field_real name="cooldown duration" />
+				<_field_real name="min jump distance" />
+				</_field_struct>
+			<_field_custom name="" />
+			</_field_block_64>
+		<_field_tag_reference_64 name="Intro Effect" />
+		<_field_tag_reference_64 name="Travel Effect" />
+		<_field_tag_reference_64 name="Outro Effect" />
+		</_field_block_64>
+	<_field_block_64 name="movement properties">
+		<_field_long_flags name="movement flags">
+			<Item Name="danger crouch allow movement" />
+			<Item Name="no side-step" />
+			<Item Name="prefer to combar near friends" />
+			<Item Name="allow boosted jump" />
+			<Item Name="allow mid-jump free facing" />
+			<Item Name="climb" />
+			<Item Name="prefer wall movement" />
+			<Item Name="has flying mode" />
+			<Item Name="disallow crouch" />
+			<Item Name="disallow all movement" />
+			<Item Name="always use search points" />
+			<Item Name="keep moving" />
+			<Item Name="cure isolation jump" />
+			<Item Name="gain elevation" />
+			<Item Name="reposition distant" />
+			<Item Name="only use aerial firing positions" />
+			<Item Name="use high priority pathfinding" />
+			<Item Name="lower weapon when no alert movement override" />
+			<Item Name="phase" />
+			<Item Name="no override when firing" />
+			<Item Name="no stow during idle activities" />
+			<Item Name="flip any vehicle" />
+			<Item Name="bound along path" />
+			<Item Name="use new aiming and facing control" />
+			<Item Name="force strafe when crouching" />
+			<Item Name="disallow hard stop" />
+			<Item Name="Disable velocity/throttle alignment" />
+			<Item Name="Fixed facing hunker" />
+			<Item Name="Zero Smash Cost In Combat" />
+		</_field_long_flags>
+		<_field_real name="pathfinding radius" />
+		<_field_real name="avoidance radius" />
+		<_field_real name="destination radius" />
+		<_field_real name="Friendly Outer Radius" />
+		<_field_real name="Friendly Inner Radius" />
+		<_field_real name="Friendly Player Outer Radius" />
+		<_field_real name="Friendly Player Inner Radius" />
+		<_field_explanation name="Danger Zone Avoidance" />
+		<_field_short_enum name="obstacle leap min size">
+			<Item Name="default" />
+			<Item Name="tiny" />
+			<Item Name="small" />
+			<Item Name="medium" />
+			<Item Name="large" />
+			<Item Name="immobile" />
+		</_field_short_enum>
+		<_field_short_enum name="obstacle leap max size">
+			<Item Name="default" />
+			<Item Name="tiny" />
+			<Item Name="small" />
+			<Item Name="medium" />
+			<Item Name="large" />
+			<Item Name="immobile" />
+		</_field_short_enum>
+		<_field_short_enum name="obstacle ignore size">
+			<Item Name="default" />
+			<Item Name="tiny" />
+			<Item Name="small" />
+			<Item Name="medium" />
+			<Item Name="large" />
+			<Item Name="immobile" />
+		</_field_short_enum>
+		<_field_short_enum name="obstacle smashable size">
+			<Item Name="default" />
+			<Item Name="tiny" />
+			<Item Name="small" />
+			<Item Name="medium" />
+			<Item Name="large" />
+			<Item Name="immobile" />
+		</_field_short_enum>
+		<_field_explanation name="clearance cache" />
+		<_field_short_enum name="clearance cache bucket size">
+			<Item Name="default" />
+			<Item Name="small" />
+			<Item Name="medium" />
+			<Item Name="large" />
+			<Item Name="no cache" />
+		</_field_short_enum>
+		<_field_pad name="generated_pad024b" length="2" />
+		<_field_real name="max jump height" />
+		<_field_real name="max jump distance" />
+		<_field_real name="maximum leap height" />
+		<_field_real name="leap proximity fraction" />
+		<_field_real name="maximum hoist height" />
+		<_field_real name="obstacle smash strength" />
+		<_field_long_flags name="movement hints">
+			<Item Name="vault step" />
+			<Item Name="vault crouch" />
+			<Item Name="unused0" />
+			<Item Name="unused1" />
+			<Item Name="unused2" />
+			<Item Name="mount step" />
+			<Item Name="mount crouch" />
+			<Item Name="mount stand" />
+			<Item Name="unused3" />
+			<Item Name="unused4" />
+			<Item Name="unused5" />
+			<Item Name="hoist crouch" />
+			<Item Name="hoist stand" />
+			<Item Name="unused6" />
+			<Item Name="unused7" />
+			<Item Name="unused8" />
+		</_field_long_flags>
+		<_field_custom name="Throttle and inertia" />
+		<_field_block_64 name="change direction pause">
+			<_field_explanation name="Inertial pause settings" />
+			<_field_angle name="direction change angle" />
+			<_field_long_integer name="stationary change" />
+			</_field_block_64>
+		<_field_real name="maximum throttle" />
+		<_field_real name="minimum throttle" />
+		<_field_real name="throttle smoothing rate" />
+		<_field_block_64 name="movement throttle control">
+			<_field_short_enum name="combat status">
+				<Item Name="asleep" />
+				<Item Name="idle" />
+				<Item Name="alert" />
+				<Item Name="uninspected orphan" />
+				<Item Name="active" />
+				<Item Name="definite orphan" />
+				<Item Name="certain orphan" />
+				<Item Name="visible enemy" />
+				<Item Name="clear enemy los" />
+				<Item Name="dangerous enemy" />
+			</_field_short_enum>
+			<_field_pad name="generated_padd966" length="2" />
+			<_field_block_64 name="throttle settings">
+				<_field_real name="distance" />
+				<_field_real name="throttle scale" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_real name="minimum juke throttle" />
+		<_field_angle name="minimum direction change juke angle" />
+		<_field_real name="non direction change juke probability" />
+		<_field_real name="non direction change juke timeout" />
+		<_field_long_integer name="minimum post juke movement ticks" />
+		<_field_custom name="" />
+		<_field_real name="stationary turn radius" />
+		<_field_real_bounds name="move distance" />
+		<_field_custom name="Phasing" />
+		<_field_real name="phase chance" />
+		<_field_real name="phase delay seconds" />
+		<_field_custom name="" />
+		<_field_custom name="Movement Facing" />
+		<_field_explanation name="Movement Facing" />
+		<_field_angle name="Maximum Deviation Angle" />
+		<_field_custom name="" />
+		<_field_struct name="locomotion settings">
+			<_field_custom name="Locomotion Settings" />
+			<_field_real_fraction name="Sharp Turn Throttle" />
+			<_field_angle name="Sharp Turn Angle" />
+			<_field_real name="Max Accel Time" />
+			<_field_real name="Max Decel Time" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_real name="wall climb cost multiplier " />
+		<_field_custom name="Character flight" />
+		<_field_char_enum name="Air nav firing point position">
+			<Item Name="Center" />
+			<Item Name="Bottom" />
+		</_field_char_enum>
+		<_field_custom name="" />
+		<_field_pad name="generated_padb596" length="3" />
+		</_field_block_64>
+	<_field_block_64 name="aiming-facing properties">
+		<_field_byte_flags name="Flags">
+			<Item Name="Disallow behaviors forcing baseball runs" />
+			<Item Name="Disallow firing during 'running' phase in baseball run" />
+		</_field_byte_flags>
+		<_field_char_enum name="Default facing mode">
+			<Item Name="Baseball run" />
+			<Item Name="Strafe only" />
+			<Item Name="Run only" />
+		</_field_char_enum>
+		<_field_pad name="generated_padbf57" length="2" />
+		<_field_custom name="Baseball run properties" />
+		<_field_explanation name="Baseball run properties" />
+		<_field_real name="Strafe to run rate" />
+		<_field_real name="Run to strafe rate" />
+		<_field_real name="Start distance threshold" />
+		<_field_real name="End distance threshold" />
+		<_field_real name="Path minimum length" />
+		<_field_real name="Minimum distance to target" />
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="decelerated turns properties">
+		<_field_custom name="Turn Slerp Blend Table" />
+		<_field_custom name="Turn Slerp Blend Table Table" />
+		<_field_struct name="Turn Slerp Blend Table">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Turn Anticipation Blend Table" />
+		<_field_custom name="Turn Anticipation Blend Table" />
+		<_field_struct name="Turn Anticipation Blend Table">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Turn Reaction Blend Table" />
+		<_field_custom name="Turn Reaction Blend Table" />
+		<_field_struct name="Turn Reaction Blend Table">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_real name="Turn reaction cosine power" />
+		<_field_real name="Turn reaction cosine factor" />
+		</_field_block_64>
+	<_field_block_64 name="locomotion overrides">
+		<_field_struct name="locomotion overrides">
+			<_field_byte_flags name="Flags">
+				<Item Name="Disable STAS (Stick-To-Authored-Samples)" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad2640" length="3" />
+			<_field_explanation name="Walk speed properties" />
+			<_field_real name="walking speed" />
+			<_field_explanation name="AI Sprint speed properties" />
+			<_field_real name="AI sprinting speed" />
+			<_field_explanation name="Run speed properties" />
+			<_field_real name="running forward speed" />
+			<_field_real name="running backward speed" />
+			<_field_real name="running sideways speed" />
+			<_field_explanation name="Crouch speed properties" />
+			<_field_real name="crouching forward speed" />
+			<_field_real name="crouching backward speed" />
+			<_field_real name="crouching sideways speed" />
+			<_field_explanation name="Acceleration/deceleration properties" />
+			<_field_real name="maximum run acceleration" />
+			<_field_real name="maximum run deceleration" />
+			<_field_real name="maximum crouch acceleration" />
+			<_field_real name="maximum crouch deceleration" />
+			<_field_real name="minimum slip recovery acceleration" />
+			<_field_explanation name="Airborne Acceleration/Deceleration" />
+			<_field_real name="maximum airborne acceleration" />
+			<_field_real name="maximum airborne deceleration" />
+			<_field_explanation name="Stationary turn properties old action system" />
+			<_field_real name="low speed threshold" />
+			<_field_real name="high speed threshold" />
+			<_field_real name="acceleration" />
+			<_field_explanation name="Stationary turn properties new action system" />
+			<_field_real name="stationary turn trigger range factor" />
+			<_field_real name="stationary turn max anim playback speed up factor" />
+			<_field_explanation name="Stationary turn properties new action system (DEPRECATED)" />
+			<_field_angle name="min stationary turn angle" />
+			<_field_real name="stationary turn max speed threshold" />
+			<_field_angle name="stationary turn min yaw threshold" />
+			<_field_angle name="stationary turn max speed yaw" />
+			<_field_angle name="min stationary turn speed" />
+			<_field_angle name="max stationary turn speed" />
+			<_field_real name="stationary turn acceleration rate" />
+			<_field_real name="stationary turn decceleration rate" />
+			<_field_explanation name="Non stationary turn properties" />
+			<_field_angle name="max angular velocity clamp" />
+			<_field_angle name="turn accel/decel rate" />
+			<_field_explanation name="Speed/acceleration scales based on mode" />
+			<_field_block_64 name="Mode specific scaling">
+				<_field_string_id name="mode name" />
+				<_field_real name="speed scale" />
+				<_field_real name="acceleration scale" />
+				<_field_real name="locomotion turn rate scale" />
+				</_field_block_64>
+			</_field_struct>
+		</_field_block_64>
+	<_field_block_64 name="movement tweak properties">
+		<_field_real name="Dive grenade chance" />
+		<_field_real name="Brace grenade chance" />
+		<_field_real name="Dive vehicle chance" />
+		<_field_real name="Brace vehicle chance" />
+		<_field_real name="Stand Ground Chance" />
+		<_field_real name="Stand Ground Anticipation Time" />
+		<_field_real name="Brace For Grenade Time" />
+		<_field_real name="Brace For Vehicle Impact Time" />
+		<_field_real name="Brace For Vehicle Impact Prediction Time" />
+		<_field_real name="Brace For Vehicle Impact Velocity Threshold" />
+		<_field_short_enum name="jump height">
+			<Item Name="NONE" />
+			<Item Name="very short" />
+			<Item Name="short" />
+			<Item Name="medium short" />
+			<Item Name="medium long" />
+			<Item Name="long" />
+			<Item Name="very long" />
+			<Item Name="infinite" />
+		</_field_short_enum>
+		<_field_pad name="generated_pad113f" length="2" />
+		<_field_block_64 name="Full Body Animation Jump Preventers">
+			<_field_string_id name="Animation exception name" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="throttle styles">
+		<_field_string_id name="style name" />
+		<_field_real_fraction name="desired throttle" />
+		<_field_real name="acceleration time" />
+		<_field_struct name="acceleration function">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_real name="deceleration distance" />
+		<_field_struct name="deceleration function">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_string_id name="stance" />
+		</_field_block_64>
+	<_field_block_64 name="movement sets">
+		<_field_string_id name="name" />
+		<_field_block_64 name="variants">
+			<_field_real name="chance" />
+			<_field_explanation name="MAPPING" />
+			<_field_string_id name="idle" />
+			<_field_string_id name="alert" />
+			<_field_string_id name="engage" />
+			<_field_string_id name="self_preserve" />
+			<_field_string_id name="search" />
+			<_field_string_id name="retreat" />
+			<_field_string_id name="panic" />
+			<_field_string_id name="flank" />
+			<_field_string_id name="protected" />
+			<_field_string_id name="stunned" />
+			<_field_string_id name="post_combat" />
+			<_field_string_id name="hurry" />
+			<_field_string_id name="custom_1" />
+			<_field_string_id name="custom_2" />
+			<_field_string_id name="custom_3" />
+			<_field_string_id name="custom_4" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="flocking properties">
+		<_field_explanation name="Jaime, don't touch this" />
+		<_field_real name="deceleration distance" />
+		<_field_real name="normalized speed" />
+		<_field_real name="buffer distance" />
+		<_field_real_bounds name="throttle threshold bounds" />
+		<_field_real name="deceleration stop time" />
+		</_field_block_64>
+	<_field_block_64 name="swarm properties">
+		<_field_short_integer name="scatter killed count" />
+		<_field_pad name="generated_pad8e1a" length="2" />
+		<_field_real name="scatter radius" />
+		<_field_real name="scatter time" />
+		<_field_real name="hound min distance" />
+		<_field_real name="hound max distance" />
+		<_field_real name="perlin offset scale" />
+		<_field_real_bounds name="offset period" />
+		<_field_real name="perlin idle movement threshold" />
+		<_field_real name="perlin combat movement threshold" />
+		<_field_real name="stuck time" />
+		<_field_real name="stuck distance" />
+		</_field_block_64>
+	<_field_block_64 name="ready properties">
+		<_field_real_bounds name="ready time bounds" />
+		</_field_block_64>
+	<_field_block_64 name="engage properties">
+		<_field_long_flags name="flags">
+			<Item Name="defend threat axis " />
+			<Item Name="fight constant movement" />
+			<Item Name="flight fight constant movement" />
+			<Item Name="disallow combat crouching" />
+			<Item Name="disallow crouch shooting" />
+			<Item Name="fight stable" />
+			<Item Name="throw should lob" />
+			<Item Name="allow positioning beyond ideal range" />
+			<Item Name="can suppress" />
+			<Item Name="Prefers Bunker" />
+			<Item Name="Burst Inhibits Evasion" />
+			<Item Name="Allow midair shooting" />
+			<Item Name="Disallow Surround" />
+			<Item Name="Provides Cover" />
+			<Item Name="Desires Cover" />
+			<Item Name="Want Danger Crouch LOS check" />
+		</_field_long_flags>
+		<_field_real_bounds name="Reposition bounds" />
+		<_field_real_bounds name="Bunkering Reposition bounds" />
+		<_field_explanation name="Danger Crouch" />
+		<_field_real name="Crouch danger threshold" />
+		<_field_real name="Crouch max path distance" />
+		<_field_real name="Stand danger threshold" />
+		<_field_real name="Fight danger move threshold" />
+		<_field_short_bounds name="Fight danger move threshold cooldown" />
+		<_field_tag_reference_64 name="override grenade projectile" />
+		<_field_real_bounds name="default combat range" />
+		<_field_real_bounds name="default firing range" />
+		<_field_real_fraction name="Preferred engage fraction " />
+		<_field_real name="Active Shield Fire Cutoff Delay" />
+		<_field_real name="Friendly Avoid Distance" />
+		<_field_real name="Friendly Close Avoid Distance" />
+		<_field_real name="TeamLead flocking distance" />
+		<_field_real name="Enemy avoid distance" />
+		<_field_real name="Scary enemy avoid distance" />
+		<_field_block_64 name="Full Body Animation Exceptions for Firing Reset">
+			<_field_string_id name="Animation exception name" />
+			</_field_block_64>
+		<_field_explanation name="Flying" />
+		<_field_angle name="Max angle from level" />
+		</_field_block_64>
+	<_field_block_64 name="Berserk Properties">
+		<_field_long_flags name="Flags">
+			<Item Name="Don't use the berserk anim stance" />
+			<Item Name="Don't stow weapon" />
+			<Item Name="Allow dialog" />
+			<Item Name="Don't play the intro animation" />
+			<Item Name="Permanent once initiated" />
+			<Item Name="Unreachable exit permanent berserk" />
+			<Item Name="Allow anim when stuck and already berserked" />
+			<Item Name="Can berserk when no target visible" />
+			<Item Name="Stop berserk when target unassailable" />
+			<Item Name="Ignore Hard Pings" />
+		</_field_long_flags>
+		<_field_tag_reference_64 name="Berserk Weapon" />
+		<_field_real name="Timeout" />
+		<_field_real_fraction_bounds name="Shield down chance" />
+		<_field_real_bounds name="Shield down range" />
+		<_field_real name="Friendly killed distance" />
+		<_field_real_fraction name="Peer killed chance" />
+		<_field_real_fraction name="Leader killed chance" />
+		<_field_real name="Chance to play berserk anim" />
+		<_field_real name="Chance to play berserk anim when stuck" />
+		<_field_real_fraction name="Proximity chance" />
+		<_field_real name="Proximity check cooldown" />
+		<_field_real name="Proximity abort distance" />
+		<_field_real_fraction name="Broken kamikaze chance" />
+		<_field_real_fraction name="Surprise kamikaze chance" />
+		<_field_block_64 name="Kamikaze attachment Markers">
+			<_field_string_id name="Attachment Marker" />
+			</_field_block_64>
+		<_field_real name="Broken Kamikaze stuck delay" />
+		<_field_real name="Max kamikaze time" />
+		<_field_real name="Last man trigger distance" />
+		<_field_block_64 name="Difficulty limits">
+			<_field_explanation name="Difficulty Limits" />
+			<_field_short_integer name="max kamikaze count" />
+			<_field_short_integer name="max berserk count" />
+			<_field_short_integer name="min berserk count" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Weapon Pickup Properties">
+		<_field_real name="Search range" />
+		<_field_real name="Minimum target range" />
+		<_field_real name="Range threshold" />
+		<_field_real name="Vehicle threshold" />
+		<_field_real name="Search delay min" />
+		<_field_real name="Search delay max" />
+		<_field_char_enum name="Bias">
+			<Item Name="Reactive" />
+			<Item Name="Proactive" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad5304" length="3" />
+		<_field_real name="Danger threshold" />
+		</_field_block_64>
+	<_field_explanation name="Danger Values" />
+	<_field_block_64 name="evasion properties">
+		<_field_real name="Evasion danger threshold" />
+		<_field_real name="Evasion delay timer" />
+		<_field_real name="Evasion chance" />
+		<_field_real name="Evasion proximity threshold" />
+		<_field_real name="dive retreat chance" />
+		</_field_block_64>
+	<_field_block_64 name="Dodge properties">
+		<_field_real name="Danger threshold" />
+		<_field_real name="Cooldown" />
+		<_field_real name="Chance" />
+		<_field_real name="Stop proximity" />
+		</_field_block_64>
+	<_field_block_64 name="Run Away From Vehicle properties">
+		<_field_real name="Chance" />
+		<_field_real name="Minimum time to flee" />
+		<_field_real name="Time to flee" />
+		<_field_real name="Time to keep path" />
+		</_field_block_64>
+	<_field_block_64 name="cover properties">
+		<_field_long_flags name="cover flags">
+			<Item Name="Dive To cover" />
+			<Item Name="Reject Visible Points" />
+			<Item Name="Cover Against Multiple Enemies" />
+			<Item Name="Disallow Cover-point Evaluation while hiding" />
+		</_field_long_flags>
+		<_field_real_bounds name="hide behind cover time" />
+		<_field_explanation name="Cover conditions" />
+		<_field_real name="Cover shield fraction" />
+		<_field_real name="Cover vitality threshold" />
+		<_field_real name="Cover danger threshold" />
+		<_field_real name="Leave cover danger threshold" />
+		<_field_custom name="Aggresive/Defensive cover properties" />
+		<_field_real name="minimum defensive distance from target" />
+		<_field_real name="minimum defensive distance from cover" />
+		<_field_real name="always defensive scary threshold" />
+		<_field_custom name="" />
+		<_field_explanation name="Other" />
+		<_field_real name="Cover check delay" />
+		<_field_real name="Cover pinned down check delay" />
+		<_field_real name="Emerge from cover when shield fraction reaches threshold" />
+		<_field_real name="Body Vitality Exit Threshold" />
+		<_field_real name="Proximity self-preserve" />
+		<_field_real name="unreachable enemy danger threshold" />
+		<_field_real name="scary target threshold" />
+		<_field_real name="Minimum enemy distance" />
+		</_field_block_64>
+	<_field_block_64 name="retreat properties">
+		<_field_long_flags name="Retreat flags">
+			<Item Name="Zig-zag when fleeing" />
+			<Item Name="Unused1" />
+		</_field_long_flags>
+		<_field_real name="Shield threshold" />
+		<_field_real name="Scary target threshold" />
+		<_field_real name="Danger threshold" />
+		<_field_real name="Proximity threshold" />
+		<_field_real_bounds name="min/max forced cower time bounds" />
+		<_field_real_bounds name="min/max cower timeout bounds" />
+		<_field_real name="proximity ambush threshold" />
+		<_field_real name="awareness ambush threshold" />
+		<_field_real name="leader dead retreat chance" />
+		<_field_real name="peer dead retreat chance" />
+		<_field_real name="second peer dead retreat chance" />
+		<_field_real name="flee timeout" />
+		<_field_angle name="zig-zag angle" />
+		<_field_real name="zig-zag period" />
+		<_field_real name="retreat grenade chance" />
+		</_field_block_64>
+	<_field_block_64 name="search properties">
+		<_field_long_flags name="Search flags">
+			<Item Name="crouch on investigate" />
+			<Item Name="walk on pursuit" />
+			<Item Name="search forever" />
+			<Item Name="search exclusively" />
+			<Item Name="search points only while searching" />
+		</_field_long_flags>
+		<_field_real_bounds name="search time" />
+		<_field_real name="Search distance" />
+		<_field_real name="Max Searcher Count " />
+		<_field_explanation name="Uncover" />
+		<_field_real_bounds name="Uncover distance bounds" />
+		<_field_explanation name="Investigate" />
+		<_field_real_bounds name="vocalization time" />
+		</_field_block_64>
+	<_field_block_64 name="pre-search properties">
+		<_field_long_flags name="Pre-search flags">
+			<Item Name="Flag1" />
+		</_field_long_flags>
+		<_field_real_bounds name="min presearch time" />
+		<_field_real_bounds name="max presearch time" />
+		<_field_real_bounds name="Peek Time" />
+		<_field_real name="Max Certainty Radius" />
+		<_field_real name="Max Presearcher Count " />
+		<_field_real name="Max Suppressing Count" />
+		<_field_real name="Max Uncover Count" />
+		<_field_long_integer name="Max Destroy Cover Count" />
+		<_field_real name="max suppress time" />
+		<_field_real name="fire to uncover chance " />
+		<_field_real name="Max destroy cover time" />
+		<_field_custom name="Child Weights" />
+		<_field_real name="suppressing fire weight" />
+		<_field_real name="uncover weight" />
+		<_field_real name="leap on cover weight" />
+		<_field_real name="destroy cover weight" />
+		<_field_real name="guard weight" />
+		<_field_real name="investigate weight" />
+		<_field_real name="search by fire weight" />
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Recognizing Properties">
+		<_field_explanation name="Recognizing" />
+		<_field_real name="Recognize min time" />
+		<_field_real name="Recognize max time" />
+		</_field_block_64>
+	<_field_block_64 name="idle properties">
+		<_field_real_bounds name="idle pose delay time" />
+		<_field_real_bounds name="wander delay time" />
+		</_field_block_64>
+	<_field_block_64 name="Precombat Properties">
+		<_field_block_64 name="Systematic Recreation Settings">
+			<_field_string_id name="Required Weapon Class" />
+			<_field_real_bounds name="Cooldown" />
+			<_field_real_bounds name="Duration" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="vocalization properties">
+		<_field_explanation name="Skip Fraction" />
+		<_field_real name="character skip fraction" />
+		<_field_real name="speaker weight bonus" />
+		<_field_real name="look trigger distance" />
+		<_field_real name="look cooldown time" />
+		<_field_real name="look comment time" />
+		<_field_real name="look long comment time" />
+		<_field_real name="look respond max time" />
+		<_field_real name="look respond early out time" />
+		</_field_block_64>
+	<_field_block_64 name="boarding properties">
+		<_field_string_id name="rule name" />
+		<_field_long_flags name="flags">
+			<Item Name="airborne boarding" />
+		</_field_long_flags>
+		<_field_real name="Boarding Distance" />
+		<_field_real name="abort distance" />
+		<_field_real name="Minimum Entry Distance" />
+		<_field_real name="Maximum Entry Distance" />
+		<_field_real name="max speed" />
+		<_field_real name="board time" />
+		<_field_real_bounds name="boarding timeout" />
+		<_field_block_64 name="vehicle specific properties">
+			<_field_tag_reference_64 name="vehicle" />
+			<_field_long_flags name="flags">
+				<Item Name="boarding does not enter seat" />
+			</_field_long_flags>
+			</_field_block_64>
+		<_field_block_64 name="vehicle specific pull properties">
+			<_field_tag_reference_64 name="vehicle" />
+			<_field_real name="max pull" />
+			<_field_real name="min linear acceleration" />
+			<_field_real name="pull history factor" />
+			</_field_block_64>
+		<_field_explanation name="New boarding behavior" />
+		<_field_real name="max danger" />
+		<_field_real name="max pull" />
+		<_field_real name="min linear acceleration" />
+		<_field_real name="pull history factor" />
+		<_field_real name="Ejection Knockback Time" />
+		<_field_real name="entry timeout" />
+		<_field_real name="Boarding Chance" />
+		<_field_real name="Hijack Max Wait Time" />
+		<_field_real name="Min Vehicle Vitality" />
+		<_field_real_bounds name="melee cooldown" />
+		</_field_block_64>
+	<_field_block_64 name="kungfu properties">
+		<_field_real name="kungfu override distance" />
+		<_field_real name="kungfu cover danger threshold" />
+		<_field_real name="Min Allowed Time" />
+		<_field_real name="Min Disallowed Time" />
+		</_field_block_64>
+	<_field_block_64 name="bunker properties">
+		<_field_long_flags name="Flags">
+			<Item Name="No Bunker During Guard" />
+		</_field_long_flags>
+		<_field_explanation name="DEFAULT TIMINGS" />
+		<_field_struct name="default">
+			<_field_real_bounds name="open time" />
+			<_field_real name="closed min time" />
+			<_field_real name="close danger level" />
+			<_field_real name="open chance" />
+			<_field_real name="peek chance" />
+			</_field_struct>
+		<_field_explanation name="FIGHT TIMINGS" />
+		<_field_struct name="fight">
+			<_field_real_bounds name="open time" />
+			<_field_real name="closed min time" />
+			<_field_real name="close danger level" />
+			<_field_real name="open chance" />
+			<_field_real name="peek chance" />
+			</_field_struct>
+		<_field_explanation name="COVER TIMINGS" />
+		<_field_struct name="cover">
+			<_field_real_bounds name="open time" />
+			<_field_real name="closed min time" />
+			<_field_real name="close danger level" />
+			<_field_real name="open chance" />
+			<_field_real name="peek chance" />
+			</_field_struct>
+		<_field_explanation name="GUARD TIMINGS" />
+		<_field_struct name="guard">
+			<_field_real_bounds name="open time" />
+			<_field_real name="closed min time" />
+			<_field_real name="close danger level" />
+			<_field_real name="open chance" />
+			<_field_real name="peek chance" />
+			</_field_struct>
+		</_field_block_64>
+	<_field_block_64 name="shield wall properties">
+		<_field_real name="Raise Shield Delay" />
+		<_field_real name="Relocate Delay" />
+		<_field_real name="Max Leader Protect Distance" />
+		<_field_custom name="Formation" />
+		<_field_struct name="Formation Description">
+			<_field_explanation name="Procedural" />
+			<_field_long_enum name="Shape">
+				<Item Name="None" />
+				<Item Name="Line" />
+				<Item Name="Rectangle" />
+				<Item Name="Wedge" />
+				<Item Name="Circle" />
+			</_field_long_enum>
+			<_field_angle name="Yaw" />
+			<_field_real name="Spacing" />
+			<_field_long_integer name="Max Rectangle Width" />
+			<_field_explanation name="Custom" />
+			<_field_tag_reference_64 name="Formation Reference" />
+			<_field_explanation name="Common" />
+			<_field_real name="Max Speed" />
+			<_field_angle name="Max Yaw Rate" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="firing wall properties">
+		<_field_custom name="Activation Chance" />
+		<_field_real_fraction name="Activation Chance (easy)" />
+		<_field_real_fraction name="Activation Chance (normal)" />
+		<_field_real_fraction name="Activation Chance (heroic)" />
+		<_field_real_fraction name="Activation Chance (legendary)" />
+		<_field_custom name="" />
+		<_field_real name="Max Distance" />
+		<_field_long_integer name="Min Member Count" />
+		<_field_long_integer name="Max Member Count" />
+		<_field_real_bounds name="Fire Time" />
+		<_field_real name="Cooldown" />
+		<_field_real name="Warp In Time" />
+		<_field_real name="Min Arrival Time Variation" />
+		<_field_real name="Max Arrival Time Variation" />
+		<_field_real name="Warp Out Time" />
+		<_field_real name="Min Departure Time Variation" />
+		<_field_real name="Max Departure Time Variation" />
+		<_field_angle name="Max Angle Between Formation and Target" />
+		<_field_custom name="Formation" />
+		<_field_struct name="Formation Description">
+			<_field_explanation name="Procedural" />
+			<_field_long_enum name="Shape">
+				<Item Name="None" />
+				<Item Name="Line" />
+				<Item Name="Rectangle" />
+				<Item Name="Wedge" />
+				<Item Name="Circle" />
+			</_field_long_enum>
+			<_field_angle name="Yaw" />
+			<_field_real name="Spacing" />
+			<_field_long_integer name="Max Rectangle Width" />
+			<_field_explanation name="Custom" />
+			<_field_tag_reference_64 name="Formation Reference" />
+			<_field_explanation name="Common" />
+			<_field_real name="Max Speed" />
+			<_field_angle name="Max Yaw Rate" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Interpose Request Properties">
+		<_field_real name="Danger Level" />
+		<_field_real_bounds name="Wait Time" />
+		<_field_real name="Cooldown" />
+		</_field_block_64>
+	<_field_block_64 name="Interpose Properties">
+		<_field_real_bounds name="Protect Time" />
+		<_field_real name="Distance from Protect" />
+		<_field_string_id name="Firing Style" />
+		</_field_block_64>
+	<_field_block_64 name="bounding properties">
+		<_field_real name="Max Wait Time" />
+		<_field_real name="Advance Time" />
+		<_field_real name="Reposition Search Range" />
+		<_field_real name="Max Destination Age" />
+		<_field_byte_integer name="Max Cover Agents" />
+		<_field_pad name="generated_pada6c0" length="3" />
+		</_field_block_64>
+	<_field_block_64 name="projectile deflection properties">
+		<_field_explanation name="Deflection areas" />
+		<_field_block_64 name="Target Areas">
+			<_field_real_bounds name="Time to Target Window" />
+			<_field_real_vector_3d name="Target Offset" />
+			<_field_real name="Target Radius" />
+			<_field_angle name="Max Incoming Angle" />
+			<_field_string_id name="Animation Name" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Bot Properties">
+		<_field_long_flags name="movement flags">
+			<Item Name="crouch" />
+			<Item Name="jump" />
+			<Item Name="evade" />
+			<Item Name="discard recent firing positions" />
+		</_field_long_flags>
+		<_field_explanation name="Bot info" />
+		<_field_real name="crouch time" />
+		<_field_real_fraction name="crouch Low shield threshold" />
+		<_field_real_fraction name="jump chance" />
+		<_field_real_fraction name="evade low shield threshold" />
+		<_field_real name="strafing influence vector radius" />
+		<_field_real name="strafing influence vector weight" />
+		<_field_real name="firing point refresh distance" />
+		<_field_real name="influence rejection radius" />
+		<_field_real name="movement cooldown min" />
+		<_field_real name="movement cooldown max" />
+		</_field_block_64>
+	<_field_block_64 name="Evasive Fight Properties">
+		<_field_real name="Engage Fraction" />
+		<_field_real_bounds name="Stationary Time" />
+		<_field_real name="Move Danger Threshold" />
+		<_field_real name="Shield Threshold" />
+		<_field_real name="Dive Cooldown" />
+		<_field_real name="Dive Shield Threshold" />
+		<_field_real name="Dive Danger Threshold" />
+		</_field_block_64>
+	<_field_block_64 name="Aggressive Fight Properties">
+		<_field_byte_flags name="Flags">
+			<Item Name="Ignore lower bound when target advancing" />
+			<Item Name="Face exactly" />
+		</_field_byte_flags>
+		<_field_pad name="generated_padcd38" length="3" />
+		<_field_real name="Engage Fraction" />
+		<_field_real_bounds name="Stationary Time" />
+		<_field_real name="Move Danger Threshold" />
+		<_field_real name="Max Speed Percent" />
+		</_field_block_64>
+	<_field_block_64 name="Linear Advance Fight Properties">
+		<_field_real_bounds name="Stationary Time" />
+		<_field_real name="Advance Distance" />
+		</_field_block_64>
+	<_field_block_64 name="Static Fight Properties">
+		<_field_real_bounds name="Stationary Time" />
+		<_field_real name="Danger Move Threshold" />
+		</_field_block_64>
+	<_field_block_64 name="Stand Ground Properties">
+		<_field_real_bounds name="Target Distance" />
+		<_field_real name="Ally Distance" />
+		<_field_real name="Ally Attacker Distance" />
+		<_field_real name="Behavior Linger Time" />
+		</_field_block_64>
+	<_field_block_64 name="Grenade Fight Properties">
+		<_field_real_bounds name="Stationary Time" />
+		<_field_real name="Minimum Movement" />
+		<_field_real_fraction name="Ideal Fraction" />
+		</_field_block_64>
+	<_field_block_64 name="Cover Sequence Properties">
+		<_field_real name="Shield Start Threshold" />
+		<_field_real name="Shield End Threshold" />
+		<_field_real name="Danger Start Threshold" />
+		<_field_real name="Danger End Threshold" />
+		<_field_real name="Minimum Hide Duration" />
+		</_field_block_64>
+	<_field_block_64 name="Cover Move Properties">
+		<_field_long_flags name="Flags">
+			<Item Name="Dive to Cover" />
+		</_field_long_flags>
+		<_field_real name="Cover Failed Duration" />
+		</_field_block_64>
+	<_field_block_64 name="Cover Hide Properties">
+		<_field_real name="Minimum Hide Duration" />
+		</_field_block_64>
+	<_field_block_64 name="Long Range Attack Properties">
+		<_field_long_flags name="Flags">
+			<Item Name="Take potshots while running" />
+			<Item Name="Do not take cover" />
+		</_field_long_flags>
+		<_field_real name="Potshot duration" />
+		<_field_real name="Peek duration" />
+		<_field_real name="Time between potshots" />
+		</_field_block_64>
+	<_field_block_64 name="Hoist Attack Properties">
+		<_field_real name="Max Danger Threshold" />
+		<_field_real name="Hoist Attack Chance" />
+		</_field_block_64>
+	<_field_block_64 name="Hunker Down Properties">
+		<_field_real name="Danger Start Threshold" />
+		<_field_real name="Distance Abort Threshold" />
+		<_field_real_fraction name="Shield Health Threshold" />
+		<_field_real_bounds name="Hunker Time" />
+		</_field_block_64>
+	<_field_block_64 name="Shield Raise Properties">
+		<_field_real name="Danger Threshold" />
+		</_field_block_64>
+	<_field_block_64 name="Vehicle Aggressive Fight Properties">
+		<_field_struct name="Fight Properties">
+			<_field_real_fraction name="Engage Fraction" />
+			<_field_real name="Max Speed Percent" />
+			</_field_struct>
+		<_field_long_flags name="Flags">
+			<Item Name="Can Boost" />
+		</_field_long_flags>
+		<_field_real name="Max Danger to Boost" />
+		</_field_block_64>
+	<_field_block_64 name="Vehicle Defensive Fight Properties">
+		<_field_struct name="Fight Properties">
+			<_field_real_fraction name="Engage Fraction" />
+			<_field_real name="Max Speed Percent" />
+			</_field_struct>
+		</_field_block_64>
+	<_field_block_64 name="engineer properties">
+		<_field_real name="death height" />
+		<_field_real name="death rise time" />
+		<_field_real name="death detonation time" />
+		<_field_real name="shield boost radius max" />
+		<_field_real name="shield boost period" />
+		<_field_string_id name="shield boost damage section name" />
+		<_field_explanation name="Detonation Thresholds" />
+		<_field_real name="detonation shield threshold" />
+		<_field_real name="detonation body vitality" />
+		<_field_real name="proximity radius" />
+		<_field_real name="proximity detonation chance" />
+		<_field_tag_reference_64 name="proximity equipment" />
+		</_field_block_64>
+	<_field_block_64 name="inspect properties">
+		<_field_real name="stop distance" />
+		<_field_real_bounds name="inspect time" />
+		<_field_real_bounds name="search range" />
+		</_field_block_64>
+	<_field_block_64 name="vehicle entrance properties">
+		<_field_real name="Max Distance From Actor" />
+		<_field_real name="Minimum Distance From Player" />
+		<_field_real name="Minimum Distance From Vehicle" />
+		<_field_real name="Perceived Danger Threshold" />
+		<_field_explanation name="Total Health Percentage" />
+		<_field_real name="Minimum Health to Enter" />
+		<_field_real name="Health Percentage to Exit" />
+		<_field_explanation name="Remaining Damage Sections Percentage" />
+		<_field_real name="Threshold to Enter" />
+		<_field_real name="Threshold to Exit" />
+		<_field_real name="Chance To Exit Vehicle" />
+		<_field_real name="Vehicle Exit Impulse Timer" />
+		</_field_block_64>
+	<_field_block_64 name="test-only weapons properties">
+		<_field_tag_reference_64 name="weapon" />
+		<_field_explanation name="Weapon drop when killed" />
+		<_field_real_bounds name="drop weapon loaded" />
+		<_field_short_bounds name="drop weapon ammo" />
+		<_field_tag_reference_64 name="weapon melee damage" />
+		<_field_explanation name="Accuracy" />
+		<_field_real_bounds name="normal accuracy bounds" />
+		<_field_real name="normal accuracy time" />
+		<_field_real_bounds name="heroic accuracy bounds" />
+		<_field_real name="heroic accuracy time" />
+		<_field_real_bounds name="legendary accuracy bounds" />
+		<_field_real name="legendary accuracy time" />
+		<_field_block_64 name="weapon preferences">
+			<_field_char_enum name="Tier Category">
+				<Item Name="Low" />
+				<Item Name="Medium" />
+				<Item Name="High" />
+			</_field_char_enum>
+			<_field_pad name="generated_padb31f" length="3" />
+			<_field_long_integer name="Weight" />
+			<_field_long_integer name="Multi-Tier Multiplier" />
+			</_field_block_64>
+		<_field_block_64 name="weapon modes">
+			<_field_string_id name="mode name" />
+			<_field_long_flags name="weapons flags">
+				<Item Name="bursting inhibits movement" />
+				<Item Name="must crouch to shoot" />
+				<Item Name="use extended safe-to-save range" />
+				<Item Name="fixed aiming vector" />
+				<Item Name="aim at feet" />
+				<Item Name="force aim from barrel position" />
+				<Item Name="Favor for long range" />
+				<Item Name="Favor for close range" />
+				<Item Name="Favor Against Vehicles " />
+				<Item Name="Favored Special Weapon (Class Specific weapon marker)" />
+				<Item Name="bursting inhibits evasion" />
+				<Item Name="aim at head" />
+				<Item Name="vehicle disabling" />
+				<Item Name="Override Mode" />
+				<Item Name="Force aim down sight(ADS) AutoCharge" />
+				<Item Name="Do not use pre-fire tell" />
+				<Item Name="Preparing to fire inhibits movement" />
+				<Item Name="Ignore splash damage" />
+				<Item Name="Shoot at last seen position" />
+				<Item Name="Aim before firing" />
+				<Item Name="Face aim exactly" />
+			</_field_long_flags>
+			<_field_explanation name="Combat ranges" />
+			<_field_real name="maximum firing range" />
+			<_field_real name="minimum firing range" />
+			<_field_real_bounds name="normal combat range" />
+			<_field_real name="bombardment range" />
+			<_field_real name="Max special target distance" />
+			<_field_real name="Max extreme target distance" />
+			<_field_char_enum name="Lower bound option">
+				<Item Name="Fixed" />
+				<Item Name="Ignore aggressively" />
+				<Item Name="Ignore when firing" />
+				<Item Name="Ignore when target advancing" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad6ff4" length="3" />
+			<_field_explanation name="Ballistic Firing" />
+			<_field_real_bounds name="Ballistic firing bounds" />
+			<_field_real_bounds name="Ballistic fraction bounds" />
+			<_field_explanation name="Use Preferences" />
+			<_field_real_vector_3d name="Favored Ranges" />
+			<_field_real_vector_3d name="Range Ratings" />
+			<_field_real name="anti-vehicle rating " />
+			<_field_real name="Scariness Threshold" />
+			<_field_explanation name="Behavior" />
+			<_field_real_bounds name="first burst delay time" />
+			<_field_real name="death fire-wildly chance" />
+			<_field_real name="death fire-wildly time" />
+			<_field_real_fraction name="heat vent min percent" />
+			<_field_real_fraction name="ammo reload min percent" />
+			<_field_real_fraction name="reload chance if not empty" />
+			<_field_real name="heat vent cooldown" />
+			<_field_real_vector_3d name="custom stand gun offset" />
+			<_field_real_vector_3d name="custom crouch gun offset" />
+			<_field_long_integer name="Blocked Shot Count" />
+			<_field_real name="Max Pre-Fire Time (Normal)" />
+			<_field_real name="Max Pre-Fire Time (Heroic)" />
+			<_field_real name="Max Pre-Fire Time (Legendary)" />
+			<_field_block_64 name="selection properties">
+				<_field_long_flags name="Initiators">
+					<Item Name="Target Biped" />
+					<Item Name="Target Vehicle" />
+					<Item Name="Target Cluster" />
+					<Item Name="Self Berserk" />
+					<Item Name="Self Healing" />
+					<Item Name="Vehicle Aggressive" />
+					<Item Name="Vehicle Defensive" />
+					<Item Name="Hunker" />
+				</_field_long_flags>
+				<_field_long_flags name="Required Conditions">
+					<Item Name="Target Not Player On Foot" />
+					<Item Name="Target Flying" />
+					<Item Name="Target on Ground" />
+					<Item Name="Target Visible" />
+					<Item Name="Target Out of Sight" />
+					<Item Name="Actor wants to heal" />
+				</_field_long_flags>
+				<_field_real name="Cluster Radius" />
+				<_field_long_integer name="Min Cluster Count" />
+				<_field_real_bounds name="Target Range Bounds" />
+				<_field_real_bounds name="Danger Bounds" />
+				<_field_real name="Activation Chance" />
+				<_field_real name="Activation Check Delay" />
+				<_field_real name="Projectile Error" />
+				<_field_real_bounds name="Lifetime" />
+				<_field_long_integer name="Max Burst Count" />
+				<_field_char_enum name="Trigger Behavior">
+					<Item Name="Primary" />
+					<Item Name="Secondary" />
+					<Item Name="Overcharge" />
+					<Item Name="Disabled" />
+				</_field_char_enum>
+				<_field_pad name="generated_padabe7" length="3" />
+				</_field_block_64>
+			<_field_char_enum name="Threat Level">
+				<Item Name="Low" />
+				<Item Name="High" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad89d5" length="3" />
+			<_field_real name="Effectiveness Token Close Player Distance" />
+			<_field_block_64 name="Firing Program">
+				<_field_explanation name="Precision" />
+				<_field_custom name="Target Position" />
+				<_field_real_fraction_bounds name="Tracking" />
+				<_field_real_bounds name="Matching Fraction" />
+				<_field_real_bounds name="Matching Spring Force" />
+				<_field_real_fraction_bounds name="Leading" />
+				<_field_custom name="" />
+				<_field_custom name="Aiming Error" />
+				<_field_real_bounds name="Error Distance" />
+				<_field_angle_bounds name="Error Angle" />
+				<_field_angle_bounds name="Error Max Angle" />
+				<_field_custom name="" />
+				<_field_custom name="Linear Burst Geo." />
+				<_field_char_enum name="Burst Line Style">
+					<Item Name="Mirror" />
+					<Item Name="No Mirror" />
+					<Item Name="Fixed" />
+				</_field_char_enum>
+				<_field_pad name="generated_paddb86" length="3" />
+				<_field_angle_bounds name="Burst Line Angle" />
+				<_field_real_bounds name="Burst Origin Radius" />
+				<_field_angle_bounds name="Burst Origin Angle" />
+				<_field_real_bounds name="Burst Return Length Min" />
+				<_field_real_bounds name="Burst Return Length Max" />
+				<_field_angle_bounds name="Burst Return Angle" />
+				<_field_real_bounds name="Burst Maximum Angular Vel." />
+				<_field_angle_bounds name="Burst Maximum Error Angle" />
+				<_field_custom name="" />
+				<_field_explanation name="Hostility" />
+				<_field_real_bounds name="Rate of Fire" />
+				<_field_real_bounds name="Weapon Damage Mod." />
+				<_field_custom name="Burst Pattern" />
+				<_field_real_bounds name="Duration Min" />
+				<_field_real_bounds name="Duration Max" />
+				<_field_real_bounds name="Separation Min" />
+				<_field_real_bounds name="Separation Max" />
+				<_field_custom name="" />
+				<_field_custom name="Burst Noise" />
+				<_field_real_fraction_bounds name="Amount" />
+				<_field_real_bounds name="Min Period" />
+				<_field_real_bounds name="Max Period" />
+				<_field_custom name="" />
+				</_field_block_64>
+			<_field_explanation name="Unit Target Preference" />
+			<_field_block_64 name="Unit Target Preference">
+				<_field_char_enum name="Category">
+					<Item Name="Chassis" />
+					<Item Name="Traversal" />
+					<Item Name="Engine" />
+					<Item Name="Cover" />
+					<Item Name="Weapon" />
+					<Item Name="Occupant" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad0052" length="3" />
+				<_field_real name="Preference" />
+				<_field_explanation name="Vehicle Velocity Targeting Prefernces" />
+				<_field_block_64 name="Vehicle Velocity Based Targeting">
+					<_field_real name="Vehicle Velocity Override Preference" />
+					<_field_real name="Velocity Threshold" />
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="Prefire Beam">
+				<_field_angle name="initial error angle" />
+				<_field_explanation name="Radius Decay" />
+				<_field_custom name="radius decay function" />
+				<_field_struct name="radius decay function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				<_field_explanation name="Beam Spin" />
+				<_field_custom name="beam spin function" />
+				<_field_struct name="beam spin function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				<_field_tag_reference_64 name="beam effect" />
+				<_field_tag_reference_64 name="full screen effect" />
+				<_field_explanation name="Marker overrides" />
+				<_field_string_id name="start marker" />
+				<_field_string_id name="fallback marker" />
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="firing styles">
+		<_field_string_id name="style name" />
+		<_field_real name="precision" />
+		<_field_real name="hostility" />
+		<_field_real_fraction_bounds name="Precision Range" />
+		<_field_real_fraction_bounds name="Hostility Range" />
+		</_field_block_64>
+	<_field_block_64 name="grenade overrides">
+		<_field_char_enum name="grenade type">
+			<Item Name="none" />
+			<Item Name="fragmentation grenade" />
+			<Item Name="plasma grenade" />
+			<Item Name="lightning grenade" />
+			<Item Name="spike grenade" />
+			<Item Name="sapper grenade" />
+			<Item Name="stasis grenade" />
+		</_field_char_enum>
+		<_field_pad name="generated_padf18b" length="3" />
+		<_field_tag_reference_64 name="override grenade projectile" />
+		</_field_block_64>
+	<_field_block_64 name="grenades properties">
+		<_field_long_flags name="grenades flags">
+			<Item Name="do not throw while bunkering" />
+			<Item Name="allow while berserking" />
+		</_field_long_flags>
+		<_field_char_enum name="grenade type">
+			<Item Name="none" />
+			<Item Name="fragmentation grenade" />
+			<Item Name="plasma grenade" />
+			<Item Name="lightning grenade" />
+			<Item Name="spike grenade" />
+			<Item Name="sapper grenade" />
+			<Item Name="stasis grenade" />
+		</_field_char_enum>
+		<_field_pad name="generated_padcce0" length="1" />
+		<_field_short_enum name="trajectory type">
+			<Item Name="toss" />
+			<Item Name="lob" />
+			<Item Name="bounce" />
+		</_field_short_enum>
+		<_field_short_integer name="minimum enemy count" />
+		<_field_pad name="generated_pade6c1" length="2" />
+		<_field_real name="enemy radius" />
+		<_field_custom name="throw error" />
+		<_field_angle name="throw error (easy)" />
+		<_field_angle name="throw error (normal)" />
+		<_field_angle name="throw error (heroic)" />
+		<_field_angle name="throw error (legendary)" />
+		<_field_custom name="" />
+		<_field_custom name="Damage Modifier" />
+		<_field_real name="Damage Modifier (easy)" />
+		<_field_real name="Damage Modifier (normal)" />
+		<_field_real name="Damage Modifier (heroic)" />
+		<_field_real name="Damage Modifier (legendary)" />
+		<_field_custom name="" />
+		<_field_real name="grenade ideal velocity" />
+		<_field_real name="grenade velocity" />
+		<_field_real_bounds name="grenade ranges" />
+		<_field_real name="collateral damage radius" />
+		<_field_real_fraction name="grenade chance" />
+		<_field_real name="Active Shield Modifier" />
+		<_field_real name="grenade throw delay" />
+		<_field_real name="Global grenade delay" />
+		<_field_real_fraction name="grenade uncover chance" />
+		<_field_real_fraction name="anti-vehicle grenade chance" />
+		<_field_explanation name="Grenade drop when killed" />
+		<_field_short_bounds name="grenade count" />
+		<_field_real name="dont drop grenades chance" />
+		</_field_block_64>
+	<_field_block_64 name="vehicle properties">
+		<_field_tag_reference_64 name="unit" />
+		<_field_tag_reference_64 name="style" />
+		<_field_tag_reference_64 name="Behavior Tree" />
+		<_field_tag_reference_64 name="Nondriver Behavior Tree" />
+		<_field_explanation name="Flying Avoidance" />
+		<_field_real name="lookahead_time" />
+		<_field_real name="roll change magnitude" />
+		<_field_real name="roll decay multiplier" />
+		<_field_real name="throttle grace period" />
+		<_field_real name="minimum throttle" />
+		<_field_explanation name="Vehicle flags" />
+		<_field_long_flags name="vehicle flags">
+			<Item Name="passengers adopt original squad" />
+			<Item Name="snap facing to forward (ghosts)" />
+			<Item Name="throttle to target (hornets)" />
+			<Item Name="stationary fight (tanks)" />
+			<Item Name="keep moving" />
+			<Item Name="can pathfind with avoidance only" />
+			<Item Name="use volume avoidance" />
+			<Item Name="target equality" />
+			<Item Name="don't face target" />
+			<Item Name="override aiming limits" />
+		</_field_long_flags>
+		<_field_explanation name="Hover Perturbation New" />
+		<_field_real name="hover deceleration distance" />
+		<_field_real name="hover offset distance" />
+		<_field_explanation name="Hover Perturbation Fallback" />
+		<_field_real name="hover allow perturbation speed" />
+		<_field_real name="hover random x-axis period" />
+		<_field_real name="hover random y-axis period" />
+		<_field_real name="hover random z-axis period" />
+		<_field_real name="hover random radius" />
+		<_field_real name="hover anchor approach speed limit" />
+		<_field_real_bounds name="hover anchor throttle scale distance" />
+		<_field_real_bounds name="hover anchor xy-throttle scale" />
+		<_field_real_bounds name="hover anchor z-throttle scale" />
+		<_field_real name="hover throttle min z" />
+		<_field_explanation name="Pathfinding" />
+		<_field_real name="ai pathfinding radius" />
+		<_field_real name="ai avoidance radius" />
+		<_field_real name="ai destination radius" />
+		<_field_real name="ai deceleration distance" />
+		<_field_real name="roughly, the time it would take this vehicle to stop; default is 2 seconds" />
+		<_field_explanation name="Turning" />
+		<_field_real name="ai turning radius" />
+		<_field_explanation name="Steering" />
+		<_field_angle name="ai banshee steering maximum" />
+		<_field_real name="ai max steering angle" />
+		<_field_real name="ai max steering delta" />
+		<_field_real name="ai oversteering scale" />
+		<_field_real name="ai sideslip distance (combat)" />
+		<_field_real name="ai sideslip distance (non-combat)" />
+		<_field_real name="ai avoidance distance" />
+		<_field_real name="ai min urgency" />
+		<_field_angle name="destination behind angle" />
+		<_field_real name="skid scale" />
+		<_field_angle name="aiming velocity maximum" />
+		<_field_angle name="aiming acceleration maximum" />
+		<_field_explanation name="Throttle" />
+		<_field_real name="ai throttle maximum" />
+		<_field_real name="ai reverse throttle maximum" />
+		<_field_real name="ai goal min throttle scale" />
+		<_field_real name="ai turn min throttle scale" />
+		<_field_real name="ai direction min throttle scale" />
+		<_field_real name="ai skid min throttle scale" />
+		<_field_angle name="skid attentuation max angle" />
+		<_field_real name="ai acceleration scale" />
+		<_field_real name="ai throttle blend" />
+		<_field_real name="theoretical max speed" />
+		<_field_real name="error scale" />
+		<_field_real name="Throttle Ramp Step" />
+		<_field_explanation name="Speed" />
+		<_field_real name="Target Speed" />
+		<_field_explanation name="Boost For Locomotion - Directional Ground Vehicles" />
+		<_field_real_fraction name="ai boost forward facing angle" />
+		<_field_real name="ai min throttle to boost" />
+		<_field_explanation name="Combat" />
+		<_field_angle name="ai allowable aim deviation angle" />
+		<_field_real name="Melee Cooldown" />
+		<_field_explanation name="Behavior" />
+		<_field_real name="ai charge tight angle distance" />
+		<_field_real name="ai charge tight angle" />
+		<_field_real name="ai charge repeat timeout" />
+		<_field_real name="ai charge look-ahead time" />
+		<_field_real name="ai charge consider distance" />
+		<_field_real name="ai charge abort distance" />
+		<_field_real name="ai charge abort close distance" />
+		<_field_real name="ai charge max out of area distance" />
+		<_field_real name="vehicle ram timeout" />
+		<_field_real name="ram paralysis time" />
+		<_field_real name="ai cover damage threshold" />
+		<_field_real name="ai cover shield damage threshold" />
+		<_field_real name="ai cover min distance" />
+		<_field_real name="ai cover time" />
+		<_field_real name="ai cover min boost distance" />
+		<_field_real name="turtling recent damage threshold" />
+		<_field_real name="turtling min time" />
+		<_field_real name="turtling timeout" />
+		<_field_block_64 name="Vehicle Strafing Properties">
+			<_field_real name="strafe min distance" />
+			<_field_real name="strafe abort distance" />
+			<_field_real name="defensive strafe abort distance" />
+			</_field_block_64>
+		<_field_block_64 name="Vehicle Flying Holding Pattern Properties">
+			<_field_real name="holding pattern elevation" />
+			<_field_real_fraction name="holding pattern speed percentage" />
+			<_field_real name="holding pattern radius" />
+			<_field_real_fraction name="max turn angle percentage" />
+			</_field_block_64>
+		<_field_block_64 name="Vehicle Flying Preengage Properties">
+			<_field_real_bounds name="pre engage time" />
+			<_field_real name="pre engage elevation" />
+			<_field_real name="pre engage radius" />
+			</_field_block_64>
+		<_field_block_64 name="Vehicle Flying Suppressed Properties">
+			<_field_real_bounds name="suppressed time" />
+			<_field_real name="suppressed damage threshold" />
+			<_field_real name="suppressed retreat distance" />
+			<_field_real name="suppressed elevation" />
+			<_field_real name="suppressed radius" />
+			</_field_block_64>
+		<_field_block_64 name="Vehicle Flying Aggressive Engage Properties">
+			<_field_short_bounds name="aggressive loops" />
+			</_field_block_64>
+		<_field_block_64 name="Vehicle Flying Defensive Engage Properties">
+			<_field_real_bounds name="defensive time" />
+			</_field_block_64>
+		<_field_block_64 name="Vehicle Flying Fallback Properties">
+			<_field_real_bounds name="combat elevation" />
+			<_field_real name="fallback minimum distance" />
+			<_field_real name="flyby distance" />
+			</_field_block_64>
+		<_field_short_enum name="obstacle ignore size">
+			<Item Name="default" />
+			<Item Name="tiny" />
+			<Item Name="small" />
+			<Item Name="medium" />
+			<Item Name="large" />
+			<Item Name="immobile" />
+		</_field_short_enum>
+		<_field_pad name="generated_pad354a" length="2" />
+		</_field_block_64>
+	<_field_block_64 name="flying movement properties">
+		<_field_tag_reference_64 name="vehicle" />
+		<_field_custom name="Default Values" />
+		<_field_explanation name="Vector Weights" />
+		<_field_real name="facing" />
+		<_field_real name="perturbation" />
+		<_field_real name="volume avoidance" />
+		<_field_real name="volume perturbation" />
+		<_field_real name="volume cover" />
+		<_field_real name="flocking" />
+		<_field_real name="target" />
+		<_field_real name="target tail" />
+		<_field_explanation name="Area Selection" />
+		<_field_real_bounds name="area reselect time" />
+		<_field_explanation name="Idle" />
+		<_field_real_bounds name="idle time" />
+		<_field_explanation name="Cover" />
+		<_field_real_bounds name="unsafe cover reselect time" />
+		<_field_real_bounds name="cover heading reselect time" />
+		<_field_real name="max cover search distance" />
+		<_field_real name="max cover impulse distance" />
+		<_field_real_bounds name="spline cooldown time" />
+		<_field_explanation name="Volume Avoidance" />
+		<_field_real name="volume influence distance" />
+		<_field_real name="volume perturbation phase" />
+		<_field_real name="volume bounding distance" />
+		<_field_explanation name="Approach" />
+		<_field_real name="volume approach distance" />
+		<_field_real name="volume break off distance" />
+		<_field_real name="minimum approach distance" />
+		<_field_real_bounds name="collision avoidance range" />
+		<_field_explanation name="Evasion" />
+		<_field_real_bounds name="evade time" />
+		<_field_real_fraction name="evade body damage threshold" />
+		<_field_real_fraction name="evade shield damage threshold" />
+		<_field_real name="bogey retreat time" />
+		<_field_real name="bogey retreat distance" />
+		<_field_explanation name="Flocking" />
+		<_field_real_bounds name="flock radius" />
+		<_field_angle name="forward follow angle" />
+		<_field_angle name="behind follow angle" />
+		<_field_explanation name="Tailing" />
+		<_field_real name="min tailing time" />
+		<_field_real_bounds name="tailing radius" />
+		<_field_angle name="tailing cone angle" />
+		<_field_explanation name="Strafing" />
+		<_field_real name="volume strafe distance" />
+		<_field_real name="strafe min distance" />
+		<_field_real name="strafe above distance" />
+		<_field_real name="strafe abort distance" />
+		<_field_real name="strafe timeout" />
+		<_field_explanation name="Attitude Control" />
+		<_field_angle name="max descend angle" />
+		<_field_angle name="max ascend angle" />
+		<_field_explanation name="Shooting" />
+		<_field_angle name="shooting cone angle" />
+		<_field_explanation name="Evasive Maneuvers" />
+		<_field_real_fraction name="missile dodge change" />
+		<_field_real name="ideal missile dodge distance" />
+		<_field_real_bounds name="Dodge Timeout" />
+		</_field_block_64>
+	<_field_block_64 name="equipment definitions">
+		<_field_explanation name="Equipment" />
+		<_field_tag_reference_64 name="equipment" />
+		<_field_long_flags name="flags">
+			<Item Name="Stop If No Energy" />
+		</_field_long_flags>
+		<_field_real name="relative drop chance" />
+		<_field_string_id name="Animation" />
+		<_field_block_64 name="equipment use">
+			<_field_explanation name="Equipment Use" />
+			<_field_block_64 name="Use Conditions">
+				<_field_explanation name="Use Conditions" />
+				<_field_short_enum name="use when">
+					<Item Name="combat" />
+					<Item Name="cover" />
+					<Item Name="shield" />
+					<Item Name="health" />
+					<Item Name="uncover" />
+					<Item Name="berserk" />
+					<Item Name="investigate" />
+					<Item Name="anti vehicle" />
+					<Item Name="long range attack" />
+					<Item Name="Cannot attack target" />
+					<Item Name="Cannot find cover" />
+					<Item Name="Tracked Armor Destroyed" />
+					<Item Name="Ally Can Attack" />
+				</_field_short_enum>
+				<_field_pad name="generated_padd2ce" length="2" />
+				<_field_real name="health/shield use threshold" />
+				</_field_block_64>
+			<_field_short_enum name="use how">
+				<Item Name="Attach to self" />
+				<Item Name="Throw at enemy" />
+				<Item Name="Throw at feet" />
+				<Item Name="Throw at ally" />
+				<Item Name="Use on self" />
+				<Item Name="Stop using on self" />
+			</_field_short_enum>
+			<_field_pad name="generated_padd6c8" length="2" />
+			<_field_explanation name="Skip Fraction" />
+			<_field_real name="easy/normal" />
+			<_field_real name="legendary" />
+			<_field_real name="Chance Per Second" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="stimuli responses">
+		<_field_explanation name="Stimulus Response" />
+		<_field_string_id name="stimulus name" />
+		<_field_tag_reference_64 name="override character" />
+		<_field_skip name="Resolved Stimulus" length="8" />
+		</_field_block_64>
+	<_field_block_64 name="campaign metagame bucket">
+		<_field_byte_flags name="flags">
+			<Item Name="only counts with riders" />
+		</_field_byte_flags>
+		<_field_char_enum name="type">
+			<Item Name="grunt" />
+			<Item Name="jackal" />
+			<Item Name="skirmisher" />
+			<Item Name="marine" />
+			<Item Name="spartan" />
+			<Item Name="bugger" />
+			<Item Name="hunter" />
+			<Item Name="flood_infection" />
+			<Item Name="flood_carrier" />
+			<Item Name="flood_combat" />
+			<Item Name="flood_pure" />
+			<Item Name="sentinel" />
+			<Item Name="elite" />
+			<Item Name="engineer" />
+			<Item Name="mule" />
+			<Item Name="turret" />
+			<Item Name="mongoose" />
+			<Item Name="warthog" />
+			<Item Name="scorpion" />
+			<Item Name="hornet" />
+			<Item Name="pelican" />
+			<Item Name="revenant" />
+			<Item Name="seraph" />
+			<Item Name="shade" />
+			<Item Name="watchtower" />
+			<Item Name="ghost" />
+			<Item Name="chopper" />
+			<Item Name="mauler" />
+			<Item Name="wraith" />
+			<Item Name="banshee" />
+			<Item Name="phantom" />
+			<Item Name="scarab" />
+			<Item Name="guntower" />
+			<Item Name="tuning_fork" />
+			<Item Name="broadsword" />
+			<Item Name="mammoth" />
+			<Item Name="lich" />
+			<Item Name="mantis" />
+			<Item Name="wasp" />
+			<Item Name="phaeton" />
+			<Item Name="bishop" />
+			<Item Name="knight" />
+			<Item Name="pawn" />
+			<Item Name="soldier" />
+			<Item Name="packmaster" />
+			<Item Name="cavalier" />
+			<Item Name="brute" />
+			<Item Name="hoverer" />
+			<Item Name="crusher" />
+		</_field_char_enum>
+		<_field_char_enum name="class">
+			<Item Name="infantry" />
+			<Item Name="leader" />
+			<Item Name="hero" />
+			<Item Name="specialist" />
+			<Item Name="light vehicle" />
+			<Item Name="heavy vehicle" />
+			<Item Name="giant vehicle" />
+			<Item Name="standard vehicle" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad6695" length="1" />
+		<_field_short_integer name="point count" />
+		</_field_block_64>
+	<_field_block_64 name="activity objects">
+		<_field_string_id name="activity name" />
+		<_field_tag_reference_64 name="crate" />
+		<_field_custom name="" />
+		<_field_string_id name="crate marker name" />
+		<_field_custom name="" />
+		<_field_string_id name="unit marker name" />
+		</_field_block_64>
+	<_field_block_64 name="pain screen properties">
+		<_field_explanation name="Pain Reactions" />
+		<_field_real name="pain screen duration" />
+		<_field_real name="pain screen region fade out duration" />
+		<_field_real_fraction name="pain screen region fade out weight threshold" />
+		<_field_angle name="pain screen angle tolerance" />
+		<_field_angle name="pain screen angle randomness" />
+		<_field_explanation name="Defensive Reactions" />
+		<_field_real name="defensive screen duration" />
+		<_field_real_fraction name="defensive screen scrub fallback fraction" />
+		</_field_block_64>
+	<_field_block_64 name="Melee animation scaling properties">
+		<_field_explanation name="Easy Scaling" />
+		<_field_real name="Easy Windup Scaling" />
+		<_field_real name="Easy Recovery Scaling" />
+		<_field_explanation name="Normal Scaling" />
+		<_field_real name="Normal Windup Scaling" />
+		<_field_real name="Normal Recovery Scaling" />
+		<_field_explanation name="Heroic Scaling" />
+		<_field_real name="Heroic Windup Scaling" />
+		<_field_real name="Heroic Recovery Scaling" />
+		<_field_explanation name="Legendary Scaling" />
+		<_field_real name="Legendary Windup Scaling" />
+		<_field_real name="Legendary Recovery Scaling" />
+		</_field_block_64>
+	<_field_block_64 name="Close Quarters Defense Blast">
+		<_field_custom name="Close Quarters Defense Blast Parameters" />
+		<_field_custom name="Activation Chance" />
+		<_field_real_fraction name="Activation Chance (easy)" />
+		<_field_real_fraction name="Activation Chance (normal)" />
+		<_field_real_fraction name="Activation Chance (heroic)" />
+		<_field_real_fraction name="Activation Chance (legendary)" />
+		<_field_custom name="" />
+		<_field_real name="cooldown" />
+		<_field_real_bounds name="attack range" />
+		<_field_string_id name="marker" />
+		<_field_tag_reference_64 name="damage effect" />
+		<_field_tag_reference_64 name="effect" />
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="bishop properties">
+		<_field_explanation name="Repair" />
+		<_field_tag_reference_64 name="repair beam effect" />
+		<_field_explanation name="Protect Allies" />
+		<_field_real name="Min Follow Distance " />
+		<_field_explanation name="Resurrect Allies" />
+		<_field_real name="Resurrection Initiation Delay Time (seconds) " />
+		<_field_real name="Resurrection Charge Up Time (seconds) " />
+		<_field_real name="Resurrection Give Up Time (seconds) " />
+		<_field_tag_reference_64 name="Resurrection Ground Effect " />
+		<_field_tag_reference_64 name="Res. Area Scan Start Effect " />
+		<_field_tag_reference_64 name="Res. Area Scan Success Effect " />
+		<_field_tag_reference_64 name="Res. Area Scan Failure Effect " />
+		<_field_explanation name="Shard Spawning" />
+		<_field_tag_reference_64 name="Shard Spawn Ground Effect " />
+		<_field_real name="Shard Creation Delay (seconds) " />
+		<_field_real_bounds name="Spawn Delay (seconds) " />
+		<_field_explanation name="Healing Allies" />
+		<_field_real name="Healing Time" />
+		</_field_block_64>
+	<_field_block_64 name="Healing Properties">
+		<_field_real name="Healing delay time" />
+		<_field_real name="Healing standby time" />
+		</_field_block_64>
+	<_field_block_64 name="packmaster properties">
+		<_field_tag_reference_64 name="Pack Character Ancestor " />
+		<_field_real name="command radius" />
+		<_field_long_integer name="group fire min count" />
+		<_field_long_integer name="group fire max count" />
+		<_field_custom name="group fire chance" />
+		<_field_real_fraction name="group fire chance (easy)" />
+		<_field_real_fraction name="group fire chance (normal)" />
+		<_field_real_fraction name="group fire chance (heroic)" />
+		<_field_real_fraction name="group fire chance (legendary)" />
+		<_field_custom name="" />
+		<_field_real name="group fire burst time" />
+		<_field_real name="group fire cooldown time" />
+		<_field_long_integer name="group fire burst count" />
+		<_field_real name="group fire burst delay" />
+		<_field_real name="group fire target range" />
+		<_field_real name="lion charge max range" />
+		<_field_real name="lion charge chance" />
+		<_field_real name="lion charge melee range" />
+		<_field_real name="lion charge fire duration" />
+		<_field_real name="lion charge throttle override" />
+		<_field_real name="lion charge abort range" />
+		<_field_real name="pack charge distance" />
+		<_field_real name="pack charge cooldown" />
+		</_field_block_64>
+	<_field_block_64 name="Dynamic Task">
+		<_field_long_flags name="Agent Filter Flags ">
+			<Item Name="Companion" />
+			<Item Name="Protector" />
+			<Item Name="Spawner" />
+			<Item Name="Birther" />
+			<Item Name="Cover Fire" />
+			<Item Name="SlipSpace Spawner" />
+			<Item Name="Healer" />
+		</_field_long_flags>
+		<_field_long_flags name="Task Generation Flags ">
+			<Item Name="Protect Me" />
+			<Item Name="Resurrect On Death" />
+			<Item Name="Heal Me" />
+		</_field_long_flags>
+		<_field_real_fraction name="Protect Request Shield Level " />
+		<_field_real_fraction name="Protect Request Body Level " />
+		<_field_real_fraction name="Resurrection Req. Chance " />
+		<_field_real name="Shield Task Priority " />
+		<_field_real_bounds name="Protect Task Priorities (Min Health - Max Health) " />
+		<_field_real name="Resurrection Task Priority " />
+		<_field_real name="Shield During Resurrection Task Priority " />
+		<_field_tag_reference_64 name="Shield Crate Override " />
+		<_field_real name="Heal Request Shield Level " />
+		<_field_real name="Heal Request Body Level " />
+		</_field_block_64>
+	<_field_block_64 name="Rush Attack">
+		<_field_explanation name="Rush Attack" />
+		<_field_struct name="Generic Advance Attack">
+			<_field_long_flags name="Flags">
+				<Item Name="Berserk on activation" />
+				<Item Name="Don't always advance without ranged" />
+				<Item Name="Advance on shields down" />
+				<Item Name="Advance on vehicles" />
+				<Item Name="Use slow advance" />
+			</_field_long_flags>
+			<_field_real_bounds name="Range" />
+			<_field_real name="Max scariness" />
+			<_field_char_enum name="Threat Level">
+				<Item Name="Low" />
+				<Item Name="High" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8a75" length="3" />
+			<_field_custom name="Activation Chance" />
+			<_field_real_fraction name="Activation Chance (easy)" />
+			<_field_real_fraction name="Activation Chance (normal)" />
+			<_field_real_fraction name="Activation Chance (heroic)" />
+			<_field_real_fraction name="Activation Chance (legendary)" />
+			<_field_custom name="" />
+			<_field_real name="Attack timeout" />
+			<_field_real name="Melee range" />
+			<_field_real_fraction name="Shield down threshold" />
+			<_field_real name="Abort danger threshold" />
+			<_field_real name="Abort distance" />
+			<_field_real name="Outside area range" />
+			<_field_real name="Berserk abort distance" />
+			<_field_real name="Cooldown" />
+			<_field_real_fraction name="Tell animation chance" />
+			<_field_real name="Tell Animation Cooldown" />
+			<_field_string_id name="Throttle style" />
+			<_field_struct name="Slow Advance">
+				<_field_explanation name="Slow Advance" />
+				<_field_real name="Slow range" />
+				<_field_string_id name="Slow throttle style" />
+				<_field_real name="Exit range" />
+				</_field_struct>
+			</_field_struct>
+		<_field_explanation name="Rush specific settings" />
+		<_field_long_flags name="Rush flags">
+			<Item Name="Don't shoot while advancing" />
+			<Item Name="Allow multiple hits" />
+			<Item Name="Ignore followers" />
+		</_field_long_flags>
+		<_field_real name="Leader Abandoned Chance" />
+		<_field_real_fraction name="Berserk chance" />
+		<_field_real name="Berserk recheck cooldown" />
+		<_field_real name="Min abort time" />
+		<_field_real name="Min abort dist travelled" />
+		<_field_real name="Vertical Range Scalar" />
+		<_field_real_fraction name="Zig-zag chance" />
+		<_field_angle name="Zig-zag angle" />
+		<_field_real name="Zig-zag period" />
+		<_field_angle name="Tackle angle" />
+		<_field_real name="Tackle wait" />
+		<_field_block_64 name="Combo Definitions">
+			<_field_long_flags name="Combo Flags" />
+			<_field_real name="Weight Modifier" />
+			<_field_block_64 name="Attacks">
+				<_field_long_flags name="Direction Flags">
+					<Item Name="Front" />
+					<Item Name="Left" />
+					<Item Name="Right" />
+					<Item Name="Back" />
+				</_field_long_flags>
+				<_field_string_id name="Animation Name" />
+				<_field_tag_reference_64 name="Damage Override" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_string_id name="Taunt Animation Name" />
+		</_field_block_64>
+	<_field_block_64 name="Leap Attack">
+		<_field_explanation name="Leap Attack" />
+		<_field_struct name="Generic Advance Attack">
+			<_field_long_flags name="Flags">
+				<Item Name="Berserk on activation" />
+				<Item Name="Don't always advance without ranged" />
+				<Item Name="Advance on shields down" />
+				<Item Name="Advance on vehicles" />
+				<Item Name="Use slow advance" />
+			</_field_long_flags>
+			<_field_real_bounds name="Range" />
+			<_field_real name="Max scariness" />
+			<_field_char_enum name="Threat Level">
+				<Item Name="Low" />
+				<Item Name="High" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8a75" length="3" />
+			<_field_custom name="Activation Chance" />
+			<_field_real_fraction name="Activation Chance (easy)" />
+			<_field_real_fraction name="Activation Chance (normal)" />
+			<_field_real_fraction name="Activation Chance (heroic)" />
+			<_field_real_fraction name="Activation Chance (legendary)" />
+			<_field_custom name="" />
+			<_field_real name="Attack timeout" />
+			<_field_real name="Melee range" />
+			<_field_real_fraction name="Shield down threshold" />
+			<_field_real name="Abort danger threshold" />
+			<_field_real name="Abort distance" />
+			<_field_real name="Outside area range" />
+			<_field_real name="Berserk abort distance" />
+			<_field_real name="Cooldown" />
+			<_field_real_fraction name="Tell animation chance" />
+			<_field_real name="Tell Animation Cooldown" />
+			<_field_string_id name="Throttle style" />
+			<_field_struct name="Slow Advance">
+				<_field_explanation name="Slow Advance" />
+				<_field_real name="Slow range" />
+				<_field_string_id name="Slow throttle style" />
+				<_field_real name="Exit range" />
+				</_field_struct>
+			</_field_struct>
+		<_field_explanation name="Leap specific settings" />
+		<_field_long_flags name="Leap Flags">
+			<Item Name="Allow with ranged weapons" />
+			<Item Name="Always face target" />
+			<Item Name="Can lose target mid jump" />
+			<Item Name="Stick the landing" />
+			<Item Name="Swoop tracks target" />
+		</_field_long_flags>
+		<_field_real name="Ideal leap speed" />
+		<_field_real name="Max leap speed" />
+		<_field_real_fraction name="Ballistic fraction" />
+		<_field_real name="Prediction percent" />
+		<_field_real name="Shortfall" />
+		<_field_real name="Swoop accel rate" />
+		<_field_real name="Swoop accel time" />
+		<_field_angle name="Swoop max deviation" />
+		<_field_real name="Swoop prediction" />
+		</_field_block_64>
+	<_field_block_64 name="Teleport Attack">
+		<_field_explanation name="Teleport attack" />
+		<_field_struct name="Generic Advance Attack">
+			<_field_long_flags name="Flags">
+				<Item Name="Berserk on activation" />
+				<Item Name="Don't always advance without ranged" />
+				<Item Name="Advance on shields down" />
+				<Item Name="Advance on vehicles" />
+				<Item Name="Use slow advance" />
+			</_field_long_flags>
+			<_field_real_bounds name="Range" />
+			<_field_real name="Max scariness" />
+			<_field_char_enum name="Threat Level">
+				<Item Name="Low" />
+				<Item Name="High" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8a75" length="3" />
+			<_field_custom name="Activation Chance" />
+			<_field_real_fraction name="Activation Chance (easy)" />
+			<_field_real_fraction name="Activation Chance (normal)" />
+			<_field_real_fraction name="Activation Chance (heroic)" />
+			<_field_real_fraction name="Activation Chance (legendary)" />
+			<_field_custom name="" />
+			<_field_real name="Attack timeout" />
+			<_field_real name="Melee range" />
+			<_field_real_fraction name="Shield down threshold" />
+			<_field_real name="Abort danger threshold" />
+			<_field_real name="Abort distance" />
+			<_field_real name="Outside area range" />
+			<_field_real name="Berserk abort distance" />
+			<_field_real name="Cooldown" />
+			<_field_real_fraction name="Tell animation chance" />
+			<_field_real name="Tell Animation Cooldown" />
+			<_field_string_id name="Throttle style" />
+			<_field_struct name="Slow Advance">
+				<_field_explanation name="Slow Advance" />
+				<_field_real name="Slow range" />
+				<_field_string_id name="Slow throttle style" />
+				<_field_real name="Exit range" />
+				</_field_struct>
+			</_field_struct>
+		<_field_explanation name="Teleport specific settings" />
+		<_field_real name="Destination distance" />
+		<_field_real name="Side step distance" />
+		<_field_real name="Forward distance" />
+		<_field_real name="Tracking distance" />
+		<_field_real name="Runup time" />
+		<_field_real name="Position pause" />
+		<_field_real name="Escape Cooldown" />
+		<_field_real name="Lock Distance" />
+		<_field_tag_reference_64 name="Launch effect" />
+		<_field_tag_reference_64 name="Land effect" />
+		</_field_block_64>
+	<_field_block_64 name="Jink and Shoot">
+		<_field_explanation name="Jink and Shoot" />
+		<_field_real_bounds name="Start distance" />
+		<_field_real name="Start max offset angle" />
+		<_field_real name="Min start teleport distance" />
+		<_field_long_integer name="Number of intermediate teleports" />
+		<_field_real name="Max offset angle" />
+		<_field_real_bounds name="Side step distance" />
+		<_field_real_bounds name="Forward distance" />
+		<_field_tag_reference_64 name="Launch effect" />
+		<_field_tag_reference_64 name="Land effect" />
+		<_field_string_id name="Effect marker" />
+		<_field_tag_reference_64 name="Jink and Shoot Weapon" />
+		</_field_block_64>
+	<_field_block_64 name="Teleport and Tackle">
+		<_field_explanation name="Teleport and Tackle" />
+		<_field_real_bounds name="Destination distance" />
+		<_field_real name="Max offset angle" />
+		<_field_real name="Duration to Align" />
+		<_field_real name="Min teleport distance" />
+		<_field_tag_reference_64 name="Launch effect" />
+		<_field_tag_reference_64 name="Land effect" />
+		<_field_string_id name="Effect marker" />
+		<_field_tag_reference_64 name="Teleport and Tackle Weapon" />
+		</_field_block_64>
+	<_field_block_64 name="Teleport and Taunt Animation">
+		<_field_explanation name="Teleport and Taunt Behavior" />
+		<_field_string_id name="Custom Animation Name" />
+		<_field_real name="Taunt Frequency" />
+		<_field_real name="Taunt chance" />
+		<_field_real_bounds name="Destination distance" />
+		<_field_real name="Max offset angle" />
+		<_field_real name="Min teleport distance" />
+		<_field_tag_reference_64 name="Launch effect" />
+		<_field_tag_reference_64 name="Land effect" />
+		<_field_string_id name="Effect marker" />
+		</_field_block_64>
+	<_field_block_64 name="Desperation Rush">
+		<_field_long_flags name="Properties">
+			<Item Name="Ignore Cooldown" />
+		</_field_long_flags>
+		<_field_real name="Range" />
+		</_field_block_64>
+	<_field_block_64 name="Proximity Melee">
+		<_field_explanation name="Proximity Melee Impulse" />
+		<_field_real name="Range" />
+		<_field_real name="Cooldown" />
+		<_field_real name="Outside area range" />
+		</_field_block_64>
+	<_field_block_64 name="Dive Bomb Kamikaze">
+		<_field_real_fraction name="Ally target chance" />
+		<_field_real_fraction name="Enemy target chance" />
+		<_field_real_bounds name="Travel distance" />
+		<_field_real name="Travel time before exploding" />
+		<_field_tag_reference_64 name="Impact detonation projectile" />
+		<_field_real_bounds name="Target error range" />
+		<_field_byte_flags name="Behavior flags">
+			<Item Name="Enable target leading" />
+			<Item Name="Should drop Weapon" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad94ce" length="3" />
+		<_field_real_fraction name="Kamikaze below health percentage" />
+		<_field_real_fraction name="Chance to kamikaze at low health (per second)" />
+		<_field_real_fraction name="Chance to kamikaze when last man (per second)" />
+		<_field_real name="a Pause between Kamikaze anim and dive bomb action(default 2 seconds)" />
+		</_field_block_64>
+	<_field_block_64 name="Post Combat">
+		<_field_real_fraction name="Shoot Corpse Chance" />
+		<_field_real_bounds name="Postcombat Phase 1 Time" />
+		</_field_block_64>
+	<_field_block_64 name="Pack Stalk">
+		<_field_real name="Min Wander Distance " />
+		<_field_real name="Outside Area Border " />
+		<_field_real_bounds name="Position Update Delay " />
+		<_field_real_fraction name="Throttle In Cover " />
+		</_field_block_64>
+	<_field_block_64 name="Fight Circle">
+		<_field_real_bounds name="Strafe Time " />
+		<_field_real_bounds name="Extra Firing Time " />
+		<_field_real name="Target Patience Time " />
+		<_field_angle name="Max Angle From ThreatAxis " />
+		<_field_angle name="Nearby Inner Angle " />
+		<_field_angle name="Nearby Outer Angle " />
+		<_field_string_id name="strafe throttle style " />
+		<_field_string_id name="move throttle style " />
+		</_field_block_64>
+	<_field_block_64 name="Hamstring">
+		<_field_angle name="Flank Angle " />
+		<_field_real name="Flank Distance " />
+		<_field_real name="Outer Engage Distance " />
+		<_field_real name="Hamstring Delay " />
+		<_field_real name="Initiate chance " />
+		<_field_real name="Max Rush Time " />
+		<_field_real name="Melee Attack Time Min " />
+		<_field_real name="Melee Attack Time Max " />
+		<_field_real name="Max Charge Range" />
+		</_field_block_64>
+	<_field_block_64 name="Forerunner">
+		<_field_long_flags name="forerunner flags">
+			<Item Name="charge on command" />
+			<Item Name="Teleport to combat pos" />
+			<Item Name="Treat as leader" />
+		</_field_long_flags>
+		<_field_real name="order minion charge chance " />
+		<_field_real name="order minion charge radius " />
+		<_field_real name="minion charge min time " />
+		<_field_real name="minion charge max time " />
+		<_field_real_bounds name="Phase To Position distance bounds " />
+		<_field_real_bounds name="Phase To Position Probability range " />
+		</_field_block_64>
+	<_field_block_64 name="Gravity Jump">
+		<_field_custom name="Activation Chance" />
+		<_field_real_fraction name="Activation Chance (easy)" />
+		<_field_real_fraction name="Activation Chance (normal)" />
+		<_field_real_fraction name="Activation Chance (heroic)" />
+		<_field_real_fraction name="Activation Chance (legendary)" />
+		<_field_custom name="" />
+		<_field_real name="Float Time " />
+		<_field_real name="Float Gravity Scale" />
+		<_field_custom name="Descent Gravity Scale Function" />
+		<_field_struct name="descendGravityScaleFunction">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_real name="Slow descend time " />
+		<_field_real name="Jump Target Height " />
+		<_field_real name="Cooldown " />
+		<_field_real name="Trigger Distance " />
+		</_field_block_64>
+	<_field_block_64 name="Co-op Modifiers">
+		<_field_real name="Body Vitality Scale for 2-3 Players" />
+		<_field_real name="Body Vitality Scale for 4 Players" />
+		<_field_real name="Shield Vitality Scale for 2-3 Players" />
+		<_field_real name="Shield Vitality Scale for 4 Players" />
+		</_field_block_64>
+	<_field_block_64 name="Multi Target Tracked Attack">
+		<_field_custom name="activation chance" />
+		<_field_real_fraction name="activation chance (easy)" />
+		<_field_real_fraction name="activation chance (normal)" />
+		<_field_real_fraction name="activation chance (heroic)" />
+		<_field_real_fraction name="activation chance (legendary)" />
+		<_field_custom name="" />
+		<_field_angle name="targeting angle" />
+		<_field_real_bounds name="activation range" />
+		<_field_byte_integer name="min targets in range" />
+		<_field_byte_integer name="bursts" />
+		<_field_char_enum name="trigger">
+			<Item Name="primary" />
+			<Item Name="secondary" />
+		</_field_char_enum>
+		<_field_pad name="generated_pade74f" length="1" />
+		<_field_real name="cooldown" />
+		</_field_block_64>
+	<_field_block_64 name="Drop Objects">
+		<_field_long_integer name="Number of Rolls" />
+		<_field_real name="Min Item Launch Velocity" />
+		<_field_real name="Max Item Launch Velocity" />
+		<_field_real_fraction name="Max Trajectory Radius" />
+		<_field_block_64 name="Drop Objects">
+			<_field_real_fraction name="Easy_Normal Drop Chance" />
+			<_field_real_fraction name="Heroic Drop Chance" />
+			<_field_real_fraction name="Legendary Drop Chance" />
+			<_field_tag_reference_64 name="Drop Object" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Custom Scripting">
+		<_field_block_64 name="Scripted Threshold">
+			<_field_explanation name="Scripted Thresholds" />
+			<_field_long_flags name="Flags">
+				<Item Name="Called Only Once" />
+			</_field_long_flags>
+			<_field_short_enum name="Tracked Attribute">
+				<Item Name="Danger" />
+				<Item Name="Target Distance" />
+				<Item Name="Target Perceived Scariness" />
+				<Item Name="Target Inherent Scariness" />
+				<Item Name="Body Vitality" />
+				<Item Name="Shield Vitality" />
+			</_field_short_enum>
+			<_field_short_enum name="Trigger When">
+				<Item Name="Greater Than" />
+				<Item Name="Less Than" />
+			</_field_short_enum>
+			<_field_real name="Threshold Value" />
+			<_field_real name="Recheck Buffer" />
+			<_field_real name="Recheck Cooldown" />
+			<_field_long_string name="Function" />
+			</_field_block_64>
+		</_field_block_64>
+	</plugin>

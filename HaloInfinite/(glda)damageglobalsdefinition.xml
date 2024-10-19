@@ -1,0 +1,134 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="damage table">
+		<_field_block_64 name="damage groups">
+			<_field_string_id name="name" />
+			<_field_block_64 name="armor modifiers">
+				<_field_string_id name="name" />
+				<_field_real name="damage multiplier" />
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="damage">
+		<_field_explanation name="Guardians Damage Source" />
+		<_field_struct name="guardiansDamageSource">
+			<_field_string_id name="Damage Source Name" />
+			</_field_struct>
+		<_field_explanation name="Unknown Damage Type" />
+		<_field_struct name="unknownDamageType">
+			<_field_string_id name="Damage Type Name" />
+			</_field_struct>
+		<_field_explanation name="Generic Collision Damage Source" />
+		<_field_struct name="genericCollisionDamageSource">
+			<_field_string_id name="Damage Source Name" />
+			</_field_struct>
+		<_field_explanation name="Scripting Damage Source" />
+		<_field_struct name="scriptingDamageSource">
+			<_field_string_id name="Damage Source Name" />
+			</_field_struct>
+		<_field_tag_reference_64 name="Instant kill damage" />
+		<_field_tag_reference_64 name="falling damage" />
+		<_field_tag_reference_64 name="jumping damage" />
+		<_field_tag_reference_64 name="soft landing damage" />
+		<_field_tag_reference_64 name="hard landing damage" />
+		<_field_tag_reference_64 name="transfer damage" />
+		<_field_tag_reference_64 name="hs damage" />
+		<_field_tag_reference_64 name="hs healing" />
+		<_field_explanation name="Fire Damage Source" />
+		<_field_struct name="scriptingFireDamageSource">
+			<_field_string_id name="Damage Source Name" />
+			</_field_struct>
+		<_field_tag_reference_64 name="hs fire damage" />
+		<_field_explanation name="Terminal Velocity Damage Source" />
+		<_field_struct name="terminalVelocityDamageSource">
+			<_field_string_id name="Damage Source Name" />
+			</_field_struct>
+		<_field_real name="terminal velocity" />
+		<_field_tag_reference_64 name="terminal velocity damage" />
+		<_field_tag_reference_64 name="default damage response" />
+		<_field_tag_reference_64 name="friendly fire damage response" />
+		<_field_real name="player shield spillover" />
+		<_field_real name="ex-driver considered vehicle damage owner window" />
+		<_field_custom name="damage decay" />
+		<_field_struct name="damage decay props">
+			<_field_real name="current damage decay delay" />
+			<_field_real name="current damage decay time" />
+			<_field_real name="current damage decay rate" />
+			<_field_real name="recent damage decay delay" />
+			<_field_real name="recent damage decay time" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="AI damage decay" />
+		<_field_struct name="ai damage decay props">
+			<_field_real name="current damage decay delay" />
+			<_field_real name="current damage decay time" />
+			<_field_real name="current damage decay rate" />
+			<_field_real name="recent damage decay delay" />
+			<_field_real name="recent damage decay time" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="shield impact decay" />
+		<_field_struct name="shield impact decay props">
+			<_field_real name="current damage decay delay" />
+			<_field_real name="current damage decay time" />
+			<_field_real name="current damage decay rate" />
+			<_field_real name="recent damage decay delay" />
+			<_field_real name="recent damage decay time" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="AI stun damage decay" />
+		<_field_struct name="ai stun damage decay props">
+			<_field_real name="current damage decay delay" />
+			<_field_real name="current damage decay time" />
+			<_field_real name="current damage decay rate" />
+			<_field_real name="recent damage decay delay" />
+			<_field_real name="recent damage decay time" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Medium Ping Decay" />
+		<_field_struct name="medium ping decay props">
+			<_field_real name="current damage decay delay" />
+			<_field_real name="current damage decay time" />
+			<_field_real name="current damage decay rate" />
+			<_field_real name="recent damage decay delay" />
+			<_field_real name="recent damage decay time" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Hard Ping Decay" />
+		<_field_struct name="hard ping decay props">
+			<_field_real name="current damage decay delay" />
+			<_field_real name="current damage decay time" />
+			<_field_real name="current damage decay rate" />
+			<_field_real name="recent damage decay delay" />
+			<_field_real name="recent damage decay time" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="player damage additive sounds" />
+		<_field_tag_reference_64 name="deprecated player dealt damage additive sound" />
+		<_field_tag_reference_64 name="deprecated player dealt AOE damage additive sound" />
+		<_field_tag_reference_64 name="deprecated player dealt friendly fire additive sound" />
+		<_field_struct name="player additive sound deal damage">
+			<_field_tag_reference_64 name="player additive sound deal damage regular" />
+			<_field_tag_reference_64 name="player additive sound deal damage aoe" />
+			<_field_tag_reference_64 name="player additive sound deal damage friendly fire" />
+			<_field_tag_reference_64 name="player additive sound deal damage weak spot" />
+			<_field_tag_reference_64 name="player additive sound deal damage headshot" />
+			<_field_tag_reference_64 name="player additive sound deal damage kill" />
+			<_field_tag_reference_64 name="player additive sound deal damage headshot kill" />
+			</_field_struct>
+		<_field_tag_reference_64 name="player received damage additive sound (default)" />
+		<_field_tag_reference_64 name="player received damage additive sound (third person)" />
+		<_field_tag_reference_64 name="player received damage additive sound (in vehicle)" />
+		<_field_tag_reference_64 name="player received AOE damage additive sound (default)" />
+		<_field_tag_reference_64 name="player received AOE damage additive sound (third person)" />
+		<_field_tag_reference_64 name="player received AOE damage additive sound (in vehicle)" />
+		<_field_tag_reference_64 name="player died from AOE damage sound" />
+		<_field_custom name="" />
+		</_field_block_64>
+	</plugin>

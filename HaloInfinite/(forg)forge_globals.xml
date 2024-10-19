@@ -1,0 +1,279 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="forge colors">
+		<_field_string_id name="name" />
+		<_field_real_rgb_color name="color" />
+		</_field_block_64>
+	<_field_block_64 name="Forge Colors Lighting">
+		<_field_string_id name="name" />
+		<_field_real_rgb_color name="color" />
+		</_field_block_64>
+	<_field_block_64 name="Global Swatch Group Allow List">
+		<_field_string_id name="Global Swatch Group Name" />
+		</_field_block_64>
+	<_field_explanation name="Magnets" />
+	<_field_tag_reference_64 name="magnet effect scenery" />
+	<_field_string_id name="parent magnet marker name" />
+	<_field_string_id name="child magnet marker name" />
+	<_field_real_fraction name="deprecated, delete me when systems team says it's okay (1)" />
+	<_field_real name="deprecated, delete me when systems team says it's okay (2)" />
+	<_field_real name="deprecated, delete me when systems team says it's okay (3)" />
+	<_field_real name="deprecated, delete me when systems team says it's okay (4)" />
+	<_field_real name="deprecated, delete me when systems team says it's okay (5)" />
+	<_field_real name="deprecated, delete me when systems team says it's okay (6)" />
+	<_field_real name="deprecated, delete me when systems team says it's okay (7)" />
+	<_field_real_fraction name="deprecated, delete me when systems team says it's okay (8)" />
+	<_field_explanation name="Forge Camera Manipulation" />
+	<_field_real name="max object grab range" />
+	<_field_real name="default grab distance mult" />
+	<_field_real_bounds name="min-max grab distance mult" />
+	<_field_real_bounds name="minimum grab distance threshold" />
+	<_field_real_bounds name="maximum grab distance threshold" />
+	<_field_real name="lock-on time" />
+	<_field_real name="grab-cam soft ceiling movement speed" />
+	<_field_real name="grab-cam inward spring constant" />
+	<_field_real name="grab-cam outward spring constant" />
+	<_field_real name="camera-object distance threshold" />
+	<_field_block_64 name="monitor speed multipliers">
+		<_field_string_id name="name" />
+		<_field_real name="translation speed" />
+		<_field_real name="rotation speed" />
+		<_field_real name="scale speed" />
+		</_field_block_64>
+	<_field_string_id name="monitor boost name" />
+	<_field_real name="monitor boost translation speed" />
+	<_field_real name="monitor boost rotation speed" />
+	<_field_real name="monitor boost scale speed" />
+	<_field_block_64 name="jumbotron UI element">
+		<_field_tag_reference_64 name="jumbotron UI element" />
+		<_field_string_id name="name" />
+		</_field_block_64>
+	<_field_struct name="Forge DWS Constants">
+		<_field_real name="Min Sun Intensity" />
+		<_field_real name="Max Sun Intensity" />
+		<_field_real name="Min Static Tint Intensity" />
+		<_field_real name="Max Static Tint Intensity" />
+		<_field_real name="Min Sky Tint Intensity" />
+		<_field_real name="Max Sky Tint Intensity" />
+		<_field_real name="Min Wind Speed" />
+		<_field_real name="Max Wind Speed" />
+		<_field_real name="Min Explicit Camera Exposure" />
+		<_field_real name="Max Explicit Camera Exposure" />
+		<_field_real name="Default Ranged Camera Exposure" />
+		<_field_real name="Max Camera Exposure Range" />
+		<_field_real name="Min Fog Start Distance In Feet" />
+		<_field_real name="Max Fog Start Distance In Feet" />
+		<_field_real name="Min Fog Distance" />
+		<_field_real name="Max Fog Distance" />
+		<_field_real name="Min Fog Thickness" />
+		<_field_real name="Max Fog Thickness" />
+		<_field_real name="Min Fog Color Intensity" />
+		<_field_real name="Max Fog Color Intensity" />
+		<_field_real name="Min Ground Fog Thickness" />
+		<_field_real name="Max Ground Fog Thickness" />
+		<_field_real name="Min Ground Fog Intensity" />
+		<_field_real name="Max Ground Fog Intensity" />
+		<_field_real name="Min Volumetric Fog Density" />
+		<_field_real name="Max Volumetric Fog Density" />
+		</_field_struct>
+	<_field_block_64 name="forge gobo definitions">
+		<_field_tag_reference_64 name="gobo setting" />
+		<_field_string_id name="name" />
+		</_field_block_64>
+	<_field_block_64 name="forge light intensity function definitions">
+		<_field_struct name="Intensity Function">
+			<_field_string_id name="Input Variable" />
+			<_field_string_id name="Range Variable" />
+			<_field_short_enum name="Output Modifier">
+				<Item Name=" " />
+				<Item Name="Plus" />
+				<Item Name="Times" />
+			</_field_short_enum>
+			<_field_pad name="generated_padc7e0" length="2" />
+			<_field_string_id name="Output Modifier Input" />
+			<_field_custom name="Mapping" />
+			<_field_struct name="Mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_string_id name="name" />
+		</_field_block_64>
+	<_field_block_64 name="forge area screen effect definitions">
+		<_field_tag_reference_64 name="area screen effect" />
+		<_field_string_id name="name" />
+		</_field_block_64>
+	<_field_block_64 name="forge weather effect definitions">
+		<_field_tag_reference_64 name="Weather Effect" />
+		<_field_string_id name="name" />
+		</_field_block_64>
+	<_field_block_64 name="forge cloud bitmaps">
+		<_field_tag_reference_64 name="bitmap" />
+		<_field_string_id name="name" />
+		</_field_block_64>
+	<_field_block_64 name="forge lens flares">
+		<_field_tag_reference_64 name="lens flare" />
+		<_field_string_id name="name" />
+		</_field_block_64>
+	<_field_block_64 name="forge light cones">
+		<_field_tag_reference_64 name="light cone" />
+		<_field_string_id name="name" />
+		</_field_block_64>
+	<_field_block_64 name="forge light groups">
+		<_field_tag_reference_64 name="light group" />
+		<_field_string_id name="name" />
+		</_field_block_64>
+	<_field_block_64 name="scale snap values">
+		<_field_string_id name="name" />
+		<_field_real name="scale snap amount (relative to default size)" />
+		</_field_block_64>
+	<_field_block_64 name="rotation snap values">
+		<_field_string_id name="name" />
+		<_field_real name="rotation snap amount (degrees)" />
+		</_field_block_64>
+	<_field_block_64 name="translation snap values">
+		<_field_string_id name="name" />
+		<_field_real name="translation snap amount (world units)" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="play mode music control" />
+	<_field_tag_reference_64 name="edit mode music control" />
+	<_field_tag_reference_64 name="rotation handle shader" />
+	<_field_tag_reference_64 name="magnet marker shader" />
+	<_field_tag_reference_64 name="path preview shader" />
+	<_field_tag_reference_64 name="ai navmesh shader" />
+	<_field_block_64 name="global label values">
+		<_field_string_id name="name" />
+		<_field_string_id name="label display name" />
+		<_field_string_id name="label display description" />
+		<_field_char_enum name="application rule">
+			<Item Name="AllObjects" />
+			<Item Name="OnlySpawnPointsAndZones" />
+			<Item Name="OnlySpawnPoints" />
+			<Item Name="OnlySpawnZones" />
+			<Item Name="OnlyTraitZones" />
+			<Item Name="OnlyFlagStands" />
+			<Item Name="OnlyCinematicObjects" />
+			<Item Name="AllObjectsExcludingKits" />
+		</_field_char_enum>
+		<_field_byte_flags name="side effects of label">
+			<Item Name="Only spawn if game mode requires" />
+		</_field_byte_flags>
+		<_field_char_enum name="visibility in Forge">
+			<Item Name="ShowInForge" />
+			<Item Name="HiddenInForge" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad20ec" length="1" />
+		</_field_block_64>
+	<_field_block_64 name="outline type definitions">
+		<_field_tag_reference_64 name="outline type" />
+		</_field_block_64>
+	<_field_string_id name="Forge Intro Composition Name" />
+	<_field_block_64 name="Forge Intro Compositions">
+		<_field_tag_reference_64 name="Composition Reference" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Forge Outro Composition Template" />
+	<_field_tag_reference_64 name="Forge Static View Composition Template" />
+	<_field_block_64 name="Game Type Cinematic Names">
+		<_field_string_id name="name" />
+		</_field_block_64>
+	<_field_block_64 name="Cinematic Player Animations">
+		<_field_byte_integer name="Player Index In Team" />
+		<_field_char_enum name="Team Size">
+			<Item Name="FourPlayerTeamSize" />
+			<Item Name="FallbackTeamSize" />
+		</_field_char_enum>
+		<_field_char_enum name="Team Relation">
+			<Item Name="MyTeam" />
+			<Item Name="FirstTeamIAmSpectating" />
+			<Item Name="SecondTeamIAmSpectating" />
+		</_field_char_enum>
+		<_field_char_enum name="Cinematic Type">
+			<Item Name="Intro" />
+			<Item Name="Outro" />
+			<Item Name="StaticView" />
+		</_field_char_enum>
+		<_field_tag_reference_64 name="Model Animation Graph" />
+		<_field_string_id name="Animation Name" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Default Boundary Shader" />
+	<_field_block_64 name="styleShaders">
+		<_field_string_id name="name" />
+		<_field_tag_reference_64 name="palette" />
+		<_field_tag_reference_64 name="coatingMaterialSet" />
+		</_field_block_64>
+	<_field_block_64 name="Forge Enabled Shaders">
+		<_field_tag_reference_64 name="forgeShader" />
+		</_field_block_64>
+	<_field_pad name="generated_padd2ca" length="4" />
+	<_field_int64_integer name="rotationHandlePipelineState" />
+	<_field_int64_integer name="pathPreviewPipelineState" />
+	<_field_int64_integer name="defaultBoundaryPipelineState" />
+	<_field_int64_integer name="handleWithDepthTestState" />
+	<_field_int64_integer name="aiNavMeshPipelineState" />
+	<_field_int64_integer name="aiPathPipelineState" />
+	<_field_tag_reference_64 name="Forge Object Manifest" />
+	<_field_tag_reference_64 name="Forge Named Tag Lists" />
+	<_field_block_64 name="Forge NodeGraph Schema">
+		<_field_data_64 name="graphSchema" />
+		</_field_block_64>
+	<_field_block_64 name="Forge NodeGraph Schema Tags">
+		<_field_tag_reference_64 name="Json Source File Tag" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Forge Script Brain Tag Reference" />
+	<_field_block_64 name="Forge Nodes To Exclude From Mode Script Brain">
+		<_field_long_string name="Node Name" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Forge Bot Navigation Marker Tag Reference" />
+	<_field_tag_reference_64 name="Forge Sound Tag Reference" />
+	<_field_struct name="Forge Ambient Sounds">
+		<_field_custom name="Forge Ambient Sounds" />
+		<_field_block_64 name="Base Air Sounds">
+			<_field_tag_reference_64 name="Looping Sound Reference" />
+			<_field_string_id name="name" />
+			</_field_block_64>
+		<_field_block_64 name="Base Air Sweetener Sounds">
+			<_field_tag_reference_64 name="Looping Sound Reference" />
+			<_field_string_id name="name" />
+			</_field_block_64>
+		<_field_block_64 name="Reverb Environments">
+			<_field_tag_reference_64 name="Reverb Environment Reference" />
+			<_field_string_id name="name" />
+			</_field_block_64>
+		<_field_string_id name="mix state group" />
+		<_field_block_64 name="Mix States">
+			<_field_string_id name="mix state value" />
+			<_field_string_id name="name" />
+			</_field_block_64>
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_struct name="Forge Game Mode Sounds">
+		<_field_block_64 name="Game Mode Sounds">
+			<_field_tag_reference_64 name="Looping Sound Reference" />
+			<_field_string_id name="name" />
+			</_field_block_64>
+		</_field_struct>
+	<_field_tag_reference_64 name="Forge Looping Sound Categories" />
+	<_field_struct name="Forge Looping Sound Property IDs">
+		<_field_string_id name="Friendly Category Property ID" />
+		<_field_string_id name="Enemy Category Property ID" />
+		<_field_string_id name="Friendly Name Property ID" />
+		<_field_string_id name="Enemy Name Property ID" />
+		</_field_struct>
+	<_field_tag_reference_64 name="Forge Sound Response Sounds" />
+	<_field_tag_reference_64 name="Forge VO Sound Categories" />
+	<_field_tag_reference_64 name="Forge Music Categories" />
+	<_field_tag_reference_64 name="Forge Nav Mesh Seed Tag Reference" />
+	<_field_tag_reference_64 name="Forge Baking Overlay screen reference" />
+	<_field_tag_reference_64 name="forge required resources" />
+	<_field_tag_reference_64 name="Forgeable Character definitions" />
+	<_field_tag_reference_64 name="Forge Dimensional Widgets Parameters Tag Reference" />
+	<_field_pad name="generated_pad1f7f" length="4" />
+	<_field_int64_integer name="m_labelCache" />
+	</plugin>

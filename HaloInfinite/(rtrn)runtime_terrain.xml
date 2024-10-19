@@ -1,0 +1,216 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="Bitmap" />
+	<_field_block_64 name="TerrainCollisionGeoTag Cells">
+		<_field_tag_reference_64 name="TerrainCollisionCellGeoTag" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Render Material" />
+	<_field_tag_reference_64 name="Masks Composite Material" />
+	<_field_long_integer name="Quad Tree LOD Resolution" />
+	<_field_word_integer name="Quad Tree Level Count" />
+	<_field_word_integer name="Quad Tree Collision Data Level" />
+	<_field_real_vector_3d name="Quad Tree Position" />
+	<_field_real_vector_3d name="Quad Tree Size" />
+	<_field_block_64 name="Quad Tree Node Data">
+		<_field_block_64 name="Material Layers Indices">
+			<_field_long_integer name="Node Shared Index" />
+			</_field_block_64>
+		<_field_block_64 name="Placement Layers Indices">
+			<_field_long_integer name="Node Shared Index" />
+			</_field_block_64>
+		<_field_block_64 name="Texture Remap Info">
+			<_field_word_integer name="Texture Index" />
+			<_field_short_integer name="Channel Masks" />
+			<_field_real name="Solid Color" />
+			</_field_block_64>
+		<_field_block_64 name="Input Bitmap Indices">
+			<_field_dword_integer name="Index" />
+			</_field_block_64>
+		<_field_real name="Min Height Value" />
+		<_field_real name="Max Height Value" />
+		<_field_block_64 name="Input Texture Data">
+			<_field_long_integer name="Output Id" />
+			<_field_long_integer name="Bitmap Index" />
+			<_field_string_id name="Red channel" />
+			<_field_string_id name="Green channel" />
+			<_field_string_id name="Blue channel" />
+			<_field_string_id name="Alpha channel" />
+			</_field_block_64>
+		<_field_long_integer name="Unoptimized Instructions Count" />
+		</_field_block_64>
+	<_field_block_64 name="Material Layer Ids">
+		<_field_string_id name="Id" />
+		<_field_array name="Output Bitmap References">
+			<_field_long_integer name="Bitmap Reference Index" />
+			<_field_real_vector_2d name="Scale of the UV transform" />
+			<_field_long_integer name="Bitmap Reference Index" />
+			<_field_real_vector_2d name="Scale of the UV transform" />
+			<_field_long_integer name="Bitmap Reference Index" />
+			<_field_real_vector_2d name="Scale of the UV transform" />
+			</_field_array>
+		</_field_block_64>
+	<_field_long_integer name="Placements Layers Count" />
+	<_field_long_integer name="Placements Precompiled Techniques First Index" />
+	<_field_block_64 name="Material Layer Bitmap References">
+		<_field_long_integer name="Offset In Bytes" />
+		<_field_tag_reference_64 name="Bitmap Reference" />
+		</_field_block_64>
+	<_field_block_64 name="Shared Gpu Interpreter Bitmap References">
+		<_field_tag_reference_64 name="Bitmap Reference" />
+		<_field_real_vector_2d name="UV Scale" />
+		</_field_block_64>
+	<_field_block_64 name="Shared Gpu Interpreter Instructions">
+		<_field_qword_integer name="Hash" />
+		<_field_block_64 name="GPU Interpreter Instructions">
+			<_field_long_integer name="Data" />
+			</_field_block_64>
+		<_field_pad name="generated_pad5fcf" length="4" />
+		</_field_block_64>
+	<_field_block_64 name="Shared Node Material Layers">
+		<_field_string_id name="Id" />
+		<_field_long_integer name="Index" />
+		<_field_long_integer name="GPU Interpreter Instructions" />
+		<_field_tag_reference_64 name="Material Preset" />
+		<_field_long_integer name="PhysicsMaterialId" />
+		</_field_block_64>
+	<_field_block_64 name="Shared Node Placement Layers">
+		<_field_block_64 name="Placement Descriptions">
+			<_field_string_id name="Id" />
+			<_field_long_integer name="GPU Interpreter Density Instructions" />
+			<_field_long_integer name="GPU Interpreter Scale Instructions" />
+			<_field_tag_reference_64 name="Runtime Tag Reference" />
+			<_field_tag_reference_64 name="Content Tag Reference" />
+			<_field_real_vector_2d name="Position.z Offset Range" />
+			<_field_real_vector_2d name="Scale Range" />
+			<_field_real_vector_2d name="Rotation Range" />
+			<_field_char_enum name="Orientation Alignment">
+				<Item Name="AlwaysUp" />
+				<Item Name="AlignToSlope" />
+				<Item Name="Random" />
+			</_field_char_enum>
+			<_field_pad name="generated_pada2d4" length="3" />
+			<_field_real name="Cull Distance Scale Low" />
+			<_field_real_point_3d name="Cull Distance Scale Splitscreen Multiplier Low" />
+			<_field_real name="Cull Distance Scale Medium" />
+			<_field_real_point_3d name="Cull Distance Scale Splitscreen Multiplier Medium" />
+			<_field_real name="Cull Distance Scale High" />
+			<_field_real_point_3d name="Cull Distance Scale Splitscreen Multiplier High" />
+			<_field_real name="Cull Distance Scale Ultra" />
+			<_field_real_point_3d name="Cull Distance Scale Splitscreen Multiplier Ultra" />
+			<_field_real name="Density Multiplier Low" />
+			<_field_real_point_3d name="Density Multiplier Splitscreen Multiplier Low" />
+			<_field_real name="Density Multiplier Medium" />
+			<_field_real_point_3d name="Density Multiplier Splitscreen Multiplier Medium" />
+			<_field_real name="Density Multiplier High" />
+			<_field_real_point_3d name="Density Multiplier Splitscreen Multiplier High" />
+			<_field_real name="Density Multiplier Ultra" />
+			<_field_real_point_3d name="Density Multiplier Splitscreen Multiplier Ultra" />
+			<_field_string_id name="Variant Name" />
+			<_field_real_argb_color name="Debug Color" />
+			<_field_long_integer name="Precompiled Technique Index" />
+			<_field_struct name="Distance Dither Start">
+				<_field_real name="Low" />
+				<_field_real name="Medium" />
+				<_field_real name="High" />
+				<_field_real name="Ultra" />
+				<_field_real name="2 Player Splitscreen" />
+				<_field_real name="3 Player Splitscreen" />
+				<_field_real name="4 Player Splitscreen" />
+				</_field_struct>
+			<_field_real name="Distance Dither Transition Width" />
+			</_field_block_64>
+		<_field_real name="Footprint Radius" />
+		</_field_block_64>
+	<_field_data_64 name="Material Layer Data" />
+	<_field_real name="Macro Color Near Distance" />
+	<_field_real name="Macro Color Far Distance" />
+	<_field_real name="Macro Color Near Opacity" />
+	<_field_real name="Macro Color Far Opacity" />
+	<_field_struct name="Micro Height Vertex Density">
+		<_field_custom name="Single Player" />
+		<_field_struct name="Single Player">
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen">
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen">
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen">
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_struct name="Micro Height Radius">
+		<_field_custom name="Single Player" />
+		<_field_struct name="Single Player">
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen">
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen">
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen">
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_struct name="Micro Height Mip Level">
+		<_field_long_integer name="Low" />
+		<_field_long_integer name="Medium" />
+		<_field_long_integer name="High" />
+		<_field_long_integer name="Ultra" />
+		<_field_real name="2 Player Splitscreen" />
+		<_field_real name="3 Player Splitscreen" />
+		<_field_real name="4 Player Splitscreen" />
+		</_field_struct>
+	<_field_real name="Micro Height Scale" />
+	<_field_pad name="generated_padfa1a" length="4" />
+	<_field_int64_integer name="Runtime Terrain System" />
+	<_field_int64_integer name="m_pipelineStates" />
+	</plugin>

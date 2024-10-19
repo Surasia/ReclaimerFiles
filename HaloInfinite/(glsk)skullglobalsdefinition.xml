@@ -1,0 +1,90 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="campaign metagame globals">
+		<_field_block_64 name="styles">
+			<_field_string_id name="incident name" />
+			<_field_real name="style multiplier" />
+			</_field_block_64>
+		<_field_block_64 name="difficulty">
+			<_field_real name="difficulty multiplier" />
+			</_field_block_64>
+		<_field_block_64 name="skulls">
+			<_field_real name="difficulty multiplier" />
+			</_field_block_64>
+		<_field_long_integer name="friendly_death_point_count" />
+		<_field_long_integer name="player_death_point_count" />
+		<_field_long_integer name="player_betrayal_point_count" />
+		<_field_real name="transient score time" />
+		<_field_real name="EMP kill window" />
+		<_field_real name="Cowbell explosion acceleration multiplier" />
+		<_field_real name="Boom explosion acceleration multiplier" />
+		<_field_real name="Boom explosion radius multiplier" />
+		<_field_real name="Famine ammo multiplier" />
+		<_field_real name="Score delta display seconds (max)" />
+		<_field_real name="Score delta display seconds (incremental)" />
+		<_field_real name="Mythic skull body vitality scalar" />
+		<_field_real name="Mythic skull shield vitality scalar" />
+		<_field_block_64 name="Mythic skull bonuses">
+			<_field_char_enum name="Type">
+				<Item Name="grunt" />
+				<Item Name="jackal" />
+				<Item Name="skirmisher" />
+				<Item Name="marine" />
+				<Item Name="spartan" />
+				<Item Name="bugger" />
+				<Item Name="hunter" />
+				<Item Name="flood_infection" />
+				<Item Name="flood_carrier" />
+				<Item Name="flood_combat" />
+				<Item Name="flood_pure" />
+				<Item Name="sentinel" />
+				<Item Name="elite" />
+				<Item Name="engineer" />
+				<Item Name="mule" />
+				<Item Name="turret" />
+				<Item Name="mongoose" />
+				<Item Name="warthog" />
+				<Item Name="scorpion" />
+				<Item Name="hornet" />
+				<Item Name="pelican" />
+				<Item Name="revenant" />
+				<Item Name="seraph" />
+				<Item Name="shade" />
+				<Item Name="watchtower" />
+				<Item Name="ghost" />
+				<Item Name="chopper" />
+				<Item Name="mauler" />
+				<Item Name="wraith" />
+				<Item Name="banshee" />
+				<Item Name="phantom" />
+				<Item Name="scarab" />
+				<Item Name="guntower" />
+				<Item Name="tuning_fork" />
+				<Item Name="broadsword" />
+				<Item Name="mammoth" />
+				<Item Name="lich" />
+				<Item Name="mantis" />
+				<Item Name="wasp" />
+				<Item Name="phaeton" />
+				<Item Name="bishop" />
+				<Item Name="knight" />
+				<Item Name="pawn" />
+				<Item Name="soldier" />
+				<Item Name="packmaster" />
+				<Item Name="cavalier" />
+				<Item Name="brute" />
+				<Item Name="hoverer" />
+				<Item Name="crusher" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad9f60" length="3" />
+			<_field_real name="Shield vitality bonus" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_pad name="generated_pad8e18" length="4" />
+	</plugin>

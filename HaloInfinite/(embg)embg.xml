@@ -1,0 +1,14 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Layers">
+		<_field_string_id name="Prefix" />
+		<_field_real_argb_color name="Preview color" />
+		</_field_block_64>
+	<_field_pad name="generated_pad3647" length="4" />
+	</plugin>

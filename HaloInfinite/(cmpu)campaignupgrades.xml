@@ -1,0 +1,54 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Equipment Paths">
+		<_field_string_id name="Path name" />
+		<_field_short_enum name="Path Upgrade Type">
+			<Item Name="Invalid" />
+			<Item Name="Grapple" />
+			<Item Name="Shield" />
+			<Item Name="Sensor" />
+			<Item Name="Wall" />
+			<Item Name="Evade" />
+		</_field_short_enum>
+		<_field_pad name="generated_pad72a0" length="2" />
+		<_field_string_id name="Path description" />
+		<_field_string_id name="Persistence key levels" />
+		<_field_string_id name="Persistence key read levels" />
+		<_field_string_id name="Persistence key discovered" />
+		<_field_byte_flags name="Unlocked by default">
+			<Item Name="enabled" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad8c81" length="3" />
+		<_field_custom name="UI Info" />
+		<_field_struct name="UIInfo">
+			<_field_string_id name="name" />
+			<_field_string_id name="alt name " />
+			<_field_string_id name="description" />
+			<_field_string_id name="help text" />
+			<_field_string_id name="icon string id" />
+			<_field_tag_reference_64 name="sprite" />
+			<_field_long_integer name="sprite index" />
+			<_field_tag_reference_64 name="alt sprite" />
+			<_field_long_integer name="alt sprite index" />
+			<_field_long_integer name="damage sprite index" />
+			<_field_tag_reference_64 name="ui vehicle screen reference" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_block_64 name="Nodes">
+			<_field_string_id name="Node name" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Equipment Points">
+		<_field_string_id name="Persistence Key" />
+		</_field_block_64>
+	<_field_block_64 name="Shield Upgrades">
+		<_field_string_id name="Persistence Key" />
+		</_field_block_64>
+	<_field_pad name="generated_pad9564" length="4" />
+	</plugin>

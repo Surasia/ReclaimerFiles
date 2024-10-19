@@ -1,0 +1,27 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="Parent" />
+	<_field_block_64 name="Regions">
+		<_field_string_id name="Name" />
+		</_field_block_64>
+	<_field_string_id name="Default Style Name" />
+	<_field_block_64 name="Styles">
+		<_field_string_id name="Name" />
+		<_field_tag_reference_64 name="Style" />
+		<_field_tag_reference_64 name="Generated Runtime Style Reference" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Visor Swatch" />
+	<_field_char_enum name="Preload Swatch Options">
+		<Item Name="Do Not Preload Styles" />
+		<Item Name="Force Preload All Styles" />
+	</_field_char_enum>
+	<_field_pad name="generated_paddbdd" length="3" />
+	<_field_tag_reference_64 name="Generated Runtime Styles Reference" />
+	<_field_pad name="generated_padc1fc" length="4" />
+	</plugin>

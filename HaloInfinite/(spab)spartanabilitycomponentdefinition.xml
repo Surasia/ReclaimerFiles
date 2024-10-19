@@ -1,0 +1,23 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="activation energy cost scalar" />
+	<_field_struct name="activation energy cost scalar">
+		<_field_real name="Base Value" />
+		<_field_real_bounds name="Value Bounds" />
+		</_field_struct>
+	<_field_tag_reference_64 name="ability activation failure effect" />
+	<_field_tag_reference_64 name="overheat effect" />
+	<_field_tag_reference_64 name="cooldown effect" />
+	<_field_real name="energy bar row" />
+	<_field_real name="energy bar column" />
+	<_field_real_fraction name="energy bar warning pct" />
+	<_field_tag_reference_64 name="evade ref" />
+	<_field_tag_reference_64 name="grapple hook ref" />
+	<_field_tag_reference_64 name="sprint ref" />
+	</plugin>

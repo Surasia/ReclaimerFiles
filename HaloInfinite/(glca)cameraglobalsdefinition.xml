@@ -1,0 +1,118 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="camera">
+		<_field_tag_reference_64 name="default unit camera track" />
+		<_field_explanation name="SANDBOX" />
+		<_field_struct name="pitch to vertical offset">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_explanation name="CAMERA UNIVERSALS" />
+		<_field_real name="field of view" />
+		<_field_real name="yaw scale" />
+		<_field_real name="pitch scale" />
+		<_field_real name="forward scale" />
+		<_field_real name="side scale" />
+		<_field_real name="up scale" />
+		<_field_explanation name="DEAD CAMERA" />
+		<_field_real name="minimum distance to player" />
+		<_field_real name="transition time" />
+		<_field_real name="falling death transition time" />
+		<_field_real name="initial distance" />
+		<_field_real name="final distance" />
+		<_field_real name="dead cam z offset" />
+		<_field_real name="dead cam maximum elevation" />
+		<_field_real name="dead cam movement delay" />
+		<_field_real name="time_to_auto_switch_to_orbiting" />
+		<_field_real name="ignore_stick_time" />
+		<_field_real name="ignore_button_time" />
+		<_field_real name="dead camera minimum falling velocity" />
+		<_field_explanation name="FLYING CAMERA" />
+		<_field_real name="maximum boost speed" />
+		<_field_real name="time to maximum_boost" />
+		<_field_short_enum name="boost function">
+			<Item Name="linear" />
+			<Item Name="early" />
+			<Item Name="very early" />
+			<Item Name="late" />
+			<Item Name="very late" />
+			<Item Name="cosine" />
+			<Item Name="one" />
+			<Item Name="zero" />
+		</_field_short_enum>
+		<_field_pad name="generated_pad632c" length="2" />
+		<_field_real name="zoomed field of view" />
+		<_field_real name="zoomed look speed" />
+		<_field_real name="bounding sphere radius" />
+		<_field_real name="flying cam movement delay" />
+		<_field_real name="zoom transition time" />
+		<_field_real name="vertical movement time to max speed" />
+		<_field_short_enum name="vertical movement function">
+			<Item Name="linear" />
+			<Item Name="early" />
+			<Item Name="very early" />
+			<Item Name="late" />
+			<Item Name="very late" />
+			<Item Name="cosine" />
+			<Item Name="one" />
+			<Item Name="zero" />
+		</_field_short_enum>
+		<_field_pad name="generated_pad7d0d" length="2" />
+		<_field_explanation name="ORBITING CAMERA" />
+		<_field_real name="minimum distance" />
+		<_field_real name="maximum distance" />
+		<_field_real name="initial distance on focus" />
+		<_field_real name="orbit cam movement delay" />
+		<_field_real name="orbit cam z offset" />
+		<_field_real name="orbit cam minimum elevation" />
+		<_field_real name="orbit cam maximum elevation" />
+		<_field_real name="orbit cam use targets facing direction after " />
+		<_field_real name="film specific tuning orbit cam use targets facing direction after " />
+		<_field_real name="orbit cam transition to targets facing direction delay" />
+		<_field_explanation name="FIRST PERSON CAMERA" />
+		<_field_angle name="first person vertical field of view" />
+		<_field_explanation name="SAVED FILMS" />
+		<_field_real name="max playback speed" />
+		<_field_real name="fade out time" />
+		<_field_real name="fade in time" />
+		<_field_explanation name="IN GAME" />
+		<_field_real name="enter vehicle transition time" />
+		<_field_real name="exit vehicle transition time" />
+		<_field_explanation name="CAMERA OBSTRUCTION" />
+		<_field_struct name="obstruction">
+			<_field_real_fraction name="cylinder fraction" />
+			<_field_angle name="obstruction test angle" />
+			<_field_real name="obstruction max inward accel" />
+			<_field_real name="obstruction max outward accel" />
+			<_field_real name="obstruction max velocity" />
+			<_field_real name="obstruction return delay" />
+			</_field_struct>
+		<_field_explanation name="KILLPLAYBACK CAMERA" />
+		<_field_real name="initial_distance" />
+		<_field_real name="kill playback camera use target's facing direction for " />
+		<_field_real name="kill playback camera z offset" />
+		<_field_angle name="kill playback camera initial angle" />
+		<_field_explanation name="PLAYER PROFILE DEFAULTS" />
+		<_field_real_bounds name="horizontal fov bounds" />
+		<_field_explanation name="EDITOR PROFILE DEFAULTS" />
+		<_field_real_bounds name="editor horizontal fov bounds" />
+		</_field_block_64>
+	<_field_block_64 name="camera impulse">
+		<_field_custom name="Mapping function" />
+		<_field_struct name="mapping">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_block_64>
+	</plugin>

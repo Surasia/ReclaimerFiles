@@ -1,0 +1,89 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="parameters">
+		<_field_custom name="Step jump" />
+		<_field_explanation name="explanation" />
+		<_field_real_bounds name="step jump range" />
+		<_field_angle name="step jump contact max angle" />
+		<_field_real name="step jump extra height" />
+		<_field_custom name="" />
+		<_field_real name="horizontal range" />
+		<_field_real name="vertical range min (ascending)" />
+		<_field_real name="vertical range min (descending)" />
+		<_field_real name="ascending velocity threshold" />
+		<_field_real name="vertical range max" />
+		<_field_real name="entry point vertical offset to apex" />
+		<_field_real name="entry point adjustment benchmark speed" />
+		<_field_real name="entry point horizontal adjustment range" />
+		<_field_real name="minimum downward speed required to move entry point down" />
+		<_field_real name="entry point vertical adjustment range" />
+		<_field_byte_flags name="clamber flags">
+			<Item Name="allow with support weapons" />
+			<Item Name="drops support weapons" />
+			<Item Name="drops must be readied weapons" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad9eaf" length="3" />
+		<_field_real name="post exit block time" />
+		<_field_real name="cancel weapon block time" />
+		<_field_real name="melee clamber delay" />
+		<_field_struct name="common parameters">
+			<_field_byte_flags name="flags">
+				<Item Name="allow auto if crouching" />
+				<Item Name="allow auto with support weapon" />
+				<Item Name="allow auto with must be readied weapon" />
+				<Item Name="allow auto if firing" />
+				<Item Name="allow auto if grappling" />
+				<Item Name="can use weapons" />
+			</_field_byte_flags>
+			<_field_char_enum name="activation throttle requirements">
+				<Item Name="unset" />
+				<Item Name="positive" />
+				<Item Name="positive or neutral" />
+				<Item Name="negative or neutral" />
+				<Item Name="negative" />
+			</_field_char_enum>
+			<_field_char_enum name="cancellation throttle requirements">
+				<Item Name="unset" />
+				<Item Name="positive" />
+				<Item Name="positive or neutral" />
+				<Item Name="negative or neutral" />
+				<Item Name="negative" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8441" length="1" />
+			<_field_real_fraction name="throttle cancellation point of no return" />
+			<_field_real_fraction name="firing cancellation start point" />
+			<_field_real_fraction name="throttle threshold" />
+			<_field_real name="initial button press hold time to trigger" />
+			<_field_angle name="maximum ledge slope" />
+			<_field_angle name="minimum edge sharpness" />
+			<_field_real name="maximum backward reach" />
+			<_field_real name="apex vertical offset" />
+			<_field_real name="max exit speed" />
+			<_field_explanation name="entry time" />
+			<_field_real name="min entry time" />
+			<_field_real name="max entry time" />
+			<_field_explanation name="movement time" />
+			<_field_real name="min movement time" />
+			<_field_real name="max movement time" />
+			<_field_explanation name="camera height function" />
+			<_field_custom name="camera height function" />
+			<_field_struct name="camera height function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			<_field_real name="max anchor object relative speed" />
+			<_field_custom name="auto" />
+			<_field_real name="auto push time min" />
+			<_field_angle name="auto push contact max angle" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_pad name="generated_padba18" length="4" />
+	</plugin>

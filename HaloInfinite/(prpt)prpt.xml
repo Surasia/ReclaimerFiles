@@ -1,0 +1,15 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Prop Entries">
+		<_field_tag_reference_64 name="Object Definition" />
+		<_field_real_vector_3d name="Position Offset" />
+		<_field_real_euler_angles_2d name="yaw, pitch" />
+		</_field_block_64>
+	<_field_pad name="generated_pad36ca" length="4" />
+	</plugin>

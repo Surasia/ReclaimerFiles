@@ -1,0 +1,53 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="$$$ General $$$" />
+	<_field_tag_reference_64 name="Enter Edit Mode" />
+	<_field_tag_reference_64 name="Enter Play Mode" />
+	<_field_tag_reference_64 name="Undo Sound" />
+	<_field_tag_reference_64 name="Redo Sound" />
+	<_field_tag_reference_64 name="Monitor Speed Change Sound" />
+	<_field_tag_reference_64 name="Error Sound" />
+	<_field_tag_reference_64 name="Menu Opened Sound" />
+	<_field_tag_reference_64 name="Menu Closed Sound" />
+	<_field_custom name="" />
+	<_field_custom name="$$$ Objects $$$" />
+	<_field_tag_reference_64 name="Object Select Sound" />
+	<_field_tag_reference_64 name="Object Deselect Sound" />
+	<_field_tag_reference_64 name="Object Snap Sound" />
+	<_field_tag_reference_64 name="Object Place Sound" />
+	<_field_tag_reference_64 name="Object Place Error Sound" />
+	<_field_tag_reference_64 name="Object Duplicate Sound" />
+	<_field_tag_reference_64 name="Object Delete Sound" />
+	<_field_tag_reference_64 name="Object Lock Focus Sound" />
+	<_field_tag_reference_64 name="Object Hide Sound" />
+	<_field_tag_reference_64 name="Object Show Sound" />
+	<_field_tag_reference_64 name="Object Lock Sound" />
+	<_field_tag_reference_64 name="Object Unlock Sound" />
+	<_field_tag_reference_64 name="Object Group Sound" />
+	<_field_tag_reference_64 name="Object Ungroup Sound" />
+	<_field_tag_reference_64 name="Object Rotate Sound" />
+	<_field_tag_reference_64 name="Object Scale Sound" />
+	<_field_tag_reference_64 name="Save Prefab Sound" />
+	<_field_custom name="" />
+	<_field_custom name="$$$ Nodegraph $$$" />
+	<_field_tag_reference_64 name="Nodegraph Enter Editor Sound" />
+	<_field_tag_reference_64 name="Nodegraph Exit Editor Sound" />
+	<_field_tag_reference_64 name="Nodegraph Place Node Sound" />
+	<_field_tag_reference_64 name="Nodegraph Select Node Sound" />
+	<_field_tag_reference_64 name="Nodegraph Deselect Node Sound" />
+	<_field_tag_reference_64 name="Nodegraph Connect Nodes Sound" />
+	<_field_tag_reference_64 name="Nodegraph Disconnect Node Sound" />
+	<_field_tag_reference_64 name="Nodegraph Delete Node Sound" />
+	<_field_tag_reference_64 name="Nodegraph Duplicate Node Sound" />
+	<_field_custom name="" />
+	<_field_custom name="$$$ Script Validation $$$" />
+	<_field_tag_reference_64 name="Script Validation Success Sound" />
+	<_field_tag_reference_64 name="Script Validation Error Sound" />
+	<_field_custom name="" />
+	</plugin>

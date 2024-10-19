@@ -1,0 +1,167 @@
+<!-- This is a mockup plugin with original field names and such -->
+<!-- Made by Zedd lol -->
+<plugin>
+	<_field_int64_integer name="vtable space*~!" />
+	<_field_struct name="internal struct" srcguid="151d0146-479c-181f-3970-ec869043bc33">
+		<_field_long_integer name="global tag ID!" />
+		<_field_pad name="local tag handle!~" length="4" />
+	</_field_struct>
+	<_field_block_64 name="character categories" max="128" srcguid="13cb91f2-486c-8fa0-1aba-93ad3423a101" srcName="pgcr_enemy_to_category_list_block">
+		<_field_string_id name="category display name^" />
+		<_field_short_integer name="sprite index" />
+		<_field_byte_flags name="flags">
+			<item Name="category contains players" />
+		</_field_byte_flags>
+		<_field_pad name="pad0" length="1" />
+		<_field_block_64 name="player types" max="1" srcguid="b6d21071-4da8-d5c4-a148-f4a2a2e568ac" srcName="pgcr_player_to_category_entry_block">
+			<_field_char_enum name="player type">
+				<item Name="UNSC" />
+				<item Name="Covenant" />
+			</_field_char_enum>
+			<_field_pad name="pad0" length="3" />
+		</_field_block_64>
+		<_field_block_64 name="enemy types" max="16" srcguid="27d7ea73-49b9-810a-7047-469905b69802" srcName="pgcr_enemy_to_category_entry_block">
+			<_field_char_enum name="character type">
+				<item Name="any" />
+				<item Name="brute" />
+				<item Name="grunt" />
+				<item Name="jackal" />
+				<item Name="skirmisher" />
+				<item Name="marine" />
+				<item Name="spartan" />
+				<item Name="bugger" />
+				<item Name="hunter" />
+				<item Name="flood_infection" />
+				<item Name="flood_carrier" />
+				<item Name="flood_combat" />
+				<item Name="flood_pure" />
+				<item Name="sentinel" />
+				<item Name="elite" />
+				<item Name="engineer" />
+				<item Name="mule" />
+				<item Name="turret" />
+				<item Name="mongoose" />
+				<item Name="warthog" />
+				<item Name="scorpion" />
+				<item Name="hornet" />
+				<item Name="pelican" />
+				<item Name="revenant" />
+				<item Name="seraph" />
+				<item Name="shade" />
+				<item Name="watchtower" />
+				<item Name="ghost" />
+				<item Name="chopper" />
+				<item Name="mauler" />
+				<item Name="wraith" />
+				<item Name="banshee" />
+				<item Name="phantom" />
+				<item Name="scarab" />
+				<item Name="guntower" />
+				<item Name="tuning_fork" />
+				<item Name="broadsword" />
+				<item Name="mammoth" />
+				<item Name="lich" />
+				<item Name="mantis" />
+				<item Name="wasp" />
+				<item Name="phaeton" />
+				<item Name="bishop" />
+				<item Name="knight" />
+				<item Name="pawn" />
+				<item Name="soldier" />
+				<item Name="packmaster" />
+				<item Name="cavalier" />
+			</_field_char_enum>
+			<_field_char_enum name="character class">
+				<item Name="any" />
+				<item Name="infantry" />
+				<item Name="leader" />
+				<item Name="hero" />
+				<item Name="specialist" />
+				<item Name="light vehicle" />
+				<item Name="heavy vehicle" />
+				<item Name="giant vehicle" />
+				<item Name="standard vehicle" />
+			</_field_char_enum>
+			<_field_pad name="pad0" length="2" />
+		</_field_block_64>
+	</_field_block_64>
+	<_field_block_64 name="vehicle categories" max="128" srcguid="13cb91f2-486c-8fa0-1aba-93ad3423a101" srcName="pgcr_enemy_to_category_list_block">
+		<_field_string_id name="category display name^" />
+		<_field_short_integer name="sprite index" />
+		<_field_byte_flags name="flags">
+			<item Name="category contains players" />
+		</_field_byte_flags>
+		<_field_pad name="pad0" length="1" />
+		<_field_block_64 name="player types" max="1" srcguid="b6d21071-4da8-d5c4-a148-f4a2a2e568ac" srcName="pgcr_player_to_category_entry_block">
+			<_field_char_enum name="player type">
+				<item Name="UNSC" />
+				<item Name="Covenant" />
+			</_field_char_enum>
+			<_field_pad name="pad0" length="3" />
+		</_field_block_64>
+		<_field_block_64 name="enemy types" max="16" srcguid="27d7ea73-49b9-810a-7047-469905b69802" srcName="pgcr_enemy_to_category_entry_block">
+			<_field_char_enum name="character type">
+				<item Name="any" />
+				<item Name="brute" />
+				<item Name="grunt" />
+				<item Name="jackal" />
+				<item Name="skirmisher" />
+				<item Name="marine" />
+				<item Name="spartan" />
+				<item Name="bugger" />
+				<item Name="hunter" />
+				<item Name="flood_infection" />
+				<item Name="flood_carrier" />
+				<item Name="flood_combat" />
+				<item Name="flood_pure" />
+				<item Name="sentinel" />
+				<item Name="elite" />
+				<item Name="engineer" />
+				<item Name="mule" />
+				<item Name="turret" />
+				<item Name="mongoose" />
+				<item Name="warthog" />
+				<item Name="scorpion" />
+				<item Name="hornet" />
+				<item Name="pelican" />
+				<item Name="revenant" />
+				<item Name="seraph" />
+				<item Name="shade" />
+				<item Name="watchtower" />
+				<item Name="ghost" />
+				<item Name="chopper" />
+				<item Name="mauler" />
+				<item Name="wraith" />
+				<item Name="banshee" />
+				<item Name="phantom" />
+				<item Name="scarab" />
+				<item Name="guntower" />
+				<item Name="tuning_fork" />
+				<item Name="broadsword" />
+				<item Name="mammoth" />
+				<item Name="lich" />
+				<item Name="mantis" />
+				<item Name="wasp" />
+				<item Name="phaeton" />
+				<item Name="bishop" />
+				<item Name="knight" />
+				<item Name="pawn" />
+				<item Name="soldier" />
+				<item Name="packmaster" />
+				<item Name="cavalier" />
+			</_field_char_enum>
+			<_field_char_enum name="character class">
+				<item Name="any" />
+				<item Name="infantry" />
+				<item Name="leader" />
+				<item Name="hero" />
+				<item Name="specialist" />
+				<item Name="light vehicle" />
+				<item Name="heavy vehicle" />
+				<item Name="giant vehicle" />
+				<item Name="standard vehicle" />
+			</_field_char_enum>
+			<_field_pad name="pad0" length="2" />
+		</_field_block_64>
+	</_field_block_64>
+</plugin>

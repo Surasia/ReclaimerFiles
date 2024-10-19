@@ -1,0 +1,224 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="Global Text Strings" />
+	<_field_tag_reference_64 name="String list tag" />
+	<_field_explanation name="Global Narration String" />
+	<_field_tag_reference_64 name="Narration string list tag" />
+	<_field_explanation name="Global Resources" />
+	<_field_block_64 name="Resources tags">
+		<_field_tag_reference_64 name="resources list" />
+		</_field_block_64>
+	<_field_explanation name="Global Navpoint Resources" />
+	<_field_block_64 name="NavPoint Resources tags">
+		<_field_tag_reference_64 name="resources list" />
+		</_field_block_64>
+	<_field_explanation name="Color presets" />
+	<_field_block_64 name="color presets">
+		<_field_string_id name="name" />
+		<_field_real_argb_color name="color" />
+		</_field_block_64>
+	<_field_explanation name="Disposition Colors" />
+	<_field_tag_reference_64 name="Disposition Colors" />
+	<_field_explanation name="Tint colors" />
+	<_field_block_64 name="tint colors">
+		<_field_block_64 name="text team">
+			<_field_real_argb_color name="color" />
+			</_field_block_64>
+		<_field_block_64 name="bitmap team">
+			<_field_real_argb_color name="color" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_explanation name="User interface sounds" />
+	<_field_tag_reference_64 name="default sounds" />
+	<_field_tag_reference_64 name="Weapon discarded sound" />
+	<_field_tag_reference_64 name="Callout Spam Prevention Sound" />
+	<_field_tag_reference_64 name="Grenade switching sound" />
+	<_field_explanation name="Alerts" />
+	<_field_block_64 name="alert description tags">
+		<_field_tag_reference_64 name="Reference" />
+		</_field_block_64>
+	<_field_explanation name="Dialogs" />
+	<_field_block_64 name="dialog description tags">
+		<_field_tag_reference_64 name="Reference" />
+		</_field_block_64>
+	<_field_explanation name="Lua User Libraries" />
+	<_field_block_64 name="lua user libraries">
+		<_field_tag_reference_64 name="lua library" />
+		</_field_block_64>
+	<_field_explanation name="Lua User Sample Data Libraries" />
+	<_field_block_64 name="lua user sample data libraries">
+		<_field_tag_reference_64 name="lua library" />
+		</_field_block_64>
+	<_field_explanation name="Basic widget tab speed" />
+	<_field_custom name="basic widget tab speed function" />
+	<_field_struct name="basic widget tab speed function">
+		<_field_custom name="" />
+		<_field_data_64 name="data" />
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_long_integer name="max input time (x) on the basic graph (msec)" />
+	<_field_explanation name="Spinner tab speed" />
+	<_field_custom name="spinner tab speed function" />
+	<_field_struct name="spinner tab speed function">
+		<_field_custom name="" />
+		<_field_data_64 name="data" />
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_long_integer name="max input time (x) on the graph (msec)" />
+	<_field_explanation name="Attract Mode Settings" />
+	<_field_long_integer name="delay" />
+	<_field_block_64 name="wpf font sets">
+		<_field_tag_reference_64 name="wpf font set tag" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="typefaces" />
+	<_field_block_64 name="bitmap dictionaries">
+		<_field_tag_reference_64 name="bitmap dictionary" />
+		</_field_block_64>
+	<_field_block_64 name="double tap bitmap dictionaries">
+		<_field_tag_reference_64 name="bitmap dictionary" />
+		</_field_block_64>
+	<_field_block_64 name="keyboard layout bitmap remappings">
+		<_field_dword_integer name="Keyboard Layout ID" />
+		<_field_byte_flags name="flags">
+			<Item Name="Right Alt is Alt Gr?" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad603b" length="3" />
+		<_field_tag_reference_64 name="layoutBitmaps" />
+		</_field_block_64>
+	<_field_block_64 name="language-localized keyboard button label images">
+		<_field_long_enum name="Language ID">
+			<Item Name="English" />
+			<Item Name="Japanese" />
+			<Item Name="German" />
+			<Item Name="French" />
+			<Item Name="Spanish" />
+			<Item Name="Mexican-Spanish" />
+			<Item Name="Italian" />
+			<Item Name="Korean" />
+			<Item Name="Traditional-Chinese" />
+			<Item Name="Simplified-Chinese" />
+			<Item Name="Portuguese" />
+			<Item Name="Polish" />
+			<Item Name="Russian" />
+			<Item Name="Danish" />
+			<Item Name="Finnish" />
+			<Item Name="Dutch" />
+			<Item Name="Norwegian" />
+			<Item Name="Brazilian-Portuguese" />
+		</_field_long_enum>
+		<_field_tag_reference_64 name="function key label image overrides" />
+		</_field_block_64>
+	<_field_custom name="Loading Screen" />
+	<_field_tag_reference_64 name="Loading screen tag" />
+	<_field_block_64 name="Loading Screen Settings">
+		<_field_char_enum name="Loading Screen Category">
+			<Item Name="Generic" />
+			<Item Name="Campaign" />
+			<Item Name="Multiplayer" />
+			<Item Name="Academy" />
+			<Item Name="Forge" />
+			<Item Name="Tatanka" />
+			<Item Name="Install" />
+			<Item Name="ForgeBake" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad0e13" length="3" />
+		<_field_tag_reference_64 name="Loading Screen Image Group" />
+		<_field_block_64 name="Loading Screen Tooltip Set">
+			<_field_string_id name="Header Text" />
+			<_field_string_id name="Description Text" />
+			</_field_block_64>
+		<_field_real name="Loading Screen Image Flip Time" />
+		<_field_real name="Loading Screen Tooltip Flip Time" />
+		</_field_block_64>
+	<_field_real name="Crossfade Into Black" />
+	<_field_real name="Crossfade Out Of Black Screen" />
+	<_field_real name="Loading Screen Min Dwell Time" />
+	<_field_custom name="" />
+	<_field_explanation name="Blur transitions" />
+	<_field_custom name="Gameplay overlay blur fade in function" />
+	<_field_struct name="Gameplay overlay blur fade in function">
+		<_field_custom name="" />
+		<_field_data_64 name="data" />
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_real name="Gameplay overlay blur fade in time (s)" />
+	<_field_custom name="Gameplay overlay blur fade out function" />
+	<_field_struct name="Gameplay overlay blur fade out function">
+		<_field_custom name="" />
+		<_field_data_64 name="data" />
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_real name="Gameplay overlay blur fade out time (s)" />
+	<_field_custom name="Watermark Screen" />
+	<_field_tag_reference_64 name="Watermark screen tag" />
+	<_field_custom name="" />
+	<_field_custom name="Reticle Over Player Behavior" />
+	<_field_struct name="Reticle Over Player Behavior">
+		<_field_real name="firstTierAngle" />
+		<_field_real name="firstTierDistance" />
+		<_field_real name="secondTierAngle" />
+		<_field_real name="secondTierDistance" />
+		<_field_real name="vehicleDistanceScalar" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_explanation name="Localized font mappings" />
+	<_field_block_64 name="font mappings">
+		<_field_long_enum name="language">
+			<Item Name="English" />
+			<Item Name="Japanese" />
+			<Item Name="German" />
+			<Item Name="French" />
+			<Item Name="Spanish" />
+			<Item Name="Mexican-Spanish" />
+			<Item Name="Italian" />
+			<Item Name="Korean" />
+			<Item Name="Traditional-Chinese" />
+			<Item Name="Simplified-Chinese" />
+			<Item Name="Portuguese" />
+			<Item Name="Polish" />
+			<Item Name="Russian" />
+			<Item Name="Danish" />
+			<Item Name="Finnish" />
+			<Item Name="Dutch" />
+			<Item Name="Norwegian" />
+			<Item Name="Brazilian-Portuguese" />
+		</_field_long_enum>
+		<_field_block_64 name="mappings">
+			<_field_long_string name="original name" />
+			<_field_long_string name="remapped name" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_explanation name="FastHud Font Fake Bitmap" />
+	<_field_tag_reference_64 name="FastHud Font Fake Bitmap" />
+	<_field_tag_reference_64 name="Emblem Themes" />
+	<_field_tag_reference_64 name="SLAMS URI Lookup Table" />
+	<_field_tag_reference_64 name="Rebinding Globals Tag" />
+	<_field_block_64 name="Drop Shadow Parameters">
+		<_field_string_id name="Name" />
+		<_field_real_point_2d name="Offset" />
+		<_field_string_id name="Color" />
+		<_field_long_integer name="Sample Size" />
+		</_field_block_64>
+	<_field_block_64 name="Font size scale values">
+		<_field_long_integer name="Range Min" />
+		<_field_long_integer name="Range Max" />
+		<_field_long_integer name="Large Font Value" />
+		<_field_long_integer name="Extra Large Font Value" />
+		</_field_block_64>
+	<_field_block_64 name="Settings Menu Slider Settings">
+		<_field_string_id name="name" />
+		<_field_real name="Min Value" />
+		<_field_real name="Max Value" />
+		<_field_real name="Step Size" />
+		<_field_real name="Scaling Factor" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Narration Phonemes Tag" />
+	<_field_tag_reference_64 name="Skip UI tag" />
+	<_field_tag_reference_64 name="mission thumbnail bitmap dictionary" />
+	</plugin>

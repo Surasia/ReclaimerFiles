@@ -1,0 +1,21 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Assets">
+		<_field_tag_reference_64 name="Asset" />
+		</_field_block_64>
+	<_field_char_enum name="queryMode">
+		<Item Name="Enabled" />
+		<Item Name="Disabled" />
+	</_field_char_enum>
+	<_field_pad name="generated_padd9ee" length="3" />
+	<_field_block_64 name="Keyword queries">
+		<_field_string_id name="Query" />
+		</_field_block_64>
+	<_field_pad name="generated_pad26a3" length="4" />
+	</plugin>

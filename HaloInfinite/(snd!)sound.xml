@@ -1,0 +1,97 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_long_flags name="flags">
+		<Item Name="trigger cell event when played" />
+	</_field_long_flags>
+	<_field_string_id name="SFX Event Name" />
+	<_field_string_id name="SFX Player Event Name" />
+	<_field_real name="Max Radius" />
+	<_field_real name="Max Duration" />
+	<_field_tag_reference_64 name="Sound bank" />
+	<_field_tag_reference_64 name="Player sound bank" />
+	<_field_tag_reference_64 name="Category" />
+	<_field_tag_reference_64 name="Player Category" />
+	<_field_tag_reference_64 name="Sound Tails" />
+	<_field_string_id name="External Source" />
+	<_field_block_64 name="VO Event Info">
+		<_field_string_id name="Event Name" />
+		<_field_string_id name="External Source" />
+		<_field_string_id name="Subtitle Name" />
+		<_field_string_id name="Subtitle Character Id" />
+		<_field_real name="Event duration" />
+		<_field_block_64 name="Narrative Reference">
+			<_field_string name="Character name" />
+			<_field_long_string name="Dialogue" />
+			<_field_string name="WWise effect" />
+			<_field_string name="Narrative Wwise Effect Recommendation" />
+			<_field_long_enum name="Wwise 2D/3D">
+				<Item Name="2D" />
+				<Item Name="3D" />
+				<Item Name="Combo" />
+			</_field_long_enum>
+			<_field_long_enum name="Narrative 2D/3D Recommendation">
+				<Item Name="2D" />
+				<Item Name="3D" />
+				<Item Name="Combo" />
+			</_field_long_enum>
+			<_field_real name="WWise Attenuation" />
+			</_field_block_64>
+		<_field_block_64 name="AI Dialogue Info">
+			<_field_long_flags name="flags">
+				<Item Name="Campaign Only" />
+				<Item Name="Exclude from certain missions" />
+				<Item Name="Exclude from M10" />
+				<Item Name="Exclude from M20" />
+				<Item Name="Exclude from M30" />
+				<Item Name="Exclude from M40" />
+				<Item Name="Exclude from M60" />
+				<Item Name="Exclude from M70" />
+				<Item Name="Exclude from M80" />
+				<Item Name="Exclude from M90" />
+			</_field_long_flags>
+			<_field_real name="skip fraction" />
+			<_field_long_string name="Dialogue State Table Skip Rule" />
+			<_field_block_64 name="dst expression tokens">
+				<_field_string_id name="an expression token" />
+				<_field_long_integer name="numeric constant, if applicable" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="facial animation resource languages">
+			<_field_pageable_resource_64 name="facial animation resource" />
+			<_field_pageable_resource_64 name="model animation resource" />
+			<_field_long_enum name="language">
+				<Item Name="English" />
+				<Item Name="Japanese" />
+				<Item Name="German" />
+				<Item Name="French" />
+				<Item Name="Spanish" />
+				<Item Name="Mexican-Spanish" />
+				<Item Name="Italian" />
+				<Item Name="Korean" />
+				<Item Name="Traditional-Chinese" />
+				<Item Name="Simplified-Chinese" />
+				<Item Name="Portuguese" />
+				<Item Name="Polish" />
+				<Item Name="Russian" />
+				<Item Name="Danish" />
+				<Item Name="Finnish" />
+				<Item Name="Dutch" />
+				<Item Name="Norwegian" />
+				<Item Name="Brazilian-Portuguese" />
+			</_field_long_enum>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_char_enum name="AI Port Glow Color">
+		<Item Name="None" />
+		<Item Name="Color1" />
+		<Item Name="Color2" />
+	</_field_char_enum>
+	<_field_pad name="generated_padf447" length="3" />
+	<_field_tag_reference_64 name="Unicode Subtitles Tag" />
+	</plugin>

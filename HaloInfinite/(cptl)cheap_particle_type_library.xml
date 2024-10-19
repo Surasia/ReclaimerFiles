@@ -1,0 +1,56 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="compile" />
+	<_field_block_64 name="types">
+		<_field_string_id name="name" />
+		<_field_custom name="physics" />
+		<_field_real name="drag" />
+		<_field_real name="gravity" />
+		<_field_real name="turbulence" />
+		<_field_long_block_index name="turbulence type" />
+		<_field_custom name="" />
+		<_field_custom name="collision" />
+		<_field_real name="depth_range" />
+		<_field_real name="elasticity" />
+		<_field_real name="death" />
+		<_field_long_block_index name="change type" />
+		<_field_custom name="" />
+		<_field_custom name="render" />
+		<_field_long_enum name="orientation">
+			<Item Name="velocity" />
+			<Item Name="screen facing" />
+		</_field_long_enum>
+		<_field_explanation name="render parameters" />
+		<_field_real_argb_color name="color0" />
+		<_field_real name="intensity0" />
+		<_field_real name="fade start" />
+		<_field_real_bounds name="size" />
+		<_field_real name="motion blur stretch" />
+		<_field_long_block_index name="texture" />
+		<_field_real name="texture y scale" />
+		<_field_real name="taa mask strength" />
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="textures">
+		<_field_tag_reference_64 name="bitmap" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="random" />
+	<_field_block_64 name="turbulence types">
+		<_field_string_id name="name" />
+		<_field_tag_reference_64 name="turbulence" />
+		<_field_real name="turb du dt" />
+		<_field_real name="turb dv dt" />
+		<_field_real name="turb du dp" />
+		<_field_real name="turb dv dp" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="type_texture" />
+	<_field_tag_reference_64 name="render_texture" />
+	<_field_tag_reference_64 name="turbulenceTexture" />
+	<_field_pad name="generated_pad3c2a" length="4" />
+	</plugin>

@@ -1,0 +1,24 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="data">
+		<_field_byte_flags name="Clearance Flags">
+			<Item Name="Small clearance enabled" />
+			<Item Name="Medium clearance enabled" />
+			<Item Name="Large clearance enabled" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad9bf6" length="3" />
+		<_field_real name="clearance bucket radius - small" />
+		<_field_real name="clearance bucket radius - medium" />
+		<_field_real name="clearance bucket radius - large" />
+		<_field_real name="Hoist path cost" />
+		<_field_real name="Smash path cost" />
+		<_field_real name="Destroy path cost" />
+		</_field_block_64>
+	<_field_pad name="generated_padddbd" length="4" />
+	</plugin>

@@ -1,0 +1,173 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Collectible Entry">
+		<_field_char_enum name="Collectible Type">
+			<Item Name="None" />
+			<Item Name="Halsey_DataPad" />
+			<Item Name="ArmorLocker" />
+			<Item Name="GameSkull" />
+			<Item Name="DeadSpartan" />
+			<Item Name="MemoryCore" />
+			<Item Name="UNSC_DataPad" />
+			<Item Name="Ban_DataPad" />
+			<Item Name="ForerunnerTotem" />
+			<Item Name="CommTower" />
+		</_field_char_enum>
+		<_field_pad name="generated_padea46" length="3" />
+		<_field_string_id name="Persistence Key" />
+		<_field_short_block_index name="Codex List Entry Reference" />
+		<_field_pad name="generated_pad36fb" length="2" />
+		<_field_block_64 name="Quick Tip Override">
+			<_field_string_id name="Title Id" />
+			<_field_string_id name="Text Id" />
+			</_field_block_64>
+		<_field_block_64 name="Gameplay Unlocks">
+			<_field_block_64 name="Skull Unlock">
+				<_field_char_enum name="Game Skull">
+					<Item Name="Reserved0" />
+					<Item Name="BlackEye" />
+					<Item Name="Catch" />
+					<Item Name="Fog" />
+					<Item Name="Famine" />
+					<Item Name="Thunderstorm" />
+					<Item Name="Mythic" />
+					<Item Name="Blind" />
+					<Item Name="Boom" />
+					<Item Name="Cowbell" />
+					<Item Name="GruntBirthdayParty" />
+					<Item Name="IWHBYD" />
+					<Item Name="Bandana" />
+				</_field_char_enum>
+				</_field_block_64>
+			<_field_block_64 name="Equipment Unlock">
+				<_field_string_id name="Frame Attachment Name" />
+				<_field_long_integer name="Input Slot" />
+				</_field_block_64>
+			<_field_block_64 name="POI Unlock">
+				<_field_string_id name="Intel POI Key" />
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Codex Category Info">
+		<_field_char_enum name="Codex Category">
+			<Item Name="Datapad" />
+			<Item Name="HighValueTarget" />
+			<Item Name="ForerunnerTotem" />
+			<Item Name="MemoryCore" />
+			<Item Name="Skull" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad598a" length="3" />
+		<_field_long_enum name="unlock persistence key type">
+			<Item Name="Bool" />
+			<Item Name="Byte" />
+			<Item Name="Long" />
+		</_field_long_enum>
+		<_field_long_enum name="unlock function">
+			<Item Name="Equal" />
+			<Item Name="NotEqual" />
+			<Item Name="Less" />
+			<Item Name="LessThanOrEqual" />
+			<Item Name="Greater" />
+			<Item Name="GreaterThanOrEqual" />
+		</_field_long_enum>
+		<_field_long_integer name="unlock compare value" />
+		<_field_tag_reference_64 name="Sprite" />
+		</_field_block_64>
+	<_field_block_64 name="Per Collectible Data">
+		<_field_char_enum name="Collectible Type">
+			<Item Name="None" />
+			<Item Name="Halsey_DataPad" />
+			<Item Name="ArmorLocker" />
+			<Item Name="GameSkull" />
+			<Item Name="DeadSpartan" />
+			<Item Name="MemoryCore" />
+			<Item Name="UNSC_DataPad" />
+			<Item Name="Ban_DataPad" />
+			<Item Name="ForerunnerTotem" />
+			<Item Name="CommTower" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad2d83" length="3" />
+		<_field_explanation name="Quick Tip Data" />
+		<_field_struct name="Defualt Tip Data">
+			<_field_string_id name="Title Id" />
+			<_field_string_id name="Text Id" />
+			</_field_struct>
+		<_field_explanation name="First Acquisition Data" />
+		<_field_struct name="First Acquisition Data">
+			<_field_string_id name="First-acquisition Persistence Key" />
+			<_field_string_id name="Tutorial Title Id" />
+			<_field_string_id name="Tutorial Text Id" />
+			</_field_struct>
+		<_field_explanation name="Splash Banner Data" />
+		<_field_struct name="Splash Banner Data">
+			<_field_string_id name="banner text override" />
+			</_field_struct>
+		<_field_block_64 name="Back Menu Screen Tab Index">
+			<_field_long_integer name="Back menu screen tab index" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_long_integer name="Codex Screen Index" />
+	<_field_long_integer name="Upgrade Screen Index" />
+	<_field_block_64 name="Codex Lists">
+		<_field_string_id name="Name" />
+		<_field_char_enum name="Codex Screen Category">
+			<Item Name="Datapad" />
+			<Item Name="HighValueTarget" />
+			<Item Name="ForerunnerTotem" />
+			<Item Name="MemoryCore" />
+			<Item Name="Skull" />
+		</_field_char_enum>
+		<_field_pad name="generated_padc51f" length="3" />
+		<_field_string_id name="Codex Screen Category Name" />
+		<_field_block_64 name="Codex Entries">
+			<_field_string_id name="Title" />
+			<_field_string_id name="Read Key Id" />
+			<_field_block_64 name="Description">
+				<_field_string_id name="Paragraph Id" />
+				</_field_block_64>
+			<_field_long_integer name="Sprite Index" />
+			<_field_long_string name="Audio Log Id As String" />
+			<_field_string_id name="Audio Log Id" />
+			<_field_long_integer name="Display Order" />
+			<_field_char_enum name="Faction">
+				<Item Name="UNSC" />
+				<Item Name="Oni" />
+				<Item Name="Banished" />
+				<Item Name="Forerunner" />
+				<Item Name="Covenant" />
+				<Item Name="Lasky" />
+			</_field_char_enum>
+			<_field_pad name="generated_padf1c7" length="3" />
+			<_field_custom name="UIItemInfo" />
+			<_field_struct name="uiItemInfo">
+				<_field_string_id name="name" />
+				<_field_string_id name="alt name " />
+				<_field_string_id name="description" />
+				<_field_string_id name="help text" />
+				<_field_string_id name="icon string id" />
+				<_field_tag_reference_64 name="sprite" />
+				<_field_long_integer name="sprite index" />
+				<_field_tag_reference_64 name="alt sprite" />
+				<_field_long_integer name="alt sprite index" />
+				<_field_long_integer name="damage sprite index" />
+				<_field_tag_reference_64 name="ui vehicle screen reference" />
+				</_field_struct>
+			<_field_custom name="" />
+			</_field_block_64>
+		<_field_block_64 name="Unlock Collectibles">
+			<_field_short_block_index name="collectibleEntryIndex" />
+			</_field_block_64>
+		<_field_byte_integer name="Unlock Compare Value" />
+		<_field_char_enum name="unlockMethod">
+			<Item Name="InOrder" />
+			<Item Name="Linear" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad786a" length="2" />
+		</_field_block_64>
+	</plugin>

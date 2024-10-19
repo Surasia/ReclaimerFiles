@@ -1,0 +1,19 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="VO Sound Categories">
+		<_field_string_id name="name" />
+		<_field_block_64 name="vocalizations">
+			<_field_string_id name="Vocalization Name" />
+			<_field_string_id name="Subtitle Name" />
+			<_field_tag_reference_64 name="Subtitle Ref" />
+			<_field_tag_reference_64 name="Dialogue tag" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_pad name="generated_pad434b" length="4" />
+	</plugin>

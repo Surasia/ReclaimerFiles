@@ -1,0 +1,27 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Transition sounds">
+		<_field_string_id name="Display Name" />
+		<_field_long_enum name="Avatar Type">
+			<Item Name="Prism" />
+			<Item Name="Pyramid" />
+			<Item Name="Sphere" />
+			<Item Name="Teardrop" />
+			<Item Name="Superintendent" />
+			<Item Name="Mister Chief" />
+			<Item Name="Iratus" />
+			<Item Name="Mati" />
+			<Item Name="Auntie Dot" />
+			<Item Name="Proto1" />
+			<Item Name="Proto2" />
+		</_field_long_enum>
+		<_field_tag_reference_64 name="Sound" />
+		</_field_block_64>
+	<_field_pad name="generated_pad87b4" length="4" />
+	</plugin>

@@ -1,0 +1,431 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="Template Navpoint" />
+	<_field_real name="Alpha" />
+	<_field_real name="Anchor Offset X" />
+	<_field_real name="Anchor Offset Y" />
+	<_field_string_id name="Show event name" />
+	<_field_string_id name="Hide event name" />
+	<_field_real name="Scale Far Override" />
+	<_field_block_64 name="Element Groups">
+		<_field_string_id name="Group Name" />
+		<_field_string_id name="Tint Color" />
+		<_field_real name="Alpha" />
+		<_field_real name="Anchor Offset X" />
+		<_field_real name="Anchor Offset Y" />
+		<_field_short_enum name="Anchor Justification">
+			<Item Name="Left" />
+			<Item Name="Center" />
+			<Item Name="Right" />
+		</_field_short_enum>
+		<_field_short_enum name="Anchor Alignment">
+			<Item Name="Top" />
+			<Item Name="Center" />
+			<Item Name="Bottom" />
+		</_field_short_enum>
+		<_field_string_id name="Anchor Element Name" />
+		<_field_long_enum name="Element Layout">
+			<Item Name="Horizontal" />
+			<Item Name="Vertical" />
+			<Item Name="Stacked" />
+		</_field_long_enum>
+		<_field_short_enum name="Element Justification">
+			<Item Name="Left" />
+			<Item Name="Center" />
+			<Item Name="Right" />
+		</_field_short_enum>
+		<_field_short_enum name="Element Alignment">
+			<Item Name="Top" />
+			<Item Name="Center" />
+			<Item Name="Bottom" />
+		</_field_short_enum>
+		<_field_real name="Element Horizontal Spacing" />
+		<_field_real name="Element Vertical Spacing" />
+		<_field_byte_flags name="Use Horizontal Flip Zone">
+			<Item Name=" " />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad4787" length="3" />
+		<_field_block_64 name="Label Elements">
+			<_field_string_id name="Element Name" />
+			<_field_string_id name="Draw Flags Name" />
+			<_field_long_flags name="Draw Flags">
+				<Item Name="Draw when onscreen" />
+				<Item Name="Draw when offscreen" />
+				<Item Name="Draw when center screen" />
+				<Item Name="Draw when aimed at" />
+				<Item Name="Draw when docked" />
+			</_field_long_flags>
+			<_field_long_integer name="Draw Order" />
+			<_field_real name="Width" />
+			<_field_real name="Height" />
+			<_field_string_id name="Color" />
+			<_field_real name="Alpha" />
+			<_field_string_id name="Tint Color" />
+			<_field_short_enum name="Tint Blend Mode">
+				<Item Name="Modulated RGB" />
+				<Item Name="Linear RGB" />
+				<Item Name="Linear HSV" />
+				<Item Name="Override" />
+			</_field_short_enum>
+			<_field_pad name="generated_pad4916" length="2" />
+			<_field_real name="Tint Blend Interpolation" />
+			<_field_string_id name="Show event name" />
+			<_field_string_id name="Hide event name" />
+			<_field_real name="Width Scale" />
+			<_field_real name="Height Scale" />
+			<_field_short_enum name="Justification">
+				<Item Name="Left" />
+				<Item Name="Center" />
+				<Item Name="Right" />
+			</_field_short_enum>
+			<_field_short_enum name="Alignment">
+				<Item Name="Top" />
+				<Item Name="Center" />
+				<Item Name="Bottom" />
+			</_field_short_enum>
+			<_field_string_id name="Typeface" />
+			<_field_long_integer name="Type Size" />
+			<_field_string_id name="Text Source" />
+			<_field_string_id name="Drop Shadow" />
+			<_field_byte_flags name="Upper Case">
+				<Item Name=" " />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad54de" length="3" />
+			<_field_real name="Tracking Horizontal" />
+			</_field_block_64>
+		<_field_block_64 name="Number Elements">
+			<_field_string_id name="Element Name" />
+			<_field_string_id name="Draw Flags Name" />
+			<_field_long_flags name="Draw Flags">
+				<Item Name="Draw when onscreen" />
+				<Item Name="Draw when offscreen" />
+				<Item Name="Draw when center screen" />
+				<Item Name="Draw when aimed at" />
+				<Item Name="Draw when docked" />
+			</_field_long_flags>
+			<_field_long_integer name="Draw Order" />
+			<_field_real name="Width" />
+			<_field_real name="Height" />
+			<_field_string_id name="Color" />
+			<_field_real name="Alpha" />
+			<_field_string_id name="Tint Color" />
+			<_field_short_enum name="Tint Blend Mode">
+				<Item Name="Modulated RGB" />
+				<Item Name="Linear RGB" />
+				<Item Name="Linear HSV" />
+				<Item Name="Override" />
+			</_field_short_enum>
+			<_field_pad name="generated_pad4916" length="2" />
+			<_field_real name="Tint Blend Interpolation" />
+			<_field_string_id name="Show event name" />
+			<_field_string_id name="Hide event name" />
+			<_field_real name="Width Scale" />
+			<_field_real name="Height Scale" />
+			<_field_short_enum name="Justification">
+				<Item Name="Left" />
+				<Item Name="Center" />
+				<Item Name="Right" />
+			</_field_short_enum>
+			<_field_short_enum name="Alignment">
+				<Item Name="Top" />
+				<Item Name="Center" />
+				<Item Name="Bottom" />
+			</_field_short_enum>
+			<_field_string_id name="Typeface" />
+			<_field_long_integer name="Type Size" />
+			<_field_string_id name="Text Source" />
+			<_field_string_id name="Drop Shadow" />
+			<_field_byte_flags name="Upper Case">
+				<Item Name=" " />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad54de" length="3" />
+			<_field_real name="Tracking Horizontal" />
+			<_field_long_enum name="Format">
+				<Item Name="Timer" />
+				<Item Name="Distance" />
+				<Item Name="Integer" />
+				<Item Name="Percentage" />
+			</_field_long_enum>
+			</_field_block_64>
+		<_field_block_64 name="Image Elements">
+			<_field_string_id name="Element Name" />
+			<_field_string_id name="Draw Flags Name" />
+			<_field_long_flags name="Draw Flags">
+				<Item Name="Draw when onscreen" />
+				<Item Name="Draw when offscreen" />
+				<Item Name="Draw when center screen" />
+				<Item Name="Draw when aimed at" />
+				<Item Name="Draw when docked" />
+			</_field_long_flags>
+			<_field_long_integer name="Draw Order" />
+			<_field_real name="Width" />
+			<_field_real name="Height" />
+			<_field_string_id name="Color" />
+			<_field_real name="Alpha" />
+			<_field_string_id name="Tint Color" />
+			<_field_short_enum name="Tint Blend Mode">
+				<Item Name="Modulated RGB" />
+				<Item Name="Linear RGB" />
+				<Item Name="Linear HSV" />
+				<Item Name="Override" />
+			</_field_short_enum>
+			<_field_pad name="generated_pad4916" length="2" />
+			<_field_real name="Tint Blend Interpolation" />
+			<_field_string_id name="Show event name" />
+			<_field_string_id name="Hide event name" />
+			<_field_real name="Width Scale" />
+			<_field_real name="Height Scale" />
+			<_field_tag_reference_64 name="Bitmap" />
+			<_field_long_integer name="Frame Index" />
+			</_field_block_64>
+		<_field_block_64 name="Rotated Image Elements">
+			<_field_string_id name="Element Name" />
+			<_field_string_id name="Draw Flags Name" />
+			<_field_long_flags name="Draw Flags">
+				<Item Name="Draw when onscreen" />
+				<Item Name="Draw when offscreen" />
+				<Item Name="Draw when center screen" />
+				<Item Name="Draw when aimed at" />
+				<Item Name="Draw when docked" />
+			</_field_long_flags>
+			<_field_long_integer name="Draw Order" />
+			<_field_real name="Width" />
+			<_field_real name="Height" />
+			<_field_string_id name="Color" />
+			<_field_real name="Alpha" />
+			<_field_string_id name="Tint Color" />
+			<_field_short_enum name="Tint Blend Mode">
+				<Item Name="Modulated RGB" />
+				<Item Name="Linear RGB" />
+				<Item Name="Linear HSV" />
+				<Item Name="Override" />
+			</_field_short_enum>
+			<_field_pad name="generated_pad4916" length="2" />
+			<_field_real name="Tint Blend Interpolation" />
+			<_field_string_id name="Show event name" />
+			<_field_string_id name="Hide event name" />
+			<_field_real name="Width Scale" />
+			<_field_real name="Height Scale" />
+			<_field_tag_reference_64 name="Bitmap" />
+			<_field_long_integer name="Frame Index" />
+			<_field_real name="Pivot Offset" />
+			<_field_string_id name="Rotation Angle" />
+			</_field_block_64>
+		<_field_block_64 name="Gradient Meter Elements">
+			<_field_string_id name="Element Name" />
+			<_field_string_id name="Draw Flags Name" />
+			<_field_long_flags name="Draw Flags">
+				<Item Name="Draw when onscreen" />
+				<Item Name="Draw when offscreen" />
+				<Item Name="Draw when center screen" />
+				<Item Name="Draw when aimed at" />
+				<Item Name="Draw when docked" />
+			</_field_long_flags>
+			<_field_long_integer name="Draw Order" />
+			<_field_real name="Width" />
+			<_field_real name="Height" />
+			<_field_string_id name="Color" />
+			<_field_real name="Alpha" />
+			<_field_string_id name="Tint Color" />
+			<_field_short_enum name="Tint Blend Mode">
+				<Item Name="Modulated RGB" />
+				<Item Name="Linear RGB" />
+				<Item Name="Linear HSV" />
+				<Item Name="Override" />
+			</_field_short_enum>
+			<_field_pad name="generated_pad4916" length="2" />
+			<_field_real name="Tint Blend Interpolation" />
+			<_field_string_id name="Show event name" />
+			<_field_string_id name="Hide event name" />
+			<_field_real name="Width Scale" />
+			<_field_real name="Height Scale" />
+			<_field_tag_reference_64 name="Bitmap" />
+			<_field_long_integer name="Frame Index" />
+			<_field_string_id name="Fill Color" />
+			<_field_string_id name="Progress" />
+			</_field_block_64>
+		<_field_block_64 name="Radial Meter Elements">
+			<_field_string_id name="Element Name" />
+			<_field_string_id name="Draw Flags Name" />
+			<_field_long_flags name="Draw Flags">
+				<Item Name="Draw when onscreen" />
+				<Item Name="Draw when offscreen" />
+				<Item Name="Draw when center screen" />
+				<Item Name="Draw when aimed at" />
+				<Item Name="Draw when docked" />
+			</_field_long_flags>
+			<_field_long_integer name="Draw Order" />
+			<_field_real name="Width" />
+			<_field_real name="Height" />
+			<_field_string_id name="Color" />
+			<_field_real name="Alpha" />
+			<_field_string_id name="Tint Color" />
+			<_field_short_enum name="Tint Blend Mode">
+				<Item Name="Modulated RGB" />
+				<Item Name="Linear RGB" />
+				<Item Name="Linear HSV" />
+				<Item Name="Override" />
+			</_field_short_enum>
+			<_field_pad name="generated_pad4916" length="2" />
+			<_field_real name="Tint Blend Interpolation" />
+			<_field_string_id name="Show event name" />
+			<_field_string_id name="Hide event name" />
+			<_field_real name="Width Scale" />
+			<_field_real name="Height Scale" />
+			<_field_tag_reference_64 name="Bitmap" />
+			<_field_long_integer name="Frame Index" />
+			<_field_string_id name="Fill Color" />
+			<_field_string_id name="Progress" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="State Groups">
+		<_field_string_id name="Visual State Group Name" />
+		<_field_block_64 name="Visual States">
+			<_field_string_id name="Name" />
+			<_field_block_64 name="Color Animation Timelines">
+				<_field_string_id name="Timeline Name" />
+				<_field_tag_reference_64 name="Animation Group" />
+				<_field_string_id name="Animation Name" />
+				<_field_block_64 name="Target Properties">
+					<_field_string_id name="Track Name" />
+					<_field_string_id name="Element or Group Name" />
+					<_field_string_id name="Property Name" />
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="Float Animation Timelines">
+				<_field_string_id name="Timeline Name" />
+				<_field_tag_reference_64 name="Animation Group" />
+				<_field_string_id name="Animation Name" />
+				<_field_block_64 name="Target Properties">
+					<_field_string_id name="Track Name" />
+					<_field_string_id name="Element or Group Name" />
+					<_field_string_id name="Property Name" />
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="Image Animation Timelines">
+				<_field_string_id name="Timeline Name" />
+				<_field_tag_reference_64 name="Animation Group" />
+				<_field_string_id name="Animation Name" />
+				<_field_block_64 name="Target Properties">
+					<_field_string_id name="Track Name" />
+					<_field_string_id name="Element or Group Name" />
+					<_field_string_id name="Property Name" />
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="StringId Animation Timelines">
+				<_field_string_id name="Timeline Name" />
+				<_field_tag_reference_64 name="Animation Group" />
+				<_field_string_id name="Animation Name" />
+				<_field_block_64 name="Target Properties">
+					<_field_string_id name="Track Name" />
+					<_field_string_id name="Element or Group Name" />
+					<_field_string_id name="Property Name" />
+					</_field_block_64>
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="External Events">
+		<_field_string_id name="Name" />
+		<_field_block_64 name="Color Animation Timelines">
+			<_field_string_id name="Timeline Name" />
+			<_field_tag_reference_64 name="Animation Group" />
+			<_field_string_id name="Animation Name" />
+			<_field_block_64 name="Target Properties">
+				<_field_string_id name="Track Name" />
+				<_field_string_id name="Element or Group Name" />
+				<_field_string_id name="Property Name" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="Float Animation Timelines">
+			<_field_string_id name="Timeline Name" />
+			<_field_tag_reference_64 name="Animation Group" />
+			<_field_string_id name="Animation Name" />
+			<_field_block_64 name="Target Properties">
+				<_field_string_id name="Track Name" />
+				<_field_string_id name="Element or Group Name" />
+				<_field_string_id name="Property Name" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="Image Animation Timelines">
+			<_field_string_id name="Timeline Name" />
+			<_field_tag_reference_64 name="Animation Group" />
+			<_field_string_id name="Animation Name" />
+			<_field_block_64 name="Target Properties">
+				<_field_string_id name="Track Name" />
+				<_field_string_id name="Element or Group Name" />
+				<_field_string_id name="Property Name" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="StringId Animation Timelines">
+			<_field_string_id name="Timeline Name" />
+			<_field_tag_reference_64 name="Animation Group" />
+			<_field_string_id name="Animation Name" />
+			<_field_block_64 name="Target Properties">
+				<_field_string_id name="Track Name" />
+				<_field_string_id name="Element or Group Name" />
+				<_field_string_id name="Property Name" />
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Show and Hide Events">
+		<_field_string_id name="Name" />
+		<_field_block_64 name="Color Animation Timelines">
+			<_field_string_id name="Timeline Name" />
+			<_field_tag_reference_64 name="Animation Group" />
+			<_field_string_id name="Animation Name" />
+			<_field_block_64 name="Target Properties">
+				<_field_string_id name="Track Name" />
+				<_field_string_id name="Element or Group Name" />
+				<_field_string_id name="Property Name" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="Float Animation Timelines">
+			<_field_string_id name="Timeline Name" />
+			<_field_tag_reference_64 name="Animation Group" />
+			<_field_string_id name="Animation Name" />
+			<_field_block_64 name="Target Properties">
+				<_field_string_id name="Track Name" />
+				<_field_string_id name="Element or Group Name" />
+				<_field_string_id name="Property Name" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="Image Animation Timelines">
+			<_field_string_id name="Timeline Name" />
+			<_field_tag_reference_64 name="Animation Group" />
+			<_field_string_id name="Animation Name" />
+			<_field_block_64 name="Target Properties">
+				<_field_string_id name="Track Name" />
+				<_field_string_id name="Element or Group Name" />
+				<_field_string_id name="Property Name" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="StringId Animation Timelines">
+			<_field_string_id name="Timeline Name" />
+			<_field_tag_reference_64 name="Animation Group" />
+			<_field_string_id name="Animation Name" />
+			<_field_block_64 name="Target Properties">
+				<_field_string_id name="Track Name" />
+				<_field_string_id name="Element or Group Name" />
+				<_field_string_id name="Property Name" />
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Sample data floats">
+		<_field_string_id name="Variable name" />
+		<_field_real name="Value" />
+		</_field_block_64>
+	<_field_block_64 name="Sample data string ids">
+		<_field_string_id name="Variable name" />
+		<_field_string_id name="Value" />
+		</_field_block_64>
+	<_field_block_64 name="Sample data strings">
+		<_field_string_id name="Variable name" />
+		<_field_long_string name="Value" />
+		</_field_block_64>
+	</plugin>

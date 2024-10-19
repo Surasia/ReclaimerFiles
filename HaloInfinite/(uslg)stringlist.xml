@@ -1,0 +1,35 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="import - directory" />
+	<_field_custom name="import - single file" />
+	<_field_block_64 name="language references">
+		<_field_long_enum name="language">
+			<Item Name="English" />
+			<Item Name="Japanese" />
+			<Item Name="German" />
+			<Item Name="French" />
+			<Item Name="Spanish" />
+			<Item Name="Mexican-Spanish" />
+			<Item Name="Italian" />
+			<Item Name="Korean" />
+			<Item Name="Traditional-Chinese" />
+			<Item Name="Simplified-Chinese" />
+			<Item Name="Portuguese" />
+			<Item Name="Polish" />
+			<Item Name="Russian" />
+			<Item Name="Danish" />
+			<Item Name="Finnish" />
+			<Item Name="Dutch" />
+			<Item Name="Norwegian" />
+			<Item Name="Brazilian-Portuguese" />
+		</_field_long_enum>
+		<_field_pageable_resource_64 name="string list resource" />
+		</_field_block_64>
+	<_field_pad name="generated_pad95a9" length="4" />
+	</plugin>

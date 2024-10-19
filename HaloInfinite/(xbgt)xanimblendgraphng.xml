@@ -1,0 +1,51 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="Source Graph" />
+	<_field_long_enum name="Blend Type">
+		<Item Name="Blend1d" />
+		<Item Name="Blend2d" />
+		<Item Name="RadialBlend" />
+		<Item Name="AimScreen" />
+		<Item Name="RadialLocomotion" />
+	</_field_long_enum>
+	<_field_block_64 name="Animation Tokens">
+		<_field_string_id name="Animation Name" />
+		<_field_long_enum name="Mode">
+			<Item Name="Frame" />
+			<Item Name="Seconds" />
+			<Item Name="Frame Ratio" />
+		</_field_long_enum>
+		<_field_string_id name="Group Name" />
+		<_field_real name="Playback Rate" />
+		<_field_word_flags name="Animation Token Flags">
+			<Item Name="Looping" />
+			<Item Name="Play Loops From Start" />
+			<Item Name="Auto Detect Speed" />
+			<Item Name="Auto Detect Angle" />
+			<Item Name="Root Motion" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad8928" length="2" />
+		<_field_real name="Alpha" />
+		<_field_real name="Beta" />
+		</_field_block_64>
+	<_field_block_64 name="Subgraph Nodes">
+		<_field_string_id name="Coordinate Source Token" />
+		<_field_real name="Alpha" />
+		<_field_real name="Beta" />
+		<_field_struct name="Subgraph Reference">
+			<_field_tag_reference_64 name="Anim Subgraph" />
+			</_field_struct>
+		</_field_block_64>
+	<_field_real name="Alpha Min" />
+	<_field_real name="Alpha Max" />
+	<_field_real name="Beta Min" />
+	<_field_real name="Beta Max" />
+	<_field_long_integer name="Partition Count" />
+	<_field_pad name="generated_pad9fc6" length="4" />
+	</plugin>

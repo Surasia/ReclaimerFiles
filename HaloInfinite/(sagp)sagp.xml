@@ -1,0 +1,286 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="data">
+		<_field_struct name="common ability parameters">
+			<_field_custom name="common ability parameters" />
+			<_field_char_enum name="power class">
+				<Item Name="unclassified" />
+				<Item Name="base" />
+				<Item Name="power" />
+				<Item Name="legendary" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad0aca" length="3" />
+			<_field_long_enum name="input">
+				<Item Name="Default" />
+				<Item Name="Mobility" />
+				<Item Name="Suit" />
+				<Item Name="Jump" />
+				<Item Name="Equipment" />
+				<Item Name="Melee" />
+				<Item Name="PowerUp" />
+				<Item Name="Unmapped" />
+			</_field_long_enum>
+			<_field_long_flags name="flags">
+				<Item Name="Use 3rd Person Camera When Active" />
+				<Item Name="Hide Reticle When Active" />
+				<Item Name="Is Motion Tracked (By Enemies) When Active" />
+				<Item Name="One-Shot Activation Effect" />
+				<Item Name="Can be activated when weapon state is relaxed" />
+				<Item Name="Does Not Appear In Extended Motion Tracker Range" />
+				<Item Name="Energy persists across deaths" />
+				<Item Name="Activation interrupts weapon switching" />
+				<Item Name="Allow activation during weapon throw" />
+				<Item Name="Allow activation while sliding" />
+				<Item Name="Drop support weapon when activated" />
+				<Item Name="Drop must be readied weapon when activated" />
+			</_field_long_flags>
+			<_field_real_fraction name="activation energy cost" />
+			<_field_real name="active energy consumption" />
+			<_field_real name="recharge duration" />
+			<_field_real name="recharge delay" />
+			<_field_real name="cooldown delay" />
+			<_field_tag_reference_64 name="activation effect" />
+			<_field_real name="activation effect kill delay" />
+			<_field_char_enum name="sprint preservation">
+				<Item Name="No" />
+				<Item Name="Zero fraction" />
+				<Item Name="Retain fraction" />
+				<Item Name="Decay (normal)" />
+				<Item Name="Decay (forced)" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad577f" length="3" />
+			<_field_tag_reference_64 name="active malleable property modifiers" />
+			<_field_tag_reference_64 name="timed malleable property modifiers" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_long_flags name="ground pound flags">
+			<Item Name="Limit Aim Vector Pitch When Charging" />
+			<Item Name="Limit Aim Vector Pitch When Launching" />
+			<Item Name="Limit Aim Vector Pitch When Exiting" />
+			<Item Name="Aim At Biped Head" />
+			<Item Name="Evading Breaks Aim Assist" />
+			<Item Name="No Third Person Camera Until Valid Launch Position" />
+			<Item Name="Must Land Again After Activating" />
+			<Item Name="Always Cause AoE Damage" />
+			<Item Name="Ignore AoE Damage If Direct Damage Applied" />
+			<Item Name="Disable Soft Contacts" />
+			<Item Name="Enable Weak Attacks" />
+			<Item Name="Don't Render Aim Effect If RayCast Fails" />
+		</_field_long_flags>
+		<_field_real name="minimum height above floor" />
+		<_field_explanation name="Stabilization/Charge up" />
+		<_field_struct name="stabilizer definition">
+			<_field_struct name="common ability parameters">
+				<_field_custom name="common ability parameters" />
+				<_field_char_enum name="power class">
+					<Item Name="unclassified" />
+					<Item Name="base" />
+					<Item Name="power" />
+					<Item Name="legendary" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad0aca" length="3" />
+				<_field_long_enum name="input">
+					<Item Name="Default" />
+					<Item Name="Mobility" />
+					<Item Name="Suit" />
+					<Item Name="Jump" />
+					<Item Name="Equipment" />
+					<Item Name="Melee" />
+					<Item Name="PowerUp" />
+					<Item Name="Unmapped" />
+				</_field_long_enum>
+				<_field_long_flags name="flags">
+					<Item Name="Use 3rd Person Camera When Active" />
+					<Item Name="Hide Reticle When Active" />
+					<Item Name="Is Motion Tracked (By Enemies) When Active" />
+					<Item Name="One-Shot Activation Effect" />
+					<Item Name="Can be activated when weapon state is relaxed" />
+					<Item Name="Does Not Appear In Extended Motion Tracker Range" />
+					<Item Name="Energy persists across deaths" />
+					<Item Name="Activation interrupts weapon switching" />
+					<Item Name="Allow activation during weapon throw" />
+					<Item Name="Allow activation while sliding" />
+					<Item Name="Drop support weapon when activated" />
+					<Item Name="Drop must be readied weapon when activated" />
+				</_field_long_flags>
+				<_field_real_fraction name="activation energy cost" />
+				<_field_real name="active energy consumption" />
+				<_field_real name="recharge duration" />
+				<_field_real name="recharge delay" />
+				<_field_real name="cooldown delay" />
+				<_field_tag_reference_64 name="activation effect" />
+				<_field_real name="activation effect kill delay" />
+				<_field_char_enum name="sprint preservation">
+					<Item Name="No" />
+					<Item Name="Zero fraction" />
+					<Item Name="Retain fraction" />
+					<Item Name="Decay (normal)" />
+					<Item Name="Decay (forced)" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad577f" length="3" />
+				<_field_tag_reference_64 name="active malleable property modifiers" />
+				<_field_tag_reference_64 name="timed malleable property modifiers" />
+				<_field_custom name="" />
+				</_field_struct>
+			<_field_long_flags name="flags">
+				<Item Name="Must land again after activating" />
+				<Item Name="Auto activate only if already in the air" />
+				<Item Name="Independent of ADS" />
+				<Item Name="Vertical only" />
+				<Item Name="Allow air control" />
+				<Item Name="Limit upwards motion post stall" />
+			</_field_long_flags>
+			<_field_real name="minimum height above floor" />
+			<_field_real name="activation deceleration" />
+			<_field_real name="stall duration" />
+			<_field_custom name="malleable time limit" />
+			<_field_struct name="malleable time limit">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_real name="cooldown" />
+			<_field_custom name="malleable time scale" />
+			<_field_struct name="malleable time scale">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_real name="max horizontal speed" />
+			<_field_struct name="vertical speed boost at exit">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_tag_reference_64 name="rumble" />
+			</_field_struct>
+		<_field_explanation name="Charge Up Settings" />
+		<_field_real name="charge up min time" />
+		<_field_real name="charge up auto release time" />
+		<_field_custom name="charge up min time scale" />
+		<_field_struct name="charge up min time scale">
+			<_field_real name="Base Value" />
+			<_field_real_bounds name="Value Bounds" />
+			</_field_struct>
+		<_field_custom name="charge up auto release time scale" />
+		<_field_struct name="charge up auto release time scale">
+			<_field_real name="Base Value" />
+			<_field_real_bounds name="Value Bounds" />
+			</_field_struct>
+		<_field_real_fraction name="charge up damage acceleration scalar" />
+		<_field_explanation name="Launch" />
+		<_field_tag_reference_64 name="launch ready effect" />
+		<_field_tag_reference_64 name="launch post ready effect" />
+		<_field_real_fraction name="launch post ready effect activation fraction" />
+		<_field_real_fraction name="launch activation energy cost" />
+		<_field_tag_reference_64 name="launch effect" />
+		<_field_tag_reference_64 name="launch fail effect" />
+		<_field_real name="launch continuous rumble loop time" />
+		<_field_tag_reference_64 name="launch continuous rumble" />
+		<_field_explanation name="Aiming" />
+		<_field_tag_reference_64 name="aim effect" />
+		<_field_long_enum name="aim vector fail selector">
+			<Item Name="Off" />
+			<Item Name="DistanceXYZ" />
+			<Item Name="DistanceZ" />
+		</_field_long_enum>
+		<_field_real name="aim effect min fail display time" />
+		<_field_real name="aim vector fail distance" />
+		<_field_real name="aim vector fail early time" />
+		<_field_real name="aim vector ray cast distance" />
+		<_field_angle name="aim vector camera pitch limit" />
+		<_field_angle name="aim vector pitch limit" />
+		<_field_angle name="aim vector pitch adjustment limit" />
+		<_field_real name="aim vector interpolation seconds (charging)" />
+		<_field_real name="aim vector interpolation seconds (launching)" />
+		<_field_real name="aim vector interpolation seconds (exiting)" />
+		<_field_real name="aim vector interpolation exit stage time limit" />
+		<_field_explanation name="Collision" />
+		<_field_real name="hit sphere initial offset z" />
+		<_field_real name="hit sphere offset" />
+		<_field_real name="hit sphere radius" />
+		<_field_real name="hit sphere start point offset" />
+		<_field_explanation name="Motion" />
+		<_field_angle name="max slope angle" />
+		<_field_angle name="max opposing contact angle" />
+		<_field_custom name="pound fall speed (malleable)" />
+		<_field_struct name="pound fall speed (malleable)">
+			<_field_real name="Base Value" />
+			<_field_real_bounds name="Value Bounds" />
+			</_field_struct>
+		<_field_real name="pound fall duration" />
+		<_field_real name="pound hit duration" />
+		<_field_real name="pound exit no collision damage duration" />
+		<_field_explanation name="Impact" />
+		<_field_real name="aoe contact offset" />
+		<_field_custom name="knockback scalar" />
+		<_field_struct name="knockback scalar">
+			<_field_real name="Base Value" />
+			<_field_real_bounds name="Value Bounds" />
+			</_field_struct>
+		<_field_custom name="pound ground damage scalar" />
+		<_field_struct name="pound ground damage scalar">
+			<_field_real name="Base Value" />
+			<_field_real_bounds name="Value Bounds" />
+			</_field_struct>
+		<_field_custom name="pound ground aoe radius scalar" />
+		<_field_struct name="pound ground aoe radius scalar">
+			<_field_real name="Base Value" />
+			<_field_real_bounds name="Value Bounds" />
+			</_field_struct>
+		<_field_explanation name="Damage effects (regular)" />
+		<_field_tag_reference_64 name="pound object damage effect" />
+		<_field_tag_reference_64 name="pound object clang damage effect" />
+		<_field_tag_reference_64 name="pound ground damage effect" />
+		<_field_tag_reference_64 name="pound ground clang damage effect" />
+		<_field_tag_reference_64 name="pound object instigator effect" />
+		<_field_tag_reference_64 name="pound ground instigator effect" />
+		<_field_explanation name="Damage effects (weak)" />
+		<_field_tag_reference_64 name="pound object damage effect (weak)" />
+		<_field_tag_reference_64 name="pound object clang damage effect (weak)" />
+		<_field_tag_reference_64 name="pound ground damage effect (weak)" />
+		<_field_tag_reference_64 name="pound ground clang damage effect (weak)" />
+		<_field_tag_reference_64 name="pound object instigator effect (weak)" />
+		<_field_tag_reference_64 name="pound ground instigator effect (weak)" />
+		<_field_real name="time to switch from weak to regular" />
+		<_field_explanation name="Animations" />
+		<_field_string_id name="pound fall animation" />
+		<_field_string_id name="pound fall exit animation" />
+		<_field_string_id name="pound hit animation" />
+		<_field_string_id name="pound hit exit animation" />
+		<_field_short_enum name="pound hit AI sound level">
+			<Item Name="silent" />
+			<Item Name="quiet" />
+			<Item Name="medium" />
+			<Item Name="shout" />
+			<Item Name="loud" />
+		</_field_short_enum>
+		<_field_pad name="generated_padba74" length="2" />
+		<_field_explanation name="Aim Assist" />
+		<_field_angle name="auto aim angle" />
+		<_field_real name="auto aim range" />
+		<_field_real name="auto aim falloff range" />
+		<_field_real name="auto aim near falloff range" />
+		<_field_angle name="magnetism angle" />
+		<_field_real name="magnetism range" />
+		<_field_real name="magnetism falloff range" />
+		<_field_real name="magnetism near falloff range" />
+		<_field_angle name="maximum assist angular velocity" />
+		<_field_explanation name="FOV delta function (charge up)" />
+		<_field_custom name="FOV delta function (charge up)" />
+		<_field_struct name="FOV delta function charge up">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_real_fraction name="looks speed scalar (charge up)" />
+		<_field_real_fraction name="looks speed scalar (launched)" />
+		</_field_struct>
+	</plugin>

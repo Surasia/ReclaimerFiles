@@ -1,0 +1,29 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_long_enum name="Type">
+		<Item Name="Exterior" />
+		<Item Name="Interior" />
+	</_field_long_enum>
+	<_field_struct name="reverb settings">
+		<_field_string_id name="Environment name" />
+		<_field_long_enum name="weapon environment">
+			<Item Name="default" />
+			<Item Name="InteriorNarrow" />
+			<Item Name="InteriorSmall" />
+			<Item Name="InteriorMed" />
+			<Item Name="InteriorLarge" />
+			<Item Name="ExteriorSmall" />
+			<Item Name="ExteriorMed" />
+			<Item Name="ExteriorLarge" />
+			<Item Name="ExteriorHalfOpen" />
+			<Item Name="ExteriorOpen" />
+		</_field_long_enum>
+		</_field_struct>
+	<_field_tag_reference_64 name="Sound Bank" />
+	</plugin>

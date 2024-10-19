@@ -1,0 +1,101 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="regions">
+		<_field_string_id name="name" />
+		<_field_block_64 name="intentionConversionList">
+			<_field_string_id name="intentionName" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_long_integer name="regions Flags" />
+	<_field_long_integer name="regions Vector1" />
+	<_field_long_integer name="regions Vector2" />
+	<_field_block_64 name="coatingMaterialSets">
+		<_field_qword_integer name="elementID" />
+		<_field_tag_reference_64 name="coatingMaterialSet" />
+		<_field_pad name="generated_pad2ed3" length="4" />
+		</_field_block_64>
+	<_field_long_integer name="coatingMaterialSets Flags" />
+	<_field_long_integer name="coatingMaterialSets Vector1" />
+	<_field_long_integer name="coatingMaterialSets Vector2" />
+	<_field_block_64 name="style">
+		<_field_string_id name="name" />
+		<_field_tag_reference_64 name="palette" />
+		<_field_string_id name="global_damage" />
+		<_field_string_id name="hero_damage" />
+		<_field_string_id name="global_emissive" />
+		<_field_real name="emissive_amount" />
+		<_field_real name="scratch_amount" />
+		<_field_string_id name="grime_type" />
+		<_field_real name="grime_amount" />
+		<_field_block_64 name="regions">
+			<_field_string_id name="name" />
+			<_field_short_block_index name="Coating Material Set" />
+			<_field_pad name="generated_pad4b96" length="2" />
+			<_field_block_64 name="layers">
+				<_field_qword_integer name="elementID" />
+				<_field_string_id name="name" />
+				<_field_char_enum name="Hero_Reveal">
+					<Item Name="disabled" />
+					<Item Name="enabled" />
+				</_field_char_enum>
+				<_field_char_enum name="Color_Blend">
+					<Item Name="disabled" />
+					<Item Name="enabled" />
+				</_field_char_enum>
+				<_field_char_enum name="Normal_Blend">
+					<Item Name="disabled" />
+					<Item Name="enabled" />
+				</_field_char_enum>
+				<_field_char_enum name="Ignore_Texel_Density_Scalar">
+					<Item Name="disabled" />
+					<Item Name="enabled" />
+				</_field_char_enum>
+				<_field_real_rgb_color name="forge_color_top" />
+				<_field_real_rgb_color name="forge_color_mid" />
+				<_field_real_rgb_color name="forge_color_bottom" />
+				<_field_real name="forge_color_intensity" />
+				<_field_real name="forge_layer_opacity" />
+				<_field_real name="forge_max_roughness" />
+				<_field_char_enum name="forge_override_metallic">
+					<Item Name="disabled" />
+					<Item Name="enabled" />
+				</_field_char_enum>
+				<_field_char_enum name="forge_metallic">
+					<Item Name="disabled" />
+					<Item Name="enabled" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad910e" length="6" />
+				</_field_block_64>
+			<_field_long_integer name="layers Flags" />
+			<_field_long_integer name="layers Vector1" />
+			<_field_long_integer name="layers Vector2" />
+			</_field_block_64>
+		<_field_long_integer name="regions Flags" />
+		<_field_long_integer name="regions Vector1" />
+		<_field_long_integer name="regions Vector2" />
+		</_field_block_64>
+	<_field_long_integer name="style Flags" />
+	<_field_long_integer name="style Vector1" />
+	<_field_long_integer name="style Vector2" />
+	<_field_short_block_index name="defaultLookIndex" />
+	<_field_pad name="generated_pad7113" length="2" />
+	<_field_tag_reference_64 name="visorSwatch" />
+	<_field_byte_flags name="Preload Swatch Options">
+		<Item Name="Preload All Swatches" />
+		<Item Name="Dont Preload Swatches" />
+	</_field_byte_flags>
+	<_field_pad name="generated_pad245e" length="3" />
+	<_field_block_64 name="Preloaded Swatches">
+		<_field_qword_integer name="elementID" />
+		<_field_tag_reference_64 name="swatch" />
+		<_field_pad name="generated_pad863f" length="4" />
+		</_field_block_64>
+	<_field_dword_integer name="Material Style Hash" />
+	<_field_pad name="generated_padd7a9" length="4" />
+	</plugin>

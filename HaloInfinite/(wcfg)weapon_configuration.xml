@@ -1,0 +1,42 @@
+<plugin>
+	<_field_struct name="object_configuration">
+		<_field_struct name="AnyTag">
+			<_field_int64_integer name="vtable space" />
+			<_field_struct name="internal struct">
+				<_field_long_integer name="global tag ID" />
+				<_field_pad name="local tag handle" length="4" />
+				</_field_struct>
+			</_field_struct>
+		<_field_custom name="OBJECT" />
+		<_field_struct name="object">
+			<_field_tag_reference_64 name="Object Definition" />
+			<_field_string_id name="Variant name" />
+			<_field_string_id name="Style Id" />
+			<_field_tag_reference_64 name="frame override" />
+			<_field_custom name="Customization" />
+			<_field_string_id name="customization set override" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_pad name="generated_pad01af" length="4" />
+		</_field_struct>
+	<_field_custom name="WEAPON" />
+	<_field_struct name="weapon">
+		<_field_string_id name="variant name" />
+		<_field_block_64 name="generic attachments">
+			<_field_tag_reference_64 name="attachment" />
+			</_field_block_64>
+		<_field_tag_reference_64 name="barrel attachment" />
+		<_field_tag_reference_64 name="heat attachment" />
+		<_field_tag_reference_64 name="magazine attachment" />
+		<_field_tag_reference_64 name="melee attachment" />
+		<_field_tag_reference_64 name="sight attachment" />
+		<_field_tag_reference_64 name="target tracking attachment" />
+		<_field_tag_reference_64 name="trigger attachment" />
+		<_field_explanation name="WARNING" />
+		<_field_tag_reference_64 name="unit modifier set" />
+		<_field_tag_reference_64 name="UI Display Info" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_pad name="generated_padb818" length="4" />
+	</plugin>

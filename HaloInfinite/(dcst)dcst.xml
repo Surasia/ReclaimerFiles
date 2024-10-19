@@ -1,0 +1,56 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="LOD Settings">
+		<_field_block_64 name="LOD Transitions">
+			<_field_real name="Transition start" />
+			<_field_real name="Transition end" />
+			</_field_block_64>
+		<_field_real name="Max Shadow Distance" />
+		</_field_struct>
+	<_field_block_64 name="Presets">
+		<_field_string_id name="Name" />
+		<_field_struct name="Parameters">
+			<_field_long_enum name="Alignment">
+				<Item Name="default" />
+				<Item Name="normal" />
+				<Item Name="up" />
+				<Item Name="down" />
+				<Item Name="left" />
+				<Item Name="right" />
+				<Item Name="forward" />
+				<Item Name="backward" />
+				<Item Name="random" />
+			</_field_long_enum>
+			<_field_long_enum name="Random Rotate">
+				<Item Name="default" />
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_long_enum>
+			<_field_real name="Placement Weight" />
+			<_field_real name="Separation Min" />
+			<_field_real name="Scale Min" />
+			<_field_real name="Scale Max" />
+			<_field_real name="Tilt Min" />
+			<_field_real name="Tilt Max" />
+			<_field_real name="Stiffness Min" />
+			<_field_real name="Stiffness Max" />
+			<_field_real name="Ground Tint Min" />
+			<_field_real name="Ground Tint Max" />
+			<_field_real name="Hover Min" />
+			<_field_real name="Hover Max" />
+			<_field_real name="Roughness Min" />
+			<_field_real name="Roughness Max" />
+			<_field_real name="Slope Min" />
+			<_field_real name="Slope Max" />
+			<_field_real name="Rotate Min" />
+			<_field_real name="Rotate Max" />
+			</_field_struct>
+		</_field_block_64>
+	<_field_pad name="generated_pad84de" length="4" />
+	</plugin>

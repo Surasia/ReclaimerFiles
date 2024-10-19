@@ -1,0 +1,110 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="composer globals">
+		<_field_real name="cinematic film aperture" />
+		<_field_real name="cinematic skip ui up time" />
+		<_field_custom name="Start, End, Skip Scripts" />
+		<_field_struct name="Start Script">
+			<_field_byte_flags name="Flags">
+				<Item Name="Client" />
+				<Item Name="HasAssociatedScript" />
+				<Item Name="IgnoreInEditor" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad585d" length="3" />
+			<_field_data_64 name="Data" />
+			<_field_byte_integer name="Boolean Expression" />
+			<_field_pad name="generated_pad3e7c" length="3" />
+			<_field_data_64 name="Runtime Script Binary" />
+			<_field_string name="Runtime Script Name" />
+			<_field_dword_integer name="Runtime Script CRC" />
+			</_field_struct>
+		<_field_struct name="End Script">
+			<_field_byte_flags name="Flags">
+				<Item Name="Client" />
+				<Item Name="HasAssociatedScript" />
+				<Item Name="IgnoreInEditor" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad585d" length="3" />
+			<_field_data_64 name="Data" />
+			<_field_byte_integer name="Boolean Expression" />
+			<_field_pad name="generated_pad3e7c" length="3" />
+			<_field_data_64 name="Runtime Script Binary" />
+			<_field_string name="Runtime Script Name" />
+			<_field_dword_integer name="Runtime Script CRC" />
+			</_field_struct>
+		<_field_struct name="Skip Script">
+			<_field_byte_flags name="Flags">
+				<Item Name="Client" />
+				<Item Name="HasAssociatedScript" />
+				<Item Name="IgnoreInEditor" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad585d" length="3" />
+			<_field_data_64 name="Data" />
+			<_field_byte_integer name="Boolean Expression" />
+			<_field_pad name="generated_pad3e7c" length="3" />
+			<_field_data_64 name="Runtime Script Binary" />
+			<_field_string name="Runtime Script Name" />
+			<_field_dword_integer name="Runtime Script CRC" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Start Next Show Script" />
+		<_field_struct name="Start Next Show Script">
+			<_field_byte_flags name="Flags">
+				<Item Name="Client" />
+				<Item Name="HasAssociatedScript" />
+				<Item Name="IgnoreInEditor" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad585d" length="3" />
+			<_field_data_64 name="Data" />
+			<_field_byte_integer name="Boolean Expression" />
+			<_field_pad name="generated_pad3e7c" length="3" />
+			<_field_data_64 name="Runtime Script Binary" />
+			<_field_string name="Runtime Script Name" />
+			<_field_dword_integer name="Runtime Script CRC" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Kill Previous Show Script" />
+		<_field_struct name="Kill Previous Show Script">
+			<_field_byte_flags name="Flags">
+				<Item Name="Client" />
+				<Item Name="HasAssociatedScript" />
+				<Item Name="IgnoreInEditor" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad585d" length="3" />
+			<_field_data_64 name="Data" />
+			<_field_byte_integer name="Boolean Expression" />
+			<_field_pad name="generated_pad3e7c" length="3" />
+			<_field_data_64 name="Runtime Script Binary" />
+			<_field_string name="Runtime Script Name" />
+			<_field_dword_integer name="Runtime Script CRC" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_block_64 name="Stage Cleanup Preserve">
+			<_field_tag_reference_64 name="Tag Reference" />
+			</_field_block_64>
+		<_field_block_64 name="Stage Cleanup Destroy">
+			<_field_tag_reference_64 name="Tag Reference" />
+			</_field_block_64>
+		<_field_custom name="Streaming Ranges" />
+		<_field_real name="Stream Composition Resources Radius" />
+		<_field_real name="Stream Pinned Resources Radius" />
+		<_field_custom name="" />
+		<_field_custom name="Transition Fade Times" />
+		<_field_real name="Default Vehicle Transition Fade Time" />
+		<_field_real name="Default Support Transition Fade Time" />
+		<_field_real name="Default Airborne Transition Fade Time" />
+		<_field_real name="Default Composition Start Transition Fade Time" />
+		<_field_custom name="" />
+		<_field_tag_reference_64 name="Default Bookend Transitions" />
+		<_field_tag_reference_64 name="Default Spawning Patterns" />
+		<_field_real name="Default Spawning Pattern Probe Start Height Offset" />
+		<_field_long_integer name="Fade Start Frames Adjustment" />
+		</_field_block_64>
+	<_field_pad name="generated_pada30b" length="4" />
+	</plugin>

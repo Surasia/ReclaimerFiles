@@ -1,0 +1,31 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_long_flags name="flags">
+		<Item Name="female" />
+	</_field_long_flags>
+	<_field_block_64 name="vocalizations">
+		<_field_string_id name="vocalization" />
+		<_field_word_flags name="flags">
+			<Item Name="no default stimulus" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad3ad5" length="2" />
+		<_field_block_64 name="stimuli">
+			<_field_word_flags name="flags">
+				<Item Name="don't suppress" />
+				<Item Name="custom vocalization stimulus setup" />
+			</_field_word_flags>
+			<_field_pad name="generated_pad22a6" length="2" />
+			<_field_string_id name="stimulus" />
+			<_field_tag_reference_64 name="sound" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_string_id name="mission dialogue designator" />
+	<_field_pad name="generated_pada3f0" length="4" />
+	<_field_int64_integer name="vocalizationLookUp" />
+	</plugin>

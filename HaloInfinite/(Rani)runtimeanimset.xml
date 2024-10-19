@@ -1,0 +1,25 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_string_id name="m_channel" />
+	<_field_tag_reference_64 name="m_parent" />
+	<_field_block_64 name="m_animEntryLists">
+		<_field_string_id name="m_token" />
+		<_field_block_64 name="m_animations">
+			<_field_tag_reference_64 name="m_generatedModelAnimation" />
+			<_field_long_integer name="m_animationId" />
+			<_field_real name="m_weight" />
+			<_field_tag_reference_64 name="m_animSource" />
+			</_field_block_64>
+		<_field_byte_flags name="Flags">
+			<Item Name="Stop searching and ignore tokens in lower channel" />
+		</_field_byte_flags>
+		<_field_pad name="generated_padec23" length="3" />
+		</_field_block_64>
+	<_field_pad name="generated_pad402f" length="4" />
+	</plugin>

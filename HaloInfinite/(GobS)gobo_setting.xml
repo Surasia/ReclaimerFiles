@@ -1,0 +1,92 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="Gobos" />
+	<_field_block_64 name="Gobos">
+		<_field_char_enum name="bitmap address mode">
+			<Item Name="wrap" />
+			<Item Name="clamp" />
+			<Item Name="mirror" />
+			<Item Name="black border" />
+			<Item Name="mirroronce" />
+			<Item Name="mirroronce border" />
+		</_field_char_enum>
+		<_field_char_enum name="displacement bitmap address mode">
+			<Item Name="wrap" />
+			<Item Name="clamp" />
+			<Item Name="mirror" />
+			<Item Name="black border" />
+			<Item Name="mirroronce" />
+			<Item Name="mirroronce border" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad1972" length="2" />
+		<_field_tag_reference_64 name="Bitmap" />
+		<_field_block_64 name="animation parameters">
+			<_field_long_enum name="type">
+				<Item Name="offset u" />
+				<Item Name="offset v" />
+				<Item Name="rotation" />
+				<Item Name="offset w (animation)" />
+				<Item Name="scale u (tiling)" />
+				<Item Name="scale v (tiling)" />
+			</_field_long_enum>
+			<_field_real name="origin x" />
+			<_field_real name="origin y" />
+			<_field_struct name="function">
+				<_field_explanation name="Gobo Parameters" />
+				<_field_string_id name="Input Variable" />
+				<_field_string_id name="Range Variable" />
+				<_field_short_enum name="Output Modifier">
+					<Item Name=" " />
+					<Item Name="Plus" />
+					<Item Name="Times" />
+				</_field_short_enum>
+				<_field_pad name="generated_pad6da9" length="2" />
+				<_field_string_id name="Output Modifier Input" />
+				<_field_custom name="Mapping" />
+				<_field_struct name="Mapping">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			</_field_block_64>
+		<_field_tag_reference_64 name="Displacement Bitmap" />
+		<_field_block_64 name="displacement animation parameters">
+			<_field_long_enum name="type">
+				<Item Name="offset u" />
+				<Item Name="offset v" />
+				<Item Name="rotation" />
+				<Item Name="offset w (animation)" />
+				<Item Name="scale u (tiling)" />
+				<Item Name="scale v (tiling)" />
+			</_field_long_enum>
+			<_field_real name="origin x" />
+			<_field_real name="origin y" />
+			<_field_struct name="function">
+				<_field_explanation name="Gobo Parameters" />
+				<_field_string_id name="Input Variable" />
+				<_field_string_id name="Range Variable" />
+				<_field_short_enum name="Output Modifier">
+					<Item Name=" " />
+					<Item Name="Plus" />
+					<Item Name="Times" />
+				</_field_short_enum>
+				<_field_pad name="generated_pad6da9" length="2" />
+				<_field_string_id name="Output Modifier Input" />
+				<_field_custom name="Mapping" />
+				<_field_struct name="Mapping">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_long_integer name="Resolution" />
+	</plugin>

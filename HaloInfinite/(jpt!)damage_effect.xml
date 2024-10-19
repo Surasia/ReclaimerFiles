@@ -1,0 +1,262 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="parent" />
+	<_field_real_bounds name="radius" />
+	<_field_real_fraction name="cutoff scale" />
+	<_field_long_flags name="effect flags">
+		<Item Name="don't scale damage by distance" />
+		<Item Name="area damage players only" />
+		<Item Name="affects model targets" />
+		<Item Name="grenade explosion" />
+	</_field_long_flags>
+	<_field_explanation name="damage" />
+	<_field_explanation name="Damage Type" />
+	<_field_struct name="damageType">
+		<_field_string_id name="Damage Type Name" />
+		</_field_struct>
+	<_field_short_enum name="side effect">
+		<Item Name="none" />
+		<Item Name="harmless" />
+		<Item Name="lethal to the unsuspecting" />
+		<Item Name="emp" />
+		<Item Name="strips armor" />
+		<Item Name="makes AI afraid" />
+	</_field_short_enum>
+	<_field_short_enum name="category">
+		<Item Name="none" />
+		<Item Name="falling" />
+		<Item Name="bullet" />
+		<Item Name="grenade" />
+		<Item Name="high explosive" />
+		<Item Name="sniper" />
+		<Item Name="melee" />
+		<Item Name="flame" />
+		<Item Name="mounted weapon" />
+		<Item Name="vehicle" />
+		<Item Name="plasma" />
+		<Item Name="needle" />
+		<Item Name="shotgun" />
+	</_field_short_enum>
+	<_field_long_enum name="death vocalization">
+		<Item Name="default" />
+		<Item Name="dth" />
+		<Item Name="dth_fall" />
+		<Item Name="dth_mjr" />
+		<Item Name="dth_slw" />
+		<Item Name="dth_hdsht" />
+		<Item Name="dth_slnt" />
+		<Item Name="dth_drama" />
+		<Item Name="dth_reanimated" />
+		<Item Name="thrwn" />
+		<Item Name="die_space" />
+		<Item Name="die_ass" />
+		<Item Name="die incinerated" />
+	</_field_long_enum>
+	<_field_long_flags name="flags">
+		<Item Name="does not hurt owner" />
+		<Item Name="can cause headshots" />
+		<Item Name="ignores headshot obstructions" />
+		<Item Name="pings resistant units" />
+		<Item Name="does not hurt friends" />
+		<Item Name="does not ping units" />
+		<Item Name="detonates explosives" />
+		<Item Name="only hurts shields" />
+		<Item Name="causes flaming death" />
+		<Item Name="skips shields" />
+		<Item Name="ignore seat scale for dir. dmg" />
+		<Item Name="forces hard ping if body dmg" />
+		<Item Name="forces hard ping always" />
+		<Item Name="forces medium ping if body dmg" />
+		<Item Name="forces medium ping always" />
+		<Item Name="does not hurt players" />
+		<Item Name="enables special death" />
+		<Item Name="cannot cause betrayals" />
+		<Item Name="uses old EMP behavior" />
+		<Item Name="ignores damage resistance" />
+		<Item Name="force s_kill on death" />
+		<Item Name="cause magic deceleration" />
+		<Item Name="aoe skip obstruction test" />
+		<Item Name="does not spill over" />
+		<Item Name="does not hurt boarders" />
+		<Item Name="does not cause biped aoe effect" />
+		<Item Name="hurt only friends" />
+		<Item Name="causes incineration dissolve (deprecated)" />
+		<Item Name="causes incineration dissolve on headshot (deprecated)" />
+		<Item Name="does not hurt damage source" />
+		<Item Name="damage vehicles only" />
+		<Item Name="triggers interact logic" />
+	</_field_long_flags>
+	<_field_long_flags name="secondary flags">
+		<Item Name="causes incineration dissolve to dead units (deprecated)" />
+		<Item Name="force hard ping as attachment feedback" />
+		<Item Name="detaches object dispenser items" />
+		<Item Name="hard pings from this damage stun AI" />
+		<Item Name="deaths are non revivable" />
+		<Item Name="forces hard ping when available" />
+		<Item Name="forces medium ping when available" />
+		<Item Name="impales bipeds" />
+		<Item Name="resets stun ticks on units" />
+		<Item Name="Show damage as critical in UI" />
+		<Item Name="Ignore physics impulses on friendlies" />
+		<Item Name="Damage is continuous" />
+		<Item Name="suppress evade" />
+		<Item Name="suppress grapple hook" />
+		<Item Name="Use different impulse for props" />
+		<Item Name="does not cause descope" />
+	</_field_long_flags>
+	<_field_block_64 name="dissolve data">
+		<_field_char_enum name="dissolve type">
+			<Item Name="incineration" />
+			<Item Name="telefrag" />
+		</_field_char_enum>
+		<_field_byte_flags name="dissolve flags">
+			<Item Name="causes dissolve effect" />
+			<Item Name="causes dissolve effect on headshot" />
+			<Item Name="causes dissolve effect to dead units" />
+		</_field_byte_flags>
+		</_field_block_64>
+	<_field_explanation name="NOTE" />
+	<_field_tag_reference_64 name="modifiers" />
+	<_field_real name="headshot damage multiplier" />
+	<_field_real name="headshot shielded damage multiplier" />
+	<_field_real name="AOE core radius" />
+	<_field_real name="AOE force offset z" />
+	<_field_real name="damage lower bound" />
+	<_field_real_bounds name="damage upper bound" />
+	<_field_struct name="damage falloff function">
+		<_field_custom name="function" />
+		<_field_struct name="function">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_char_enum name="damage cone hit resolution behavior">
+		<Item Name="outer cone only" />
+		<Item Name="approximate outer cone" />
+		<Item Name="test both cones" />
+	</_field_char_enum>
+	<_field_pad name="generated_pad17b5" length="3" />
+	<_field_angle name="dmg inner cone angle" />
+	<_field_struct name="blah">
+		<_field_angle name="dmg outer cone angle" />
+		</_field_struct>
+	<_field_real name="active camouflage damage" />
+	<_field_real_fraction_bounds name="active camouflage damage range" />
+	<_field_real_fraction name="movement stun" />
+	<_field_real_fraction name="maximum movement stun" />
+	<_field_real_fraction name="turn stun" />
+	<_field_real_fraction name="maximum turn stun" />
+	<_field_real name="stun time" />
+	<_field_long_integer name="damage stun" />
+	<_field_real name="instantaneous acceleration" />
+	<_field_real name="alt instantaneous acceleration" />
+	<_field_real name="prop instantaneous acceleration" />
+	<_field_real name="grounded player acceleration scalar" />
+	<_field_real name="airborne player acceleration scalar" />
+	<_field_real name="acceleration cap" />
+	<_field_explanation name="AI Stun Parameters" />
+	<_field_real name="ai stun time" />
+	<_field_real name="ai stun magnitude" />
+	<_field_explanation name="Impalement parameters" />
+	<_field_real name="impale initial velocity" />
+	<_field_real name="impale drag acceleration" />
+	<_field_real name="impale gravity acceleration" />
+	<_field_real name="impale minimum velocity" />
+	<_field_angle name="impale maximum angle" />
+	<_field_real name="impale effect duration" />
+	<_field_real_fraction name="soft ping pain screen scale" />
+	<_field_string_id name="general_damage" />
+	<_field_string_id name="specific_damage" />
+	<_field_explanation name="vampirism" />
+	<_field_struct name="vampirism">
+		<_field_byte_flags name="flags">
+			<Item Name="recovers health" />
+			<Item Name="recovers shields" />
+			<Item Name="resets shield stun" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad26a2" length="3" />
+		<_field_real name="percent transferred" />
+		<_field_real name="max overshield" />
+		<_field_tag_reference_64 name="overshield malleable properties" />
+		</_field_struct>
+	<_field_block_64 name="custom response labels">
+		<_field_string_id name="custom label" />
+		</_field_block_64>
+	<_field_real name="ping reaction delay" />
+	<_field_real name="AI stun radius" />
+	<_field_real_bounds name="AI stun bounds" />
+	<_field_short_enum name="aiNoiseVolume">
+		<Item Name="silent" />
+		<Item Name="quiet" />
+		<Item Name="medium" />
+		<Item Name="shout" />
+		<Item Name="loud" />
+	</_field_short_enum>
+	<_field_pad name="generated_pad97e3" length="2" />
+	<_field_real name="shake radius" />
+	<_field_real name="EMP radius" />
+	<_field_real name="EMP duration scalar" />
+	<_field_real name="aoe spike radius" />
+	<_field_real name="aoe spike damage bump" />
+	<_field_real name="shield render effects scale" />
+	<_field_real name="equipment hack time" />
+	<_field_explanation name="damage response" />
+	<_field_tag_reference_64 name="damage response" />
+	<_field_block_64 name="damage sounds">
+		<_field_tag_reference_64 name="sound" />
+		<_field_word_flags name="damage types">
+			<Item Name="none" />
+			<Item Name="lethal instantaneous" />
+			<Item Name="lethal" />
+			<Item Name="non lethal" />
+		</_field_word_flags>
+		<_field_word_flags name="object types">
+			<Item Name="biped" />
+			<Item Name="vehicle" />
+			<Item Name="weapon" />
+			<Item Name="equipment" />
+			<Item Name="terminal" />
+			<Item Name="projectile" />
+			<Item Name="scenery" />
+			<Item Name="machine" />
+			<Item Name="control" />
+			<Item Name="dispenser" />
+			<Item Name="crate" />
+			<Item Name="creature" />
+			<Item Name="giant" />
+			<Item Name="effect_scenery" />
+		</_field_word_flags>
+		</_field_block_64>
+	<_field_real name="Damage dealt SFX cooldown time" />
+	<_field_real name="Damage received SFX cooldown time" />
+	<_field_custom name="player damage additive sounds" />
+	<_field_tag_reference_64 name="deprecated player dealt damage additive sound" />
+	<_field_tag_reference_64 name="deprecated player dealt AOE damage additive sound" />
+	<_field_tag_reference_64 name="deprecated player dealt friendly fire additive sound" />
+	<_field_struct name="player additive sound deal damage">
+		<_field_tag_reference_64 name="player additive sound deal damage regular" />
+		<_field_tag_reference_64 name="player additive sound deal damage aoe" />
+		<_field_tag_reference_64 name="player additive sound deal damage friendly fire" />
+		<_field_tag_reference_64 name="player additive sound deal damage weak spot" />
+		<_field_tag_reference_64 name="player additive sound deal damage headshot" />
+		<_field_tag_reference_64 name="player additive sound deal damage kill" />
+		<_field_tag_reference_64 name="player additive sound deal damage headshot kill" />
+		</_field_struct>
+	<_field_tag_reference_64 name="player received damage additive sound (default)" />
+	<_field_tag_reference_64 name="player received damage additive sound (third person)" />
+	<_field_tag_reference_64 name="player received damage additive sound (in vehicle)" />
+	<_field_tag_reference_64 name="player received AOE damage additive sound (default)" />
+	<_field_tag_reference_64 name="player received AOE damage additive sound (third person)" />
+	<_field_tag_reference_64 name="player received AOE damage additive sound (in vehicle)" />
+	<_field_custom name="" />
+	<_field_tag_reference_64 name="damage effect sounds" />
+	<_field_real name="visual damage radius" />
+	<_field_real name="visual damage intensity" />
+	</plugin>

@@ -1,0 +1,23 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="import" />
+	<_field_explanation name="PARTICLE POINTS" />
+	<_field_tag_reference_64 name="source reference" />
+	<_field_real_vector_3d name="compression scale" />
+	<_field_real_vector_3d name="compression offset" />
+	<_field_block_64 name="points">
+		<_field_short_integer name="position_x" />
+		<_field_short_integer name="position_y" />
+		<_field_short_integer name="position_z" />
+		<_field_char_integer name="normal_x" />
+		<_field_char_integer name="normal_y" />
+		<_field_char_integer name="normal_z" />
+		<_field_byte_integer name="correlation" />
+		</_field_block_64>
+	</plugin>

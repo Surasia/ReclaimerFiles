@@ -1,0 +1,71 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="static data">
+		<_field_block_64 name="columns">
+			<_field_string_id name="name" />
+			<_field_short_enum name="type">
+				<Item Name="boolean" />
+				<Item Name="long" />
+				<Item Name="real" />
+				<Item Name="string" />
+				<Item Name="component" />
+				<Item Name="tag reference" />
+				<Item Name="string id" />
+				<Item Name="argb color" />
+				<Item Name="emblem info" />
+			</_field_short_enum>
+			<_field_pad name="generated_pad3684" length="2" />
+			</_field_block_64>
+		<_field_block_64 name="rows">
+			<_field_block_64 name="long properties">
+				<_field_string_id name="name" />
+				<_field_string_id name="resourceName" />
+				<_field_long_integer name="value" />
+				</_field_block_64>
+			<_field_block_64 name="real properties">
+				<_field_string_id name="name" />
+				<_field_string_id name="resourceName" />
+				<_field_real name="value" />
+				</_field_block_64>
+			<_field_block_64 name="string_id properties">
+				<_field_string_id name="name" />
+				<_field_string_id name="resourceName" />
+				<_field_string_id name="value" />
+				</_field_block_64>
+			<_field_block_64 name="component ptr properties">
+				<_field_string_id name="name" />
+				<_field_string_id name="resourceName" />
+				<_field_qword_integer name="component id" />
+				<_field_string_id name="value" />
+				<_field_pad name="generated_padccc5" length="4" />
+				</_field_block_64>
+			<_field_block_64 name="tag reference properties">
+				<_field_string_id name="name" />
+				<_field_string_id name="resourceName" />
+				<_field_tag_reference_64 name="value" />
+				</_field_block_64>
+			<_field_block_64 name="string properties">
+				<_field_string_id name="name" />
+				<_field_string_id name="resourceName" />
+				<_field_long_string name="value" />
+				</_field_block_64>
+			<_field_block_64 name="argb color properties">
+				<_field_string_id name="name" />
+				<_field_string_id name="resourceName" />
+				<_field_real_argb_color name="value" />
+				</_field_block_64>
+			<_field_block_64 name="event handlers">
+				<_field_string_id name="event" />
+				<_field_string_id name="filter" />
+				<_field_string_id name="name" />
+				<_field_long_string name="action" />
+				</_field_block_64>
+			</_field_block_64>
+		</_field_struct>
+	</plugin>

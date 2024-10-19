@@ -1,0 +1,45 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="Library" />
+	<_field_block_64 name="Effects">
+		<_field_long_integer name="Unique ID" />
+		<_field_string_id name="Name" />
+		<_field_block_64 name="Effects">
+			<_field_tag_reference_64 name="Effect" />
+			<_field_word_flags name="Key event flags">
+				<Item Name="AllowOnPlayer" />
+				<Item Name="LeftArmOnly" />
+				<Item Name="RightArmOnly" />
+				<Item Name="FirstPersonOnly" />
+				<Item Name="ThirdPersonOnly" />
+				<Item Name="ForwardOnly" />
+				<Item Name="BackwardsOnly" />
+				<Item Name="FPNoAgedWeapons" />
+			</_field_word_flags>
+			<_field_pad name="generated_padf5ee" length="2" />
+			<_field_tag_reference_64 name="Model reference" />
+			<_field_string_id name="Model variant" />
+			<_field_tag_reference_64 name="Weapon reference" />
+			<_field_string_id name="Weapon variant" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Animations">
+		<_field_string_id name="Name" />
+		<_field_long_integer name="Guid" />
+		<_field_block_64 name="Effect events">
+			<_field_short_integer name="Frame" />
+			<_field_pad name="generated_pad6ca8" length="2" />
+			<_field_string_id name="Marker name" />
+			<_field_long_integer name="Effect ID" />
+			<_field_short_block_index name="Effect" />
+			<_field_pad name="generated_pad8689" length="2" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_pad name="generated_pad10f8" length="4" />
+	</plugin>

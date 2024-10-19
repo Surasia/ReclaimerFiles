@@ -1,0 +1,326 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="LENS FLARE" />
+	<_field_angle name="falloff angle" />
+	<_field_angle name="cutoff angle" />
+	<_field_angle name="separate X falloff angle" />
+	<_field_angle name="separate X cutoff angle" />
+	<_field_angle name="separate Y falloff angle" />
+	<_field_angle name="separate Y cutoff angle" />
+	<_field_real name="Exposure Amount" />
+	<_field_explanation name="OCCLUSION" />
+	<_field_long_integer name="occlusion reflection index" />
+	<_field_real name="occlusion offset distance" />
+	<_field_short_enum name="occlusion offset direction">
+		<Item Name="toward viewer" />
+		<Item Name="marker forward" />
+		<Item Name="none" />
+	</_field_short_enum>
+	<_field_pad name="generated_pad1f11" length="2" />
+	<_field_real name="occlusion inner radius scale" />
+	<_field_real name="occlusion min pixels" />
+	<_field_real name="occlusion max pixels" />
+	<_field_real name="near fade begin distance" />
+	<_field_real name="near fade end distance" />
+	<_field_real name="far fade begin distance" />
+	<_field_real name="far fade end distance" />
+	<_field_tag_reference_64 name="bitmap" />
+	<_field_word_flags name="flags">
+		<Item Name="rotate occlusion testing box with lens flare" />
+		<Item Name="no occlusion test" />
+		<Item Name="only render in first person" />
+		<Item Name="only render in third person" />
+		<Item Name="no reflection opacity feedback" />
+		<Item Name="scale by marker" />
+		<Item Name="don't autofade" />
+		<Item Name="don't render while zoomed" />
+		<Item Name="use separate X and Y falloff angles" />
+		<Item Name="use color override as tint" />
+	</_field_word_flags>
+	<_field_short_integer name="runtime flags" />
+	<_field_short_enum name="rotation function">
+		<Item Name="none" />
+		<Item Name="rotation A" />
+		<Item Name="rotation B" />
+		<Item Name="rotation-translation" />
+		<Item Name="translation" />
+	</_field_short_enum>
+	<_field_pad name="generated_pad0530" length="2" />
+	<_field_angle name="rotation function scale" />
+	<_field_explanation name="EFFECT PARAMETERS" />
+	<_field_short_enum name="falloff function">
+		<Item Name="linear" />
+		<Item Name="late" />
+		<Item Name="very late" />
+		<Item Name="early" />
+		<Item Name="very early" />
+		<Item Name="cosine" />
+		<Item Name="zero" />
+		<Item Name="one" />
+	</_field_short_enum>
+	<_field_pad name="generated_padb87b" length="2" />
+	<_field_block_64 name="reflections">
+		<_field_custom name="" />
+		<_field_string_id name="name" />
+		<_field_long_flags name="flags">
+			<Item Name="rotate from center of screen" />
+			<Item Name="radius scaled by distance" />
+			<Item Name="radius scaled by occlusion factor" />
+			<Item Name="ignore external color" />
+			<Item Name="only move along Y" />
+			<Item Name="only move along X" />
+			<Item Name="proximity to center as function input" />
+			<Item Name="mirror across flare" />
+			<Item Name="disabled for debugging" />
+			<Item Name="flip U coordinate" />
+			<Item Name="flip V coordinate" />
+			<Item Name="draw in world space instead of screen space" />
+			<Item Name="override falloff angles" />
+			<Item Name="override fade distances" />
+			<Item Name="use separate X and Y falloff angles" />
+			<Item Name="do not render" />
+			<Item Name="rotate from center of screen using screen Y" />
+		</_field_long_flags>
+		<_field_tag_reference_64 name="bitmap override" />
+		<_field_struct name="bitmap frame index">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_struct name="bitmap animation rate">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_angle name="falloff angle" />
+		<_field_angle name="cutoff_angle" />
+		<_field_angle name="separate X falloff angle" />
+		<_field_angle name="separate X cutoff angle" />
+		<_field_angle name="separate Y falloff angle" />
+		<_field_angle name="separate Y cutoff angle" />
+		<_field_real name="near fade begin distance" />
+		<_field_real name="near fade end distance" />
+		<_field_real name="far fade begin distance" />
+		<_field_real name="far fade end distance" />
+		<_field_real name="rotation offset" />
+		<_field_real name="axis offset" />
+		<_field_real name="x offset" />
+		<_field_real name="y offset" />
+		<_field_real_bounds name="offset bounds" />
+		<_field_struct name="radius curve">
+			<_field_char_enum name="Input Variable">
+				<Item Name="Legacy" />
+				<Item Name="Time/Age" />
+				<Item Name="Effect Scale A" />
+				<Item Name="Effect Scale B" />
+				<Item Name="Proximity to Screen Center" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8838" length="3" />
+			<_field_custom name="Mapping" />
+			<_field_struct name="Mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_struct name="scale curve X">
+			<_field_char_enum name="Input Variable">
+				<Item Name="Legacy" />
+				<Item Name="Time/Age" />
+				<Item Name="Effect Scale A" />
+				<Item Name="Effect Scale B" />
+				<Item Name="Proximity to Screen Center" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8838" length="3" />
+			<_field_custom name="Mapping" />
+			<_field_struct name="Mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_struct name="scale curve Y">
+			<_field_char_enum name="Input Variable">
+				<Item Name="Legacy" />
+				<Item Name="Time/Age" />
+				<Item Name="Effect Scale A" />
+				<Item Name="Effect Scale B" />
+				<Item Name="Proximity to Screen Center" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8838" length="3" />
+			<_field_custom name="Mapping" />
+			<_field_struct name="Mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_struct name="intensity curve">
+			<_field_char_enum name="Input Variable">
+				<Item Name="Legacy" />
+				<Item Name="Time/Age" />
+				<Item Name="Effect Scale A" />
+				<Item Name="Effect Scale B" />
+				<Item Name="Proximity to Screen Center" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8838" length="3" />
+			<_field_custom name="Mapping" />
+			<_field_struct name="Mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_explanation name="TINT COLOR" />
+		<_field_char_enum name="color curve override mode">
+			<Item Name="None" />
+			<Item Name="Color Override 1" />
+			<Item Name="Color Override 2" />
+			<Item Name="Team Color" />
+			<Item Name="DWS Sun Color" />
+		</_field_char_enum>
+		<_field_pad name="generated_padebc7" length="3" />
+		<_field_struct name="color curve">
+			<_field_char_enum name="Input Variable">
+				<Item Name="Legacy" />
+				<Item Name="Time/Age" />
+				<Item Name="Effect Scale A" />
+				<Item Name="Effect Scale B" />
+				<Item Name="Proximity to Screen Center" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8123" length="3" />
+			<_field_custom name="Mapping" />
+			<_field_struct name="Mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_real_fraction name="modulation factor" />
+		<_field_real name="tint power" />
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_explanation name="ANIMATION" />
+	<_field_word_flags name="animation flags">
+		<Item Name="unsynchronized time" />
+	</_field_word_flags>
+	<_field_pad name="generated_pad38f2" length="2" />
+	<_field_block_64 name="time brightness">
+		<_field_struct name="function">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		</_field_block_64>
+	<_field_block_64 name="age brightness">
+		<_field_struct name="function">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		</_field_block_64>
+	<_field_char_enum name="time color override mode">
+		<Item Name="None" />
+		<Item Name="Color Override 1" />
+		<Item Name="Color Override 2" />
+		<Item Name="Team Color" />
+		<Item Name="DWS Sun Color" />
+	</_field_char_enum>
+	<_field_pad name="generated_padec3d" length="3" />
+	<_field_block_64 name="time color">
+		<_field_struct name="color animation">
+			<_field_string_id name="Input Variable" />
+			<_field_string_id name="Range Variable" />
+			<_field_short_enum name="Output Modifier">
+				<Item Name=" " />
+				<Item Name="Plus" />
+				<Item Name="Times" />
+			</_field_short_enum>
+			<_field_pad name="generated_padcaf7" length="2" />
+			<_field_string_id name="Output Modifier Input" />
+			<_field_custom name="Lens flare color editor" />
+			<_field_struct name="lens flare color mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		</_field_block_64>
+	<_field_char_enum name="age color override mode">
+		<Item Name="None" />
+		<Item Name="Color Override 1" />
+		<Item Name="Color Override 2" />
+		<Item Name="Team Color" />
+		<Item Name="DWS Sun Color" />
+	</_field_char_enum>
+	<_field_pad name="generated_padd25c" length="3" />
+	<_field_block_64 name="age color">
+		<_field_struct name="color animation">
+			<_field_string_id name="Input Variable" />
+			<_field_string_id name="Range Variable" />
+			<_field_short_enum name="Output Modifier">
+				<Item Name=" " />
+				<Item Name="Plus" />
+				<Item Name="Times" />
+			</_field_short_enum>
+			<_field_pad name="generated_padcaf7" length="2" />
+			<_field_string_id name="Output Modifier Input" />
+			<_field_custom name="Lens flare color editor" />
+			<_field_struct name="lens flare color mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		</_field_block_64>
+	<_field_block_64 name="time rotation">
+		<_field_struct name="function">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		</_field_block_64>
+	<_field_block_64 name="age rotation">
+		<_field_struct name="function">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		</_field_block_64>
+	<_field_struct name="global radius scale">
+		<_field_real name="near distance function start" />
+		<_field_real name="far distance function end" />
+		<_field_custom name="Mapping" />
+		<_field_struct name="Mapping">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_real name="aim down sight radius multiplier" />
+	<_field_pad name="generated_pad85a7" length="4" />
+	</plugin>

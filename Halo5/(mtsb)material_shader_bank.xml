@@ -1,0 +1,19 @@
+<!-- This is a mockup plugin with original field names and such -->
+<!-- Made by Zedd lol -->
+<plugin>
+	<_field_int64_integer name="vtable space*~!" />
+	<_field_struct name="internal struct" srcguid="151d0146-479c-181f-3970-ec869043bc33">
+		<_field_long_integer name="global tag ID!" />
+		<_field_pad name="local tag handle!~" length="4" />
+	</_field_struct>
+	<_field_custom name="bytecode" />
+	<_field_pageable_resource_64 name="shader bytecode resources" />
+	<_field_int64_integer name="runtime shader bank" />
+	<_field_word_integer name="vertex shader count*" />
+	<_field_word_integer name="pixel shader count*" />
+	<_field_word_integer name="geometry shader count*" />
+	<_field_word_integer name="compute shader count*" />
+	<_field_word_integer name="hull shader count*" />
+	<_field_word_integer name="domain shader count*" />
+	<_field_pad name="pad0" length="4" />
+</plugin>

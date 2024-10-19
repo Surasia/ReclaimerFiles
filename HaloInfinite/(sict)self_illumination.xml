@@ -1,0 +1,46 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="States">
+		<_field_explanation name="Self-Illumination State" />
+		<_field_string_id name="Name" />
+		<_field_long_flags name="Flags">
+			<Item Name="Looping" />
+			<Item Name="Triggered By AI State" />
+			<Item Name="Triggered By Anim State" />
+			<Item Name="Triggered By Dialog" />
+		</_field_long_flags>
+		<_field_real name="Length " />
+		<_field_string_id name="Next State " />
+		<_field_struct name="Intensity ">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_struct name="Color ">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_struct name="Activation ">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		</_field_block_64>
+	<_field_pad name="generated_pad01b6" length="4" />
+	</plugin>

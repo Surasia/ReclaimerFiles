@@ -1,0 +1,69 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="boost">
+		<_field_tag_reference_64 name="boost collision damage" />
+		<_field_long_flags name="flags">
+			<Item Name="pegs throttle" />
+		</_field_long_flags>
+		<_field_real name="boost peak power" />
+		<_field_real name="boost rise time" />
+		<_field_real name="boost fall time" />
+		<_field_real name="boost power per second" />
+		<_field_real name="boost low warning threshold" />
+		<_field_real name="recharge rate" />
+		<_field_real name="recharge delay" />
+		<_field_real name="post boost weapon delay" />
+		<_field_custom name="trigger to boost" />
+		<_field_struct name="trigger to boost">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_long_enum name="tutorial id">
+			<Item Name="None" />
+			<Item Name="Assassination" />
+			<Item Name="Camera" />
+			<Item Name="Crouch" />
+			<Item Name="Grenade" />
+			<Item Name="Jump" />
+			<Item Name="Melee" />
+			<Item Name="Movement" />
+			<Item Name="Shoot" />
+			<Item Name="Tracking" />
+			<Item Name="Clamber" />
+			<Item Name="Slide" />
+			<Item Name="Sprint" />
+			<Item Name="Thruster" />
+			<Item Name="Zoom" />
+			<Item Name="BansheeBoost" />
+			<Item Name="BansheeTrick" />
+			<Item Name="BansheeSwitchWeapons" />
+			<Item Name="GhostBoost" />
+			<Item Name="MantisRockets" />
+			<Item Name="MantisStomp" />
+			<Item Name="VTOLAscend" />
+			<Item Name="VTOLDescend" />
+			<Item Name="VTOLEvade" />
+			<Item Name="VTOLSwitchWeapons" />
+			<Item Name="VTOLShoot" />
+			<Item Name="JeepDrive" />
+			<Item Name="JeepHandbrake" />
+			<Item Name="JeepShoot" />
+			<Item Name="WraithBoost" />
+			<Item Name="SeatSwitch" />
+			<Item Name="OrdersGeneral" />
+			<Item Name="OrdersClear" />
+			<Item Name="OrdersEnemy" />
+			<Item Name="OrdersMove" />
+			<Item Name="OrdersVehicle" />
+			<Item Name="OrdersWeapon" />
+		</_field_long_enum>
+		</_field_struct>
+	<_field_pad name="generated_pada510" length="4" />
+	</plugin>

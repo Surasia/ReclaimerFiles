@@ -1,0 +1,543 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="string references">
+		<_field_tag_reference_64 name="new string list" />
+		</_field_block_64>
+	<_field_block_64 name="resource references">
+		<_field_tag_reference_64 name="resources list" />
+		</_field_block_64>
+	<_field_struct name="system">
+		<_field_block_64 name="template instantiations">
+			<_field_qword_integer name="template instance id" />
+			<_field_tag_reference_64 name="screen reference" />
+			<_field_string_id name="parent" />
+			<_field_qword_integer name="parent id" />
+			<_field_long_integer name="child order" />
+			<_field_block_64 name="components">
+				<_field_qword_integer name="component id" />
+				<_field_string_id name="original name" />
+				<_field_string_id name="name" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="components">
+			<_field_qword_integer name="component id" />
+			<_field_string_id name="type" />
+			<_field_string_id name="name" />
+			<_field_string_id name="parent" />
+			<_field_pad name="generated_padecfb" length="4" />
+			<_field_qword_integer name="parent id" />
+			<_field_long_integer name="child order" />
+			<_field_word_flags name="flags">
+				<Item Name="hidden to tools user" />
+			</_field_word_flags>
+			<_field_pad name="generated_pada046" length="2" />
+			</_field_block_64>
+		<_field_block_64 name="component indices">
+			<_field_qword_integer name="component id" />
+			<_field_string_id name="name" />
+			<_field_short_block_index name="component definition index" />
+			<_field_pad name="generated_pad855c" length="2" />
+			</_field_block_64>
+		<_field_block_64 name="do not create list">
+			<_field_qword_integer name="component id" />
+			</_field_block_64>
+		<_field_block_64 name="overlays">
+			<_field_string_id name="resolution" />
+			<_field_string_id name="theme" />
+			<_field_block_64 name="components">
+				<_field_qword_integer name="component id" />
+				<_field_string_id name="name" />
+				<_field_struct name="property values">
+					<_field_block_64 name="long properties">
+						<_field_string_id name="name" />
+						<_field_string_id name="resourceName" />
+						<_field_long_integer name="value" />
+						</_field_block_64>
+					<_field_block_64 name="real properties">
+						<_field_string_id name="name" />
+						<_field_string_id name="resourceName" />
+						<_field_real name="value" />
+						</_field_block_64>
+					<_field_block_64 name="string_id properties">
+						<_field_string_id name="name" />
+						<_field_string_id name="resourceName" />
+						<_field_string_id name="value" />
+						</_field_block_64>
+					<_field_block_64 name="component ptr properties">
+						<_field_string_id name="name" />
+						<_field_string_id name="resourceName" />
+						<_field_qword_integer name="component id" />
+						<_field_string_id name="value" />
+						<_field_pad name="generated_padccc5" length="4" />
+						</_field_block_64>
+					<_field_block_64 name="tag reference properties">
+						<_field_string_id name="name" />
+						<_field_string_id name="resourceName" />
+						<_field_tag_reference_64 name="value" />
+						</_field_block_64>
+					<_field_block_64 name="string properties">
+						<_field_string_id name="name" />
+						<_field_string_id name="resourceName" />
+						<_field_long_string name="value" />
+						</_field_block_64>
+					<_field_block_64 name="argb color properties">
+						<_field_string_id name="name" />
+						<_field_string_id name="resourceName" />
+						<_field_real_argb_color name="value" />
+						</_field_block_64>
+					<_field_block_64 name="event handlers">
+						<_field_string_id name="event" />
+						<_field_string_id name="filter" />
+						<_field_string_id name="name" />
+						<_field_long_string name="action" />
+						</_field_block_64>
+					</_field_struct>
+				<_field_pad name="generated_pad00cf" length="4" />
+				</_field_block_64>
+			<_field_block_64 name="animations">
+				<_field_string_id name="name" />
+				<_field_real name="time base offset" />
+				<_field_real name="time exponential offset" />
+				<_field_char_enum name="animation input">
+					<Item Name="time" />
+					<Item Name="binding" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad21f2" length="3" />
+				<_field_block_64 name="components">
+					<_field_qword_integer name="component id" />
+					<_field_string_id name="name" />
+					<_field_long_integer name="total milliseconds" />
+					<_field_block_64 name="real properties">
+						<_field_string_id name="name" />
+						<_field_short_enum name="composition">
+							<Item Name="relative to current" />
+							<Item Name="absolute to screen" />
+							<Item Name="absolute to parent" />
+						</_field_short_enum>
+						<_field_char_enum name="ending type">
+							<Item Name="stopping" />
+							<Item Name="looping" />
+						</_field_char_enum>
+						<_field_pad name="generated_pad83f4" length="1" />
+						<_field_long_integer name="iteration count" />
+						<_field_long_integer name="total milliseconds" />
+						<_field_block_64 name="real keyframes">
+							<_field_long_integer name="duration" />
+							<_field_string_id name="resourceName" />
+							<_field_real name="value" />
+							<_field_struct name="transition function">
+								<_field_custom name="scalar function" />
+								<_field_struct name="scalar function">
+									<_field_custom name="" />
+									<_field_data_64 name="data" />
+									<_field_custom name="" />
+									</_field_struct>
+								</_field_struct>
+							</_field_block_64>
+						</_field_block_64>
+					<_field_block_64 name="argb color properties">
+						<_field_string_id name="name" />
+						<_field_short_enum name="composition">
+							<Item Name="relative to current" />
+							<Item Name="absolute to screen" />
+							<Item Name="absolute to parent" />
+						</_field_short_enum>
+						<_field_char_enum name="ending type">
+							<Item Name="stopping" />
+							<Item Name="looping" />
+						</_field_char_enum>
+						<_field_pad name="generated_pad83f4" length="1" />
+						<_field_long_integer name="iteration count" />
+						<_field_long_integer name="total milliseconds" />
+						<_field_block_64 name="argb color keyframes">
+							<_field_long_integer name="duration" />
+							<_field_string_id name="resourceName" />
+							<_field_real_argb_color name="color" />
+							<_field_struct name="transition function">
+								<_field_custom name="scalar function" />
+								<_field_struct name="scalar function">
+									<_field_custom name="" />
+									<_field_data_64 name="data" />
+									<_field_custom name="" />
+									</_field_struct>
+								</_field_struct>
+							</_field_block_64>
+						</_field_block_64>
+					<_field_block_64 name="stringId properties">
+						<_field_string_id name="name" />
+						<_field_short_enum name="composition">
+							<Item Name="relative to current" />
+							<Item Name="absolute to screen" />
+							<Item Name="absolute to parent" />
+						</_field_short_enum>
+						<_field_char_enum name="ending type">
+							<Item Name="stopping" />
+							<Item Name="looping" />
+						</_field_char_enum>
+						<_field_pad name="generated_pad83f4" length="1" />
+						<_field_long_integer name="iteration count" />
+						<_field_long_integer name="total milliseconds" />
+						<_field_block_64 name="stringId keyframes">
+							<_field_long_integer name="duration" />
+							<_field_string_id name="resourceName" />
+							<_field_string_id name="stringId" />
+							</_field_block_64>
+						</_field_block_64>
+					<_field_pad name="generated_pad9eda" length="4" />
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="animated component lookup">
+				<_field_qword_integer name="component id" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="overlays editor only">
+			<_field_string_id name="resolution" />
+			<_field_string_id name="theme" />
+			<_field_byte_flags name="flags">
+				<Item Name="exclude overlay" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pade8bb" length="3" />
+			<_field_block_64 name="components editor only">
+				<_field_qword_integer name="component id" />
+				<_field_string_id name="name" />
+				<_field_block_64 name="properties editor only">
+					<_field_string_id name="name" />
+					<_field_byte_flags name="flags">
+						<Item Name="default value" />
+					</_field_byte_flags>
+					<_field_pad name="generated_padd370" length="3" />
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="animations editor only">
+				<_field_string_id name="name" />
+				<_field_block_64 name="components editor only">
+					<_field_qword_integer name="component id" />
+					<_field_string_id name="name" />
+					<_field_block_64 name="properties editor only">
+						<_field_string_id name="name" />
+						<_field_byte_flags name="flags">
+							<Item Name="default value" />
+						</_field_byte_flags>
+						<_field_pad name="generated_padd370" length="3" />
+						</_field_block_64>
+					</_field_block_64>
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="property bindings">
+			<_field_word_flags name="flags">
+				<Item Name="source is data context" />
+			</_field_word_flags>
+			<_field_short_enum name="conversion function">
+				<Item Name="none" />
+				<Item Name="negate bool" />
+				<Item Name="compare long" />
+			</_field_short_enum>
+			<_field_string_id name="source component typename" />
+			<_field_qword_integer name="source component id" />
+			<_field_string_id name="source component name" />
+			<_field_string_id name="source property name" />
+			<_field_qword_integer name="target component id" />
+			<_field_string_id name="target component name" />
+			<_field_string_id name="target property name" />
+			<_field_block_64 name="binding conversion long comparison">
+				<_field_char_enum name="comparison operator">
+					<Item Name="equality" />
+					<Item Name="inequality" />
+					<Item Name="less than" />
+					<Item Name="less than or equal" />
+					<Item Name="greater than or equal" />
+					<Item Name="greater than" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad0669" length="3" />
+				<_field_long_integer name="comparison value" />
+				</_field_block_64>
+			<_field_pad name="generated_padd9a1" length="4" />
+			</_field_block_64>
+		<_field_block_64 name="static data tables">
+			<_field_qword_integer name="definition id" />
+			<_field_string_id name="name" />
+			<_field_string_id name="mock data for component" />
+			<_field_struct name="static data">
+				<_field_block_64 name="columns">
+					<_field_string_id name="name" />
+					<_field_short_enum name="type">
+						<Item Name="boolean" />
+						<Item Name="long" />
+						<Item Name="real" />
+						<Item Name="string" />
+						<Item Name="component" />
+						<Item Name="tag reference" />
+						<Item Name="string id" />
+						<Item Name="argb color" />
+						<Item Name="emblem info" />
+					</_field_short_enum>
+					<_field_pad name="generated_pad3684" length="2" />
+					</_field_block_64>
+				<_field_block_64 name="rows">
+					<_field_block_64 name="long properties">
+						<_field_string_id name="name" />
+						<_field_string_id name="resourceName" />
+						<_field_long_integer name="value" />
+						</_field_block_64>
+					<_field_block_64 name="real properties">
+						<_field_string_id name="name" />
+						<_field_string_id name="resourceName" />
+						<_field_real name="value" />
+						</_field_block_64>
+					<_field_block_64 name="string_id properties">
+						<_field_string_id name="name" />
+						<_field_string_id name="resourceName" />
+						<_field_string_id name="value" />
+						</_field_block_64>
+					<_field_block_64 name="component ptr properties">
+						<_field_string_id name="name" />
+						<_field_string_id name="resourceName" />
+						<_field_qword_integer name="component id" />
+						<_field_string_id name="value" />
+						<_field_pad name="generated_padccc5" length="4" />
+						</_field_block_64>
+					<_field_block_64 name="tag reference properties">
+						<_field_string_id name="name" />
+						<_field_string_id name="resourceName" />
+						<_field_tag_reference_64 name="value" />
+						</_field_block_64>
+					<_field_block_64 name="string properties">
+						<_field_string_id name="name" />
+						<_field_string_id name="resourceName" />
+						<_field_long_string name="value" />
+						</_field_block_64>
+					<_field_block_64 name="argb color properties">
+						<_field_string_id name="name" />
+						<_field_string_id name="resourceName" />
+						<_field_real_argb_color name="value" />
+						</_field_block_64>
+					<_field_block_64 name="event handlers">
+						<_field_string_id name="event" />
+						<_field_string_id name="filter" />
+						<_field_string_id name="name" />
+						<_field_long_string name="action" />
+						</_field_block_64>
+					</_field_block_64>
+				</_field_struct>
+			</_field_block_64>
+		<_field_block_64 name="expressions">
+			<_field_qword_integer name="expression id" />
+			<_field_string_id name="name" />
+			<_field_long_string name="expression text" />
+			<_field_block_64 name="steps">
+				<_field_char_enum name="step type">
+					<Item Name="operator" />
+					<Item Name="variable" />
+					<Item Name="real value" />
+					<Item Name="string id value" />
+				</_field_char_enum>
+				<_field_char_enum name="operator">
+					<Item Name="add" />
+					<Item Name="subtract" />
+					<Item Name="multiply" />
+					<Item Name="divide" />
+					<Item Name="negate" />
+					<Item Name="not" />
+					<Item Name="less than" />
+					<Item Name="less than or equal to" />
+					<Item Name="greater than" />
+					<Item Name="greater than or equal to" />
+					<Item Name="equals" />
+					<Item Name="not equals" />
+					<Item Name="and" />
+					<Item Name="or" />
+					<Item Name="mod" />
+				</_field_char_enum>
+				<_field_char_enum name="variable">
+					<Item Name="variable a" />
+					<Item Name="variable b" />
+					<Item Name="variable c" />
+					<Item Name="variable d" />
+					<Item Name="variable e" />
+					<Item Name="variable f" />
+					<Item Name="variable g" />
+					<Item Name="variable h" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad656d" length="1" />
+				<_field_real name="value" />
+				<_field_string_id name="string id value" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="visual state groups">
+			<_field_string_id name="name" />
+			<_field_pad name="generated_pada5a8" length="4" />
+			<_field_qword_integer name="visual state group id" />
+			<_field_qword_integer name="context component id" />
+			<_field_block_64 name="visual states">
+				<_field_qword_integer name="visual state id" />
+				<_field_explanation name="Trigger Binding" />
+				<_field_struct name="Trigger Binding">
+					<_field_word_flags name="flags">
+						<Item Name="source is data context" />
+					</_field_word_flags>
+					<_field_short_enum name="conversion function">
+						<Item Name="none" />
+						<Item Name="negate bool" />
+						<Item Name="compare long" />
+					</_field_short_enum>
+					<_field_string_id name="source component typename" />
+					<_field_qword_integer name="source component id" />
+					<_field_string_id name="source component name" />
+					<_field_string_id name="source property name" />
+					<_field_qword_integer name="target component id" />
+					<_field_string_id name="target component name" />
+					<_field_string_id name="target property name" />
+					<_field_block_64 name="binding conversion long comparison">
+						<_field_char_enum name="comparison operator">
+							<Item Name="equality" />
+							<Item Name="inequality" />
+							<Item Name="less than" />
+							<Item Name="less than or equal" />
+							<Item Name="greater than or equal" />
+							<Item Name="greater than" />
+						</_field_char_enum>
+						<_field_pad name="generated_pad0669" length="3" />
+						<_field_long_integer name="comparison value" />
+						</_field_block_64>
+					<_field_pad name="generated_padd9a1" length="4" />
+					</_field_struct>
+				<_field_explanation name="Animation" />
+				<_field_struct name="Animation">
+					<_field_string_id name="name" />
+					<_field_real name="time base offset" />
+					<_field_real name="time exponential offset" />
+					<_field_char_enum name="animation input">
+						<Item Name="time" />
+						<Item Name="binding" />
+					</_field_char_enum>
+					<_field_pad name="generated_pad21f2" length="3" />
+					<_field_block_64 name="components">
+						<_field_qword_integer name="component id" />
+						<_field_string_id name="name" />
+						<_field_long_integer name="total milliseconds" />
+						<_field_block_64 name="real properties">
+							<_field_string_id name="name" />
+							<_field_short_enum name="composition">
+								<Item Name="relative to current" />
+								<Item Name="absolute to screen" />
+								<Item Name="absolute to parent" />
+							</_field_short_enum>
+							<_field_char_enum name="ending type">
+								<Item Name="stopping" />
+								<Item Name="looping" />
+							</_field_char_enum>
+							<_field_pad name="generated_pad83f4" length="1" />
+							<_field_long_integer name="iteration count" />
+							<_field_long_integer name="total milliseconds" />
+							<_field_block_64 name="real keyframes">
+								<_field_long_integer name="duration" />
+								<_field_string_id name="resourceName" />
+								<_field_real name="value" />
+								<_field_struct name="transition function">
+									<_field_custom name="scalar function" />
+									<_field_struct name="scalar function">
+										<_field_custom name="" />
+										<_field_data_64 name="data" />
+										<_field_custom name="" />
+										</_field_struct>
+									</_field_struct>
+								</_field_block_64>
+							</_field_block_64>
+						<_field_block_64 name="argb color properties">
+							<_field_string_id name="name" />
+							<_field_short_enum name="composition">
+								<Item Name="relative to current" />
+								<Item Name="absolute to screen" />
+								<Item Name="absolute to parent" />
+							</_field_short_enum>
+							<_field_char_enum name="ending type">
+								<Item Name="stopping" />
+								<Item Name="looping" />
+							</_field_char_enum>
+							<_field_pad name="generated_pad83f4" length="1" />
+							<_field_long_integer name="iteration count" />
+							<_field_long_integer name="total milliseconds" />
+							<_field_block_64 name="argb color keyframes">
+								<_field_long_integer name="duration" />
+								<_field_string_id name="resourceName" />
+								<_field_real_argb_color name="color" />
+								<_field_struct name="transition function">
+									<_field_custom name="scalar function" />
+									<_field_struct name="scalar function">
+										<_field_custom name="" />
+										<_field_data_64 name="data" />
+										<_field_custom name="" />
+										</_field_struct>
+									</_field_struct>
+								</_field_block_64>
+							</_field_block_64>
+						<_field_block_64 name="stringId properties">
+							<_field_string_id name="name" />
+							<_field_short_enum name="composition">
+								<Item Name="relative to current" />
+								<Item Name="absolute to screen" />
+								<Item Name="absolute to parent" />
+							</_field_short_enum>
+							<_field_char_enum name="ending type">
+								<Item Name="stopping" />
+								<Item Name="looping" />
+							</_field_char_enum>
+							<_field_pad name="generated_pad83f4" length="1" />
+							<_field_long_integer name="iteration count" />
+							<_field_long_integer name="total milliseconds" />
+							<_field_block_64 name="stringId keyframes">
+								<_field_long_integer name="duration" />
+								<_field_string_id name="resourceName" />
+								<_field_string_id name="stringId" />
+								</_field_block_64>
+							</_field_block_64>
+						<_field_pad name="generated_pad9eda" length="4" />
+						</_field_block_64>
+					</_field_struct>
+				<_field_pad name="generated_pad3137" length="4" />
+				</_field_block_64>
+			<_field_pad name="generated_padbf89" length="4" />
+			</_field_block_64>
+		<_field_block_64 name="pinned animations">
+			<_field_string_id name="animation name" />
+			<_field_pad name="generated_pad44ca" length="4" />
+			<_field_qword_integer name="visual state group id" />
+			<_field_qword_integer name="visual state id" />
+			<_field_qword_integer name="component id" />
+			<_field_real name="pin time" />
+			<_field_pad name="generated_pad917f" length="4" />
+			</_field_block_64>
+		<_field_block_64 name="visual state component lookup">
+			<_field_qword_integer name="component id" />
+			</_field_block_64>
+		<_field_tag_reference_64 name="sample data tag path" />
+		<_field_custom name="Telemetry Data" />
+		<_field_struct name="Telemetry Data">
+			<_field_byte_flags name="Should Track Telemetry">
+				<Item Name="enabled" />
+			</_field_byte_flags>
+			<_field_string name="Telemetry Category Name" />
+			<_field_string name="Telemetry Sub Category Name" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_char_enum name="Layout Type">
+			<Item Name="Res1080p" />
+			<Item Name="Res4k" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad6c61" length="2" />
+		</_field_struct>
+	<_field_tag_reference_64 name="script" />
+	<_field_string_id name="name" />
+	<_field_long_integer name="Object count budget" />
+	<_field_byte_flags name="Cui Screen Flags">
+		<Item Name="Force FullCanvas UI for SLAMS" />
+		<Item Name="Force Fixed Size UI" />
+	</_field_byte_flags>
+	<_field_pad name="generated_padbb46" length="3" />
+	</plugin>

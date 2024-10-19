@@ -1,0 +1,37 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Type Items">
+		<_field_char_enum name="Conversation Type">
+			<Item Name="Cinematic" />
+			<Item Name="CriticalScripted" />
+			<Item Name="CollectiblePlay" />
+			<Item Name="Alert" />
+			<Item Name="NoncriticalScripted" />
+			<Item Name="ProceedReminder" />
+			<Item Name="BespokeAivo" />
+			<Item Name="Background" />
+			<Item Name="BloodgateReminder" />
+			<Item Name="FobInteract" />
+			<Item Name="CollectibleAlert" />
+			<Item Name="Chain" />
+		</_field_char_enum>
+		<_field_pad name="generated_padc653" length="1" />
+		<_field_short_integer name="Priority" />
+		<_field_word_flags name="Flags">
+			<Item Name="forceDisruptsAllLowerPriority" />
+			<Item Name="beatsSamePriority" />
+			<Item Name="willNotBlockLowerPriority" />
+			<Item Name="notBlockedByHigherPriority" />
+			<Item Name="notInterruptedByHigherPriority" />
+			<Item Name="willNotInterruptLowerPriority" />
+			<Item Name="suppressDdsChatter" />
+		</_field_word_flags>
+		</_field_block_64>
+	<_field_pad name="generated_pad0e0f" length="4" />
+	</plugin>

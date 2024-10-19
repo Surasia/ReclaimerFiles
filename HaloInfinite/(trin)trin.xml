@@ -1,0 +1,166 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="placement">
+		<_field_struct name="Terrain Definition">
+			<_field_tag_reference_64 name="terrain system" />
+			<_field_struct name="Volume">
+				<_field_block_64 name="Points">
+					<_field_real_point_3d name="position" />
+					</_field_block_64>
+				<_field_real name="height" />
+				<_field_real name="sink" />
+				<_field_real_point_3d name="center point" />
+				<_field_real name="trivial cull radius squared" />
+				<_field_real_point_3d name="aabbCenter" />
+				<_field_real_point_3d name="aabbExtents" />
+				<_field_block_64 name="nativePoints2D">
+					<_field_real_point_2d name="point" />
+					</_field_block_64>
+				</_field_struct>
+			</_field_struct>
+		<_field_tag_reference_64 name="runtime terrain" />
+		<_field_block_64 name="EditorMetadata">
+			<_field_long_string name="folder name" />
+			<_field_real_point_3d name="local space pivot point position" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="splines">
+		<_field_string_id name="name" />
+		<_field_struct name="curve">
+			<_field_block_64 name="control points">
+				<_field_real_vector_3d name="value" />
+				<_field_real_vector_3d name="tangent in" />
+				<_field_real_vector_3d name="tangent out" />
+				<_field_real name="curviness" />
+				<_field_char_enum name="segment type x">
+					<Item Name="Spline" />
+					<Item Name="Linear" />
+					<Item Name="Stepped" />
+					<Item Name="SteppedNext" />
+				</_field_char_enum>
+				<_field_char_enum name="segment type y">
+					<Item Name="Spline" />
+					<Item Name="Linear" />
+					<Item Name="Stepped" />
+					<Item Name="SteppedNext" />
+				</_field_char_enum>
+				<_field_char_enum name="segment type z">
+					<Item Name="Spline" />
+					<Item Name="Linear" />
+					<Item Name="Stepped" />
+					<Item Name="SteppedNext" />
+				</_field_char_enum>
+				<_field_char_enum name="tangent mode x">
+					<Item Name="AutoStraight" />
+					<Item Name="UserStraight" />
+					<Item Name="UserBroken" />
+				</_field_char_enum>
+				<_field_char_enum name="tangent mode y">
+					<Item Name="AutoStraight" />
+					<Item Name="UserStraight" />
+					<Item Name="UserBroken" />
+				</_field_char_enum>
+				<_field_char_enum name="tangent mode z">
+					<Item Name="AutoStraight" />
+					<Item Name="UserStraight" />
+					<Item Name="UserBroken" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad30cd" length="2" />
+				<_field_block_64 name="pointMetadata">
+					<_field_block_64 name="spline road metadata">
+						<_field_real name="width" />
+						<_field_real name="opacity" />
+						<_field_real name="falloffLeft" />
+						<_field_real name="falloffRight" />
+						<_field_real name="bank" />
+						</_field_block_64>
+					<_field_block_64 name="road decal metadata">
+						<_field_block_64 name="Road Decal Textures">
+							<_field_tag_reference_64 name="Reference" />
+							</_field_block_64>
+						<_field_real_vector_2d name="Road Decal Scale" />
+						<_field_real_vector_2d name="Road Decal Offset" />
+						<_field_real name="Road Decal Tile Repeat Count" />
+						<_field_real name="Road Decal Height Strength" />
+						<_field_real name="Road Decal Mask Strength" />
+						<_field_real name="Road Decal Height Contrast" />
+						<_field_real name="Road Decal Mask Contrast" />
+						<_field_real name="Road Decal Edge Fade" />
+						<_field_long_integer name="Road Decal Random Seed" />
+						</_field_block_64>
+					<_field_block_64 name="animated spline metadata">
+						<_field_real name="Time" />
+						</_field_block_64>
+					</_field_block_64>
+				</_field_block_64>
+			</_field_struct>
+		<_field_block_64 name="SplineMetadata">
+			<_field_block_64 name="spline road metadata">
+				<_field_real name="width" />
+				<_field_real name="opacity" />
+				<_field_real name="falloffLeft" />
+				<_field_real name="falloffRight" />
+				<_field_real name="bank" />
+				<_field_short_integer name="subdivision count" />
+				<_field_pad name="generated_pad6df6" length="2" />
+				<_field_block_64 name="Road Decal Metadata">
+					<_field_block_64 name="Road Decal Textures">
+						<_field_tag_reference_64 name="Reference" />
+						</_field_block_64>
+					<_field_real_vector_2d name="Road Decal Scale" />
+					<_field_real_vector_2d name="Road Decal Offset" />
+					<_field_real name="Road Decal Tile Repeat Count" />
+					<_field_real name="Road Decal Height Strength" />
+					<_field_real name="Road Decal Mask Strength" />
+					<_field_real name="Road Decal Height Contrast" />
+					<_field_real name="Road Decal Mask Contrast" />
+					<_field_real name="Road Decal Edge Fade" />
+					<_field_long_integer name="Road Decal Random Seed" />
+					</_field_block_64>
+				<_field_tag_reference_64 name="terrain system" />
+				</_field_block_64>
+			<_field_block_64 name="spline flight path metadata">
+				<_field_real_fraction name="Preference" />
+				<_field_byte_integer name="Lines per spline segment" />
+				<_field_pad name="generated_padfb3b" length="3" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="EditorMetadata">
+			<_field_long_string name="folder name" />
+			<_field_real_point_3d name="local space pivot point position" />
+			</_field_block_64>
+		<_field_long_integer name="Guid" />
+		</_field_block_64>
+	<_field_block_64 name="terrain volumes">
+		<_field_string_id name="Name" />
+		<_field_struct name="Terrain Definition">
+			<_field_tag_reference_64 name="terrain system" />
+			<_field_struct name="Volume">
+				<_field_block_64 name="Points">
+					<_field_real_point_3d name="position" />
+					</_field_block_64>
+				<_field_real name="height" />
+				<_field_real name="sink" />
+				<_field_real_point_3d name="center point" />
+				<_field_real name="trivial cull radius squared" />
+				<_field_real_point_3d name="aabbCenter" />
+				<_field_real_point_3d name="aabbExtents" />
+				<_field_block_64 name="nativePoints2D">
+					<_field_real_point_2d name="point" />
+					</_field_block_64>
+				</_field_struct>
+			</_field_struct>
+		<_field_long_integer name="Volume Composition Order" />
+		<_field_block_64 name="EditorMetadata">
+			<_field_long_string name="folder name" />
+			<_field_real_point_3d name="local space pivot point position" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_pad name="generated_pad0b59" length="4" />
+	</plugin>

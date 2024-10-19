@@ -1,0 +1,44 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Points">
+		<_field_word_flags name="Flags">
+			<Item Name="Ignore X" />
+			<Item Name="Ignore Y" />
+			<Item Name="Ignore Z" />
+			<Item Name="Ignore Yaw" />
+			<Item Name="Ignore Pitch" />
+			<Item Name="Ignore Roll" />
+			<Item Name="Use Bounding Sphere Center" />
+			<Item Name="Put Z-Axis At Floor" />
+			<Item Name="Sample Once" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad7a22" length="2" />
+		<_field_string_id name="name" />
+		<_field_char_enum name="offsetType">
+			<Item Name="Local" />
+			<Item Name="Location" />
+			<Item Name="World" />
+			<Item Name="Orbit" />
+			<Item Name="LocalWithCenter" />
+			<Item Name="WindDirection" />
+		</_field_char_enum>
+		<_field_pad name="generated_padc6d7" length="3" />
+		<_field_real_vector_3d name="offsetPosition" />
+		<_field_real_euler_angles_3d name="offsetRotation" />
+		<_field_char_enum name="locationType">
+			<Item Name="None" />
+			<Item Name="Marker" />
+			<Item Name="Bone" />
+			<Item Name="FPS" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad138c" length="3" />
+		<_field_string_id name="locationName" />
+		</_field_block_64>
+	<_field_pad name="generated_pad90a9" length="4" />
+	</plugin>

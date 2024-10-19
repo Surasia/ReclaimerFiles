@@ -1,0 +1,48 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="Global timing" />
+	<_field_real_bounds name="strike delay bounds" />
+	<_field_real name="remind delay" />
+	<_field_real name="post combat results wait time" />
+	<_field_real name="grapple hook pull delay time" />
+	<_field_real name="player shoot min interval" />
+	<_field_real name="actor shoot min interval" />
+	<_field_real name="cover curse chance" />
+	<_field_real name="2D speaker duration buffer" />
+	<_field_explanation name="Player look settings" />
+	<_field_real name="player look max distance" />
+	<_field_real name="player look" />
+	<_field_real name="player look long time" />
+	<_field_explanation name="Spartan nearby search distance" />
+	<_field_real name="spartan nearby search distance" />
+	<_field_explanation name="Face friendly player distance" />
+	<_field_real name="face friendly player distance" />
+	<_field_explanation name="Space dialogue effect" />
+	<_field_string_id name="space dialogue effect" />
+	<_field_explanation name="Speaker distance restrictions" />
+	<_field_real name="max respond distance" />
+	<_field_real name="max respond distance in space" />
+	<_field_explanation name="Pattern selection ranges" />
+	<_field_real name="speaker max delta" />
+	<_field_real name="pattern max delta" />
+	<_field_explanation name="Danger Level thresholds" />
+	<_field_real name="player shield damage threshold" />
+	<_field_real name="player body damage threshold" />
+	<_field_explanation name="Subtitles" />
+	<_field_real name="max player distance" />
+	<_field_explanation name="Default stimulus suppressors" />
+	<_field_block_64 name="default stimulus suppressors">
+		<_field_string_id name="stimulus" />
+		</_field_block_64>
+	<_field_explanation name="Dialogue System Data Tags" />
+	<_field_block_64 name="DSD tags">
+		<_field_tag_reference_64 name="dialogue_system_data tag" />
+		</_field_block_64>
+	<_field_int64_integer name="runtime dialogue system data" />
+	</plugin>

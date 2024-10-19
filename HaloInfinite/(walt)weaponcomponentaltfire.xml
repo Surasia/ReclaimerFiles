@@ -1,0 +1,64 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_byte_flags name="alt-fire flags">
+		<Item Name="outline locked targets" />
+		<Item Name="transition animation uses motor action" />
+	</_field_byte_flags>
+	<_field_pad name="generated_pada038" length="3" />
+	<_field_tag_reference_64 name="target tracking outline" />
+	<_field_real name="alt-fire animation transition in time" />
+	<_field_real name="alt-fire animation transition out time" />
+	<_field_real name="weapon fov scale" />
+	<_field_real_point_3d name="alt-fire translation offset" />
+	<_field_explanation name="alt-fire percent to offset percent" />
+	<_field_struct name="alt-fire percent to offset percent">
+		<_field_custom name="function" />
+		<_field_struct name="function">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_string_id name="alt-fire animation mode" />
+	<_field_block_64 name="recoil view kick modifiers">
+		<_field_real name="view kick deceleration modifier" />
+		<_field_real name="view kick return to center modifier" />
+		</_field_block_64>
+	<_field_block_64 name="recoil gunkick modifiers">
+		<_field_real name="gunkick spring constant modifier" />
+		</_field_block_64>
+	<_field_block_64 name="heat modifiers">
+		<_field_real name="heat loss per second modifier" />
+		<_field_real name="overheated heat loss per second modifier" />
+		<_field_real name="heat generated per round modifier" />
+		</_field_block_64>
+	<_field_block_64 name="aim assist modifiers">
+		<_field_real name="autoaim angle" />
+		<_field_real name="prioritization angle" />
+		<_field_real name="autoaim range" />
+		<_field_real name="autoaim falloff range" />
+		<_field_real name="autoaim near falloff range" />
+		<_field_real name="magnetism angle" />
+		<_field_real name="magnetism range" />
+		<_field_real name="magnetism falloff range" />
+		<_field_real name="magnetism near falloff range" />
+		<_field_real name="deviation angle" />
+		</_field_block_64>
+	<_field_block_64 name="accuracy modifiers">
+		<_field_real name="accuracy spread" />
+		</_field_block_64>
+	<_field_block_64 name="unit modifiers">
+		<_field_real name="move speed scale modifier" />
+		<_field_real name="turn rate scale modifier" />
+		<_field_real name="simulated input scale modifier" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="activate sound" />
+	<_field_tag_reference_64 name="deactivate sound" />
+	<_field_pad name="generated_padba19" length="4" />
+	</plugin>

@@ -1,0 +1,104 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_angle_bounds name="gunkick yaw mapping bounds" />
+	<_field_struct name="gunkick yaw to roll">
+		<_field_custom name="function" />
+		<_field_struct name="function">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_angle_bounds name="viewkick yaw mapping bounds" />
+	<_field_struct name="viewkick yaw to roll">
+		<_field_custom name="function" />
+		<_field_struct name="function">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_real name="max player additive velocity for flag throw" />
+	<_field_real name="descope magnetism transition time" />
+	<_field_struct name="descope magnetism transition">
+		<_field_custom name="function" />
+		<_field_struct name="function">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="flag throw forward additive velocity ">
+		<_field_custom name="function" />
+		<_field_struct name="function">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="flag throw backward additive velocity ">
+		<_field_custom name="function" />
+		<_field_struct name="function">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="flag throw pitch">
+		<_field_custom name="function" />
+		<_field_struct name="function">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="ads reticle movement thresholds">
+		<_field_string name="ads reticle movement threshold name" />
+		<_field_angle name="ads reticle movement threshold angle" />
+		<_field_real_rgb_color name="ads reticle movement threshold color" />
+		</_field_block_64>
+	<_field_byte_flags name="suppression flags">
+		<Item Name="supppression zeros aim assist cones" />
+	</_field_byte_flags>
+	<_field_pad name="generated_pad7ec6" length="3" />
+	<_field_block_64 name="First Person Weapon Offset Controls">
+		<_field_short_enum name="First Person Weapon Group">
+			<Item Name="Undefined" />
+			<Item Name="Melee" />
+			<Item Name="Pistols" />
+			<Item Name="Rifles" />
+			<Item Name="Heavy" />
+		</_field_short_enum>
+		<_field_pad name="generated_padfc06" length="2" />
+		<_field_string_id name="Weapon Group Header String" />
+		<_field_real_bounds name="Depth Offset Bounds" />
+		<_field_real_bounds name="Horizontal Offset Bounds" />
+		<_field_real_bounds name="Vertical Offset Bounds" />
+		<_field_real_vector_3d name="Maximum Computed Offset Extents" />
+		<_field_byte_flags name="Depth Axis Flags">
+			<Item Name="Inverted Axis" />
+		</_field_byte_flags>
+		<_field_byte_flags name="Horizontal Axis Flags">
+			<Item Name="Inverted Axis" />
+		</_field_byte_flags>
+		<_field_byte_flags name="Vertical Axis Flags">
+			<Item Name="Inverted Axis" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad48bb" length="1" />
+		</_field_block_64>
+	<_field_array name="First Person Weapon Offset Controls Index Cache">
+		<_field_long_integer name="Index" />
+		<_field_long_integer name="Index" />
+		<_field_long_integer name="Index" />
+		<_field_long_integer name="Index" />
+		<_field_long_integer name="Index" />
+		</_field_array>
+	<_field_real name="game options - weapon offset scaling factor" />
+	<_field_pad name="generated_padcb7b" length="4" />
+	</plugin>

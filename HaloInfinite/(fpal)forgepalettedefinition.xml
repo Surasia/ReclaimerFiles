@@ -1,0 +1,18 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="Parent Palette" />
+	<_field_string_id name="Name" />
+	<_field_string_id name="Description" />
+	<_field_real name="Placement Priority" />
+	<_field_word_flags name="Flags">
+		<Item Name="is inline" />
+		<Item Name="is internal only" />
+	</_field_word_flags>
+	<_field_pad name="generated_paddd1c" length="6" />
+	</plugin>

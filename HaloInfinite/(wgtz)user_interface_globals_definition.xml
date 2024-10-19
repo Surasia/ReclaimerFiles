@@ -1,0 +1,365 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="Screen Widgets" />
+	<_field_block_64 name="node graphs">
+		<_field_tag_reference_64 name="node graph tag" />
+		</_field_block_64>
+	<_field_block_64 name="bitmap dictionaries">
+		<_field_tag_reference_64 name="bitmap dictionary" />
+		</_field_block_64>
+	<_field_explanation name="Lua User Libraries" />
+	<_field_block_64 name="lua user libraries">
+		<_field_tag_reference_64 name="lua library" />
+		</_field_block_64>
+	<_field_block_64 name="cui screen widgets">
+		<_field_string_id name="name" />
+		<_field_tag_reference_64 name="cui screen tag" />
+		</_field_block_64>
+	<_field_block_64 name="cui overlay cameras">
+		<_field_string_id name="resolution name" />
+		<_field_char_enum name="pivot corner">
+			<Item Name="top left" />
+			<Item Name="top right" />
+			<Item Name="bottom right" />
+			<Item Name="bottom left" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad630c" length="3" />
+		<_field_real name="Z near" />
+		<_field_real name="Z far" />
+		<_field_real name="X angle degrees" />
+		<_field_real name="Y angle degrees" />
+		</_field_block_64>
+	<_field_real name="spawn-timer countdown rate" />
+	<_field_block_64 name="game intro sequence">
+		<_field_byte_flags name="flags">
+			<Item Name="show loadout menu" />
+			<Item Name="loadout menu close ends sequence" />
+			<Item Name="show scoreboard" />
+			<Item Name="show hud" />
+			<Item Name="show final kill cam" />
+			<Item Name="Hide UI for Observers" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad4325" length="3" />
+		<_field_long_enum name="allowedVariants">
+			<Item Name="all" />
+			<Item Name="team" />
+			<Item Name="free-for-all" />
+		</_field_long_enum>
+		<_field_string_id name="Start Hui Event" />
+		<_field_string_id name="End Hui Event" />
+		<_field_string name="MP Game Event" />
+		<_field_string name="Server Lua Function" />
+		<_field_string name="Client Lua Function" />
+		<_field_real name="startTime" />
+		<_field_real name="endTime" />
+		</_field_block_64>
+	<_field_block_64 name="game round end sequence">
+		<_field_byte_flags name="flags">
+			<Item Name="show loadout menu" />
+			<Item Name="loadout menu close ends sequence" />
+			<Item Name="show scoreboard" />
+			<Item Name="show hud" />
+			<Item Name="show final kill cam" />
+			<Item Name="Hide UI for Observers" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad4325" length="3" />
+		<_field_long_enum name="allowedVariants">
+			<Item Name="all" />
+			<Item Name="team" />
+			<Item Name="free-for-all" />
+		</_field_long_enum>
+		<_field_string_id name="Start Hui Event" />
+		<_field_string_id name="End Hui Event" />
+		<_field_string name="MP Game Event" />
+		<_field_string name="Server Lua Function" />
+		<_field_string name="Client Lua Function" />
+		<_field_real name="startTime" />
+		<_field_real name="endTime" />
+		</_field_block_64>
+	<_field_block_64 name="game round end with killcam sequence">
+		<_field_byte_flags name="flags">
+			<Item Name="show loadout menu" />
+			<Item Name="loadout menu close ends sequence" />
+			<Item Name="show scoreboard" />
+			<Item Name="show hud" />
+			<Item Name="show final kill cam" />
+			<Item Name="Hide UI for Observers" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad4325" length="3" />
+		<_field_long_enum name="allowedVariants">
+			<Item Name="all" />
+			<Item Name="team" />
+			<Item Name="free-for-all" />
+		</_field_long_enum>
+		<_field_string_id name="Start Hui Event" />
+		<_field_string_id name="End Hui Event" />
+		<_field_string name="MP Game Event" />
+		<_field_string name="Server Lua Function" />
+		<_field_string name="Client Lua Function" />
+		<_field_real name="startTime" />
+		<_field_real name="endTime" />
+		</_field_block_64>
+	<_field_block_64 name="game next round sequence">
+		<_field_byte_flags name="flags">
+			<Item Name="show loadout menu" />
+			<Item Name="loadout menu close ends sequence" />
+			<Item Name="show scoreboard" />
+			<Item Name="show hud" />
+			<Item Name="show final kill cam" />
+			<Item Name="Hide UI for Observers" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad4325" length="3" />
+		<_field_long_enum name="allowedVariants">
+			<Item Name="all" />
+			<Item Name="team" />
+			<Item Name="free-for-all" />
+		</_field_long_enum>
+		<_field_string_id name="Start Hui Event" />
+		<_field_string_id name="End Hui Event" />
+		<_field_string name="MP Game Event" />
+		<_field_string name="Server Lua Function" />
+		<_field_string name="Client Lua Function" />
+		<_field_real name="startTime" />
+		<_field_real name="endTime" />
+		</_field_block_64>
+	<_field_block_64 name="game end sequence">
+		<_field_byte_flags name="flags">
+			<Item Name="show loadout menu" />
+			<Item Name="loadout menu close ends sequence" />
+			<Item Name="show scoreboard" />
+			<Item Name="show hud" />
+			<Item Name="show final kill cam" />
+			<Item Name="Hide UI for Observers" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad4325" length="3" />
+		<_field_long_enum name="allowedVariants">
+			<Item Name="all" />
+			<Item Name="team" />
+			<Item Name="free-for-all" />
+		</_field_long_enum>
+		<_field_string_id name="Start Hui Event" />
+		<_field_string_id name="End Hui Event" />
+		<_field_string name="MP Game Event" />
+		<_field_string name="Server Lua Function" />
+		<_field_string name="Client Lua Function" />
+		<_field_real name="startTime" />
+		<_field_real name="endTime" />
+		</_field_block_64>
+	<_field_block_64 name="game end with killcam sequence">
+		<_field_byte_flags name="flags">
+			<Item Name="show loadout menu" />
+			<Item Name="loadout menu close ends sequence" />
+			<Item Name="show scoreboard" />
+			<Item Name="show hud" />
+			<Item Name="show final kill cam" />
+			<Item Name="Hide UI for Observers" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad4325" length="3" />
+		<_field_long_enum name="allowedVariants">
+			<Item Name="all" />
+			<Item Name="team" />
+			<Item Name="free-for-all" />
+		</_field_long_enum>
+		<_field_string_id name="Start Hui Event" />
+		<_field_string_id name="End Hui Event" />
+		<_field_string name="MP Game Event" />
+		<_field_string name="Server Lua Function" />
+		<_field_string name="Client Lua Function" />
+		<_field_real name="startTime" />
+		<_field_real name="endTime" />
+		</_field_block_64>
+	<_field_block_64 name="in game sequence">
+		<_field_byte_flags name="flags">
+			<Item Name="show loadout menu" />
+			<Item Name="loadout menu close ends sequence" />
+			<Item Name="show scoreboard" />
+			<Item Name="show hud" />
+			<Item Name="show final kill cam" />
+			<Item Name="Hide UI for Observers" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad4325" length="3" />
+		<_field_long_enum name="allowedVariants">
+			<Item Name="all" />
+			<Item Name="team" />
+			<Item Name="free-for-all" />
+		</_field_long_enum>
+		<_field_string_id name="Start Hui Event" />
+		<_field_string_id name="End Hui Event" />
+		<_field_string name="MP Game Event" />
+		<_field_string name="Server Lua Function" />
+		<_field_string name="Client Lua Function" />
+		<_field_real name="startTime" />
+		<_field_real name="endTime" />
+		</_field_block_64>
+	<_field_block_64 name="halftime sequence">
+		<_field_byte_flags name="flags">
+			<Item Name="show loadout menu" />
+			<Item Name="loadout menu close ends sequence" />
+			<Item Name="show scoreboard" />
+			<Item Name="show hud" />
+			<Item Name="show final kill cam" />
+			<Item Name="Hide UI for Observers" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad4325" length="3" />
+		<_field_long_enum name="allowedVariants">
+			<Item Name="all" />
+			<Item Name="team" />
+			<Item Name="free-for-all" />
+		</_field_long_enum>
+		<_field_string_id name="Start Hui Event" />
+		<_field_string_id name="End Hui Event" />
+		<_field_string name="MP Game Event" />
+		<_field_string name="Server Lua Function" />
+		<_field_string name="Client Lua Function" />
+		<_field_real name="startTime" />
+		<_field_real name="endTime" />
+		</_field_block_64>
+	<_field_block_64 name="overtime sequence">
+		<_field_byte_flags name="flags">
+			<Item Name="show loadout menu" />
+			<Item Name="loadout menu close ends sequence" />
+			<Item Name="show scoreboard" />
+			<Item Name="show hud" />
+			<Item Name="show final kill cam" />
+			<Item Name="Hide UI for Observers" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad4325" length="3" />
+		<_field_long_enum name="allowedVariants">
+			<Item Name="all" />
+			<Item Name="team" />
+			<Item Name="free-for-all" />
+		</_field_long_enum>
+		<_field_string_id name="Start Hui Event" />
+		<_field_string_id name="End Hui Event" />
+		<_field_string name="MP Game Event" />
+		<_field_string name="Server Lua Function" />
+		<_field_string name="Client Lua Function" />
+		<_field_real name="startTime" />
+		<_field_real name="endTime" />
+		</_field_block_64>
+	<_field_block_64 name="map intro sequence">
+		<_field_byte_flags name="flags">
+			<Item Name="show loadout menu" />
+			<Item Name="loadout menu close ends sequence" />
+			<Item Name="show scoreboard" />
+			<Item Name="show hud" />
+			<Item Name="show final kill cam" />
+			<Item Name="Hide UI for Observers" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad4325" length="3" />
+		<_field_long_enum name="allowedVariants">
+			<Item Name="all" />
+			<Item Name="team" />
+			<Item Name="free-for-all" />
+		</_field_long_enum>
+		<_field_string_id name="Start Hui Event" />
+		<_field_string_id name="End Hui Event" />
+		<_field_string name="MP Game Event" />
+		<_field_string name="Server Lua Function" />
+		<_field_string name="Client Lua Function" />
+		<_field_real name="startTime" />
+		<_field_real name="endTime" />
+		</_field_block_64>
+	<_field_block_64 name="player intro sequence">
+		<_field_byte_flags name="flags">
+			<Item Name="show loadout menu" />
+			<Item Name="loadout menu close ends sequence" />
+			<Item Name="show scoreboard" />
+			<Item Name="show hud" />
+			<Item Name="show final kill cam" />
+			<Item Name="Hide UI for Observers" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad4325" length="3" />
+		<_field_long_enum name="allowedVariants">
+			<Item Name="all" />
+			<Item Name="team" />
+			<Item Name="free-for-all" />
+		</_field_long_enum>
+		<_field_string_id name="Start Hui Event" />
+		<_field_string_id name="End Hui Event" />
+		<_field_string name="MP Game Event" />
+		<_field_string name="Server Lua Function" />
+		<_field_string name="Client Lua Function" />
+		<_field_real name="startTime" />
+		<_field_real name="endTime" />
+		</_field_block_64>
+	<_field_block_64 name="team intro sequence">
+		<_field_byte_flags name="flags">
+			<Item Name="show loadout menu" />
+			<Item Name="loadout menu close ends sequence" />
+			<Item Name="show scoreboard" />
+			<Item Name="show hud" />
+			<Item Name="show final kill cam" />
+			<Item Name="Hide UI for Observers" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad4325" length="3" />
+		<_field_long_enum name="allowedVariants">
+			<Item Name="all" />
+			<Item Name="team" />
+			<Item Name="free-for-all" />
+		</_field_long_enum>
+		<_field_string_id name="Start Hui Event" />
+		<_field_string_id name="End Hui Event" />
+		<_field_string name="MP Game Event" />
+		<_field_string name="Server Lua Function" />
+		<_field_string name="Client Lua Function" />
+		<_field_real name="startTime" />
+		<_field_real name="endTime" />
+		</_field_block_64>
+	<_field_block_64 name="team regroup sequence">
+		<_field_byte_flags name="flags">
+			<Item Name="show loadout menu" />
+			<Item Name="loadout menu close ends sequence" />
+			<Item Name="show scoreboard" />
+			<Item Name="show hud" />
+			<Item Name="show final kill cam" />
+			<Item Name="Hide UI for Observers" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad4325" length="3" />
+		<_field_long_enum name="allowedVariants">
+			<Item Name="all" />
+			<Item Name="team" />
+			<Item Name="free-for-all" />
+		</_field_long_enum>
+		<_field_string_id name="Start Hui Event" />
+		<_field_string_id name="End Hui Event" />
+		<_field_string name="MP Game Event" />
+		<_field_string name="Server Lua Function" />
+		<_field_string name="Client Lua Function" />
+		<_field_real name="startTime" />
+		<_field_real name="endTime" />
+		</_field_block_64>
+	<_field_block_64 name="team outro sequence">
+		<_field_byte_flags name="flags">
+			<Item Name="show loadout menu" />
+			<Item Name="loadout menu close ends sequence" />
+			<Item Name="show scoreboard" />
+			<Item Name="show hud" />
+			<Item Name="show final kill cam" />
+			<Item Name="Hide UI for Observers" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad4325" length="3" />
+		<_field_long_enum name="allowedVariants">
+			<Item Name="all" />
+			<Item Name="team" />
+			<Item Name="free-for-all" />
+		</_field_long_enum>
+		<_field_string_id name="Start Hui Event" />
+		<_field_string_id name="End Hui Event" />
+		<_field_string name="MP Game Event" />
+		<_field_string name="Server Lua Function" />
+		<_field_string name="Client Lua Function" />
+		<_field_real name="startTime" />
+		<_field_real name="endTime" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="HUD globals" />
+	<_field_long_integer name="Total object count budget" />
+	<_field_tag_reference_64 name="In-Game Map Settings Tag" />
+	<_field_pad name="generated_pad86bd" length="4" />
+	</plugin>

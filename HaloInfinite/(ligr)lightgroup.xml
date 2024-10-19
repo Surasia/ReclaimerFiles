@@ -1,0 +1,107 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="Fadeoff distance multiplier" />
+	<_field_struct name="fadeoff_distance_multiplier">
+		<_field_real_bounds name="Low" />
+		<_field_real_bounds name="Medium" />
+		<_field_real_bounds name="High" />
+		<_field_real_bounds name="Ultra" />
+		<_field_real name="2 Player Splitscreen" />
+		<_field_real name="3 Player Splitscreen" />
+		<_field_real name="4 Player Splitscreen" />
+		</_field_struct>
+	<_field_explanation name="Near Fadeoff distance multiplier" />
+	<_field_struct name="near_fadeoff_distance_multiplier">
+		<_field_real_bounds name="Low" />
+		<_field_real_bounds name="Medium" />
+		<_field_real_bounds name="High" />
+		<_field_real_bounds name="Ultra" />
+		<_field_real name="2 Player Splitscreen" />
+		<_field_real name="3 Player Splitscreen" />
+		<_field_real name="4 Player Splitscreen" />
+		</_field_struct>
+	<_field_explanation name="Static Object Shadow Fade" />
+	<_field_struct name="static_object_shadow_fade">
+		<_field_real_bounds name="Low" />
+		<_field_real_bounds name="Medium" />
+		<_field_real_bounds name="High" />
+		<_field_real_bounds name="Ultra" />
+		<_field_real name="2 Player Splitscreen" />
+		<_field_real name="3 Player Splitscreen" />
+		<_field_real name="4 Player Splitscreen" />
+		</_field_struct>
+	<_field_explanation name="Dynamic Object Shadow Fade" />
+	<_field_struct name="dynamic_object_shadow_fade">
+		<_field_real_bounds name="Low" />
+		<_field_real_bounds name="Medium" />
+		<_field_real_bounds name="High" />
+		<_field_real_bounds name="Ultra" />
+		<_field_real name="2 Player Splitscreen" />
+		<_field_real name="3 Player Splitscreen" />
+		<_field_real name="4 Player Splitscreen" />
+		</_field_struct>
+	<_field_explanation name="Cast Shadows" />
+	<_field_struct name="cast_shadows">
+		<_field_word_flags name="Flags">
+			<Item Name="low" />
+			<Item Name="medium" />
+			<Item Name="high" />
+			<Item Name="ultra" />
+		</_field_word_flags>
+		</_field_struct>
+	<_field_explanation name="Dynamic Object Shadow Casting" />
+	<_field_struct name="dynamic_object_shadow_casting">
+		<_field_word_flags name="Flags">
+			<Item Name="low" />
+			<Item Name="medium" />
+			<Item Name="high" />
+			<Item Name="ultra" />
+		</_field_word_flags>
+		</_field_struct>
+	<_field_explanation name="Static Shadow Resolution Multiplier" />
+	<_field_struct name="static_shadow_resolution_multiplier">
+		<_field_real name="Low" />
+		<_field_real name="Medium" />
+		<_field_real name="High" />
+		<_field_real name="Ultra" />
+		<_field_real name="2 Player Splitscreen" />
+		<_field_real name="3 Player Splitscreen" />
+		<_field_real name="4 Player Splitscreen" />
+		</_field_struct>
+	<_field_explanation name="Dynamic Shadow Resolution Multiplier" />
+	<_field_struct name="dynamic_shadow_resolution_multiplier">
+		<_field_real name="Low" />
+		<_field_real name="Medium" />
+		<_field_real name="High" />
+		<_field_real name="Ultra" />
+		<_field_real name="2 Player Splitscreen" />
+		<_field_real name="3 Player Splitscreen" />
+		<_field_real name="4 Player Splitscreen" />
+		</_field_struct>
+	<_field_explanation name="Shadow Filter Width Multiplier" />
+	<_field_struct name="shadow_filter_width_multiplier">
+		<_field_real name="Low" />
+		<_field_real name="Medium" />
+		<_field_real name="High" />
+		<_field_real name="Ultra" />
+		<_field_real name="2 Player Splitscreen" />
+		<_field_real name="3 Player Splitscreen" />
+		<_field_real name="4 Player Splitscreen" />
+		</_field_struct>
+	<_field_explanation name="Cast Contact Shadows" />
+	<_field_struct name="cast_contact_shadows">
+		<_field_word_flags name="Flags">
+			<Item Name="low" />
+			<Item Name="medium" />
+			<Item Name="high" />
+			<Item Name="ultra" />
+		</_field_word_flags>
+		</_field_struct>
+	<_field_pad name="generated_pad133b" length="6" />
+	</plugin>

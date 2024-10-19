@@ -1,0 +1,27 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_string_id name="name" />
+	<_field_block_64 name="axisEndpoints">
+		<_field_string_id name="name" />
+		<_field_struct name="axis">
+			<_field_tag_reference_64 name="bundle" />
+			<_field_string_id name="axis" />
+			<_field_byte_integer name="axisIndex" />
+			<_field_pad name="generated_pad6600" length="3" />
+			</_field_struct>
+		</_field_block_64>
+	<_field_block_64 name="bundleEndpoints">
+		<_field_string_id name="name" />
+		<_field_tag_reference_64 name="bundle" />
+		</_field_block_64>
+	<_field_block_64 name="modeEndpoints">
+		<_field_string_id name="name" />
+		<_field_tag_reference_64 name="mode" />
+		</_field_block_64>
+	</plugin>

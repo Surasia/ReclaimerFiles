@@ -1,0 +1,70 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="FADE OUT FROM GAME" />
+	<_field_struct name="Fade Out From Game">
+		<_field_byte_flags name="Flags">
+			<Item Name="Active" />
+			<Item Name="Override similar existing transition" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad569d" length="1" />
+		<_field_short_integer name="Fade Hold" />
+		<_field_long_integer name="Fade Time" />
+		<_field_real_rgb_color name="Fade Color" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="FADE IN" />
+	<_field_struct name="Fade In">
+		<_field_byte_flags name="Flags">
+			<Item Name="Active" />
+			<Item Name="Override similar existing transition" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad569d" length="1" />
+		<_field_short_integer name="Fade Hold" />
+		<_field_long_integer name="Fade Time" />
+		<_field_real_rgb_color name="Fade Color" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="FADE OUT" />
+	<_field_struct name="Fade Out">
+		<_field_byte_flags name="Flags">
+			<Item Name="Active" />
+			<Item Name="Override similar existing transition" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad569d" length="1" />
+		<_field_short_integer name="Fade Hold" />
+		<_field_long_integer name="Fade Time" />
+		<_field_real_rgb_color name="Fade Color" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="FADE POST LOAD" />
+	<_field_struct name="Fade Post Load">
+		<_field_byte_flags name="Flags">
+			<Item Name="Active" />
+			<Item Name="Override similar existing transition" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad569d" length="1" />
+		<_field_short_integer name="Fade Hold" />
+		<_field_long_integer name="Fade Time" />
+		<_field_real_rgb_color name="Fade Color" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="FADE IN TO GAME" />
+	<_field_struct name="Fade In To Game">
+		<_field_byte_flags name="Flags">
+			<Item Name="Active" />
+			<Item Name="Override similar existing transition" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad569d" length="1" />
+		<_field_short_integer name="Fade Hold" />
+		<_field_long_integer name="Fade Time" />
+		<_field_real_rgb_color name="Fade Color" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_pad name="generated_padb275" length="4" />
+	</plugin>

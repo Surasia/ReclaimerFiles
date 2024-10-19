@@ -1,0 +1,103 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_string_id name="name" />
+	<_field_long_enum name="transform method">
+		<Item Name="Default 2D" />
+		<Item Name="Object Marker 3D" />
+		<Item Name="Primary Weapon Marker 3D" />
+		<Item Name="Primary Weapon Marker 2D" />
+		<Item Name="Inherited" />
+		<Item Name="Weapon Reticle" />
+	</_field_long_enum>
+	<_field_long_enum name="projection method">
+		<Item Name="Default 2D" />
+		<Item Name="Player View" />
+		<Item Name="Inherited" />
+	</_field_long_enum>
+	<_field_long_enum name="render mode">
+		<Item Name="2D" />
+		<Item Name="3D In World" />
+	</_field_long_enum>
+	<_field_string_id name="markerName" />
+	<_field_real name="scale" />
+	<_field_long_enum name="loading mode">
+		<Item Name="LoadWhenActive" />
+		<Item Name="Preload" />
+	</_field_long_enum>
+	<_field_block_64 name="node graphs">
+		<_field_string_id name="name" />
+		<_field_string_id name="initial node" />
+		<_field_block_64 name="nodes">
+			<_field_string_id name="name" />
+			<_field_string_id name="Placement Node name" />
+			<_field_block_64 name="transitions">
+				<_field_string_id name="event" />
+				<_field_string_id name="target node" />
+				<_field_long_string name="out animation name" />
+				<_field_long_string name="in animation name" />
+				<_field_long_flags name="flags">
+					<Item Name="Override Default" />
+				</_field_long_flags>
+				<_field_real name="editor from angle" />
+				<_field_real name="editor to angle" />
+				<_field_real name="editor bezier from x" />
+				<_field_real name="editor bezier from y" />
+				<_field_real name="editor bezier to x" />
+				<_field_real name="editor bezier to y" />
+				<_field_real name="editor caption x" />
+				<_field_real name="editor caption y" />
+				</_field_block_64>
+			<_field_long_enum name="screen wrapper">
+				<Item Name="guess from screen tag" />
+				<Item Name="none" />
+				<Item Name="WPF" />
+				<Item Name="CUI" />
+				<Item Name="NodeGraph" />
+				<Item Name="SharedNodeGraph" />
+				<Item Name="ADSWeaponNode" />
+				<Item Name="VehicleNode" />
+				<Item Name="FUI" />
+				<Item Name="SLAMS" />
+			</_field_long_enum>
+			<_field_tag_reference_64 name="screen reference" />
+			<_field_tag_reference_64 name="fui screen reference" />
+			<_field_string_id name="uri name" />
+			<_field_long_enum name="SLAMS node type">
+				<Item Name="Overlay" />
+				<Item Name="Content" />
+			</_field_long_enum>
+			<_field_long_enum name="loading mode">
+				<Item Name="LoadWhenActive" />
+				<Item Name="Preload" />
+			</_field_long_enum>
+			<_field_block_64 name="child stacks">
+				<_field_tag_reference_64 name="child stack reference" />
+				</_field_block_64>
+			<_field_long_flags name="state flags">
+				<Item Name="Allow Input Fall Through" />
+				<Item Name="Matchmaking status should appear on top of this" />
+				<Item Name="Allow Input Fall Through Even When Handled" />
+				<Item Name="Fixed size screen which loads at the default canvas size, for eg. screens in world space" />
+				<Item Name="Does not suspend when the hud is suspended" />
+			</_field_long_flags>
+			<_field_real name="editor pos x" />
+			<_field_real name="editor pos y" />
+			<_field_long_flags name="editor flags">
+				<Item Name="locked" />
+			</_field_long_flags>
+			<_field_long_enum name="editor shape">
+				<Item Name="rectangle" />
+				<Item Name="hexagon" />
+				<Item Name="trapezoid" />
+				<Item Name="circle" />
+				<Item Name="diamond" />
+			</_field_long_enum>
+			</_field_block_64>
+		</_field_block_64>
+	</plugin>

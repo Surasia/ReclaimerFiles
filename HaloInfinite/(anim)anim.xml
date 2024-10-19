@@ -1,0 +1,136 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_string_id name="channel" />
+	<_field_tag_reference_64 name="parent" />
+	<_field_tag_reference_64 name="asset" />
+	<_field_tag_reference_64 name="Animation Frame Events" />
+	<_field_tag_reference_64 name="Audio Frame Events" />
+	<_field_tag_reference_64 name="Effect Frame Events" />
+	<_field_block_64 name="Animations">
+		<_field_string_id name="token" />
+		<_field_long_integer name="uniqueID" />
+		<_field_string_id name="legacyName" />
+		<_field_tag_reference_64 name="animationSource" />
+		<_field_char_enum name="type">
+			<Item Name="Base" />
+			<Item Name="Base + Txy motion type" />
+			<Item Name="Base + Txy,Yaw motion type" />
+			<Item Name="Base + Txyz,Yaw motion type" />
+			<Item Name="Base + Txyz,AngleAxis motion type" />
+			<Item Name="Base + Full motion type" />
+			<Item Name="Base + No motion type" />
+			<Item Name="Overlay" />
+			<Item Name="Overlay Additive - Pose" />
+			<Item Name="Replacement" />
+		</_field_char_enum>
+		<_field_char_enum name="compression">
+			<Item Name="Auto" />
+			<Item Name="None" />
+			<Item Name="Medium" />
+			<Item Name="Rough" />
+			<Item Name="Light" />
+			<Item Name="ACL Auto" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad78b5" length="2" />
+		<_field_tag_reference_64 name="generatedModelAnimation" />
+		<_field_real name="weight" />
+		<_field_char_enum name="autoWeight">
+			<Item Name="Auto" />
+			<Item Name="Fixed" />
+		</_field_char_enum>
+		<_field_byte_flags name="Flags">
+			<Item Name="Stop searching and ignore tokens in lower channels" />
+		</_field_byte_flags>
+		<_field_custom name="Legacy fields" />
+		<_field_short_integer name="Loop frame index" />
+		<_field_word_flags name="Legacy User Flags">
+			<Item Name="disable interpolation in" />
+			<Item Name="disable interpolation out" />
+			<Item Name="disable mode ik" />
+			<Item Name="disable weapon ik" />
+			<Item Name="disable weapon aim/1st person" />
+			<Item Name="disable look screen" />
+			<Item Name="force weapon ik on" />
+			<Item Name="enable replacement interpolation" />
+			<Item Name="enable blend-in on replacement anims" />
+			<Item Name="use custom blend-in time" />
+			<Item Name="disable ik sets" />
+			<Item Name="disable ik chains" />
+			<Item Name="translate and scale root only" />
+			<Item Name="enable blend-out on replacement anims" />
+			<Item Name="use custom replacement blend-out time" />
+			<Item Name="override player input" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad5ed4" length="2" />
+		<_field_block_64 name="First person overlay channel slider weight function map">
+			<_field_explanation name="FIRST PERSON OVERLAY CHANNEL WEIGHT SCALING" />
+			<_field_string_id name="Overlay animation name" />
+			<_field_custom name="" />
+			<_field_string_id name="Channel weight scale source" />
+			</_field_block_64>
+		<_field_long_block_index name="Replacement interpolator" />
+		<_field_real name="Override blend in time" />
+		<_field_string_id name="Replacement blend in weight function" />
+		<_field_real name="Override blend out time" />
+		<_field_string_id name="Replacement blend out weight function" />
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Reference to generated anim pool tag" />
+	<_field_custom name="Legacy AnimSet fields" />
+	<_field_block_64 name="Functions">
+		<_field_string_id name="Name" />
+		<_field_struct name="Function">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		</_field_block_64>
+	<_field_custom name="Interpolators" />
+	<_field_block_64 name="Interpolators">
+		<_field_string_id name="Name" />
+		<_field_string_id name="Joint Mask" />
+		<_field_struct name="Function">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		</_field_block_64>
+	<_field_block_64 name="Interpolation Sets">
+		<_field_string_id name="Name" />
+		<_field_real name="Seconds" />
+		<_field_block_64 name="Interpolators">
+			<_field_short_block_index name="Interpolator" />
+			</_field_block_64>
+		<_field_struct name="Function">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		</_field_block_64>
+	<_field_custom name="Interpolators" />
+	<_field_block_64 name="composites">
+		<_field_string_id name="Name" />
+		<_unknown name="Source XML" />
+		<_field_char_enum name="Type">
+			<Item Name="Base" />
+			<Item Name="Overlay" />
+		</_field_char_enum>
+		<_field_pad name="generated_padc60d" length="3" />
+		</_field_block_64>
+	<_field_custom name="" />
+	</plugin>

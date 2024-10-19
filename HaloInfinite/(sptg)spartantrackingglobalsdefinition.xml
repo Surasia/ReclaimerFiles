@@ -1,0 +1,18 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="Sorting" />
+	<_field_explanation name="" />
+	<_field_real name="distance weight" />
+	<_field_real name="blended weight" />
+	<_field_real name="FOV weight" />
+	<_field_custom name="" />
+	<_field_tag_reference_64 name="active ping" />
+	<_field_tag_reference_64 name="passive ping" />
+	<_field_tag_reference_64 name="custom ping" />
+	</plugin>

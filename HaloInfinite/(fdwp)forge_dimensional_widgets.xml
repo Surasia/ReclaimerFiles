@@ -1,0 +1,41 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="$$$ Translation $$$" />
+	<_field_real name="Translation Widget Box Size" />
+	<_field_real name="Translation Widget Stem Size" />
+	<_field_real name="Translation Widget Stem Length" />
+	<_field_real name="Translation Widget Arrow Size" />
+	<_field_real name="Translation Widget Active Axis Width Scale Factor" />
+	<_field_real name="Translation Widget Inactive Axis Width Scale Factor" />
+	<_field_real name="Translation Widget Axis Mouse Selection Tolerance Factor" />
+	<_field_real name="Translation Widget Selection Box Size" />
+	<_field_real name="Translation Widget 2-Axis Selection Ratio" />
+	<_field_real name="Translation Widget Selection Arm Factor" />
+	<_field_custom name="" />
+	<_field_custom name="$$$ Rotation $$$" />
+	<_field_real name="Rotation Widget Radius" />
+	<_field_real name="Rotation Widget Handle Width" />
+	<_field_real name="Rotation Widget Active Axis Width Scale Factor" />
+	<_field_real name="Rotation Widget Inactive Axis Width Scale Factor" />
+	<_field_real name="Rotation Widget Axis Mouse Selection Tolerance Factor" />
+	<_field_real name="Mouse Rotation Multiplier" />
+	<_field_custom name="" />
+	<_field_custom name="$$$ Scale $$$" />
+	<_field_real name="Scale Widget Middle Box Size" />
+	<_field_real name="Scale Widget Stem Size" />
+	<_field_real name="Scale Widget Stem Length" />
+	<_field_real name="Scale Widget Box Size" />
+	<_field_real name="Scale Widget Active Axis Width Scale Factor" />
+	<_field_real name="Scale Widget Inactive Axis Width Scale Factor" />
+	<_field_real name="Scale Widget Axis Mouse Selection Tolerance Factor" />
+	<_field_real name="Scale Widget 2-Axis Selection Ratio" />
+	<_field_real name="Scale Widget Selection Arm Factor" />
+	<_field_custom name="" />
+	<_field_pad name="generated_pad570f" length="4" />
+	</plugin>

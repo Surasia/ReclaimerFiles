@@ -1,0 +1,521 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_array name="event animations">
+		<_field_short_enum name="event">
+			<Item Name="Unsc Vehicle" />
+			<Item Name="Covenant Vehicle" />
+			<Item Name="Melee" />
+			<Item Name="Shield Break" />
+			<Item Name="Grapple Hook Deploy" />
+			<Item Name="Out Of Ammo" />
+			<Item Name="Boss Fight" />
+			<Item Name="Narrative" />
+			<Item Name="Player Death" />
+			<Item Name="Win" />
+			<Item Name="Loss" />
+			<Item Name="Idle" />
+			<Item Name="Graple Hook Pull" />
+			<Item Name="Grapple Hook Reel" />
+			<Item Name="Main Menu" />
+		</_field_short_enum>
+		<_field_short_enum name="layering">
+			<Item Name="Opaque" />
+			<Item Name="Mix" />
+			<Item Name="Blend" />
+		</_field_short_enum>
+		<_field_short_integer name="priority" />
+		<_field_pad name="generated_padd53a" length="2" />
+		<_field_custom name="files" />
+		<_field_struct name="event files">
+			<_field_tag_reference_64 name="keyboard file" />
+			<_field_tag_reference_64 name="mouse file" />
+			<_field_tag_reference_64 name="headset file" />
+			<_field_tag_reference_64 name="keypad file" />
+			<_field_tag_reference_64 name="mousepad file" />
+			<_field_tag_reference_64 name="chromalink file" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_short_enum name="event">
+			<Item Name="Unsc Vehicle" />
+			<Item Name="Covenant Vehicle" />
+			<Item Name="Melee" />
+			<Item Name="Shield Break" />
+			<Item Name="Grapple Hook Deploy" />
+			<Item Name="Out Of Ammo" />
+			<Item Name="Boss Fight" />
+			<Item Name="Narrative" />
+			<Item Name="Player Death" />
+			<Item Name="Win" />
+			<Item Name="Loss" />
+			<Item Name="Idle" />
+			<Item Name="Graple Hook Pull" />
+			<Item Name="Grapple Hook Reel" />
+			<Item Name="Main Menu" />
+		</_field_short_enum>
+		<_field_short_enum name="layering">
+			<Item Name="Opaque" />
+			<Item Name="Mix" />
+			<Item Name="Blend" />
+		</_field_short_enum>
+		<_field_short_integer name="priority" />
+		<_field_pad name="generated_padd53a" length="2" />
+		<_field_custom name="files" />
+		<_field_struct name="event files">
+			<_field_tag_reference_64 name="keyboard file" />
+			<_field_tag_reference_64 name="mouse file" />
+			<_field_tag_reference_64 name="headset file" />
+			<_field_tag_reference_64 name="keypad file" />
+			<_field_tag_reference_64 name="mousepad file" />
+			<_field_tag_reference_64 name="chromalink file" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_short_enum name="event">
+			<Item Name="Unsc Vehicle" />
+			<Item Name="Covenant Vehicle" />
+			<Item Name="Melee" />
+			<Item Name="Shield Break" />
+			<Item Name="Grapple Hook Deploy" />
+			<Item Name="Out Of Ammo" />
+			<Item Name="Boss Fight" />
+			<Item Name="Narrative" />
+			<Item Name="Player Death" />
+			<Item Name="Win" />
+			<Item Name="Loss" />
+			<Item Name="Idle" />
+			<Item Name="Graple Hook Pull" />
+			<Item Name="Grapple Hook Reel" />
+			<Item Name="Main Menu" />
+		</_field_short_enum>
+		<_field_short_enum name="layering">
+			<Item Name="Opaque" />
+			<Item Name="Mix" />
+			<Item Name="Blend" />
+		</_field_short_enum>
+		<_field_short_integer name="priority" />
+		<_field_pad name="generated_padd53a" length="2" />
+		<_field_custom name="files" />
+		<_field_struct name="event files">
+			<_field_tag_reference_64 name="keyboard file" />
+			<_field_tag_reference_64 name="mouse file" />
+			<_field_tag_reference_64 name="headset file" />
+			<_field_tag_reference_64 name="keypad file" />
+			<_field_tag_reference_64 name="mousepad file" />
+			<_field_tag_reference_64 name="chromalink file" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_short_enum name="event">
+			<Item Name="Unsc Vehicle" />
+			<Item Name="Covenant Vehicle" />
+			<Item Name="Melee" />
+			<Item Name="Shield Break" />
+			<Item Name="Grapple Hook Deploy" />
+			<Item Name="Out Of Ammo" />
+			<Item Name="Boss Fight" />
+			<Item Name="Narrative" />
+			<Item Name="Player Death" />
+			<Item Name="Win" />
+			<Item Name="Loss" />
+			<Item Name="Idle" />
+			<Item Name="Graple Hook Pull" />
+			<Item Name="Grapple Hook Reel" />
+			<Item Name="Main Menu" />
+		</_field_short_enum>
+		<_field_short_enum name="layering">
+			<Item Name="Opaque" />
+			<Item Name="Mix" />
+			<Item Name="Blend" />
+		</_field_short_enum>
+		<_field_short_integer name="priority" />
+		<_field_pad name="generated_padd53a" length="2" />
+		<_field_custom name="files" />
+		<_field_struct name="event files">
+			<_field_tag_reference_64 name="keyboard file" />
+			<_field_tag_reference_64 name="mouse file" />
+			<_field_tag_reference_64 name="headset file" />
+			<_field_tag_reference_64 name="keypad file" />
+			<_field_tag_reference_64 name="mousepad file" />
+			<_field_tag_reference_64 name="chromalink file" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_short_enum name="event">
+			<Item Name="Unsc Vehicle" />
+			<Item Name="Covenant Vehicle" />
+			<Item Name="Melee" />
+			<Item Name="Shield Break" />
+			<Item Name="Grapple Hook Deploy" />
+			<Item Name="Out Of Ammo" />
+			<Item Name="Boss Fight" />
+			<Item Name="Narrative" />
+			<Item Name="Player Death" />
+			<Item Name="Win" />
+			<Item Name="Loss" />
+			<Item Name="Idle" />
+			<Item Name="Graple Hook Pull" />
+			<Item Name="Grapple Hook Reel" />
+			<Item Name="Main Menu" />
+		</_field_short_enum>
+		<_field_short_enum name="layering">
+			<Item Name="Opaque" />
+			<Item Name="Mix" />
+			<Item Name="Blend" />
+		</_field_short_enum>
+		<_field_short_integer name="priority" />
+		<_field_pad name="generated_padd53a" length="2" />
+		<_field_custom name="files" />
+		<_field_struct name="event files">
+			<_field_tag_reference_64 name="keyboard file" />
+			<_field_tag_reference_64 name="mouse file" />
+			<_field_tag_reference_64 name="headset file" />
+			<_field_tag_reference_64 name="keypad file" />
+			<_field_tag_reference_64 name="mousepad file" />
+			<_field_tag_reference_64 name="chromalink file" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_short_enum name="event">
+			<Item Name="Unsc Vehicle" />
+			<Item Name="Covenant Vehicle" />
+			<Item Name="Melee" />
+			<Item Name="Shield Break" />
+			<Item Name="Grapple Hook Deploy" />
+			<Item Name="Out Of Ammo" />
+			<Item Name="Boss Fight" />
+			<Item Name="Narrative" />
+			<Item Name="Player Death" />
+			<Item Name="Win" />
+			<Item Name="Loss" />
+			<Item Name="Idle" />
+			<Item Name="Graple Hook Pull" />
+			<Item Name="Grapple Hook Reel" />
+			<Item Name="Main Menu" />
+		</_field_short_enum>
+		<_field_short_enum name="layering">
+			<Item Name="Opaque" />
+			<Item Name="Mix" />
+			<Item Name="Blend" />
+		</_field_short_enum>
+		<_field_short_integer name="priority" />
+		<_field_pad name="generated_padd53a" length="2" />
+		<_field_custom name="files" />
+		<_field_struct name="event files">
+			<_field_tag_reference_64 name="keyboard file" />
+			<_field_tag_reference_64 name="mouse file" />
+			<_field_tag_reference_64 name="headset file" />
+			<_field_tag_reference_64 name="keypad file" />
+			<_field_tag_reference_64 name="mousepad file" />
+			<_field_tag_reference_64 name="chromalink file" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_short_enum name="event">
+			<Item Name="Unsc Vehicle" />
+			<Item Name="Covenant Vehicle" />
+			<Item Name="Melee" />
+			<Item Name="Shield Break" />
+			<Item Name="Grapple Hook Deploy" />
+			<Item Name="Out Of Ammo" />
+			<Item Name="Boss Fight" />
+			<Item Name="Narrative" />
+			<Item Name="Player Death" />
+			<Item Name="Win" />
+			<Item Name="Loss" />
+			<Item Name="Idle" />
+			<Item Name="Graple Hook Pull" />
+			<Item Name="Grapple Hook Reel" />
+			<Item Name="Main Menu" />
+		</_field_short_enum>
+		<_field_short_enum name="layering">
+			<Item Name="Opaque" />
+			<Item Name="Mix" />
+			<Item Name="Blend" />
+		</_field_short_enum>
+		<_field_short_integer name="priority" />
+		<_field_pad name="generated_padd53a" length="2" />
+		<_field_custom name="files" />
+		<_field_struct name="event files">
+			<_field_tag_reference_64 name="keyboard file" />
+			<_field_tag_reference_64 name="mouse file" />
+			<_field_tag_reference_64 name="headset file" />
+			<_field_tag_reference_64 name="keypad file" />
+			<_field_tag_reference_64 name="mousepad file" />
+			<_field_tag_reference_64 name="chromalink file" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_short_enum name="event">
+			<Item Name="Unsc Vehicle" />
+			<Item Name="Covenant Vehicle" />
+			<Item Name="Melee" />
+			<Item Name="Shield Break" />
+			<Item Name="Grapple Hook Deploy" />
+			<Item Name="Out Of Ammo" />
+			<Item Name="Boss Fight" />
+			<Item Name="Narrative" />
+			<Item Name="Player Death" />
+			<Item Name="Win" />
+			<Item Name="Loss" />
+			<Item Name="Idle" />
+			<Item Name="Graple Hook Pull" />
+			<Item Name="Grapple Hook Reel" />
+			<Item Name="Main Menu" />
+		</_field_short_enum>
+		<_field_short_enum name="layering">
+			<Item Name="Opaque" />
+			<Item Name="Mix" />
+			<Item Name="Blend" />
+		</_field_short_enum>
+		<_field_short_integer name="priority" />
+		<_field_pad name="generated_padd53a" length="2" />
+		<_field_custom name="files" />
+		<_field_struct name="event files">
+			<_field_tag_reference_64 name="keyboard file" />
+			<_field_tag_reference_64 name="mouse file" />
+			<_field_tag_reference_64 name="headset file" />
+			<_field_tag_reference_64 name="keypad file" />
+			<_field_tag_reference_64 name="mousepad file" />
+			<_field_tag_reference_64 name="chromalink file" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_short_enum name="event">
+			<Item Name="Unsc Vehicle" />
+			<Item Name="Covenant Vehicle" />
+			<Item Name="Melee" />
+			<Item Name="Shield Break" />
+			<Item Name="Grapple Hook Deploy" />
+			<Item Name="Out Of Ammo" />
+			<Item Name="Boss Fight" />
+			<Item Name="Narrative" />
+			<Item Name="Player Death" />
+			<Item Name="Win" />
+			<Item Name="Loss" />
+			<Item Name="Idle" />
+			<Item Name="Graple Hook Pull" />
+			<Item Name="Grapple Hook Reel" />
+			<Item Name="Main Menu" />
+		</_field_short_enum>
+		<_field_short_enum name="layering">
+			<Item Name="Opaque" />
+			<Item Name="Mix" />
+			<Item Name="Blend" />
+		</_field_short_enum>
+		<_field_short_integer name="priority" />
+		<_field_pad name="generated_padd53a" length="2" />
+		<_field_custom name="files" />
+		<_field_struct name="event files">
+			<_field_tag_reference_64 name="keyboard file" />
+			<_field_tag_reference_64 name="mouse file" />
+			<_field_tag_reference_64 name="headset file" />
+			<_field_tag_reference_64 name="keypad file" />
+			<_field_tag_reference_64 name="mousepad file" />
+			<_field_tag_reference_64 name="chromalink file" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_short_enum name="event">
+			<Item Name="Unsc Vehicle" />
+			<Item Name="Covenant Vehicle" />
+			<Item Name="Melee" />
+			<Item Name="Shield Break" />
+			<Item Name="Grapple Hook Deploy" />
+			<Item Name="Out Of Ammo" />
+			<Item Name="Boss Fight" />
+			<Item Name="Narrative" />
+			<Item Name="Player Death" />
+			<Item Name="Win" />
+			<Item Name="Loss" />
+			<Item Name="Idle" />
+			<Item Name="Graple Hook Pull" />
+			<Item Name="Grapple Hook Reel" />
+			<Item Name="Main Menu" />
+		</_field_short_enum>
+		<_field_short_enum name="layering">
+			<Item Name="Opaque" />
+			<Item Name="Mix" />
+			<Item Name="Blend" />
+		</_field_short_enum>
+		<_field_short_integer name="priority" />
+		<_field_pad name="generated_padd53a" length="2" />
+		<_field_custom name="files" />
+		<_field_struct name="event files">
+			<_field_tag_reference_64 name="keyboard file" />
+			<_field_tag_reference_64 name="mouse file" />
+			<_field_tag_reference_64 name="headset file" />
+			<_field_tag_reference_64 name="keypad file" />
+			<_field_tag_reference_64 name="mousepad file" />
+			<_field_tag_reference_64 name="chromalink file" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_short_enum name="event">
+			<Item Name="Unsc Vehicle" />
+			<Item Name="Covenant Vehicle" />
+			<Item Name="Melee" />
+			<Item Name="Shield Break" />
+			<Item Name="Grapple Hook Deploy" />
+			<Item Name="Out Of Ammo" />
+			<Item Name="Boss Fight" />
+			<Item Name="Narrative" />
+			<Item Name="Player Death" />
+			<Item Name="Win" />
+			<Item Name="Loss" />
+			<Item Name="Idle" />
+			<Item Name="Graple Hook Pull" />
+			<Item Name="Grapple Hook Reel" />
+			<Item Name="Main Menu" />
+		</_field_short_enum>
+		<_field_short_enum name="layering">
+			<Item Name="Opaque" />
+			<Item Name="Mix" />
+			<Item Name="Blend" />
+		</_field_short_enum>
+		<_field_short_integer name="priority" />
+		<_field_pad name="generated_padd53a" length="2" />
+		<_field_custom name="files" />
+		<_field_struct name="event files">
+			<_field_tag_reference_64 name="keyboard file" />
+			<_field_tag_reference_64 name="mouse file" />
+			<_field_tag_reference_64 name="headset file" />
+			<_field_tag_reference_64 name="keypad file" />
+			<_field_tag_reference_64 name="mousepad file" />
+			<_field_tag_reference_64 name="chromalink file" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_short_enum name="event">
+			<Item Name="Unsc Vehicle" />
+			<Item Name="Covenant Vehicle" />
+			<Item Name="Melee" />
+			<Item Name="Shield Break" />
+			<Item Name="Grapple Hook Deploy" />
+			<Item Name="Out Of Ammo" />
+			<Item Name="Boss Fight" />
+			<Item Name="Narrative" />
+			<Item Name="Player Death" />
+			<Item Name="Win" />
+			<Item Name="Loss" />
+			<Item Name="Idle" />
+			<Item Name="Graple Hook Pull" />
+			<Item Name="Grapple Hook Reel" />
+			<Item Name="Main Menu" />
+		</_field_short_enum>
+		<_field_short_enum name="layering">
+			<Item Name="Opaque" />
+			<Item Name="Mix" />
+			<Item Name="Blend" />
+		</_field_short_enum>
+		<_field_short_integer name="priority" />
+		<_field_pad name="generated_padd53a" length="2" />
+		<_field_custom name="files" />
+		<_field_struct name="event files">
+			<_field_tag_reference_64 name="keyboard file" />
+			<_field_tag_reference_64 name="mouse file" />
+			<_field_tag_reference_64 name="headset file" />
+			<_field_tag_reference_64 name="keypad file" />
+			<_field_tag_reference_64 name="mousepad file" />
+			<_field_tag_reference_64 name="chromalink file" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_short_enum name="event">
+			<Item Name="Unsc Vehicle" />
+			<Item Name="Covenant Vehicle" />
+			<Item Name="Melee" />
+			<Item Name="Shield Break" />
+			<Item Name="Grapple Hook Deploy" />
+			<Item Name="Out Of Ammo" />
+			<Item Name="Boss Fight" />
+			<Item Name="Narrative" />
+			<Item Name="Player Death" />
+			<Item Name="Win" />
+			<Item Name="Loss" />
+			<Item Name="Idle" />
+			<Item Name="Graple Hook Pull" />
+			<Item Name="Grapple Hook Reel" />
+			<Item Name="Main Menu" />
+		</_field_short_enum>
+		<_field_short_enum name="layering">
+			<Item Name="Opaque" />
+			<Item Name="Mix" />
+			<Item Name="Blend" />
+		</_field_short_enum>
+		<_field_short_integer name="priority" />
+		<_field_pad name="generated_padd53a" length="2" />
+		<_field_custom name="files" />
+		<_field_struct name="event files">
+			<_field_tag_reference_64 name="keyboard file" />
+			<_field_tag_reference_64 name="mouse file" />
+			<_field_tag_reference_64 name="headset file" />
+			<_field_tag_reference_64 name="keypad file" />
+			<_field_tag_reference_64 name="mousepad file" />
+			<_field_tag_reference_64 name="chromalink file" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_short_enum name="event">
+			<Item Name="Unsc Vehicle" />
+			<Item Name="Covenant Vehicle" />
+			<Item Name="Melee" />
+			<Item Name="Shield Break" />
+			<Item Name="Grapple Hook Deploy" />
+			<Item Name="Out Of Ammo" />
+			<Item Name="Boss Fight" />
+			<Item Name="Narrative" />
+			<Item Name="Player Death" />
+			<Item Name="Win" />
+			<Item Name="Loss" />
+			<Item Name="Idle" />
+			<Item Name="Graple Hook Pull" />
+			<Item Name="Grapple Hook Reel" />
+			<Item Name="Main Menu" />
+		</_field_short_enum>
+		<_field_short_enum name="layering">
+			<Item Name="Opaque" />
+			<Item Name="Mix" />
+			<Item Name="Blend" />
+		</_field_short_enum>
+		<_field_short_integer name="priority" />
+		<_field_pad name="generated_padd53a" length="2" />
+		<_field_custom name="files" />
+		<_field_struct name="event files">
+			<_field_tag_reference_64 name="keyboard file" />
+			<_field_tag_reference_64 name="mouse file" />
+			<_field_tag_reference_64 name="headset file" />
+			<_field_tag_reference_64 name="keypad file" />
+			<_field_tag_reference_64 name="mousepad file" />
+			<_field_tag_reference_64 name="chromalink file" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_short_enum name="event">
+			<Item Name="Unsc Vehicle" />
+			<Item Name="Covenant Vehicle" />
+			<Item Name="Melee" />
+			<Item Name="Shield Break" />
+			<Item Name="Grapple Hook Deploy" />
+			<Item Name="Out Of Ammo" />
+			<Item Name="Boss Fight" />
+			<Item Name="Narrative" />
+			<Item Name="Player Death" />
+			<Item Name="Win" />
+			<Item Name="Loss" />
+			<Item Name="Idle" />
+			<Item Name="Graple Hook Pull" />
+			<Item Name="Grapple Hook Reel" />
+			<Item Name="Main Menu" />
+		</_field_short_enum>
+		<_field_short_enum name="layering">
+			<Item Name="Opaque" />
+			<Item Name="Mix" />
+			<Item Name="Blend" />
+		</_field_short_enum>
+		<_field_short_integer name="priority" />
+		<_field_pad name="generated_padd53a" length="2" />
+		<_field_custom name="files" />
+		<_field_struct name="event files">
+			<_field_tag_reference_64 name="keyboard file" />
+			<_field_tag_reference_64 name="mouse file" />
+			<_field_tag_reference_64 name="headset file" />
+			<_field_tag_reference_64 name="keypad file" />
+			<_field_tag_reference_64 name="mousepad file" />
+			<_field_tag_reference_64 name="chromalink file" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_array>
+	</plugin>

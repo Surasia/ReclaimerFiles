@@ -1,0 +1,1123 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_struct name="exposure">
+		<_field_custom name="" />
+		<_field_explanation name="EXPOSURE" />
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="auto-adjust target" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="(unused2)" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad3d40" length="2" />
+		<_field_real name="exposure" />
+		<_field_real name="maximum change" />
+		<_field_real name="blend speed (0-1)" />
+		<_field_real name="minimum" />
+		<_field_real name="maximum" />
+		<_field_custom name="" />
+		<_field_real name="auto-exposure screen brightness" />
+		<_field_real name="exposure offset" />
+		<_field_real name="sky exposure offset (stops)" />
+		<_field_custom name="" />
+		<_field_real name="prevent fluctuation time range" />
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_struct name="auto_exposure_sensitivity">
+		<_field_explanation name="AUTO EXPOSURE SENSITIVITY" />
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="(unused)" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="(unused2)" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_padf2eb" length="2" />
+		<_field_real name="sensitivity (0-1)" />
+		</_field_struct>
+	<_field_struct name="exposure pitch influence">
+		<_field_explanation name="EXPOSURE PITCH INFLUENCE" />
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="(unused)" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="(unused2)" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad3993" length="2" />
+		<_field_explanation name="INFLUENCE FUNCTION (GROUND -&gt; HORIZON -&gt; SKY)" />
+		<_field_custom name="function" />
+		<_field_struct name="function">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="exposure compensation">
+		<_field_explanation name="EXPOSURE COMPENSATION" />
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="(unused)" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="(unused2)" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad19de" length="2" />
+		<_field_explanation name="COMPENSATION FUNCTION (EXPOSURE MIN -&gt; EXPOSURE MAX)" />
+		<_field_custom name="function" />
+		<_field_struct name="function">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="bloom_highlight">
+		<_field_explanation name="HIGHLIGHT BLOOM" />
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="(unused)" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="(unused2)" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_paddc8c" length="2" />
+		<_field_real name="highlight bloom" />
+		<_field_real name="maximum change" />
+		<_field_real name="blend speed (0-1)" />
+		</_field_struct>
+	<_field_struct name="bloom_highlight_threshold">
+		<_field_explanation name="HIGHLIGHT BLOOM THRESHOLD" />
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="(unused)" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="(unused2)" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_padedb3" length="2" />
+		<_field_real name="highlight bloom threshold" />
+		<_field_real name="maximum change" />
+		<_field_real name="blend speed (0-1)" />
+		</_field_struct>
+	<_field_struct name="bloom_inherent">
+		<_field_explanation name="AMBIENT BLOOM" />
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="(unused)" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="(unused2)" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_padfee3" length="2" />
+		<_field_real name="ambient bloom" />
+		<_field_real name="maximum change" />
+		<_field_real name="blend speed (0-1)" />
+		</_field_struct>
+	<_field_struct name="bloom_intensity">
+		<_field_explanation name="BLOOM INTENSITY" />
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="(unused)" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="(unused2)" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad4287" length="2" />
+		<_field_real name="bloom intensity" />
+		<_field_real name="maximum change" />
+		<_field_real name="blend speed (0-1)" />
+		</_field_struct>
+	<_field_struct name="bloom_layer_intensity">
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="(unused)" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="(unused2)" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad8248" length="2" />
+		<_field_real name="large layer intensity" />
+		<_field_real name="medium layer intensity" />
+		<_field_real name="small layer intensity" />
+		<_field_real name="maximum change" />
+		<_field_real name="blend speed (0-1)" />
+		</_field_struct>
+	<_field_struct name="bloom_tint_color">
+		<_field_explanation name="BLOOM TINT COLOR" />
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="(unused)" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="(unused2)" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad8bf4" length="2" />
+		<_field_real_rgb_color name="tint color" />
+		</_field_struct>
+	<_field_struct name="self_illum_exposure_settings">
+		<_field_explanation name="SELF ILLUM EXPOSURE" />
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="(unused)" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="(unused2)" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad01be" length="2" />
+		<_field_real name="preferred exposure" />
+		<_field_real name="maximum change" />
+		<_field_real name="blend speed (0-1)" />
+		</_field_struct>
+	<_field_struct name="self_illum_scale">
+		<_field_explanation name="SELF ILLUM CHANGE" />
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="(unused)" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="(unused2)" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad5a4a" length="2" />
+		<_field_real name="exposure change" />
+		<_field_real name="maximum change" />
+		<_field_real name="blend speed (0-1)" />
+		</_field_struct>
+	<_field_explanation name="EFFECT EXPOSURE OVERRIDE" />
+	<_field_tag_reference_64 name="effect exposure override" />
+	<_field_struct name="color_grading">
+		<_field_explanation name="Color Grading" />
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="(unused)" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="(unused2)" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad78c0" length="2" />
+		<_field_tag_reference_64 name="color grading texture" />
+		<_field_tag_reference_64 name="hdr color grading texture" />
+		<_field_real name="blend time" />
+		</_field_struct>
+	<_field_struct name="ssao_settings">
+		<_field_explanation name="ambient occlusion settings" />
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="(unused)" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="enabled" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad3fae" length="2" />
+		<_field_real name="GTAO Intensity" />
+		<_field_real name="Sun AO" />
+		<_field_real name="Spot Light AO" />
+		<_field_real name="Omni Light AO" />
+		</_field_struct>
+	<_field_struct name="deferred_reflections_settings">
+		<_field_explanation name="Deferred Reflections settings" />
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="(unused)" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="enabled" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_padbf0e" length="2" />
+		<_field_long_flags name="deferred reflection flags">
+			<Item Name="Enabled" />
+			<Item Name="Include Transparents" />
+		</_field_long_flags>
+		<_field_real name="Intensity" />
+		<_field_real name="Intensity First Person" />
+		<_field_real name="Fade to Cubemap" />
+		<_field_real name="Border Fade Size" />
+		<_field_struct name="Ray Steps">
+			<_field_char_enum name="Type">
+				<Item Name="Default" />
+				<Item Name="Sync" />
+				<Item Name="HDR" />
+				<Item Name="Reflections" />
+				<Item Name="VolumetricFog" />
+				<Item Name="Shadows" />
+				<Item Name="Sky" />
+				<Item Name="TAA" />
+				<Item Name="Ambient Occlusion" />
+				<Item Name="DOF" />
+				<Item Name="Aniso" />
+				<Item Name="Terrain" />
+				<Item Name="Tesselation" />
+				<Item Name="Lighting" />
+				<Item Name="Decorators" />
+				<Item Name="Asset Category" />
+				<Item Name="Dynamic Wind" />
+				<Item Name="Push Bending" />
+				<Item Name="Hlod" />
+				<Item Name="Visual Damage" />
+				<Item Name="Virtual Texturing" />
+				<Item Name="Effects" />
+				<Item Name="Emblem Quality" />
+				<Item Name="Texture Quality" />
+				<Item Name="Decals" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad11b5" length="3" />
+			<_field_long_flags name="Flags">
+				<Item Name="Override Input" />
+			</_field_long_flags>
+			<_field_long_integer name="Input" />
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			<_field_char_enum name="Splitscreen Logic">
+				<Item Name="Off" />
+				<Item Name="Multiply" />
+				<Item Name="Add" />
+			</_field_char_enum>
+			<_field_pad name="generated_padf7d4" length="3" />
+			<_field_real name="2 Player Splitscreen" />
+			<_field_real name="3 Player Splitscreen" />
+			<_field_real name="4 Player Splitscreen" />
+			</_field_struct>
+		<_field_real name="Mip Blur Distance Scale" />
+		<_field_real name="Depth thickness" />
+		<_field_real name="SSR Near Fade Distance" />
+		<_field_real name="SSR Far Fade Distance" />
+		<_field_real name="SSR Roughness Threshold" />
+		<_field_real name="SSR Tonemap Strength" />
+		<_field_real name="SSR Tonemap Clamp" />
+		<_field_struct name="Resolution">
+			<_field_char_enum name="Type">
+				<Item Name="Default" />
+				<Item Name="Sync" />
+				<Item Name="HDR" />
+				<Item Name="Reflections" />
+				<Item Name="VolumetricFog" />
+				<Item Name="Shadows" />
+				<Item Name="Sky" />
+				<Item Name="TAA" />
+				<Item Name="Ambient Occlusion" />
+				<Item Name="DOF" />
+				<Item Name="Aniso" />
+				<Item Name="Terrain" />
+				<Item Name="Tesselation" />
+				<Item Name="Lighting" />
+				<Item Name="Decorators" />
+				<Item Name="Asset Category" />
+				<Item Name="Dynamic Wind" />
+				<Item Name="Push Bending" />
+				<Item Name="Hlod" />
+				<Item Name="Visual Damage" />
+				<Item Name="Virtual Texturing" />
+				<Item Name="Effects" />
+				<Item Name="Emblem Quality" />
+				<Item Name="Texture Quality" />
+				<Item Name="Decals" />
+			</_field_char_enum>
+			<_field_pad name="generated_padf78c" length="3" />
+			<_field_long_flags name="Flags">
+				<Item Name="Override Input" />
+			</_field_long_flags>
+			<_field_real name="Input" />
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			<_field_char_enum name="Splitscreen Logic">
+				<Item Name="Off" />
+				<Item Name="Multiply" />
+				<Item Name="Add" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad116d" length="3" />
+			<_field_real name="2 Player Splitscreen" />
+			<_field_real name="3 Player Splitscreen" />
+			<_field_real name="4 Player Splitscreen" />
+			</_field_struct>
+		<_field_struct name="SSR Enabled">
+			<_field_char_enum name="Type">
+				<Item Name="Default" />
+				<Item Name="Sync" />
+				<Item Name="HDR" />
+				<Item Name="Reflections" />
+				<Item Name="VolumetricFog" />
+				<Item Name="Shadows" />
+				<Item Name="Sky" />
+				<Item Name="TAA" />
+				<Item Name="Ambient Occlusion" />
+				<Item Name="DOF" />
+				<Item Name="Aniso" />
+				<Item Name="Terrain" />
+				<Item Name="Tesselation" />
+				<Item Name="Lighting" />
+				<Item Name="Decorators" />
+				<Item Name="Asset Category" />
+				<Item Name="Dynamic Wind" />
+				<Item Name="Push Bending" />
+				<Item Name="Hlod" />
+				<Item Name="Visual Damage" />
+				<Item Name="Virtual Texturing" />
+				<Item Name="Effects" />
+				<Item Name="Emblem Quality" />
+				<Item Name="Texture Quality" />
+				<Item Name="Decals" />
+			</_field_char_enum>
+			<_field_struct name="Low">
+				<_field_byte_flags name="Single Player">
+					<Item Name="True" />
+				</_field_byte_flags>
+				<_field_byte_flags name="2 Player Splitscreen">
+					<Item Name="True" />
+				</_field_byte_flags>
+				<_field_byte_flags name="3 Player Splitscreen">
+					<Item Name="True" />
+				</_field_byte_flags>
+				<_field_byte_flags name="4 Player Splitscreen">
+					<Item Name="True" />
+				</_field_byte_flags>
+				</_field_struct>
+			<_field_struct name="Medium">
+				<_field_byte_flags name="Single Player">
+					<Item Name="True" />
+				</_field_byte_flags>
+				<_field_byte_flags name="2 Player Splitscreen">
+					<Item Name="True" />
+				</_field_byte_flags>
+				<_field_byte_flags name="3 Player Splitscreen">
+					<Item Name="True" />
+				</_field_byte_flags>
+				<_field_byte_flags name="4 Player Splitscreen">
+					<Item Name="True" />
+				</_field_byte_flags>
+				</_field_struct>
+			<_field_struct name="High">
+				<_field_byte_flags name="Single Player">
+					<Item Name="True" />
+				</_field_byte_flags>
+				<_field_byte_flags name="2 Player Splitscreen">
+					<Item Name="True" />
+				</_field_byte_flags>
+				<_field_byte_flags name="3 Player Splitscreen">
+					<Item Name="True" />
+				</_field_byte_flags>
+				<_field_byte_flags name="4 Player Splitscreen">
+					<Item Name="True" />
+				</_field_byte_flags>
+				</_field_struct>
+			<_field_struct name="Ultra">
+				<_field_byte_flags name="Single Player">
+					<Item Name="True" />
+				</_field_byte_flags>
+				<_field_byte_flags name="2 Player Splitscreen">
+					<Item Name="True" />
+				</_field_byte_flags>
+				<_field_byte_flags name="3 Player Splitscreen">
+					<Item Name="True" />
+				</_field_byte_flags>
+				<_field_byte_flags name="4 Player Splitscreen">
+					<Item Name="True" />
+				</_field_byte_flags>
+				</_field_struct>
+			</_field_struct>
+		<_field_pad name="generated_pad2316" length="3" />
+		</_field_struct>
+	<_field_struct name="camera lens dirt">
+		<_field_explanation name="Camera Lens Dirt Settings" />
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="(unused)" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="enabled" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad28b2" length="2" />
+		<_field_real name="Intensity" />
+		<_field_tag_reference_64 name="dirt texture" />
+		<_field_char_enum name="Dirt Type">
+			<Item Name="Apply at bloom res" />
+			<Item Name="Apply at full res" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad409c" length="3" />
+		</_field_struct>
+	<_field_struct name="contact shadows">
+		<_field_explanation name="Sun Contact Shadow Settings" />
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="(unused)" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="enabled" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad3bce" length="2" />
+		<_field_long_flags name="Contact Shadow Flags">
+			<Item Name="Enabled" />
+		</_field_long_flags>
+		<_field_struct name="Enabled">
+			<_field_char_enum name="Type">
+				<Item Name="Default" />
+				<Item Name="Sync" />
+				<Item Name="HDR" />
+				<Item Name="Reflections" />
+				<Item Name="VolumetricFog" />
+				<Item Name="Shadows" />
+				<Item Name="Sky" />
+				<Item Name="TAA" />
+				<Item Name="Ambient Occlusion" />
+				<Item Name="DOF" />
+				<Item Name="Aniso" />
+				<Item Name="Terrain" />
+				<Item Name="Tesselation" />
+				<Item Name="Lighting" />
+				<Item Name="Decorators" />
+				<Item Name="Asset Category" />
+				<Item Name="Dynamic Wind" />
+				<Item Name="Push Bending" />
+				<Item Name="Hlod" />
+				<Item Name="Visual Damage" />
+				<Item Name="Virtual Texturing" />
+				<Item Name="Effects" />
+				<Item Name="Emblem Quality" />
+				<Item Name="Texture Quality" />
+				<Item Name="Decals" />
+			</_field_char_enum>
+			<_field_pad name="generated_padfbf4" length="1" />
+			<_field_word_flags name="Flags">
+				<Item Name="Low" />
+				<Item Name="Medium" />
+				<Item Name="High" />
+				<Item Name="Ultra" />
+			</_field_word_flags>
+			</_field_struct>
+		<_field_struct name="Ray Steps">
+			<_field_char_enum name="Type">
+				<Item Name="Default" />
+				<Item Name="Sync" />
+				<Item Name="HDR" />
+				<Item Name="Reflections" />
+				<Item Name="VolumetricFog" />
+				<Item Name="Shadows" />
+				<Item Name="Sky" />
+				<Item Name="TAA" />
+				<Item Name="Ambient Occlusion" />
+				<Item Name="DOF" />
+				<Item Name="Aniso" />
+				<Item Name="Terrain" />
+				<Item Name="Tesselation" />
+				<Item Name="Lighting" />
+				<Item Name="Decorators" />
+				<Item Name="Asset Category" />
+				<Item Name="Dynamic Wind" />
+				<Item Name="Push Bending" />
+				<Item Name="Hlod" />
+				<Item Name="Visual Damage" />
+				<Item Name="Virtual Texturing" />
+				<Item Name="Effects" />
+				<Item Name="Emblem Quality" />
+				<Item Name="Texture Quality" />
+				<Item Name="Decals" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad11b5" length="3" />
+			<_field_long_flags name="Flags">
+				<Item Name="Override Input" />
+			</_field_long_flags>
+			<_field_long_integer name="Input" />
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			<_field_char_enum name="Splitscreen Logic">
+				<Item Name="Off" />
+				<Item Name="Multiply" />
+				<Item Name="Add" />
+			</_field_char_enum>
+			<_field_pad name="generated_padf7d4" length="3" />
+			<_field_real name="2 Player Splitscreen" />
+			<_field_real name="3 Player Splitscreen" />
+			<_field_real name="4 Player Splitscreen" />
+			</_field_struct>
+		<_field_real name="Ray Steps First Person Scalar" />
+		<_field_struct name="Maximum Shadow Ray Length">
+			<_field_char_enum name="Type">
+				<Item Name="Default" />
+				<Item Name="Sync" />
+				<Item Name="HDR" />
+				<Item Name="Reflections" />
+				<Item Name="VolumetricFog" />
+				<Item Name="Shadows" />
+				<Item Name="Sky" />
+				<Item Name="TAA" />
+				<Item Name="Ambient Occlusion" />
+				<Item Name="DOF" />
+				<Item Name="Aniso" />
+				<Item Name="Terrain" />
+				<Item Name="Tesselation" />
+				<Item Name="Lighting" />
+				<Item Name="Decorators" />
+				<Item Name="Asset Category" />
+				<Item Name="Dynamic Wind" />
+				<Item Name="Push Bending" />
+				<Item Name="Hlod" />
+				<Item Name="Visual Damage" />
+				<Item Name="Virtual Texturing" />
+				<Item Name="Effects" />
+				<Item Name="Emblem Quality" />
+				<Item Name="Texture Quality" />
+				<Item Name="Decals" />
+			</_field_char_enum>
+			<_field_pad name="generated_padf78c" length="3" />
+			<_field_long_flags name="Flags">
+				<Item Name="Override Input" />
+			</_field_long_flags>
+			<_field_real name="Input" />
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			<_field_char_enum name="Splitscreen Logic">
+				<Item Name="Off" />
+				<Item Name="Multiply" />
+				<Item Name="Add" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad116d" length="3" />
+			<_field_real name="2 Player Splitscreen" />
+			<_field_real name="3 Player Splitscreen" />
+			<_field_real name="4 Player Splitscreen" />
+			</_field_struct>
+		<_field_real name="Maximum Shadow Ray Length First Person Scalar" />
+		<_field_struct name="Ray Pixel Stride">
+			<_field_char_enum name="Type">
+				<Item Name="Default" />
+				<Item Name="Sync" />
+				<Item Name="HDR" />
+				<Item Name="Reflections" />
+				<Item Name="VolumetricFog" />
+				<Item Name="Shadows" />
+				<Item Name="Sky" />
+				<Item Name="TAA" />
+				<Item Name="Ambient Occlusion" />
+				<Item Name="DOF" />
+				<Item Name="Aniso" />
+				<Item Name="Terrain" />
+				<Item Name="Tesselation" />
+				<Item Name="Lighting" />
+				<Item Name="Decorators" />
+				<Item Name="Asset Category" />
+				<Item Name="Dynamic Wind" />
+				<Item Name="Push Bending" />
+				<Item Name="Hlod" />
+				<Item Name="Visual Damage" />
+				<Item Name="Virtual Texturing" />
+				<Item Name="Effects" />
+				<Item Name="Emblem Quality" />
+				<Item Name="Texture Quality" />
+				<Item Name="Decals" />
+			</_field_char_enum>
+			<_field_pad name="generated_padf78c" length="3" />
+			<_field_long_flags name="Flags">
+				<Item Name="Override Input" />
+			</_field_long_flags>
+			<_field_real name="Input" />
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			<_field_char_enum name="Splitscreen Logic">
+				<Item Name="Off" />
+				<Item Name="Multiply" />
+				<Item Name="Add" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad116d" length="3" />
+			<_field_real name="2 Player Splitscreen" />
+			<_field_real name="3 Player Splitscreen" />
+			<_field_real name="4 Player Splitscreen" />
+			</_field_struct>
+		<_field_real name="First Person Pixel Stride First Person Scalar" />
+		<_field_real name="Average Occluder Thickness" />
+		<_field_real name="Average Occluder Thickness First Person" />
+		<_field_real name="Shadow Softness Scale" />
+		<_field_real name="Shadow Softness Scale First Person" />
+		<_field_real name="Shadow Fade Start Distance" />
+		<_field_real name="Shadow Fade End Distance" />
+		<_field_real name="Global Opacity" />
+		<_field_real name="Global Opacity First Person" />
+		<_field_struct name="Global Opacity Fade Multiplier">
+			<_field_char_enum name="Type">
+				<Item Name="Default" />
+				<Item Name="Sync" />
+				<Item Name="HDR" />
+				<Item Name="Reflections" />
+				<Item Name="VolumetricFog" />
+				<Item Name="Shadows" />
+				<Item Name="Sky" />
+				<Item Name="TAA" />
+				<Item Name="Ambient Occlusion" />
+				<Item Name="DOF" />
+				<Item Name="Aniso" />
+				<Item Name="Terrain" />
+				<Item Name="Tesselation" />
+				<Item Name="Lighting" />
+				<Item Name="Decorators" />
+				<Item Name="Asset Category" />
+				<Item Name="Dynamic Wind" />
+				<Item Name="Push Bending" />
+				<Item Name="Hlod" />
+				<Item Name="Visual Damage" />
+				<Item Name="Virtual Texturing" />
+				<Item Name="Effects" />
+				<Item Name="Emblem Quality" />
+				<Item Name="Texture Quality" />
+				<Item Name="Decals" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad4417" length="3" />
+			<_field_struct name="Low">
+				<_field_real name="Single Player" />
+				<_field_real name="2 Player Splitscreen" />
+				<_field_real name="3 Player Splitscreen" />
+				<_field_real name="4 Player Splitscreen" />
+				</_field_struct>
+			<_field_struct name="Medium">
+				<_field_real name="Single Player" />
+				<_field_real name="2 Player Splitscreen" />
+				<_field_real name="3 Player Splitscreen" />
+				<_field_real name="4 Player Splitscreen" />
+				</_field_struct>
+			<_field_struct name="High">
+				<_field_real name="Single Player" />
+				<_field_real name="2 Player Splitscreen" />
+				<_field_real name="3 Player Splitscreen" />
+				<_field_real name="4 Player Splitscreen" />
+				</_field_struct>
+			<_field_struct name="Ultra">
+				<_field_real name="Single Player" />
+				<_field_real name="2 Player Splitscreen" />
+				<_field_real name="3 Player Splitscreen" />
+				<_field_real name="4 Player Splitscreen" />
+				</_field_struct>
+			</_field_struct>
+		<_field_real name="Ray Start Bias" />
+		<_field_real name="Ray Start Bias Far Distance" />
+		<_field_real name="Ray Start Bias Offset At Far Distance" />
+		<_field_real name="Ray Start Bias First Person" />
+		<_field_real name="First Person Transition Scalar" />
+		<_field_real name="Normal Bias First Person" />
+		<_field_real name="Normal Bias Near" />
+		<_field_real name="Normal Bias Far" />
+		<_field_real name="FOV Slope Near Bias Scalar" />
+		<_field_struct name="Per-Spec Near Bias Scalar">
+			<_field_char_enum name="Type">
+				<Item Name="Default" />
+				<Item Name="Sync" />
+				<Item Name="HDR" />
+				<Item Name="Reflections" />
+				<Item Name="VolumetricFog" />
+				<Item Name="Shadows" />
+				<Item Name="Sky" />
+				<Item Name="TAA" />
+				<Item Name="Ambient Occlusion" />
+				<Item Name="DOF" />
+				<Item Name="Aniso" />
+				<Item Name="Terrain" />
+				<Item Name="Tesselation" />
+				<Item Name="Lighting" />
+				<Item Name="Decorators" />
+				<Item Name="Asset Category" />
+				<Item Name="Dynamic Wind" />
+				<Item Name="Push Bending" />
+				<Item Name="Hlod" />
+				<Item Name="Visual Damage" />
+				<Item Name="Virtual Texturing" />
+				<Item Name="Effects" />
+				<Item Name="Emblem Quality" />
+				<Item Name="Texture Quality" />
+				<Item Name="Decals" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad4417" length="3" />
+			<_field_struct name="Low">
+				<_field_real name="Single Player" />
+				<_field_real name="2 Player Splitscreen" />
+				<_field_real name="3 Player Splitscreen" />
+				<_field_real name="4 Player Splitscreen" />
+				</_field_struct>
+			<_field_struct name="Medium">
+				<_field_real name="Single Player" />
+				<_field_real name="2 Player Splitscreen" />
+				<_field_real name="3 Player Splitscreen" />
+				<_field_real name="4 Player Splitscreen" />
+				</_field_struct>
+			<_field_struct name="High">
+				<_field_real name="Single Player" />
+				<_field_real name="2 Player Splitscreen" />
+				<_field_real name="3 Player Splitscreen" />
+				<_field_real name="4 Player Splitscreen" />
+				</_field_struct>
+			<_field_struct name="Ultra">
+				<_field_real name="Single Player" />
+				<_field_real name="2 Player Splitscreen" />
+				<_field_real name="3 Player Splitscreen" />
+				<_field_real name="4 Player Splitscreen" />
+				</_field_struct>
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="contact shadows local lights">
+		<_field_explanation name="Sun Contact Shadow Settings" />
+		<_field_word_flags name="flags">
+			<Item Name="use default (ignore these values)" />
+			<Item Name="maximum change is relative" />
+			<Item Name="(unused)" />
+			<Item Name="bit3" />
+			<Item Name="fixed" />
+			<Item Name="enabled" />
+			<Item Name="fixed2" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad3bce" length="2" />
+		<_field_long_flags name="Contact Shadow Flags">
+			<Item Name="Enabled" />
+		</_field_long_flags>
+		<_field_struct name="Enabled">
+			<_field_char_enum name="Type">
+				<Item Name="Default" />
+				<Item Name="Sync" />
+				<Item Name="HDR" />
+				<Item Name="Reflections" />
+				<Item Name="VolumetricFog" />
+				<Item Name="Shadows" />
+				<Item Name="Sky" />
+				<Item Name="TAA" />
+				<Item Name="Ambient Occlusion" />
+				<Item Name="DOF" />
+				<Item Name="Aniso" />
+				<Item Name="Terrain" />
+				<Item Name="Tesselation" />
+				<Item Name="Lighting" />
+				<Item Name="Decorators" />
+				<Item Name="Asset Category" />
+				<Item Name="Dynamic Wind" />
+				<Item Name="Push Bending" />
+				<Item Name="Hlod" />
+				<Item Name="Visual Damage" />
+				<Item Name="Virtual Texturing" />
+				<Item Name="Effects" />
+				<Item Name="Emblem Quality" />
+				<Item Name="Texture Quality" />
+				<Item Name="Decals" />
+			</_field_char_enum>
+			<_field_pad name="generated_padfbf4" length="1" />
+			<_field_word_flags name="Flags">
+				<Item Name="Low" />
+				<Item Name="Medium" />
+				<Item Name="High" />
+				<Item Name="Ultra" />
+			</_field_word_flags>
+			</_field_struct>
+		<_field_struct name="Ray Steps">
+			<_field_char_enum name="Type">
+				<Item Name="Default" />
+				<Item Name="Sync" />
+				<Item Name="HDR" />
+				<Item Name="Reflections" />
+				<Item Name="VolumetricFog" />
+				<Item Name="Shadows" />
+				<Item Name="Sky" />
+				<Item Name="TAA" />
+				<Item Name="Ambient Occlusion" />
+				<Item Name="DOF" />
+				<Item Name="Aniso" />
+				<Item Name="Terrain" />
+				<Item Name="Tesselation" />
+				<Item Name="Lighting" />
+				<Item Name="Decorators" />
+				<Item Name="Asset Category" />
+				<Item Name="Dynamic Wind" />
+				<Item Name="Push Bending" />
+				<Item Name="Hlod" />
+				<Item Name="Visual Damage" />
+				<Item Name="Virtual Texturing" />
+				<Item Name="Effects" />
+				<Item Name="Emblem Quality" />
+				<Item Name="Texture Quality" />
+				<Item Name="Decals" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad11b5" length="3" />
+			<_field_long_flags name="Flags">
+				<Item Name="Override Input" />
+			</_field_long_flags>
+			<_field_long_integer name="Input" />
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			<_field_char_enum name="Splitscreen Logic">
+				<Item Name="Off" />
+				<Item Name="Multiply" />
+				<Item Name="Add" />
+			</_field_char_enum>
+			<_field_pad name="generated_padf7d4" length="3" />
+			<_field_real name="2 Player Splitscreen" />
+			<_field_real name="3 Player Splitscreen" />
+			<_field_real name="4 Player Splitscreen" />
+			</_field_struct>
+		<_field_real name="Ray Steps First Person Scalar" />
+		<_field_struct name="Maximum Shadow Ray Length">
+			<_field_char_enum name="Type">
+				<Item Name="Default" />
+				<Item Name="Sync" />
+				<Item Name="HDR" />
+				<Item Name="Reflections" />
+				<Item Name="VolumetricFog" />
+				<Item Name="Shadows" />
+				<Item Name="Sky" />
+				<Item Name="TAA" />
+				<Item Name="Ambient Occlusion" />
+				<Item Name="DOF" />
+				<Item Name="Aniso" />
+				<Item Name="Terrain" />
+				<Item Name="Tesselation" />
+				<Item Name="Lighting" />
+				<Item Name="Decorators" />
+				<Item Name="Asset Category" />
+				<Item Name="Dynamic Wind" />
+				<Item Name="Push Bending" />
+				<Item Name="Hlod" />
+				<Item Name="Visual Damage" />
+				<Item Name="Virtual Texturing" />
+				<Item Name="Effects" />
+				<Item Name="Emblem Quality" />
+				<Item Name="Texture Quality" />
+				<Item Name="Decals" />
+			</_field_char_enum>
+			<_field_pad name="generated_padf78c" length="3" />
+			<_field_long_flags name="Flags">
+				<Item Name="Override Input" />
+			</_field_long_flags>
+			<_field_real name="Input" />
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			<_field_char_enum name="Splitscreen Logic">
+				<Item Name="Off" />
+				<Item Name="Multiply" />
+				<Item Name="Add" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad116d" length="3" />
+			<_field_real name="2 Player Splitscreen" />
+			<_field_real name="3 Player Splitscreen" />
+			<_field_real name="4 Player Splitscreen" />
+			</_field_struct>
+		<_field_real name="Maximum Shadow Ray Length First Person Scalar" />
+		<_field_struct name="Ray Pixel Stride">
+			<_field_char_enum name="Type">
+				<Item Name="Default" />
+				<Item Name="Sync" />
+				<Item Name="HDR" />
+				<Item Name="Reflections" />
+				<Item Name="VolumetricFog" />
+				<Item Name="Shadows" />
+				<Item Name="Sky" />
+				<Item Name="TAA" />
+				<Item Name="Ambient Occlusion" />
+				<Item Name="DOF" />
+				<Item Name="Aniso" />
+				<Item Name="Terrain" />
+				<Item Name="Tesselation" />
+				<Item Name="Lighting" />
+				<Item Name="Decorators" />
+				<Item Name="Asset Category" />
+				<Item Name="Dynamic Wind" />
+				<Item Name="Push Bending" />
+				<Item Name="Hlod" />
+				<Item Name="Visual Damage" />
+				<Item Name="Virtual Texturing" />
+				<Item Name="Effects" />
+				<Item Name="Emblem Quality" />
+				<Item Name="Texture Quality" />
+				<Item Name="Decals" />
+			</_field_char_enum>
+			<_field_pad name="generated_padf78c" length="3" />
+			<_field_long_flags name="Flags">
+				<Item Name="Override Input" />
+			</_field_long_flags>
+			<_field_real name="Input" />
+			<_field_real name="Low" />
+			<_field_real name="Medium" />
+			<_field_real name="High" />
+			<_field_real name="Ultra" />
+			<_field_char_enum name="Splitscreen Logic">
+				<Item Name="Off" />
+				<Item Name="Multiply" />
+				<Item Name="Add" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad116d" length="3" />
+			<_field_real name="2 Player Splitscreen" />
+			<_field_real name="3 Player Splitscreen" />
+			<_field_real name="4 Player Splitscreen" />
+			</_field_struct>
+		<_field_real name="First Person Pixel Stride First Person Scalar" />
+		<_field_real name="Average Occluder Thickness" />
+		<_field_real name="Average Occluder Thickness First Person" />
+		<_field_real name="Shadow Softness Scale" />
+		<_field_real name="Shadow Softness Scale First Person" />
+		<_field_real name="Shadow Fade Start Distance" />
+		<_field_real name="Shadow Fade End Distance" />
+		<_field_real name="Global Opacity" />
+		<_field_real name="Global Opacity First Person" />
+		<_field_struct name="Global Opacity Fade Multiplier">
+			<_field_char_enum name="Type">
+				<Item Name="Default" />
+				<Item Name="Sync" />
+				<Item Name="HDR" />
+				<Item Name="Reflections" />
+				<Item Name="VolumetricFog" />
+				<Item Name="Shadows" />
+				<Item Name="Sky" />
+				<Item Name="TAA" />
+				<Item Name="Ambient Occlusion" />
+				<Item Name="DOF" />
+				<Item Name="Aniso" />
+				<Item Name="Terrain" />
+				<Item Name="Tesselation" />
+				<Item Name="Lighting" />
+				<Item Name="Decorators" />
+				<Item Name="Asset Category" />
+				<Item Name="Dynamic Wind" />
+				<Item Name="Push Bending" />
+				<Item Name="Hlod" />
+				<Item Name="Visual Damage" />
+				<Item Name="Virtual Texturing" />
+				<Item Name="Effects" />
+				<Item Name="Emblem Quality" />
+				<Item Name="Texture Quality" />
+				<Item Name="Decals" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad4417" length="3" />
+			<_field_struct name="Low">
+				<_field_real name="Single Player" />
+				<_field_real name="2 Player Splitscreen" />
+				<_field_real name="3 Player Splitscreen" />
+				<_field_real name="4 Player Splitscreen" />
+				</_field_struct>
+			<_field_struct name="Medium">
+				<_field_real name="Single Player" />
+				<_field_real name="2 Player Splitscreen" />
+				<_field_real name="3 Player Splitscreen" />
+				<_field_real name="4 Player Splitscreen" />
+				</_field_struct>
+			<_field_struct name="High">
+				<_field_real name="Single Player" />
+				<_field_real name="2 Player Splitscreen" />
+				<_field_real name="3 Player Splitscreen" />
+				<_field_real name="4 Player Splitscreen" />
+				</_field_struct>
+			<_field_struct name="Ultra">
+				<_field_real name="Single Player" />
+				<_field_real name="2 Player Splitscreen" />
+				<_field_real name="3 Player Splitscreen" />
+				<_field_real name="4 Player Splitscreen" />
+				</_field_struct>
+			</_field_struct>
+		<_field_real name="Ray Start Bias" />
+		<_field_real name="Ray Start Bias Far Distance" />
+		<_field_real name="Ray Start Bias Offset At Far Distance" />
+		<_field_real name="Ray Start Bias First Person" />
+		<_field_real name="First Person Transition Scalar" />
+		<_field_real name="Normal Bias First Person" />
+		<_field_real name="Normal Bias Near" />
+		<_field_real name="Normal Bias Far" />
+		<_field_real name="FOV Slope Near Bias Scalar" />
+		<_field_struct name="Per-Spec Near Bias Scalar">
+			<_field_char_enum name="Type">
+				<Item Name="Default" />
+				<Item Name="Sync" />
+				<Item Name="HDR" />
+				<Item Name="Reflections" />
+				<Item Name="VolumetricFog" />
+				<Item Name="Shadows" />
+				<Item Name="Sky" />
+				<Item Name="TAA" />
+				<Item Name="Ambient Occlusion" />
+				<Item Name="DOF" />
+				<Item Name="Aniso" />
+				<Item Name="Terrain" />
+				<Item Name="Tesselation" />
+				<Item Name="Lighting" />
+				<Item Name="Decorators" />
+				<Item Name="Asset Category" />
+				<Item Name="Dynamic Wind" />
+				<Item Name="Push Bending" />
+				<Item Name="Hlod" />
+				<Item Name="Visual Damage" />
+				<Item Name="Virtual Texturing" />
+				<Item Name="Effects" />
+				<Item Name="Emblem Quality" />
+				<Item Name="Texture Quality" />
+				<Item Name="Decals" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad4417" length="3" />
+			<_field_struct name="Low">
+				<_field_real name="Single Player" />
+				<_field_real name="2 Player Splitscreen" />
+				<_field_real name="3 Player Splitscreen" />
+				<_field_real name="4 Player Splitscreen" />
+				</_field_struct>
+			<_field_struct name="Medium">
+				<_field_real name="Single Player" />
+				<_field_real name="2 Player Splitscreen" />
+				<_field_real name="3 Player Splitscreen" />
+				<_field_real name="4 Player Splitscreen" />
+				</_field_struct>
+			<_field_struct name="High">
+				<_field_real name="Single Player" />
+				<_field_real name="2 Player Splitscreen" />
+				<_field_real name="3 Player Splitscreen" />
+				<_field_real name="4 Player Splitscreen" />
+				</_field_struct>
+			<_field_struct name="Ultra">
+				<_field_real name="Single Player" />
+				<_field_real name="2 Player Splitscreen" />
+				<_field_real name="3 Player Splitscreen" />
+				<_field_real name="4 Player Splitscreen" />
+				</_field_struct>
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="" />
+	</plugin>

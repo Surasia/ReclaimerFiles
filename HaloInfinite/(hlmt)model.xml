@@ -1,0 +1,1095 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="MODEL" />
+	<_field_custom name="" />
+	<_field_tag_reference_64 name="render model" />
+	<_field_tag_reference_64 name="collision model" />
+	<_field_tag_reference_64 name="animation" />
+	<_field_tag_reference_64 name="physics_model" />
+	<_field_long_integer name="runtime render checksum" />
+	<_field_long_integer name="runtime collision checksum" />
+	<_field_explanation name="Optional Static Lightmap" />
+	<_field_long_flags name="Lightmap Flags">
+		<Item Name="pvs enabled" />
+	</_field_long_flags>
+	<_field_explanation name="PVS" />
+	<_field_real name="PVS bounding box extension factor " />
+	<_field_real_vector_3d name="PVS block size " />
+	<_field_long_integer name="PVS sampling subdivision per axis " />
+	<_field_real name="PVS visibility threshold " />
+	<_field_string_id name="asset category name" />
+	<_field_long_integer name="asset category index" />
+	<_field_explanation name="level of detail" />
+	<_field_block_64 name="lod levels">
+		<_field_real name="lodTransitionDistance" />
+		</_field_block_64>
+	<_field_real name="Fade out after distance" />
+	<_field_real name="disappear distance" />
+	<_field_real name="begin fade distance" />
+	<_field_real name="animation lod distance" />
+	<_field_real name="shadow fade distance" />
+	<_field_real name="instance disappear distance" />
+	<_field_real name="midrange detail disappear distance" />
+	<_field_real name="close detail disappear distance" />
+	<_field_real name="tessellation max draw distance" />
+	<_field_long_flags name="resource distance override flags">
+		<Item Name="override enabled" />
+	</_field_long_flags>
+	<_field_real name="medium priority distance" />
+	<_field_real name="low priority distance" />
+	<_field_long_integer name="lod index override for damage draw" />
+	<_field_block_64 name="variants">
+		<_field_string_id name="name" />
+		<_field_string_id name="style" />
+		<_field_long_integer name="Damage Style Index" />
+		<_field_long_flags name="model variant flags">
+			<Item Name="available in forge" />
+			<Item Name="exclude default materials" />
+		</_field_long_flags>
+		<_field_short_enum name="Damage Effect Sounds - Enable Model Hit Override">
+			<Item Name="Same As Model" />
+			<Item Name="Disable" />
+			<Item Name="Enable" />
+		</_field_short_enum>
+		<_field_array name="runtime variant region indices">
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			<_field_char_integer name="runtime region index" />
+			</_field_array>
+		<_field_pad name="generated_pad364f" length="2" />
+		<_field_block_64 name="regions">
+			<_field_string_id name="region name" />
+			<_field_char_integer name="runtime region index" />
+			<_field_byte_integer name="runtime flags" />
+			<_field_short_block_index name="parent variant" />
+			<_field_block_64 name="permutations">
+				<_field_string_id name="permutation name" />
+				<_field_dword_integer name="runtime permutation index" />
+				<_field_byte_flags name="flags">
+					<Item Name="copy states to all permutations" />
+				</_field_byte_flags>
+				<_field_pad name="generated_padd60a" length="3" />
+				<_field_real name="probability" />
+				<_field_block_64 name="states">
+					<_field_string_id name="permutation name" />
+					<_field_char_integer name="runtime permutation index" />
+					<_field_byte_flags name="property flags">
+						<Item Name="blurred" />
+						<Item Name="hella blurred" />
+						<Item Name="unshielded" />
+						<Item Name="battery depleted" />
+					</_field_byte_flags>
+					<_field_short_enum name="state">
+						<Item Name="default" />
+						<Item Name="minor damage" />
+						<Item Name="medium damage" />
+						<Item Name="major damage" />
+						<Item Name="destroyed" />
+					</_field_short_enum>
+					<_field_real_fraction name="initial probability" />
+					</_field_block_64>
+				<_field_array name="runtime state permutation indices">
+					<_field_char_integer name="runtime permutation index" />
+					<_field_char_integer name="runtime permutation index" />
+					<_field_char_integer name="runtime permutation index" />
+					<_field_char_integer name="runtime permutation index" />
+					<_field_char_integer name="runtime permutation index" />
+					</_field_array>
+				<_field_pad name="generated_pad22bf" length="3" />
+				</_field_block_64>
+			<_field_short_enum name="sort order">
+				<Item Name="no sorting" />
+				<Item Name="-5 (closest)" />
+				<Item Name="-4" />
+				<Item Name="-3" />
+				<Item Name="-2" />
+				<Item Name="-1" />
+				<Item Name="0 (same as model)" />
+				<Item Name="1" />
+				<Item Name="2" />
+				<Item Name="3" />
+				<Item Name="4" />
+				<Item Name="5 (farthest)" />
+			</_field_short_enum>
+			<_field_pad name="generated_pade9d0" length="2" />
+			</_field_block_64>
+		<_field_block_64 name="objects">
+			<_field_custom name="" />
+			<_field_string_id name="parent marker" />
+			<_field_custom name="" />
+			<_field_string_id name="child marker" />
+			<_field_string_id name="child variant name" />
+			<_field_tag_reference_64 name="child object" />
+			<_field_tag_reference_64 name="child configuration" />
+			<_field_short_block_index name="damage section" />
+			<_field_byte_flags name="flags">
+				<Item Name="enable physics" />
+				<Item Name="share bones with parent" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padd065" length="1" />
+			</_field_block_64>
+		<_field_custom name="Object Node Graph Overrides" />
+		<_field_block_64 name="Object Node Graphs">
+			<_field_string_id name="Name" />
+			<_field_tag_reference_64 name="Exported Node Graph" />
+			<_field_byte_flags name="Flags">
+				<Item Name="Runs on Server" />
+				<Item Name="Runs on Client" />
+				<Item Name="Start updating on the first frame" />
+			</_field_byte_flags>
+			<_field_char_enum name="Enable Node Graph">
+				<Item Name="Default" />
+				<Item Name="Yes" />
+				<Item Name="No" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8671" length="2" />
+			</_field_block_64>
+		<_field_custom name="" />
+		<_field_block_64 name="muted nodes">
+			<_field_string_id name="node name" />
+			</_field_block_64>
+		<_field_array name="muted flag">
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			<_field_long_integer name="flag data" />
+			</_field_array>
+		<_field_tag_reference_64 name="structure lighting_info" />
+		<_field_tag_reference_64 name="lighting volumes" />
+		<_field_tag_reference_64 name="Object Lightmap" />
+		<_field_block_64 name="Object Cubemap set">
+			<_field_string_id name="Name" />
+			<_field_long_integer name="Guid" />
+			<_field_long_flags name="Flags">
+				<Item Name="Enable Intensity Correction" />
+				<Item Name="Capture With Effects" />
+				<Item Name="Affects Adjacent Bsps" />
+				<Item Name="Capture Dynamic Objects" />
+			</_field_long_flags>
+			<_field_struct name="Dumpling">
+				<_field_block_64 name="inner points">
+					<_field_real_point_3d name="position" />
+					</_field_block_64>
+				<_field_block_64 name="outer points">
+					<_field_real_point_3d name="position" />
+					</_field_block_64>
+				<_field_real name="height" />
+				<_field_real name="sink" />
+				<_field_real name="inner value" />
+				<_field_real name="outer value" />
+				<_field_real_point_3d name="center point" />
+				<_field_real name="trivial cull radius squared" />
+				<_field_real name="bound volume" />
+				</_field_struct>
+			<_field_tag_reference_64 name="Cubemap Bitmap" />
+			<_field_short_enum name="Enable Parallax Correction">
+				<Item Name="Off" />
+				<Item Name="On" />
+			</_field_short_enum>
+			<_field_short_integer name="Cubemap Volume Priority" />
+			<_field_real_point_3d name="Cubemap Origin" />
+			<_field_real_vector_3d name="Depth Positive" />
+			<_field_real_vector_3d name="Depth Negative" />
+			<_field_short_enum name="Active Volume">
+				<Item Name="Off" />
+				<Item Name="On" />
+			</_field_short_enum>
+			<_field_short_enum name="Maximum cubemap size">
+				<Item Name="128x128" />
+				<Item Name="256x256" />
+				<Item Name="512x512" />
+			</_field_short_enum>
+			<_field_real_point_3d name="Intensity" />
+			<_field_real name="Self-illum Scale Down" />
+			<_field_block_64 name="EditorMetadata">
+				<_field_long_string name="folder name" />
+				<_field_real_point_3d name="local space pivot point position" />
+				</_field_block_64>
+			<_field_tag_reference_64 name="owner bsp" />
+			<_field_string_id name="owner variant" />
+			<_field_short_integer name="runtime bsp index" />
+			<_field_short_integer name="runtime variant index" />
+			<_field_real name="Blend Distance" />
+			<_field_long_enum name="Cubemap Volume Type">
+				<Item Name="Prism" />
+				<Item Name="Sphere" />
+			</_field_long_enum>
+			<_field_real name="Orientation" />
+			<_field_tag_reference_64 name="Cubemap Depth Bitmap" />
+			<_field_real name="Depth Blend Range" />
+			<_field_real name="Intensity Scale" />
+			<_field_short_enum name="Tintable">
+				<Item Name="Off" />
+				<Item Name="On" />
+			</_field_short_enum>
+			<_field_short_enum name="Runtime Force Add Inactive">
+				<Item Name="Off" />
+				<Item Name="On" />
+			</_field_short_enum>
+			<_field_real name="Relevancy Radius" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="region sort">
+		<_field_string_id name="name" />
+		</_field_block_64>
+	<_field_block_64 name="model materials">
+		<_field_string_id name="material name" />
+		<_field_short_block_index name="damage section" />
+		<_field_short_integer name="runtime collision material index" />
+		<_field_short_integer name="runtime damager material index" />
+		<_field_pad name="generated_pad5ad1" length="2" />
+		<_field_string_id name="global material name" />
+		<_field_short_integer name="runtime global material index" />
+		<_field_pad name="generated_pad40f0" length="2" />
+		</_field_block_64>
+	<_field_block_64 name="new damage info">
+		<_field_long_flags name="flags">
+			<Item Name="takes shield damage for children" />
+			<Item Name="takes body damage for children" />
+			<Item Name="always shields friendly damage" />
+			<Item Name="passes area damage to children" />
+			<Item Name="parent never takes body damage for us" />
+			<Item Name="only damaged by explosives" />
+			<Item Name="parent never takes shield damage for us" />
+			<Item Name="cannot die from damage" />
+			<Item Name="passes attached damage to riders" />
+			<Item Name="shield depletion is permanent" />
+			<Item Name="shield depletion force hard ping" />
+			<Item Name="AI do not damage without player" />
+			<Item Name="health regrows while dead" />
+			<Item Name="shield recharge plays only when empty" />
+			<Item Name="IGNORE force minimum transfer" />
+			<Item Name="orphan from postprocess autogen" />
+			<Item Name="only damaged by boarding damage" />
+		</_field_long_flags>
+		<_field_string_id name="global indirect material name" />
+		<_field_custom_short_block_index name="indirect damage section" />
+		<_field_pad name="generated_pad0d7e" length="2" />
+		<_field_explanation name="body" />
+		<_field_struct name="body">
+			<_field_real name="maximum vitality" />
+			<_field_real name="minimum stun damage" />
+			<_field_real name="stun time" />
+			<_field_real name="recharge time" />
+			<_field_real_fraction name="recharge fraction" />
+			</_field_struct>
+		<_field_explanation name="shield" />
+		<_field_struct name="shield">
+			<_field_real name="maximum shield vitality" />
+			<_field_string_id name="global shield material name" />
+			<_field_real name="minimum stun damage" />
+			<_field_real name="stun time" />
+			<_field_real name="recharge time" />
+			<_field_real name="shield overcharge fraction" />
+			<_field_real name="shield overcharge time" />
+			<_field_real name="shield damaged threshold" />
+			<_field_tag_reference_64 name="shield damaged effect" />
+			<_field_tag_reference_64 name="shield depleted effect" />
+			<_field_tag_reference_64 name="shield recharging effect" />
+			</_field_struct>
+		<_field_block_64 name="damage sections">
+			<_field_string_id name="name" />
+			<_field_explanation name="damage section flags" />
+			<_field_long_flags name="flags">
+				<Item Name="absorbs body damage" />
+				<Item Name="takes full dmg when object dies" />
+				<Item Name="cannot die with riders" />
+				<Item Name="takes full dmg when obj dstryd" />
+				<Item Name="restored on ressurection" />
+				<Item Name="unused0" />
+				<Item Name="unused1" />
+				<Item Name="heatshottable" />
+				<Item Name="ignores shields" />
+				<Item Name="takes full dmg when shield depl" />
+				<Item Name="networked (e.g. armor lock)" />
+				<Item Name="allow damage response overflow" />
+			</_field_long_flags>
+			<_field_real_fraction name="vitality percentage" />
+			<_field_block_64 name="instant responses">
+				<_field_short_enum name="response type">
+					<Item Name="receives all damage" />
+					<Item Name="receives area effect damage" />
+					<Item Name="receives local damage" />
+				</_field_short_enum>
+				<_field_explanation name="Constraint damage type" />
+				<_field_short_enum name="constraint damage type">
+					<Item Name="none" />
+					<Item Name="destroy one of group" />
+					<Item Name="destroy entire group" />
+					<Item Name="loosen one of group" />
+					<Item Name="loosen entire group" />
+				</_field_short_enum>
+				<_field_explanation name="Constraint destruction" />
+				<_field_string_id name="constraint/group name" />
+				<_field_explanation name="Damage response flags" />
+				<_field_long_flags name="flags">
+					<Item Name="kills object" />
+					<Item Name="inhibits melee attack" />
+					<Item Name="inhibits weapon attack" />
+					<Item Name="inhibits walking" />
+					<Item Name="forces drop weapon" />
+					<Item Name="kills weapon primary trigger" />
+					<Item Name="kills weapon secondary trigger" />
+					<Item Name="destroys object" />
+					<Item Name="damages weapon primary trigger" />
+					<Item Name="damages weapon secondary trigger" />
+					<Item Name="light damage left turn" />
+					<Item Name="major damage left turn" />
+					<Item Name="light damage right turn" />
+					<Item Name="major damage right turn" />
+					<Item Name="light damage engine" />
+					<Item Name="major damage engine" />
+					<Item Name="kills object (no player solo)" />
+					<Item Name="causes detonation" />
+					<Item Name="fires on creation" />
+					<Item Name="kills variant objects" />
+					<Item Name="force unattached effects" />
+					<Item Name="fires under threshold" />
+					<Item Name="triggers special death" />
+					<Item Name="only on special death" />
+					<Item Name="only NOT on special death" />
+					<Item Name="buckles giants" />
+					<Item Name="causes sp detonation" />
+					<Item Name="skip sounds on generic effect" />
+					<Item Name="kills giants" />
+					<Item Name="skip sounds on special death" />
+					<Item Name="cause head dismemberment" />
+					<Item Name="cause left leg dismemberment" />
+				</_field_long_flags>
+				<_field_long_flags name="flags2">
+					<Item Name="cause right leg dismemberment" />
+					<Item Name="cause left arm dismemberment" />
+					<Item Name="cause right arm dismemberment" />
+					<Item Name="allow damage recharge overflow" />
+				</_field_long_flags>
+				<_field_real_fraction name="damage threshold" />
+				<_field_long_flags name="body threshold flags">
+					<Item Name="body threshold active" />
+				</_field_long_flags>
+				<_field_real name="body damage threshold" />
+				<_field_tag_reference_64 name="transition effect (generic)" />
+				<_field_tag_reference_64 name="transition effect (specific)" />
+				<_field_struct name="damage effect">
+					<_field_tag_reference_64 name="transition damage effect" />
+					</_field_struct>
+				<_field_string_id name="region" />
+				<_field_short_enum name="new state">
+					<Item Name="default" />
+					<Item Name="minor damage" />
+					<Item Name="medium damage" />
+					<Item Name="major damage" />
+					<Item Name="destroyed" />
+				</_field_short_enum>
+				<_field_short_integer name="runtime region index" />
+				<_field_string_id name="region (secondary)" />
+				<_field_short_enum name="new state (secondary)">
+					<Item Name="default" />
+					<Item Name="minor damage" />
+					<Item Name="medium damage" />
+					<Item Name="major damage" />
+					<Item Name="destroyed" />
+				</_field_short_enum>
+				<_field_short_integer name="runtime region index (secondary)" />
+				<_field_short_enum name="custom response behavior">
+					<Item Name="plays always" />
+					<Item Name="plays if labels match" />
+					<Item Name="plays if labels differ" />
+				</_field_short_enum>
+				<_field_pad name="generated_pad870e" length="2" />
+				<_field_string_id name="custom response label" />
+				<_field_string_id name="effect marker name" />
+				<_field_struct name="damage effect marker">
+					<_field_string_id name="damage effect marker name" />
+					</_field_struct>
+				<_field_explanation name="Response delay" />
+				<_field_real name="response delay" />
+				<_field_tag_reference_64 name="delay effect" />
+				<_field_string_id name="delay effect marker name" />
+				<_field_real name="response delay premature damage threshold" />
+				<_field_explanation name="seat ejaculation" />
+				<_field_string_id name="ejecting seat label" />
+				<_field_explanation name="skip fraction" />
+				<_field_real_fraction name="skip fraction" />
+				<_field_explanation name="destroyed child object marker name" />
+				<_field_string_id name="destroyed child object marker name" />
+				<_field_explanation name="total damage threshold" />
+				<_field_real_fraction name="total damage threshold" />
+				</_field_block_64>
+			<_field_real name="stun time" />
+			<_field_real name="recharge time" />
+			<_field_real name="runtime recharge velocity" />
+			<_field_string_id name="resurrection restored region name" />
+			<_field_short_integer name="runtime resurrection restored region index" />
+			<_field_pad name="generated_padab79" length="2" />
+			</_field_block_64>
+		<_field_block_64 name="nodes">
+			<_field_short_integer name="runtime damage part" />
+			</_field_block_64>
+		<_field_short_integer name="runtime shield material type" />
+		<_field_short_integer name="runtime indirect material type" />
+		<_field_real name="runtime shield recharge velocity" />
+		<_field_real name="runtime overcharge velocity" />
+		<_field_real name="runtime health recharge velocity" />
+		<_field_block_64 name="damage seats">
+			<_field_string_id name="seat label" />
+			<_field_real_fraction name="direct damage scale" />
+			<_field_real name="damage transfer fall-off radius" />
+			<_field_real name="maximum transfer damage scale" />
+			<_field_real name="minimum transfer damage scale" />
+			<_field_block_64 name="region-specific-damage">
+				<_field_explanation name="region-state-specific-damage" />
+				<_field_string_id name="damage region name" />
+				<_field_short_integer name="runtime damage region index" />
+				<_field_pad name="generated_padf8cd" length="2" />
+				<_field_real name="direct damage scale (minor)" />
+				<_field_real name="Max. transfer scale (minor)" />
+				<_field_real name="min. transfer scale (minor)" />
+				<_field_real name="direct damage scale (medium)" />
+				<_field_real name="Max. transfer scale (medium)" />
+				<_field_real name="min. transfer scale (medium)" />
+				<_field_real name="direct damage scale (major)" />
+				<_field_real name="Max. transfer scale (major)" />
+				<_field_real name="min. transfer scale (major)" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="damage constraints">
+			<_field_string_id name="physics model constraint name" />
+			<_field_string_id name="damage constraint name" />
+			<_field_string_id name="damage constraint group name" />
+			<_field_real name="group probability scale" />
+			<_field_short_integer name="runtime constraint type" />
+			<_field_short_integer name="runtime constraint index" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_struct name="damage info">
+		<_field_explanation name="Damage Info" />
+		<_field_long_flags name="flags">
+			<Item Name="takes damage for children" />
+			<Item Name="parent never takes damage for us" />
+			<Item Name="cannot die from damage" />
+			<Item Name="dies with riders" />
+			<Item Name="passes area damage to children" />
+			<Item Name="Don't use region packing for visual damage mask" />
+		</_field_long_flags>
+		<_field_string_id name="indirect material name" />
+		<_field_short_block_index name="indirect damage section" />
+		<_field_short_block_index name="shielded state damage section" />
+		<_field_tag_reference_64 name="restoration effect" />
+		<_field_block_64 name="damage sections">
+			<_field_string_id name="name" />
+			<_field_char_enum name="damage part">
+				<Item Name="gut" />
+				<Item Name="chest" />
+				<Item Name="head" />
+				<Item Name="left shoulder" />
+				<Item Name="left arm" />
+				<Item Name="left leg" />
+				<Item Name="left foot" />
+				<Item Name="right shoulder" />
+				<Item Name="right arm" />
+				<Item Name="right leg" />
+				<Item Name="right foot" />
+			</_field_char_enum>
+			<_field_pad name="generated_padaef0" length="3" />
+			<_field_long_flags name="flags">
+				<Item Name="starts inactive" />
+				<Item Name="takes full dmg when object dies" />
+				<Item Name="takes full dmg when obj dstryd" />
+				<Item Name="restored on ressurection" />
+				<Item Name="headshot" />
+				<Item Name="depletion is permanent" />
+				<Item Name="recharges while dead" />
+				<Item Name="play recharge effect only when empty" />
+				<Item Name="networked (note that primary body and shield are always networked)" />
+				<Item Name="can recharge independently" />
+				<Item Name="depletion tracked by AI characters" />
+				<Item Name="DEPRECATED DO NOT USE 1" />
+				<Item Name="DEPRECATED DO NOT USE 2" />
+				<Item Name="DEPRECATED DO NOT USE 3" />
+				<Item Name="DEPRECATED DO NOT USE 4" />
+				<Item Name="DEPRECATED DO NOT USE 5" />
+				<Item Name="DEPRECATED DO NOT USE 6" />
+				<Item Name="blocks headshots" />
+				<Item Name="weak spot" />
+				<Item Name="trivial collision" />
+				<Item Name="disable additive player damage sound" />
+				<Item Name="strippable armor" />
+				<Item Name="takes visual damage" />
+				<Item Name="requires ordered instant responses" />
+			</_field_long_flags>
+			<_field_long_integer name="runtime flags" />
+			<_field_custom name="" />
+			<_field_real_fraction name="vitality percentage" />
+			<_field_custom name="" />
+			<_field_custom name="maximum vitality percentage" />
+			<_field_struct name="maximum vitality percentage">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_string_id name="shield material name" />
+			<_field_explanation name="stun" />
+			<_field_custom name="" />
+			<_field_real name="stun time" />
+			<_field_custom name="" />
+			<_field_custom name="stun duration" />
+			<_field_struct name="stun duration">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_real name="minimum stun damage" />
+			<_field_explanation name="recharge" />
+			<_field_real name="recharge time" />
+			<_field_custom name="recharge speed base scalar" />
+			<_field_struct name="recharge speed base scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_block_64 name="recharge speed curve">
+				<_field_custom name="Mapping" />
+				<_field_struct name="Mapping">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="recharge fractions">
+				<_field_real_fraction name="vitality percentage" />
+				</_field_block_64>
+			<_field_tag_reference_64 name="recharging effect" />
+			<_field_real name="pre recharge effect warn time" />
+			<_field_tag_reference_64 name="pre recharge effect" />
+			<_field_string_id name="pre recharge effect marker" />
+			<_field_tag_reference_64 name="pre recharge abort effect" />
+			<_field_string_id name="pre recharge abort effect marker" />
+			<_field_explanation name="overcharge" />
+			<_field_real name="overcharge time" />
+			<_field_real name="overcharge fraction" />
+			<_field_explanation name="decay" />
+			<_field_real name="pre decay time" />
+			<_field_real name="decay time" />
+			<_field_explanation name="resurrection" />
+			<_field_string_id name="resurrection restored region name" />
+			<_field_real name="anti spam timer duration" />
+			<_field_block_64 name="instant responses">
+				<_field_long_flags name="flags">
+					<Item Name="kills object" />
+					<Item Name="inhibits melee attack" />
+					<Item Name="inhibits weapon attack" />
+					<Item Name="inhibits walking" />
+					<Item Name="forces drop weapon" />
+					<Item Name="kills weapon primary trigger" />
+					<Item Name="kills weapon secondary trigger" />
+					<Item Name="destroys object" />
+					<Item Name="damages weapon primary trigger" />
+					<Item Name="damages weapon secondary trigger" />
+					<Item Name="kills object (no player solo)" />
+					<Item Name="causes detonation" />
+					<Item Name="kills variant objects" />
+					<Item Name="force unattached effects" />
+					<Item Name="fires under threshold" />
+					<Item Name="triggers special death" />
+					<Item Name="only on special death" />
+					<Item Name="only NOT on special death" />
+					<Item Name="buckles giants" />
+					<Item Name="causes sp detonation" />
+					<Item Name="skip sounds on generic effect" />
+					<Item Name="kills giants" />
+					<Item Name="skip sounds on special death" />
+					<Item Name="force hard ping" />
+					<Item Name="can refire" />
+					<Item Name="can skip transition effects" />
+					<Item Name="dooms unit" />
+					<Item Name="can cause actor kamikaze" />
+					<Item Name="hides object if destroyed by response on predicted client" />
+					<Item Name="repeatable" />
+					<Item Name="use anti spam timer" />
+					<Item Name="ignores looping effects" />
+				</_field_long_flags>
+				<_field_long_flags name="flags2">
+					<Item Name="skip on incineration" />
+					<Item Name="generate script event" />
+				</_field_long_flags>
+				<_field_string_id name="label" />
+				<_field_block_64 name="included variants">
+					<_field_string_id name="name" />
+					</_field_block_64>
+				<_field_block_64 name="excluded variants">
+					<_field_string_id name="name" />
+					</_field_block_64>
+				<_field_real_fraction name="damage threshold" />
+				<_field_real_fraction name="min damage threshold" />
+				<_field_string_id name="forced hard ping anim " />
+				<_field_tag_reference_64 name="transition effect (generic)" />
+				<_field_string_id name="generic effect marker" />
+				<_field_tag_reference_64 name="transition effect (specific)" />
+				<_field_string_id name="specific effect marker" />
+				<_field_struct name="damage effect">
+					<_field_tag_reference_64 name="transition damage effect" />
+					</_field_struct>
+				<_field_struct name="damage effect marker">
+					<_field_string_id name="damage effect marker name" />
+					</_field_struct>
+				<_field_tag_reference_64 name="looping effect" />
+				<_field_tag_reference_64 name="healing transition effect (generic)" />
+				<_field_string_id name="generic healing effect marker" />
+				<_field_custom name="Contextual Effects" />
+				<_field_explanation name="Contextual Transition Effects" />
+				<_field_string_id name="ray cast marker" />
+				<_field_real name="ray cast length" />
+				<_field_tag_reference_64 name="combined material effects" />
+				<_field_tag_reference_64 name="visual material effects" />
+				<_field_tag_reference_64 name="sound material effects" />
+				<_field_tag_reference_64 name="fallback effect" />
+				<_field_string_id name="fallback effect marker" />
+				<_field_custom name="" />
+				<_field_block_64 name="region_transitions">
+					<_field_string_id name="region" />
+					<_field_short_enum name="new state">
+						<Item Name="default" />
+						<Item Name="minor damage" />
+						<Item Name="medium damage" />
+						<Item Name="major damage" />
+						<Item Name="destroyed" />
+					</_field_short_enum>
+					<_field_short_integer name="runtime region index" />
+					</_field_block_64>
+				<_field_block_64 name="response damage transfers">
+					<_field_long_flags name="flags">
+						<Item Name="transfer damage to damage section" />
+						<Item Name="transfer damage to parent" />
+						<Item Name="transfer damage to children" />
+						<Item Name="transfer damage to seats" />
+						<Item Name="transfer direct damage" />
+						<Item Name="transfer AOE exposed damage" />
+						<Item Name="transfer AOE obstructed damage" />
+					</_field_long_flags>
+					<_field_real name="transfer amount" />
+					<_field_short_enum name="transfer function">
+						<Item Name="percent" />
+						<Item Name="points" />
+						<Item Name="ceiling" />
+					</_field_short_enum>
+					<_field_pad name="generated_pad53f9" length="2" />
+					<_field_real name="Ai Stun Transfer Amount" />
+					<_field_short_enum name="Ai Stun Transfer Function">
+						<Item Name="percent" />
+						<Item Name="points" />
+						<Item Name="ceiling" />
+					</_field_short_enum>
+					<_field_short_block_index name="damage section" />
+					<_field_string_id name="seat label" />
+					</_field_block_64>
+				<_field_short_enum name="custom response behavior">
+					<Item Name="plays always" />
+					<Item Name="plays if labels match" />
+					<Item Name="plays if labels differ" />
+				</_field_short_enum>
+				<_field_pad name="generated_padec95" length="2" />
+				<_field_string_id name="custom response label" />
+				<_field_real name="response delay" />
+				<_field_tag_reference_64 name="delay effect" />
+				<_field_string_id name="delay effect marker name" />
+				<_field_block_64 name="seat eject">
+					<_field_string_id name="seat label" />
+					</_field_block_64>
+				<_field_real_fraction name="skip fraction" />
+				<_field_string_id name="destroyed child object marker name" />
+				<_field_real_fraction name="total damage threshold" />
+				<_field_string_id name="constraint or group name" />
+				<_field_short_enum name="constraint damage type">
+					<Item Name="none" />
+					<Item Name="destroy one of group" />
+					<Item Name="destroy entire group" />
+					<Item Name="loosen one of group" />
+					<Item Name="loosen entire group" />
+				</_field_short_enum>
+				<_field_pad name="generated_padd2b4" length="2" />
+				<_field_long_enum name="ai dialog event">
+					<Item Name="none" />
+					<Item Name="armor broken" />
+					<Item Name="vehicle damage state worsens" />
+				</_field_long_enum>
+				</_field_block_64>
+			<_field_block_64 name="section damage transfers">
+				<_field_long_flags name="flags">
+					<Item Name="transfer damage to damage section" />
+					<Item Name="transfer damage to parent" />
+					<Item Name="transfer damage to children" />
+					<Item Name="transfer damage to seats" />
+					<Item Name="transfer direct damage" />
+					<Item Name="transfer AOE exposed damage" />
+					<Item Name="transfer AOE obstructed damage" />
+				</_field_long_flags>
+				<_field_real name="transfer amount" />
+				<_field_short_enum name="transfer function">
+					<Item Name="percent" />
+					<Item Name="points" />
+					<Item Name="ceiling" />
+				</_field_short_enum>
+				<_field_pad name="generated_pad53f9" length="2" />
+				<_field_real name="Ai Stun Transfer Amount" />
+				<_field_short_enum name="Ai Stun Transfer Function">
+					<Item Name="percent" />
+					<Item Name="points" />
+					<Item Name="ceiling" />
+				</_field_short_enum>
+				<_field_short_block_index name="damage section" />
+				<_field_string_id name="seat label" />
+				</_field_block_64>
+			<_field_block_64 name="rendering">
+				<_field_tag_reference_64 name="3rd person impact parameters (Generator)" />
+				<_field_tag_reference_64 name="1st person impact parameters (Generator)" />
+				</_field_block_64>
+			<_field_real name="runtime recharge velocity" />
+			<_field_real name="runtime overcharge velocity" />
+			<_field_short_integer name="runtime resurrection restored region index" />
+			<_field_short_integer name="runtime global shield material type" />
+			</_field_block_64>
+		<_field_block_64 name="damage constraints">
+			<_field_string_id name="physics model constraint name" />
+			<_field_string_id name="damage constraint name" />
+			<_field_string_id name="damage constraint group name" />
+			<_field_real name="group probability scale" />
+			<_field_short_integer name="runtime constraint type" />
+			<_field_short_integer name="runtime constraint index" />
+			</_field_block_64>
+		<_field_block_64 name="nodes">
+			<_field_short_integer name="runtime damage part" />
+			</_field_block_64>
+		<_field_short_integer name="runtime indirect material type" />
+		<_field_pad name="generated_pad9f05" length="2" />
+		<_field_explanation name="Malleable Properties" />
+		<_field_struct name="properties">
+			<_field_custom name="max overshield scalar" />
+			<_field_struct name="max overshield scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="overshield decay rate base scalar" />
+			<_field_struct name="overshield decay rate base scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_real name="body vitality" />
+			<_field_custom name="direct damage resistance" />
+			<_field_struct name="direct damage resistance">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="grenade damage resistance" />
+			<_field_struct name="grenade damage resistance">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="aoe damage resistance" />
+			<_field_struct name="aoe damage resistance">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_struct name="overshield information">
+				<_field_custom name="Overshield" />
+				<_field_real name="decay rate " />
+				<_field_real name="stun time scalar [0, n] " />
+				<_field_tag_reference_64 name="Generic modifiers" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="targets old">
+		<_field_byte_flags name="flags">
+			<Item Name="aoe top level" />
+			<Item Name="aoe test obstruction" />
+			<Item Name="shows tracking reticle" />
+			<Item Name="ignored on local physics" />
+			<Item Name="use for network lead vector only" />
+		</_field_byte_flags>
+		<_field_char_enum name="type">
+			<Item Name="standard" />
+			<Item Name="head" />
+			<Item Name="weak spot" />
+		</_field_char_enum>
+		<_field_char_enum name="category">
+			<Item Name="Chassis" />
+			<Item Name="Traversal" />
+			<Item Name="Engine" />
+			<Item Name="Cover" />
+			<Item Name="Weapon" />
+			<Item Name="Occupant" />
+		</_field_char_enum>
+		<_field_pad name="generated_padb298" length="1" />
+		<_field_custom name="" />
+		<_field_string_id name="marker name" />
+		<_field_real name="size" />
+		<_field_angle name="cone angle" />
+		<_field_short_block_index name="damage section" />
+		<_field_short_block_index name="variant" />
+		<_field_real_fraction name="aim assist magnetism scale" />
+		<_field_real_fraction name="ai selection priority scale" />
+		<_field_real name="aoe exclusion radius" />
+		<_field_struct name="lock-on data">
+			<_field_explanation name="lock-on fields" />
+			<_field_real name="lock on distance" />
+			<_field_string_id name="tracking type" />
+			</_field_struct>
+		</_field_block_64>
+	<_field_block_64 name="model targets">
+		<_field_byte_flags name="flags">
+			<Item Name="aoe top level" />
+			<Item Name="aoe test obstruction" />
+			<Item Name="shows tracking reticle" />
+			<Item Name="ignored on local physics" />
+			<Item Name="use for network lead vector only" />
+		</_field_byte_flags>
+		<_field_char_enum name="type">
+			<Item Name="standard" />
+			<Item Name="head" />
+			<Item Name="weak spot" />
+		</_field_char_enum>
+		<_field_char_enum name="category">
+			<Item Name="Chassis" />
+			<Item Name="Traversal" />
+			<Item Name="Engine" />
+			<Item Name="Cover" />
+			<Item Name="Weapon" />
+			<Item Name="Occupant" />
+		</_field_char_enum>
+		<_field_pad name="generated_padb298" length="1" />
+		<_field_custom name="" />
+		<_field_string_id name="marker name" />
+		<_field_real name="size" />
+		<_field_angle name="cone angle" />
+		<_field_short_block_index name="damage section" />
+		<_field_short_block_index name="variant" />
+		<_field_real_fraction name="aim assist magnetism scale" />
+		<_field_real_fraction name="ai selection priority scale" />
+		<_field_real name="aoe exclusion radius" />
+		<_field_struct name="lock-on data">
+			<_field_explanation name="lock-on fields" />
+			<_field_real name="lock on distance" />
+			<_field_string_id name="tracking type" />
+			</_field_struct>
+		</_field_block_64>
+	<_field_block_64 name="runtime regions">
+		<_field_string_id name="name" />
+		<_field_char_integer name="collision region index" />
+		<_field_char_integer name="physics region index" />
+		<_field_pad name="generated_pad1fd6" length="2" />
+		<_field_block_64 name="permutations">
+			<_field_string_id name="name" />
+			<_field_byte_flags name="flags">
+				<Item Name="cannot be chosen randomly" />
+			</_field_byte_flags>
+			<_field_char_integer name="collision permutation index" />
+			<_field_char_integer name="physics permutation index" />
+			<_field_pad name="generated_padf2b8" length="1" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="runtime nodes">
+		<_field_string_id name="name" />
+		<_field_short_block_index name="parent node" />
+		<_field_short_block_index name="first child node" />
+		<_field_short_block_index name="next sibling node" />
+		<_field_pad name="generated_pad1c9e" length="2" />
+		<_field_real_point_3d name="default translation" />
+		<_field_real_quaternion name="default rotation" />
+		<_field_real name="default inverse scale" />
+		<_field_real_vector_3d name="default inverse forward" />
+		<_field_real_vector_3d name="default inverse left" />
+		<_field_real_vector_3d name="default inverse up" />
+		<_field_real_point_3d name="default inverse position" />
+		</_field_block_64>
+	<_field_long_integer name="runtime node list checksum" />
+	<_field_block_64 name="prepopulated runtime nodes">
+		<_field_string_id name="name" />
+		<_field_short_block_index name="parent node" />
+		<_field_short_block_index name="first child node" />
+		<_field_short_block_index name="next sibling node" />
+		<_field_pad name="generated_pad1c9e" length="2" />
+		<_field_real_point_3d name="default translation" />
+		<_field_real_quaternion name="default rotation" />
+		<_field_real name="default inverse scale" />
+		<_field_real_vector_3d name="default inverse forward" />
+		<_field_real_vector_3d name="default inverse left" />
+		<_field_real_vector_3d name="default inverse up" />
+		<_field_real_point_3d name="default inverse position" />
+		</_field_block_64>
+	<_field_explanation name="more stuff" />
+	<_field_block_64 name="variant overrides">
+		<_field_string_id name="base variant" />
+		<_field_string_id name="override a" />
+		<_field_string_id name="override b" />
+		<_field_string_id name="override c" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="default dialogue" />
+	<_field_tag_reference_64 name="default dialogue female" />
+	<_field_block_64 name="teammate chatter dialogue male">
+		<_field_tag_reference_64 name="teammate chatter dialogue" />
+		</_field_block_64>
+	<_field_block_64 name="teammate chatter dialogue female">
+		<_field_tag_reference_64 name="teammate chatter dialogue" />
+		</_field_block_64>
+	<_field_block_64 name="special dialogues">
+		<_field_string_id name="identifier" />
+		<_field_tag_reference_64 name="special dialogue" />
+		</_field_block_64>
+	<_field_long_flags name="flags">
+		<Item Name="active camo always on" />
+		<Item Name="active camo never" />
+		<Item Name="inconsequential target" />
+		<Item Name="locked precomputed probes" />
+		<Item Name="If sky attaches to camera" />
+		<Item Name="model is big battle object" />
+		<Item Name="model never uses compressed vertex position" />
+		<Item Name="model is invisible, even attachments" />
+		<Item Name="DEPRECATED DO NOT USE 0" />
+		<Item Name="DEPRECATED DO NOT USE 1" />
+		<Item Name="DEPRECATED DO NOT USE 2" />
+		<Item Name="DEPRECATED DO NOT USE 3" />
+		<Item Name="DEPRECATED DO NOT USE 4" />
+		<Item Name="DEPRECATED DO NOT USE 5" />
+		<Item Name="DEPRECATED DO NOT USE 6" />
+		<Item Name="Damage Effect Sounds - Enable Model Hit" />
+		<Item Name="Do not validate skeleton" />
+	</_field_long_flags>
+	<_field_long_integer name="runtime flags" />
+	<_field_array name="render-only node flags">
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		</_field_array>
+	<_field_array name="render-only section flags">
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		<_field_long_integer name="flag data" />
+		</_field_array>
+	<_field_real_fraction name="Sky parallax percent" />
+	<_field_real name="shadow depth compare bias" />
+	<_field_real name="shadow slope scale bias" />
+	<_field_real name="shadow depth compare bias (dynamic lights)" />
+	<_field_real name="shadow slope scale bias (dynamic lights)" />
+	<_field_real name="runtime bounding radius" />
+	<_field_real_point_3d name="runtime bounding offset" />
+	<_field_pad name="generated_pad57cd" length="4" />
+	<_field_int64_integer name="reload hash" />
+	</plugin>

@@ -1,0 +1,135 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_string_id name="Live theater scrub begin event" />
+	<_field_string_id name="Live theater scrub end event" />
+	<_field_string_id name="Forge mode event" />
+	<_field_tag_reference_64 name="Init sound bank" />
+	<_field_block_64 name="Global sound banks">
+		<_field_tag_reference_64 name="Sound bank" />
+		</_field_block_64>
+	<_field_block_64 name="Extra sound banks">
+		<_field_tag_reference_64 name="Sound bank" />
+		</_field_block_64>
+	<_field_real name="Radio For Voice Radius" />
+	<_field_block_64 name="Vehicle Surface Sound Info">
+		<_field_string_id name="RTPC name" />
+		<_field_real name="Sweetener threshold" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Forge sound events" />
+	<_field_real name="Acoustic Zone transition speed" />
+	<_field_tag_reference_64 name="Root sound category reference" />
+	<_field_real name="Camera to biped listener position blend" />
+	<_field_real name="Camera to biped listener orientation blend" />
+	<_field_real name="Listener to locked z axis orientation blend" />
+	<_field_real name="Milliseconds between focus RTPC update" />
+	<_field_custom name="Quality Presets" />
+	<_field_struct name="Quality Presets">
+		<_field_custom name="XBoxOne" />
+		<_field_struct name="XBoxOne">
+			<_field_custom name="Acoustics" />
+			<_field_struct name="Acoustics">
+				<_field_byte_flags name="Audio Flags">
+					<Item Name="Acoustics Disable Voxel Pathfinding" />
+					<Item Name="Acoustics Disable Dynamic Object Obstruction" />
+					<Item Name="Acoustics Disable Portal Raycasting" />
+					<Item Name="Acoustics Enable Flood Fill Diagonals" />
+					<Item Name="Acoustics Enable Flood Fill Sorted Frontier" />
+					<Item Name="Acoustics Disable Dynamic Objects For Line-of-sight Raycasts" />
+				</_field_byte_flags>
+				<_field_pad name="generated_pad5f57" length="3" />
+				<_field_long_integer name="Acoustics Flood Fill Num String Pull Iterations" />
+				<_field_real name="Acoustics Flood Fill Num String Pull Iteration scale" />
+				<_field_long_integer name="Acoustics Num Parallel Source Updates" />
+				<_field_real name="Acoustics LOD Distance Multiplier" />
+				<_field_long_integer name="Max Listener Count To Enable Voxel Obstruction" />
+				</_field_struct>
+			<_field_custom name="" />
+			<_field_custom name="Proritizer" />
+			<_field_struct name="Prioritizer">
+				<_field_long_integer name="Max Events 1 Player" />
+				<_field_long_integer name="Max Events 2 Player" />
+				<_field_long_integer name="Max Events 3 Player" />
+				<_field_long_integer name="Max Events 4 Player" />
+				</_field_struct>
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Scarlett" />
+		<_field_struct name="Scarlett">
+			<_field_custom name="Acoustics" />
+			<_field_struct name="Acoustics">
+				<_field_byte_flags name="Audio Flags">
+					<Item Name="Acoustics Disable Voxel Pathfinding" />
+					<Item Name="Acoustics Disable Dynamic Object Obstruction" />
+					<Item Name="Acoustics Disable Portal Raycasting" />
+					<Item Name="Acoustics Enable Flood Fill Diagonals" />
+					<Item Name="Acoustics Enable Flood Fill Sorted Frontier" />
+					<Item Name="Acoustics Disable Dynamic Objects For Line-of-sight Raycasts" />
+				</_field_byte_flags>
+				<_field_pad name="generated_pad5f57" length="3" />
+				<_field_long_integer name="Acoustics Flood Fill Num String Pull Iterations" />
+				<_field_real name="Acoustics Flood Fill Num String Pull Iteration scale" />
+				<_field_long_integer name="Acoustics Num Parallel Source Updates" />
+				<_field_real name="Acoustics LOD Distance Multiplier" />
+				<_field_long_integer name="Max Listener Count To Enable Voxel Obstruction" />
+				</_field_struct>
+			<_field_custom name="" />
+			<_field_custom name="Proritizer" />
+			<_field_struct name="Prioritizer">
+				<_field_long_integer name="Max Events 1 Player" />
+				<_field_long_integer name="Max Events 2 Player" />
+				<_field_long_integer name="Max Events 3 Player" />
+				<_field_long_integer name="Max Events 4 Player" />
+				</_field_struct>
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="PC" />
+		<_field_struct name="PC">
+			<_field_custom name="Acoustics" />
+			<_field_struct name="Acoustics">
+				<_field_byte_flags name="Audio Flags">
+					<Item Name="Acoustics Disable Voxel Pathfinding" />
+					<Item Name="Acoustics Disable Dynamic Object Obstruction" />
+					<Item Name="Acoustics Disable Portal Raycasting" />
+					<Item Name="Acoustics Enable Flood Fill Diagonals" />
+					<Item Name="Acoustics Enable Flood Fill Sorted Frontier" />
+					<Item Name="Acoustics Disable Dynamic Objects For Line-of-sight Raycasts" />
+				</_field_byte_flags>
+				<_field_pad name="generated_pad5f57" length="3" />
+				<_field_long_integer name="Acoustics Flood Fill Num String Pull Iterations" />
+				<_field_real name="Acoustics Flood Fill Num String Pull Iteration scale" />
+				<_field_long_integer name="Acoustics Num Parallel Source Updates" />
+				<_field_real name="Acoustics LOD Distance Multiplier" />
+				<_field_long_integer name="Max Listener Count To Enable Voxel Obstruction" />
+				</_field_struct>
+			<_field_custom name="" />
+			<_field_custom name="Proritizer" />
+			<_field_struct name="Prioritizer">
+				<_field_long_integer name="Max Events 1 Player" />
+				<_field_long_integer name="Max Events 2 Player" />
+				<_field_long_integer name="Max Events 3 Player" />
+				<_field_long_integer name="Max Events 4 Player" />
+				</_field_struct>
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="Wwise Bus/Device Names" />
+	<_field_long_string name="System device" />
+	<_field_long_string name="Spatial device" />
+	<_field_long_string name="Spatial bus" />
+	<_field_custom name="" />
+	<_field_block_64 name="Gameplay state transition events">
+		<_field_string_id name="EventId" />
+		</_field_block_64>
+	<_field_real name="Pause delay time (seconds)" />
+	<_field_tag_reference_64 name="Positional chat looping sound tag reference" />
+	</plugin>

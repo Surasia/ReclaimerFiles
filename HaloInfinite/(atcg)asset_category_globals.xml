@@ -1,0 +1,157 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="parent" />
+	<_field_block_64 name="Asset Category Globals">
+		<_field_string_id name="Name" />
+		<_field_string_id name="editor group" />
+		<_field_custom name="Low Setting" />
+		<_field_struct name="Low Setting">
+			<_field_real_bounds name="LOD Distance Multiplier" />
+			<_field_custom name="LOD Splitscreen Multipliers" />
+			<_field_real name="LOD - 2 Player Splitscreen" />
+			<_field_real name="LOD - 3 Player Splitscreen" />
+			<_field_real name="LOD - 4 Player Splitscreen" />
+			<_field_custom name="" />
+			<_field_dword_integer name="Number of LODs to skip" />
+			<_field_custom name="Number of LODs to skip for Splitscreen" />
+			<_field_dword_integer name="LOD Skip - 2 Player Splitscreen" />
+			<_field_dword_integer name="LOD Skip - 3 Player Splitscreen" />
+			<_field_dword_integer name="LOD Skip - 4 Player Splitscreen" />
+			<_field_custom name="" />
+			<_field_real_bounds name="Hide After Distance Multiplier" />
+			<_field_custom name="Hide After Distance Splitscreen Multipliers" />
+			<_field_real name="HAD - 2 Player Splitscreen" />
+			<_field_real name="HAD - 3 Player Splitscreen" />
+			<_field_real name="HAD - 4 Player Splitscreen" />
+			<_field_custom name="" />
+			<_field_real name="Static IO Shadow Casting Maximum Distance" />
+			<_field_real name="Dynamic Object Shadow Casting Maximum Distance" />
+			<_field_real name="Dynamic Object Cast Shadow Outside of Camera Frustum Distance" />
+			<_field_real name="Dynamic Object BLAS Update Area Multiplier" />
+			<_field_real name="Dynamic Object BLAS Update Outside of Camera Frustum Distance Multiplier" />
+			<_field_dword_integer name="BLAS Bias for RT shadows" />
+			<_field_byte_flags name="Force Disable RT Shadows">
+				<Item Name="enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad348a" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Medium Setting" />
+		<_field_struct name="Medium Setting">
+			<_field_real_bounds name="LOD Distance Multiplier" />
+			<_field_custom name="LOD Splitscreen Multipliers" />
+			<_field_real name="LOD - 2 Player Splitscreen" />
+			<_field_real name="LOD - 3 Player Splitscreen" />
+			<_field_real name="LOD - 4 Player Splitscreen" />
+			<_field_custom name="" />
+			<_field_dword_integer name="Number of LODs to skip" />
+			<_field_custom name="Number of LODs to skip for Splitscreen" />
+			<_field_dword_integer name="LOD Skip - 2 Player Splitscreen" />
+			<_field_dword_integer name="LOD Skip - 3 Player Splitscreen" />
+			<_field_dword_integer name="LOD Skip - 4 Player Splitscreen" />
+			<_field_custom name="" />
+			<_field_real_bounds name="Hide After Distance Multiplier" />
+			<_field_custom name="Hide After Distance Splitscreen Multipliers" />
+			<_field_real name="HAD - 2 Player Splitscreen" />
+			<_field_real name="HAD - 3 Player Splitscreen" />
+			<_field_real name="HAD - 4 Player Splitscreen" />
+			<_field_custom name="" />
+			<_field_real name="Static IO Shadow Casting Maximum Distance" />
+			<_field_real name="Dynamic Object Shadow Casting Maximum Distance" />
+			<_field_real name="Dynamic Object Cast Shadow Outside of Camera Frustum Distance" />
+			<_field_real name="Dynamic Object BLAS Update Area Multiplier" />
+			<_field_real name="Dynamic Object BLAS Update Outside of Camera Frustum Distance Multiplier" />
+			<_field_dword_integer name="BLAS Bias for RT shadows" />
+			<_field_byte_flags name="Force Disable RT Shadows">
+				<Item Name="enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad348a" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="High Setting" />
+		<_field_struct name="High Setting">
+			<_field_real_bounds name="LOD Distance Multiplier" />
+			<_field_custom name="LOD Splitscreen Multipliers" />
+			<_field_real name="LOD - 2 Player Splitscreen" />
+			<_field_real name="LOD - 3 Player Splitscreen" />
+			<_field_real name="LOD - 4 Player Splitscreen" />
+			<_field_custom name="" />
+			<_field_dword_integer name="Number of LODs to skip" />
+			<_field_custom name="Number of LODs to skip for Splitscreen" />
+			<_field_dword_integer name="LOD Skip - 2 Player Splitscreen" />
+			<_field_dword_integer name="LOD Skip - 3 Player Splitscreen" />
+			<_field_dword_integer name="LOD Skip - 4 Player Splitscreen" />
+			<_field_custom name="" />
+			<_field_real_bounds name="Hide After Distance Multiplier" />
+			<_field_custom name="Hide After Distance Splitscreen Multipliers" />
+			<_field_real name="HAD - 2 Player Splitscreen" />
+			<_field_real name="HAD - 3 Player Splitscreen" />
+			<_field_real name="HAD - 4 Player Splitscreen" />
+			<_field_custom name="" />
+			<_field_real name="Static IO Shadow Casting Maximum Distance" />
+			<_field_real name="Dynamic Object Shadow Casting Maximum Distance" />
+			<_field_real name="Dynamic Object Cast Shadow Outside of Camera Frustum Distance" />
+			<_field_real name="Dynamic Object BLAS Update Area Multiplier" />
+			<_field_real name="Dynamic Object BLAS Update Outside of Camera Frustum Distance Multiplier" />
+			<_field_dword_integer name="BLAS Bias for RT shadows" />
+			<_field_byte_flags name="Force Disable RT Shadows">
+				<Item Name="enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad348a" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Ultra Setting" />
+		<_field_struct name="Ultra Setting">
+			<_field_real_bounds name="LOD Distance Multiplier" />
+			<_field_custom name="LOD Splitscreen Multipliers" />
+			<_field_real name="LOD - 2 Player Splitscreen" />
+			<_field_real name="LOD - 3 Player Splitscreen" />
+			<_field_real name="LOD - 4 Player Splitscreen" />
+			<_field_custom name="" />
+			<_field_dword_integer name="Number of LODs to skip" />
+			<_field_custom name="Number of LODs to skip for Splitscreen" />
+			<_field_dword_integer name="LOD Skip - 2 Player Splitscreen" />
+			<_field_dword_integer name="LOD Skip - 3 Player Splitscreen" />
+			<_field_dword_integer name="LOD Skip - 4 Player Splitscreen" />
+			<_field_custom name="" />
+			<_field_real_bounds name="Hide After Distance Multiplier" />
+			<_field_custom name="Hide After Distance Splitscreen Multipliers" />
+			<_field_real name="HAD - 2 Player Splitscreen" />
+			<_field_real name="HAD - 3 Player Splitscreen" />
+			<_field_real name="HAD - 4 Player Splitscreen" />
+			<_field_custom name="" />
+			<_field_real name="Static IO Shadow Casting Maximum Distance" />
+			<_field_real name="Dynamic Object Shadow Casting Maximum Distance" />
+			<_field_real name="Dynamic Object Cast Shadow Outside of Camera Frustum Distance" />
+			<_field_real name="Dynamic Object BLAS Update Area Multiplier" />
+			<_field_real name="Dynamic Object BLAS Update Outside of Camera Frustum Distance Multiplier" />
+			<_field_dword_integer name="BLAS Bias for RT shadows" />
+			<_field_byte_flags name="Force Disable RT Shadows">
+				<Item Name="enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad348a" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_char_enum name="Shadow Casting">
+			<Item Name="Disabled" />
+			<Item Name="Enabled" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad4ade" length="3" />
+		<_field_real name="Shadow Distance" />
+		<_field_char_enum name="Exclude From DDGI">
+			<Item Name="Disabled" />
+			<Item Name="Enabled" />
+		</_field_char_enum>
+		<_field_char_enum name="Exclude From DXR">
+			<Item Name="Disabled" />
+			<Item Name="Enabled" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad9793" length="2" />
+		</_field_block_64>
+	</plugin>

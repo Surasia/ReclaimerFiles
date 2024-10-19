@@ -1,0 +1,21 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Lights">
+		<_field_real_rgb_color name="Color" />
+		<_field_real name="Min. Roughness" />
+		<_field_real_vector_3d name="Direction vector" />
+		<_field_real name="Diffuse Intensity" />
+		<_field_real name="Specular Intensity" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Diffuse Cubemap" />
+	<_field_real name="Alpha value for parts not highlighted" />
+	<_field_dword_integer name="Diffuse Cubemap Mip to Sample" />
+	<_field_real name="Indirect Diffuse Intensity" />
+	<_field_real name="Indirect Specular Intensity" />
+	</plugin>

@@ -1,0 +1,130 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="Audio Threat Globals" />
+	<_field_explanation name="Audio Threat System Global Settings" />
+	<_field_block_64 name="Audio Threats">
+		<_field_string_id name="RTPC Name" />
+		<_field_string_id name="Multiplayer RTPC Name" />
+		<_field_string_id name="BTB RTPC Name" />
+		<_field_block_64 name="buckets">
+			<_field_real name="min threat value" />
+			<_field_short_integer name="character count" />
+			<_field_pad name="generated_pad482f" length="2" />
+			</_field_block_64>
+		<_field_block_64 name="damage">
+			<_field_real name="min" />
+			<_field_real name="max" />
+			<_field_real_fraction name="weight" />
+			<_field_real name="time" />
+			<_field_byte_flags name="flags">
+				<Item Name="buffer events" />
+				<Item Name="require ai targeting to be firing" />
+				<Item Name="require player targeting to be firing" />
+			</_field_byte_flags>
+			<_field_char_enum name="context">
+				<Item Name="Object" />
+				<Item Name="To Local Player" />
+				<Item Name="From Local Player" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8e86" length="2" />
+			</_field_block_64>
+		<_field_block_64 name="distance">
+			<_field_real name="min" />
+			<_field_real name="max" />
+			<_field_real_fraction name="weight" />
+			<_field_real name="time" />
+			<_field_byte_flags name="flags">
+				<Item Name="buffer events" />
+				<Item Name="require ai targeting to be firing" />
+				<Item Name="require player targeting to be firing" />
+			</_field_byte_flags>
+			<_field_char_enum name="context">
+				<Item Name="Object" />
+				<Item Name="To Local Player" />
+				<Item Name="From Local Player" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8e86" length="2" />
+			</_field_block_64>
+		<_field_explanation name="Aiming Min/Max settings" />
+		<_field_block_64 name="aiming">
+			<_field_real name="min" />
+			<_field_real name="max" />
+			<_field_real_fraction name="weight" />
+			<_field_real name="time" />
+			<_field_byte_flags name="flags">
+				<Item Name="buffer events" />
+				<Item Name="require ai targeting to be firing" />
+				<Item Name="require player targeting to be firing" />
+			</_field_byte_flags>
+			<_field_char_enum name="context">
+				<Item Name="Object" />
+				<Item Name="To Local Player" />
+				<Item Name="From Local Player" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8e86" length="2" />
+			</_field_block_64>
+		<_field_explanation name="Allegiance Min/Max settings" />
+		<_field_block_64 name="allegiance">
+			<_field_real name="min" />
+			<_field_real name="max" />
+			<_field_real_fraction name="weight" />
+			<_field_real name="time" />
+			<_field_byte_flags name="flags">
+				<Item Name="buffer events" />
+				<Item Name="require ai targeting to be firing" />
+				<Item Name="require player targeting to be firing" />
+			</_field_byte_flags>
+			<_field_char_enum name="context">
+				<Item Name="Object" />
+				<Item Name="To Local Player" />
+				<Item Name="From Local Player" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8e86" length="2" />
+			</_field_block_64>
+		<_field_block_64 name="targeting">
+			<_field_real name="min" />
+			<_field_real name="max" />
+			<_field_real_fraction name="weight" />
+			<_field_real name="time" />
+			<_field_byte_flags name="flags">
+				<Item Name="buffer events" />
+				<Item Name="require ai targeting to be firing" />
+				<Item Name="require player targeting to be firing" />
+			</_field_byte_flags>
+			<_field_char_enum name="context">
+				<Item Name="Object" />
+				<Item Name="To Local Player" />
+				<Item Name="From Local Player" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8e86" length="2" />
+			</_field_block_64>
+		<_field_block_64 name="scariness">
+			<_field_real name="min" />
+			<_field_real name="max" />
+			<_field_real_fraction name="weight" />
+			<_field_real name="time" />
+			<_field_byte_flags name="flags">
+				<Item Name="buffer events" />
+				<Item Name="require ai targeting to be firing" />
+				<Item Name="require player targeting to be firing" />
+			</_field_byte_flags>
+			<_field_char_enum name="context">
+				<Item Name="Object" />
+				<Item Name="To Local Player" />
+				<Item Name="From Local Player" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad8e86" length="2" />
+			</_field_block_64>
+		<_field_real name="min threat value" />
+		<_field_byte_integer name="default bucket" />
+		<_field_pad name="generated_pad688d" length="3" />
+		</_field_block_64>
+	<_field_custom name="" />
+	<_field_pad name="generated_pad25d5" length="4" />
+	</plugin>

@@ -1,0 +1,609 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="weapon attachment component">
+		<_field_custom name="Weapon Attachment" />
+		<_field_string_id name="variant region name" />
+		<_field_string_id name="variant permutation name" />
+		<_field_block_64 name="region permutations">
+			<_field_string_id name="region name" />
+			<_field_string_id name="permutation name" />
+			</_field_block_64>
+		<_field_block_64 name="attachments">
+			<_field_string_id name="name" />
+			<_field_tag_reference_64 name="type" />
+			<_field_tag_reference_64 name="tag graph output" />
+			<_field_string_id name="output node name" />
+			<_field_block_64 name="tag graph float params">
+				<_field_string_id name="name" />
+				<_field_real name="value" />
+				</_field_block_64>
+			<_field_block_64 name="tag graph bool params">
+				<_field_string_id name="name" />
+				<_field_byte_flags name="value">
+					<Item Name="value" />
+				</_field_byte_flags>
+				<_field_pad name="generated_pad0473" length="3" />
+				</_field_block_64>
+			<_field_block_64 name="taggraph instance variables - strings">
+				<_field_string_id name="name" />
+				<_field_string_id name="value" />
+				</_field_block_64>
+			<_field_block_64 name="taggraph instance variables - tag references">
+				<_field_string_id name="name" />
+				<_field_tag_reference_64 name="value" />
+				</_field_block_64>
+			<_field_tag_reference_64 name="override type" />
+			<_field_explanation name="variant names" />
+			<_field_block_64 name="variant names">
+				<_field_string_id name="variant name" />
+				</_field_block_64>
+			<_field_custom name="" />
+			<_field_string_id name="marker" />
+			<_field_char_enum name="change color">
+				<Item Name="none" />
+				<Item Name="primary" />
+				<Item Name="secondary" />
+				<Item Name="tertiary" />
+				<Item Name="quaternary" />
+			</_field_char_enum>
+			<_field_byte_flags name="flags">
+				<Item Name="always create" />
+				<Item Name="effect size scale from object scale" />
+				<Item Name="update on create" />
+				<Item Name="always update" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padbd3f" length="2" />
+			<_field_string_id name="primary scale" />
+			<_field_string_id name="secondary scale" />
+			</_field_block_64>
+		<_field_explanation name="Attachment Name" />
+		<_field_struct name="attachmentName">
+			<_field_string_id name="Attachment Name" />
+			</_field_struct>
+		<_field_block_64 name="attachment object">
+			<_field_tag_reference_64 name="object" />
+			<_field_string_id name="weapon marker" />
+			<_field_string_id name="attachment marker" />
+			</_field_block_64>
+		<_field_block_64 name="accuracy modifiers">
+			<_field_real name="accuracy spread" />
+			</_field_block_64>
+		<_field_block_64 name="precision aim modifiers">
+			<_field_real name="precision transition in time modifier" />
+			<_field_real name="precision transition out time modifier" />
+			</_field_block_64>
+		<_field_block_64 name="unit modifiers">
+			<_field_real name="move speed scale modifier" />
+			<_field_real name="turn rate scale modifier" />
+			<_field_real name="simulated input scale modifier" />
+			</_field_block_64>
+		<_field_block_64 name="aim assist modifiers">
+			<_field_real name="autoaim angle" />
+			<_field_real name="prioritization angle" />
+			<_field_real name="autoaim range" />
+			<_field_real name="autoaim falloff range" />
+			<_field_real name="autoaim near falloff range" />
+			<_field_real name="magnetism angle" />
+			<_field_real name="magnetism range" />
+			<_field_real name="magnetism falloff range" />
+			<_field_real name="magnetism near falloff range" />
+			<_field_real name="deviation angle" />
+			</_field_block_64>
+		<_field_tag_reference_64 name="aim assist reference" />
+		<_field_block_64 name="recoil view kick modifiers">
+			<_field_real name="view kick deceleration modifier" />
+			<_field_real name="view kick return to center modifier" />
+			</_field_block_64>
+		<_field_block_64 name="recoil gunkick modifiers">
+			<_field_real name="gunkick spring constant modifier" />
+			</_field_block_64>
+		<_field_block_64 name="animation modifiers">
+			<_field_real name="ready playback speed modifier" />
+			<_field_real name="ready initial playback modifier" />
+			<_field_real name="put away playback speed modifier" />
+			<_field_real name="reload playback speed modifier" />
+			<_field_real name="reload while empty playback speed modifier" />
+			</_field_block_64>
+		<_field_block_64 name="heat modifiers">
+			<_field_real name="heat loss per second modifier" />
+			<_field_real name="overheated heat loss per second modifier" />
+			<_field_real name="heat generated per round modifier" />
+			</_field_block_64>
+		<_field_block_64 name="UI display info">
+			<_field_string_id name="name" />
+			<_field_string_id name="alt name " />
+			<_field_string_id name="description" />
+			<_field_string_id name="help text" />
+			<_field_string_id name="icon string id" />
+			<_field_tag_reference_64 name="sprite" />
+			<_field_long_integer name="sprite index" />
+			<_field_tag_reference_64 name="alt sprite" />
+			<_field_long_integer name="alt sprite index" />
+			<_field_long_integer name="damage sprite index" />
+			<_field_tag_reference_64 name="ui vehicle screen reference" />
+			</_field_block_64>
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_struct name="weapon attachment barrel component">
+		<_field_custom name="Weapon Barrel" />
+		<_field_block_64 name="primary barrel override">
+			<_field_tag_reference_64 name="projectile" />
+			<_field_block_64 name="firing params">
+				<_field_struct name="firing params">
+					<_field_real_bounds name="rounds per second" />
+					<_field_string_id name="rate of fire acceleration" />
+					<_field_real name="acceleration time" />
+					<_field_string_id name="rate of fire deceleration" />
+					<_field_real name="deceleration time" />
+					<_field_real name="barrel spin scale" />
+					<_field_struct name="barrel spin scalars">
+						<_field_custom name="Barrel Spinning" />
+						<_field_real name="idle spin speed" />
+						<_field_real name="ready spin speed" />
+						<_field_real name="firing rate scalar" />
+						<_field_real name="spin up time" />
+						<_field_real name="spin down time" />
+						<_field_custom name="" />
+						</_field_struct>
+					<_field_real_fraction name="blurred rate of fire" />
+					<_field_short_bounds name="shots per fire" />
+					<_field_real name="fire recovery time" />
+					<_field_real name="empty recovery time" />
+					<_field_real_fraction name="soft recovery fraction" />
+					<_field_real name="melee  fire recovery time" />
+					<_field_real_fraction name="melee soft recovery fraction" />
+					<_field_real name="runtime rate of fire acceleration rate" />
+					<_field_real name="runtime rate of fire deceleration rate" />
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="firing effects">
+				<_field_short_integer name="shot count lower bound" />
+				<_field_short_integer name="shot count upper bound" />
+				<_field_explanation name="firing effect" />
+				<_field_struct name="firing effect overrides">
+					<_field_tag_reference_64 name="effect" />
+					<_field_long_flags name="flags">
+						<Item Name="Stagger fire across multiple markers" />
+						<Item Name="Random firing effects" />
+						<Item Name="Enable marker overrides" />
+					</_field_long_flags>
+					<_field_block_64 name="override effects">
+						<_field_tag_reference_64 name="effect" />
+						</_field_block_64>
+					<_field_block_64 name="marker overrides">
+						<_field_explanation name="Marker overrides" />
+						<_field_custom name="" />
+						<_field_string_id name="marker" />
+						<_field_custom name="" />
+						<_field_string_id name="markerOverride" />
+						</_field_block_64>
+					</_field_struct>
+				<_field_explanation name="critical effect" />
+				<_field_struct name="critical effect overrides">
+					<_field_tag_reference_64 name="effect" />
+					<_field_long_flags name="flags">
+						<Item Name="Stagger fire across multiple markers" />
+						<Item Name="Random firing effects" />
+						<Item Name="Enable marker overrides" />
+					</_field_long_flags>
+					<_field_block_64 name="override effects">
+						<_field_tag_reference_64 name="effect" />
+						</_field_block_64>
+					<_field_block_64 name="marker overrides">
+						<_field_explanation name="Marker overrides" />
+						<_field_custom name="" />
+						<_field_string_id name="marker" />
+						<_field_custom name="" />
+						<_field_string_id name="markerOverride" />
+						</_field_block_64>
+					</_field_struct>
+				<_field_explanation name="misfire effect" />
+				<_field_struct name="misfire effect overrides">
+					<_field_tag_reference_64 name="effect" />
+					<_field_long_flags name="flags">
+						<Item Name="Stagger fire across multiple markers" />
+						<Item Name="Random firing effects" />
+						<Item Name="Enable marker overrides" />
+					</_field_long_flags>
+					<_field_block_64 name="override effects">
+						<_field_tag_reference_64 name="effect" />
+						</_field_block_64>
+					<_field_block_64 name="marker overrides">
+						<_field_explanation name="Marker overrides" />
+						<_field_custom name="" />
+						<_field_string_id name="marker" />
+						<_field_custom name="" />
+						<_field_string_id name="markerOverride" />
+						</_field_block_64>
+					</_field_struct>
+				<_field_explanation name="empty effect" />
+				<_field_struct name="empty effect overrides">
+					<_field_tag_reference_64 name="effect" />
+					<_field_long_flags name="flags">
+						<Item Name="Stagger fire across multiple markers" />
+						<Item Name="Random firing effects" />
+						<Item Name="Enable marker overrides" />
+					</_field_long_flags>
+					<_field_block_64 name="override effects">
+						<_field_tag_reference_64 name="effect" />
+						</_field_block_64>
+					<_field_block_64 name="marker overrides">
+						<_field_explanation name="Marker overrides" />
+						<_field_custom name="" />
+						<_field_string_id name="marker" />
+						<_field_custom name="" />
+						<_field_string_id name="markerOverride" />
+						</_field_block_64>
+					</_field_struct>
+				<_field_explanation name="optional secondary firing effect" />
+				<_field_struct name="optional secondary firing effect overrides">
+					<_field_tag_reference_64 name="effect" />
+					<_field_long_flags name="flags">
+						<Item Name="Stagger fire across multiple markers" />
+						<Item Name="Random firing effects" />
+						<Item Name="Enable marker overrides" />
+					</_field_long_flags>
+					<_field_block_64 name="override effects">
+						<_field_tag_reference_64 name="effect" />
+						</_field_block_64>
+					<_field_block_64 name="marker overrides">
+						<_field_explanation name="Marker overrides" />
+						<_field_custom name="" />
+						<_field_string_id name="marker" />
+						<_field_custom name="" />
+						<_field_string_id name="markerOverride" />
+						</_field_block_64>
+					</_field_struct>
+				<_field_tag_reference_64 name="firing effect" />
+				<_field_tag_reference_64 name="critical effect" />
+				<_field_tag_reference_64 name="misfire effect" />
+				<_field_tag_reference_64 name="empty effect" />
+				<_field_tag_reference_64 name="optional secondary firing effect" />
+				<_field_tag_reference_64 name="firing damage" />
+				<_field_tag_reference_64 name="critical damage" />
+				<_field_tag_reference_64 name="misfire damage" />
+				<_field_tag_reference_64 name="empty damage" />
+				<_field_tag_reference_64 name="optional secondary firing damage" />
+				<_field_tag_reference_64 name="firing rider damage" />
+				<_field_tag_reference_64 name="critical rider damage" />
+				<_field_tag_reference_64 name="misfire rider damage" />
+				<_field_tag_reference_64 name="empty rider damage" />
+				<_field_tag_reference_64 name="optional secondary firing rider damage" />
+				</_field_block_64>
+			<_field_block_64 name="projectile distribution">
+				<_field_struct name="projectile distribution">
+					<_field_short_enum name="distribution function">
+						<Item Name="point" />
+						<Item Name="horizontal fan" />
+						<Item Name="custom directions" />
+						<Item Name="custom positions" />
+					</_field_short_enum>
+					<_field_short_integer name="projectiles per shot" />
+					<_field_block_64 name="direction offset">
+						<_field_real_euler_angles_2d name="angle offset" />
+						</_field_block_64>
+					<_field_block_64 name="position offsets">
+						<_field_real_point_2d name="Point offset" />
+						</_field_block_64>
+					<_field_real name="distribution angle" />
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="projectile error">
+				<_field_struct name="projectile error">
+					<_field_real name="lower bound deceleration time" />
+					<_field_real name="deceleration time" />
+					<_field_real name="runtime error min deceleration rate" />
+					<_field_real name="runtime error deceleration rate" />
+					<_field_angle name="minimum error" />
+					<_field_angle_bounds name="minimum error angle" />
+					<_field_angle_bounds name="error angle" />
+					<_field_real_bounds name="damage error" />
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="noise">
+				<_field_struct name="barrel noise">
+					<_field_short_enum name="ai noise">
+						<Item Name="silent" />
+						<Item Name="quiet" />
+						<Item Name="medium" />
+						<Item Name="shout" />
+						<Item Name="loud" />
+					</_field_short_enum>
+					<_field_short_enum name="motion tracker noise">
+						<Item Name="edge" />
+						<Item Name="inner" />
+						<Item Name="silent" />
+					</_field_short_enum>
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="heat generated per round">
+				<_field_real_fraction name="heat generated per round" />
+				</_field_block_64>
+			<_field_block_64 name="age generation">
+				<_field_struct name="age generation">
+					<_field_real_fraction name="age generated per round" />
+					<_field_real_fraction name="CAMPAIGN age generated per round" />
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="sweet heat">
+				<_field_struct name="sweet heat">
+					<_field_custom name="Heat Sweet Spot" />
+					<_field_real_fraction name="sweet spot start heat level" />
+					<_field_real_fraction name="sweet spot end heat level" />
+					<_field_tag_reference_64 name="sweet heat projectile" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_block_64>
+			<_field_custom name="$$$ New Sound $$$" />
+			<_field_block_64 name="weapon fire sound">
+				<_field_struct name="Weapon Fire Sound">
+					<_field_byte_flags name="Fire sound flags">
+						<Item Name="Calculate a minimum spewing loop length" />
+					</_field_byte_flags>
+					<_field_pad name="generated_padf053" length="1" />
+					<_field_short_enum name="Firing Type">
+						<Item Name="One off" />
+						<Item Name="Looping" />
+						<Item Name="Burst" />
+					</_field_short_enum>
+					<_field_short_block_index name="Barrel Attachment Index" />
+					<_field_pad name="generated_pada39e" length="2" />
+					<_field_real name="Fire start delay" />
+					<_field_block_64 name="Weapon Fire Sound Variations">
+						<_field_tag_reference_64 name="Weapon Fire Sound" />
+						</_field_block_64>
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="weapon fire tail sound">
+				<_field_struct name="Weapon Fire Tail">
+					<_field_string_id name="Weapon Switch Group" />
+					<_field_string_id name="Weapon Switch Value" />
+					</_field_struct>
+				</_field_block_64>
+			<_field_custom name="" />
+			</_field_block_64>
+		<_field_block_64 name="secondary barrel override">
+			<_field_tag_reference_64 name="projectile" />
+			<_field_block_64 name="firing params">
+				<_field_struct name="firing params">
+					<_field_real_bounds name="rounds per second" />
+					<_field_string_id name="rate of fire acceleration" />
+					<_field_real name="acceleration time" />
+					<_field_string_id name="rate of fire deceleration" />
+					<_field_real name="deceleration time" />
+					<_field_real name="barrel spin scale" />
+					<_field_struct name="barrel spin scalars">
+						<_field_custom name="Barrel Spinning" />
+						<_field_real name="idle spin speed" />
+						<_field_real name="ready spin speed" />
+						<_field_real name="firing rate scalar" />
+						<_field_real name="spin up time" />
+						<_field_real name="spin down time" />
+						<_field_custom name="" />
+						</_field_struct>
+					<_field_real_fraction name="blurred rate of fire" />
+					<_field_short_bounds name="shots per fire" />
+					<_field_real name="fire recovery time" />
+					<_field_real name="empty recovery time" />
+					<_field_real_fraction name="soft recovery fraction" />
+					<_field_real name="melee  fire recovery time" />
+					<_field_real_fraction name="melee soft recovery fraction" />
+					<_field_real name="runtime rate of fire acceleration rate" />
+					<_field_real name="runtime rate of fire deceleration rate" />
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="firing effects">
+				<_field_short_integer name="shot count lower bound" />
+				<_field_short_integer name="shot count upper bound" />
+				<_field_explanation name="firing effect" />
+				<_field_struct name="firing effect overrides">
+					<_field_tag_reference_64 name="effect" />
+					<_field_long_flags name="flags">
+						<Item Name="Stagger fire across multiple markers" />
+						<Item Name="Random firing effects" />
+						<Item Name="Enable marker overrides" />
+					</_field_long_flags>
+					<_field_block_64 name="override effects">
+						<_field_tag_reference_64 name="effect" />
+						</_field_block_64>
+					<_field_block_64 name="marker overrides">
+						<_field_explanation name="Marker overrides" />
+						<_field_custom name="" />
+						<_field_string_id name="marker" />
+						<_field_custom name="" />
+						<_field_string_id name="markerOverride" />
+						</_field_block_64>
+					</_field_struct>
+				<_field_explanation name="critical effect" />
+				<_field_struct name="critical effect overrides">
+					<_field_tag_reference_64 name="effect" />
+					<_field_long_flags name="flags">
+						<Item Name="Stagger fire across multiple markers" />
+						<Item Name="Random firing effects" />
+						<Item Name="Enable marker overrides" />
+					</_field_long_flags>
+					<_field_block_64 name="override effects">
+						<_field_tag_reference_64 name="effect" />
+						</_field_block_64>
+					<_field_block_64 name="marker overrides">
+						<_field_explanation name="Marker overrides" />
+						<_field_custom name="" />
+						<_field_string_id name="marker" />
+						<_field_custom name="" />
+						<_field_string_id name="markerOverride" />
+						</_field_block_64>
+					</_field_struct>
+				<_field_explanation name="misfire effect" />
+				<_field_struct name="misfire effect overrides">
+					<_field_tag_reference_64 name="effect" />
+					<_field_long_flags name="flags">
+						<Item Name="Stagger fire across multiple markers" />
+						<Item Name="Random firing effects" />
+						<Item Name="Enable marker overrides" />
+					</_field_long_flags>
+					<_field_block_64 name="override effects">
+						<_field_tag_reference_64 name="effect" />
+						</_field_block_64>
+					<_field_block_64 name="marker overrides">
+						<_field_explanation name="Marker overrides" />
+						<_field_custom name="" />
+						<_field_string_id name="marker" />
+						<_field_custom name="" />
+						<_field_string_id name="markerOverride" />
+						</_field_block_64>
+					</_field_struct>
+				<_field_explanation name="empty effect" />
+				<_field_struct name="empty effect overrides">
+					<_field_tag_reference_64 name="effect" />
+					<_field_long_flags name="flags">
+						<Item Name="Stagger fire across multiple markers" />
+						<Item Name="Random firing effects" />
+						<Item Name="Enable marker overrides" />
+					</_field_long_flags>
+					<_field_block_64 name="override effects">
+						<_field_tag_reference_64 name="effect" />
+						</_field_block_64>
+					<_field_block_64 name="marker overrides">
+						<_field_explanation name="Marker overrides" />
+						<_field_custom name="" />
+						<_field_string_id name="marker" />
+						<_field_custom name="" />
+						<_field_string_id name="markerOverride" />
+						</_field_block_64>
+					</_field_struct>
+				<_field_explanation name="optional secondary firing effect" />
+				<_field_struct name="optional secondary firing effect overrides">
+					<_field_tag_reference_64 name="effect" />
+					<_field_long_flags name="flags">
+						<Item Name="Stagger fire across multiple markers" />
+						<Item Name="Random firing effects" />
+						<Item Name="Enable marker overrides" />
+					</_field_long_flags>
+					<_field_block_64 name="override effects">
+						<_field_tag_reference_64 name="effect" />
+						</_field_block_64>
+					<_field_block_64 name="marker overrides">
+						<_field_explanation name="Marker overrides" />
+						<_field_custom name="" />
+						<_field_string_id name="marker" />
+						<_field_custom name="" />
+						<_field_string_id name="markerOverride" />
+						</_field_block_64>
+					</_field_struct>
+				<_field_tag_reference_64 name="firing effect" />
+				<_field_tag_reference_64 name="critical effect" />
+				<_field_tag_reference_64 name="misfire effect" />
+				<_field_tag_reference_64 name="empty effect" />
+				<_field_tag_reference_64 name="optional secondary firing effect" />
+				<_field_tag_reference_64 name="firing damage" />
+				<_field_tag_reference_64 name="critical damage" />
+				<_field_tag_reference_64 name="misfire damage" />
+				<_field_tag_reference_64 name="empty damage" />
+				<_field_tag_reference_64 name="optional secondary firing damage" />
+				<_field_tag_reference_64 name="firing rider damage" />
+				<_field_tag_reference_64 name="critical rider damage" />
+				<_field_tag_reference_64 name="misfire rider damage" />
+				<_field_tag_reference_64 name="empty rider damage" />
+				<_field_tag_reference_64 name="optional secondary firing rider damage" />
+				</_field_block_64>
+			<_field_block_64 name="projectile distribution">
+				<_field_struct name="projectile distribution">
+					<_field_short_enum name="distribution function">
+						<Item Name="point" />
+						<Item Name="horizontal fan" />
+						<Item Name="custom directions" />
+						<Item Name="custom positions" />
+					</_field_short_enum>
+					<_field_short_integer name="projectiles per shot" />
+					<_field_block_64 name="direction offset">
+						<_field_real_euler_angles_2d name="angle offset" />
+						</_field_block_64>
+					<_field_block_64 name="position offsets">
+						<_field_real_point_2d name="Point offset" />
+						</_field_block_64>
+					<_field_real name="distribution angle" />
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="projectile error">
+				<_field_struct name="projectile error">
+					<_field_real name="lower bound deceleration time" />
+					<_field_real name="deceleration time" />
+					<_field_real name="runtime error min deceleration rate" />
+					<_field_real name="runtime error deceleration rate" />
+					<_field_angle name="minimum error" />
+					<_field_angle_bounds name="minimum error angle" />
+					<_field_angle_bounds name="error angle" />
+					<_field_real_bounds name="damage error" />
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="noise">
+				<_field_struct name="barrel noise">
+					<_field_short_enum name="ai noise">
+						<Item Name="silent" />
+						<Item Name="quiet" />
+						<Item Name="medium" />
+						<Item Name="shout" />
+						<Item Name="loud" />
+					</_field_short_enum>
+					<_field_short_enum name="motion tracker noise">
+						<Item Name="edge" />
+						<Item Name="inner" />
+						<Item Name="silent" />
+					</_field_short_enum>
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="heat generated per round">
+				<_field_real_fraction name="heat generated per round" />
+				</_field_block_64>
+			<_field_block_64 name="age generation">
+				<_field_struct name="age generation">
+					<_field_real_fraction name="age generated per round" />
+					<_field_real_fraction name="CAMPAIGN age generated per round" />
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="sweet heat">
+				<_field_struct name="sweet heat">
+					<_field_custom name="Heat Sweet Spot" />
+					<_field_real_fraction name="sweet spot start heat level" />
+					<_field_real_fraction name="sweet spot end heat level" />
+					<_field_tag_reference_64 name="sweet heat projectile" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_block_64>
+			<_field_custom name="$$$ New Sound $$$" />
+			<_field_block_64 name="weapon fire sound">
+				<_field_struct name="Weapon Fire Sound">
+					<_field_byte_flags name="Fire sound flags">
+						<Item Name="Calculate a minimum spewing loop length" />
+					</_field_byte_flags>
+					<_field_pad name="generated_padf053" length="1" />
+					<_field_short_enum name="Firing Type">
+						<Item Name="One off" />
+						<Item Name="Looping" />
+						<Item Name="Burst" />
+					</_field_short_enum>
+					<_field_short_block_index name="Barrel Attachment Index" />
+					<_field_pad name="generated_pada39e" length="2" />
+					<_field_real name="Fire start delay" />
+					<_field_block_64 name="Weapon Fire Sound Variations">
+						<_field_tag_reference_64 name="Weapon Fire Sound" />
+						</_field_block_64>
+					</_field_struct>
+				</_field_block_64>
+			<_field_block_64 name="weapon fire tail sound">
+				<_field_struct name="Weapon Fire Tail">
+					<_field_string_id name="Weapon Switch Group" />
+					<_field_string_id name="Weapon Switch Value" />
+					</_field_struct>
+				</_field_block_64>
+			<_field_custom name="" />
+			</_field_block_64>
+		<_field_custom name="" />
+		</_field_struct>
+	</plugin>

@@ -1,0 +1,247 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="parent" />
+	<_field_explanation name="Simple flocking" />
+	<_field_real_fraction name="forward weight" />
+	<_field_real_fraction name="leveling force weight" />
+	<_field_real_fraction name="destination weight" />
+	<_field_real_fraction name="movement weight threshold" />
+	<_field_real_fraction name="target weight" />
+	<_field_real name="target distance" />
+	<_field_real name="target delay time" />
+	<_field_real_fraction name="target kill chance" />
+	<_field_explanation name="Perlin noise parameters" />
+	<_field_real_fraction name="random offset weight" />
+	<_field_real_bounds name="random offset period" />
+	<_field_explanation name="Complex Flocking" />
+	<_field_real name="neighborhood radius" />
+	<_field_angle name="perception angle" />
+	<_field_real_fraction name="avoidance weight" />
+	<_field_real name="avoidance radius" />
+	<_field_real_fraction name="alignment weight" />
+	<_field_real_fraction name="position weight" />
+	<_field_real_bounds name="position radius" />
+	<_field_tag_reference_64 name="Battle projectile effect" />
+	<_field_tag_reference_64 name="Battle projectile effect (expensive)" />
+	<_field_real_bounds name="Battle projectile effect cooldown" />
+	<_field_real_point_3d name="Battle effect offset" />
+	<_field_block_64 name="EditorMetadata">
+		<_field_long_string name="folder name" />
+		<_field_real_point_3d name="local space pivot point position" />
+		</_field_block_64>
+	<_field_real_bounds name="Boid Scale Range" />
+	<_field_byte_flags name="Perception Flags">
+		<Item Name="Check Player Proximity" />
+		<Item Name="Check AI Proximity" />
+	</_field_byte_flags>
+	<_field_pad name="generated_pad41f9" length="3" />
+	<_field_real name="Object Perception Radius" />
+	<_field_real name="Vehicle Perception Radius" />
+	<_field_real name="Danger Event Perception Radius" />
+	<_field_byte_flags name="Spawn Flags">
+		<Item Name="Always replenish boids" />
+		<Item Name="Randomize Spawn Point Height" />
+		<Item Name="Used in kits (allow name duplication)" />
+		<Item Name="Randomize Creature Variant" />
+	</_field_byte_flags>
+	<_field_byte_flags name="Generate Spawn Point for Each Boid">
+		<Item Name="Enable" />
+	</_field_byte_flags>
+	<_field_pad name="generated_padd75d" length="2" />
+	<_field_long_integer name="Number of Spawn Points" />
+	<_field_real name="Distance of Importance" />
+	<_field_real name="Despawn Distance" />
+	<_field_real name="Spawn Distance" />
+	<_field_real name="Minimum Respawn Delay" />
+	<_field_real_bounds name="Time Before Dehydration Hide is Forced" />
+	<_field_real name="Distance Enough for Dehydration Hide" />
+	<_field_char_enum name="Spawn Priority">
+		<Item Name="Procedurally generated" />
+		<Item Name="Regular" />
+		<Item Name="Important" />
+		<Item Name="Critical" />
+		<Item Name="Regular Distant" />
+		<Item Name="Important Distant" />
+	</_field_char_enum>
+	<_field_byte_flags name="Disable Backward Flock Relevancy Reduce">
+		<Item Name="Enable" />
+	</_field_byte_flags>
+	<_field_pad name="generated_padbd7c" length="2" />
+	<_field_real_bounds name="Production Frequency Bounds" />
+	<_field_real name="High LOD Distance" />
+	<_field_tag_reference_64 name="Creature Asset" />
+	<_field_string_id name="Creature Variant Name" />
+	<_field_long_integer name="Boid Count" />
+	<_field_char_enum name="Initial Behavior">
+		<Item Name="None" />
+		<Item Name="Perching" />
+		<Item Name="Circling" />
+		<Item Name="Traveling" />
+		<Item Name="Wandering" />
+		<Item Name="Reaction" />
+		<Item Name="Move Away Helper" />
+	</_field_char_enum>
+	<_field_char_enum name="Second Behavior">
+		<Item Name="None" />
+		<Item Name="Perching" />
+		<Item Name="Circling" />
+		<Item Name="Traveling" />
+		<Item Name="Wandering" />
+		<Item Name="Reaction" />
+		<Item Name="Move Away Helper" />
+	</_field_char_enum>
+	<_field_char_enum name="Reaction Behavior">
+		<Item Name="None" />
+		<Item Name="Afraid" />
+		<Item Name="Evasion" />
+		<Item Name="Hide" />
+	</_field_char_enum>
+	<_field_char_enum name="Reaction Navigation Behavior">
+		<Item Name="None" />
+		<Item Name="Perching" />
+		<Item Name="Circling" />
+		<Item Name="Traveling" />
+		<Item Name="Wandering" />
+		<Item Name="Reaction" />
+		<Item Name="Move Away Helper" />
+	</_field_char_enum>
+	<_field_char_enum name="Second Reaction Behavior">
+		<Item Name="None" />
+		<Item Name="Afraid" />
+		<Item Name="Evasion" />
+		<Item Name="Hide" />
+	</_field_char_enum>
+	<_field_char_enum name="Second Reaction Navigation Behavior">
+		<Item Name="None" />
+		<Item Name="Perching" />
+		<Item Name="Circling" />
+		<Item Name="Traveling" />
+		<Item Name="Wandering" />
+		<Item Name="Reaction" />
+		<Item Name="Move Away Helper" />
+	</_field_char_enum>
+	<_field_char_enum name="Despawn Reaction Behavior">
+		<Item Name="None" />
+		<Item Name="Afraid" />
+		<Item Name="Evasion" />
+		<Item Name="Hide" />
+	</_field_char_enum>
+	<_field_char_enum name="Despawn Reaction Navigation Behavior">
+		<Item Name="None" />
+		<Item Name="Perching" />
+		<Item Name="Circling" />
+		<Item Name="Traveling" />
+		<Item Name="Wandering" />
+		<Item Name="Reaction" />
+		<Item Name="Move Away Helper" />
+	</_field_char_enum>
+	<_field_real name="Event Memory Time" />
+	<_field_real name="Return after Disrupt Time" />
+	<_field_word_flags name="Flee Flags">
+		<Item Name="Flee Together" />
+		<Item Name="Return After Flee" />
+		<Item Name="Return after fleeing (if a boid is killed)" />
+		<Item Name="Skip evasion phase when a boid is killed" />
+	</_field_word_flags>
+	<_field_pad name="generated_padfcfe" length="2" />
+	<_field_real name="Danger Weight" />
+	<_field_real_fraction name="Additional Throttle" />
+	<_field_real_bounds name="Time before Hide or Fly Away" />
+	<_field_real name="Max hide time" />
+	<_field_char_enum name="Volume Containment Mode (Evasion)">
+		<Item Name="None" />
+		<Item Name="Navigation Adjustment" />
+		<Item Name="Hard Volume Containment" />
+	</_field_char_enum>
+	<_field_pad name="generated_pad49b3" length="3" />
+	<_field_real name="Torus Inner Radius" />
+	<_field_real name="Torus Cross Section Radius" />
+	<_field_char_enum name="Circling Direction">
+		<Item Name="Clockwise" />
+		<Item Name="Counterclockwise" />
+		<Item Name="Random" />
+	</_field_char_enum>
+	<_field_pad name="generated_padf423" length="3" />
+	<_field_real name="Leveling Coefficient" />
+	<_field_real name="Traveling Spawn Radius" />
+	<_field_explanation name="Runtime-generated path settings" />
+	<_field_real name="Distance to the initial destination" />
+	<_field_real name="Distance to the final destination" />
+	<_field_real name="Spawn Cylinder Radius" />
+	<_field_real name="Spawn Cylinder Height" />
+	<_field_real_bounds name="Wandering Time" />
+	<_field_real_bounds name="Grazing Time" />
+	<_field_real name="Change of Direction Time" />
+	<_field_byte_flags name="Flags">
+		<Item Name="Wander Randomly" />
+	</_field_byte_flags>
+	<_field_byte_flags name="Wandering to same source point is allowed">
+		<Item Name="Enable" />
+	</_field_byte_flags>
+	<_field_pad name="generated_pad094b" length="2" />
+	<_field_byte_flags name="Fly On Fixed Height Flags">
+		<Item Name="Fly On Fixed Height Enabled" />
+	</_field_byte_flags>
+	<_field_pad name="generated_padbdf6" length="3" />
+	<_field_real name="Fixed Height From Ground" />
+	<_field_real name="Height ReChecking Distance" />
+	<_field_real name="Maximum Height Difference" />
+	<_field_byte_flags name="Override facing">
+		<Item Name="Enable" />
+	</_field_byte_flags>
+	<_field_byte_flags name="Use Flock Formations">
+		<Item Name="Enable" />
+	</_field_byte_flags>
+	<_field_byte_flags name="Ground Alignment">
+		<Item Name="Align Idle" />
+		<Item Name="Align Navigation" />
+		<Item Name="Align Grazing" />
+	</_field_byte_flags>
+	<_field_pad name="generated_pad6ca6" length="1" />
+	<_field_real_fraction name="Default Throttle" />
+	<_field_real name="Start Slowing Distance" />
+	<_field_real_fraction name="Slowing To Fraction" />
+	<_field_real name="Desired Start Descending Height" />
+	<_field_real name="Start Descending Distance" />
+	<_field_real_bounds name="Descending Throttle Bounds" />
+	<_field_real name="Stop Distance" />
+	<_field_real name="Start Parking Height" />
+	<_field_real name="Increased Noise Distance" />
+	<_field_real name="Noise Increase Multiplier" />
+	<_field_real_bounds name="Time between one-off random boid sounds (default)" />
+	<_field_real name="Density scaler for one-off sounds (default)" />
+	<_field_real_bounds name="Time between one-off random boid sounds (fleeing)" />
+	<_field_real name="Density scaler for one-off sounds (fleeing)" />
+	<_field_tag_reference_64 name="single shot sound for killed by the player" />
+	<_field_tag_reference_64 name="single shot sound for non-player death" />
+	<_field_tag_reference_64 name="single shot sound for despawn" />
+	<_field_tag_reference_64 name="looping sound for idle" />
+	<_field_tag_reference_64 name="single shot sound for idle (randomly plays)" />
+	<_field_tag_reference_64 name="looping sound for moving" />
+	<_field_tag_reference_64 name="single shot sound for moving (randomly plays)" />
+	<_field_tag_reference_64 name="single shot sound for reacting to danger" />
+	<_field_tag_reference_64 name="single shot sound for shooting" />
+	<_field_tag_reference_64 name="Proxy Object Asset" />
+	<_field_block_64 name="Proxy Object Node Graphs">
+		<_field_string_id name="Name" />
+		<_field_tag_reference_64 name="Exported Node Graph" />
+		<_field_byte_flags name="Flags">
+			<Item Name="Runs on Server" />
+			<Item Name="Runs on Client" />
+			<Item Name="Start updating on the first frame" />
+		</_field_byte_flags>
+		<_field_char_enum name="Enable Node Graph">
+			<Item Name="Default" />
+			<Item Name="Yes" />
+			<Item Name="No" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad8671" length="2" />
+		</_field_block_64>
+	<_field_pad name="generated_padbf11" length="4" />
+	</plugin>

@@ -1,0 +1,206 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="controller input">
+		<_field_real name="axial dead zone" />
+		<_field_real name="radial dead zone" />
+		</_field_block_64>
+	<_field_block_64 name="player control">
+		<_field_explanation name="controller bindings" />
+		<_field_block_64 name="controller button mappings">
+			<_field_string_id name="Default Binding Preset Name" />
+			<_field_string_id name="UI String ID" />
+			<_field_string_id name="UI Description String ID" />
+			<_field_tag_reference_64 name="default bindings" />
+			</_field_block_64>
+		<_field_string_id name="default binding" />
+		<_field_tag_reference_64 name="observer controller bindings" />
+		<_field_tag_reference_64 name="tacmap controller bindings" />
+		<_field_explanation name="mouse and keyboard bindings" />
+		<_field_tag_reference_64 name="default mouse+kb bindings" />
+		<_field_tag_reference_64 name="observer mouse+kb bindings" />
+		<_field_tag_reference_64 name="tacmap mouse+kb bindings" />
+		<_field_explanation name="Firing Axes" />
+		<_field_string_id name="Primary (on foot)" />
+		<_field_string_id name="Secondary (on foot)" />
+		<_field_string_id name="Primary (in vehicle)" />
+		<_field_string_id name="Secondary (in vehicle)" />
+		<_field_explanation name="Axis Defaults" />
+		<_field_custom name="Sprint" />
+		<_field_struct name="sprint info">
+			<_field_string_id name="toggle axis id" />
+			<_field_string_id name="hold axis id" />
+			<_field_byte_flags name="flags">
+				<Item Name="Apply value when controller preset changes" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padecc4" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Zoom" />
+		<_field_struct name="zoom info">
+			<_field_string_id name="toggle axis id" />
+			<_field_string_id name="hold axis id" />
+			<_field_byte_flags name="flags">
+				<Item Name="Apply value when controller preset changes" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padecc4" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Crouch" />
+		<_field_struct name="crouch info">
+			<_field_string_id name="toggle axis id" />
+			<_field_string_id name="hold axis id" />
+			<_field_byte_flags name="flags">
+				<Item Name="Apply value when controller preset changes" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padecc4" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Walk" />
+		<_field_struct name="walk info">
+			<_field_string_id name="toggle axis id" />
+			<_field_string_id name="hold axis id" />
+			<_field_byte_flags name="flags">
+				<Item Name="Apply value when controller preset changes" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padecc4" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_explanation name="inventory peek" />
+		<_field_real name="auto close inventory peek time" />
+		<_field_explanation name="sticks" />
+		<_field_block_64 name="move stick info">
+			<_field_char_enum name="input shape">
+				<Item Name="none" />
+				<Item Name="unit_circle" />
+				<Item Name="unit_square" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad0710" length="3" />
+			<_field_real_fraction name="peg threshold [0,1]" />
+			<_field_real_point_2d name="pegged time" />
+			<_field_real_point_2d name="pegged scale" />
+			<_field_angle name="peg max angular velocity" />
+			<_field_block_64 name="input mapping function">
+				<_field_struct name="function">
+					<_field_custom name="function" />
+					<_field_struct name="function">
+						<_field_custom name="" />
+						<_field_data_64 name="data" />
+						<_field_custom name="" />
+						</_field_struct>
+					</_field_struct>
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="look stick info">
+			<_field_char_enum name="input shape">
+				<Item Name="none" />
+				<Item Name="unit_circle" />
+				<Item Name="unit_square" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad0710" length="3" />
+			<_field_real_fraction name="peg threshold [0,1]" />
+			<_field_real_point_2d name="pegged time" />
+			<_field_real_point_2d name="pegged scale" />
+			<_field_angle name="peg max angular velocity" />
+			<_field_block_64 name="input mapping function">
+				<_field_struct name="function">
+					<_field_custom name="function" />
+					<_field_struct name="function">
+						<_field_custom name="" />
+						<_field_data_64 name="data" />
+						<_field_custom name="" />
+						</_field_struct>
+					</_field_struct>
+				</_field_block_64>
+			</_field_block_64>
+		<_field_explanation name="aim assist" />
+		<_field_real_fraction name="magnetism friction" />
+		<_field_real_fraction name="magnetism adhesion" />
+		<_field_real_fraction name="inconsequential target scale" />
+		<_field_real_fraction name="ads magnetism friction" />
+		<_field_real_fraction name="ads magnetism adhesion" />
+		<_field_real_fraction name="mouse magnetism scalar whilst firing" />
+		<_field_real_fraction name="mouse magnetism scalar not firing" />
+		<_field_real_fraction name="mouse magnetism decay" />
+		<_field_explanation name="crosshair" />
+		<_field_real_point_2d name="crosshair location" />
+		<_field_real name="gravity_scale" />
+		<_field_angle name="minimum angle for vehicle flipping" />
+		<_field_real name="minimum action hold time" />
+		<_field_real name="powerup activation max hold time" />
+		<_field_real name="switch to signature weapon hold time" />
+		<_field_real name="pegged zoom suppression threshold" />
+		<_field_custom name="Zoom Default Sensitivities" />
+		<_field_custom name="None" />
+		<_field_real name="None" />
+		<_field_custom name="" />
+		<_field_custom name="1.4x" />
+		<_field_real name="1.4x" />
+		<_field_custom name="" />
+		<_field_custom name="1.6x" />
+		<_field_real name="1.6x" />
+		<_field_custom name="" />
+		<_field_custom name="2.5x" />
+		<_field_real name="2.5x" />
+		<_field_custom name="" />
+		<_field_custom name="3.0x" />
+		<_field_real name="3.0x" />
+		<_field_custom name="" />
+		<_field_custom name="5.0x" />
+		<_field_real name="5.0x" />
+		<_field_custom name="" />
+		<_field_custom name="6.0x" />
+		<_field_real name="6.0x" />
+		<_field_custom name="" />
+		<_field_custom name="10.0x" />
+		<_field_real name="10.0x" />
+		<_field_custom name="" />
+		<_field_custom name="" />
+		<_field_real name="active look input type detection time" />
+		<_field_explanation name="double/triple jump" />
+		<_field_real name="minimum vertical velocity" />
+		<_field_real name="cooldown time" />
+		<_field_real_vector_2d name="double jump velocity" />
+		<_field_real_vector_2d name="triple jump velocity" />
+		<_field_explanation name="tricks" />
+		<_field_real name="flick peg jump max time" />
+		<_field_real name="double tap interval time" />
+		<_field_real name="jump_forward_horizontal_speed_0" />
+		<_field_real name="jump_forward_horizontal_speed_1" />
+		<_field_real name="jump_forward_horizontal_speed_2" />
+		<_field_real name="jump_forward_gravity_0" />
+		<_field_real name="jump_forward_gravity_1" />
+		<_field_real name="jump_forward_gravity_2" />
+		<_field_real name="jump_forward_height" />
+		<_field_real name="jump_lateral_horizontal_speed_0" />
+		<_field_real name="jump_lateral_horizontal_speed_1" />
+		<_field_real name="jump_lateral_horizontal_speed_2" />
+		<_field_real name="jump_lateral_gravity_0" />
+		<_field_real name="jump_lateral_gravity_1" />
+		<_field_real name="jump_lateral_gravity_2" />
+		<_field_real name="jump_lateral_height" />
+		<_field_real name="jump_reverse_horizontal_speed_0" />
+		<_field_real name="jump_reverse_horizontal_speed_1" />
+		<_field_real name="jump_reverse_horizontal_speed_2" />
+		<_field_real name="jump_reverse_gravity_0" />
+		<_field_real name="jump_reverse_gravity_1" />
+		<_field_real name="jump_reverse_gravity_2" />
+		<_field_real name="jump_reverse_height" />
+		<_field_real name="jump_stationary_horizontal_speed_0" />
+		<_field_real name="jump_stationary_horizontal_speed_1" />
+		<_field_real name="jump_stationary_horizontal_speed_2" />
+		<_field_real name="jump_stationary_gravity_0" />
+		<_field_real name="jump_stationary_gravity_1" />
+		<_field_real name="jump_stationary_gravity_2" />
+		<_field_real name="jump_stationary_height" />
+		</_field_block_64>
+	<_field_block_64 name="input abstraction globals">
+		<_field_tag_reference_64 name="scope" />
+		</_field_block_64>
+	<_field_pad name="generated_pad0ea8" length="4" />
+	</plugin>

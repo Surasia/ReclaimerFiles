@@ -1,0 +1,90 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="level" />
+	<_field_block_64 name="hlods">
+		<_field_string_id name="name" />
+		<_field_real name="switch distance" />
+		<_field_real_vector_3d name="position" />
+		<_field_tag_reference_64 name="Geo" />
+		<_field_tag_reference_64 name="Materials" />
+		<_field_dword_integer name="asset guid" />
+		<_field_real_bounds name="volumeBounds x" />
+		<_field_real_bounds name="volumeBounds y" />
+		<_field_real_bounds name="volumeBounds z" />
+		<_field_struct name="active group">
+			<_field_dword_integer name="visibility index" />
+			<_field_long_integer name="disabling bsp" />
+			<_field_block_64 name="io guids">
+				<_field_long_integer name="index" />
+				</_field_block_64>
+			<_field_block_64 name="io bsps">
+				<_field_word_integer name="word" />
+				</_field_block_64>
+			<_field_block_64 name="streaming bsps">
+				<_field_word_integer name="word" />
+				</_field_block_64>
+			</_field_struct>
+		<_field_struct name="inactive group">
+			<_field_dword_integer name="visibility index" />
+			<_field_long_integer name="disabling bsp" />
+			<_field_block_64 name="io guids">
+				<_field_long_integer name="index" />
+				</_field_block_64>
+			<_field_block_64 name="io bsps">
+				<_field_word_integer name="word" />
+				</_field_block_64>
+			<_field_block_64 name="streaming bsps">
+				<_field_word_integer name="word" />
+				</_field_block_64>
+			</_field_struct>
+		<_field_block_64 name="inactive streaming groups">
+			<_field_dword_integer name="visibility index" />
+			<_field_long_integer name="disabling bsp" />
+			<_field_block_64 name="io guids">
+				<_field_long_integer name="index" />
+				</_field_block_64>
+			<_field_block_64 name="io bsps">
+				<_field_word_integer name="word" />
+				</_field_block_64>
+			<_field_block_64 name="streaming bsps">
+				<_field_word_integer name="word" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="child hlods">
+			<_field_long_integer name="index" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="bsps">
+		<_field_tag_reference_64 name="bsp" />
+		<_field_block_64 name="placements">
+			<_field_long_integer name="bsp index" />
+			<_field_long_integer name="placement index" />
+			<_field_long_enum name="geometry type">
+				<Item Name="Default" />
+				<Item Name="Foliage" />
+			</_field_long_enum>
+			<_field_dword_integer name="visibility index" />
+			<_field_dword_integer name="hlod index" />
+			</_field_block_64>
+		<_field_block_64 name="hlods">
+			<_field_long_integer name="index" />
+			</_field_block_64>
+		<_field_word_flags name="flags">
+			<Item Name="generated" />
+		</_field_word_flags>
+		<_field_pad name="generated_padd48c" length="2" />
+		<_field_real name="streaming distance" />
+		<_field_long_integer name="level bsp index" />
+		</_field_block_64>
+	<_field_block_64 name="root nodes">
+		<_field_long_integer name="index" />
+		</_field_block_64>
+	<_field_dword_integer name="visibility group count" />
+	<_field_pad name="generated_pad3058" length="4" />
+	</plugin>

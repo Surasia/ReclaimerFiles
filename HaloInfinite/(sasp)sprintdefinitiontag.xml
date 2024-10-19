@@ -1,0 +1,162 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="sprint">
+		<_field_struct name="common ability parameters">
+			<_field_custom name="common ability parameters" />
+			<_field_char_enum name="power class">
+				<Item Name="unclassified" />
+				<Item Name="base" />
+				<Item Name="power" />
+				<Item Name="legendary" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad0aca" length="3" />
+			<_field_long_enum name="input">
+				<Item Name="Default" />
+				<Item Name="Mobility" />
+				<Item Name="Suit" />
+				<Item Name="Jump" />
+				<Item Name="Equipment" />
+				<Item Name="Melee" />
+				<Item Name="PowerUp" />
+				<Item Name="Unmapped" />
+			</_field_long_enum>
+			<_field_long_flags name="flags">
+				<Item Name="Use 3rd Person Camera When Active" />
+				<Item Name="Hide Reticle When Active" />
+				<Item Name="Is Motion Tracked (By Enemies) When Active" />
+				<Item Name="One-Shot Activation Effect" />
+				<Item Name="Can be activated when weapon state is relaxed" />
+				<Item Name="Does Not Appear In Extended Motion Tracker Range" />
+				<Item Name="Energy persists across deaths" />
+				<Item Name="Activation interrupts weapon switching" />
+				<Item Name="Allow activation during weapon throw" />
+				<Item Name="Allow activation while sliding" />
+				<Item Name="Drop support weapon when activated" />
+				<Item Name="Drop must be readied weapon when activated" />
+			</_field_long_flags>
+			<_field_real_fraction name="activation energy cost" />
+			<_field_real name="active energy consumption" />
+			<_field_real name="recharge duration" />
+			<_field_real name="recharge delay" />
+			<_field_real name="cooldown delay" />
+			<_field_tag_reference_64 name="activation effect" />
+			<_field_real name="activation effect kill delay" />
+			<_field_char_enum name="sprint preservation">
+				<Item Name="No" />
+				<Item Name="Zero fraction" />
+				<Item Name="Retain fraction" />
+				<Item Name="Decay (normal)" />
+				<Item Name="Decay (forced)" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad577f" length="3" />
+			<_field_tag_reference_64 name="active malleable property modifiers" />
+			<_field_tag_reference_64 name="timed malleable property modifiers" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_long_flags name="flags">
+			<Item Name="allow build up whilst airborne" />
+			<Item Name="allow fall-off whilst airborne" />
+			<Item Name="cannot be active whilst airborne" />
+			<Item Name="pause damage section recharge" />
+			<Item Name="zero sprint fraction when engaging combat actions" />
+			<Item Name="allow reload by default" />
+			<Item Name="disable manual cancellation" />
+			<Item Name="scale melee lunge" />
+		</_field_long_flags>
+		<_field_char_enum name="maintain through clamber">
+			<Item Name="No" />
+			<Item Name="Zero fraction" />
+			<Item Name="Retain fraction" />
+			<Item Name="Decay (normal)" />
+			<Item Name="Decay (forced)" />
+		</_field_char_enum>
+		<_field_char_enum name="maintain through evade">
+			<Item Name="No" />
+			<Item Name="Zero fraction" />
+			<Item Name="Retain fraction" />
+			<Item Name="Decay (normal)" />
+			<Item Name="Decay (forced)" />
+		</_field_char_enum>
+		<_field_char_enum name="maintain through reload">
+			<Item Name="No" />
+			<Item Name="Zero fraction" />
+			<Item Name="Retain fraction" />
+			<Item Name="Decay (normal)" />
+			<Item Name="Decay (forced)" />
+		</_field_char_enum>
+		<_field_char_enum name="maintain through melee">
+			<Item Name="No" />
+			<Item Name="Zero fraction" />
+			<Item Name="Retain fraction" />
+			<Item Name="Decay (normal)" />
+			<Item Name="Decay (forced)" />
+		</_field_char_enum>
+		<_field_char_enum name="maintain through airborne">
+			<Item Name="No" />
+			<Item Name="Zero fraction" />
+			<Item Name="Retain fraction" />
+			<Item Name="Decay (normal)" />
+			<Item Name="Decay (forced)" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad3793" length="3" />
+		<_field_long_enum name="stun timer control">
+			<Item Name="Normal" />
+			<Item Name="Suspend" />
+			<Item Name="Reset" />
+		</_field_long_enum>
+		<_field_real name="evade delay time" />
+		<_field_custom name="time to full speed" />
+		<_field_struct name="time to full speed">
+			<_field_real name="Base Value" />
+			<_field_real_bounds name="Value Bounds" />
+			</_field_struct>
+		<_field_real name="falloff time" />
+		<_field_real name="falloff time (melee)" />
+		<_field_explanation name="speed ramp up function" />
+		<_field_custom name="speed ramp up function" />
+		<_field_struct name="speed ramp up function">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_custom name="full speed scalar" />
+		<_field_struct name="full speed scalar">
+			<_field_real name="Base Value" />
+			<_field_real_bounds name="Value Bounds" />
+			</_field_struct>
+		<_field_explanation name="look velocity scale function" />
+		<_field_custom name="look velocity scale function" />
+		<_field_struct name="look velocity scale function">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_real name="yaw velocity scale at full sprint" />
+		<_field_real name="pitch velocity scale at full sprint" />
+		<_field_explanation name="max strafe throttle magnitude function" />
+		<_field_custom name="max strafe throttle magnitude function" />
+		<_field_struct name="max strafe throttle magnitude function">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_real name="max strafe throttle magnitude at full sprint" />
+		<_field_real name="pegged magnitude" />
+		<_field_angle name="pegged angular threshold" />
+		<_field_angle name="max angle between facing and velocity" />
+		<_field_real name="minimum player velocity to be considered in a sprinting state" />
+		<_field_string_id name="animation stance" />
+		<_field_custom name="exit animation speed scalar" />
+		<_field_struct name="exit animation speed scalar">
+			<_field_real name="Base Value" />
+			<_field_real_bounds name="Value Bounds" />
+			</_field_struct>
+		</_field_struct>
+	<_field_pad name="generated_padf183" length="4" />
+	</plugin>

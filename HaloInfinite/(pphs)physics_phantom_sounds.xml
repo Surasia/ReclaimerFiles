@@ -1,0 +1,47 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Sound events">
+		<_field_char_enum name="Object type">
+			<Item Name="Local player biped" />
+			<Item Name="Other biped" />
+			<Item Name="Vehicle" />
+			<Item Name="Projectile" />
+			<Item Name="Crate" />
+			<Item Name="Item" />
+		</_field_char_enum>
+		<_field_pad name="generated_padad5f" length="3" />
+		<_field_string_id name="Enter event" />
+		<_field_string_id name="Exit event" />
+		<_field_block_64 name="Restrict to phantoms">
+			<_field_char_integer name="Phantom index" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_string_id name="Biped travel event" />
+	<_field_block_64 name="(Legacy) Sound tags">
+		<_field_char_enum name="Object type">
+			<Item Name="Local player biped" />
+			<Item Name="Other biped" />
+			<Item Name="Vehicle" />
+			<Item Name="Projectile" />
+			<Item Name="Crate" />
+			<Item Name="Item" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad7bb7" length="3" />
+		<_field_tag_reference_64 name="Enter sound tag" />
+		<_field_tag_reference_64 name="Exit sound tag" />
+		<_field_block_64 name="Restrict to phantoms">
+			<_field_char_integer name="Phantom index" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_tag_reference_64 name="(Legacy) Biped travel tag" />
+	<_field_tag_reference_64 name="Biped launch sound" />
+	<_field_tag_reference_64 name="Biped launch sound - player" />
+	<_field_tag_reference_64 name="Vehicle launch sound" />
+	<_field_tag_reference_64 name="Grenade launch sound" />
+	</plugin>

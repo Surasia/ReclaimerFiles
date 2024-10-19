@@ -1,0 +1,29 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="effects">
+		<_field_block_64 name="effects">
+			<_field_tag_reference_64 name="tag (effect or sound)" />
+			<_field_tag_reference_64 name="secondary tag (effect or sound)" />
+			<_field_string_id name="material name" />
+			<_field_short_integer name="runtime material index" />
+			<_field_char_enum name="sweetener mode">
+				<Item Name="sweetener default" />
+				<Item Name="sweetener enabled" />
+				<Item Name="sweetener disabled" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad2bf3" length="1" />
+			<_field_real name="max_visibility_distance" />
+			<_field_byte_flags name="material flags">
+				<Item Name="not inhibited by damage effect sounds" />
+			</_field_byte_flags>
+			<_field_pad name="generated_paddf3e" length="3" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_pad name="generated_pad4a67" length="4" />
+	</plugin>

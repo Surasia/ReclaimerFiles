@@ -1,0 +1,29 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="settings">
+		<_field_string_id name="name" />
+		<_field_string_id name="editor group" />
+		<_field_long_flags name="flags">
+			<Item Name="single mipmap" />
+			<Item Name="ui texture" />
+		</_field_long_flags>
+		<_field_char_enum name="reduction rate">
+			<Item Name="100" />
+			<Item Name="50" />
+			<Item Name="25" />
+		</_field_char_enum>
+		<_field_pad name="generated_padbb20" length="3" />
+		<_field_long_integer name="minimum texture size" />
+		</_field_block_64>
+	<_field_explanation name="TEXTURE GROUPS" />
+	<_field_block_64 name="texture groups">
+		<_field_string_id name="name" />
+		<_field_string_id name="Package" />
+		</_field_block_64>
+	</plugin>

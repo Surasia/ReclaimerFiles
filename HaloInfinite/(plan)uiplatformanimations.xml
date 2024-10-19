@@ -1,0 +1,62 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Customization Platform Animation Settings">
+		<_field_string_id name="Platfrom Name" />
+		<_field_short_enum name="Platform type">
+			<Item Name="SpartanPlatform0" />
+			<Item Name="SpartanPlatform1" />
+			<Item Name="SpartanPlatform2" />
+			<Item Name="SpartanPlatform3" />
+			<Item Name="SpartanPlatform4" />
+			<Item Name="SpartanPlatform5" />
+			<Item Name="SpartanPlatform6" />
+			<Item Name="SpartanPlatform7" />
+			<Item Name="SpartanPlatform8" />
+			<Item Name="SpartanPlatform9" />
+			<Item Name="SpartanPlatform10" />
+			<Item Name="SpartanPlatform11" />
+			<Item Name="SpartanPlatformsCount" />
+			<Item Name="VehiclePlatform" />
+		</_field_short_enum>
+		<_field_pad name="generated_padd394" length="2" />
+		<_field_real name="Vertical Animation Offset" />
+		<_field_real name="Transition Time" />
+		<_field_short_enum name="Animation Easing">
+			<Item Name="LinearTween" />
+			<Item Name="EaseInQuad" />
+			<Item Name="EaseOutQuad" />
+			<Item Name="EaseInOutQuad" />
+			<Item Name="EaseInCubic" />
+			<Item Name="EaseOutCubic" />
+			<Item Name="EaseInOutCubic" />
+			<Item Name="EaseInQuart" />
+			<Item Name="EaseOutQuart" />
+			<Item Name="EaseInOutQuart" />
+			<Item Name="EaseInQuint" />
+			<Item Name="EaseOutQuint" />
+			<Item Name="EaseInOutQuint" />
+			<Item Name="EaseInSine" />
+			<Item Name="EaseOutSine" />
+			<Item Name="EaseInOutSine" />
+			<Item Name="EaseInExpo" />
+			<Item Name="EaseOutExpo" />
+			<Item Name="EaseInOutExpo" />
+			<Item Name="EaseInCirc" />
+			<Item Name="EaseOutCirc" />
+			<Item Name="EaseInOutCirc" />
+			<Item Name="EaseInSinCustom" />
+			<Item Name="EaseOutSinCustom" />
+		</_field_short_enum>
+		<_field_pad name="generated_paded75" length="2" />
+		<_field_real_euler_angles_3d name="Platform selection orientation offset" />
+		<_field_real_euler_angles_3d name="Default Orientation" />
+		<_field_string name="Platform Camera Point" />
+		</_field_block_64>
+	<_field_pad name="generated_padd22a" length="4" />
+	</plugin>

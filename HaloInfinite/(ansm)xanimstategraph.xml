@@ -1,0 +1,47 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="Source Graph" />
+	<_field_block_64 name="Anim Node Subgraphs">
+		<_field_tag_reference_64 name="Anim Subgraph" />
+		</_field_block_64>
+	<_field_block_64 name="Transition Logic Subgraphs">
+		<_field_tag_reference_64 name="Transition Logic Subgraph" />
+		</_field_block_64>
+	<_field_block_64 name="States">
+		<_field_string_id name="Name" />
+		<_field_tag_reference_64 name="Animation Sub-Graph" />
+		<_field_word_flags name="State Flags">
+			<Item Name="Is Default Fallback State" />
+			<Item Name="Opt Out Of Procedural Footsteps" />
+		</_field_word_flags>
+		<_field_pad name="generated_padde0e" length="2" />
+		</_field_block_64>
+	<_field_block_64 name="Connections">
+		<_field_short_block_index name="Start State" />
+		<_field_short_block_index name="End State" />
+		<_field_tag_reference_64 name="Condition Graph" />
+		<_field_tag_reference_64 name="Transition Blend" />
+		<_field_long_integer name="Priority" />
+		<_field_real name="Duration" />
+		<_field_word_flags name="Inertialize">
+			<Item Name="Inertialize" />
+			<Item Name="Disable Inertialization Velocity" />
+		</_field_word_flags>
+		<_field_word_flags name="Process Events From Both States">
+			<Item Name="Apply All Events" />
+		</_field_word_flags>
+		</_field_block_64>
+	<_field_block_64 name="Start Transitions">
+		<_field_short_block_index name="State" />
+		<_field_pad name="generated_paddb5f" length="2" />
+		<_field_tag_reference_64 name="Condition Graph" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Transition Blend" />
+	<_field_pad name="generated_pad2a58" length="4" />
+	</plugin>

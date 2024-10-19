@@ -1,0 +1,54 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="System Priorities" />
+	<_field_real name="Spartan Tracking (Active)" />
+	<_field_real name="Spartan Tracking (Passive)" />
+	<_field_real name="Custom Active Tracking" />
+	<_field_real name="Spectator Team Coloring" />
+	<_field_real name="Target Tracking" />
+	<_field_real name="Enemy Identification" />
+	<_field_real name="Scripting" />
+	<_field_real name="Forge Outlining" />
+	<_field_real name="Location Sensor" />
+	<_field_real name="Polaris Outlining" />
+	<_field_custom name="" />
+	<_field_tag_reference_64 name="Default outline type" />
+	<_field_byte_flags name="flags">
+		<Item Name="Enable Deferred Outline Rendering" />
+	</_field_byte_flags>
+	<_field_pad name="generated_pada18e" length="3" />
+	<_field_real name="Transparent Threshold" />
+	<_field_real name="Transparent Alpha Influence" />
+	<_field_real name="Transparent Luma Influence" />
+	<_field_real name="Transparent Luma-Alpha Influence" />
+	<_field_tag_reference_64 name="Texture 1" />
+	<_field_real_vector_2d name="Texture 1 Scale" />
+	<_field_real_vector_2d name="Texture 1 Velocity" />
+	<_field_real name="Texture 1 Resolution Scaling" />
+	<_field_real name="Texture 1 Influence" />
+	<_field_real name="Texture 1 Fill Influence" />
+	<_field_tag_reference_64 name="Texture 2" />
+	<_field_real_vector_2d name="Texture 2 Scale" />
+	<_field_real_vector_2d name="Texture 2 Velocity" />
+	<_field_real name="Texture 2 Resolution Scaling" />
+	<_field_real name="Texture 2 Influence" />
+	<_field_real name="Texture 2 Fill Influence" />
+	<_field_tag_reference_64 name="Texture 3" />
+	<_field_real_vector_2d name="Texture 3 Scale" />
+	<_field_real_vector_2d name="Texture 3 Velocity" />
+	<_field_real name="Texture 3 Resolution Scaling" />
+	<_field_real name="Texture 3 Influence" />
+	<_field_real name="Texture 3 Fill Influence" />
+	<_field_tag_reference_64 name="Texture 4" />
+	<_field_real_vector_2d name="Texture 4 Scale" />
+	<_field_real_vector_2d name="Texture 4 Velocity" />
+	<_field_real name="Texture 4 Resolution Scaling" />
+	<_field_real name="Texture 4 Influence" />
+	<_field_real name="Texture 4 Fill Influence" />
+	</plugin>

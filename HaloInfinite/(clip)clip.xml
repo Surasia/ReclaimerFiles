@@ -1,0 +1,122 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_long_integer name="frameCount" />
+	<_field_real name="fps" />
+	<_field_block_64 name="joints">
+		<_field_string_id name="name" />
+		<_field_block_64 name="perFrameTranslations">
+			<_field_long_integer name="beginFrame" />
+			<_field_long_integer name="endFrame" />
+			<_field_real_point_3d name="value" />
+			</_field_block_64>
+		<_field_block_64 name="perFrameRotations">
+			<_field_long_integer name="beginFrame" />
+			<_field_long_integer name="endFrame" />
+			<_field_real_quaternion name="value" />
+			</_field_block_64>
+		<_field_block_64 name="perFrameScales">
+			<_field_long_integer name="beginFrame" />
+			<_field_long_integer name="endFrame" />
+			<_field_real name="value" />
+			</_field_block_64>
+		<_field_long_block_index name="processingPerFrameTranslationCount" />
+		<_field_long_block_index name="processingPerFrameRotationCount" />
+		<_field_long_block_index name="processingPerFrameScaleCount" />
+		</_field_block_64>
+	<_field_block_64 name="userParameters">
+		<_field_string_id name="name" />
+		<_field_block_64 name="perFrameValues">
+			<_field_long_integer name="beginFrame" />
+			<_field_long_integer name="endFrame" />
+			<_field_real name="value" />
+			</_field_block_64>
+		<_field_long_block_index name="processingPerFrameValueCount" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="asset" />
+	<_field_block_64 name="IKEvents">
+		<_field_string_id name="targetMarkerName" />
+		<_field_string_id name="chainName" />
+		<_field_char_enum name="usageType">
+			<Item Name="None" />
+			<Item Name="World" />
+			<Item Name="Self" />
+			<Item Name="Parent" />
+			<Item Name="PrimaryWeapon" />
+			<Item Name="SecondaryWeapon" />
+			<Item Name="Assassination" />
+		</_field_char_enum>
+		<_field_pad name="generated_pade6b5" length="3" />
+		<_field_block_64 name="perFrameEffect">
+			<_field_long_integer name="beginFrame" />
+			<_field_long_integer name="endFrame" />
+			<_field_real name="value" />
+			</_field_block_64>
+		<_field_block_64 name="targetMarkerTranslations">
+			<_field_long_integer name="beginFrame" />
+			<_field_long_integer name="endFrame" />
+			<_field_real_point_3d name="value" />
+			</_field_block_64>
+		<_field_block_64 name="targetMarkerRotations">
+			<_field_long_integer name="beginFrame" />
+			<_field_long_integer name="endFrame" />
+			<_field_real_quaternion name="value" />
+			</_field_block_64>
+		<_field_block_64 name="targetMarkerScales">
+			<_field_long_integer name="beginFrame" />
+			<_field_long_integer name="endFrame" />
+			<_field_real name="value" />
+			</_field_block_64>
+		<_field_long_block_index name="processingPerFrameEffectCount" />
+		<_field_long_block_index name="processingPerFrameTranslationCount" />
+		<_field_long_block_index name="processingPerFrameRotationCount" />
+		<_field_long_block_index name="processingPerFrameScaleCount" />
+		</_field_block_64>
+	<_field_block_64 name="objectSpaceOffsetJoint">
+		<_field_short_block_index name="jointReferenceIndex" />
+		</_field_block_64>
+	<_field_block_64 name="replacementCorrectionJoint">
+		<_field_short_block_index name="jointReferenceIndex" />
+		</_field_block_64>
+	<_field_block_64 name="FIKAnchorJoint">
+		<_field_short_block_index name="jointReferenceIndex" />
+		</_field_block_64>
+	<_field_block_64 name="cameras">
+		<_field_string_id name="name" />
+		<_field_block_64 name="perFrameTranslations">
+			<_field_long_integer name="beginFrame" />
+			<_field_long_integer name="endFrame" />
+			<_field_real_point_3d name="value" />
+			</_field_block_64>
+		<_field_block_64 name="perFrameRotations">
+			<_field_long_integer name="beginFrame" />
+			<_field_long_integer name="endFrame" />
+			<_field_real_quaternion name="value" />
+			</_field_block_64>
+		<_field_block_64 name="perFrameFocalLengths">
+			<_field_long_integer name="beginFrame" />
+			<_field_long_integer name="endFrame" />
+			<_field_real name="value" />
+			</_field_block_64>
+		<_field_block_64 name="perFrameFocusDistances">
+			<_field_long_integer name="beginFrame" />
+			<_field_long_integer name="endFrame" />
+			<_field_real name="value" />
+			</_field_block_64>
+		<_field_block_64 name="perFrameFStops">
+			<_field_long_integer name="beginFrame" />
+			<_field_long_integer name="endFrame" />
+			<_field_real name="value" />
+			</_field_block_64>
+		<_field_long_block_index name="processingPerFrameTranslationCount" />
+		<_field_long_block_index name="processingPerFrameRotationCount" />
+		<_field_long_block_index name="processingPerFrameFocalLengthCount" />
+		<_field_long_block_index name="processingPerFrameFocusDistanceCount" />
+		<_field_long_block_index name="processingPerFrameFStopCount" />
+		</_field_block_64>
+	</plugin>

@@ -1,0 +1,285 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="Static IO Representation" />
+	<_field_string_id name="Asset variant to be used with the Static IO Representation." />
+	<_field_byte_flags name="Static IO behaviour flags">
+		<Item Name="Inherits flags from secondary crate representation." />
+		<Item Name="Disables interaction of water effects." />
+	</_field_byte_flags>
+	<_field_pad name="generated_pad750f" length="3" />
+	<_field_block_64 name="Object Representations">
+		<_field_string_id name="Representation Name" />
+		<_field_string_id name="Crate Variant" />
+		<_field_tag_reference_64 name="Configuration" />
+		<_field_tag_reference_64 name="Object Definition (Crate)" />
+		<_field_tag_reference_64 name="Menu Item Definitions" />
+		</_field_block_64>
+	<_field_block_64 name="Runtime Variants">
+		<_field_string_id name="Variant Name" />
+		<_field_tag_reference_64 name="Runtime Underlying Geo (Static IO)" />
+		<_field_tag_reference_64 name="Runtime Underlying Collision Geo (Static IO)" />
+		<_field_tag_reference_64 name="Runtime Underlying Material Palette (Static IO)" />
+		<_field_string_id name="Style" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Runtime Telescoping Asset" />
+	<_field_tag_reference_64 name="Forge Kit" />
+	<_field_string_id name="Default Representation (Asset Variant or Object Representation Name)" />
+	<_field_byte_flags name="Placement Preview">
+		<Item Name="Enabled" />
+	</_field_byte_flags>
+	<_field_pad name="generated_pad285a" length="3" />
+	<_field_struct name="Configuration Options">
+		<_field_word_flags name="Property Flags">
+			<Item Name="Yaw Rotation Only" />
+			<Item Name="Allow In-Game Variant Toggle" />
+			<Item Name="Disable Primary Color" />
+			<Item Name="Disable Secondary Color" />
+			<Item Name="Disable Teritary Color" />
+			<Item Name="Disable Normal Physics" />
+			<Item Name="Disable Fixed Physics" />
+			<Item Name="Disable Phased Physics" />
+			<Item Name="Allow Boundary Scale" />
+			<Item Name="Disable FX Scale" />
+			<Item Name="Disable Rotation" />
+		</_field_word_flags>
+		<_field_pad name="generated_padffaf" length="2" />
+		<_field_real_vector_3d name="Starting yaw/pitch/roll" />
+		<_field_short_enum name="Default Physics Mode">
+			<Item Name="Phased" />
+			<Item Name="Fixed" />
+		</_field_short_enum>
+		<_field_short_enum name="Collision Mode">
+			<Item Name="Edit time (Forge) and Run Time (Game)" />
+			<Item Name="Edit Time (Forge)" />
+		</_field_short_enum>
+		<_field_byte_flags name="Baking Flags">
+			<Item Name="Exclude Navmesh" />
+			<Item Name="Exclude Acoustics" />
+		</_field_byte_flags>
+		<_field_char_enum name="Trigger Volume Type">
+			<Item Name="None" />
+		</_field_char_enum>
+		<_field_pad name="generated_padb2fa" length="2" />
+		<_field_explanation name="bullet collision layer override" />
+		<_field_string_id name="Bullet collision layer override" />
+		<_field_explanation name="play collision layer override" />
+		<_field_string_id name="Play collision layer override" />
+		<_field_custom name="Scale Settings" />
+		<_field_short_enum name="ScaleRestriction">
+			<Item Name="None" />
+			<Item Name="X" />
+			<Item Name="Y" />
+			<Item Name="Z" />
+			<Item Name="XY" />
+			<Item Name="XZ" />
+			<Item Name="YZ" />
+			<Item Name="Unscalable" />
+		</_field_short_enum>
+		<_field_short_enum name="Scale Limit Type">
+			<Item Name="Unset" />
+			<Item Name="Scale Multiplier" />
+			<Item Name="World Size" />
+		</_field_short_enum>
+		<_field_real_vector_3d name="Starting Scale" />
+		<_field_real_vector_3d name="Minimum Scale" />
+		<_field_real_vector_3d name="Maximum Scale" />
+		<_field_real_vector_3d name="Unscaled Size" />
+		<_field_custom name="" />
+		<_field_custom name="Material Settings" />
+		<_field_custom name="Region 1" />
+		<_field_struct name="Settings (Region 1)">
+			<_field_block_64 name="Swatch Groups">
+				<_field_string_id name="Swatch Group Name" />
+				</_field_block_64>
+			<_field_char_enum name="Global Swatch Groups Behavior">
+				<Item Name="none" />
+				<Item Name="include" />
+				<Item Name="override" />
+			</_field_char_enum>
+			<_field_char_enum name="Force Region Always Visible">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_char_enum name="Is Swatch Editable">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_char_enum name="Is Color Editable">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_char_enum name="Is Roughness Editable">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_char_enum name="Is Metalness  Editable">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_pad name="generated_padc70f" length="2" />
+			<_field_string_id name="Color Variant" />
+			<_field_real name="Intial Color Intensity" />
+			<_field_real name="Color Spread" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Region 2" />
+		<_field_struct name="Settings (Region 2)">
+			<_field_block_64 name="Swatch Groups">
+				<_field_string_id name="Swatch Group Name" />
+				</_field_block_64>
+			<_field_char_enum name="Global Swatch Groups Behavior">
+				<Item Name="none" />
+				<Item Name="include" />
+				<Item Name="override" />
+			</_field_char_enum>
+			<_field_char_enum name="Force Region Always Visible">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_char_enum name="Is Swatch Editable">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_char_enum name="Is Color Editable">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_char_enum name="Is Roughness Editable">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_char_enum name="Is Metalness  Editable">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_pad name="generated_padc70f" length="2" />
+			<_field_string_id name="Color Variant" />
+			<_field_real name="Intial Color Intensity" />
+			<_field_real name="Color Spread" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Region 3" />
+		<_field_struct name="Settings (Region 3)">
+			<_field_block_64 name="Swatch Groups">
+				<_field_string_id name="Swatch Group Name" />
+				</_field_block_64>
+			<_field_char_enum name="Global Swatch Groups Behavior">
+				<Item Name="none" />
+				<Item Name="include" />
+				<Item Name="override" />
+			</_field_char_enum>
+			<_field_char_enum name="Force Region Always Visible">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_char_enum name="Is Swatch Editable">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_char_enum name="Is Color Editable">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_char_enum name="Is Roughness Editable">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_char_enum name="Is Metalness  Editable">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_pad name="generated_padc70f" length="2" />
+			<_field_string_id name="Color Variant" />
+			<_field_real name="Intial Color Intensity" />
+			<_field_real name="Color Spread" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Overlay" />
+		<_field_struct name="Settings (Overlay)">
+			<_field_block_64 name="Swatch Groups">
+				<_field_string_id name="Swatch Group Name" />
+				</_field_block_64>
+			<_field_char_enum name="Global Swatch Groups Behavior">
+				<Item Name="none" />
+				<Item Name="include" />
+				<Item Name="override" />
+			</_field_char_enum>
+			<_field_char_enum name="Force Region Always Visible">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_char_enum name="Is Swatch Editable">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_char_enum name="Is Color Editable">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_char_enum name="Is Roughness Editable">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_char_enum name="Is Metalness  Editable">
+				<Item Name="enabled" />
+				<Item Name="disabled" />
+			</_field_char_enum>
+			<_field_pad name="generated_padc70f" length="2" />
+			<_field_string_id name="Color Variant" />
+			<_field_real name="Intial Color Intensity" />
+			<_field_real name="Color Spread" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Grime" />
+		<_field_char_enum name="Is Grime Editable">
+			<Item Name="enabled" />
+			<Item Name="disabled" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad6645" length="3" />
+		<_field_block_64 name="Grime Groups">
+			<_field_string_id name="Swatch Group Name" />
+			</_field_block_64>
+		<_field_custom name="" />
+		<_field_char_enum name="Grime Global Swatch Groups Behavior">
+			<Item Name="none" />
+			<Item Name="include" />
+			<Item Name="override" />
+		</_field_char_enum>
+		<_field_custom name="" />
+		<_field_pad name="generated_pad7f38" length="3" />
+		</_field_struct>
+	<_field_struct name="scriptable properties">
+		<_field_block_64 name="bool properties">
+			<_field_long_string name="name" />
+			<_field_byte_integer name="Value" />
+			</_field_block_64>
+		<_field_block_64 name="numeric properties">
+			<_field_long_string name="name" />
+			<_field_real name="Value" />
+			</_field_block_64>
+		<_field_block_64 name="string properties">
+			<_field_long_string name="name" />
+			<_field_long_string name="Value" />
+			</_field_block_64>
+		<_field_block_64 name="tag properties">
+			<_field_long_string name="name" />
+			<_field_tag_reference_64 name="Value" />
+			<_field_string_id name="load variant" />
+			</_field_block_64>
+		<_field_block_64 name="color properties">
+			<_field_long_string name="name" />
+			<_field_real_argb_color name="Value" />
+			</_field_block_64>
+		<_field_block_64 name="vector properties">
+			<_field_long_string name="name" />
+			<_field_real_vector_3d name="Value" />
+			</_field_block_64>
+		</_field_struct>
+	<_field_pad name="generated_paddba5" length="4" />
+	</plugin>

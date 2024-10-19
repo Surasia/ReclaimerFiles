@@ -1,0 +1,138 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="template" />
+	<_field_word_flags name="flags">
+		<Item Name="physics" />
+		<Item Name="collide with structure" />
+		<Item Name="collide with water" />
+		<Item Name="collide with scenery" />
+		<Item Name="collide with vehicles" />
+		<Item Name="collide with bipeds" />
+		<Item Name="always collide every frame" />
+		<Item Name="swarm" />
+		<Item Name="global wind" />
+		<Item Name="turbulence" />
+		<Item Name="global force" />
+		<Item Name="disable swarm collision" />
+		<Item Name="dynamic wind" />
+	</_field_word_flags>
+	<_field_char_integer name="collision controller index" />
+	<_field_char_integer name="turbulence controller index" />
+	<_field_char_integer name="global force controller index" />
+	<_field_pad name="generated_pada13e" length="3" />
+	<_field_block_64 name="movements">
+		<_field_short_enum name="type">
+			<Item Name="physics" />
+			<Item Name="collider" />
+			<Item Name="swarm" />
+			<Item Name="wind" />
+			<Item Name="turbulence" />
+			<Item Name="global force" />
+		</_field_short_enum>
+		<_field_byte_flags name="flags">
+			<Item Name="properties fully indexed" />
+		</_field_byte_flags>
+		<_field_pad name="generated_padc087" length="1" />
+		<_field_block_64 name="parameters">
+			<_field_long_integer name="parameter id" />
+			<_field_struct name="property">
+				<_field_char_enum name="Input Variable">
+					<Item Name="particle age" />
+					<Item Name="system age" />
+					<Item Name="particle random" />
+					<Item Name="system random" />
+					<Item Name="particle correlation 1" />
+					<Item Name="particle correlation 2" />
+					<Item Name="particle correlation 3" />
+					<Item Name="particle correlation 4" />
+					<Item Name="system correlation 1" />
+					<Item Name="system correlation 2" />
+					<Item Name="particle emission time" />
+					<Item Name="camera distance" />
+					<Item Name="game time" />
+					<Item Name="effect a scale" />
+					<Item Name="effect b scale" />
+					<Item Name="location random" />
+					<Item Name="particle simulation a" />
+					<Item Name="particle simulation b" />
+					<Item Name="particle velocity" />
+					<Item Name="invalid state --- please set again" />
+					<Item Name="active camo (0 = on, 1 = off)" />
+				</_field_char_enum>
+				<_field_char_enum name="Range Variable">
+					<Item Name="particle age" />
+					<Item Name="system age" />
+					<Item Name="particle random" />
+					<Item Name="system random" />
+					<Item Name="particle correlation 1" />
+					<Item Name="particle correlation 2" />
+					<Item Name="particle correlation 3" />
+					<Item Name="particle correlation 4" />
+					<Item Name="system correlation 1" />
+					<Item Name="system correlation 2" />
+					<Item Name="particle emission time" />
+					<Item Name="camera distance" />
+					<Item Name="game time" />
+					<Item Name="effect a scale" />
+					<Item Name="effect b scale" />
+					<Item Name="location random" />
+					<Item Name="particle simulation a" />
+					<Item Name="particle simulation b" />
+					<Item Name="particle velocity" />
+					<Item Name="invalid state --- please set again" />
+					<Item Name="active camo (0 = on, 1 = off)" />
+				</_field_char_enum>
+				<_field_char_enum name="Output Modifier">
+					<Item Name=" " />
+					<Item Name="Plus" />
+					<Item Name="Times" />
+				</_field_char_enum>
+				<_field_char_enum name="Output Modifier Input">
+					<Item Name="particle age" />
+					<Item Name="system age" />
+					<Item Name="particle random" />
+					<Item Name="system random" />
+					<Item Name="particle correlation 1" />
+					<Item Name="particle correlation 2" />
+					<Item Name="particle correlation 3" />
+					<Item Name="particle correlation 4" />
+					<Item Name="system correlation 1" />
+					<Item Name="system correlation 2" />
+					<Item Name="particle emission time" />
+					<Item Name="camera distance" />
+					<Item Name="game time" />
+					<Item Name="effect a scale" />
+					<Item Name="effect b scale" />
+					<Item Name="location random" />
+					<Item Name="particle simulation a" />
+					<Item Name="particle simulation b" />
+					<Item Name="particle velocity" />
+					<Item Name="invalid state --- please set again" />
+					<Item Name="active camo (0 = on, 1 = off)" />
+				</_field_char_enum>
+				<_field_custom name="Mapping" />
+				<_field_struct name="Mapping">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				<_field_real name="runtime m_constant_value" />
+				<_field_word_integer name="runtime m_flags" />
+				<_field_byte_flags name="force flags">
+					<Item Name="force constant" />
+				</_field_byte_flags>
+				<_field_pad name="generated_pad859b" length="1" />
+				</_field_struct>
+			</_field_block_64>
+		<_field_dword_integer name="runtime m_constant_parameters" />
+		<_field_dword_integer name="runtime m_used_particle_states" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="turbulence texture" />
+	<_field_pad name="generated_padedf3" length="4" />
+	</plugin>

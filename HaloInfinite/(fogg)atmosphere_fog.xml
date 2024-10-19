@@ -1,0 +1,148 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="Depth Fog" />
+	<_field_custom name="Master Depth Fog Start" />
+	<_field_explanation name="Start Bias" />
+	<_field_real name="distance bias" />
+	<_field_custom name="" />
+	<_field_custom name="Depth Sky Fog" />
+	<_field_struct name="sky fog">
+		<_field_long_flags name="flags">
+			<Item Name="Enabled" />
+			<Item Name="Camera-relative" />
+		</_field_long_flags>
+		<_field_real name="base height" />
+		<_field_real name="fog height" />
+		<_field_real name="fog thickness [0.0 to 1.0]" />
+		<_field_real name="fog falloff end" />
+		<_field_real_rgb_color name="fog color" />
+		<_field_real name="fog color intensity" />
+		<_field_block_64 name="Function">
+			<_field_custom name="fog function" />
+			<_field_struct name="mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_block_64>
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="Depth Ground Fog" />
+	<_field_struct name="ground fog">
+		<_field_long_flags name="flags">
+			<Item Name="Enabled" />
+			<Item Name="Camera-relative" />
+		</_field_long_flags>
+		<_field_real name="base height" />
+		<_field_real name="fog height" />
+		<_field_real name="fog thickness [0.0 to 1.0]" />
+		<_field_real name="fog falloff end" />
+		<_field_real_rgb_color name="fog color" />
+		<_field_real name="fog color intensity" />
+		<_field_block_64 name="Function">
+			<_field_custom name="fog function" />
+			<_field_struct name="mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_block_64>
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="Depth Ceiling Fog" />
+	<_field_struct name="ceiling fog">
+		<_field_long_flags name="flags">
+			<Item Name="Enabled" />
+		</_field_long_flags>
+		<_field_real name="base height" />
+		<_field_real name="fog height" />
+		<_field_real name="fog thickness [0.0 to 1.0]" />
+		<_field_real name="fog falloff end" />
+		<_field_real_rgb_color name="fog color" />
+		<_field_real name="fog color intensity" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="" />
+	<_field_custom name="Fog Light" />
+	<_field_struct name="fog light">
+		<_field_long_flags name="flags">
+			<Item Name="Enabled" />
+			<Item Name="Use sun direction for fog light" />
+		</_field_long_flags>
+		<_field_real name="pitch angle [-90 to 90]" />
+		<_field_real name="yaw angle [0 to 360]" />
+		<_field_real name="angular radius [0 to 180]" />
+		<_field_real_rgb_color name="tint color" />
+		<_field_real name="tint color intensity" />
+		<_field_real name="angular falloff steepness" />
+		<_field_real name="distance falloff steepness" />
+		<_field_real name="nearby cutoff percentage" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="Volumetric Fog" />
+	<_field_long_flags name="VolFog Flags">
+		<Item Name="Enabled" />
+		<Item Name="Sample Terrain" />
+	</_field_long_flags>
+	<_field_real_rgb_color name="VolFog Color 1" />
+	<_field_real_rgb_color name="VolFog Color 2" />
+	<_field_real name="VolFog Density" />
+	<_field_real name="VolFog Indirect Light Intensity" />
+	<_field_real name="VolFog Light Intensity" />
+	<_field_real name="VolFog Ambient Intensity" />
+	<_field_real name="VolFog Sun Intensity" />
+	<_field_real name="VolFog Near Range" />
+	<_field_real name="VolFog Far Range" />
+	<_field_real name="VolFog Range Exponent" />
+	<_field_real name="VolFog Reprojection Weight" />
+	<_field_real name="VolFog Inscatter Scale" />
+	<_field_real name="VolFog Terrain Density Low" />
+	<_field_real name="VolFog Terrain Density High" />
+	<_field_real name="VolFog Maximum Terrain Fog Height" />
+	<_field_real name="VolFog Terrain Fog Falloff Exponent" />
+	<_field_real name="VolFog Noise Scale" />
+	<_field_real name="VolFog Noise Wind Influence" />
+	<_field_real name="VolFog Noise Input Min" />
+	<_field_real name="VolFog Noise Input Max" />
+	<_field_real name="VolFog Noise Output Min" />
+	<_field_real name="VolFog Noise Output Max" />
+	<_field_real name="VolFog Noise Terrain Follow Intensity" />
+	<_field_real name="VolFog Natural Light Near Intensity" />
+	<_field_real name="VolFog Natural Light Far Intensity" />
+	<_field_real name="VolFog Natural Light Range Near" />
+	<_field_real name="VolFog Natural Light Range Far" />
+	<_field_real name="VolFog Local Light Near Intensity" />
+	<_field_real name="VolFog Local Light Far Intensity" />
+	<_field_real name="VolFog Local Light Range Near" />
+	<_field_real name="VolFog Local Light Range Far" />
+	<_field_real name="VolFog Start Fade Distance" />
+	<_field_real name="VolFog Fade Range" />
+	<_field_custom name="" />
+	<_field_custom name="Crepuscular Rays" />
+	<_field_struct name="crepuscular ray">
+		<_field_long_flags name="flags">
+			<Item Name="Enabled" />
+			<Item Name="Use sun direction for crepuscular rays" />
+			<Item Name="Use world space position for the source of crepuscular rays" />
+		</_field_long_flags>
+		<_field_real name="pitch angle [-90 to 90]" />
+		<_field_real name="yaw angle [0 to 360]" />
+		<_field_real name="angular radius [0 to 180]" />
+		<_field_real_point_3d name="source position" />
+		<_field_real_rgb_color name="light shaft tint color" />
+		<_field_real name="light shaft intensity" />
+		<_field_real name="saturation" />
+		<_field_real name="time variation scale [0 to 1]" />
+		<_field_real name="light shaft decay rate" />
+		<_field_real name="maximum screen distance" />
+		<_field_real name="sample density" />
+		<_field_real name="minimum caster distance" />
+		</_field_struct>
+	<_field_custom name="" />
+	</plugin>

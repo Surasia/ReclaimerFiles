@@ -1,0 +1,1493 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Basic Presets">
+		<_field_string name="Preset" />
+		<_field_char_enum name="Reflections">
+			<Item Name="Off" />
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_char_enum name="Volumetric Fog">
+			<Item Name="Off" />
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+		</_field_char_enum>
+		<_field_char_enum name="Shadows">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_char_enum name="Sky Quality">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_char_enum name="Temporal AA">
+			<Item Name="Low" />
+			<Item Name="High" />
+		</_field_char_enum>
+		<_field_char_enum name="Ambient Occlusion">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_char_enum name="Depth of Field">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+		</_field_char_enum>
+		<_field_char_enum name="Anisotropic Filtering">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_char_enum name="Terrain">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_char_enum name="Lighting">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_char_enum name="Decorators">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_char_enum name="Asset Category Preset">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_char_enum name="Dynamic Wind">
+			<Item Name="Off" />
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_char_enum name="Hlod Preset">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_char_enum name="Animation Quality">
+			<Item Name="Auto" />
+			<Item Name="Max" />
+		</_field_char_enum>
+		<_field_char_enum name="Flocks">
+			<Item Name="Off" />
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_char_enum name="Simulation Quality">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_char_enum name="Effects">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_char_enum name="Texture Quality">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_char_enum name="Decals">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_char_enum name="Shader Quality">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad3000" length="3" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_custom name="Preset Details" />
+	<_field_block_64 name="Reflection Presets">
+		<_field_string name="Preset" />
+		<_field_char_enum name="Mode">
+			<Item Name="None" />
+			<Item Name="SSR" />
+			<Item Name="SSR Full Resolution" />
+		</_field_char_enum>
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_char_enum name="Mode">
+				<Item Name="None" />
+				<Item Name="SSR" />
+				<Item Name="SSR Full Resolution" />
+			</_field_char_enum>
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_char_enum name="Mode">
+				<Item Name="None" />
+				<Item Name="SSR" />
+				<Item Name="SSR Full Resolution" />
+			</_field_char_enum>
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_char_enum name="Mode">
+				<Item Name="None" />
+				<Item Name="SSR" />
+				<Item Name="SSR Full Resolution" />
+			</_field_char_enum>
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_char_enum name="Mode">
+				<Item Name="None" />
+				<Item Name="SSR" />
+				<Item Name="SSR Full Resolution" />
+			</_field_char_enum>
+			</_field_struct>
+		<_field_pad name="generated_padeff7" length="3" />
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Volumetric Fog Presets">
+		<_field_string name="Preset" />
+		<_field_long_integer name="Resolution" />
+		<_field_byte_flags name="Volumetric Fog Flags">
+			<Item Name="Enabled" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad0612" length="3" />
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_long_integer name="Resolution" />
+			<_field_byte_flags name="Volumetric Fog Flags">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad26b1" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_long_integer name="Resolution" />
+			<_field_byte_flags name="Volumetric Fog Flags">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad26b1" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_long_integer name="Resolution" />
+			<_field_byte_flags name="Volumetric Fog Flags">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad26b1" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_long_integer name="Resolution" />
+			<_field_byte_flags name="Volumetric Fog Flags">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad26b1" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Shadow Presets">
+		<_field_string name="Preset" />
+		<_field_long_integer name="Dynamic Shadowmap Atlas Resolution" />
+		<_field_long_integer name="Dynamic Shadowmap Atlas Resolution No Sun" />
+		<_field_long_integer name="Static Shadowmap Atlas Resolution" />
+		<_field_byte_flags name="Deferred Shadow Mask">
+			<Item Name="Enabled" />
+		</_field_byte_flags>
+		<_field_byte_flags name="Contact Shadows">
+			<Item Name="Enabled" />
+		</_field_byte_flags>
+		<_field_byte_flags name="Contact Shadows Local Lights">
+			<Item Name="Enabled" />
+		</_field_byte_flags>
+		<_field_byte_flags name="Local Lights Low Shadow Sampling">
+			<Item Name="Enabled" />
+		</_field_byte_flags>
+		<_field_byte_flags name="Shadows For Non-Visible Objects">
+			<Item Name="Enabled" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad91b0" length="3" />
+		<_field_real name="Local Lights Shadow Sampling Falloff" />
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_long_integer name="Dynamic Shadowmap Atlas Resolution" />
+			<_field_long_integer name="Dynamic Shadowmap Atlas Resolution No Sun" />
+			<_field_long_integer name="Static Shadowmap Atlas Resolution" />
+			<_field_byte_flags name="Deferred Shadow Mask">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_byte_flags name="Contact Shadows">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_byte_flags name="Contact Shadows Local Lights">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_byte_flags name="Local Lights Low Shadow Sampling">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_byte_flags name="Shadows For Non-Visible Objects">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padf8ff" length="3" />
+			<_field_real name="Local Lights Shadow Sampling Falloff" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_long_integer name="Dynamic Shadowmap Atlas Resolution" />
+			<_field_long_integer name="Dynamic Shadowmap Atlas Resolution No Sun" />
+			<_field_long_integer name="Static Shadowmap Atlas Resolution" />
+			<_field_byte_flags name="Deferred Shadow Mask">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_byte_flags name="Contact Shadows">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_byte_flags name="Contact Shadows Local Lights">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_byte_flags name="Local Lights Low Shadow Sampling">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_byte_flags name="Shadows For Non-Visible Objects">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padf8ff" length="3" />
+			<_field_real name="Local Lights Shadow Sampling Falloff" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_long_integer name="Dynamic Shadowmap Atlas Resolution" />
+			<_field_long_integer name="Dynamic Shadowmap Atlas Resolution No Sun" />
+			<_field_long_integer name="Static Shadowmap Atlas Resolution" />
+			<_field_byte_flags name="Deferred Shadow Mask">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_byte_flags name="Contact Shadows">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_byte_flags name="Contact Shadows Local Lights">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_byte_flags name="Local Lights Low Shadow Sampling">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_byte_flags name="Shadows For Non-Visible Objects">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padf8ff" length="3" />
+			<_field_real name="Local Lights Shadow Sampling Falloff" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_long_integer name="Dynamic Shadowmap Atlas Resolution" />
+			<_field_long_integer name="Dynamic Shadowmap Atlas Resolution No Sun" />
+			<_field_long_integer name="Static Shadowmap Atlas Resolution" />
+			<_field_byte_flags name="Deferred Shadow Mask">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_byte_flags name="Contact Shadows">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_byte_flags name="Contact Shadows Local Lights">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_byte_flags name="Local Lights Low Shadow Sampling">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_byte_flags name="Shadows For Non-Visible Objects">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padf8ff" length="3" />
+			<_field_real name="Local Lights Shadow Sampling Falloff" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Sky Quality Presets">
+		<_field_string name="Preset" />
+		<_field_byte_flags name="Volumetric Clouds Enable Flag">
+			<Item Name="Enabled" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad520a" length="3" />
+		<_field_long_integer name="Volumetric Clouds RT Width Resolution" />
+		<_field_long_integer name="Volumetric Clouds RT Height Resolution" />
+		<_field_long_integer name="Volumetric Clouds Coverage RT Resolution" />
+		<_field_long_integer name="Perlin Worley Noise Resolution" />
+		<_field_long_integer name="Worley Noise Resolution" />
+		<_field_long_integer name="Curl Noise Resolution" />
+		<_field_long_integer name="Volumetric Clouds Lighting Ray Steps" />
+		<_field_long_integer name="Volumetric Clouds Max Step Count" />
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_byte_flags name="Volumetric Clouds Enable Flag">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad31c9" length="3" />
+			<_field_long_integer name="Volumetric Clouds RT Width Resolution" />
+			<_field_long_integer name="Volumetric Clouds RT Height Resolution" />
+			<_field_long_integer name="Volumetric Clouds Coverage RT Resolution" />
+			<_field_long_integer name="Perlin Worley Noise Resolution" />
+			<_field_long_integer name="Worley Noise Resolution" />
+			<_field_long_integer name="Curl Noise Resolution" />
+			<_field_long_integer name="Volumetric Clouds Lighting Ray Steps" />
+			<_field_long_integer name="Volumetric Clouds Max Step Count" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_byte_flags name="Volumetric Clouds Enable Flag">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad31c9" length="3" />
+			<_field_long_integer name="Volumetric Clouds RT Width Resolution" />
+			<_field_long_integer name="Volumetric Clouds RT Height Resolution" />
+			<_field_long_integer name="Volumetric Clouds Coverage RT Resolution" />
+			<_field_long_integer name="Perlin Worley Noise Resolution" />
+			<_field_long_integer name="Worley Noise Resolution" />
+			<_field_long_integer name="Curl Noise Resolution" />
+			<_field_long_integer name="Volumetric Clouds Lighting Ray Steps" />
+			<_field_long_integer name="Volumetric Clouds Max Step Count" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_byte_flags name="Volumetric Clouds Enable Flag">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad31c9" length="3" />
+			<_field_long_integer name="Volumetric Clouds RT Width Resolution" />
+			<_field_long_integer name="Volumetric Clouds RT Height Resolution" />
+			<_field_long_integer name="Volumetric Clouds Coverage RT Resolution" />
+			<_field_long_integer name="Perlin Worley Noise Resolution" />
+			<_field_long_integer name="Worley Noise Resolution" />
+			<_field_long_integer name="Curl Noise Resolution" />
+			<_field_long_integer name="Volumetric Clouds Lighting Ray Steps" />
+			<_field_long_integer name="Volumetric Clouds Max Step Count" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_byte_flags name="Volumetric Clouds Enable Flag">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad31c9" length="3" />
+			<_field_long_integer name="Volumetric Clouds RT Width Resolution" />
+			<_field_long_integer name="Volumetric Clouds RT Height Resolution" />
+			<_field_long_integer name="Volumetric Clouds Coverage RT Resolution" />
+			<_field_long_integer name="Perlin Worley Noise Resolution" />
+			<_field_long_integer name="Worley Noise Resolution" />
+			<_field_long_integer name="Curl Noise Resolution" />
+			<_field_long_integer name="Volumetric Clouds Lighting Ray Steps" />
+			<_field_long_integer name="Volumetric Clouds Max Step Count" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Temporal AA Presets">
+		<_field_string name="Preset" />
+		<_field_byte_flags name="Enable Flag">
+			<Item Name="Enabled" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad3998" length="3" />
+		<_field_long_integer name="Quality" />
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_byte_flags name="Enable Flag">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad7fc7" length="3" />
+			<_field_long_integer name="Quality" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_byte_flags name="Enable Flag">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad7fc7" length="3" />
+			<_field_long_integer name="Quality" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_byte_flags name="Enable Flag">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad7fc7" length="3" />
+			<_field_long_integer name="Quality" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_byte_flags name="Enable Flag">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad7fc7" length="3" />
+			<_field_long_integer name="Quality" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="AO Presets">
+		<_field_string name="Preset" />
+		<_field_byte_flags name="Flags">
+			<Item Name="AO Disabled" />
+		</_field_byte_flags>
+		<_field_pad name="generated_paddfa8" length="3" />
+		<_field_long_integer name="Quality" />
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_byte_flags name="Flags">
+				<Item Name="AO Disabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad8c97" length="3" />
+			<_field_long_integer name="Quality" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_byte_flags name="Flags">
+				<Item Name="AO Disabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad8c97" length="3" />
+			<_field_long_integer name="Quality" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_byte_flags name="Flags">
+				<Item Name="AO Disabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad8c97" length="3" />
+			<_field_long_integer name="Quality" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_byte_flags name="Flags">
+				<Item Name="AO Disabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad8c97" length="3" />
+			<_field_long_integer name="Quality" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Depth of Field Presets">
+		<_field_string name="Preset" />
+		<_field_long_integer name="Ring Count" />
+		<_field_char_enum name="Blur Type">
+			<Item Name="Hex" />
+			<Item Name="Circle" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad9984" length="3" />
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_long_integer name="Ring Count" />
+			<_field_char_enum name="Blur Type">
+				<Item Name="Hex" />
+				<Item Name="Circle" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad9a0b" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_long_integer name="Ring Count" />
+			<_field_char_enum name="Blur Type">
+				<Item Name="Hex" />
+				<Item Name="Circle" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad9a0b" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_long_integer name="Ring Count" />
+			<_field_char_enum name="Blur Type">
+				<Item Name="Hex" />
+				<Item Name="Circle" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad9a0b" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_long_integer name="Ring Count" />
+			<_field_char_enum name="Blur Type">
+				<Item Name="Hex" />
+				<Item Name="Circle" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad9a0b" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Anisotropic Filtering Presets">
+		<_field_string name="Preset" />
+		<_field_char_enum name="Level">
+			<Item Name="0" />
+			<Item Name="2" />
+			<Item Name="4" />
+			<Item Name="8" />
+			<Item Name="16" />
+		</_field_char_enum>
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_char_enum name="Level">
+				<Item Name="0" />
+				<Item Name="2" />
+				<Item Name="4" />
+				<Item Name="8" />
+				<Item Name="16" />
+			</_field_char_enum>
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_char_enum name="Level">
+				<Item Name="0" />
+				<Item Name="2" />
+				<Item Name="4" />
+				<Item Name="8" />
+				<Item Name="16" />
+			</_field_char_enum>
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_char_enum name="Level">
+				<Item Name="0" />
+				<Item Name="2" />
+				<Item Name="4" />
+				<Item Name="8" />
+				<Item Name="16" />
+			</_field_char_enum>
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_char_enum name="Level">
+				<Item Name="0" />
+				<Item Name="2" />
+				<Item Name="4" />
+				<Item Name="8" />
+				<Item Name="16" />
+			</_field_char_enum>
+			</_field_struct>
+		<_field_pad name="generated_padc853" length="3" />
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Terrain Presets">
+		<_field_string name="Preset" />
+		<_field_real name="LOD Radius Factor" />
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_real name="LOD Radius Factor" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_real name="LOD Radius Factor" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_real name="LOD Radius Factor" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_real name="LOD Radius Factor" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Lighting Presets">
+		<_field_string name="Preset" />
+		<_field_real name="Light Simulation Radius Scale" />
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_real name="Light Simulation Radius Scale" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_real name="Light Simulation Radius Scale" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_real name="Light Simulation Radius Scale" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_real name="Light Simulation Radius Scale" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Decorators Presets">
+		<_field_char_enum name="Push Bending">
+			<Item Name="Off" />
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+		</_field_char_enum>
+		<_field_string name="Preset" />
+		<_field_pad name="generated_pad704e" length="3" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Asset Category Presets">
+		<_field_string name="Preset" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Dynamic Wind Presets">
+		<_field_string name="Preset" />
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_byte_flags name="Flags">
+				<Item Name="Disabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad48fe" length="3" />
+			<_field_real name="Texel Size" />
+			<_field_long_integer name="Texture Resolution X" />
+			<_field_long_integer name="Texture Resolution Y" />
+			<_field_long_integer name="Texture Resolution Z" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_byte_flags name="Flags">
+				<Item Name="Disabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad48fe" length="3" />
+			<_field_real name="Texel Size" />
+			<_field_long_integer name="Texture Resolution X" />
+			<_field_long_integer name="Texture Resolution Y" />
+			<_field_long_integer name="Texture Resolution Z" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_byte_flags name="Flags">
+				<Item Name="Disabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad48fe" length="3" />
+			<_field_real name="Texel Size" />
+			<_field_long_integer name="Texture Resolution X" />
+			<_field_long_integer name="Texture Resolution Y" />
+			<_field_long_integer name="Texture Resolution Z" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_byte_flags name="Flags">
+				<Item Name="Disabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad48fe" length="3" />
+			<_field_real name="Texel Size" />
+			<_field_long_integer name="Texture Resolution X" />
+			<_field_long_integer name="Texture Resolution Y" />
+			<_field_long_integer name="Texture Resolution Z" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Push Bending Presets">
+		<_field_string name="Preset" />
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_long_integer name="Resolution" />
+			<_field_byte_flags name="Flags">
+				<Item Name="Disabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padb399" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_long_integer name="Resolution" />
+			<_field_byte_flags name="Flags">
+				<Item Name="Disabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padb399" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_long_integer name="Resolution" />
+			<_field_byte_flags name="Flags">
+				<Item Name="Disabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padb399" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_long_integer name="Resolution" />
+			<_field_byte_flags name="Flags">
+				<Item Name="Disabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padb399" length="3" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Hlod Presets">
+		<_field_string name="Preset" />
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_real name="HLOD Switch Distance Multiplier" />
+			<_field_real name="HLOD Switch Distance Buffer" />
+			<_field_real name="HLOD Texture Streaming Multiplier" />
+			<_field_real name="Distant Geo Streaming Distance Multiplier" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_real name="HLOD Switch Distance Multiplier" />
+			<_field_real name="HLOD Switch Distance Buffer" />
+			<_field_real name="HLOD Texture Streaming Multiplier" />
+			<_field_real name="Distant Geo Streaming Distance Multiplier" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_real name="HLOD Switch Distance Multiplier" />
+			<_field_real name="HLOD Switch Distance Buffer" />
+			<_field_real name="HLOD Texture Streaming Multiplier" />
+			<_field_real name="Distant Geo Streaming Distance Multiplier" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_real name="HLOD Switch Distance Multiplier" />
+			<_field_real name="HLOD Switch Distance Buffer" />
+			<_field_real name="HLOD Texture Streaming Multiplier" />
+			<_field_real name="Distant Geo Streaming Distance Multiplier" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Animation Quality Presets">
+		<_field_string name="Preset" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Visual Damage Presets">
+		<_field_string name="Preset" />
+		<_field_byte_flags name="Enable Flag">
+			<Item Name="Enabled" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pada34f" length="3" />
+		<_field_long_integer name="Mask Resolution" />
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_byte_flags name="Enable Flag">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad9506" length="3" />
+			<_field_long_integer name="Mask Resolution" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_byte_flags name="Enable Flag">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad9506" length="3" />
+			<_field_long_integer name="Mask Resolution" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_byte_flags name="Enable Flag">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad9506" length="3" />
+			<_field_long_integer name="Mask Resolution" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_byte_flags name="Enable Flag">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad9506" length="3" />
+			<_field_long_integer name="Mask Resolution" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Virtual Texturing Presets">
+		<_field_string name="Preset" />
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_long_integer name="Desired Page Count" />
+			<_field_long_integer name="Max Pages Per Frame" />
+			<_field_long_integer name="Low Priority Pages Per Frame" />
+			<_field_char_enum name="Compression Quality">
+				<Item Name="Low" />
+				<Item Name="Medium" />
+				<Item Name="High" />
+			</_field_char_enum>
+			<_field_byte_flags name="Virtual Texturing Flags">
+				<Item Name="Objects Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad5b4a" length="2" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_long_integer name="Desired Page Count" />
+			<_field_long_integer name="Max Pages Per Frame" />
+			<_field_long_integer name="Low Priority Pages Per Frame" />
+			<_field_char_enum name="Compression Quality">
+				<Item Name="Low" />
+				<Item Name="Medium" />
+				<Item Name="High" />
+			</_field_char_enum>
+			<_field_byte_flags name="Virtual Texturing Flags">
+				<Item Name="Objects Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad5b4a" length="2" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_long_integer name="Desired Page Count" />
+			<_field_long_integer name="Max Pages Per Frame" />
+			<_field_long_integer name="Low Priority Pages Per Frame" />
+			<_field_char_enum name="Compression Quality">
+				<Item Name="Low" />
+				<Item Name="Medium" />
+				<Item Name="High" />
+			</_field_char_enum>
+			<_field_byte_flags name="Virtual Texturing Flags">
+				<Item Name="Objects Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad5b4a" length="2" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_long_integer name="Desired Page Count" />
+			<_field_long_integer name="Max Pages Per Frame" />
+			<_field_long_integer name="Low Priority Pages Per Frame" />
+			<_field_char_enum name="Compression Quality">
+				<Item Name="Low" />
+				<Item Name="Medium" />
+				<Item Name="High" />
+			</_field_char_enum>
+			<_field_byte_flags name="Virtual Texturing Flags">
+				<Item Name="Objects Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad5b4a" length="2" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Flocks Presets">
+		<_field_string name="Preset" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Simulation Quality Presets">
+		<_field_string name="Preset" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Effects Presets">
+		<_field_string name="Preset" />
+		<_field_byte_flags name="Effect Quality Options Flags">
+			<Item Name="Enable CPU Particle Collisions" />
+			<Item Name="Disable Low Priority Parts" />
+			<Item Name="High Quality Particle Lighting" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad5cbc" length="3" />
+		<_field_real name="Dynamic Low Priority Culling Threshold" />
+		<_field_real name="Low Priority Culling Distance" />
+		<_field_real name="Dynamic Medium Priority Culling Threshold" />
+		<_field_real name="Medium Priority Culling Distance" />
+		<_field_real name="Distortion Throttling Threshold" />
+		<_field_real name="Distortion Fade Threshold" />
+		<_field_real name="LOD Distance Scaling" />
+		<_field_real name="LOD Distance Dynamic Throttle Min" />
+		<_field_real name="LOD Distance Dynamic Throttle Max" />
+		<_field_real name="Cheap Light Falloff Throttle" />
+		<_field_char_enum name="Visual Damage Preset">
+			<Item Name="Off" />
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad769d" length="3" />
+		<_field_real name="Material Effects Distance Scalar" />
+		<_field_char_enum name="Chromatic Aberration Preset">
+			<Item Name="Off" />
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+		</_field_char_enum>
+		<_field_char_enum name="UI Preset">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+		</_field_char_enum>
+		<_field_pad name="generated_padc352" length="2" />
+		<_field_custom name="Effect Streaming Relevancy Settings" />
+		<_field_struct name="Effect Streaming Relevancy Settings">
+			<_field_real name="inner radius" />
+			<_field_real name="outer radius" />
+			<_field_real name="front-facing radius" />
+			<_field_angle name="front-facing FOV" />
+			<_field_real name="Environment effect distance scale" />
+			<_field_real name="Sandbox effect distance scale" />
+			<_field_real name="Critical effect distance scale" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_byte_flags name="Effect Quality Options Flags">
+				<Item Name="Enable CPU Particle Collisions" />
+				<Item Name="Disable Low Priority Parts" />
+				<Item Name="High Quality Particle Lighting" />
+			</_field_byte_flags>
+			<_field_pad name="generated_paded43" length="3" />
+			<_field_real name="Dynamic Low Priority Culling Threshold" />
+			<_field_real name="Low Priority Culling Distance" />
+			<_field_real name="Dynamic Medium Priority Culling Threshold" />
+			<_field_real name="Medium Priority Culling Distance" />
+			<_field_real name="Distortion Throttling Threshold" />
+			<_field_real name="Distortion Fade Threshold" />
+			<_field_real name="LOD Distance Scaling" />
+			<_field_real name="LOD Distance Dynamic Throttle Min" />
+			<_field_real name="LOD Distance Dynamic Throttle Max" />
+			<_field_real name="Cheap Light Falloff Throttle" />
+			<_field_real name="Material Effects Distance Scalar" />
+			<_field_custom name="Effect Streaming Relevancy Settings" />
+			<_field_struct name="Effect Streaming Relevancy Settings">
+				<_field_real name="inner radius" />
+				<_field_real name="outer radius" />
+				<_field_real name="front-facing radius" />
+				<_field_angle name="front-facing FOV" />
+				<_field_real name="Environment effect distance scale" />
+				<_field_real name="Sandbox effect distance scale" />
+				<_field_real name="Critical effect distance scale" />
+				</_field_struct>
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_byte_flags name="Effect Quality Options Flags">
+				<Item Name="Enable CPU Particle Collisions" />
+				<Item Name="Disable Low Priority Parts" />
+				<Item Name="High Quality Particle Lighting" />
+			</_field_byte_flags>
+			<_field_pad name="generated_paded43" length="3" />
+			<_field_real name="Dynamic Low Priority Culling Threshold" />
+			<_field_real name="Low Priority Culling Distance" />
+			<_field_real name="Dynamic Medium Priority Culling Threshold" />
+			<_field_real name="Medium Priority Culling Distance" />
+			<_field_real name="Distortion Throttling Threshold" />
+			<_field_real name="Distortion Fade Threshold" />
+			<_field_real name="LOD Distance Scaling" />
+			<_field_real name="LOD Distance Dynamic Throttle Min" />
+			<_field_real name="LOD Distance Dynamic Throttle Max" />
+			<_field_real name="Cheap Light Falloff Throttle" />
+			<_field_real name="Material Effects Distance Scalar" />
+			<_field_custom name="Effect Streaming Relevancy Settings" />
+			<_field_struct name="Effect Streaming Relevancy Settings">
+				<_field_real name="inner radius" />
+				<_field_real name="outer radius" />
+				<_field_real name="front-facing radius" />
+				<_field_angle name="front-facing FOV" />
+				<_field_real name="Environment effect distance scale" />
+				<_field_real name="Sandbox effect distance scale" />
+				<_field_real name="Critical effect distance scale" />
+				</_field_struct>
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_byte_flags name="Effect Quality Options Flags">
+				<Item Name="Enable CPU Particle Collisions" />
+				<Item Name="Disable Low Priority Parts" />
+				<Item Name="High Quality Particle Lighting" />
+			</_field_byte_flags>
+			<_field_pad name="generated_paded43" length="3" />
+			<_field_real name="Dynamic Low Priority Culling Threshold" />
+			<_field_real name="Low Priority Culling Distance" />
+			<_field_real name="Dynamic Medium Priority Culling Threshold" />
+			<_field_real name="Medium Priority Culling Distance" />
+			<_field_real name="Distortion Throttling Threshold" />
+			<_field_real name="Distortion Fade Threshold" />
+			<_field_real name="LOD Distance Scaling" />
+			<_field_real name="LOD Distance Dynamic Throttle Min" />
+			<_field_real name="LOD Distance Dynamic Throttle Max" />
+			<_field_real name="Cheap Light Falloff Throttle" />
+			<_field_real name="Material Effects Distance Scalar" />
+			<_field_custom name="Effect Streaming Relevancy Settings" />
+			<_field_struct name="Effect Streaming Relevancy Settings">
+				<_field_real name="inner radius" />
+				<_field_real name="outer radius" />
+				<_field_real name="front-facing radius" />
+				<_field_angle name="front-facing FOV" />
+				<_field_real name="Environment effect distance scale" />
+				<_field_real name="Sandbox effect distance scale" />
+				<_field_real name="Critical effect distance scale" />
+				</_field_struct>
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_byte_flags name="Effect Quality Options Flags">
+				<Item Name="Enable CPU Particle Collisions" />
+				<Item Name="Disable Low Priority Parts" />
+				<Item Name="High Quality Particle Lighting" />
+			</_field_byte_flags>
+			<_field_pad name="generated_paded43" length="3" />
+			<_field_real name="Dynamic Low Priority Culling Threshold" />
+			<_field_real name="Low Priority Culling Distance" />
+			<_field_real name="Dynamic Medium Priority Culling Threshold" />
+			<_field_real name="Medium Priority Culling Distance" />
+			<_field_real name="Distortion Throttling Threshold" />
+			<_field_real name="Distortion Fade Threshold" />
+			<_field_real name="LOD Distance Scaling" />
+			<_field_real name="LOD Distance Dynamic Throttle Min" />
+			<_field_real name="LOD Distance Dynamic Throttle Max" />
+			<_field_real name="Cheap Light Falloff Throttle" />
+			<_field_real name="Material Effects Distance Scalar" />
+			<_field_custom name="Effect Streaming Relevancy Settings" />
+			<_field_struct name="Effect Streaming Relevancy Settings">
+				<_field_real name="inner radius" />
+				<_field_real name="outer radius" />
+				<_field_real name="front-facing radius" />
+				<_field_angle name="front-facing FOV" />
+				<_field_real name="Environment effect distance scale" />
+				<_field_real name="Sandbox effect distance scale" />
+				<_field_real name="Critical effect distance scale" />
+				</_field_struct>
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Emblem Quality Presets">
+		<_field_string name="Preset" />
+		<_field_dword_integer name="Resolution" />
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_dword_integer name="Resolution" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_dword_integer name="Resolution" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_dword_integer name="Resolution" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_dword_integer name="Resolution" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Texture Quality Presets">
+		<_field_string name="Preset" />
+		<_field_real name="Texture Prediction Resolution Limit" />
+		<_field_real name="Texture Prediction Target Resolution" />
+		<_field_char_enum name="Emblem Quality Preset">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_char_enum name="Virtual Texturing Preset">
+			<Item Name="Low" />
+			<Item Name="Medium" />
+			<Item Name="High" />
+			<Item Name="Ultra" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad880c" length="2" />
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_long_integer name="Texture Array Bias" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_long_integer name="Texture Array Bias" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_long_integer name="Texture Array Bias" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_long_integer name="Texture Array Bias" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_long_integer name="Fudge Factor Size" />
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Chromatic Aberration Presets">
+		<_field_string name="Preset" />
+		<_field_long_integer name="Number of samples" />
+		</_field_block_64>
+	<_field_block_64 name="UI Presets">
+		<_field_string name="Preset" />
+		<_field_byte_flags name="Bloom">
+			<Item Name="Enabled" />
+		</_field_byte_flags>
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_byte_flags name="Bloom">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_byte_flags name="Bloom">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_byte_flags name="Bloom">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_byte_flags name="Bloom">
+				<Item Name="Enabled" />
+			</_field_byte_flags>
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Decal Presets">
+		<_field_string name="Preset" />
+		<_field_long_integer name="Max Decal Count" />
+		<_field_real name="Decal Lifetime Scale" />
+		<_field_char_enum name="Max Clustered Decals">
+			<Item Name="Cluster 16" />
+			<Item Name="Cluster 32" />
+			<Item Name="Cluster 64" />
+		</_field_char_enum>
+		<_field_char_enum name="Blend Quality">
+			<Item Name="Albedo Only No Derivatives" />
+			<Item Name="Albedo Only" />
+			<Item Name="Normal No Derivatives" />
+			<Item Name="Normal" />
+		</_field_char_enum>
+		<_field_byte_flags name="Decal Options Flags">
+			<Item Name="Enable Track Decals" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pada386" length="1" />
+		<_field_custom name="Single Screen" />
+		<_field_struct name="Single Screen Preset">
+			<_field_long_integer name="Max Decal Count" />
+			<_field_real name="Decal Lifetime Scale" />
+			<_field_char_enum name="Max Clustered Decals">
+				<Item Name="Cluster 16" />
+				<Item Name="Cluster 32" />
+				<Item Name="Cluster 64" />
+			</_field_char_enum>
+			<_field_char_enum name="Blend Quality">
+				<Item Name="Albedo Only No Derivatives" />
+				<Item Name="Albedo Only" />
+				<Item Name="Normal No Derivatives" />
+				<Item Name="Normal" />
+			</_field_char_enum>
+			<_field_byte_flags name="Decal Options Flags">
+				<Item Name="Enable Track Decals" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad2c5d" length="1" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="2 Player Splitscreen" />
+		<_field_struct name="2 Player Splitscreen Preset">
+			<_field_long_integer name="Max Decal Count" />
+			<_field_real name="Decal Lifetime Scale" />
+			<_field_char_enum name="Max Clustered Decals">
+				<Item Name="Cluster 16" />
+				<Item Name="Cluster 32" />
+				<Item Name="Cluster 64" />
+			</_field_char_enum>
+			<_field_char_enum name="Blend Quality">
+				<Item Name="Albedo Only No Derivatives" />
+				<Item Name="Albedo Only" />
+				<Item Name="Normal No Derivatives" />
+				<Item Name="Normal" />
+			</_field_char_enum>
+			<_field_byte_flags name="Decal Options Flags">
+				<Item Name="Enable Track Decals" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad2c5d" length="1" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="3 Player Splitscreen" />
+		<_field_struct name="3 Player Splitscreen Preset">
+			<_field_long_integer name="Max Decal Count" />
+			<_field_real name="Decal Lifetime Scale" />
+			<_field_char_enum name="Max Clustered Decals">
+				<Item Name="Cluster 16" />
+				<Item Name="Cluster 32" />
+				<Item Name="Cluster 64" />
+			</_field_char_enum>
+			<_field_char_enum name="Blend Quality">
+				<Item Name="Albedo Only No Derivatives" />
+				<Item Name="Albedo Only" />
+				<Item Name="Normal No Derivatives" />
+				<Item Name="Normal" />
+			</_field_char_enum>
+			<_field_byte_flags name="Decal Options Flags">
+				<Item Name="Enable Track Decals" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad2c5d" length="1" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="4 Player Splitscreen" />
+		<_field_struct name="4 Player Splitscreen Preset">
+			<_field_long_integer name="Max Decal Count" />
+			<_field_real name="Decal Lifetime Scale" />
+			<_field_char_enum name="Max Clustered Decals">
+				<Item Name="Cluster 16" />
+				<Item Name="Cluster 32" />
+				<Item Name="Cluster 64" />
+			</_field_char_enum>
+			<_field_char_enum name="Blend Quality">
+				<Item Name="Albedo Only No Derivatives" />
+				<Item Name="Albedo Only" />
+				<Item Name="Normal No Derivatives" />
+				<Item Name="Normal" />
+			</_field_char_enum>
+			<_field_byte_flags name="Decal Options Flags">
+				<Item Name="Enable Track Decals" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad2c5d" length="1" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Shader Quality Presets">
+		<_field_string name="Preset" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_block_64 name="Raytraced Sun Shadows Presets">
+		<_field_string name="Preset" />
+		<_field_real name="Shadow Ray Push Off" />
+		<_field_long_integer name="Min Tile Rate" />
+		<_field_long_integer name="Max Tile Rate" />
+		<_field_byte_flags name="Trace Outside Cascade">
+			<Item Name="Enabled" />
+		</_field_byte_flags>
+		<_field_byte_flags name="Reject Lit Pixels">
+			<Item Name="Enabled" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad68be" length="2" />
+		<_field_long_integer name="Max Alpha Geo Iterations" />
+		<_field_long_integer name="Hybrid Shadows Quality Mode" />
+		<_field_real name="Hybrid Shadows Lit Sigma" />
+		<_field_real name="Hybrid Shadows Shadow Sigma" />
+		<_field_real name="Hybrid Shadows 2X2 Tile Sigma" />
+		<_field_real name="Hybrid Shadows 4X4 Tile Sigma" />
+		<_field_real name="Shadow History Damper Weight" />
+		<_field_custom name="VRAM" />
+		<_field_struct name="vram">
+			<_field_long_integer name="Initial VRAM usage" />
+			<_field_long_integer name="VRAM per 1 million pixels" />
+			</_field_struct>
+		<_field_custom name="" />
+		</_field_block_64>
+	<_field_custom name="" />
+	<_field_pad name="generated_pad3e85" length="4" />
+	</plugin>

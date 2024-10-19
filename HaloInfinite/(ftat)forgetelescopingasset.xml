@@ -1,0 +1,112 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_char_enum name="TelescopingSolutionType">
+		<Item Name="AlgebraicWithMarkup" />
+		<Item Name="Interpolation" />
+	</_field_char_enum>
+	<_field_pad name="generated_pad4682" length="3" />
+	<_field_block_64 name="Corners">
+		<_field_tag_reference_64 name="Object" />
+		<_field_real_vector_3d name="Position" />
+		<_field_string_id name="variant" />
+		<_field_real_vector_3d name="Tip" />
+		<_field_block_64 name="Magnets">
+			<_field_real_vector_3d name="point" />
+			</_field_block_64>
+		<_field_real_vector_3d name="PositionAtMinScale" />
+		<_field_real_vector_3d name="PositionAtMaxScale" />
+		<_field_tag_reference_64 name="Runtime Underlying Geo (Static IO)" />
+		<_field_tag_reference_64 name="Runtime Underlying Collision Geo (Static IO)" />
+		<_field_tag_reference_64 name="Runtime Underlying Material Palette (Static IO)" />
+		<_field_string_id name="Style" />
+		</_field_block_64>
+	<_field_block_64 name="Edges">
+		<_field_tag_reference_64 name="Object" />
+		<_field_real_vector_3d name="Position" />
+		<_field_string_id name="variant" />
+		<_field_real_vector_3d name="CreaseTip1" />
+		<_field_real_vector_3d name="CreaseTip2" />
+		<_field_block_64 name="endPoints">
+			<_field_real_vector_3d name="point" />
+			</_field_block_64>
+		<_field_real_quaternion name="rotation" />
+		<_field_char_enum name="ObjectSpaceEdgeAlignment">
+			<Item Name="NoRotate" />
+			<Item Name="X" />
+			<Item Name="Y" />
+			<Item Name="Z" />
+		</_field_char_enum>
+		<_field_pad name="generated_padf5c1" length="3" />
+		<_field_block_64 name="Magnets">
+			<_field_real_vector_3d name="point" />
+			</_field_block_64>
+		<_field_real_vector_3d name="PositionAtMinScale" />
+		<_field_real_vector_3d name="PositionAtMaxScale" />
+		<_field_real name="ScaleAtMinScale" />
+		<_field_real name="ScaleAtMaxScale" />
+		<_field_tag_reference_64 name="Runtime Underlying Geo (Static IO)" />
+		<_field_tag_reference_64 name="Runtime Underlying Collision Geo (Static IO)" />
+		<_field_tag_reference_64 name="Runtime Underlying Material Palette (Static IO)" />
+		<_field_string_id name="Style" />
+		</_field_block_64>
+	<_field_block_64 name="Faces">
+		<_field_tag_reference_64 name="Object" />
+		<_field_real_vector_3d name="Position" />
+		<_field_real_quaternion name="Rotation" />
+		<_field_string_id name="variant" />
+		<_field_block_64 name="FaceEndPoints">
+			<_field_real_vector_3d name="point" />
+			</_field_block_64>
+		<_field_block_64 name="Magnets">
+			<_field_real_vector_3d name="point" />
+			</_field_block_64>
+		<_field_tag_reference_64 name="Runtime Underlying Geo (Static IO)" />
+		<_field_tag_reference_64 name="Runtime Underlying Collision Geo (Static IO)" />
+		<_field_tag_reference_64 name="Runtime Underlying Material Palette (Static IO)" />
+		<_field_string_id name="Style" />
+		<_field_real_vector_3d name="endPointsBoundsMax" />
+		<_field_real_vector_3d name="endPointsBoundsMin" />
+		<_field_real_vector_3d name="geoBoundsMin" />
+		<_field_real_vector_3d name="geoBoundsMax" />
+		<_field_char_enum name="faceWidthToMaintain">
+			<Item Name="None" />
+			<Item Name="X" />
+			<Item Name="Y" />
+			<Item Name="Z" />
+		</_field_char_enum>
+		<_field_pad name="generated_padac75" length="3" />
+		<_field_real_vector_3d name="PositionAtMinScale" />
+		<_field_real_vector_3d name="PositionAtMaxScale" />
+		<_field_real_vector_3d name="ScaleAtMinScale" />
+		<_field_real_vector_3d name="ScaleAtMaxScale" />
+		</_field_block_64>
+	<_field_char_enum name="ScaleConstraint">
+		<Item Name="None" />
+		<Item Name="XY" />
+		<Item Name="XZ" />
+		<Item Name="YZ" />
+		<Item Name="XYZ" />
+	</_field_char_enum>
+	<_field_char_enum name="ScaleRestriction">
+		<Item Name="None" />
+		<Item Name="X" />
+		<Item Name="Y" />
+		<Item Name="Z" />
+		<Item Name="XY" />
+		<Item Name="XZ" />
+		<Item Name="YZ" />
+		<Item Name="Unscalable" />
+	</_field_char_enum>
+	<_field_pad name="generated_pad9337" length="2" />
+	<_field_real_vector_3d name="Minimum Scale" />
+	<_field_real_vector_3d name="Maximum Scale" />
+	<_field_tag_reference_64 name="Runtime Underlying Collision Geo (Static IO)" />
+	<_field_tag_reference_64 name="Runtime Underlying Material Palette (Static IO)" />
+	<_field_pad name="generated_paddfec" length="4" />
+	</plugin>

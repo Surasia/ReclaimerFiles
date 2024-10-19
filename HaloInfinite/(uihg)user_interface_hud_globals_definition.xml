@@ -1,0 +1,169 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="Motion Sensor" />
+	<_field_explanation name="Motion sensor globals" />
+	<_field_byte_flags name="flags">
+		<Item Name="show scripted pings at any distance" />
+		<Item Name="enable north indicator" />
+	</_field_byte_flags>
+	<_field_pad name="generated_pad0c0f" length="3" />
+	<_field_real name="active camo appears as enemy when lower than" />
+	<_field_real name="height classified as above" />
+	<_field_real name="height classified as below" />
+	<_field_real name="upwards movement scaling" />
+	<_field_real name="downwards movement scaling" />
+	<_field_real name="crouching movement scaling" />
+	<_field_real name="edge indicator position scale" />
+	<_field_real name="vehicle navigation marker range detection" />
+	<_field_real name="vehicle contested flash time" />
+	<_field_real name="activecamo xray animation cooldown " />
+	<_field_real name="dead people visible time" />
+	<_field_long_integer name="Motion Tracker Fade Frames" />
+	<_field_long_integer name="Armor Mod Display Counter" />
+	<_field_real name="Broadsword Parallax Velocity Override" />
+	<_field_real name="Pelican Parallax Velocity Override" />
+	<_field_explanation name="Fanfare and Messaging globals" />
+	<_field_real name="fanfare display time " />
+	<_field_real name="fanfare speed up display time " />
+	<_field_real name="medal score message lifetime " />
+	<_field_real name="medal score message restart time " />
+	<_field_real name="Event Feed life time (cui)" />
+	<_field_custom name="" />
+	<_field_custom name="NavPoints" />
+	<_field_block_64 name="navpoint presentation tags">
+		<_field_tag_reference_64 name="reference" />
+		</_field_block_64>
+	<_field_real_point_2d name="Docking Position (Default)" />
+	<_field_explanation name="Named Docking Positions" />
+	<_field_block_64 name="Named Docking Positions">
+		<_field_string_id name="Name" />
+		<_field_real_point_2d name="Position" />
+		</_field_block_64>
+	<_field_real name="Docked 2D Spacing" />
+	<_field_real name="Docking Move Fraction" />
+	<_field_real name="defaultNavPoint2dDelayTime (seconds)" />
+	<_field_real name="Numeric Timer Expiry Threshold (seconds)" />
+	<_field_real name="Normalized Timer Expiry Threshold" />
+	<_field_real name="Camouflage Maximum Visible Intensity" />
+	<_field_real name="damage state reset time (milliseconds)" />
+	<_field_real name="firing state reset time (milliseconds)" />
+	<_field_real name="Enemy Name Visibility Distance" />
+	<_field_real name="Fireteam Name Visibility Distance" />
+	<_field_real name="Friendly Name Visibility Distance" />
+	<_field_custom name="" />
+	<_field_custom name="Damage" />
+	<_field_explanation name="Damage globals" />
+	<_field_real name="shield bar recent damage duration" />
+	<_field_real name="damage indicator response duration" />
+	<_field_real name="damage flash response duration" />
+	<_field_tag_reference_64 name="tiled mesh seen when hit in 1st person" />
+	<_field_real name="number of tiles across the screen" />
+	<_field_real name="microtexture warp x" />
+	<_field_real name="microtexture warp y" />
+	<_field_real name="intensity scalar" />
+	<_field_real name="taa mask strength" />
+	<_field_real name="alpha multiplier" />
+	<_field_real name="total intensity cap (0..1)" />
+	<_field_custom name="" />
+	<_field_custom name="Reticule" />
+	<_field_explanation name="Reticule globals" />
+	<_field_real name="Reticule maximum spread angle" />
+	<_field_real name="Hit tick persist time" />
+	<_field_custom name="" />
+	<_field_custom name="Sound" />
+	<_field_explanation name="Sounds" />
+	<_field_tag_reference_64 name="banned vehicle entrance sound" />
+	<_field_custom name="" />
+	<_field_custom name="Text" />
+	<_field_explanation name="Text" />
+	<_field_block_64 name="string references">
+		<_field_tag_reference_64 name="new string list" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Interact Message Appear Sound" />
+	<_field_tag_reference_64 name="Interact Message Disappear Sound " />
+	<_field_real name="medal fanfare animation lifetime " />
+	<_field_real name="medal fanfare animation in lifetime " />
+	<_field_real name="medal fanfare animation out begin time " />
+	<_field_short_integer name="Max Medals On Screen" />
+	<_field_pad name="generated_pad7a08" length="2" />
+	<_field_real name="event fanfare animation lifetime " />
+	<_field_real name="event fanfare animation in lifetime " />
+	<_field_real name="event fanfare animation out begin time " />
+	<_field_real name="personal score animation lifetime " />
+	<_field_real name="personal score animation in lifetime " />
+	<_field_real name="personal score animation out begin time " />
+	<_field_real_argb_color name="Heroic Killfeed Color" />
+	<_field_real_argb_color name="Legendary Killfeed Color" />
+	<_field_real_argb_color name="Mythic Killfeed Color " />
+	<_field_block_64 name="keyboard mouse string id overrides">
+		<_field_string_id name="original string id" />
+		<_field_string_id name="string id override" />
+		</_field_block_64>
+	<_field_custom name="" />
+	<_field_custom name="Grenade Indicator" />
+	<_field_explanation name="Grenade Indicator Globals" />
+	<_field_real name="grenade indicator danger radius " />
+	<_field_real name="grenade indicator lifetime dampener " />
+	<_field_custom name="" />
+	<_field_custom name="Parallax" />
+	<_field_explanation name="Parallax globals" />
+	<_field_real name="vehicle transition time (seconds)" />
+	<_field_block_64 name="parallax params">
+		<_field_string_id name="name" />
+		<_field_real name="parallax falloff time" />
+		<_field_real name="parallax camera velocity factor" />
+		<_field_real_point_3d name="parallax movement multiplier" />
+		<_field_real_point_3d name="parallax clamp min" />
+		<_field_real_point_3d name="parallax clamp max" />
+		<_field_real_euler_angles_3d name="parallax angular multiplier" />
+		<_field_real_euler_angles_3d name="parallax angle clamp min" />
+		<_field_real_euler_angles_3d name="parallax angle clamp max" />
+		<_field_char_enum name="Camera Type">
+			<Item Name="PlayerCamera" />
+			<Item Name="RawCamera" />
+		</_field_char_enum>
+		<_field_pad name="generated_pade2be" length="3" />
+		</_field_block_64>
+	<_field_custom name="" />
+	<_field_custom name="Warp" />
+	<_field_explanation name="Warp params" />
+	<_field_block_64 name="warp params">
+		<_field_string_id name="name" />
+		<_field_real_point_3d name="ellipsoid scale" />
+		<_field_real_point_3d name="ellipsoid center" />
+		<_field_real_point_3d name="output offset" />
+		<_field_long_integer name="tessellation X" />
+		<_field_long_integer name="tessellation Y" />
+		<_field_real name="warp descale in ultrawide factor" />
+		<_field_byte_flags name="flags">
+			<Item Name="enabled" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad390e" length="3" />
+		</_field_block_64>
+	<_field_custom name="" />
+	<_field_custom name="Chromatic Aberration" />
+	<_field_explanation name="Chromatic aberration params" />
+	<_field_block_64 name="chromatic aberration params">
+		<_field_string_id name="name" />
+		<_field_real name="base mix" />
+		<_field_real_point_2d name="red aberration scale" />
+		<_field_real_point_2d name="green aberration scale" />
+		<_field_real_point_2d name="blue aberration scale" />
+		<_field_byte_flags name="flags">
+			<Item Name="enabled" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad4665" length="3" />
+		</_field_block_64>
+	<_field_custom name="" />
+	<_field_custom name="Threat Tracker" />
+	<_field_explanation name="Threat tracker globals" />
+	<_field_real name="threat tracker range" />
+	<_field_custom name="" />
+	<_field_pad name="generated_pad28bd" length="4" />
+	</plugin>

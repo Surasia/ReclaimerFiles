@@ -1,0 +1,35 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="Active Camo Controls" />
+	<_field_word_flags name="Flags">
+		<Item Name="also apply to object children" />
+	</_field_word_flags>
+	<_field_pad name="generated_padb4a4" length="2" />
+	<_field_struct name="Active Camo Amount">
+		<_field_string_id name="Input Variable" />
+		<_field_string_id name="Range Variable" />
+		<_field_custom name="Mapping" />
+		<_field_struct name="Mapping">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="Shadow Amount">
+		<_field_string_id name="Input Variable" />
+		<_field_string_id name="Range Variable" />
+		<_field_custom name="Mapping" />
+		<_field_struct name="Mapping">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_pad name="generated_padce85" length="4" />
+	</plugin>

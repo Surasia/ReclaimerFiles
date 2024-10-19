@@ -1,0 +1,181 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="Armor properties" />
+	<_field_block_64 name="Themes">
+		<_field_string_id name="Asset Name" />
+		<_field_tag_reference_64 name="Model" />
+		<_field_tag_reference_64 name="Object Reference" />
+		<_field_block_64 name="Theme Configurations">
+			<_field_string_id name="Theme Name" />
+			<_field_string_id name="Theme Variant Name" />
+			<_field_tag_reference_64 name="Theme Configs" />
+			<_field_block_64 name="Kit Configurations">
+				<_field_string_id name="Theme Name" />
+				<_field_string_id name="Theme Variant Name" />
+				<_field_block_64 name="Kit Base Regions">
+					<_field_string_id name="Region Name" />
+					<_field_block_64 name="Permutation Regions">
+						<_field_string_id name="Permutation Region" />
+						</_field_block_64>
+					<_field_block_64 name="Permutation Settings">
+						<_field_string_id name="Permutation Name" />
+						<_field_tag_reference_64 name="Material Style" />
+						<_field_tag_reference_64 name="Attachment" />
+						</_field_block_64>
+					</_field_block_64>
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Shared Armor Emblems">
+		<_field_block_64 name="Theme Ids">
+			<_field_string_id name="id" />
+			</_field_block_64>
+		<_field_block_64 name="Markers">
+			<_field_string_id name="Marker" />
+			</_field_block_64>
+		<_field_block_64 name="BigEmblems">
+			<_field_string_id name="Theme Id" />
+			<_field_string_id name="Marker" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Effect Overrides">
+		<_field_tag_reference_64 name="Effect Override Definition" />
+		</_field_block_64>
+	<_field_block_64 name="Object Attachments">
+		<_field_tag_reference_64 name="Attachments" />
+		</_field_block_64>
+	<_field_custom name="" />
+	<_field_custom name="Weapon properties" />
+	<_field_block_64 name="Weapon Themes">
+		<_field_string_id name="Asset Name" />
+		<_field_tag_reference_64 name="Model" />
+		<_field_tag_reference_64 name="Object Reference" />
+		<_field_block_64 name="Theme Configurations">
+			<_field_string_id name="Theme Name" />
+			<_field_string_id name="Theme Variant Name" />
+			<_field_tag_reference_64 name="Object Configuration" />
+			<_field_tag_reference_64 name="Theme Configs" />
+			<_field_block_64 name="Kit Configurations">
+				<_field_string_id name="Theme Name" />
+				<_field_string_id name="Theme Variant Name" />
+				<_field_block_64 name="Kit Base Regions">
+					<_field_string_id name="Region Name" />
+					<_field_block_64 name="Permutation Regions">
+						<_field_string_id name="Permutation Region" />
+						</_field_block_64>
+					<_field_block_64 name="Permutation Settings">
+						<_field_string_id name="Permutation Name" />
+						<_field_tag_reference_64 name="Material Style" />
+						<_field_tag_reference_64 name="Attachment" />
+						</_field_block_64>
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="Alt Geo Configurations">
+				<_field_string_id name="Name" />
+				<_field_string_id name="Permutation Name" />
+				<_field_block_64 name="Visual region names">
+					<_field_string_id name="Name" />
+					</_field_block_64>
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Shared Weapon Emblems">
+		<_field_block_64 name="Theme Ids">
+			<_field_string_id name="id" />
+			</_field_block_64>
+		<_field_block_64 name="Markers">
+			<_field_string_id name="Marker" />
+			</_field_block_64>
+		<_field_block_64 name="BigEmblems">
+			<_field_string_id name="Theme Id" />
+			<_field_string_id name="Marker" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Player kill effects">
+		<_field_tag_reference_64 name="Weapon definition" />
+		<_field_tag_reference_64 name="Player kill effects" />
+		</_field_block_64>
+	<_field_block_64 name="Shared Weapon Charms">
+		<_field_tag_reference_64 name="Charm" />
+		</_field_block_64>
+	<_field_custom name="" />
+	<_field_custom name="Vehicle properties" />
+	<_field_block_64 name="Vehicle Themes">
+		<_field_string_id name="Asset Name" />
+		<_field_tag_reference_64 name="Model" />
+		<_field_tag_reference_64 name="Object Reference" />
+		<_field_block_64 name="Theme Configurations">
+			<_field_string_id name="Theme Name" />
+			<_field_string_id name="Theme Variant Name" />
+			<_field_tag_reference_64 name="Object Configuration" />
+			<_field_tag_reference_64 name="Theme Configs" />
+			<_field_block_64 name="Kit Configurations">
+				<_field_string_id name="Theme Name" />
+				<_field_string_id name="Theme Variant Name" />
+				<_field_block_64 name="Kit Base Regions">
+					<_field_string_id name="Region Name" />
+					<_field_block_64 name="Permutation Regions">
+						<_field_string_id name="Permutation Region" />
+						</_field_block_64>
+					<_field_block_64 name="Permutation Settings">
+						<_field_string_id name="Permutation Name" />
+						<_field_tag_reference_64 name="Material Style" />
+						<_field_tag_reference_64 name="Attachment" />
+						</_field_block_64>
+					</_field_block_64>
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Shared Vehicle Emblems">
+		<_field_block_64 name="Theme Ids">
+			<_field_string_id name="id" />
+			</_field_block_64>
+		<_field_block_64 name="Markers">
+			<_field_string_id name="Marker" />
+			</_field_block_64>
+		<_field_block_64 name="BigEmblems">
+			<_field_string_id name="Theme Id" />
+			<_field_string_id name="Marker" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Shared Vehicle Charms">
+		<_field_tag_reference_64 name="Charm" />
+		</_field_block_64>
+	<_field_custom name="" />
+	<_field_custom name="Spartan properties" />
+	<_field_block_64 name="Stances">
+		<_field_string_id name="Animation" />
+		<_field_tag_reference_64 name="Weapon Reference" />
+		<_field_tag_reference_64 name="Composition Reference" />
+		</_field_block_64>
+	<_field_block_64 name="Action poses">
+		<_field_string_id name="Animation" />
+		<_field_tag_reference_64 name="Weapon Reference" />
+		<_field_tag_reference_64 name="Composition Reference" />
+		</_field_block_64>
+	<_field_custom name="" />
+	<_field_custom name="Ai properties" />
+	<_field_tag_reference_64 name="Ai Object Reference" />
+	<_field_tag_reference_64 name="Ai Device Reference" />
+	<_field_custom name="" />
+	<_field_custom name="Other properties" />
+	<_field_block_64 name="XpBoosts">
+		<_field_tag_reference_64 name="Object Reference" />
+		</_field_block_64>
+	<_field_block_64 name="XpGrants">
+		<_field_tag_reference_64 name="Object Reference" />
+		</_field_block_64>
+	<_field_block_64 name="Rerolls">
+		<_field_tag_reference_64 name="Object Reference" />
+		</_field_block_64>
+	<_field_block_64 name="VirtualCurrency">
+		<_field_tag_reference_64 name="Object Reference" />
+		</_field_block_64>
+	<_field_pad name="generated_pad3f21" length="4" />
+	</plugin>

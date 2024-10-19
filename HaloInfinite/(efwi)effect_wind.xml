@@ -1,0 +1,127 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_long_enum name="Type">
+		<Item Name="Blocker" />
+		<Item Name="Directional Emitter" />
+		<Item Name="Omnidirectional Emitter" />
+	</_field_long_enum>
+	<_field_real_vector_3d name="Direction" />
+	<_field_struct name="Strength">
+		<_field_char_enum name="Input Variable">
+			<Item Name="Event Age" />
+			<Item Name="Effect Scale A" />
+			<Item Name="Effect Scale B" />
+		</_field_char_enum>
+		<_field_char_enum name="Range Variable">
+			<Item Name="Event Age" />
+			<Item Name="Effect Scale A" />
+			<Item Name="Effect Scale B" />
+		</_field_char_enum>
+		<_field_char_enum name="Output Modifier">
+			<Item Name=" " />
+			<Item Name="Plus" />
+			<Item Name="Times" />
+		</_field_char_enum>
+		<_field_char_enum name="Output Modifier Input">
+			<Item Name="Event Age" />
+			<Item Name="Effect Scale A" />
+			<Item Name="Effect Scale B" />
+		</_field_char_enum>
+		<_field_custom name="Mapping" />
+		<_field_struct name="Mapping">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="Scale X or Radius">
+		<_field_char_enum name="Input Variable">
+			<Item Name="Event Age" />
+			<Item Name="Effect Scale A" />
+			<Item Name="Effect Scale B" />
+		</_field_char_enum>
+		<_field_char_enum name="Range Variable">
+			<Item Name="Event Age" />
+			<Item Name="Effect Scale A" />
+			<Item Name="Effect Scale B" />
+		</_field_char_enum>
+		<_field_char_enum name="Output Modifier">
+			<Item Name=" " />
+			<Item Name="Plus" />
+			<Item Name="Times" />
+		</_field_char_enum>
+		<_field_char_enum name="Output Modifier Input">
+			<Item Name="Event Age" />
+			<Item Name="Effect Scale A" />
+			<Item Name="Effect Scale B" />
+		</_field_char_enum>
+		<_field_custom name="Mapping" />
+		<_field_struct name="Mapping">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="Scale Y">
+		<_field_char_enum name="Input Variable">
+			<Item Name="Event Age" />
+			<Item Name="Effect Scale A" />
+			<Item Name="Effect Scale B" />
+		</_field_char_enum>
+		<_field_char_enum name="Range Variable">
+			<Item Name="Event Age" />
+			<Item Name="Effect Scale A" />
+			<Item Name="Effect Scale B" />
+		</_field_char_enum>
+		<_field_char_enum name="Output Modifier">
+			<Item Name=" " />
+			<Item Name="Plus" />
+			<Item Name="Times" />
+		</_field_char_enum>
+		<_field_char_enum name="Output Modifier Input">
+			<Item Name="Event Age" />
+			<Item Name="Effect Scale A" />
+			<Item Name="Effect Scale B" />
+		</_field_char_enum>
+		<_field_custom name="Mapping" />
+		<_field_struct name="Mapping">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="Scale Z">
+		<_field_char_enum name="Input Variable">
+			<Item Name="Event Age" />
+			<Item Name="Effect Scale A" />
+			<Item Name="Effect Scale B" />
+		</_field_char_enum>
+		<_field_char_enum name="Range Variable">
+			<Item Name="Event Age" />
+			<Item Name="Effect Scale A" />
+			<Item Name="Effect Scale B" />
+		</_field_char_enum>
+		<_field_char_enum name="Output Modifier">
+			<Item Name=" " />
+			<Item Name="Plus" />
+			<Item Name="Times" />
+		</_field_char_enum>
+		<_field_char_enum name="Output Modifier Input">
+			<Item Name="Event Age" />
+			<Item Name="Effect Scale A" />
+			<Item Name="Effect Scale B" />
+		</_field_char_enum>
+		<_field_custom name="Mapping" />
+		<_field_struct name="Mapping">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	</plugin>

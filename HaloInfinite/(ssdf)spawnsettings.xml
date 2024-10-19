@@ -1,0 +1,879 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_real name="Minimum spawn time" />
+	<_field_explanation name="Unseen spawning settings" />
+	<_field_real name="Hostile visibility cone length" />
+	<_field_real name="Friendly visibility cone length" />
+	<_field_real name="Visibility cone angle" />
+	<_field_real name="Spawn point can see hostile cone length" />
+	<_field_real name="Spawn point can see friendly cone length" />
+	<_field_explanation name="Spawn weight settings" />
+	<_field_real name="Quantization step" />
+	<_field_explanation name="Unit Influencers" />
+	<_field_block_64 name="Unit influencers">
+		<_field_long_flags name="Flags">
+			<Item Name="Does not stack" />
+		</_field_long_flags>
+		<_field_struct name="Unit Influencer">
+			<_field_long_flags name="Filter flags">
+				<Item Name="Player controlled" />
+				<Item Name="Not player controlled" />
+				<Item Name="In combat" />
+				<Item Name="Not in combat" />
+				<Item Name="AI controlled" />
+			</_field_long_flags>
+			<_field_long_flags name="Allowed dispositions">
+				<Item Name="Ally" />
+				<Item Name="Enemy" />
+				<Item Name="Neutral" />
+			</_field_long_flags>
+			<_field_block_64 name="Influencer">
+				<_field_block_64 name="Sphere">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Radius" />
+					<_field_real name="Weight" />
+					<_field_block_64 name="Weight function">
+						<_field_struct name="Function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_block_64>
+					</_field_block_64>
+				<_field_block_64 name="Box">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Width" />
+					<_field_real name="Length" />
+					<_field_real name="Height" />
+					<_field_real name="Weight" />
+					</_field_block_64>
+				<_field_block_64 name="Cylinder">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Radius" />
+					<_field_real name="Height" />
+					<_field_real name="Weight" />
+					<_field_block_64 name="Weight function">
+						<_field_struct name="Function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_block_64>
+					</_field_block_64>
+				<_field_block_64 name="Cone">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Length" />
+					<_field_real name="Base radius" />
+					<_field_real name="Weight" />
+					<_field_block_64 name="Weight function">
+						<_field_struct name="Function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_block_64>
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="Movement influencer">
+				<_field_real name="Lead time" />
+				<_field_block_64 name="Cone">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Length" />
+					<_field_real name="Base radius" />
+					<_field_real name="Weight" />
+					<_field_block_64 name="Weight function">
+						<_field_struct name="Function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_block_64>
+					</_field_block_64>
+				<_field_block_64 name="Pill">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Length" />
+					<_field_real name="Radius" />
+					<_field_real name="Weight" />
+					<_field_block_64 name="Weight function">
+						<_field_struct name="Function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_block_64>
+					</_field_block_64>
+				</_field_block_64>
+			</_field_struct>
+		</_field_block_64>
+	<_field_explanation name="Dead Unit Influencers" />
+	<_field_real name="Active duration" />
+	<_field_block_64 name="Dead unit influencers">
+		<_field_struct name="Unit Influencer">
+			<_field_long_flags name="Filter flags">
+				<Item Name="Player controlled" />
+				<Item Name="Not player controlled" />
+				<Item Name="In combat" />
+				<Item Name="Not in combat" />
+				<Item Name="AI controlled" />
+			</_field_long_flags>
+			<_field_long_flags name="Allowed dispositions">
+				<Item Name="Ally" />
+				<Item Name="Enemy" />
+				<Item Name="Neutral" />
+			</_field_long_flags>
+			<_field_block_64 name="Influencer">
+				<_field_block_64 name="Sphere">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Radius" />
+					<_field_real name="Weight" />
+					<_field_block_64 name="Weight function">
+						<_field_struct name="Function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_block_64>
+					</_field_block_64>
+				<_field_block_64 name="Box">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Width" />
+					<_field_real name="Length" />
+					<_field_real name="Height" />
+					<_field_real name="Weight" />
+					</_field_block_64>
+				<_field_block_64 name="Cylinder">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Radius" />
+					<_field_real name="Height" />
+					<_field_real name="Weight" />
+					<_field_block_64 name="Weight function">
+						<_field_struct name="Function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_block_64>
+					</_field_block_64>
+				<_field_block_64 name="Cone">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Length" />
+					<_field_real name="Base radius" />
+					<_field_real name="Weight" />
+					<_field_block_64 name="Weight function">
+						<_field_struct name="Function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_block_64>
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="Movement influencer">
+				<_field_real name="Lead time" />
+				<_field_block_64 name="Cone">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Length" />
+					<_field_real name="Base radius" />
+					<_field_real name="Weight" />
+					<_field_block_64 name="Weight function">
+						<_field_struct name="Function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_block_64>
+					</_field_block_64>
+				<_field_block_64 name="Pill">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Length" />
+					<_field_real name="Radius" />
+					<_field_real name="Weight" />
+					<_field_block_64 name="Weight function">
+						<_field_struct name="Function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_block_64>
+					</_field_block_64>
+				</_field_block_64>
+			</_field_struct>
+		</_field_block_64>
+	<_field_explanation name="Spawning Unit Influencers" />
+	<_field_block_64 name="Spawning unit influencers">
+		<_field_struct name="Unit Influencer">
+			<_field_long_flags name="Filter flags">
+				<Item Name="Player controlled" />
+				<Item Name="Not player controlled" />
+				<Item Name="In combat" />
+				<Item Name="Not in combat" />
+				<Item Name="AI controlled" />
+			</_field_long_flags>
+			<_field_long_flags name="Allowed dispositions">
+				<Item Name="Ally" />
+				<Item Name="Enemy" />
+				<Item Name="Neutral" />
+			</_field_long_flags>
+			<_field_block_64 name="Influencer">
+				<_field_block_64 name="Sphere">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Radius" />
+					<_field_real name="Weight" />
+					<_field_block_64 name="Weight function">
+						<_field_struct name="Function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_block_64>
+					</_field_block_64>
+				<_field_block_64 name="Box">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Width" />
+					<_field_real name="Length" />
+					<_field_real name="Height" />
+					<_field_real name="Weight" />
+					</_field_block_64>
+				<_field_block_64 name="Cylinder">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Radius" />
+					<_field_real name="Height" />
+					<_field_real name="Weight" />
+					<_field_block_64 name="Weight function">
+						<_field_struct name="Function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_block_64>
+					</_field_block_64>
+				<_field_block_64 name="Cone">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Length" />
+					<_field_real name="Base radius" />
+					<_field_real name="Weight" />
+					<_field_block_64 name="Weight function">
+						<_field_struct name="Function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_block_64>
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="Movement influencer">
+				<_field_real name="Lead time" />
+				<_field_block_64 name="Cone">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Length" />
+					<_field_real name="Base radius" />
+					<_field_real name="Weight" />
+					<_field_block_64 name="Weight function">
+						<_field_struct name="Function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_block_64>
+					</_field_block_64>
+				<_field_block_64 name="Pill">
+					<_field_long_flags name="Flags">
+						<Item Name="Reject Spawn" />
+					</_field_long_flags>
+					<_field_real name="Length" />
+					<_field_real name="Radius" />
+					<_field_real name="Weight" />
+					<_field_block_64 name="Weight function">
+						<_field_struct name="Function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_block_64>
+					</_field_block_64>
+				</_field_block_64>
+			</_field_struct>
+		</_field_block_64>
+	<_field_explanation name="Weapon Influencers" />
+	<_field_block_64 name="Weapon influencers">
+		<_field_tag_reference_64 name="Weapon" />
+		<_field_block_64 name="Unit influencer">
+			<_field_struct name="Unit Influencer">
+				<_field_long_flags name="Filter flags">
+					<Item Name="Player controlled" />
+					<Item Name="Not player controlled" />
+					<Item Name="In combat" />
+					<Item Name="Not in combat" />
+					<Item Name="AI controlled" />
+				</_field_long_flags>
+				<_field_long_flags name="Allowed dispositions">
+					<Item Name="Ally" />
+					<Item Name="Enemy" />
+					<Item Name="Neutral" />
+				</_field_long_flags>
+				<_field_block_64 name="Influencer">
+					<_field_block_64 name="Sphere">
+						<_field_long_flags name="Flags">
+							<Item Name="Reject Spawn" />
+						</_field_long_flags>
+						<_field_real name="Radius" />
+						<_field_real name="Weight" />
+						<_field_block_64 name="Weight function">
+							<_field_struct name="Function">
+								<_field_custom name="function" />
+								<_field_struct name="function">
+									<_field_custom name="" />
+									<_field_data_64 name="data" />
+									<_field_custom name="" />
+									</_field_struct>
+								</_field_struct>
+							</_field_block_64>
+						</_field_block_64>
+					<_field_block_64 name="Box">
+						<_field_long_flags name="Flags">
+							<Item Name="Reject Spawn" />
+						</_field_long_flags>
+						<_field_real name="Width" />
+						<_field_real name="Length" />
+						<_field_real name="Height" />
+						<_field_real name="Weight" />
+						</_field_block_64>
+					<_field_block_64 name="Cylinder">
+						<_field_long_flags name="Flags">
+							<Item Name="Reject Spawn" />
+						</_field_long_flags>
+						<_field_real name="Radius" />
+						<_field_real name="Height" />
+						<_field_real name="Weight" />
+						<_field_block_64 name="Weight function">
+							<_field_struct name="Function">
+								<_field_custom name="function" />
+								<_field_struct name="function">
+									<_field_custom name="" />
+									<_field_data_64 name="data" />
+									<_field_custom name="" />
+									</_field_struct>
+								</_field_struct>
+							</_field_block_64>
+						</_field_block_64>
+					<_field_block_64 name="Cone">
+						<_field_long_flags name="Flags">
+							<Item Name="Reject Spawn" />
+						</_field_long_flags>
+						<_field_real name="Length" />
+						<_field_real name="Base radius" />
+						<_field_real name="Weight" />
+						<_field_block_64 name="Weight function">
+							<_field_struct name="Function">
+								<_field_custom name="function" />
+								<_field_struct name="function">
+									<_field_custom name="" />
+									<_field_data_64 name="data" />
+									<_field_custom name="" />
+									</_field_struct>
+								</_field_struct>
+							</_field_block_64>
+						</_field_block_64>
+					</_field_block_64>
+				<_field_block_64 name="Movement influencer">
+					<_field_real name="Lead time" />
+					<_field_block_64 name="Cone">
+						<_field_long_flags name="Flags">
+							<Item Name="Reject Spawn" />
+						</_field_long_flags>
+						<_field_real name="Length" />
+						<_field_real name="Base radius" />
+						<_field_real name="Weight" />
+						<_field_block_64 name="Weight function">
+							<_field_struct name="Function">
+								<_field_custom name="function" />
+								<_field_struct name="function">
+									<_field_custom name="" />
+									<_field_data_64 name="data" />
+									<_field_custom name="" />
+									</_field_struct>
+								</_field_struct>
+							</_field_block_64>
+						</_field_block_64>
+					<_field_block_64 name="Pill">
+						<_field_long_flags name="Flags">
+							<Item Name="Reject Spawn" />
+						</_field_long_flags>
+						<_field_real name="Length" />
+						<_field_real name="Radius" />
+						<_field_real name="Weight" />
+						<_field_block_64 name="Weight function">
+							<_field_struct name="Function">
+								<_field_custom name="function" />
+								<_field_struct name="function">
+									<_field_custom name="" />
+									<_field_data_64 name="data" />
+									<_field_custom name="" />
+									</_field_struct>
+								</_field_struct>
+							</_field_block_64>
+						</_field_block_64>
+					</_field_block_64>
+				</_field_struct>
+			</_field_block_64>
+		<_field_real name="Location unseen multiplier" />
+		</_field_block_64>
+	<_field_explanation name="Vehicle Influencers" />
+	<_field_block_64 name="Vehicle influencers">
+		<_field_tag_reference_64 name="Vehicle" />
+		<_field_block_64 name="Unit influencer">
+			<_field_struct name="Unit Influencer">
+				<_field_long_flags name="Filter flags">
+					<Item Name="Player controlled" />
+					<Item Name="Not player controlled" />
+					<Item Name="In combat" />
+					<Item Name="Not in combat" />
+					<Item Name="AI controlled" />
+				</_field_long_flags>
+				<_field_long_flags name="Allowed dispositions">
+					<Item Name="Ally" />
+					<Item Name="Enemy" />
+					<Item Name="Neutral" />
+				</_field_long_flags>
+				<_field_block_64 name="Influencer">
+					<_field_block_64 name="Sphere">
+						<_field_long_flags name="Flags">
+							<Item Name="Reject Spawn" />
+						</_field_long_flags>
+						<_field_real name="Radius" />
+						<_field_real name="Weight" />
+						<_field_block_64 name="Weight function">
+							<_field_struct name="Function">
+								<_field_custom name="function" />
+								<_field_struct name="function">
+									<_field_custom name="" />
+									<_field_data_64 name="data" />
+									<_field_custom name="" />
+									</_field_struct>
+								</_field_struct>
+							</_field_block_64>
+						</_field_block_64>
+					<_field_block_64 name="Box">
+						<_field_long_flags name="Flags">
+							<Item Name="Reject Spawn" />
+						</_field_long_flags>
+						<_field_real name="Width" />
+						<_field_real name="Length" />
+						<_field_real name="Height" />
+						<_field_real name="Weight" />
+						</_field_block_64>
+					<_field_block_64 name="Cylinder">
+						<_field_long_flags name="Flags">
+							<Item Name="Reject Spawn" />
+						</_field_long_flags>
+						<_field_real name="Radius" />
+						<_field_real name="Height" />
+						<_field_real name="Weight" />
+						<_field_block_64 name="Weight function">
+							<_field_struct name="Function">
+								<_field_custom name="function" />
+								<_field_struct name="function">
+									<_field_custom name="" />
+									<_field_data_64 name="data" />
+									<_field_custom name="" />
+									</_field_struct>
+								</_field_struct>
+							</_field_block_64>
+						</_field_block_64>
+					<_field_block_64 name="Cone">
+						<_field_long_flags name="Flags">
+							<Item Name="Reject Spawn" />
+						</_field_long_flags>
+						<_field_real name="Length" />
+						<_field_real name="Base radius" />
+						<_field_real name="Weight" />
+						<_field_block_64 name="Weight function">
+							<_field_struct name="Function">
+								<_field_custom name="function" />
+								<_field_struct name="function">
+									<_field_custom name="" />
+									<_field_data_64 name="data" />
+									<_field_custom name="" />
+									</_field_struct>
+								</_field_struct>
+							</_field_block_64>
+						</_field_block_64>
+					</_field_block_64>
+				<_field_block_64 name="Movement influencer">
+					<_field_real name="Lead time" />
+					<_field_block_64 name="Cone">
+						<_field_long_flags name="Flags">
+							<Item Name="Reject Spawn" />
+						</_field_long_flags>
+						<_field_real name="Length" />
+						<_field_real name="Base radius" />
+						<_field_real name="Weight" />
+						<_field_block_64 name="Weight function">
+							<_field_struct name="Function">
+								<_field_custom name="function" />
+								<_field_struct name="function">
+									<_field_custom name="" />
+									<_field_data_64 name="data" />
+									<_field_custom name="" />
+									</_field_struct>
+								</_field_struct>
+							</_field_block_64>
+						</_field_block_64>
+					<_field_block_64 name="Pill">
+						<_field_long_flags name="Flags">
+							<Item Name="Reject Spawn" />
+						</_field_long_flags>
+						<_field_real name="Length" />
+						<_field_real name="Radius" />
+						<_field_real name="Weight" />
+						<_field_block_64 name="Weight function">
+							<_field_struct name="Function">
+								<_field_custom name="function" />
+								<_field_struct name="function">
+									<_field_custom name="" />
+									<_field_data_64 name="data" />
+									<_field_custom name="" />
+									</_field_struct>
+								</_field_struct>
+							</_field_block_64>
+						</_field_block_64>
+					</_field_block_64>
+				</_field_struct>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_explanation name="Projectile Influencers" />
+	<_field_block_64 name="Projectile influencers">
+		<_field_tag_reference_64 name="Projectile" />
+		<_field_block_64 name="Influencer">
+			<_field_block_64 name="Sphere">
+				<_field_long_flags name="Flags">
+					<Item Name="Reject Spawn" />
+				</_field_long_flags>
+				<_field_real name="Radius" />
+				<_field_real name="Weight" />
+				<_field_block_64 name="Weight function">
+					<_field_struct name="Function">
+						<_field_custom name="function" />
+						<_field_struct name="function">
+							<_field_custom name="" />
+							<_field_data_64 name="data" />
+							<_field_custom name="" />
+							</_field_struct>
+						</_field_struct>
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="Box">
+				<_field_long_flags name="Flags">
+					<Item Name="Reject Spawn" />
+				</_field_long_flags>
+				<_field_real name="Width" />
+				<_field_real name="Length" />
+				<_field_real name="Height" />
+				<_field_real name="Weight" />
+				</_field_block_64>
+			<_field_block_64 name="Cylinder">
+				<_field_long_flags name="Flags">
+					<Item Name="Reject Spawn" />
+				</_field_long_flags>
+				<_field_real name="Radius" />
+				<_field_real name="Height" />
+				<_field_real name="Weight" />
+				<_field_block_64 name="Weight function">
+					<_field_struct name="Function">
+						<_field_custom name="function" />
+						<_field_struct name="function">
+							<_field_custom name="" />
+							<_field_data_64 name="data" />
+							<_field_custom name="" />
+							</_field_struct>
+						</_field_struct>
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="Cone">
+				<_field_long_flags name="Flags">
+					<Item Name="Reject Spawn" />
+				</_field_long_flags>
+				<_field_real name="Length" />
+				<_field_real name="Base radius" />
+				<_field_real name="Weight" />
+				<_field_block_64 name="Weight function">
+					<_field_struct name="Function">
+						<_field_custom name="function" />
+						<_field_struct name="function">
+							<_field_custom name="" />
+							<_field_data_64 name="data" />
+							<_field_custom name="" />
+							</_field_struct>
+						</_field_struct>
+					</_field_block_64>
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="Movement influencer">
+			<_field_real name="Lead time" />
+			<_field_block_64 name="Cone">
+				<_field_long_flags name="Flags">
+					<Item Name="Reject Spawn" />
+				</_field_long_flags>
+				<_field_real name="Length" />
+				<_field_real name="Base radius" />
+				<_field_real name="Weight" />
+				<_field_block_64 name="Weight function">
+					<_field_struct name="Function">
+						<_field_custom name="function" />
+						<_field_struct name="function">
+							<_field_custom name="" />
+							<_field_data_64 name="data" />
+							<_field_custom name="" />
+							</_field_struct>
+						</_field_struct>
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="Pill">
+				<_field_long_flags name="Flags">
+					<Item Name="Reject Spawn" />
+				</_field_long_flags>
+				<_field_real name="Length" />
+				<_field_real name="Radius" />
+				<_field_real name="Weight" />
+				<_field_block_64 name="Weight function">
+					<_field_struct name="Function">
+						<_field_custom name="function" />
+						<_field_struct name="function">
+							<_field_custom name="" />
+							<_field_data_64 name="data" />
+							<_field_custom name="" />
+							</_field_struct>
+						</_field_struct>
+					</_field_block_64>
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_explanation name="Equipment Influencers" />
+	<_field_block_64 name="Equipment influencers">
+		<_field_tag_reference_64 name="Equipment" />
+		<_field_block_64 name="Influencer">
+			<_field_block_64 name="Sphere">
+				<_field_long_flags name="Flags">
+					<Item Name="Reject Spawn" />
+				</_field_long_flags>
+				<_field_real name="Radius" />
+				<_field_real name="Weight" />
+				<_field_block_64 name="Weight function">
+					<_field_struct name="Function">
+						<_field_custom name="function" />
+						<_field_struct name="function">
+							<_field_custom name="" />
+							<_field_data_64 name="data" />
+							<_field_custom name="" />
+							</_field_struct>
+						</_field_struct>
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="Box">
+				<_field_long_flags name="Flags">
+					<Item Name="Reject Spawn" />
+				</_field_long_flags>
+				<_field_real name="Width" />
+				<_field_real name="Length" />
+				<_field_real name="Height" />
+				<_field_real name="Weight" />
+				</_field_block_64>
+			<_field_block_64 name="Cylinder">
+				<_field_long_flags name="Flags">
+					<Item Name="Reject Spawn" />
+				</_field_long_flags>
+				<_field_real name="Radius" />
+				<_field_real name="Height" />
+				<_field_real name="Weight" />
+				<_field_block_64 name="Weight function">
+					<_field_struct name="Function">
+						<_field_custom name="function" />
+						<_field_struct name="function">
+							<_field_custom name="" />
+							<_field_data_64 name="data" />
+							<_field_custom name="" />
+							</_field_struct>
+						</_field_struct>
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="Cone">
+				<_field_long_flags name="Flags">
+					<Item Name="Reject Spawn" />
+				</_field_long_flags>
+				<_field_real name="Length" />
+				<_field_real name="Base radius" />
+				<_field_real name="Weight" />
+				<_field_block_64 name="Weight function">
+					<_field_struct name="Function">
+						<_field_custom name="function" />
+						<_field_struct name="function">
+							<_field_custom name="" />
+							<_field_data_64 name="data" />
+							<_field_custom name="" />
+							</_field_struct>
+						</_field_struct>
+					</_field_block_64>
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_explanation name="Object Dispenser Influencers" />
+	<_field_block_64 name="Object dispenser influencers">
+		<_field_byte_flags name="Filter flags">
+			<Item Name="None" />
+			<Item Name="Weapon Incoming" />
+			<Item Name="Weapon Constructing" />
+			<Item Name="Weapon Ready" />
+			<Item Name="Weapon Respawning" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad3f4d" length="3" />
+		<_field_block_64 name="Influencer">
+			<_field_block_64 name="Sphere">
+				<_field_long_flags name="Flags">
+					<Item Name="Reject Spawn" />
+				</_field_long_flags>
+				<_field_real name="Radius" />
+				<_field_real name="Weight" />
+				<_field_block_64 name="Weight function">
+					<_field_struct name="Function">
+						<_field_custom name="function" />
+						<_field_struct name="function">
+							<_field_custom name="" />
+							<_field_data_64 name="data" />
+							<_field_custom name="" />
+							</_field_struct>
+						</_field_struct>
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="Box">
+				<_field_long_flags name="Flags">
+					<Item Name="Reject Spawn" />
+				</_field_long_flags>
+				<_field_real name="Width" />
+				<_field_real name="Length" />
+				<_field_real name="Height" />
+				<_field_real name="Weight" />
+				</_field_block_64>
+			<_field_block_64 name="Cylinder">
+				<_field_long_flags name="Flags">
+					<Item Name="Reject Spawn" />
+				</_field_long_flags>
+				<_field_real name="Radius" />
+				<_field_real name="Height" />
+				<_field_real name="Weight" />
+				<_field_block_64 name="Weight function">
+					<_field_struct name="Function">
+						<_field_custom name="function" />
+						<_field_struct name="function">
+							<_field_custom name="" />
+							<_field_data_64 name="data" />
+							<_field_custom name="" />
+							</_field_struct>
+						</_field_struct>
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="Cone">
+				<_field_long_flags name="Flags">
+					<Item Name="Reject Spawn" />
+				</_field_long_flags>
+				<_field_real name="Length" />
+				<_field_real name="Base radius" />
+				<_field_real name="Weight" />
+				<_field_block_64 name="Weight function">
+					<_field_struct name="Function">
+						<_field_custom name="function" />
+						<_field_struct name="function">
+							<_field_custom name="" />
+							<_field_data_64 name="data" />
+							<_field_custom name="" />
+							</_field_struct>
+						</_field_struct>
+					</_field_block_64>
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	</plugin>

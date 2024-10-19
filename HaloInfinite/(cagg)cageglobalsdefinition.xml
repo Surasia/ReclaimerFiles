@@ -1,0 +1,168 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Global Default Cage Points">
+		<_field_string_id name="Name" />
+		<_field_tag_reference_64 name="Cage Definition" />
+		<_field_string_id name="Point Name" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Default Cage Definition" />
+	<_field_string_id name="Default Position Point" />
+	<_field_string_id name="Default Collision Resolution Point" />
+	<_field_string_id name="Default Orbit Center Point" />
+	<_field_string_id name="Default FPS Point" />
+	<_field_real name="Default Blend-In Time" />
+	<_field_real name="Default Blend-Out Time" />
+	<_field_real name="Default Gaze Distance" />
+	<_field_angle name="Default Gaze Outer Angle" />
+	<_field_angle name="Default Gaze Inner Angle" />
+	<_field_angle name="Default Gaze Velocity" />
+	<_field_custom name="Gaze Velocity Curve" />
+	<_field_struct name="Default Gaze Velocity Curve">
+		<_field_char_enum name="Curve Type">
+			<Item Name="None" />
+			<Item Name="Linear" />
+			<Item Name="Zero" />
+			<Item Name="One" />
+			<Item Name="EaseInQuad" />
+			<Item Name="EaseOutQuad" />
+			<Item Name="EaseInOutQuad" />
+			<Item Name="EaseInCubic" />
+			<Item Name="EaseOutCubic" />
+			<Item Name="EaseInOutCubic" />
+			<Item Name="EaseInQuart" />
+			<Item Name="EaseOutQuart" />
+			<Item Name="EaseInOutQuart" />
+			<Item Name="EaseInQuint" />
+			<Item Name="EaseOutQuint" />
+			<Item Name="EaseInOutQuint" />
+			<Item Name="EaseInSine" />
+			<Item Name="EaseOutSine" />
+			<Item Name="EaseInOutSine" />
+			<Item Name="EaseInExpo" />
+			<Item Name="EaseOutExpo" />
+			<Item Name="EaseInOutExpo" />
+			<Item Name="EaseInCirc" />
+			<Item Name="EaseOutCirc" />
+			<Item Name="EaseInOutCirc" />
+			<Item Name="EaseInOutLight" />
+			<Item Name="EaseInOutHeavy" />
+		</_field_char_enum>
+		<_field_pad name="generated_pade4ec" length="3" />
+		<_field_tag_reference_64 name="Curve Definition" />
+		<_field_string_id name="Curve Name" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="Transform Blend Curve" />
+	<_field_struct name="Default Blend Curve (Transform)">
+		<_field_char_enum name="Curve Type">
+			<Item Name="None" />
+			<Item Name="Linear" />
+			<Item Name="Zero" />
+			<Item Name="One" />
+			<Item Name="EaseInQuad" />
+			<Item Name="EaseOutQuad" />
+			<Item Name="EaseInOutQuad" />
+			<Item Name="EaseInCubic" />
+			<Item Name="EaseOutCubic" />
+			<Item Name="EaseInOutCubic" />
+			<Item Name="EaseInQuart" />
+			<Item Name="EaseOutQuart" />
+			<Item Name="EaseInOutQuart" />
+			<Item Name="EaseInQuint" />
+			<Item Name="EaseOutQuint" />
+			<Item Name="EaseInOutQuint" />
+			<Item Name="EaseInSine" />
+			<Item Name="EaseOutSine" />
+			<Item Name="EaseInOutSine" />
+			<Item Name="EaseInExpo" />
+			<Item Name="EaseOutExpo" />
+			<Item Name="EaseInOutExpo" />
+			<Item Name="EaseInCirc" />
+			<Item Name="EaseOutCirc" />
+			<Item Name="EaseInOutCirc" />
+			<Item Name="EaseInOutLight" />
+			<Item Name="EaseInOutHeavy" />
+		</_field_char_enum>
+		<_field_pad name="generated_pade4ec" length="3" />
+		<_field_tag_reference_64 name="Curve Definition" />
+		<_field_string_id name="Curve Name" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="Properties Blend Curve" />
+	<_field_struct name="Default Blend Curve (Properties)">
+		<_field_char_enum name="Curve Type">
+			<Item Name="None" />
+			<Item Name="Linear" />
+			<Item Name="Zero" />
+			<Item Name="One" />
+			<Item Name="EaseInQuad" />
+			<Item Name="EaseOutQuad" />
+			<Item Name="EaseInOutQuad" />
+			<Item Name="EaseInCubic" />
+			<Item Name="EaseOutCubic" />
+			<Item Name="EaseInOutCubic" />
+			<Item Name="EaseInQuart" />
+			<Item Name="EaseOutQuart" />
+			<Item Name="EaseInOutQuart" />
+			<Item Name="EaseInQuint" />
+			<Item Name="EaseOutQuint" />
+			<Item Name="EaseInOutQuint" />
+			<Item Name="EaseInSine" />
+			<Item Name="EaseOutSine" />
+			<Item Name="EaseInOutSine" />
+			<Item Name="EaseInExpo" />
+			<Item Name="EaseOutExpo" />
+			<Item Name="EaseInOutExpo" />
+			<Item Name="EaseInCirc" />
+			<Item Name="EaseOutCirc" />
+			<Item Name="EaseInOutCirc" />
+			<Item Name="EaseInOutLight" />
+			<Item Name="EaseInOutHeavy" />
+		</_field_char_enum>
+		<_field_pad name="generated_pade4ec" length="3" />
+		<_field_tag_reference_64 name="Curve Definition" />
+		<_field_string_id name="Curve Name" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="From Gameplay Transition" />
+	<_field_struct name="From Gameplay Transition">
+		<_field_tag_reference_64 name="Animation Curve" />
+		<_field_string_id name="Transform Curve Name" />
+		<_field_string_id name="Focal Length Curve Name" />
+		<_field_string_id name="Focus Distance Curve Name" />
+		<_field_string_id name="F-Stop Curve Name" />
+		<_field_string_id name="Perspective Curve Name" />
+		<_field_string_id name="Variant Curve Name" />
+		<_field_string_id name="Variant Name" />
+		<_field_string_id name="Invisible Curve Name" />
+		<_field_real name="Animation Time" />
+		<_field_real name="Animation Playback Scalar" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="To Gameplay Transition" />
+	<_field_struct name="To Gameplay Transition">
+		<_field_tag_reference_64 name="Animation Curve" />
+		<_field_string_id name="Transform Curve Name" />
+		<_field_string_id name="Focal Length Curve Name" />
+		<_field_string_id name="Focus Distance Curve Name" />
+		<_field_string_id name="F-Stop Curve Name" />
+		<_field_string_id name="Perspective Curve Name" />
+		<_field_string_id name="Variant Curve Name" />
+		<_field_string_id name="Variant Name" />
+		<_field_string_id name="Invisible Curve Name" />
+		<_field_real name="Animation Time" />
+		<_field_real name="Animation Playback Scalar" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="Camera Properties - OLD" />
+	<_field_real name="Default Focal Length" />
+	<_field_real name="Default Focus Distance" />
+	<_field_real name="Default F-Stop" />
+	<_field_custom name="" />
+	</plugin>

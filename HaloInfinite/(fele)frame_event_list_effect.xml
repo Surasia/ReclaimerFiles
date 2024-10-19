@@ -1,0 +1,40 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="effect references">
+		<_field_string_id name="name" />
+		<_field_block_64 name="effects">
+			<_field_tag_reference_64 name="effect" />
+			<_field_word_flags name="flags">
+				<Item Name="allow on player" />
+				<Item Name="left arm only" />
+				<Item Name="right arm only" />
+				<Item Name="first-person only" />
+				<Item Name="third-person only" />
+				<Item Name="forward only" />
+				<Item Name="reverse only" />
+				<Item Name="fp no aged weapons" />
+			</_field_word_flags>
+			<_field_pad name="generated_pad9456" length="2" />
+			<_field_tag_reference_64 name="model" />
+			<_field_string_id name="model variant" />
+			<_field_tag_reference_64 name="weapon" />
+			<_field_string_id name="weapon variant" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="frame event containers">
+		<_field_string_id name="animation name" />
+		<_field_block_64 name="effect events">
+			<_field_string_id name="linked frame event id" />
+			<_field_short_block_index name="effect" />
+			<_field_short_integer name="frame offset" />
+			<_field_custom name="" />
+			<_field_string_id name="marker name" />
+			</_field_block_64>
+		</_field_block_64>
+	</plugin>

@@ -1,0 +1,28 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_real_bounds name="Duration Bounds" />
+	<_field_real name="Radius" />
+	<_field_struct name="Interaction Strength Over Time">
+		<_field_custom name="function" />
+		<_field_struct name="function">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="Interaction Falloff Function">
+		<_field_custom name="function" />
+		<_field_struct name="function">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_pad name="generated_pad3513" length="4" />
+	</plugin>

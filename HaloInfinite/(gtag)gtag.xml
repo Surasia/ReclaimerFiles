@@ -1,0 +1,253 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Geometry">
+		<_field_string_id name="Visual region name" />
+		<_field_string_id name="Property region name" />
+		<_field_block_64 name="Mesh parts">
+			<_field_block_64 name="Vertices">
+				<_field_real_vector_3d name="Position" />
+				<_field_real_vector_3d name="Normal" />
+				<_field_real_vector_3d name="Binormal" />
+				<_field_real_vector_3d name="Tangent" />
+				<_field_real_vector_3d name="Tangent UV2" />
+				<_field_real_vector_3d name="Tangent UV3" />
+				<_field_real_vector_2d name="Texcoord set 1" />
+				<_field_real_vector_2d name="Texcoord set 2" />
+				<_field_real_vector_2d name="Texcoord set 3" />
+				<_field_real_vector_2d name="Lighting texcoord set" />
+				<_field_real_argb_color name="Color" />
+				<_field_real name="Dual Quaternion Weight" />
+				<_field_block_64 name="Joint Weights">
+					<_field_short_block_index name="Joint index" />
+					<_field_pad name="generated_pad85cc" length="2" />
+					<_field_real name="Joint weight" />
+					</_field_block_64>
+				<_field_block_64 name="Blendshape Targets">
+					<_field_string_id name="Name" />
+					<_field_real_vector_3d name="Delta" />
+					<_field_dword_integer name="Procedural deformation index" />
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="Indices">
+				<_field_long_integer name="Triangle index" />
+				</_field_block_64>
+			<_field_dword_integer name="Material block index" />
+			<_field_long_string name="Originating shape name" />
+			<_field_long_string name="Originating shape UUID" />
+			<_field_dword_integer name="Properties checksum" />
+			<_field_real_point_3d name="Position bounds lower" />
+			<_field_real_point_3d name="Position bounds upper" />
+			<_field_real_point_2d name="Texcoord bounds lower" />
+			<_field_real_point_2d name="Texcoord bounds upper" />
+			<_field_real_point_2d name="Texcoord2 bounds lower" />
+			<_field_real_point_2d name="Texcoord2 bounds upper" />
+			<_field_real_point_2d name="Texcoord3 bounds lower" />
+			<_field_real_point_2d name="Texcoord3 bounds upper" />
+			<_field_real_point_2d name="Lighting texcoord bounds lower" />
+			<_field_real_point_2d name="Lighting texcoord bounds upper" />
+			</_field_block_64>
+		<_field_word_flags name="LOD flags">
+			<Item Name="LOD 0" />
+			<Item Name="LOD 1" />
+			<Item Name="LOD 2" />
+			<Item Name="LOD 3" />
+			<Item Name="LOD 4" />
+			<Item Name="LOD 5" />
+			<Item Name="LOD 6" />
+			<Item Name="LOD 7" />
+			<Item Name="LOD 8" />
+			<Item Name="LOD 9" />
+			<Item Name="LOD 10" />
+			<Item Name="LOD 11" />
+			<Item Name="LOD 12" />
+			<Item Name="LOD 13" />
+			<Item Name="LOD 14" />
+			<Item Name="LOD 15" />
+		</_field_word_flags>
+		<_field_word_flags name="Usage flags">
+			<Item Name="Use as render geometry" />
+			<Item Name="Use as bullet collision geometry" />
+			<Item Name="Use as play collision geometry" />
+			<Item Name="Use as physics collision geometry" />
+			<Item Name="Use as dynamic collision geometry" />
+			<Item Name="Use as invisible wall" />
+			<Item Name="Use as custom shadow caster geometry" />
+			<Item Name="Use as custom shadow caster geometry (alpha support)" />
+		</_field_word_flags>
+		<_field_word_flags name="Supported features">
+			<Item Name="Has usable primary UV set" />
+			<Item Name="Has usable second UV set" />
+			<Item Name="Has usable lightmap UV set" />
+			<Item Name="Has usable colorset" />
+			<Item Name="Has skinning" />
+			<Item Name="Has dual quaternion skinning" />
+			<Item Name="Force decorator format" />
+			<Item Name="Has usable third UV set" />
+			<Item Name="Use UV3 Tangent Rotation" />
+			<Item Name="Has blendshapes" />
+			<Item Name="Has more than 4 influences" />
+		</_field_word_flags>
+		<_field_pad name="generated_pade039" length="2" />
+		<_field_long_flags name="Import Info">
+			<Item Name="Was generated during import" />
+		</_field_long_flags>
+		<_unknown name="Originating source file" />
+		<_field_int64_integer name="Properties checksum" />
+		<_field_real_point_3d name="Position bounds lower" />
+		<_field_real_point_3d name="Position bounds upper" />
+		</_field_block_64>
+	<_field_block_64 name="Materials">
+		<_field_tag_reference_64 name="Material reference" />
+		</_field_block_64>
+	<_field_int64_integer name="Joints checksum" />
+	<_field_block_64 name="Joints">
+		<_field_string_id name="name" />
+		<_field_short_block_index name="parent node" />
+		<_field_short_block_index name="first child node" />
+		<_field_short_block_index name="next sibling node" />
+		<_field_pad name="generated_pad95e7" length="2" />
+		<_field_real_point_3d name="default translation" />
+		<_field_real_quaternion name="default rotation" />
+		<_field_long_flags name="importer_flags">
+			<Item Name="world bone" />
+		</_field_long_flags>
+		</_field_block_64>
+	<_field_block_64 name="Procedural deformations">
+		<_field_string_id name="Name" />
+		<_field_string_id name="Mode" />
+		<_field_block_64 name="Control parameters">
+			<_field_char_enum name="Parameter mode">
+				<Item Name="User parameter" />
+				<Item Name="Constant value" />
+			</_field_char_enum>
+			<_field_pad name="generated_pade7c0" length="3" />
+			<_field_string_id name="Name" />
+			<_field_real name="Constant value" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_custom name="Markers" />
+	<_field_block_64 name="Marker Groups">
+		<_field_string_id name="Group" />
+		<_field_block_64 name="Markers">
+			<_field_string_id name="Visual region name" />
+			<_field_string_id name="Name" />
+			<_field_string_id name="Parent" />
+			<_field_real_point_3d name="Position" />
+			<_field_real_euler_angles_3d name="Rotation" />
+			<_field_real_vector_3d name="Scale" />
+			<_field_real_vector_3d name="Direction" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Hint Marker Groups">
+		<_field_long_enum name="Hint Type">
+			<Item Name="Bunker" />
+			<Item Name="Corner Left" />
+			<Item Name="Corner Right" />
+			<Item Name="Vault Step" />
+			<Item Name="Vault Crouch" />
+			<Item Name="Hoist Stand" />
+			<Item Name="Hoist Crouch" />
+		</_field_long_enum>
+		<_field_block_64 name="Hint Markers">
+			<_field_string_id name="Visual region name" />
+			<_field_string_id name="Name" />
+			<_field_string_id name="Parent" />
+			<_field_real_point_3d name="Position" />
+			<_field_real_euler_angles_3d name="Rotation" />
+			<_field_real_vector_3d name="Scale" />
+			<_field_real name="Length" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Target Marker Groups">
+		<_field_string_id name="Group" />
+		<_field_block_64 name="Target Markers">
+			<_field_string_id name="Visual region name" />
+			<_field_string_id name="Name" />
+			<_field_string_id name="Parent" />
+			<_field_real_point_3d name="Position" />
+			<_field_real name="Radius" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_custom name="" />
+	<_field_block_64 name="Import transition distances">
+		<_field_real name="Transition distance" />
+		</_field_block_64>
+	<_field_block_64 name="Physics">
+		<_field_block_64 name="Constraints">
+			<_field_string_id name="Name" />
+			<_field_string_id name="Physics settings" />
+			<_field_real_point_3d name="Position" />
+			<_field_real_quaternion name="Orientation" />
+			<_field_string_id name="Parent shape" />
+			<_field_string_id name="Child shape" />
+			</_field_block_64>
+		<_field_block_64 name="Primitives">
+			<_field_string_id name="Name" />
+			<_field_string_id name="Physics settings" />
+			<_field_string_id name="Visual region name" />
+			<_field_string_id name="Property region name" />
+			<_field_char_enum name="Primitive type">
+				<Item Name="Sphere" />
+				<Item Name="Capsule" />
+				<Item Name="Cylinder" />
+				<Item Name="Box" />
+			</_field_char_enum>
+			<_field_pad name="generated_pade68c" length="1" />
+			<_field_short_block_index name="Joint index" />
+			<_field_real_point_3d name="Position" />
+			<_field_real_quaternion name="Orientation" />
+			<_field_real name="Radius" />
+			<_field_real name="Length" />
+			<_field_real name="Width" />
+			<_field_real name="Height" />
+			</_field_block_64>
+		<_field_block_64 name="Meshes">
+			<_field_string_id name="Name" />
+			<_field_string_id name="Physics settings" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_struct name="Validation">
+		<_field_explanation name="Content validation tests" />
+		<_field_long_flags name="Validation status">
+			<Item Name="Performance (performance will be effected)" />
+			<Item Name="Functionality (functionality will be impaired)" />
+			<Item Name="Critical (will cause crashes or instability if processed)" />
+			<Item Name="Not Run (this test has not been run as of the last pass)" />
+		</_field_long_flags>
+		<_field_block_64 name="Validation test batteries">
+			<_field_long_string name="Group name" />
+			<_field_long_integer name="Group ID" />
+			<_field_long_flags name="Validation status">
+				<Item Name="Performance (performance will be effected)" />
+				<Item Name="Functionality (functionality will be impaired)" />
+				<Item Name="Critical (will cause crashes or instability if processed)" />
+				<Item Name="Not Run (this test has not been run as of the last pass)" />
+			</_field_long_flags>
+			<_field_block_64 name="Validation Tests">
+				<_field_long_string name="Test name" />
+				<_field_long_flags name="Test status">
+					<Item Name="Performance (performance will be effected)" />
+					<Item Name="Functionality (functionality will be impaired)" />
+					<Item Name="Critical (will cause crashes or instability if processed)" />
+					<Item Name="Not Run (this test has not been run as of the last pass)" />
+				</_field_long_flags>
+				<_field_block_64 name="Comments">
+					<_field_long_string name="Comment" />
+					<_field_long_flags name="Status">
+						<Item Name="Performance (performance will be effected)" />
+						<Item Name="Functionality (functionality will be impaired)" />
+						<Item Name="Critical (will cause crashes or instability if processed)" />
+						<Item Name="Not Run (this test has not been run as of the last pass)" />
+					</_field_long_flags>
+					</_field_block_64>
+				</_field_block_64>
+			</_field_block_64>
+		</_field_struct>
+	<_field_pad name="generated_pad6734" length="4" />
+	</plugin>

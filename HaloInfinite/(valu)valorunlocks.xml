@@ -1,0 +1,40 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Valor Rewards">
+		<_field_string_id name="Reward Name" />
+		<_field_string_id name="Is Read Key" />
+		<_field_short_block_index name="Icon" />
+		<_field_short_block_index name="Background" />
+		<_field_long_integer name="Sprite Index" />
+		<_field_short_enum name="Damage Type">
+			<Item Name="None" />
+			<Item Name="Kinetic" />
+			<Item Name="Plasma" />
+			<Item Name="Hardlight" />
+			<Item Name="Shock" />
+			<Item Name="Power" />
+			<Item Name="Melee" />
+		</_field_short_enum>
+		<_field_pad name="generated_pad0c76" length="2" />
+		<_field_tag_reference_64 name="Vehicle Sprite" />
+		<_field_tag_reference_64 name="Weapon Sprite" />
+		<_field_tag_reference_64 name="Marine Sprite" />
+		</_field_block_64>
+	<_field_block_64 name="Valor Points">
+		<_field_string_id name="Persistence Key" />
+		</_field_block_64>
+	<_field_block_64 name="Icons">
+		<_field_string_id name="Name" />
+		<_field_tag_reference_64 name="Sprite" />
+		</_field_block_64>
+	<_field_block_64 name="Backgrounds">
+		<_field_string_id name="Name" />
+		<_field_tag_reference_64 name="Sprite" />
+		</_field_block_64>
+	</plugin>

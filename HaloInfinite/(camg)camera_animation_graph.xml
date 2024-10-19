@@ -1,0 +1,34 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Animations">
+		<_field_string_id name="Name" />
+		<_field_struct name="Track">
+			<_field_byte_flags name="Flags">
+				<Item Name="Lens Enabled" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padb652" length="3" />
+			<_field_block_64 name="Control Points">
+				<_field_real_vector_3d name="position" />
+				<_field_real_quaternion name="orientation" />
+				</_field_block_64>
+			<_field_block_64 name="Lenses">
+				<_field_byte_flags name="Flags">
+					<Item Name="Depth Of Field Enabled" />
+				</_field_byte_flags>
+				<_field_pad name="generated_pad783a" length="3" />
+				<_field_real name="Focal Length" />
+				<_field_real name="Focus Distance" />
+				<_field_real name="FStop" />
+				<_field_long_integer name="Bokeh Side Count" />
+				</_field_block_64>
+			</_field_struct>
+		<_field_long_integer name="Authored FPS" />
+		</_field_block_64>
+	<_field_pad name="generated_pad38ed" length="4" />
+	</plugin>

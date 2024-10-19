@@ -1,0 +1,39 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="Dialogs" />
+	<_field_block_64 name="descriptions">
+		<_field_string_id name="dialog name" />
+		<_field_word_flags name="flags">
+			<Item Name="unused" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad869b" length="2" />
+		<_field_string_id name="title" />
+		<_field_string_id name="message" />
+		<_field_string_id name="first_item" />
+		<_field_string_id name="second_item" />
+		<_field_string_id name="third_item" />
+		<_field_string_id name="fourth_item" />
+		<_field_string_id name="button key" />
+		<_field_short_enum name="default item">
+			<Item Name="first item" />
+			<Item Name="second item" />
+			<Item Name="third item" />
+			<Item Name="fourth item" />
+		</_field_short_enum>
+		<_field_short_enum name="b button action">
+			<Item Name="dismisses dialog" />
+			<Item Name="button ignored" />
+			<Item Name="first item activates" />
+			<Item Name="second item activates" />
+			<Item Name="third item activates" />
+			<Item Name="fourth item activates" />
+		</_field_short_enum>
+		</_field_block_64>
+	<_field_pad name="generated_padf92c" length="4" />
+	</plugin>

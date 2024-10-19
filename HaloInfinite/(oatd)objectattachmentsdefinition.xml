@@ -1,0 +1,58 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Attachments">
+		<_field_string_id name="name" />
+		<_field_tag_reference_64 name="type" />
+		<_field_tag_reference_64 name="tag graph output" />
+		<_field_string_id name="output node name" />
+		<_field_block_64 name="tag graph float params">
+			<_field_string_id name="name" />
+			<_field_real name="value" />
+			</_field_block_64>
+		<_field_block_64 name="tag graph bool params">
+			<_field_string_id name="name" />
+			<_field_byte_flags name="value">
+				<Item Name="value" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad0473" length="3" />
+			</_field_block_64>
+		<_field_block_64 name="taggraph instance variables - strings">
+			<_field_string_id name="name" />
+			<_field_string_id name="value" />
+			</_field_block_64>
+		<_field_block_64 name="taggraph instance variables - tag references">
+			<_field_string_id name="name" />
+			<_field_tag_reference_64 name="value" />
+			</_field_block_64>
+		<_field_tag_reference_64 name="override type" />
+		<_field_explanation name="variant names" />
+		<_field_block_64 name="variant names">
+			<_field_string_id name="variant name" />
+			</_field_block_64>
+		<_field_custom name="" />
+		<_field_string_id name="marker" />
+		<_field_char_enum name="change color">
+			<Item Name="none" />
+			<Item Name="primary" />
+			<Item Name="secondary" />
+			<Item Name="tertiary" />
+			<Item Name="quaternary" />
+		</_field_char_enum>
+		<_field_byte_flags name="flags">
+			<Item Name="always create" />
+			<Item Name="effect size scale from object scale" />
+			<Item Name="update on create" />
+			<Item Name="always update" />
+		</_field_byte_flags>
+		<_field_pad name="generated_padbd3f" length="2" />
+		<_field_string_id name="primary scale" />
+		<_field_string_id name="secondary scale" />
+		</_field_block_64>
+	<_field_pad name="generated_pad85d0" length="4" />
+	</plugin>

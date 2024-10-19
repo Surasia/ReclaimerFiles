@@ -1,0 +1,18 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Lists">
+		<_field_string_id name="ListId" />
+		<_field_block_64 name="Items">
+			<_field_string_id name="Name" />
+			<_field_long_string name="String Literal" />
+			<_field_tag_reference_64 name="Tag" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_pad name="generated_pad31c9" length="4" />
+	</plugin>

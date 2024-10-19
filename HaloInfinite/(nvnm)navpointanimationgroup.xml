@@ -1,0 +1,61 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Animations">
+		<_field_string_id name="Animation Name" />
+		<_field_tag_reference_64 name="Template Animation Group" />
+		<_field_string_id name="Template Animation Name" />
+		<_field_real name="Duration" />
+		<_field_long_enum name="Loop Type">
+			<Item Name="LoopForward" />
+			<Item Name="LoopReversed" />
+			<Item Name="LoopForwardThenReversed" />
+			<Item Name="PlayOnceThenHold" />
+			<Item Name="PlayOnceReversedThenHold" />
+			<Item Name="PlayOnceForwardThenReversed" />
+		</_field_long_enum>
+		<_field_real name="Delay Before Looping" />
+		<_field_block_64 name="Color Tracks">
+			<_field_string_id name="Track Name" />
+			<_field_struct name="Function">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_string_id name="Destination Value" />
+			</_field_block_64>
+		<_field_block_64 name="Float Tracks">
+			<_field_string_id name="Track Name" />
+			<_field_struct name="Function">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_real name="Destination Value" />
+			</_field_block_64>
+		<_field_block_64 name="Image Tracks">
+			<_field_string_id name="Track Name" />
+			<_field_long_integer name="Destination Frame Index" />
+			</_field_block_64>
+		<_field_block_64 name="Flipbook Tracks">
+			<_field_string_id name="Track Name" />
+			<_field_real name="Speed" />
+			</_field_block_64>
+		<_field_block_64 name="StringId Tracks">
+			<_field_string_id name="Track Name" />
+			<_field_string_id name="Destination StringId" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_pad name="generated_pad3780" length="4" />
+	</plugin>

@@ -1,0 +1,448 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Map lights">
+		<_field_tag_reference_64 name="Reference" />
+		</_field_block_64>
+	<_field_block_64 name="Map light placements">
+		<_field_real_point_3d name="position" />
+		<_field_real_point_3d name="direction" />
+		<_field_real_point_3d name="up" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Lightmap" />
+	<_field_tag_reference_64 name="Dynamic World State Globals" />
+	<_field_tag_reference_64 name="Material variations" />
+	<_field_tag_reference_64 name="Sky Object" />
+	<_field_real_euler_angles_3d name="Sky Orientation" />
+	<_field_tag_reference_64 name="Ray collision asset" />
+	<_field_tag_reference_64 name="Ray Collision Quad Tree" />
+	<_field_long_flags name="Flags">
+		<Item Name="Enable map post-process" />
+		<Item Name="Enable line detection post-process step" />
+		<Item Name="Enable screen-space blur post-process step" />
+		<Item Name="Enable terrain" />
+		<Item Name="Enable atmosphere fog" />
+		<Item Name="Enable chromatic aberration" />
+		<Item Name="Enable vignette" />
+	</_field_long_flags>
+	<_field_real name="Min Z for fade-out" />
+	<_field_real name="Max Z for fade-out" />
+	<_field_real name="Line frequency" />
+	<_field_short_enum name="Explicit shader for explicit lighting pass">
+		<Item Name="Forge shader" />
+		<Item Name="MP shader" />
+		<Item Name="Campaign shader" />
+	</_field_short_enum>
+	<_field_pad name="generated_pad7316" length="2" />
+	<_field_real_vector_2d name="Red offset in pixels" />
+	<_field_real_vector_2d name="Blue offset in pixels" />
+	<_field_real name="Center weight" />
+	<_field_byte_flags name="animatedModelTypes">
+		<Item Name="Base" />
+		<Item Name="Base Vertical Line" />
+		<Item Name="Main" />
+		<Item Name="Top Vertical Line" />
+	</_field_byte_flags>
+	<_field_pad name="generated_pad9a6d" length="3" />
+	<_field_real name="mainPOIModelOffset" />
+	<_field_real_euler_angles_3d name="mainPOIModelOrientation" />
+	<_field_real name="mainPOIModelScale" />
+	<_field_tag_reference_64 name="basePOIModel" />
+	<_field_real name="basePOIModelOffset" />
+	<_field_real_euler_angles_3d name="basePOIModelOrientation" />
+	<_field_real name="basePOIModelScale" />
+	<_field_tag_reference_64 name="baseVerticalLinePOIModel" />
+	<_field_real name="baseVerticalLinePOIModelOffset" />
+	<_field_real_euler_angles_3d name="baseVerticalLinePOIModelOrientation" />
+	<_field_real name="baseVerticalLinePOIModelScale" />
+	<_field_tag_reference_64 name="topVerticalLinePOIModel" />
+	<_field_real name="topVerticalLinePOIModelOffset" />
+	<_field_real_euler_angles_3d name="topVerticalLinePOIModelOrientation" />
+	<_field_real name="topVerticalLinePOIModelScale" />
+	<_field_struct name="POI Animation">
+		<_field_short_enum name="verticalTranslationMode">
+			<Item Name="Loop" />
+			<Item Name="Mirror" />
+			<Item Name="Once" />
+		</_field_short_enum>
+		<_field_pad name="generated_pad6126" length="2" />
+		<_field_real name="verticalTranslationDuration" />
+		<_field_real name="verticalTranslationCooldownDuration" />
+		<_field_struct name="verticalTranslationFunction">
+			<_field_custom name="Mapping" />
+			<_field_struct name="Mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_short_enum name="zRotationMode">
+			<Item Name="Loop" />
+			<Item Name="Mirror" />
+			<Item Name="Once" />
+		</_field_short_enum>
+		<_field_pad name="generated_padaddb" length="2" />
+		<_field_real name="zRotationDuration" />
+		<_field_real name="zRotationCooldownDuration" />
+		<_field_struct name="zRotationFunction">
+			<_field_custom name="Mapping" />
+			<_field_struct name="Mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_short_enum name="scaleMode">
+			<Item Name="Loop" />
+			<Item Name="Mirror" />
+			<Item Name="Once" />
+		</_field_short_enum>
+		<_field_pad name="generated_padfa90" length="2" />
+		<_field_real name="scaleDuration" />
+		<_field_real name="scaleCooldownDuration" />
+		<_field_struct name="scaleFunction">
+			<_field_custom name="Mapping" />
+			<_field_struct name="Mapping">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="LOD Settings">
+		<_field_short_enum name="lodMode">
+			<Item Name="Object Distance to Camera" />
+			<Item Name="Camera Height" />
+		</_field_short_enum>
+		<_field_pad name="generated_pad4e7d" length="2" />
+		<_field_struct name="lodCollisionResolution">
+			<_field_short_enum name="resolutionMode">
+				<Item Name="Hide Lower Tier" />
+				<Item Name="No Collision Resolution" />
+			</_field_short_enum>
+			<_field_pad name="generated_pad21e2" length="2" />
+			<_field_real name="collisionNormalizedScreenDistance" />
+			</_field_struct>
+		<_field_real name="spotlightRadiusScale" />
+		<_field_block_64 name="Per-tier settings for POIs">
+			<_field_real name="fullIconAndLabelWithModelFadeStart" />
+			<_field_explanation name="3D Model Fading" />
+			<_field_real name="fullIconAndLabelFadeStart" />
+			</_field_block_64>
+		</_field_struct>
+	<_field_struct name="Icon Settings">
+		<_field_tag_reference_64 name="fullIcons" />
+		<_field_tag_reference_64 name="smallIcons" />
+		<_field_tag_reference_64 name="detailIcons" />
+		<_field_tag_reference_64 name="highlightedOverlayIcons" />
+		<_field_tag_reference_64 name="outerMissionListIcons" />
+		<_field_tag_reference_64 name="innerMissionListIcons" />
+		<_field_block_64 name="markerColors">
+			<_field_short_enum name="markerType">
+				<Item Name="Invalid" />
+				<Item Name="Critical Path" />
+				<Item Name="Enemy" />
+				<Item Name="Friendly" />
+				<Item Name="Equipment or Upgrade" />
+			</_field_short_enum>
+			<_field_short_enum name="missionType">
+				<Item Name="Invalid" />
+				<Item Name="Spire" />
+				<Item Name="Base" />
+				<Item Name="PilotBase" />
+				<Item Name="PrisonBase" />
+				<Item Name="RefineryBase" />
+				<Item Name="BossHQInterior" />
+				<Item Name="BossHQExterior" />
+				<Item Name="Outpost" />
+				<Item Name="DeadSpartan" />
+				<Item Name="MemoryCore" />
+				<Item Name="Dungeon" />
+				<Item Name="AaGun" />
+				<Item Name="Fob" />
+				<Item Name="FobFriendly" />
+				<Item Name="Epoi" />
+				<Item Name="Scanner" />
+				<Item Name="BanishedShip" />
+				<Item Name="Underbelly" />
+				<Item Name="CortanaPalace" />
+				<Item Name="Skull" />
+				<Item Name="Hvt" />
+				<Item Name="MarineSupport" />
+				<Item Name="Totem" />
+				<Item Name="ArmorLocker" />
+				<Item Name="Bridge" />
+				<Item Name="Collectible" />
+				<Item Name="ForerunnerTower" />
+				<Item Name="SpartanSuperMission" />
+				<Item Name="HvtSuperMission" />
+				<Item Name="MarineSuperMission" />
+				<Item Name="CollectibleSuperMission" />
+				<Item Name="ScannerSuperMission" />
+				<Item Name="BanishedDatapad" />
+				<Item Name="UnscDatapad" />
+			</_field_short_enum>
+			<_field_real_rgb_color name="color" />
+			</_field_block_64>
+		<_field_block_64 name="markerVisibilitySettings">
+			<_field_short_enum name="missionType">
+				<Item Name="Invalid" />
+				<Item Name="Spire" />
+				<Item Name="Base" />
+				<Item Name="PilotBase" />
+				<Item Name="PrisonBase" />
+				<Item Name="RefineryBase" />
+				<Item Name="BossHQInterior" />
+				<Item Name="BossHQExterior" />
+				<Item Name="Outpost" />
+				<Item Name="DeadSpartan" />
+				<Item Name="MemoryCore" />
+				<Item Name="Dungeon" />
+				<Item Name="AaGun" />
+				<Item Name="Fob" />
+				<Item Name="FobFriendly" />
+				<Item Name="Epoi" />
+				<Item Name="Scanner" />
+				<Item Name="BanishedShip" />
+				<Item Name="Underbelly" />
+				<Item Name="CortanaPalace" />
+				<Item Name="Skull" />
+				<Item Name="Hvt" />
+				<Item Name="MarineSupport" />
+				<Item Name="Totem" />
+				<Item Name="ArmorLocker" />
+				<Item Name="Bridge" />
+				<Item Name="Collectible" />
+				<Item Name="ForerunnerTower" />
+				<Item Name="SpartanSuperMission" />
+				<Item Name="HvtSuperMission" />
+				<Item Name="MarineSuperMission" />
+				<Item Name="CollectibleSuperMission" />
+				<Item Name="ScannerSuperMission" />
+				<Item Name="BanishedDatapad" />
+				<Item Name="UnscDatapad" />
+			</_field_short_enum>
+			<_field_pad name="generated_pad5f56" length="2" />
+			<_field_real name="MinimumZoom" />
+			<_field_real name="MaximumZoom" />
+			<_field_real name="hitTestRange" />
+			<_field_real name="poiSnapHitTestRangeMinZoom" />
+			<_field_real name="poiSnapHitTestRangeMaxZoom" />
+			</_field_block_64>
+		</_field_struct>
+	<_field_struct name="Camera Settings">
+		<_field_byte_flags name="Flags">
+			<Item Name="DOF Enabled" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad38bd" length="3" />
+		<_field_real name="defaultHitTestRangeMinZoom" />
+		<_field_real name="defaultHitTestRangeMaxZoom" />
+		<_field_real name="defaultPoiSnapHitTestRange" />
+		<_field_real name="poiSnappingThreshold" />
+		<_field_real name="playerIconCollisionDistance" />
+		<_field_real name="panningVelocityDeadzone" />
+		<_field_real name="zoomingVelocityDeadzone" />
+		<_field_real name="Min Pan X" />
+		<_field_real name="Min Pan Y" />
+		<_field_real name="Max Pan X" />
+		<_field_real name="Max Pan Y" />
+		<_field_real name="Min Zoom" />
+		<_field_real name="Max Zoom" />
+		<_field_real name="Tilt Point" />
+		<_field_real name="Tilt Width" />
+		<_field_real name="Pan Accel Duration" />
+		<_field_real name="Pan Decel Duration" />
+		<_field_real name="Min Pan Speed" />
+		<_field_real name="Max Pan Speed" />
+		<_field_real name="Highlight Distance" />
+		<_field_real name="Max Zoom Factor" />
+		<_field_real name="Zoom Accel Duration" />
+		<_field_real name="Zoom Decel Duration" />
+		<_field_real name="Max Zoom Speed" />
+		<_field_real name="Mission Pan Speed" />
+		<_field_real name="AutoPan Time Delay" />
+		<_field_real name="Mission List AutoPan Duration" />
+		<_field_real name="Mission List AutoPan Zoom" />
+		<_field_real name="AutoPan Slow Down Speed Ratio" />
+		<_field_real name="AutoPan Speed" />
+		<_field_real name="AutoPan Slow Down Range" />
+		<_field_real name="AutoPanner Bezier Curve MidPoint Height" />
+		<_field_real name="AutoPanner Bezier Curve P1 Height" />
+		<_field_real name="AutoPanner Bezier Curve P3 Height" />
+		<_field_real name="Duration for Centering on Player" />
+		<_field_real name="Min Zoom Spotlight Cone Scale" />
+		<_field_real name="Max Zoom Spotlight Cone Scale" />
+		<_field_real name="Spotlight Moving Speed" />
+		<_field_real name="Initial Pitch" />
+		<_field_real name="Initial Yaw" />
+		<_field_real name="Initial Zoom" />
+		<_field_real name="Pan Height" />
+		<_field_real name="Initial Camera X" />
+		<_field_real name="Initial Camera Y" />
+		<_field_real name="Initial Camera Z" />
+		<_field_real name="Initial Camera Look X" />
+		<_field_real name="Initial Camera Look Y" />
+		<_field_real name="Initial Camera Look Z" />
+		<_field_real name="Camera XY Axis Offset" />
+		<_field_real name="Camera Field of View" />
+		<_field_real name="Edge Pan Screen Margin X" />
+		<_field_real name="Edge Pan Screen Margin Y" />
+		<_field_real name="Help Bar Height" />
+		<_field_real name="Edge Pan Start Delay" />
+		<_field_real name="Back Menu Tab Bar Height" />
+		</_field_struct>
+	<_field_block_64 name="Area of Interest Settings">
+		<_field_short_enum name="markerType">
+			<Item Name="Invalid" />
+			<Item Name="Critical Path" />
+			<Item Name="Enemy" />
+			<Item Name="Friendly" />
+			<Item Name="Equipment or Upgrade" />
+		</_field_short_enum>
+		<_field_pad name="generated_pad8446" length="2" />
+		<_field_tag_reference_64 name="model" />
+		<_field_tag_reference_64 name="bitmap" />
+		<_field_real name="bitmapCorrectiveScale" />
+		</_field_block_64>
+	<_field_block_64 name="Async Loaded Display Assets">
+		<_field_string_id name="Name" />
+		<_field_tag_reference_64 name="Model" />
+		<_field_real_point_3d name="Rotation" />
+		<_field_real name="Scale" />
+		<_field_real_point_3d name="Icon Offset" />
+		<_field_byte_flags name="Flags">
+			<Item Name="Animate on Hover" />
+			<Item Name="Draw Indicator Line" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad21a6" length="3" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="Async Loaded Asset List" />
+	<_field_block_64 name="Collectible Settings">
+		<_field_string_id name="name" />
+		<_field_char_enum name="type">
+			<Item Name="None" />
+			<Item Name="Halsey_DataPad" />
+			<Item Name="ArmorLocker" />
+			<Item Name="GameSkull" />
+			<Item Name="DeadSpartan" />
+			<Item Name="MemoryCore" />
+			<Item Name="UNSC_DataPad" />
+			<Item Name="Ban_DataPad" />
+			<Item Name="ForerunnerTotem" />
+			<Item Name="CommTower" />
+		</_field_char_enum>
+		<_field_pad name="generated_padf32a" length="1" />
+		<_field_short_enum name="missionType">
+			<Item Name="Invalid" />
+			<Item Name="Spire" />
+			<Item Name="Base" />
+			<Item Name="PilotBase" />
+			<Item Name="PrisonBase" />
+			<Item Name="RefineryBase" />
+			<Item Name="BossHQInterior" />
+			<Item Name="BossHQExterior" />
+			<Item Name="Outpost" />
+			<Item Name="DeadSpartan" />
+			<Item Name="MemoryCore" />
+			<Item Name="Dungeon" />
+			<Item Name="AaGun" />
+			<Item Name="Fob" />
+			<Item Name="FobFriendly" />
+			<Item Name="Epoi" />
+			<Item Name="Scanner" />
+			<Item Name="BanishedShip" />
+			<Item Name="Underbelly" />
+			<Item Name="CortanaPalace" />
+			<Item Name="Skull" />
+			<Item Name="Hvt" />
+			<Item Name="MarineSupport" />
+			<Item Name="Totem" />
+			<Item Name="ArmorLocker" />
+			<Item Name="Bridge" />
+			<Item Name="Collectible" />
+			<Item Name="ForerunnerTower" />
+			<Item Name="SpartanSuperMission" />
+			<Item Name="HvtSuperMission" />
+			<Item Name="MarineSuperMission" />
+			<Item Name="CollectibleSuperMission" />
+			<Item Name="ScannerSuperMission" />
+			<Item Name="BanishedDatapad" />
+			<Item Name="UnscDatapad" />
+		</_field_short_enum>
+		<_field_long_integer name="spriteIndex" />
+		</_field_block_64>
+	<_field_block_64 name="Regions">
+		<_field_string_id name="name" />
+		<_field_block_64 name="Region Polygons">
+			<_field_block_64 name="Region Polygon">
+				<_field_real_point_3d name="Region Point" />
+				</_field_block_64>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_struct name="Vignette Settings">
+		<_field_real_rgb_color name="color" />
+		<_field_real name="opacity" />
+		<_field_real name="innerRadius" />
+		<_field_real name="outerRadius" />
+		<_field_real name="darkenRatio" />
+		</_field_struct>
+	<_field_block_64 name="Model Dictionary">
+		<_field_string_id name="Name" />
+		<_field_tag_reference_64 name="Model" />
+		</_field_block_64>
+	<_field_struct name="Transition Settings">
+		<_field_real name="IntroMinLoadTime" />
+		<_field_real name="IntroTotalTransitionTime" />
+		<_field_real name="MissionDataUpdateMaxDelayTime" />
+		<_field_real name="OuttroMapTransitionTime" />
+		<_field_real name="OuttroMinUnloadTime" />
+		<_field_real name="OuttroGameplayTransitionTime" />
+		</_field_struct>
+	<_field_struct name="POI Visual Settings">
+		<_field_real name="Captured Collectible Opacity" />
+		<_field_real name="Default Collectible Opacity" />
+		<_field_real_rgb_color name="Text Tint Color" />
+		<_field_real_rgb_color name="Captured POI Tint Color" />
+		<_field_real_rgb_color name="Captured Tint Color" />
+		<_field_long_integer name="Multi-Stage Parent Sprite Index" />
+		<_field_real name="Waypoint Over POI Offset" />
+		<_field_real name="Default Waypoint Offset" />
+		<_field_real name="Safe Region Bounds" />
+		</_field_struct>
+	<_field_struct name="Gak Settings">
+		<_field_real name="Gak POI Spawn Frequency" />
+		<_field_real name="Gak POI Spawn Chance" />
+		<_field_long_integer name="Gak Max POI Count" />
+		<_field_long_integer name="Gak POI Num Types" />
+		<_field_real name="Gak POI Lifetime Min" />
+		<_field_real name="Gak POI Lifetime Max" />
+		<_field_real name="Gak POI Fade Out" />
+		<_field_real name="Gak Tile Origin X" />
+		<_field_real name="Gak Tile Origin Y" />
+		<_field_real name="Gak Tile Size X" />
+		<_field_real name="Gak Tile Size Y" />
+		<_field_long_integer name="Gak Tile Count X" />
+		<_field_long_integer name="Gak Tile Count Y" />
+		<_field_real name="Gak Tile Margin" />
+		<_field_block_64 name="Gak Invalid Tiles">
+			<_field_long_integer name="X" />
+			<_field_long_integer name="Y" />
+			</_field_block_64>
+		</_field_struct>
+	<_field_struct name="Player Position Override Settings">
+		<_field_block_64 name="Zone Set Settings">
+			<_field_string_id name="Zoneset Name" />
+			<_field_string_id name="Point of Interest Name" />
+			</_field_block_64>
+		</_field_struct>
+	<_field_long_integer name="TacMap Tab Index" />
+	<_field_byte_flags name="Settings And Feature Flags">
+		<Item Name="Mission Replay Option Enabled" />
+	</_field_byte_flags>
+	<_field_pad name="generated_padbfcb" length="7" />
+	</plugin>

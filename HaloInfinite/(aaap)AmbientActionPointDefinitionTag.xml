@@ -1,0 +1,115 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Ambient Info">
+		<_field_char_enum name="desire type">
+			<Item Name="Scripted" />
+			<Item Name="Health" />
+			<Item Name="Defense" />
+			<Item Name="Attack Enemy" />
+			<Item Name="Weapon" />
+			<Item Name="Vehicle" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad5f2a" length="3" />
+		<_field_long_enum name="action">
+			<Item Name="Base (Do not use)" />
+			<Item Name="Ground" />
+			<Item Name="Crouch" />
+			<Item Name="Melee" />
+			<Item Name="Turn" />
+			<Item Name="Shoot" />
+			<Item Name="Airborne" />
+			<Item Name="Jump" />
+			<Item Name="WeaponReady" />
+			<Item Name="WeaponSwitch" />
+			<Item Name="WeaponPickup" />
+			<Item Name="WeaponDrop" />
+			<Item Name="Grenade" />
+			<Item Name="Dead" />
+			<Item Name="AnimatedMove" />
+			<Item Name="InteractWeaponPickup" />
+			<Item Name="InteractDevice" />
+			<Item Name="InteractLaunchObject" />
+			<Item Name="HardPing" />
+			<Item Name="Align" />
+			<Item Name="ShieldRaise" />
+			<Item Name="ActivateEquipment" />
+			<Item Name="PhysicsImpulse" />
+			<Item Name="DeathPing" />
+			<Item Name="MediumPing" />
+			<Item Name="SoftPing" />
+			<Item Name="ScriptedSequence" />
+			<Item Name="CustomAnimation" />
+			<Item Name="DeflectProjectile" />
+			<Item Name="VehicleEnter" />
+			<Item Name="VehicleExit" />
+			<Item Name="Vehicle" />
+			<Item Name="Brace" />
+			<Item Name="WeaponDraw" />
+			<Item Name="WeaponStow" />
+			<Item Name="HardStop" />
+			<Item Name="Hoist" />
+			<Item Name="PreCombatPointActivity" />
+			<Item Name="Stunned" />
+			<Item Name="ObstacleSmash" />
+			<Item Name="WeaponVent" />
+			<Item Name="SoftPingDefenseScreen" />
+			<Item Name="ThrowEquipment" />
+			<Item Name="Hijack" />
+			<Item Name="Kamikaze" />
+			<Item Name="CloseQuartersDefenseBlast" />
+			<Item Name="Search" />
+			<Item Name="SearchFound" />
+			<Item Name="Surprise" />
+			<Item Name="Hover" />
+			<Item Name="Alert" />
+			<Item Name="AlertCallout" />
+			<Item Name="WeaponFidget" />
+			<Item Name="WeaponReload" />
+			<Item Name="FullbodyAnimation" />
+			<Item Name="ActivateCamo" />
+			<Item Name="TradeWeapon" />
+			<Item Name="Flying" />
+			<Item Name="MultiTargetTrackedAttack" />
+			<Item Name="Berserk" />
+			<Item Name="LeapWindup" />
+			<Item Name="AnimatedTell" />
+			<Item Name="TeleportArrive" />
+			<Item Name="JinkFire" />
+			<Item Name="DialogueAnimation" />
+			<Item Name="Swoop" />
+			<Item Name="AirborneMelee" />
+			<Item Name="Land" />
+			<Item Name="Hunker" />
+			<Item Name="Launching" />
+			<Item Name="PreAndPostFire" />
+			<Item Name="AnimatedPosture" />
+			<Item Name="Boarding" />
+		</_field_long_enum>
+		<_field_string_id name="Animation Token Override" />
+		<_field_real name="Time playing animation" />
+		<_field_real name="Cooldown time" />
+		<_field_string_id name="composition name" />
+		<_field_tag_reference_64 name="composition definition" />
+		<_field_real name="Max distance agents will consider this opp from" />
+		<_field_block_64 name="Ambient meta labels">
+			<_field_string_id name="meta label" />
+			</_field_block_64>
+		<_field_block_64 name="Exclusion meta labels">
+			<_field_string_id name="meta label" />
+			</_field_block_64>
+		<_field_real name="Min Danger to Activate" />
+		<_field_real name="Max Danger to Activate" />
+		<_field_real name="Abort Danger Level" />
+		<_field_real name="Chance Per Second" />
+		<_field_real name="Min Enemy Target Distance" />
+		<_field_real name="Max Enemy Target Distance" />
+		<_field_real name="Max Height Difference" />
+		</_field_block_64>
+	<_field_pad name="generated_padc9b5" length="4" />
+	</plugin>

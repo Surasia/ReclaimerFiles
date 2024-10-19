@@ -1,0 +1,103 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="Cheap Lights" />
+	<_field_char_integer name="version" />
+	<_field_byte_flags name="flags">
+		<Item Name="use color override as tint" />
+	</_field_byte_flags>
+	<_field_explanation name="COLOR" />
+	<_field_char_enum name="color override mode">
+		<Item Name="None" />
+		<Item Name="Color Override 1" />
+		<Item Name="Color Override 2" />
+		<Item Name="Team Color" />
+		<Item Name="DWS Sun Color" />
+	</_field_char_enum>
+	<_field_pad name="generated_padb984" length="1" />
+	<_field_struct name="color">
+		<_field_char_enum name="Input Variable">
+			<Item Name="Time/Age" />
+			<Item Name="Effect Scale A" />
+			<Item Name="Effect Scale B" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad09bd" length="3" />
+		<_field_string_id name="Range Variable" />
+		<_field_short_enum name="Output Modifier">
+			<Item Name=" " />
+			<Item Name="Plus" />
+			<Item Name="Times" />
+		</_field_short_enum>
+		<_field_pad name="generated_padefdc" length="2" />
+		<_field_string_id name="Output Modifier Input" />
+		<_field_custom name="Mapping" />
+		<_field_struct name="Mapping">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="intensity">
+		<_field_char_enum name="Input Variable">
+			<Item Name="Time/Age" />
+			<Item Name="Effect Scale A" />
+			<Item Name="Effect Scale B" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad2660" length="3" />
+		<_field_string_id name="Range Variable" />
+		<_field_short_enum name="Output Modifier">
+			<Item Name=" " />
+			<Item Name="Plus" />
+			<Item Name="Times" />
+		</_field_short_enum>
+		<_field_pad name="generated_pad4041" length="2" />
+		<_field_string_id name="Output Modifier Input" />
+		<_field_custom name="Mapping" />
+		<_field_struct name="Mapping">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="SIZE" />
+	<_field_struct name="Far Attenuation">
+		<_field_char_enum name="Input Variable">
+			<Item Name="Time/Age" />
+			<Item Name="Effect Scale A" />
+			<Item Name="Effect Scale B" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad2660" length="3" />
+		<_field_string_id name="Range Variable" />
+		<_field_short_enum name="Output Modifier">
+			<Item Name=" " />
+			<Item Name="Plus" />
+			<Item Name="Times" />
+		</_field_short_enum>
+		<_field_pad name="generated_pad4041" length="2" />
+		<_field_string_id name="Output Modifier Input" />
+		<_field_custom name="Mapping" />
+		<_field_struct name="Mapping">
+			<_field_custom name="" />
+			<_field_data_64 name="data" />
+			<_field_custom name="" />
+			</_field_struct>
+		</_field_struct>
+	<_field_real name="Falloff Begin Ratio" />
+	<_field_real name="near fade distance" />
+	<_field_real name="Camera Distance Fade Start" />
+	<_field_real name="Camera Distance Fade End" />
+	<_field_real name="diffuse scalar" />
+	<_field_real name="specular scalar" />
+	<_field_real name="Fog Intensity" />
+	<_field_real name="Particle Intensity" />
+	<_field_real name="Mininum Roughness" />
+	<_field_real name="Intensity Balancing" />
+	<_field_real name="Area Light Radius" />
+	<_field_tag_reference_64 name="Light Group" />
+	<_field_pad name="generated_padd365" length="4" />
+	</plugin>

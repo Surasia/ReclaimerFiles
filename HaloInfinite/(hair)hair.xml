@@ -1,0 +1,29 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Hair Profiles">
+		<_field_string_id name="Name" />
+		<_field_real_rgb_color name="R Color" />
+		<_field_real_rgb_color name="TT Color" />
+		<_field_real_rgb_color name="TRT Color" />
+		<_field_real_vector_3d name="Tangent" />
+		<_field_real name="Shift" />
+		<_field_real_rgb_color name="Scatter Color" />
+		<_field_real name="Scatter Amount" />
+		<_field_real name="Direct Scatter Amount" />
+		<_field_real name="Indirect Scatter Amount" />
+		<_field_real_rgb_color name="AO Color" />
+		<_field_real name="AO Color Amount" />
+		<_field_real name="Diffuse pow exponent" />
+		<_field_long_flags name="Flags">
+			<Item Name="conserves energy" />
+		</_field_long_flags>
+		</_field_block_64>
+	<_field_pad name="generated_pad129f" length="4" />
+	<_field_int64_integer name="shaderAddressableBuffer" />
+	</plugin>

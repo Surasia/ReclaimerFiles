@@ -1,0 +1,89 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Animations">
+		<_field_string_id name="Name" />
+		<_field_long_integer name="Guid" />
+		<_field_block_64 name="Frame events">
+			<_field_short_integer name="Frame" />
+			<_field_pad name="generated_pad8ebc" length="2" />
+			<_field_string_id name="Anim event type" />
+			</_field_block_64>
+		<_field_block_64 name="Functions">
+			<_field_string_id name="Function name" />
+			<_field_string_id name="Comment" />
+			<_field_struct name="Function curve">
+				<_field_string_id name="Name" />
+				<_field_byte_flags name="Flags">
+					<Item Name="Enabled" />
+					<Item Name="Visible" />
+				</_field_byte_flags>
+				<_field_pad name="generated_pad94fd" length="3" />
+				<_field_struct name="Value Curve">
+					<_field_block_64 name="control points">
+						<_field_real name="value" />
+						<_field_real name="tangent in" />
+						<_field_real name="tangent out" />
+						<_field_real name="curviness" />
+						<_field_char_enum name="segment type">
+							<Item Name="Spline" />
+							<Item Name="Linear" />
+							<Item Name="Stepped" />
+							<Item Name="SteppedNext" />
+						</_field_char_enum>
+						<_field_char_enum name="tangent mode">
+							<Item Name="AutoStraight" />
+							<Item Name="UserStraight" />
+							<Item Name="UserBroken" />
+						</_field_char_enum>
+						<_field_pad name="generated_pad7103" length="2" />
+						</_field_block_64>
+					</_field_struct>
+				<_field_block_64 name="AnimatedCurveMetadata">
+					<_field_real name="time" />
+					</_field_block_64>
+				<_field_block_64 name="EditorCurveProperties">
+					<_field_block_64 name="wizard settings">
+						<_field_char_enum name="range mode">
+							<Item Name="UseTrackLength" />
+							<Item Name="UseTrackLengthLooping" />
+							<Item Name="Range" />
+						</_field_char_enum>
+						<_field_pad name="generated_pad4449" length="3" />
+						<_field_real name="start frame" />
+						<_field_real name="end frame" />
+						<_field_short_enum name="function">
+							<Item Name="one" />
+							<Item Name="zero" />
+							<Item Name="cosine" />
+							<Item Name="cosine (variable period)" />
+							<Item Name="diagonal wave" />
+							<Item Name="diagonal wave (variable period)" />
+							<Item Name="slide" />
+							<Item Name="slide (variable period)" />
+							<Item Name="noise" />
+							<Item Name="jitter" />
+							<Item Name="wander" />
+							<Item Name="spark" />
+						</_field_short_enum>
+						<_field_pad name="generated_pad2a68" length="2" />
+						<_field_real name="keyframe frequency" />
+						<_field_real name="function frequency" />
+						<_field_real name="offset" />
+						<_field_real name="min value" />
+						<_field_real name="max value" />
+						</_field_block_64>
+					<_field_block_64 name="Colors">
+						<_field_dword_integer name="color" />
+						</_field_block_64>
+					</_field_block_64>
+				</_field_struct>
+			</_field_block_64>
+		</_field_block_64>
+	<_field_pad name="generated_padfeff" length="4" />
+	</plugin>

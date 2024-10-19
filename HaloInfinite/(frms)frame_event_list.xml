@@ -1,0 +1,153 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="IMPORTANT TAG NOTES" />
+	<_field_block_64 name="sound references">
+		<_field_string_id name="name" />
+		<_field_block_64 name="sounds">
+			<_field_tag_reference_64 name="sound" />
+			<_field_word_flags name="flags">
+				<Item Name="allow on player" />
+				<Item Name="left arm only" />
+				<Item Name="right arm only" />
+				<Item Name="first-person only" />
+				<Item Name="third-person only" />
+				<Item Name="forward only" />
+				<Item Name="reverse only" />
+				<Item Name="fp no aged weapons" />
+			</_field_word_flags>
+			<_field_pad name="generated_padeb82" length="2" />
+			<_field_tag_reference_64 name="model" />
+			<_field_string_id name="model variant" />
+			<_field_tag_reference_64 name="weapon" />
+			<_field_string_id name="weapon variant" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="dialogue references">
+		<_field_string_id name="vocalization name" />
+		<_field_char_enum name="play restriction">
+			<Item Name="Unrestricted" />
+			<Item Name="Only With Shield" />
+			<Item Name="Only With Shield Empty" />
+		</_field_char_enum>
+		<_field_pad name="generated_padf213" length="3" />
+		</_field_block_64>
+	<_field_block_64 name="effect references">
+		<_field_string_id name="name" />
+		<_field_block_64 name="effects">
+			<_field_tag_reference_64 name="effect" />
+			<_field_word_flags name="flags">
+				<Item Name="allow on player" />
+				<Item Name="left arm only" />
+				<Item Name="right arm only" />
+				<Item Name="first-person only" />
+				<Item Name="third-person only" />
+				<Item Name="forward only" />
+				<Item Name="reverse only" />
+				<Item Name="fp no aged weapons" />
+			</_field_word_flags>
+			<_field_pad name="generated_pad9456" length="2" />
+			<_field_tag_reference_64 name="model" />
+			<_field_string_id name="model variant" />
+			<_field_tag_reference_64 name="weapon" />
+			<_field_string_id name="weapon variant" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="frame events">
+		<_field_string_id name="animation name" />
+		<_field_long_integer name="animation frame count" />
+		<_field_block_64 name="animation events">
+			<_field_string_id name="event name" />
+			<_field_string_id name="animation name" />
+			<_field_short_integer name="frame" />
+			<_field_short_integer name="frame offset" />
+			<_field_short_enum name="type">
+				<Item Name="none" />
+				<Item Name="primary_keyframe" />
+				<Item Name="secondary_keyframe" />
+				<Item Name="tertiary_keyframe" />
+				<Item Name="left_foot" />
+				<Item Name="right_foot" />
+				<Item Name="allow_interruption" />
+				<Item Name="do_not_allow_interruption" />
+				<Item Name="both_feet_shuffle" />
+				<Item Name="body_impact" />
+				<Item Name="left_foot_lock" />
+				<Item Name="left_foot_unlock" />
+				<Item Name="right_foot_lock" />
+				<Item Name="right_foot_unlock" />
+				<Item Name="blend_range_marker" />
+				<Item Name="stride_expansion" />
+				<Item Name="stride_contraction" />
+				<Item Name="ragdoll_keyframe" />
+				<Item Name="drop_weapon_keyframe" />
+				<Item Name="match_a" />
+				<Item Name="match_b" />
+				<Item Name="match_c" />
+				<Item Name="match_d" />
+				<Item Name="jetpack_closed" />
+				<Item Name="jetpack_open" />
+				<Item Name="sound_event" />
+				<Item Name="effect_event" />
+				<Item Name="left_hand" />
+				<Item Name="right_hand" />
+				<Item Name="grenade" />
+				<Item Name="melee" />
+				<Item Name="interact_device" />
+				<Item Name="shield_raise" />
+				<Item Name="activate_equipment" />
+				<Item Name="aoe_attack" />
+				<Item Name="equipment" />
+				<Item Name="jink_fire" />
+				<Item Name="align_to_target" />
+				<Item Name="block_exiting" />
+				<Item Name="set_interruptable" />
+				<Item Name="disable_shooting" />
+				<Item Name="re_enable_shooting" />
+				<Item Name="skip_crouch_transition" />
+				<Item Name="start_bamf" />
+				<Item Name="end_bamf" />
+				<Item Name="hide" />
+				<Item Name="frame_attachment_objects_show" />
+				<Item Name="frame_attachment_objects_hide" />
+				<Item Name="creature_physics_mode_change" />
+				<Item Name="melee_range" />
+				<Item Name="frame_attachment_switch_to_secondary_parent_marker" />
+				<Item Name="frame_attachment_switch_to_default_parent_marker" />
+				<Item Name="allow_sprint_interrupt" />
+				<Item Name="hide_3p_primary_weapon" />
+				<Item Name="show_3p_primary_weapon" />
+			</_field_short_enum>
+			<_field_pad name="generated_pade518" length="2" />
+			<_field_long_integer name="unique ID" />
+			</_field_block_64>
+		<_field_block_64 name="sound events">
+			<_field_short_block_index name="frame event" />
+			<_field_short_block_index name="sound" />
+			<_field_short_integer name="frame offset" />
+			<_field_pad name="generated_pad72c6" length="2" />
+			<_field_custom name="" />
+			<_field_string_id name="marker name" />
+			</_field_block_64>
+		<_field_block_64 name="effect events">
+			<_field_short_block_index name="frame event" />
+			<_field_short_block_index name="effect" />
+			<_field_short_integer name="frame offset" />
+			<_field_pad name="generated_pad3d06" length="2" />
+			<_field_custom name="" />
+			<_field_string_id name="marker name" />
+			</_field_block_64>
+		<_field_block_64 name="dialogue events">
+			<_field_short_block_index name="frame event" />
+			<_field_short_block_index name="dialogue reference" />
+			<_field_short_integer name="frame offset" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_tag_reference_64 name="Audio Frame Events Tag" />
+	<_field_tag_reference_64 name="Effect Frame Events Tag" />
+	</plugin>

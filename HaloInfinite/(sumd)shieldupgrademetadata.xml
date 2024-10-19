@@ -1,0 +1,12 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="SHIELD UPGRADE METADATA" />
+	<_field_long_integer name="upgrade level" />
+	<_field_pad name="generated_paddc67" length="4" />
+	</plugin>

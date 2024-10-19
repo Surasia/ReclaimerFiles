@@ -1,0 +1,26 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_long_flags name="Flags">
+		<Item Name="Only Live Preview During Brush Strokes" />
+		<Item Name="Use Paint Targets as UAVs" />
+		<Item Name="Allow Grouped Textures" />
+		<Item Name="Disallow Ungrouped Textures" />
+	</_field_long_flags>
+	<_field_tag_reference_64 name="Brush Material" />
+	<_field_tag_reference_64 name="Generate Data Graph" />
+	<_field_tag_reference_64 name="Paint Graph" />
+	<_field_tag_reference_64 name="Highlight Graph" />
+	<_field_tag_reference_64 name="Live Preview Graph" />
+	<_field_tag_reference_64 name="Begin Stroke Generate Data Graph" />
+	<_field_tag_reference_64 name="Begin Stroke Graph" />
+	<_field_tag_reference_64 name="End Stroke Graph" />
+	<_field_tag_reference_64 name="On Activate Graph" />
+	<_field_tag_reference_64 name="On Deactivate Graph" />
+	<_field_pad name="generated_pad576a" length="4" />
+	</plugin>

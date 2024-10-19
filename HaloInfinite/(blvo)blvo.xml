@@ -1,0 +1,119 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Air Probe Region Volumes">
+		<_field_string_id name="Name" />
+		<_field_custom name="Volume settings" />
+		<_field_struct name="Volume">
+			<_field_block_64 name="Points">
+				<_field_real_point_3d name="position" />
+				</_field_block_64>
+			<_field_real name="height" />
+			<_field_real name="sink" />
+			<_field_real_point_3d name="center point" />
+			<_field_real name="trivial cull radius squared" />
+			<_field_real_point_3d name="aabbCenter" />
+			<_field_real_point_3d name="aabbExtents" />
+			<_field_block_64 name="nativePoints2D">
+				<_field_real_point_2d name="point" />
+				</_field_block_64>
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_block_64 name="EditorMetadata">
+			<_field_long_string name="folder name" />
+			<_field_real_point_3d name="local space pivot point position" />
+			</_field_block_64>
+		<_field_tag_reference_64 name="owner bsp" />
+		<_field_string_id name="owner variant" />
+		<_field_short_integer name="runtime bsp index" />
+		<_field_short_integer name="runtime variant index" />
+		<_field_real name="Probe XY spacing" />
+		<_field_real name="Probe Z spacing" />
+		<_field_long_integer name="Volume priority" />
+		<_field_real name="Blend radius XY" />
+		<_field_real name="Blend radius Z" />
+		<_field_word_flags name="Flags">
+			<Item Name="Enable Terrain Following" />
+			<Item Name="Disable Occlusion" />
+		</_field_word_flags>
+		<_field_pad name="generated_pad0802" length="2" />
+		<_field_real name="Probe offset above ground" />
+		<_field_long_integer name="Number of Z layers" />
+		</_field_block_64>
+	<_field_block_64 name="Cubemap Volumes">
+		<_field_string_id name="Name" />
+		<_field_long_integer name="Guid" />
+		<_field_long_flags name="Flags">
+			<Item Name="Enable Intensity Correction" />
+			<Item Name="Capture With Effects" />
+			<Item Name="Affects Adjacent Bsps" />
+			<Item Name="Capture Dynamic Objects" />
+		</_field_long_flags>
+		<_field_struct name="Dumpling">
+			<_field_block_64 name="inner points">
+				<_field_real_point_3d name="position" />
+				</_field_block_64>
+			<_field_block_64 name="outer points">
+				<_field_real_point_3d name="position" />
+				</_field_block_64>
+			<_field_real name="height" />
+			<_field_real name="sink" />
+			<_field_real name="inner value" />
+			<_field_real name="outer value" />
+			<_field_real_point_3d name="center point" />
+			<_field_real name="trivial cull radius squared" />
+			<_field_real name="bound volume" />
+			</_field_struct>
+		<_field_tag_reference_64 name="Cubemap Bitmap" />
+		<_field_short_enum name="Enable Parallax Correction">
+			<Item Name="Off" />
+			<Item Name="On" />
+		</_field_short_enum>
+		<_field_short_integer name="Cubemap Volume Priority" />
+		<_field_real_point_3d name="Cubemap Origin" />
+		<_field_real_vector_3d name="Depth Positive" />
+		<_field_real_vector_3d name="Depth Negative" />
+		<_field_short_enum name="Active Volume">
+			<Item Name="Off" />
+			<Item Name="On" />
+		</_field_short_enum>
+		<_field_short_enum name="Maximum cubemap size">
+			<Item Name="128x128" />
+			<Item Name="256x256" />
+			<Item Name="512x512" />
+		</_field_short_enum>
+		<_field_real_point_3d name="Intensity" />
+		<_field_real name="Self-illum Scale Down" />
+		<_field_block_64 name="EditorMetadata">
+			<_field_long_string name="folder name" />
+			<_field_real_point_3d name="local space pivot point position" />
+			</_field_block_64>
+		<_field_tag_reference_64 name="owner bsp" />
+		<_field_string_id name="owner variant" />
+		<_field_short_integer name="runtime bsp index" />
+		<_field_short_integer name="runtime variant index" />
+		<_field_real name="Blend Distance" />
+		<_field_long_enum name="Cubemap Volume Type">
+			<Item Name="Prism" />
+			<Item Name="Sphere" />
+		</_field_long_enum>
+		<_field_real name="Orientation" />
+		<_field_tag_reference_64 name="Cubemap Depth Bitmap" />
+		<_field_real name="Depth Blend Range" />
+		<_field_real name="Intensity Scale" />
+		<_field_short_enum name="Tintable">
+			<Item Name="Off" />
+			<Item Name="On" />
+		</_field_short_enum>
+		<_field_short_enum name="Runtime Force Add Inactive">
+			<Item Name="Off" />
+			<Item Name="On" />
+		</_field_short_enum>
+		<_field_real name="Relevancy Radius" />
+		</_field_block_64>
+	</plugin>

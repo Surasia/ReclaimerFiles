@@ -1,0 +1,58 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Regions">
+		<_field_string_id name="Region Name" />
+		<_field_block_64 name="Permutation Regions">
+			<_field_string_id name="Permutation Region" />
+			</_field_block_64>
+		<_field_block_64 name="Permutation Settings">
+			<_field_string_id name="Permutation Name" />
+			<_field_tag_reference_64 name="Material Style" />
+			<_field_tag_reference_64 name="Attachment" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Attachments">
+		<_field_tag_reference_64 name="Attachment" />
+		</_field_block_64>
+	<_field_block_64 name="Prosthetics">
+		<_field_string_id name="Name" />
+		<_field_block_64 name="Permutation Regions">
+			<_field_string_id name="Permutation Region" />
+			</_field_block_64>
+		<_field_block_64 name="Permutation Settings">
+			<_field_string_id name="Permutation Name" />
+			<_field_tag_reference_64 name="Material Style" />
+			<_field_tag_reference_64 name="Attachment" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Body Types">
+		<_field_string_id name="Name" />
+		<_field_block_64 name="Permutation Regions">
+			<_field_string_id name="Permutation Region" />
+			</_field_block_64>
+		<_field_block_64 name="Permutation Settings">
+			<_field_string_id name="Permutation Name" />
+			<_field_tag_reference_64 name="Material Style" />
+			<_field_tag_reference_64 name="Attachment" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Emblems">
+		<_field_block_64 name="Theme Ids">
+			<_field_string_id name="id" />
+			</_field_block_64>
+		<_field_block_64 name="Markers">
+			<_field_string_id name="Marker" />
+			</_field_block_64>
+		<_field_block_64 name="BigEmblems">
+			<_field_string_id name="Theme Id" />
+			<_field_string_id name="Marker" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_tag_reference_64 name="Coating Styles" />
+	</plugin>

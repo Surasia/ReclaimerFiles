@@ -1,0 +1,19 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="soft ceilings">
+		<_field_real name="biped spring constant" />
+		<_field_real name="biped normal damping" />
+		<_field_real name="biped tangent damping" />
+		<_field_real name="biped min tangent damp velocity" />
+		<_field_real name="vehicle spring constant" />
+		<_field_real name="vehicle normal damping" />
+		<_field_real name="vehicle tangent damping" />
+		</_field_block_64>
+	<_field_pad name="generated_pad71fe" length="4" />
+	</plugin>

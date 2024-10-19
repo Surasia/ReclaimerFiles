@@ -1,0 +1,45 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_real name="dealt cooldown" />
+	<_field_real name="received cooldown" />
+	<_field_custom name="Player Dealt Damage" />
+	<_field_tag_reference_64 name="dealt normal hit" />
+	<_field_tag_reference_64 name="dealt weakpoint hit" />
+	<_field_tag_reference_64 name="dealt stuck" />
+	<_field_tag_reference_64 name="dealt ineffective hit" />
+	<_field_tag_reference_64 name="dealt vehicle hit" />
+	<_field_tag_reference_64 name="dealt vehicle weakpoint hit" />
+	<_field_tag_reference_64 name="dealt vehicle stuck" />
+	<_field_tag_reference_64 name="dealt friendly hit" />
+	<_field_tag_reference_64 name="dealt lethal hit" />
+	<_field_tag_reference_64 name="dealt lethal weakpoint hit" />
+	<_field_tag_reference_64 name="dealt aoe hit" />
+	<_field_tag_reference_64 name="dealt aoe vehicle hit" />
+	<_field_tag_reference_64 name="dealt vehicle passenger hit" />
+	<_field_tag_reference_64 name="dealt shield break" />
+	<_field_tag_reference_64 name="model hit" />
+	<_field_tag_reference_64 name="dealt lethal minor" />
+	<_field_tag_reference_64 name="dealt boss hit" />
+	<_field_custom name="" />
+	<_field_custom name="Player Received Damage" />
+	<_field_tag_reference_64 name="received normal hit" />
+	<_field_tag_reference_64 name="received weakpoint hit" />
+	<_field_tag_reference_64 name="received stuck" />
+	<_field_tag_reference_64 name="received ineffective hit" />
+	<_field_tag_reference_64 name="received vehicle hit" />
+	<_field_tag_reference_64 name="received vehicle weakpoint hit" />
+	<_field_tag_reference_64 name="received vehicle stuck" />
+	<_field_tag_reference_64 name="received friendly hit" />
+	<_field_tag_reference_64 name="received lethal hit" />
+	<_field_tag_reference_64 name="received lethal weakpoint hit" />
+	<_field_tag_reference_64 name="received aoe hit" />
+	<_field_tag_reference_64 name="received aoe vehicle hit" />
+	<_field_custom name="" />
+	<_field_pad name="generated_pad82f1" length="4" />
+	</plugin>

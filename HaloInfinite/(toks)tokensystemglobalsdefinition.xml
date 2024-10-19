@@ -1,0 +1,117 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Threat Token Globals">
+		<_field_explanation name="Threat Token Tuning Globals" />
+		<_field_angle name="Aiming Angle" />
+		<_field_explanation name="Threat Score Modifiers" />
+		<_field_short_integer name="Aiming score modifier" />
+		<_field_short_integer name="Recently damaged score modifier" />
+		<_field_real name="Recently damaged duration" />
+		<_field_short_integer name="Has clear LOS score modifier" />
+		<_field_short_integer name="Player close to enemy score modifier" />
+		<_field_short_integer name="Close player distance" />
+		<_field_short_integer name="Player within combat range of enemy score modifier" />
+		<_field_short_integer name="Hasn't acquired token in a while score modifier" />
+		<_field_short_integer name="Hasn't acquired token in a while time" />
+		<_field_short_integer name="Recently acquired token score modifier" />
+		<_field_short_integer name="Recently acquired token time" />
+		<_field_short_integer name="Fully Effective Score Modifier" />
+		<_field_short_integer name="Character type limit modifier" />
+		<_field_explanation name="Threat Token Character Limits" />
+		<_field_block_64 name="Character Limits">
+			<_field_short_enum name="Character Type">
+				<Item Name="none" />
+				<Item Name="player" />
+				<Item Name="marine" />
+				<Item Name="crew" />
+				<Item Name="spartan" />
+				<Item Name="elite" />
+				<Item Name="jackal" />
+				<Item Name="jackal sniper" />
+				<Item Name="grunt" />
+				<Item Name="hunter" />
+				<Item Name="prophet" />
+				<Item Name="bugger" />
+				<Item Name="scarab" />
+				<Item Name="engineer" />
+				<Item Name="skirmisher" />
+				<Item Name="bishop" />
+				<Item Name="knight" />
+				<Item Name="pawn" />
+				<Item Name="cavalier" />
+				<Item Name="packmaster" />
+				<Item Name="soldier" />
+				<Item Name="soldier sniper" />
+				<Item Name="soldier officer" />
+				<Item Name="rook" />
+				<Item Name="sentinel" />
+				<Item Name="brute" />
+				<Item Name="hoverer" />
+				<Item Name="crusher" />
+				<Item Name="mule" />
+				<Item Name="mounted_weapon" />
+				<Item Name="octopus" />
+				<Item Name="wildlife" />
+			</_field_short_enum>
+			<_field_short_integer name="Max character instances" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_block_64 name="Grenade Token Globals">
+		<_field_byte_flags name="flags">
+			<Item Name="Friendly actors need tokens" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad7795" length="1" />
+		<_field_short_integer name="Hasn't thrown a grenade recently score modifier" />
+		<_field_real name="Hasn't thrown a grenade recently time" />
+		<_field_short_integer name="Has no ranged weapon score modifier" />
+		<_field_short_integer name="Recently damaged score modifier" />
+		<_field_real name="Recently damaged duration" />
+		<_field_short_integer name="High Priority Behavior Score Modifier" />
+		<_field_pad name="generated_pad5db4" length="2" />
+		</_field_block_64>
+	<_field_custom name="Effectiveness Token Globals" />
+	<_field_custom name="Scoring Criteria" />
+	<_field_explanation name="" />
+	<_field_real name="Recently Damaged Duration" />
+	<_field_angle name="Player Aiming Angle" />
+	<_field_real name="Close Player Distance" />
+	<_field_real name="Recently Acquired Duration" />
+	<_field_real name="Aimed At Transition Time" />
+	<_field_custom name="" />
+	<_field_custom name="Score Modifiers" />
+	<_field_explanation name="" />
+	<_field_short_integer name="Recently Damaged Score Modifier" />
+	<_field_short_integer name="Player Aiming At Score Modifier" />
+	<_field_short_integer name="Close Player Score Modifier" />
+	<_field_short_integer name="In Combat Range Score Modifier" />
+	<_field_short_integer name="Recently Acquired Score Modifier" />
+	<_field_short_integer name="Player Within EZ Score Modifier" />
+	<_field_short_integer name="First Character Type Score Modifier" />
+	<_field_short_integer name="Has clear LOS score modifier" />
+	<_field_custom name="" />
+	<_field_custom name="Override Parameters" />
+	<_field_explanation name="" />
+	<_field_real name="Recently Acquired Override Time" />
+	<_field_short_integer name="Score Override Threshold" />
+	<_field_short_integer name="Holding Score Override Threshold" />
+	<_field_real name="Proximity Override Distance" />
+	<_field_custom name="" />
+	<_field_custom name="Effectivity Modifiers" />
+	<_field_explanation name="" />
+	<_field_real name="Damage Modifier" />
+	<_field_real name="Burst Error Modifier" />
+	<_field_real name="Burst Error Bonus" />
+	<_field_real name="Burst Duration Modifier" />
+	<_field_real name="Burst Radius Modifier" />
+	<_field_real name="Grenade Miss Distance" />
+	<_field_real name="Accuracy Time Modifier" />
+	<_field_custom name="" />
+	<_field_custom name="" />
+	<_field_pad name="generated_pada628" length="4" />
+	</plugin>

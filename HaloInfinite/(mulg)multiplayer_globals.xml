@@ -1,0 +1,110 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="universal">
+		<_field_block_64 name="teams">
+			<_field_string_id name="name" />
+			<_field_real_rgb_color name="primary color" />
+			<_field_real_rgb_color name="secondary color" />
+			<_field_custom name="- Emblem Data" />
+			<_field_string_id name="themeName" />
+			<_field_string_id name="coatingName" />
+			<_field_string_id name="markerName" />
+			<_field_custom name="" />
+			</_field_block_64>
+		<_field_block_64 name="player starting profile">
+			<_field_string name="name" />
+			<_field_real_fraction name="starting health damage" />
+			<_field_real_fraction name="starting shield damage" />
+			<_field_tag_reference_64 name="primary weapon" />
+			<_field_short_integer name="primaryrounds loaded" />
+			<_field_short_integer name="primaryrounds total" />
+			<_field_tag_reference_64 name="primary weapon configuration" />
+			<_field_string_id name="primary weapon variant name" />
+			<_field_tag_reference_64 name="secondary weapon" />
+			<_field_short_integer name="secondaryrounds loaded" />
+			<_field_short_integer name="secondaryrounds total" />
+			<_field_tag_reference_64 name="secondary weapon configuration" />
+			<_field_string_id name="secondary weapon variant name" />
+			<_field_char_integer name="starting fragmentation grenade count" />
+			<_field_char_integer name="starting plasma grenade count" />
+			<_field_char_integer name="starting lightning grenade count" />
+			<_field_char_integer name="starting gravity grenade count" />
+			<_field_char_integer name="starting spike grenade count" />
+			<_field_char_integer name="starting pulse grenade count" />
+			<_field_char_integer name="starting grenade type 7 count" />
+			<_field_char_integer name="starting grenade type 8 count" />
+			<_field_tag_reference_64 name="starting equipment" />
+			<_field_string_id name="starting tactical package" />
+			<_field_string_id name="starting support upgrade" />
+			<_field_short_block_index name="editor folder" />
+			<_field_pad name="generated_padc11b" length="2" />
+			<_field_block_64 name="EditorMetadata">
+				<_field_long_string name="folder name" />
+				<_field_real_point_3d name="local space pivot point position" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_tag_reference_64 name="random player names v2" />
+		<_field_tag_reference_64 name="team names v2" />
+		<_field_tag_reference_64 name="disposition labels v2" />
+		<_field_tag_reference_64 name="random bot names v2" />
+		<_field_char_enum name="mvar scripts compile mode">
+			<Item Name="Precompile" />
+			<Item Name="Text" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad1ab1" length="3" />
+		</_field_block_64>
+	<_field_block_64 name="runtime">
+		<_field_tag_reference_64 name="editor helper" />
+		<_field_block_64 name="sounds">
+			<_field_tag_reference_64 name="sound" />
+			</_field_block_64>
+		<_field_block_64 name="looping sounds">
+			<_field_tag_reference_64 name="looping sound" />
+			</_field_block_64>
+		<_field_block_64 name="multiplayer constants">
+			<_field_explanation name="PLAYER SPAWN INFLUENCERS" />
+			<_field_tag_reference_64 name="Default Spawn Settings" />
+			<_field_explanation name="MORE MP CONSTANTS" />
+			<_field_real name="teleporter recharge time" />
+			<_field_tag_reference_64 name="sandbox effect" />
+			<_field_string_id name="blocked teleporter string" />
+			<_field_explanation name="RESPAWN STRINGS" />
+			<_field_string_id name="voluntary respawn control instructions" />
+			<_field_string_id name="spawn allowed default respawn" />
+			<_field_string_id name="spawn at player allowed looking at self" />
+			<_field_string_id name="spawn at player allowed looking at target" />
+			<_field_string_id name="spawn at player allowed looking at potential target" />
+			<_field_string_id name="spawn at territory allowed looking at target" />
+			<_field_string_id name="spawn at territory allowed looking at potential target" />
+			<_field_string_id name="you are out of lives" />
+			<_field_string_id name="invalid spawn target selected" />
+			<_field_string_id name="targetted player enemies nearby" />
+			<_field_string_id name="targetted player unfriendly team" />
+			<_field_string_id name="targetted player dead" />
+			<_field_string_id name="targetted player in combat" />
+			<_field_string_id name="targetted player too far from owned flag" />
+			<_field_string_id name="no available netpoints" />
+			<_field_string_id name="targetted netpoint contested" />
+			</_field_block_64>
+		<_field_tag_reference_64 name="hill shader" />
+		<_field_tag_reference_64 name="spline shader" />
+		<_field_tag_reference_64 name="default_biped_simulation_interpolation" />
+		<_field_tag_reference_64 name="default_vehicle_simulation_interpolation" />
+		<_field_tag_reference_64 name="default_crate_simulation_interpolation" />
+		<_field_tag_reference_64 name="default_item_simulation_interpolation" />
+		<_field_tag_reference_64 name="default_projectile_simulation_interpolation" />
+		<_field_tag_reference_64 name="default_object_simulation_interpolation" />
+		<_field_int64_integer name="m_hillPipelineState" />
+		<_field_int64_integer name="m_splinePipelineState" />
+		<_field_tag_reference_64 name="Supply Lines System Globals" />
+		<_field_tag_reference_64 name="Personal AI Globals" />
+		<_field_tag_reference_64 name="Spotting Service Globals" />
+		<_field_tag_reference_64 name="Unarmed Weapon Reference" />
+		</_field_block_64>
+	</plugin>

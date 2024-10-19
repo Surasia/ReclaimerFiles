@@ -1,0 +1,111 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="Parent" />
+	<_field_block_64 name="Swatch Palette">
+		<_field_qword_integer name="elementID" />
+		<_field_string_id name="Description" />
+		<_field_tag_reference_64 name="Swatch" />
+		<_field_char_enum name="gradientColorFlag">
+			<Item Name="Override Colors" />
+			<Item Name="Use Default Colors From Swatch" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad9b5a" length="3" />
+		<_field_real_rgb_color name="gradientTopColor" />
+		<_field_real_rgb_color name="gradientMidColor" />
+		<_field_real_rgb_color name="gradientBottomColor" />
+		<_field_real name="roughnessOffset" />
+		<_field_custom name="Scratch Overrides" />
+		<_field_char_enum name="scratchColorFlag">
+			<Item Name="Override Colors" />
+			<Item Name="Use Default Colors From Swatch" />
+		</_field_char_enum>
+		<_field_pad name="generated_pade80f" length="3" />
+		<_field_real_rgb_color name="scratchColor" />
+		<_field_real name="scratchRoughnessOffset" />
+		<_field_custom name="" />
+		<_field_custom name="Emissive Overrides" />
+		<_field_char_enum name="Use Emissive?">
+			<Item Name="disabled" />
+			<Item Name="enabled" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad34c4" length="3" />
+		<_field_real name="emissiveIntensity" />
+		<_field_real name="emissiveAmount" />
+		<_field_custom name="" />
+		<_field_custom name="Advanced" />
+		<_field_char_enum name="Use Alpha?">
+			<Item Name="disabled" />
+			<Item Name="enabled" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad8179" length="1" />
+		<_field_short_enum name="Use Subsurface Scattering?">
+			<Item Name="Do Not Use Subsurface" />
+			<Item Name="Use Subsurface" />
+			<Item Name="Use Subsurface (gummy)" />
+			<Item Name="Use Subsurface (alien skin)" />
+			<Item Name="Use Subsurface (brute skin)" />
+			<Item Name="Use Subsurface (human skin post)" />
+			<Item Name="Use Subsurface (human skin pre)" />
+			<Item Name="Use Subsurface (inquisitor skin)" />
+			<Item Name="Use Subsurface (marble)" />
+			<Item Name="Use Subsurface (plastic)" />
+			<Item Name="Use Subsurface (preintegrated)" />
+			<Item Name="Use Subsurface (snow)" />
+			<Item Name="Use Subsurface (flood)" />
+		</_field_short_enum>
+		<_field_char_enum name="Hero Reveal">
+			<Item Name="disabled" />
+			<Item Name="enabled" />
+		</_field_char_enum>
+		<_field_char_enum name="Color Blend">
+			<Item Name="disabled" />
+			<Item Name="enabled" />
+		</_field_char_enum>
+		<_field_char_enum name="Normal Blend">
+			<Item Name="disabled" />
+			<Item Name="enabled" />
+		</_field_char_enum>
+		<_field_char_enum name="Ignore Texel Density Scalar">
+			<Item Name="disabled" />
+			<Item Name="enabled" />
+		</_field_char_enum>
+		<_field_custom name="" />
+		<_field_pad name="generated_padce2e" length="4" />
+		</_field_block_64>
+	<_field_block_64 name="Region Groups">
+		<_field_qword_integer name="elementID" />
+		<_field_string_id name="Region Group Name" />
+		<_field_block_64 name="Region Membership">
+			<_field_string_id name="Region Name" />
+			<_field_byte_flags name="Override">
+				<Item Name="Enable" />
+			</_field_byte_flags>
+			<_field_pad name="generated_padc621" length="3" />
+			</_field_block_64>
+		<_field_block_64 name="Intention Overrides">
+			<_field_string_id name="Intention Name" />
+			<_field_byte_flags name="Override">
+				<Item Name="Enable" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad3ac7" length="1" />
+			<_field_short_block_index name="Swatch" />
+			</_field_block_64>
+		<_field_tag_reference_64 name="Shader Override" />
+		</_field_block_64>
+	<_field_short_block_index name="Global Damage" />
+	<_field_short_block_index name="Hero Damage" />
+	<_field_short_block_index name="Global Emissive" />
+	<_field_pad name="generated_pad1ec2" length="2" />
+	<_field_real name="Emissive Amount" />
+	<_field_real name="Emissive Intensity" />
+	<_field_real name="Scratch Amount" />
+	<_field_short_block_index name="Grime" />
+	<_field_pad name="generated_pad6b77" length="2" />
+	<_field_real name="Grime Amount" />
+	</plugin>

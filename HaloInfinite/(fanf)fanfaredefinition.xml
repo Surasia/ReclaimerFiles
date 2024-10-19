@@ -1,0 +1,25 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_char_enum name="Type">
+		<Item Name="personal score" />
+		<Item Name="game score" />
+		<Item Name="game state" />
+		<Item Name="highlights" />
+		<Item Name="kill feed" />
+		<Item Name="quest feed" />
+		<Item Name="personal ai" />
+	</_field_char_enum>
+	<_field_pad name="generated_pad07bd" length="3" />
+	<_field_long_integer name="Priority" />
+	<_field_string_id name="String identifier" />
+	<_field_short_integer name="Sprite index" />
+	<_field_short_integer name="Display time in seconds" />
+	<_field_tag_reference_64 name="Screen" />
+	<_field_tag_reference_64 name="Sound" />
+	</plugin>

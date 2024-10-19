@@ -1,0 +1,61 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="parent" />
+	<_field_long_flags name="flags">
+		<Item Name="Player sound is non-positional" />
+		<Item Name="Cull By Max Radius" />
+		<Item Name="Don't play in splitscreen" />
+		<Item Name="Apply Focus Feature" />
+		<Item Name="Play on hidden objects" />
+		<Item Name="One Shots Use Sticky Emitter Parameters" />
+		<Item Name="Loops Use Sticky Emitter Parameters" />
+		<Item Name="Hemisphere" />
+		<Item Name="Sphere only affects acoustics" />
+		<Item Name="Prevent Source Zone Reverb" />
+		<Item Name="Disable Obstruction" />
+		<Item Name="Disable Occlusion" />
+		<Item Name="Disable Dynamic Object Obstruction" />
+		<Item Name="Force First Person Propagation For All Listeners (Deprecated)" />
+		<Item Name="Disable Source portal occlusion" />
+		<Item Name="Disable Virtual Positioning" />
+		<Item Name="Use Only First Listener in Splitscreen." />
+		<Item Name="Enable height above listener rtpc" />
+	</_field_long_flags>
+	<_field_real name="Don't Play Time (seconds)" />
+	<_field_struct name="Audio Impulse Timer Settings">
+		<_field_byte_flags name="Impulse Timer Flags">
+			<Item Name="Enable Impulse Timer" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad854c" length="3" />
+		<_field_real name="hold" />
+		<_field_real name="decay" />
+		<_field_real name="minthreshold" />
+		<_field_real name="distthreshold" />
+		</_field_struct>
+	<_field_real name="Sound Transmissivity" />
+	<_field_struct name="Focus Settings">
+		<_field_real name="Focus Inner Radius" />
+		<_field_real name="Focus Outer Radius" />
+		<_field_real name="Focus Inner Cone Angle" />
+		<_field_real name="Focus Outer Cone Angle" />
+		<_field_real name="Focus Elevation Scale" />
+		</_field_struct>
+	<_field_struct name="Cluster Settings">
+		<_field_real name="Cluster Distance" />
+		<_field_real name="Cluster Smoothing Speed" />
+		<_field_real name="Cluster Timeout" />
+		</_field_struct>
+	<_field_real name="Sphere Radius" />
+	<_field_real name="Sphere Stretch value" />
+	<_field_long_integer name="Max looping sounds" />
+	<_field_real name="Priority at listener" />
+	<_field_real name="Priority at max distance" />
+	<_field_real name="Occlusion from Obstruction Scalar" />
+	<_field_pad name="generated_padc935" length="4" />
+	</plugin>

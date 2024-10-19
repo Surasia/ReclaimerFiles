@@ -1,0 +1,53 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="default bitmaps" />
+	<_field_block_64 name="default bitmaps">
+		<_field_tag_reference_64 name="default bitmaps" />
+		</_field_block_64>
+	<_field_block_64 name="explicit shaders">
+		<_field_tag_reference_64 name="explicit shader reference" />
+		</_field_block_64>
+	<_field_explanation name="global materials" />
+	<_field_block_64 name="global materials">
+		<_field_string_id name="name" />
+		<_field_tag_reference_64 name="material" />
+		<_field_pad name="countPSOs" length="4" />
+		<_field_pad name="generated_pad8d40" length="4" />
+		<_field_int64_integer name="ptr PSOs" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="default performance throttles" />
+	<_field_tag_reference_64 name="default scenario render data" />
+	<_field_tag_reference_64 name="Cheap Particle Type Library" />
+	<_field_block_64 name="Display output transformations">
+		<_field_string_id name="Display Output Preset Name" />
+		<_field_tag_reference_64 name="Reference Rendering Transform" />
+		<_field_tag_reference_64 name="HDR to LDR LUT" />
+		<_field_tag_reference_64 name="HDR Output LUT" />
+		<_field_tag_reference_64 name="HDR Output LUT 10K" />
+		</_field_block_64>
+	<_field_real name="HDR bloom intensity scale" />
+	<_field_real name="Bloom max pixel intensity" />
+	<_field_explanation name="Motion blur parameters" />
+	<_field_real name="max blur" />
+	<_field_real name="blur scale" />
+	<_field_real name="center falloff x" />
+	<_field_real name="center falloff y" />
+	<_field_tag_reference_64 name="Hologram Camera FX" />
+	<_field_explanation name="lighting debug parameters" />
+	<_field_tag_reference_64 name="airprobe render model" />
+	<_field_real name="debug lighting value" />
+	<_field_real name="albedo clip min" />
+	<_field_real name="albedo clip max" />
+	<_field_tag_reference_64 name="Post-process Graph" />
+	<_field_tag_reference_64 name="Default Ripple Definition" />
+	<_field_tag_reference_64 name="Subsurface Scatter Profile tag" />
+	<_field_tag_reference_64 name="Empty Swatch Tag" />
+	<_field_tag_reference_64 name="Hair Profile tag" />
+	<_field_tag_reference_64 name="psoDictionaryReference" />
+	</plugin>

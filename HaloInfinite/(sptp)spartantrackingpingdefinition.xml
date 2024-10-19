@@ -1,0 +1,46 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_string_id name="ping group" />
+	<_field_real name="ping display time" />
+	<_field_explanation name="Per Priority Default Ranges" />
+	<_field_block_64 name="default range per priority">
+		<_field_real name="default range" />
+		</_field_block_64>
+	<_field_explanation name="Per Priority Tracking Limits" />
+	<_field_block_64 name="max tracked per priority">
+		<_field_byte_integer name="maximum number of tracked objects displayed" />
+		</_field_block_64>
+	<_field_custom name="active ping properties" />
+	<_field_explanation name="The following fields only apply to active tracking." />
+	<_field_tag_reference_64 name="ping effect" />
+	<_field_real name="ping travel rate" />
+	<_field_custom name="" />
+	<_field_custom name="outline properties" />
+	<_field_tag_reference_64 name="Outline type" />
+	<_field_char_enum name="Outline system ID">
+		<Item Name="SpartanTrackingActive" />
+		<Item Name="SpartanTrackingPassive" />
+		<Item Name="SpartanTrackingCustomActive" />
+		<Item Name="SpectatorTeamColoring" />
+		<Item Name="TargetTracking" />
+		<Item Name="EnemyIdentification" />
+		<Item Name="Scripting" />
+		<Item Name="ForgeOutlining" />
+		<Item Name="LocationSensor" />
+		<Item Name="PolarisOutlining" />
+	</_field_char_enum>
+	<_field_pad name="generated_pada560" length="3" />
+	<_field_custom name="" />
+	<_field_custom name="Target-Marking" />
+	<_field_angle name="angle" />
+	<_field_real name="distanceFactor" />
+	<_field_real name="angleFactor" />
+	<_field_custom name="" />
+	<_field_pad name="generated_padbf41" length="4" />
+	</plugin>

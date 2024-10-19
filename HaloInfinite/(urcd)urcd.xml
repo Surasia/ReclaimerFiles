@@ -1,0 +1,38 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="recording">
+		<_field_string_id name="type" />
+		<_field_string_id name="name" />
+		<_field_real name="time per sample" />
+		<_field_long_integer name="num samples" />
+		<_field_long_integer name="unit recording version" />
+		<_field_data_64 name="recording data" />
+		<_field_char_enum name="team">
+			<Item Name="Defender" />
+			<Item Name="Attacker" />
+			<Item Name="ThirdParty" />
+			<Item Name="FourthParty" />
+			<Item Name="FifthParty" />
+			<Item Name="SixthParty" />
+			<Item Name="SeventhParty" />
+			<Item Name="EighthParty" />
+			<Item Name="Neutral" />
+		</_field_char_enum>
+		<_field_byte_flags name="flags">
+			<Item Name="Set Physics To Default On Completion" />
+			<Item Name="Is Player Spawn Intro Recording" />
+			<Item Name="Preserve Final Playback Motion" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pade268" length="2" />
+		<_field_tag_reference_64 name="vehicle definition" />
+		<_field_real_vector_3d name="finalAngularVelocity" />
+		<_field_real_vector_3d name="finalLinearVelocity" />
+		</_field_struct>
+	<_field_pad name="generated_padacb9" length="4" />
+	</plugin>

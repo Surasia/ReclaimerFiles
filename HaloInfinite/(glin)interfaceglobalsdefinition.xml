@@ -1,0 +1,223 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="interface tags">
+		<_field_explanation name="Mode-Specific Tags" />
+		<_field_tag_reference_64 name="shared globals" />
+		<_field_tag_reference_64 name="mainmenu ui globals" />
+		<_field_tag_reference_64 name="singleplayer ui globals" />
+		<_field_tag_reference_64 name="multiplayer ui globals" />
+		<_field_tag_reference_64 name="tatanka ui globals" />
+		<_field_tag_reference_64 name="damage reporting display globals" />
+		<_field_explanation name="Customization Data" />
+		<_field_tag_reference_64 name="Platform Animations" />
+		<_field_tag_reference_64 name="Light Presets" />
+		<_field_tag_reference_64 name="Camera Presets" />
+		<_field_tag_reference_64 name="Camera Transition Sounds" />
+		<_field_tag_reference_64 name="Spartan Voice Sounds" />
+		<_field_tag_reference_64 name="Ai Voice Sounds" />
+		<_field_string_id name="Idling Marine Composition" />
+		<_field_string_id name="Default Gray Emblem Coating" />
+		<_field_explanation name="Customization Scene Data" />
+		<_field_tag_reference_64 name="Spartan Armor Customization" />
+		<_field_tag_reference_64 name="Weapons Customization" />
+		<_field_tag_reference_64 name="Vehicle Customization" />
+		<_field_tag_reference_64 name="AI Customization" />
+		<_field_tag_reference_64 name="Fireteam Customization" />
+		<_field_tag_reference_64 name="Presentation Customization" />
+		<_field_tag_reference_64 name="Inspect Customization" />
+		<_field_tag_reference_64 name="Inspect Player Customization" />
+		<_field_tag_reference_64 name="PGCR" />
+		<_field_tag_reference_64 name="MainMenu" />
+		<_field_tag_reference_64 name="RTT Forward Fast Lighting Presets" />
+		<_field_block_64 name="RTT Camera Scenes">
+			<_field_string_id name="UI Display String" />
+			<_field_string_id name="UI Description String" />
+			<_field_long_integer name="CMS Customization Item Type" />
+			<_field_short_enum name="CMS Customization Core Type">
+				<Item Name="Unknown" />
+				<Item Name="Armor" />
+				<Item Name="Ai" />
+				<Item Name="WeaponSidekick" />
+				<Item Name="WeaponAR" />
+				<Item Name="WeaponBR" />
+				<Item Name="WeaponCommando" />
+				<Item Name="WeaponSPnKr" />
+				<Item Name="WeaponSniper" />
+				<Item Name="WeaponShotgun" />
+				<Item Name="WeaponHydra" />
+				<Item Name="WeaponBandit" />
+				<Item Name="VehicleWarthog" />
+				<Item Name="VehicleMongoose" />
+				<Item Name="VehicleScorpion" />
+				<Item Name="VehicleWasp" />
+				<Item Name="VehicleRazorBack" />
+				<Item Name="VehicleGungoose" />
+				<Item Name="VehicleRockethog" />
+			</_field_short_enum>
+			<_field_pad name="generated_pad2a44" length="2" />
+			<_field_string_id name="Region Name" />
+			<_field_string_id name="Marker Name" />
+			<_field_real name="Marker Offset" />
+			<_field_real name="Camera Offset" />
+			<_field_short_enum name="Animation Easing">
+				<Item Name="LinearTween" />
+				<Item Name="EaseInQuad" />
+				<Item Name="EaseOutQuad" />
+				<Item Name="EaseInOutQuad" />
+				<Item Name="EaseInCubic" />
+				<Item Name="EaseOutCubic" />
+				<Item Name="EaseInOutCubic" />
+				<Item Name="EaseInQuart" />
+				<Item Name="EaseOutQuart" />
+				<Item Name="EaseInOutQuart" />
+				<Item Name="EaseInQuint" />
+				<Item Name="EaseOutQuint" />
+				<Item Name="EaseInOutQuint" />
+				<Item Name="EaseInSine" />
+				<Item Name="EaseOutSine" />
+				<Item Name="EaseInOutSine" />
+				<Item Name="EaseInExpo" />
+				<Item Name="EaseOutExpo" />
+				<Item Name="EaseInOutExpo" />
+				<Item Name="EaseInCirc" />
+				<Item Name="EaseOutCirc" />
+				<Item Name="EaseInOutCirc" />
+				<Item Name="EaseInSinCustom" />
+				<Item Name="EaseOutSinCustom" />
+			</_field_short_enum>
+			<_field_pad name="generated_pad4425" length="2" />
+			<_field_block_64 name="Camera Positions">
+				<_field_short_enum name="Camera Position Type">
+					<Item Name="Default" />
+					<Item Name="Custom" />
+					<Item Name="Custom1" />
+				</_field_short_enum>
+				<_field_pad name="generated_pad010d" length="2" />
+				<_field_real_vector_3d name="Camera Position" />
+				<_field_real_euler_angles_3d name="Camera Orientation" />
+				<_field_string_id name="Composer Scene Name" />
+				<_field_byte_flags name="DOF Flags">
+					<Item Name="Enable DOF" />
+					<Item Name="Enable DOF RTT" />
+					<Item Name="Enable DOF World" />
+				</_field_byte_flags>
+				<_field_pad name="generated_pade72c" length="3" />
+				<_field_real name="DOF Focal Length" />
+				<_field_real name="DOF Focal Distance" />
+				<_field_real name="DOF FStop" />
+				</_field_block_64>
+			<_field_real name="Camera FOV" />
+			<_field_real name="Camera Transition time" />
+			<_field_real_euler_angles_3d name="Camera Orientation" />
+			<_field_real_euler_angles_3d name="Focused Object Orientation" />
+			<_field_byte_flags name="DOF Flags">
+				<Item Name="Enable DOF" />
+				<Item Name="Enable DOF RTT" />
+				<Item Name="Enable DOF World" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad90da" length="3" />
+			<_field_real name="DOF Focal Length" />
+			<_field_real name="DOF Focal Distance" />
+			<_field_real name="DOF FStop" />
+			<_field_string_id name="Idle Animation" />
+			<_field_string_id name="To Idle Animation" />
+			<_field_string_id name="From Idle Animation" />
+			</_field_block_64>
+		<_field_block_64 name="Composer Scenes">
+			<_field_string_id name="Composer Scene Name" />
+			<_field_block_64 name="Camera Points">
+				<_field_string name="CameraPoint" />
+				</_field_block_64>
+			<_field_block_64 name="Camera Point Layout Block">
+				<_field_custom name="Single camera point properties" />
+				<_field_string name="Layout one first postion" />
+				<_field_custom name="" />
+				<_field_custom name="Two camera point properties" />
+				<_field_string name="Layout two first position" />
+				<_field_string name="Layout two second position" />
+				<_field_custom name="" />
+				<_field_custom name="Three camera point properties" />
+				<_field_string name="Layout three first position" />
+				<_field_string name="Layout three second position" />
+				<_field_string name="Layout three third position" />
+				<_field_custom name="" />
+				<_field_custom name="Four camera point properties" />
+				<_field_string name="Layout four first position " />
+				<_field_string name="Layout four second position" />
+				<_field_string name="Layout four third position" />
+				<_field_string name="Layout four fourth position" />
+				<_field_custom name="" />
+				</_field_block_64>
+			<_field_real name="Camera Point move time" />
+			<_field_tag_reference_64 name="Composer Definition" />
+			</_field_block_64>
+		<_field_block_64 name="Landing Scene Data">
+			<_field_long_integer name="Composer Scene Time" />
+			<_field_long_integer name="Fodeout Star Time" />
+			<_field_long_integer name="Fodeout End Time" />
+			<_field_block_64 name="Composer Scenes">
+				<_field_string_id name="Composer Scene Name" />
+				<_field_short_enum name="Core Type">
+					<Item Name="Unknown" />
+					<Item Name="Armor" />
+					<Item Name="Ai" />
+					<Item Name="WeaponSidekick" />
+					<Item Name="WeaponAR" />
+					<Item Name="WeaponBR" />
+					<Item Name="WeaponCommando" />
+					<Item Name="WeaponSPnKr" />
+					<Item Name="WeaponSniper" />
+					<Item Name="WeaponShotgun" />
+					<Item Name="WeaponHydra" />
+					<Item Name="WeaponBandit" />
+					<Item Name="VehicleWarthog" />
+					<Item Name="VehicleMongoose" />
+					<Item Name="VehicleScorpion" />
+					<Item Name="VehicleWasp" />
+					<Item Name="VehicleRazorBack" />
+					<Item Name="VehicleGungoose" />
+					<Item Name="VehicleRockethog" />
+				</_field_short_enum>
+				<_field_pad name="generated_pad18b7" length="2" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="CoreType order">
+			<_field_short_enum name="Core Type">
+				<Item Name="Unknown" />
+				<Item Name="Armor" />
+				<Item Name="Ai" />
+				<Item Name="WeaponSidekick" />
+				<Item Name="WeaponAR" />
+				<Item Name="WeaponBR" />
+				<Item Name="WeaponCommando" />
+				<Item Name="WeaponSPnKr" />
+				<Item Name="WeaponSniper" />
+				<Item Name="WeaponShotgun" />
+				<Item Name="WeaponHydra" />
+				<Item Name="WeaponBandit" />
+				<Item Name="VehicleWarthog" />
+				<Item Name="VehicleMongoose" />
+				<Item Name="VehicleScorpion" />
+				<Item Name="VehicleWasp" />
+				<Item Name="VehicleRazorBack" />
+				<Item Name="VehicleGungoose" />
+				<Item Name="VehicleRockethog" />
+			</_field_short_enum>
+			</_field_block_64>
+		<_field_block_64 name="MythicFx Composer Names">
+			<_field_string_id name="Composer Scene Name" />
+			</_field_block_64>
+		<_field_block_64 name="Weapon Death Composer Names">
+			<_field_string_id name="Composer Scene Name" />
+			</_field_block_64>
+		<_field_tag_reference_64 name="Inspect Data" />
+		<_field_tag_reference_64 name="Season Data" />
+		</_field_block_64>
+	<_field_pad name="generated_padaaba" length="4" />
+	</plugin>

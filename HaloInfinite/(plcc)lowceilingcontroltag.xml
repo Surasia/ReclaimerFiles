@@ -1,0 +1,15 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_struct name="lowceiling">
+		<_field_real name="cast length" />
+		<_field_real name="cast radius" />
+		<_field_real_fraction name="ceiling normal max z" />
+		<_field_real name="acceleration max" />
+		</_field_struct>
+	</plugin>

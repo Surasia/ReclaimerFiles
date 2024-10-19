@@ -1,0 +1,15 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="types">
+		<_field_string_id name="name" />
+		</_field_block_64>
+	<_field_block_64 name="layers">
+		<_field_char_integer name="collision" />
+		</_field_block_64>
+	</plugin>

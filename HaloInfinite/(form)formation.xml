@@ -1,0 +1,29 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_string_id name="name" />
+	<_field_block_64 name="primitives">
+		<_field_explanation name="" />
+		<_field_word_flags name="flags">
+			<Item Name="radial" />
+			<Item Name="leader" />
+		</_field_word_flags>
+		<_field_short_integer name="priority" />
+		<_field_short_integer name="capacity" />
+		<_field_pad name="generated_pad9ea5" length="2" />
+		<_field_real name="dist forwards" />
+		<_field_real name="dist backwards" />
+		<_field_real name="rank spacing" />
+		<_field_real name="file spacing" />
+		<_field_block_64 name="points">
+			<_field_explanation name="" />
+			<_field_angle name="angle" />
+			<_field_real name="offset" />
+			</_field_block_64>
+		</_field_block_64>
+	</plugin>

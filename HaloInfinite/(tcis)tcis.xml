@@ -1,0 +1,23 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_tag_reference_64 name="Bitmap" />
+	<_field_tag_reference_64 name="TerrainRuntime" />
+	<_field_tag_reference_64 name="OptimizationParams" />
+	<_field_block_64 name="Cell Outputs">
+		<_field_tag_reference_64 name="TerrainCollisionCellGeoTag" />
+		</_field_block_64>
+	<_field_block_64 name="Input Cache">
+		<_field_real_vector_3d name="size" />
+		<_field_data_64 name="pixels" />
+		<_field_data_64 name="materials" />
+		</_field_block_64>
+	<_field_block_64 name="Cell Inputs">
+		<_field_tag_reference_64 name="Cell Input" />
+		</_field_block_64>
+	</plugin>

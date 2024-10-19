@@ -1,0 +1,273 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="generic light definitions">
+		<_field_long_integer name="guid" />
+		<_field_real_point_3d name="position" />
+		<_field_real_euler_angles_3d name="facing" />
+		<_field_char_enum name="Active">
+			<Item Name="Off" />
+			<Item Name="On" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad2288" length="3" />
+		<_field_struct name="Midnight_Light_Parameters">
+			<_field_explanation name="Dynamic/Static Shared Light Parameters" />
+			<_field_string_id name="haloLightNode" />
+			<_field_long_enum name="Type">
+				<Item Name="Omni" />
+				<Item Name="Spot" />
+				<Item Name="Directional" />
+				<Item Name="Planar" />
+				<Item Name="Sun" />
+			</_field_long_enum>
+			<_field_real_rgb_color name="Color" />
+			<_field_real name="Source Energy" />
+			<_field_real name="Baked Indirect Intensity Scalar" />
+			<_field_real name="Dimmer" />
+			<_field_real name="Far Attenuation" />
+			<_field_real name="Near Begin" />
+			<_field_char_enum name="Properties Override Source">
+				<Item Name="None" />
+				<Item Name="Dynamic World State Sun" />
+				<Item Name="Dynamic World State Atmosphere" />
+				<Item Name="Dynamic World State Sky" />
+				<Item Name="Dynamic World State Sun Intensity Only" />
+			</_field_char_enum>
+			<_field_pad name="generated_pade39f" length="3" />
+			<_field_real name="Override Source Intensity Multiplier" />
+			<_field_struct name="Intensity Function">
+				<_field_string_id name="Input Variable" />
+				<_field_string_id name="Range Variable" />
+				<_field_short_enum name="Output Modifier">
+					<Item Name=" " />
+					<Item Name="Plus" />
+					<Item Name="Times" />
+				</_field_short_enum>
+				<_field_pad name="generated_padc7e0" length="2" />
+				<_field_string_id name="Output Modifier Input" />
+				<_field_custom name="Mapping" />
+				<_field_struct name="Mapping">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_tag_reference_64 name="Light Group" />
+			<_field_struct name="Dimmer Function">
+				<_field_string_id name="Input Variable" />
+				<_field_string_id name="Range Variable" />
+				<_field_short_enum name="Output Modifier">
+					<Item Name=" " />
+					<Item Name="Plus" />
+					<Item Name="Times" />
+				</_field_short_enum>
+				<_field_pad name="generated_padc7e0" length="2" />
+				<_field_string_id name="Output Modifier Input" />
+				<_field_custom name="Mapping" />
+				<_field_struct name="Mapping">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_real name="Near Attenuation" />
+			<_field_struct name="Outer Attenuation Function">
+				<_field_string_id name="Input Variable" />
+				<_field_string_id name="Range Variable" />
+				<_field_short_enum name="Output Modifier">
+					<Item Name=" " />
+					<Item Name="Plus" />
+					<Item Name="Times" />
+				</_field_short_enum>
+				<_field_pad name="generated_padc7e0" length="2" />
+				<_field_string_id name="Output Modifier Input" />
+				<_field_custom name="Mapping" />
+				<_field_struct name="Mapping">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_real name="Far Begin" />
+			<_field_real name="Base position modifier for fading" />
+			<_field_real name="Camera Near Distance Fade End" />
+			<_field_real name="Camera Near Distance Fade Start" />
+			<_field_real name="Camera Distance Fade Start" />
+			<_field_real name="Camera Distance Fade End" />
+			<_field_real name="Light Screen Size Fade Start" />
+			<_field_real name="Light Screen Size Fade End" />
+			<_field_real name="Fog Intensity" />
+			<_field_real name="Particle Intensity" />
+			<_field_real name="Minimum Roughness" />
+			<_field_explanation name="Area Lights Parameters" />
+			<_field_real name="Planar Light Width" />
+			<_field_real name="Planar Light Height" />
+			<_field_real name="Area Light Radius" />
+			<_field_real name="Area Light Length" />
+			<_field_explanation name="Shared Spot Parameters" />
+			<_field_real name="Inner Cone Angle" />
+			<_field_real name="Outer Cone Angle" />
+			<_field_struct name="Outer Cone Angle Function">
+				<_field_string_id name="Input Variable" />
+				<_field_string_id name="Range Variable" />
+				<_field_short_enum name="Output Modifier">
+					<Item Name=" " />
+					<Item Name="Plus" />
+					<Item Name="Times" />
+				</_field_short_enum>
+				<_field_pad name="generated_padc7e0" length="2" />
+				<_field_string_id name="Output Modifier Input" />
+				<_field_custom name="Mapping" />
+				<_field_struct name="Mapping">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_long_enum name="Cone Projection Shape">
+				<Item Name="Cone" />
+				<Item Name="Frustum" />
+			</_field_long_enum>
+			<_field_explanation name="Dynamic Only Parameters" />
+			<_field_char_enum name="Static Shadows">
+				<Item Name="Off" />
+				<Item Name="On" />
+			</_field_char_enum>
+			<_field_char_enum name="Dynamic Shadows">
+				<Item Name="Off" />
+				<Item Name="On" />
+			</_field_char_enum>
+			<_field_short_integer name="Static Shadow Resolution" />
+			<_field_short_integer name="Dynamic Shadow Resolution" />
+			<_field_short_integer name="Minimum Static Shadow Resolution" />
+			<_field_short_integer name="Minimum Dynamic Shadow Resolution" />
+			<_field_char_enum name="Enable Static Shadow Caching">
+				<Item Name="Off" />
+				<Item Name="On" />
+			</_field_char_enum>
+			<_field_char_enum name="Enable Dynamic Objects Shadow Caching">
+				<Item Name="Off" />
+				<Item Name="On" />
+			</_field_char_enum>
+			<_field_char_enum name="Composer Shadows">
+				<Item Name="Off" />
+				<Item Name="On" />
+			</_field_char_enum>
+			<_field_char_enum name="Contact Shadows for CVW">
+				<Item Name="Off" />
+				<Item Name="On" />
+			</_field_char_enum>
+			<_field_char_enum name="Contact Shadows for First Person">
+				<Item Name="Off" />
+				<Item Name="On" />
+			</_field_char_enum>
+			<_field_char_enum name="Contact Shadows for Environment">
+				<Item Name="Off" />
+				<Item Name="On" />
+			</_field_char_enum>
+			<_field_real name="Shadow Resolution Distance Scaler" />
+			<_field_real name="Camera Distance Static Shadow + Gobo Fade Start" />
+			<_field_real name="Camera Distance Static Shadow + Gobo Fade End" />
+			<_field_real name="Camera Distance DO Shadow Fade Start" />
+			<_field_real name="Camera Distance DO Shadow Fade End" />
+			<_field_real name="Inner DO Shadow Cone Angle %" />
+			<_field_real name="Outer DO Shadow Cone Angle %" />
+			<_field_real name="DO Shadow Far Attenuation Start %" />
+			<_field_real name="DO Shadow Far Attenuation End %" />
+			<_field_real name="Static Object Shadow LOD Scaler" />
+			<_field_real name="Dynamic Object Shadow LOD Scaler" />
+			<_field_real name="Shadow Near Clip Plane" />
+			<_field_real name="Shadow Far Clip Plane" />
+			<_field_char_enum name="Enable light OBB">
+				<Item Name="Off" />
+				<Item Name="On" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad96ea" length="3" />
+			<_field_real_vector_3d name="OBB Center Offset" />
+			<_field_real_vector_3d name="OBB Scale Factor" />
+			<_field_real_vector_3d name="OBB Orientation Adjust" />
+			<_field_real name="Shadow Bias Offset" />
+			<_field_real name="Shadow Filter Width" />
+			<_field_real name="Minimum Shadow Filter Width" />
+			<_field_real name="PCSS Light Size" />
+			<_field_real name="PCSS Min Filter Size" />
+			<_field_real name="PCSS Max Filter Size" />
+			<_field_char_enum name="Force Forward Lighting">
+				<Item Name="Off" />
+				<Item Name="On" />
+			</_field_char_enum>
+			<_field_char_enum name="Ignore Dynamic Objects">
+				<Item Name="Off" />
+				<Item Name="On" />
+			</_field_char_enum>
+			<_field_byte_flags name="Attenuation flags">
+				<Item Name="Sync Light Energy and Near Attenuation" />
+				<Item Name="Sync Light Energy and Far Attenuation" />
+			</_field_byte_flags>
+			<_field_char_enum name="Specular Contribution">
+				<Item Name="Off" />
+				<Item Name="On" />
+			</_field_char_enum>
+			<_field_char_enum name="Diffuse Contribution">
+				<Item Name="Off" />
+				<Item Name="On" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad4a35" length="1" />
+			<_field_short_integer name="Minimum Gobo Resolution" />
+			<_field_explanation name="Dynamic Gobo" />
+			<_field_tag_reference_64 name="Gobos" />
+			<_field_real_rgb_color name="Target Color" />
+			<_field_real name="destroy light after" />
+			<_field_explanation name="Color Change" />
+			<_field_struct name="Interpolation Function">
+				<_field_string_id name="Input Variable" />
+				<_field_string_id name="Range Variable" />
+				<_field_short_enum name="Output Modifier">
+					<Item Name=" " />
+					<Item Name="Plus" />
+					<Item Name="Times" />
+				</_field_short_enum>
+				<_field_pad name="generated_pad8f6d" length="2" />
+				<_field_string_id name="Output Modifier Input" />
+				<_field_custom name="Mapping" />
+				<_field_struct name="Mapping">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_explanation name="Bungie Parameters" />
+			<_field_long_flags name="flags">
+				<Item Name="dont render splitscreen" />
+				<Item Name="render in multiplayer override" />
+				<Item Name="always on for weapon" />
+				<Item Name="induces translucency in subsurface scattering materials" />
+				<Item Name="ignore optimization and force update every frame" />
+				<Item Name="disable shadow on particles" />
+			</_field_long_flags>
+			<_field_tag_reference_64 name="Lens Flare" />
+			<_field_long_integer name="Light Shadow Priority" />
+			<_field_char_integer name="needs update state" />
+			<_field_char_integer name="needs update bounding sphere" />
+			<_field_pad name="generated_pad6328" length="2" />
+			<_field_long_integer name="tick of last state update" />
+			<_field_long_integer name="tick of last bounding sphere update" />
+			</_field_struct>
+		<_field_block_64 name="EditorMetadata">
+			<_field_long_string name="folder name" />
+			<_field_real_point_3d name="local space pivot point position" />
+			</_field_block_64>
+		<_field_tag_reference_64 name="owner bsp" />
+		<_field_string_id name="owner variant" />
+		<_field_short_integer name="runtime bsp index" />
+		<_field_short_integer name="runtime variant index" />
+		<_field_long_block_index name="editor folder" />
+		<_field_string_id name="module id" />
+		</_field_block_64>
+	<_field_pad name="generated_pad4470" length="4" />
+	</plugin>

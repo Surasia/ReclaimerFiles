@@ -1,0 +1,36 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Damage Parameters">
+		<_field_word_flags name="flags">
+			<Item Name="play lunge explosion on all melee attacks" />
+		</_field_word_flags>
+		<_field_pad name="generated_padd2d1" length="2" />
+		<_field_explanation name="melee damage parameters" />
+		<_field_real_euler_angles_2d name="damage pyramid angles" />
+		<_field_real name="damage pyramid depth" />
+		<_field_real name="damage pyramid depth when lunging" />
+		<_field_real name="maximum lunge range" />
+		<_field_real name="damage lunge explosive depth" />
+		<_field_real name="runtime damage lunge explosive fraction" />
+		<_field_tag_reference_64 name="melee damage" />
+		<_field_tag_reference_64 name="melee response" />
+		<_field_tag_reference_64 name="lunge melee damage" />
+		<_field_tag_reference_64 name="lunge melee response" />
+		<_field_tag_reference_64 name="empty melee damage" />
+		<_field_tag_reference_64 name="empty melee response" />
+		<_field_tag_reference_64 name="clang melee damage" />
+		<_field_tag_reference_64 name="clang melee response" />
+		<_field_tag_reference_64 name="clang melee against melee weapon damage" />
+		<_field_tag_reference_64 name="clang melee against melee weapon damage response" />
+		<_field_tag_reference_64 name="lunge melee explosive damage" />
+		<_field_tag_reference_64 name="melee attack effect" />
+		<_field_tag_reference_64 name="biped melee hit effect" />
+		</_field_block_64>
+	<_field_string_id name="Animation Set" />
+	</plugin>

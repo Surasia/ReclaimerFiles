@@ -1,0 +1,21 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="OBJECT" />
+	<_field_struct name="object">
+		<_field_tag_reference_64 name="Object Definition" />
+		<_field_string_id name="Variant name" />
+		<_field_string_id name="Style Id" />
+		<_field_tag_reference_64 name="frame override" />
+		<_field_custom name="Customization" />
+		<_field_string_id name="customization set override" />
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_pad name="generated_pad01af" length="4" />
+	</plugin>

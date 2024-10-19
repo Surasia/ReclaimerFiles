@@ -1,0 +1,55 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Child Emblem Tags">
+		<_field_tag_reference_64 name="Emblem" />
+		</_field_block_64>
+	<_field_block_64 name="Emblems">
+		<_field_string_id name="Name" />
+		<_field_tag_reference_64 name="SVG" />
+		<_field_tag_reference_64 name="SVG Geometry" />
+		<_field_tag_reference_64 name="SVGOutput" />
+		<_field_real name="Pixel Tolerance for de-duplication" />
+		</_field_block_64>
+	<_field_block_64 name="Shaders">
+		<_field_string_id name="Name" />
+		<_field_tag_reference_64 name="Shader" />
+		</_field_block_64>
+	<_field_block_64 name="Coatings">
+		<_field_string_id name="Name" />
+		<_field_short_block_index name="Shader" />
+		<_field_pad name="generated_pad0e9c" length="2" />
+		<_field_real_rgb_color name="Text Color" />
+		<_field_block_64 name="Swatches">
+			<_field_tag_reference_64 name="Swatch" />
+			<_field_string_id name="Color" />
+			<_field_char_enum name="Roughness">
+				<Item Name="-100%" />
+				<Item Name="-75%" />
+				<Item Name="-50%" />
+				<Item Name="-25%" />
+				<Item Name="Default" />
+				<Item Name="+25%" />
+				<Item Name="+50%" />
+				<Item Name="+75%" />
+				<Item Name="+100%" />
+			</_field_char_enum>
+			<_field_char_enum name="Visibility">
+				<Item Name="Swatch Visible" />
+				<Item Name="Swatch Not Visible" />
+			</_field_char_enum>
+			<_field_char_enum name="Clipping">
+				<Item Name="Clipping Enabled" />
+				<Item Name="Clipping Disabled" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad2e68" length="1" />
+			<_field_real_vector_2d name="Scale" />
+			<_field_real_vector_2d name="Offset" />
+			</_field_block_64>
+		</_field_block_64>
+	</plugin>

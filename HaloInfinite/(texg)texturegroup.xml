@@ -1,0 +1,55 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_word_flags name="options">
+		<Item Name="Array Texture Mip Skip" />
+		<Item Name="Use Required Resolution" />
+		<Item Name="Load Skipped Mips" />
+	</_field_word_flags>
+	<_field_pad name="generated_pada88a" length="2" />
+	<_field_explanation name="TEXTURE GROUPS" />
+	<_field_block_64 name="settings">
+		<_field_string_id name="name" />
+		<_field_string_id name="editor group" />
+		<_field_explanation name="Mips to Drop" />
+		<_field_struct name="mip settings">
+			<_field_long_integer name="Low" />
+			<_field_long_integer name="Medium" />
+			<_field_long_integer name="High" />
+			<_field_long_integer name="Ultra" />
+			<_field_real name="2 Player Splitscreen" />
+			<_field_real name="3 Player Splitscreen" />
+			<_field_real name="4 Player Splitscreen" />
+			</_field_struct>
+		<_field_explanation name="Required Resolution" />
+		<_field_char_enum name="Use Required Resolution Policy">
+			<Item Name="Allow Spec Control Adjustment Of Required Resolution" />
+			<Item Name="Force Use Required Resolution" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad6823" length="3" />
+		<_field_struct name="required resolution settings">
+			<_field_long_integer name="Low" />
+			<_field_long_integer name="Medium" />
+			<_field_long_integer name="High" />
+			<_field_long_integer name="Ultra" />
+			<_field_real name="2 Player Splitscreen" />
+			<_field_real name="3 Player Splitscreen" />
+			<_field_real name="4 Player Splitscreen" />
+			</_field_struct>
+		<_field_explanation name="Minimum Resolution" />
+		<_field_struct name="minimum resolution settings">
+			<_field_long_integer name="Low" />
+			<_field_long_integer name="Medium" />
+			<_field_long_integer name="High" />
+			<_field_long_integer name="Ultra" />
+			<_field_real name="2 Player Splitscreen" />
+			<_field_real name="3 Player Splitscreen" />
+			<_field_real name="4 Player Splitscreen" />
+			</_field_struct>
+		</_field_block_64>
+	</plugin>

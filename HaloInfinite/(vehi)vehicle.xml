@@ -1,0 +1,4079 @@
+<plugin>
+	<_field_struct name="unit">
+		<_field_struct name="object">
+			<_field_struct name="AnyTag">
+				<_field_int64_integer name="vtable space" />
+				<_field_struct name="internal struct">
+					<_field_long_integer name="global tag ID" />
+					<_field_pad name="local tag handle" length="4" />
+					</_field_struct>
+				</_field_struct>
+			<_field_custom name="OBJECT" />
+			<_field_short_integer name="runtime object type" />
+			<_field_char_enum name="Nav Mesh Cutting">
+				<Item Name="Default" />
+				<Item Name="Cut" />
+				<Item Name="NotCut" />
+			</_field_char_enum>
+			<_field_char_enum name="Nav Mesh Cutting mode">
+				<Item Name="Default" />
+				<Item Name="Full" />
+				<Item Name="Convex" />
+				<Item Name="OBB" />
+			</_field_char_enum>
+			<_field_real name="Nav Mesh Silhouette Expansion" />
+			<_field_char_enum name="navmesh collision node opt in">
+				<Item Name="Default" />
+				<Item Name="Yes" />
+				<Item Name="No" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad19c8" length="3" />
+			<_field_custom name="Nav Dangerous Objects" />
+			<_field_explanation name="Avoidance" />
+			<_field_real name="Avoidance Multiplier" />
+			<_field_real name="Avoidance Radius" />
+			<_field_custom name="" />
+			<_field_long_flags name="object flags">
+				<Item Name="always render in floating shadow" />
+				<Item Name="preserves initial damage owner" />
+				<Item Name="not a pathfinding obstacle(deprecated)" />
+				<Item Name="extension of parent" />
+				<Item Name="does not cause collision damage" />
+				<Item Name="early mover" />
+				<Item Name="early mover localized physics" />
+				<Item Name="object scales attachments" />
+				<Item Name="non physical in map editor" />
+				<Item Name="effects created by this object do not spawn objects in multiplayer" />
+				<Item Name="does not collide with camera" />
+				<Item Name="force collide with camera" />
+				<Item Name="damage not blocked by obstructions" />
+				<Item Name="early mover localize projectiles" />
+				<Item Name="grab parent object in forge editing" />
+				<Item Name="Hoistable from stand" />
+				<Item Name="Destroyable obstacle" />
+				<Item Name="vaultable" />
+				<Item Name="collides with own projectiles" />
+				<Item Name="object rejects dynamic decals" />
+				<Item Name="Client side only" />
+				<Item Name="Wake when visible to player" />
+				<Item Name="Sleep when not visible to player" />
+				<Item Name="Does not accept active camouflage" />
+				<Item Name="Killed on first contact or damage" />
+				<Item Name="Self-destruct timer kills instead of destroying" />
+				<Item Name="is permeable to projectiles" />
+				<Item Name="Destroy on player contact" />
+				<Item Name="Use the new action and animation system" />
+				<Item Name="Allow delayed placement and deletion" />
+			</_field_long_flags>
+			<_field_real name="bounding radius" />
+			<_field_real_point_3d name="bounding offset" />
+			<_field_real name="horizontal acceleration scale" />
+			<_field_real name="vertical acceleration scale" />
+			<_field_real name="angular acceleration scale" />
+			<_field_char_enum name="lightmap shadow mode">
+				<Item Name="default" />
+				<Item Name="never" />
+				<Item Name="always" />
+				<Item Name="blur" />
+			</_field_char_enum>
+			<_field_char_enum name="multiple airprobe mode">
+				<Item Name="default" />
+				<Item Name="always" />
+			</_field_char_enum>
+			<_field_char_enum name="water density">
+				<Item Name="default" />
+				<Item Name="super_floater" />
+				<Item Name="floater" />
+				<Item Name="neutral" />
+				<Item Name="sinker" />
+				<Item Name="super_sinker" />
+				<Item Name="none" />
+			</_field_char_enum>
+			<_field_custom name="Streaming" />
+			<_field_explanation name="Streaming" />
+			<_field_byte_flags name="Streaming control flags">
+				<Item Name="High priority" />
+				<Item Name="Apply delay on stream out" />
+				<Item Name="Ignore overlapping active objects for collision" />
+			</_field_byte_flags>
+			<_field_custom name="" />
+			<_field_struct name="impact audio">
+				<_field_custom name="IMPACT AUDIO" />
+				<_field_real name="small impact minimum speed" />
+				<_field_real name="medium impact minimum speed" />
+				<_field_real name="large impact minimum speed" />
+				<_field_real name="large impact maximum speed" />
+				<_field_custom name="" />
+				</_field_struct>
+			<_field_dword_integer name="runtime flags" />
+			<_field_block_64 name="source sidecar">
+				<_field_long_string name="sidecar path" />
+				</_field_block_64>
+			<_field_string_id name="default model variant" />
+			<_field_string_id name="default style id" />
+			<_field_tag_reference_64 name="model" />
+			<_field_tag_reference_64 name="asset" />
+			<_field_tag_reference_64 name="frame" />
+			<_field_tag_reference_64 name="crate object" />
+			<_field_explanation name="Damage Source" />
+			<_field_struct name="damageSource">
+				<_field_string_id name="Damage Source Name" />
+				</_field_struct>
+			<_field_real name="navpoint vertical offset" />
+			<_field_explanation name="only set this tag if you want to override the default collision damage values in globals.globals" />
+			<_field_tag_reference_64 name="collision damage" />
+			<_field_block_64 name="early mover OBB">
+				<_field_string_id name="node name" />
+				<_field_long_integer name="runtime node index" />
+				<_field_real name="x0" />
+				<_field_real name="x1" />
+				<_field_real name="y0" />
+				<_field_real name="y1" />
+				<_field_real name="z0" />
+				<_field_real name="z1" />
+				<_field_real_euler_angles_3d name="angles" />
+				</_field_block_64>
+			<_field_tag_reference_64 name="creation effect" />
+			<_field_custom name="material effect references" />
+			<_field_explanation name="Material Effects Section" />
+			<_field_tag_reference_64 name="material effects" />
+			<_field_tag_reference_64 name="visual material effects" />
+			<_field_tag_reference_64 name="sound material effects" />
+			<_field_custom name="" />
+			<_field_tag_reference_64 name="melee sound" />
+			<_field_real name="Damage Shader Min Vitality" />
+			<_field_real name="Damage Shader Intensity Scalar" />
+			<_field_real name="kill on first contact or damage after time" />
+			<_field_real name="self-destruct time" />
+			<_field_real name="self-destruct time max" />
+			<_field_block_64 name="ai properties">
+				<_field_long_flags name="ai flags">
+					<Item Name="detroyable cover" />
+					<Item Name="pathfinding ignore when dead" />
+					<Item Name="dynamic cover" />
+					<Item Name="non flight-blocking" />
+					<Item Name="dynamic cover from centre" />
+					<Item Name="has corner markers" />
+					<Item Name="idle when flying" />
+					<Item Name="consider for interaction" />
+					<Item Name="leap on cover target" />
+				</_field_long_flags>
+				<_field_string_id name="ai type name" />
+				<_field_string_id name="interaction name" />
+				<_field_short_enum name="ai size">
+					<Item Name="default" />
+					<Item Name="tiny" />
+					<Item Name="small" />
+					<Item Name="medium" />
+					<Item Name="large" />
+					<Item Name="immobile" />
+				</_field_short_enum>
+				<_field_short_enum name="leap jump speed">
+					<Item Name="NONE" />
+					<Item Name="very short" />
+					<Item Name="short" />
+					<Item Name="medium short" />
+					<Item Name="medium long" />
+					<Item Name="long" />
+					<Item Name="very long" />
+					<Item Name="infinite" />
+				</_field_short_enum>
+				<_field_real name="unattached damage modifier" />
+				<_field_byte_flags name="Bot markup flags">
+					<Item Name="Interact object" />
+					<Item Name="Objective pickup" />
+					<Item Name="Deliver location" />
+					<Item Name="Ammo replenisher" />
+					<Item Name="Health replenisher" />
+				</_field_byte_flags>
+				<_field_pad name="generated_pad9518" length="3" />
+				<_field_explanation name="Heat Override" />
+				<_field_block_64 name="override heat generated per round">
+					<_field_real name="heat generated per round override (easy)" />
+					<_field_real name="heat generated per round override (normal)" />
+					<_field_real name="heat generated per round override (heroic)" />
+					<_field_real name="heat generated per round override (legendary)" />
+					</_field_block_64>
+				<_field_real name="Actor LOD cost" />
+				</_field_block_64>
+			<_field_block_64 name="functions">
+				<_field_long_flags name="flags">
+					<Item Name="invert" />
+					<Item Name="mapping does not controls active" />
+					<Item Name="always active" />
+					<Item Name="random time offset" />
+					<Item Name="always exports value" />
+					<Item Name="turn off with uses magnitude" />
+					<Item Name="cannot be predicted" />
+				</_field_long_flags>
+				<_field_string_id name="import name" />
+				<_field_real name="no import default" />
+				<_field_string_id name="export name" />
+				<_field_string_id name="turn off with" />
+				<_field_string_id name="ranged interpolation name" />
+				<_field_real name="min value" />
+				<_field_real name="max value" />
+				<_field_custom name="default function" />
+				<_field_struct name="default function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				<_field_string_id name="scale by" />
+				<_field_char_enum name="interpolation point of view">
+					<Item Name="any" />
+					<Item Name="first person" />
+					<Item Name="third person" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad73a4" length="3" />
+				<_field_block_64 name="interpolation">
+					<_field_long_enum name="interpolation mode">
+						<Item Name="constant velocity" />
+						<Item Name="linear acceleration" />
+						<Item Name="damped spring" />
+						<Item Name="fractional" />
+					</_field_long_enum>
+					<_field_real name="linear travel time" />
+					<_field_real name="acceleration" />
+					<_field_explanation name="springs" />
+					<_field_real name="spring k" />
+					<_field_real name="spring c" />
+					<_field_real name="fraction" />
+					</_field_block_64>
+				<_field_long_block_index name="runtime interpolator index" />
+				</_field_block_64>
+			<_field_long_integer name="num predicted runtime interpolator functions" />
+			<_field_block_64 name="runtime interpolator functions">
+				<_field_long_integer name="runtime interpolator to object function mapping" />
+				</_field_block_64>
+			<_field_block_64 name="function switches">
+				<_field_string_id name="switch function name" />
+				<_field_string_id name="export name" />
+				<_field_block_64 name="switched functions">
+					<_field_real_bounds name="selection bounds" />
+					<_field_string_id name="function name" />
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="functions forwarded to parent">
+				<_field_explanation name="Object Function Forwarding" />
+				<_field_string_id name="function to forward" />
+				</_field_block_64>
+			<_field_word_flags name="Ammo Refill Flags">
+				<Item Name="None" />
+				<Item Name="Kinetic" />
+				<Item Name="Plasma" />
+				<Item Name="Hard light" />
+				<Item Name="Shock" />
+				<Item Name="Power weapon" />
+			</_field_word_flags>
+			<_field_byte_flags name="Ammo Refill Behavior Flags">
+				<Item Name="No automatic refill" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad33a9" length="1" />
+			<_field_block_64 name="Ammo Refill Variant Flags">
+				<_field_string_id name="variant name" />
+				<_field_word_flags name="Ammo Refill Flags">
+					<Item Name="None" />
+					<Item Name="Kinetic" />
+					<Item Name="Plasma" />
+					<Item Name="Hard light" />
+					<Item Name="Shock" />
+					<Item Name="Power weapon" />
+				</_field_word_flags>
+				<_field_byte_flags name="Ammo Refill Behavior Flags">
+					<Item Name="No automatic refill" />
+				</_field_byte_flags>
+				<_field_pad name="generated_pad055c" length="1" />
+				</_field_block_64>
+			<_field_long_flags name="object secondary flags">
+				<Item Name="does not affect projectile aiming" />
+				<Item Name="never delete on bsp transition" />
+				<Item Name="Aim assist raycast does not ignore parents" />
+				<Item Name="Provides an override motion tracker blip sprite" />
+				<Item Name="Use the new animation system only" />
+				<Item Name="Detach children when the destroyed" />
+				<Item Name="Force projectile overpenetration" />
+				<Item Name="Use inertialization" />
+				<Item Name="Cannot be grappled" />
+				<Item Name="Can be pulled to the player by the grapple hook" />
+				<Item Name="Damage Effect Sounds - Play Ineffective Hit" />
+				<Item Name="Always forward unhandled object functions to the parent" />
+				<Item Name="is valid submunition target" />
+				<Item Name="allow repeated bouncing projectile overpenetration" />
+				<Item Name="inconsequential target" />
+				<Item Name="active camo always on" />
+				<Item Name="object is invisible, even attachments" />
+				<Item Name="navmesh collision node opt in" />
+				<Item Name="Disable CVW Lighting" />
+				<Item Name="All Markers Use Unique Acoustic Sound Sources" />
+				<Item Name="Damage ignores owning unit" />
+				<Item Name="Enable doppler audio" />
+				<Item Name="blocks AOE if the AOE's epicenter is blocked" />
+				<Item Name="Enable Damage Hit Ticks" />
+				<Item Name="Blocks grapple aim assist" />
+				<Item Name="Send Damage Aftermath to Parent" />
+				<Item Name="Pre size attachments for customization" />
+				<Item Name="invisible to melee" />
+			</_field_long_flags>
+			<_field_custom name="Customization" />
+			<_field_string_id name="customization set" />
+			<_field_custom name="" />
+			<_field_block_64 name="attachments">
+				<_field_string_id name="name" />
+				<_field_tag_reference_64 name="type" />
+				<_field_tag_reference_64 name="tag graph output" />
+				<_field_string_id name="output node name" />
+				<_field_block_64 name="tag graph float params">
+					<_field_string_id name="name" />
+					<_field_real name="value" />
+					</_field_block_64>
+				<_field_block_64 name="tag graph bool params">
+					<_field_string_id name="name" />
+					<_field_byte_flags name="value">
+						<Item Name="value" />
+					</_field_byte_flags>
+					<_field_pad name="generated_pad0473" length="3" />
+					</_field_block_64>
+				<_field_block_64 name="taggraph instance variables - strings">
+					<_field_string_id name="name" />
+					<_field_string_id name="value" />
+					</_field_block_64>
+				<_field_block_64 name="taggraph instance variables - tag references">
+					<_field_string_id name="name" />
+					<_field_tag_reference_64 name="value" />
+					</_field_block_64>
+				<_field_tag_reference_64 name="override type" />
+				<_field_explanation name="variant names" />
+				<_field_block_64 name="variant names">
+					<_field_string_id name="variant name" />
+					</_field_block_64>
+				<_field_custom name="" />
+				<_field_string_id name="marker" />
+				<_field_char_enum name="change color">
+					<Item Name="none" />
+					<Item Name="primary" />
+					<Item Name="secondary" />
+					<Item Name="tertiary" />
+					<Item Name="quaternary" />
+				</_field_char_enum>
+				<_field_byte_flags name="flags">
+					<Item Name="always create" />
+					<Item Name="effect size scale from object scale" />
+					<Item Name="update on create" />
+					<Item Name="always update" />
+				</_field_byte_flags>
+				<_field_pad name="generated_padbd3f" length="2" />
+				<_field_string_id name="primary scale" />
+				<_field_string_id name="secondary scale" />
+				</_field_block_64>
+			<_field_block_64 name="indirect lighting data">
+				<_field_string_id name="Name" />
+				<_field_block_64 name="Variant names">
+					<_field_string_id name="variant name" />
+					</_field_block_64>
+				<_field_tag_reference_64 name="Object Lightmap" />
+				<_field_block_64 name="Object Cubemap set">
+					<_field_string_id name="Name" />
+					<_field_long_integer name="Guid" />
+					<_field_long_flags name="Flags">
+						<Item Name="Enable Intensity Correction" />
+						<Item Name="Capture With Effects" />
+						<Item Name="Affects Adjacent Bsps" />
+						<Item Name="Capture Dynamic Objects" />
+					</_field_long_flags>
+					<_field_struct name="Dumpling">
+						<_field_block_64 name="inner points">
+							<_field_real_point_3d name="position" />
+							</_field_block_64>
+						<_field_block_64 name="outer points">
+							<_field_real_point_3d name="position" />
+							</_field_block_64>
+						<_field_real name="height" />
+						<_field_real name="sink" />
+						<_field_real name="inner value" />
+						<_field_real name="outer value" />
+						<_field_real_point_3d name="center point" />
+						<_field_real name="trivial cull radius squared" />
+						<_field_real name="bound volume" />
+						</_field_struct>
+					<_field_tag_reference_64 name="Cubemap Bitmap" />
+					<_field_short_enum name="Enable Parallax Correction">
+						<Item Name="Off" />
+						<Item Name="On" />
+					</_field_short_enum>
+					<_field_short_integer name="Cubemap Volume Priority" />
+					<_field_real_point_3d name="Cubemap Origin" />
+					<_field_real_vector_3d name="Depth Positive" />
+					<_field_real_vector_3d name="Depth Negative" />
+					<_field_short_enum name="Active Volume">
+						<Item Name="Off" />
+						<Item Name="On" />
+					</_field_short_enum>
+					<_field_short_enum name="Maximum cubemap size">
+						<Item Name="128x128" />
+						<Item Name="256x256" />
+						<Item Name="512x512" />
+					</_field_short_enum>
+					<_field_real_point_3d name="Intensity" />
+					<_field_real name="Self-illum Scale Down" />
+					<_field_block_64 name="EditorMetadata">
+						<_field_long_string name="folder name" />
+						<_field_real_point_3d name="local space pivot point position" />
+						</_field_block_64>
+					<_field_tag_reference_64 name="owner bsp" />
+					<_field_string_id name="owner variant" />
+					<_field_short_integer name="runtime bsp index" />
+					<_field_short_integer name="runtime variant index" />
+					<_field_real name="Blend Distance" />
+					<_field_long_enum name="Cubemap Volume Type">
+						<Item Name="Prism" />
+						<Item Name="Sphere" />
+					</_field_long_enum>
+					<_field_real name="Orientation" />
+					<_field_tag_reference_64 name="Cubemap Depth Bitmap" />
+					<_field_real name="Depth Blend Range" />
+					<_field_real name="Intensity Scale" />
+					<_field_short_enum name="Tintable">
+						<Item Name="Off" />
+						<Item Name="On" />
+					</_field_short_enum>
+					<_field_short_enum name="Runtime Force Add Inactive">
+						<Item Name="Off" />
+						<Item Name="On" />
+					</_field_short_enum>
+					<_field_real name="Relevancy Radius" />
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="hull surfaces">
+				<_field_word_flags name="flags">
+					<Item Name="works on land" />
+					<Item Name="effects only" />
+				</_field_word_flags>
+				<_field_pad name="generated_pad978b" length="2" />
+				<_field_custom name="" />
+				<_field_string_id name="marker name" />
+				<_field_real name="radius" />
+				<_field_block_64 name="drag">
+					<_field_string_id name="material" />
+					<_field_struct name="drag">
+						<_field_custom name="Pressure" />
+						<_field_struct name="pressure">
+							<_field_custom name="velocity to force" />
+							<_field_struct name="velocity to pressure">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							<_field_real name="max velocity" />
+							</_field_struct>
+						<_field_custom name="" />
+						<_field_custom name="Suction" />
+						<_field_struct name="suction">
+							<_field_custom name="velocity to force" />
+							<_field_struct name="velocity to pressure">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							<_field_real name="max velocity" />
+							</_field_struct>
+						<_field_custom name="" />
+						<_field_real name="linear damping" />
+						<_field_real name="angular damping" />
+						</_field_struct>
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="jetwash">
+				<_field_custom name="" />
+				<_field_string_id name="marker name" />
+				<_field_real name="radius" />
+				<_field_long_integer name="maximum traces" />
+				<_field_real name="maximum emission length" />
+				<_field_angle_bounds name="trace yaw angle" />
+				<_field_angle_bounds name="trace pitch angle" />
+				<_field_real name="particle offset" />
+				</_field_block_64>
+			<_field_block_64 name="widgets">
+				<_field_tag_reference_64 name="type" />
+				</_field_block_64>
+			<_field_block_64 name="change colors">
+				<_field_block_64 name="initial permutations">
+					<_field_real name="weight" />
+					<_field_real_rgb_color name="color lower bound" />
+					<_field_real_rgb_color name="color upper bound" />
+					<_field_string_id name="variant name" />
+					</_field_block_64>
+				<_field_block_64 name="functions">
+					<_field_long_flags name="scale flags">
+						<Item Name="blend in hsv" />
+						<Item Name="...more colors" />
+					</_field_long_flags>
+					<_field_real_rgb_color name="color lower bound" />
+					<_field_real_rgb_color name="color upper bound" />
+					<_field_string_id name="darken by" />
+					<_field_string_id name="scale by" />
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="multiplayer object">
+				<_field_explanation name="TYPE AND FLAGS" />
+				<_field_char_enum name="type">
+					<Item Name="ordinary" />
+					<Item Name="weapon" />
+					<Item Name="grenade" />
+					<Item Name="projectile" />
+					<Item Name="powerup" />
+					<Item Name="equipment" />
+					<Item Name="ammo pack" />
+					<Item Name="light land vehicle" />
+					<Item Name="heavy land vehicle" />
+					<Item Name="flying vehicle" />
+					<Item Name="turret" />
+					<Item Name="device" />
+					<Item Name="dispenser" />
+					<Item Name="teleporter 2way" />
+					<Item Name="teleporter sender" />
+					<Item Name="teleporter receiver" />
+					<Item Name="player spawn location" />
+					<Item Name="player respawn zone" />
+					<Item Name="named location area" />
+					<Item Name="danger zone" />
+					<Item Name="safe volume" />
+					<Item Name="kill volume" />
+					<Item Name="cinematic camera" />
+					<Item Name="trait zone" />
+					<Item Name="powerup pad - deprecated" />
+					<Item Name="weapon pad" />
+					<Item Name="light" />
+					<Item Name="jumbotron" />
+					<Item Name="man cannon" />
+					<Item Name="cinematic marker" />
+					<Item Name="script brain" />
+					<Item Name="static io" />
+					<Item Name="fx" />
+					<Item Name="bot navigation marker" />
+					<Item Name="jump hint volume" />
+					<Item Name="cubemap volume" />
+					<Item Name="navgenerator volume" />
+					<Item Name="navcutter volume" />
+					<Item Name="light probe volume" />
+					<Item Name="AI spawn point" />
+					<Item Name="AI zone" />
+					<Item Name="AI phantom spawn point" />
+					<Item Name="AI droppod spawn point" />
+				</_field_char_enum>
+				<_field_byte_flags name="teleporter passability">
+					<Item Name="disallow players" />
+					<Item Name="allow light land vehicles" />
+					<Item Name="allow heavy land vehicles" />
+					<Item Name="allow flying vehicles" />
+					<Item Name="allow projectiles" />
+				</_field_byte_flags>
+				<_field_char_enum name="spawn timer type">
+					<Item Name="starts on death" />
+					<Item Name="starts on disturbance" />
+				</_field_char_enum>
+				<_field_pad name="generated_padd1ba" length="1" />
+				<_field_short_integer name="number of fx color overrides" />
+				<_field_pad name="generated_pad1e6f" length="2" />
+				<_field_real name="starting fx scale (for Forge Placements)" />
+				<_field_explanation name="GOAL AND RESPAWN ZONE OBJECT BOUNDARY" />
+				<_field_real name="boundary width/radius" />
+				<_field_real name="boundary box length" />
+				<_field_real name="boundary +height" />
+				<_field_real name="boundary -height" />
+				<_field_char_enum name="boundary shape">
+					<Item Name="unused" />
+					<Item Name="sphere" />
+					<Item Name="cylinder" />
+					<Item Name="box" />
+				</_field_char_enum>
+				<_field_pad name="pad_shape1" length="1" />
+				<_field_pad name="pad_shape2" length="2" />
+				<_field_explanation name="SPAWNING DATA" />
+				<_field_short_integer name="default spawn time" />
+				<_field_short_integer name="default abandonment time" />
+				<_field_long_flags name="flags">
+					<Item Name="Only render if editable" />
+					<Item Name="DEPRECATED phased physics in forge" />
+					<Item Name="valid initial player spawn" />
+					<Item Name="fixed boundary orientation" />
+					<Item Name="candy monitor should ignore" />
+					<Item Name="inherit owning team color" />
+					<Item Name="boundary volume doesn't kill immediately" />
+					<Item Name="Only collision if editable" />
+					<Item Name="Only physics if editable" />
+					<Item Name="Force render in Forge" />
+					<Item Name="respawn player spawn" />
+					<Item Name="fallback player spawn" />
+					<Item Name="jump hint volume is one-way" />
+				</_field_long_flags>
+				<_field_explanation name="RESPAWN ZONE DATA" />
+				<_field_real name="normal weight" />
+				<_field_block_64 name="falloff function">
+					<_field_struct name="function">
+						<_field_custom name="function" />
+						<_field_struct name="function">
+							<_field_custom name="" />
+							<_field_data_64 name="data" />
+							<_field_custom name="" />
+							</_field_struct>
+						</_field_struct>
+					</_field_block_64>
+				<_field_explanation name="MARKER DATA" />
+				<_field_custom name="" />
+				<_field_string_id name="boundary center marker" />
+				<_field_custom name="" />
+				<_field_string_id name="spawned object marker name" />
+				<_field_explanation name="SPAWNED OBJECT" />
+				<_field_tag_reference_64 name="spawned object" />
+				<_field_string_id name="NYI boundary material" />
+				<_field_explanation name="BOUNDARY SHADER - DEFAULT" />
+				<_field_tag_reference_64 name="boundary standard shader" />
+				<_field_explanation name="BOUNDARY SHADER - SPHERE" />
+				<_field_tag_reference_64 name="sphere standard shader" />
+				<_field_explanation name="BOUNDARY SHADER - CYLINDER" />
+				<_field_tag_reference_64 name="cylinder standard shader" />
+				<_field_explanation name="BOUNDARY SHADER - BOX" />
+				<_field_tag_reference_64 name="box standard shader" />
+				<_field_explanation name="FORGE DATA" />
+				<_field_word_flags name="Forge Property Flags">
+					<Item Name="Disable yaw" />
+					<Item Name="Can Only Be Rotated On Yaw" />
+					<Item Name="Allow In Game Variant Toggle" />
+					<Item Name="Disable primary color change" />
+					<Item Name="Disable secondary color change" />
+					<Item Name="Disable tertiary color change" />
+					<Item Name="Disable normal physics" />
+					<Item Name="Disable fixed physics" />
+					<Item Name="Disable phased physics" />
+					<Item Name="Hide top and bottom of boundary" />
+					<Item Name="Boundary height scales evenly" />
+				</_field_word_flags>
+				<_field_char_enum name="Default Physics Type">
+					<Item Name="Normal" />
+					<Item Name="Fixed" />
+					<Item Name="Phased" />
+					<Item Name="ProjectileOnly" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad6b24" length="1" />
+				<_field_string_id name="Default Primary Color" />
+				<_field_string_id name="Default Secondary Color" />
+				<_field_string_id name="Default Tertiary Color" />
+				<_field_byte_integer name="Default Primary Glossiness" />
+				<_field_byte_integer name="Default Secondary Glossiness" />
+				<_field_byte_integer name="Default Tertiary Glossiness" />
+				<_field_pad name="generated_padb7d9" length="1" />
+				<_field_string_id name="Default Label 1" />
+				<_field_string_id name="Default Label 2" />
+				<_field_string_id name="Default Label 3" />
+				<_field_string_id name="Default Label 4" />
+				<_field_pad name="generated_pad048e" length="4" />
+				<_field_int64_integer name="m_defaultBoundaryPipelineState" />
+				<_field_int64_integer name="m_sphereBoundaryPipelineStates" />
+				<_field_int64_integer name="m_cylinderBoundaryPipelineStates" />
+				<_field_int64_integer name="m_boxBoundaryPipelineStates" />
+				<_field_real name="Callout Radius" />
+				<_field_char_enum name="Hint Volume Type">
+					<Item Name="None" />
+					<Item Name="Jump" />
+					<Item Name="Force Walk" />
+					<Item Name="Force Movement" />
+					<Item Name="Vehicle" />
+					<Item Name="Crouch" />
+				</_field_char_enum>
+				<_field_char_enum name="Script Brain Type">
+					<Item Name="Map Script Brain" />
+					<Item Name="Mode Script Brain" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad5143" length="2" />
+				</_field_block_64>
+			<_field_block_64 name="Forge data">
+				<_field_tag_reference_64 name="Palette" />
+				<_field_string_id name="Name" />
+				<_field_string_id name="Description" />
+				<_field_real name="Placement Priority" />
+				<_field_string_id name="Variant Name" />
+				<_field_tag_reference_64 name="Configuration" />
+				<_field_real_vector_3d name="Starting yaw/pitch/roll" />
+				</_field_block_64>
+			<_field_tag_reference_64 name="simulation_interpolation" />
+			<_field_tag_reference_64 name="authority trust settings" />
+			<_field_block_64 name="spawn effects">
+				<_field_explanation name="Spawn Effects" />
+				<_field_tag_reference_64 name="multiplayer spawn effect" />
+				<_field_tag_reference_64 name="campaign spawn effect" />
+				</_field_block_64>
+			<_field_block_64 name="model dissolve data">
+				<_field_tag_reference_64 name="model dissolve data" />
+				</_field_block_64>
+			<_field_long_string name="class name" />
+			<_field_block_64 name="script tagalongs">
+				<_field_tag_reference_64 name="reference" />
+				</_field_block_64>
+			<_field_tag_reference_64 name="prototype script" />
+			<_field_explanation name="Object Abandoment" />
+			<_field_struct name="object abandonment">
+				<_field_real name="Vitality Limit To Start Countdown" />
+				<_field_real name="Countdown Time In Seconds" />
+				<_field_byte_flags name="flags">
+					<Item Name="Enable In Multiplayer" />
+					<Item Name="Enable In Single Player" />
+				</_field_byte_flags>
+				<_field_pad name="generated_pade8bf" length="3" />
+				</_field_struct>
+			<_field_block_64 name="Designer Metadata">
+				<_field_string_id name="meta label" />
+				</_field_block_64>
+			<_field_explanation name="Object Function Smoothing" />
+			<_field_block_64 name="Object Sound RTPCs">
+				<_field_long_block_index name="Attachment Index" />
+				<_field_string_id name="Function" />
+				<_field_string_id name="RTPC Name" />
+				<_field_long_integer name="RTPC name hash value" />
+				</_field_block_64>
+			<_field_block_64 name="Object Sound Sweeteners">
+				<_field_string_id name="Function" />
+				<_field_tag_reference_64 name="sound" />
+				<_field_real name="Switch point" />
+				<_field_long_integer name="Mode" />
+				</_field_block_64>
+			<_field_string_id name="Audio acoustics root marker override" />
+			<_field_real name="Audio Acoustics Transparency" />
+			<_field_block_64 name="Object function smoothing">
+				<_field_string_id name="id" />
+				<_field_string_id name="alias of" />
+				<_field_real_fraction name="smoothing factor" />
+				</_field_block_64>
+			<_field_char_enum name="Animated mesh animation type">
+				<Item Name="None" />
+				<Item Name="One Time" />
+				<Item Name="Looping" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad805e" length="3" />
+			<_field_real name="Placement cost multiplier" />
+			<_field_tag_reference_64 name="Trigger volume component info" />
+			<_field_block_64 name="Tracking Info">
+				<_field_explanation name="Map these settings to a ping type" />
+				<_field_byte_flags name="flags">
+					<Item Name="trackable" />
+					<Item Name="enabled by default" />
+					<Item Name="outline" />
+					<Item Name="immediate response" />
+					<Item Name="follow offscreen" />
+					<Item Name="do not track children" />
+					<Item Name="do not outline children" />
+				</_field_byte_flags>
+				<_field_char_enum name="ping type">
+					<Item Name="active" />
+					<Item Name="passive" />
+					<Item Name="custom active" />
+					<Item Name="target marking" />
+				</_field_char_enum>
+				<_field_char_enum name="team visibility">
+					<Item Name="visible to everyone" />
+					<Item Name="hidden from enemies" />
+					<Item Name="hidden from friends" />
+				</_field_char_enum>
+				<_field_custom name="Misc" />
+				<_field_char_enum name="priority">
+					<Item Name="critical" />
+					<Item Name="high" />
+					<Item Name="normal" />
+					<Item Name="low" />
+				</_field_char_enum>
+				<_field_custom name="" />
+				<_field_string_id name="ping group" />
+				<_field_custom name="Nav Point" />
+				<_field_string_id name="nav point screen" />
+				<_field_string_id name="nav point label" />
+				<_field_real name="nav point vertical offset" />
+				<_field_custom name="" />
+				<_field_explanation name="Range Override" />
+				<_field_real name="range" />
+				<_field_custom name="Effects" />
+				<_field_tag_reference_64 name="ping hit instigator effect" />
+				<_field_tag_reference_64 name="ping hit effect" />
+				<_field_tag_reference_64 name="outline override" />
+				<_field_custom name="" />
+				</_field_block_64>
+			<_field_tag_reference_64 name="Property Based Effects" />
+			<_field_block_64 name="Interactions">
+				<_field_string_id name="Marker" />
+				<_field_block_64 name="Ambient Info">
+					<_field_char_enum name="desire type">
+						<Item Name="Scripted" />
+						<Item Name="Health" />
+						<Item Name="Defense" />
+						<Item Name="Attack Enemy" />
+						<Item Name="Weapon" />
+						<Item Name="Vehicle" />
+					</_field_char_enum>
+					<_field_pad name="generated_pad5f2a" length="3" />
+					<_field_long_enum name="action">
+						<Item Name="Base (Do not use)" />
+						<Item Name="Ground" />
+						<Item Name="Crouch" />
+						<Item Name="Melee" />
+						<Item Name="Turn" />
+						<Item Name="Shoot" />
+						<Item Name="Airborne" />
+						<Item Name="Jump" />
+						<Item Name="WeaponReady" />
+						<Item Name="WeaponSwitch" />
+						<Item Name="WeaponPickup" />
+						<Item Name="WeaponDrop" />
+						<Item Name="Grenade" />
+						<Item Name="Dead" />
+						<Item Name="AnimatedMove" />
+						<Item Name="InteractWeaponPickup" />
+						<Item Name="InteractDevice" />
+						<Item Name="InteractLaunchObject" />
+						<Item Name="HardPing" />
+						<Item Name="Align" />
+						<Item Name="ShieldRaise" />
+						<Item Name="ActivateEquipment" />
+						<Item Name="PhysicsImpulse" />
+						<Item Name="DeathPing" />
+						<Item Name="MediumPing" />
+						<Item Name="SoftPing" />
+						<Item Name="ScriptedSequence" />
+						<Item Name="CustomAnimation" />
+						<Item Name="DeflectProjectile" />
+						<Item Name="VehicleEnter" />
+						<Item Name="VehicleExit" />
+						<Item Name="Vehicle" />
+						<Item Name="Brace" />
+						<Item Name="WeaponDraw" />
+						<Item Name="WeaponStow" />
+						<Item Name="HardStop" />
+						<Item Name="Hoist" />
+						<Item Name="PreCombatPointActivity" />
+						<Item Name="Stunned" />
+						<Item Name="ObstacleSmash" />
+						<Item Name="WeaponVent" />
+						<Item Name="SoftPingDefenseScreen" />
+						<Item Name="ThrowEquipment" />
+						<Item Name="Hijack" />
+						<Item Name="Kamikaze" />
+						<Item Name="CloseQuartersDefenseBlast" />
+						<Item Name="Search" />
+						<Item Name="SearchFound" />
+						<Item Name="Surprise" />
+						<Item Name="Hover" />
+						<Item Name="Alert" />
+						<Item Name="AlertCallout" />
+						<Item Name="WeaponFidget" />
+						<Item Name="WeaponReload" />
+						<Item Name="FullbodyAnimation" />
+						<Item Name="ActivateCamo" />
+						<Item Name="TradeWeapon" />
+						<Item Name="Flying" />
+						<Item Name="MultiTargetTrackedAttack" />
+						<Item Name="Berserk" />
+						<Item Name="LeapWindup" />
+						<Item Name="AnimatedTell" />
+						<Item Name="TeleportArrive" />
+						<Item Name="JinkFire" />
+						<Item Name="DialogueAnimation" />
+						<Item Name="Swoop" />
+						<Item Name="AirborneMelee" />
+						<Item Name="Land" />
+						<Item Name="Hunker" />
+						<Item Name="Launching" />
+						<Item Name="PreAndPostFire" />
+						<Item Name="AnimatedPosture" />
+						<Item Name="Boarding" />
+					</_field_long_enum>
+					<_field_string_id name="Animation Token Override" />
+					<_field_real name="Time playing animation" />
+					<_field_real name="Cooldown time" />
+					<_field_string_id name="composition name" />
+					<_field_tag_reference_64 name="composition definition" />
+					<_field_real name="Max distance agents will consider this opp from" />
+					<_field_block_64 name="Ambient meta labels">
+						<_field_string_id name="meta label" />
+						</_field_block_64>
+					<_field_block_64 name="Exclusion meta labels">
+						<_field_string_id name="meta label" />
+						</_field_block_64>
+					<_field_real name="Min Danger to Activate" />
+					<_field_real name="Max Danger to Activate" />
+					<_field_real name="Abort Danger Level" />
+					<_field_real name="Chance Per Second" />
+					<_field_real name="Min Enemy Target Distance" />
+					<_field_real name="Max Enemy Target Distance" />
+					<_field_real name="Max Height Difference" />
+					</_field_block_64>
+				</_field_block_64>
+			<_field_custom name="Motion tracker blips" />
+			<_field_char_enum name="blip sprite index override">
+				<Item Name="Self" />
+				<Item Name="Vehicle Ally" />
+				<Item Name="Vehicle Enemy" />
+				<Item Name="Vehicle Ally Gutter" />
+				<Item Name="Vehicle Enemy Gutter" />
+				<Item Name="Vehicle Ally Vertical" />
+				<Item Name="Vehicle Enemy Vertical" />
+				<Item Name="Vehicle Ally Gutter Vertical" />
+				<Item Name="Vehicle Enemy Gutter Vertical" />
+				<Item Name="Human Ally" />
+				<Item Name="Human Enemy" />
+				<Item Name="Human Ally Gutter" />
+				<Item Name="Human Enemy Gutter" />
+				<Item Name="Human Ally Vertical" />
+				<Item Name="Human Enemy Vertical" />
+				<Item Name="Human Ally Gutter Vertical" />
+				<Item Name="Human Enemy Gutter Vertical" />
+				<Item Name="Major AI Ally" />
+				<Item Name="Major AI Enemy" />
+				<Item Name="Major AI Ally Gutter" />
+				<Item Name="Major AI Enemy Gutter" />
+				<Item Name="Major AI Ally Vertical" />
+				<Item Name="Major AI Enemy Vertical" />
+				<Item Name="Major AI Ally Gutter Vertical" />
+				<Item Name="Major AI Enemy Gutter Vertical" />
+				<Item Name="Minor AI Ally" />
+				<Item Name="Minor AI Enemy" />
+				<Item Name="Minor AI Ally Vertical" />
+				<Item Name="Minor AI Enemy Vertical" />
+				<Item Name="Unnamed sprite index29" />
+				<Item Name="Unnamed sprite index30" />
+				<Item Name="Unnamed sprite index31" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad9a3f" length="3" />
+			<_field_custom name="" />
+			<_field_block_64 name="data driven scripted sequence actions definitions.">
+				<_field_string name="Prototype trigger lua function name" />
+				<_field_block_64 name="Component Actions">
+					<_field_string name="Request action lua function name" />
+					<_field_string name="Go to next action condition lua function name" />
+					</_field_block_64>
+				</_field_block_64>
+			<_field_tag_reference_64 name="Animation Node Graph" />
+			<_field_struct name="Anim Set Table">
+				<_field_block_64 name="channels">
+					<_field_string_id name="channel" />
+					</_field_block_64>
+				<_field_block_64 name="table entries">
+					<_field_string_id name="token" />
+					<_field_tag_reference_64 name="animset" />
+					<_field_tag_reference_64 name="Runtime animset (used by code only)" />
+					<_field_byte_integer name="is default" />
+					<_field_pad name="generated_padca09" length="1" />
+					<_field_word_flags name="flags">
+						<Item Name="is default" />
+					</_field_word_flags>
+					<_field_block_64 name="Variants">
+						<_field_string_id name="Variant" />
+						</_field_block_64>
+					</_field_block_64>
+				</_field_struct>
+			<_field_real name="Inertialization Duration" />
+			<_field_real name="Pill Offset Blend Rate For Ground IK" />
+			<_field_real_bounds name="Stationary Root Offset Limit" />
+			<_field_real_bounds name="Moving Root Offset Limit" />
+			<_field_real name="Ground IK marker above ground tolerance" />
+			<_field_real name="Ground Probe Start Position Height Scale for Ground IK" />
+			<_field_real name="Ground Probe Additional Height Distance" />
+			<_field_data_64 name="Anim Set Nodegraph Metadata" />
+			<_field_custom name="Root Bone Correction Settings" />
+			<_field_struct name="RootBoneCorrectionSettings">
+				<_field_byte_flags name="flags">
+					<Item Name="AnimEventFunctionOverrideCorrectionType" />
+				</_field_byte_flags>
+				<_field_char_enum name="Root Bone Correction Type">
+					<Item Name="Off" />
+					<Item Name="FractionOfAnimationDuration" />
+					<Item Name="StaticDuration" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad0a63" length="2" />
+				<_field_real name="Root Bone Correction Duration" />
+				<_field_char_enum name="Root Bone Correction Bone Index">
+					<Item Name="RootBone" />
+					<Item Name="Pelvis" />
+				</_field_char_enum>
+				<_field_pad name="generated_padbdae" length="3" />
+				</_field_struct>
+			<_field_custom name="" />
+			<_field_block_64 name="Leg Grounding Settings">
+				<_field_string_id name="Marker" />
+				<_field_real name="Planted Threshold" />
+				<_field_real name="Lifted Threshold" />
+				<_field_real name="Lifted Minimum Time" />
+				<_field_short_enum name="Event">
+					<Item Name="none" />
+					<Item Name="primary_keyframe" />
+					<Item Name="secondary_keyframe" />
+					<Item Name="tertiary_keyframe" />
+					<Item Name="left_foot" />
+					<Item Name="right_foot" />
+					<Item Name="allow_interruption" />
+					<Item Name="do_not_allow_interruption" />
+					<Item Name="both_feet_shuffle" />
+					<Item Name="body_impact" />
+					<Item Name="left_foot_lock" />
+					<Item Name="left_foot_unlock" />
+					<Item Name="right_foot_lock" />
+					<Item Name="right_foot_unlock" />
+					<Item Name="blend_range_marker" />
+					<Item Name="stride_expansion" />
+					<Item Name="stride_contraction" />
+					<Item Name="ragdoll_keyframe" />
+					<Item Name="drop_weapon_keyframe" />
+					<Item Name="match_a" />
+					<Item Name="match_b" />
+					<Item Name="match_c" />
+					<Item Name="match_d" />
+					<Item Name="jetpack_closed" />
+					<Item Name="jetpack_open" />
+					<Item Name="sound_event" />
+					<Item Name="effect_event" />
+					<Item Name="left_hand" />
+					<Item Name="right_hand" />
+					<Item Name="grenade" />
+					<Item Name="melee" />
+					<Item Name="interact_device" />
+					<Item Name="shield_raise" />
+					<Item Name="activate_equipment" />
+					<Item Name="aoe_attack" />
+					<Item Name="equipment" />
+					<Item Name="jink_fire" />
+					<Item Name="align_to_target" />
+					<Item Name="block_exiting" />
+					<Item Name="set_interruptable" />
+					<Item Name="disable_shooting" />
+					<Item Name="re_enable_shooting" />
+					<Item Name="skip_crouch_transition" />
+					<Item Name="start_bamf" />
+					<Item Name="end_bamf" />
+					<Item Name="hide" />
+					<Item Name="frame_attachment_objects_show" />
+					<Item Name="frame_attachment_objects_hide" />
+					<Item Name="creature_physics_mode_change" />
+					<Item Name="melee_range" />
+					<Item Name="frame_attachment_switch_to_secondary_parent_marker" />
+					<Item Name="frame_attachment_switch_to_default_parent_marker" />
+					<Item Name="allow_sprint_interrupt" />
+					<Item Name="hide_3p_primary_weapon" />
+					<Item Name="show_3p_primary_weapon" />
+				</_field_short_enum>
+				<_field_pad name="generated_paddc16" length="2" />
+				</_field_block_64>
+			<_field_custom name="Wrist Break Fixup" />
+			<_field_real name="Wrist Break Interp Time" />
+			<_field_real name="Wrist Break Angle Limit" />
+			<_field_real name="Wrist Break Fixup Scale" />
+			<_field_custom name="" />
+			<_field_byte_flags name="Flags">
+				<Item Name="Use Procedural Footstep Events" />
+				<Item Name="Use Wrist Break IK Fixup" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad6f99" length="3" />
+			<_field_custom name="Object Node Graph" />
+			<_field_block_64 name="Object Node Graphs">
+				<_field_string_id name="Name" />
+				<_field_tag_reference_64 name="Exported Node Graph" />
+				<_field_byte_flags name="Flags">
+					<Item Name="Runs on Server" />
+					<Item Name="Runs on Client" />
+					<Item Name="Start updating on the first frame" />
+				</_field_byte_flags>
+				<_field_char_enum name="Enable Node Graph">
+					<Item Name="Default" />
+					<Item Name="Yes" />
+					<Item Name="No" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad8671" length="2" />
+				</_field_block_64>
+			<_field_custom name="" />
+			<_field_block_64 name="parent animation matching">
+				<_field_explanation name="ANIMATION REMAPPING" />
+				<_field_string_id name="animation on parent" />
+				<_field_string_id name="animation to play on object" />
+				<_field_string_id name="animation set to use with the child object's animation" />
+				<_field_char_enum name="matching type">
+					<Item Name="match percentage" />
+					<Item Name="match frame" />
+				</_field_char_enum>
+				<_field_pad name="generated_pad97f6" length="3" />
+				</_field_block_64>
+			<_field_custom name="model variant switching" />
+			<_field_explanation name="MODEL VARIANT SWITCHING" />
+			<_field_string_id name="model variant switching function" />
+			<_field_block_64 name="model variant switching table">
+				<_field_real_bounds name="function result range" />
+				<_field_string_id name="required parent marker" />
+				<_field_string_id name="model variant name" />
+				</_field_block_64>
+			<_field_custom name="" />
+			<_field_custom name="knockback" />
+			<_field_real name="knockback impulse scalar" />
+			<_field_custom name="" />
+			<_field_custom name="Ability Components" />
+			<_field_block_64 name="location sensor">
+				<_field_custom name="Sensor Parameters" />
+				<_field_long_flags name="sensor flags">
+					<Item Name="use proximity activation" />
+					<Item Name="use reveal duration inside detection radius" />
+					<Item Name="use order based reveal delays" />
+					<Item Name="don't reveal targets to the motion tracker" />
+					<Item Name="only play radius effect for owner" />
+					<Item Name="show player name instead of health" />
+					<Item Name="only play effect on first ping" />
+					<Item Name="activate on first bounce" />
+					<Item Name="check line of sight" />
+				</_field_long_flags>
+				<_field_real name="ping frequency" />
+				<_field_real name="ping radius" />
+				<_field_real name="reveal duration" />
+				<_field_real name="scanning duration" />
+				<_field_real name="minimum delay between marks" />
+				<_field_real name="delay per distance" />
+				<_field_real name="activation delay" />
+				<_field_real name="line of sight offset length" />
+				<_field_custom name="" />
+				<_field_custom name="Sensor Visuals" />
+				<_field_tag_reference_64 name="sensor radius effect" />
+				<_field_string_id name="sensor radius effect marker" />
+				<_field_tag_reference_64 name="sensor ping effect" />
+				<_field_custom name="" />
+				<_field_custom name="Target Visuals" />
+				<_field_tag_reference_64 name="target outline" />
+				<_field_tag_reference_64 name="target visor ping effect" />
+				<_field_string_id name="target visor ping effect marker" />
+				<_field_custom name="" />
+				<_field_custom name="Navpoints" />
+				<_field_string_id name="sensor navpoint name" />
+				<_field_string_id name="sensor navpoint marker" />
+				<_field_string_id name="target navpoint name" />
+				<_field_string_id name="target navpoint marker" />
+				<_field_custom name="" />
+				</_field_block_64>
+			<_field_block_64 name="shroud generator">
+				<_field_real name="radius" />
+				<_field_string_id name="active object function name" />
+				<_field_real_fraction name="active threshold fraction" />
+				<_field_tag_reference_64 name="shroud created effect" />
+				<_field_tag_reference_64 name="shroud destroyed effect" />
+				<_field_string_id name="biped effect marker" />
+				<_field_tag_reference_64 name="biped enter effect" />
+				<_field_tag_reference_64 name="biped inside effect" />
+				<_field_tag_reference_64 name="biped leave effect" />
+				</_field_block_64>
+			<_field_block_64 name="repair field">
+				<_field_custom name="Field Parameters" />
+				<_field_long_flags name="field flags">
+					<Item Name="revives participant bipeds" />
+					<Item Name="exclude enemies" />
+				</_field_long_flags>
+				<_field_string_id name="dome field effect marker" />
+				<_field_tag_reference_64 name="dome field effect" />
+				<_field_string_id name="biped enter effect marker" />
+				<_field_tag_reference_64 name="biped enter effect" />
+				<_field_string_id name="biped exit effect marker" />
+				<_field_tag_reference_64 name="biped exit effect" />
+				<_field_real name="arming time" />
+				<_field_custom name="" />
+				<_field_custom name="Regen Parameters" />
+				<_field_long_flags name="regen flags">
+					<Item Name="enable health repair" />
+					<Item Name="enable shield repair" />
+				</_field_long_flags>
+				<_field_real name="regen radius" />
+				<_field_real name="regen rate" />
+				<_field_real name="biped regen amount" />
+				<_field_real name="vehicle regen amount" />
+				<_field_custom name="" />
+				<_field_custom name="Biped Revive Parameters" />
+				<_field_real name="revive monitor rate" />
+				<_field_real name="revive delay" />
+				<_field_string_id name="revive device action string" />
+				<_field_custom name="" />
+				<_field_custom name="Biped Healing VFX" />
+				<_field_string_id name="biped healing effect marker" />
+				<_field_tag_reference_64 name="biped healing effect" />
+				<_field_tag_reference_64 name="biped healing complete effect" />
+				<_field_string_id name="AI bubble effect marker" />
+				<_field_tag_reference_64 name="AI bubble in field effect" />
+				<_field_custom name="" />
+				<_field_custom name="Vehicle Healing VFX" />
+				<_field_string_id name="vehicle healing effect marker" />
+				<_field_tag_reference_64 name="vehicle healing effect" />
+				<_field_tag_reference_64 name="vehicle healing complete effect" />
+				<_field_custom name="" />
+				</_field_block_64>
+			<_field_custom name="" />
+			<_field_block_64 name="Power Component">
+				<_field_explanation name="Power Component System" />
+				<_field_block_64 name="power source configurations">
+					<_field_string_id name="name" />
+					<_field_real_fraction name="capacity" />
+					</_field_block_64>
+				<_field_block_64 name="power sources">
+					<_field_string_id name="region name" />
+					<_field_long_integer name="runtime region index" />
+					<_field_explanation name="Model Region Damage State Configurations" />
+					<_field_block_64 name="state configurations">
+						<_field_short_enum name="region state">
+							<Item Name="default" />
+							<Item Name="minor damage" />
+							<Item Name="medium damage" />
+							<Item Name="major damage" />
+							<Item Name="destroyed" />
+						</_field_short_enum>
+						<_field_short_block_index name="configuration" />
+						</_field_block_64>
+					</_field_block_64>
+				<_field_custom name="communication node capacity" />
+				<_field_block_64 name="communication node power sources">
+					<_field_short_block_index name="component" />
+					</_field_block_64>
+				<_field_string_id name="communication node power modifier id" />
+				<_field_custom name="" />
+				<_field_custom name="locomotion capacity" />
+				<_field_block_64 name="locomotion power sources">
+					<_field_short_block_index name="component" />
+					</_field_block_64>
+				<_field_string_id name="locomotion power modifier id" />
+				<_field_custom name="locomotion power modifier" />
+				<_field_struct name="locomotion power modifier">
+					<_field_real name="Base Value" />
+					<_field_real_bounds name="Value Bounds" />
+					</_field_struct>
+				<_field_custom name="" />
+				<_field_custom name="weapon capacity" />
+				<_field_block_64 name="weapon power sources">
+					<_field_short_block_index name="component" />
+					</_field_block_64>
+				<_field_string_id name="weapon power modifier id" />
+				<_field_custom name="" />
+				</_field_block_64>
+			<_field_block_64 name="self destruct handler">
+				<_field_block_64 name="Self destruct sounds">
+					<_field_explanation name="SELF DESTRUCTION SOUNDS" />
+					<_field_long_integer name="active damage section count" />
+					<_field_tag_reference_64 name="sound to play" />
+					</_field_block_64>
+				</_field_block_64>
+			<_field_block_64 name="Indirect Lighting Component">
+				<_field_string_id name="Lightmap attachment bone" />
+				</_field_block_64>
+			<_field_custom name="" />
+			<_field_long_integer name="runtime regions with physics" />
+			<_field_pad name="generated_paddd0c" length="4" />
+			</_field_struct>
+		<_field_custom name="$$$ UNIT $$$" />
+		<_field_long_flags name="unit flags">
+			<Item Name="circular aiming" />
+			<Item Name="destroyed after dying" />
+			<Item Name="half-speed interpolation" />
+			<Item Name="fires from camera" />
+			<Item Name="entrance inside bounding sphere" />
+			<Item Name="doesn't show readied weapon" />
+			<Item Name="causes passenger dialogue" />
+			<Item Name="resists pings" />
+			<Item Name="melee attack is fatal" />
+			<Item Name="don't reface during pings" />
+			<Item Name="has no aiming" />
+			<Item Name="impact melee attaches to unit" />
+			<Item Name="impact melee dies on shields" />
+			<Item Name="cannot open doors automatically" />
+			<Item Name="melee attackers cannot attach" />
+			<Item Name="not instantly killed by melee" />
+			<Item Name="flashlight power doesnt transfer to weapon" />
+			<Item Name="runs around flaming" />
+			<Item Name="top level for AOE damage" />
+			<Item Name="special cinematic unit" />
+			<Item Name="ignored by autoaiming" />
+			<Item Name="shields fry infection forms" />
+			<Item Name="use velocity as acceleration" />
+			<Item Name="can dual wield" />
+			<Item Name="acts as gunner for parent" />
+			<Item Name="controlled by parent gunner" />
+			<Item Name="parent's primary weapon" />
+			<Item Name="parent's secondary weapon" />
+			<Item Name="unit has vectored thrust" />
+			<Item Name="allow aim while opening or closing" />
+			<Item Name="compute acceleration from aiming" />
+			<Item Name="override all pings" />
+		</_field_long_flags>
+		<_field_long_flags name="flags2">
+			<Item Name="unit supports bailout" />
+			<Item Name="flying_or_vehicle_hard_pings_allowed" />
+			<Item Name="attempt to fire from weapon matching camera" />
+			<Item Name="treat as vehicle " />
+			<Item Name="dropped weapons can dissolve" />
+			<Item Name="hard pings not allowed for driver-less vehicle" />
+			<Item Name="No friendly bump damage " />
+			<Item Name="ignores attachment feedback forced hard pings" />
+			<Item Name="unit appears on radar as dot not sprite" />
+			<Item Name="suppress radar blip" />
+			<Item Name="do not ignore parents for line of sight tests" />
+			<Item Name="do not pass attached AOE damage to children" />
+			<Item Name="do not generate AI line of fire pill for unit" />
+			<Item Name="allows procedural soft pings" />
+			<Item Name="allows procedural recoils" />
+			<Item Name="hide unreadied weapons" />
+			<Item Name="disable collision at death" />
+			<Item Name="always hard ping at death" />
+			<Item Name="component required - active camo" />
+			<Item Name="component required - power up" />
+			<Item Name="Preserve controlled aim and look directions, after/while unit is no longer controlled" />
+			<Item Name="Disable Damage Effect Sounds on this unit (defer to material effects)" />
+			<Item Name="Always play material effect sounds" />
+			<Item Name="Bucket unit audio priority based on distance" />
+			<Item Name="Play a minor lethal sound upon death" />
+			<Item Name="Allow children to play damage effect sounds" />
+			<Item Name="Disallow Lunge" />
+		</_field_long_flags>
+		<_field_short_enum name="default team">
+			<Item Name="default" />
+			<Item Name="player" />
+			<Item Name="human" />
+			<Item Name="covenant" />
+			<Item Name="brute" />
+			<Item Name="mule" />
+			<Item Name="wild_captive" />
+			<Item Name="wild_free" />
+			<Item Name="spare" />
+			<Item Name="covenant_player" />
+			<Item Name="forerunner" />
+			<Item Name="neutral" />
+		</_field_short_enum>
+		<_field_short_enum name="constant sound volume">
+			<Item Name="silent" />
+			<Item Name="quiet" />
+			<Item Name="medium" />
+			<Item Name="shout" />
+			<Item Name="loud" />
+		</_field_short_enum>
+		<_field_tag_reference_64 name="hologram unit reference" />
+		<_field_block_64 name="campaign metagame bucket">
+			<_field_byte_flags name="flags">
+				<Item Name="only counts with riders" />
+			</_field_byte_flags>
+			<_field_char_enum name="type">
+				<Item Name="grunt" />
+				<Item Name="jackal" />
+				<Item Name="skirmisher" />
+				<Item Name="marine" />
+				<Item Name="spartan" />
+				<Item Name="bugger" />
+				<Item Name="hunter" />
+				<Item Name="flood_infection" />
+				<Item Name="flood_carrier" />
+				<Item Name="flood_combat" />
+				<Item Name="flood_pure" />
+				<Item Name="sentinel" />
+				<Item Name="elite" />
+				<Item Name="engineer" />
+				<Item Name="mule" />
+				<Item Name="turret" />
+				<Item Name="mongoose" />
+				<Item Name="warthog" />
+				<Item Name="scorpion" />
+				<Item Name="hornet" />
+				<Item Name="pelican" />
+				<Item Name="revenant" />
+				<Item Name="seraph" />
+				<Item Name="shade" />
+				<Item Name="watchtower" />
+				<Item Name="ghost" />
+				<Item Name="chopper" />
+				<Item Name="mauler" />
+				<Item Name="wraith" />
+				<Item Name="banshee" />
+				<Item Name="phantom" />
+				<Item Name="scarab" />
+				<Item Name="guntower" />
+				<Item Name="tuning_fork" />
+				<Item Name="broadsword" />
+				<Item Name="mammoth" />
+				<Item Name="lich" />
+				<Item Name="mantis" />
+				<Item Name="wasp" />
+				<Item Name="phaeton" />
+				<Item Name="bishop" />
+				<Item Name="knight" />
+				<Item Name="pawn" />
+				<Item Name="soldier" />
+				<Item Name="packmaster" />
+				<Item Name="cavalier" />
+				<Item Name="brute" />
+				<Item Name="hoverer" />
+				<Item Name="crusher" />
+			</_field_char_enum>
+			<_field_char_enum name="class">
+				<Item Name="infantry" />
+				<Item Name="leader" />
+				<Item Name="hero" />
+				<Item Name="specialist" />
+				<Item Name="light vehicle" />
+				<Item Name="heavy vehicle" />
+				<Item Name="giant vehicle" />
+				<Item Name="standard vehicle" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad6695" length="1" />
+			<_field_short_integer name="point count" />
+			</_field_block_64>
+		<_field_block_64 name="screen effects">
+			<_field_tag_reference_64 name="screen effect" />
+			</_field_block_64>
+		<_field_real name="camera stiffness" />
+		<_field_struct name="unit camera">
+			<_field_custom name="Unit Camera" />
+			<_field_word_flags name="flags">
+				<Item Name="pitch bounds absolute space" />
+				<Item Name="only collides with environment" />
+				<Item Name="hides player-unit from camera" />
+				<Item Name="use aiming vector instead of marker forward" />
+			</_field_word_flags>
+			<_field_pad name="generated_padc79e" length="2" />
+			<_field_custom name="" />
+			<_field_string_id name="camera marker name" />
+			<_field_angle name="pitch auto-level" />
+			<_field_angle_bounds name="pitch range" />
+			<_field_block_64 name="camera tracks">
+				<_field_tag_reference_64 name="track" />
+				<_field_tag_reference_64 name="screen effect" />
+				<_field_real name="transition time in" />
+				<_field_real name="transition time out" />
+				</_field_block_64>
+			<_field_angle name="pitch minimum spring" />
+			<_field_angle name="pitch mmaximum spring" />
+			<_field_angle name="spring velocity" />
+			<_field_angle name="look acceleration" />
+			<_field_angle name="look deceleration" />
+			<_field_real_fraction name="look acc smoothing fraction" />
+			<_field_angle name="field of view bias" />
+			<_field_struct name="camera obstruction">
+				<_field_real_fraction name="cylinder fraction" />
+				<_field_angle name="obstruction test angle" />
+				<_field_real name="obstruction max inward accel" />
+				<_field_real name="obstruction max outward accel" />
+				<_field_real name="obstruction max velocity" />
+				<_field_real name="obstruction return delay" />
+				</_field_struct>
+			<_field_block_64 name="displacement">
+				<_field_real name="maximum camera velocity" />
+				<_field_custom name="Forward/Back" />
+				<_field_struct name="forward/back">
+					<_field_char_enum name="Input Variable">
+						<Item Name="linear velocity" />
+						<Item Name="linear acceleration" />
+						<Item Name="angular velocity yaw" />
+						<Item Name="angular velocity pitch" />
+						<Item Name="angular velocity roll" />
+						<Item Name="angle yaw" />
+						<Item Name="angle pitch" />
+						<Item Name="angle roll" />
+						<Item Name="aim screen yaw" />
+						<Item Name="aim screen pitch" />
+					</_field_char_enum>
+					<_field_pad name="generated_pad101c" length="3" />
+					<_field_custom name="mapping" />
+					<_field_struct name="mapping">
+						<_field_custom name="" />
+						<_field_data_64 name="data" />
+						<_field_custom name="" />
+						</_field_struct>
+					<_field_custom name="Velocity and Acceleration Input Modifiers" />
+					<_field_real name="maximum value" />
+					<_field_real name="camera scale (axial)" />
+					<_field_real name="camera scale (perpendicular)" />
+					<_field_custom name="" />
+					</_field_struct>
+				<_field_custom name="" />
+				<_field_custom name="Left/Right" />
+				<_field_struct name="left/right">
+					<_field_char_enum name="Input Variable">
+						<Item Name="linear velocity" />
+						<Item Name="linear acceleration" />
+						<Item Name="angular velocity yaw" />
+						<Item Name="angular velocity pitch" />
+						<Item Name="angular velocity roll" />
+						<Item Name="angle yaw" />
+						<Item Name="angle pitch" />
+						<Item Name="angle roll" />
+						<Item Name="aim screen yaw" />
+						<Item Name="aim screen pitch" />
+					</_field_char_enum>
+					<_field_pad name="generated_pad101c" length="3" />
+					<_field_custom name="mapping" />
+					<_field_struct name="mapping">
+						<_field_custom name="" />
+						<_field_data_64 name="data" />
+						<_field_custom name="" />
+						</_field_struct>
+					<_field_custom name="Velocity and Acceleration Input Modifiers" />
+					<_field_real name="maximum value" />
+					<_field_real name="camera scale (axial)" />
+					<_field_real name="camera scale (perpendicular)" />
+					<_field_custom name="" />
+					</_field_struct>
+				<_field_custom name="" />
+				<_field_custom name="Up/Down" />
+				<_field_struct name="up/down">
+					<_field_char_enum name="Input Variable">
+						<Item Name="linear velocity" />
+						<Item Name="linear acceleration" />
+						<Item Name="angular velocity yaw" />
+						<Item Name="angular velocity pitch" />
+						<Item Name="angular velocity roll" />
+						<Item Name="angle yaw" />
+						<Item Name="angle pitch" />
+						<Item Name="angle roll" />
+						<Item Name="aim screen yaw" />
+						<Item Name="aim screen pitch" />
+					</_field_char_enum>
+					<_field_pad name="generated_pad101c" length="3" />
+					<_field_custom name="mapping" />
+					<_field_struct name="mapping">
+						<_field_custom name="" />
+						<_field_data_64 name="data" />
+						<_field_custom name="" />
+						</_field_struct>
+					<_field_custom name="Velocity and Acceleration Input Modifiers" />
+					<_field_real name="maximum value" />
+					<_field_real name="camera scale (axial)" />
+					<_field_real name="camera scale (perpendicular)" />
+					<_field_custom name="" />
+					</_field_struct>
+				<_field_custom name="" />
+				</_field_block_64>
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_explanation name="sync action camera fields" />
+		<_field_struct name="sync action camera">
+			<_field_custom name="Unit Camera" />
+			<_field_word_flags name="flags">
+				<Item Name="pitch bounds absolute space" />
+				<Item Name="only collides with environment" />
+				<Item Name="hides player-unit from camera" />
+				<Item Name="use aiming vector instead of marker forward" />
+			</_field_word_flags>
+			<_field_pad name="generated_padc79e" length="2" />
+			<_field_custom name="" />
+			<_field_string_id name="camera marker name" />
+			<_field_angle name="pitch auto-level" />
+			<_field_angle_bounds name="pitch range" />
+			<_field_block_64 name="camera tracks">
+				<_field_tag_reference_64 name="track" />
+				<_field_tag_reference_64 name="screen effect" />
+				<_field_real name="transition time in" />
+				<_field_real name="transition time out" />
+				</_field_block_64>
+			<_field_angle name="pitch minimum spring" />
+			<_field_angle name="pitch mmaximum spring" />
+			<_field_angle name="spring velocity" />
+			<_field_angle name="look acceleration" />
+			<_field_angle name="look deceleration" />
+			<_field_real_fraction name="look acc smoothing fraction" />
+			<_field_angle name="field of view bias" />
+			<_field_struct name="camera obstruction">
+				<_field_real_fraction name="cylinder fraction" />
+				<_field_angle name="obstruction test angle" />
+				<_field_real name="obstruction max inward accel" />
+				<_field_real name="obstruction max outward accel" />
+				<_field_real name="obstruction max velocity" />
+				<_field_real name="obstruction return delay" />
+				</_field_struct>
+			<_field_block_64 name="displacement">
+				<_field_real name="maximum camera velocity" />
+				<_field_custom name="Forward/Back" />
+				<_field_struct name="forward/back">
+					<_field_char_enum name="Input Variable">
+						<Item Name="linear velocity" />
+						<Item Name="linear acceleration" />
+						<Item Name="angular velocity yaw" />
+						<Item Name="angular velocity pitch" />
+						<Item Name="angular velocity roll" />
+						<Item Name="angle yaw" />
+						<Item Name="angle pitch" />
+						<Item Name="angle roll" />
+						<Item Name="aim screen yaw" />
+						<Item Name="aim screen pitch" />
+					</_field_char_enum>
+					<_field_pad name="generated_pad101c" length="3" />
+					<_field_custom name="mapping" />
+					<_field_struct name="mapping">
+						<_field_custom name="" />
+						<_field_data_64 name="data" />
+						<_field_custom name="" />
+						</_field_struct>
+					<_field_custom name="Velocity and Acceleration Input Modifiers" />
+					<_field_real name="maximum value" />
+					<_field_real name="camera scale (axial)" />
+					<_field_real name="camera scale (perpendicular)" />
+					<_field_custom name="" />
+					</_field_struct>
+				<_field_custom name="" />
+				<_field_custom name="Left/Right" />
+				<_field_struct name="left/right">
+					<_field_char_enum name="Input Variable">
+						<Item Name="linear velocity" />
+						<Item Name="linear acceleration" />
+						<Item Name="angular velocity yaw" />
+						<Item Name="angular velocity pitch" />
+						<Item Name="angular velocity roll" />
+						<Item Name="angle yaw" />
+						<Item Name="angle pitch" />
+						<Item Name="angle roll" />
+						<Item Name="aim screen yaw" />
+						<Item Name="aim screen pitch" />
+					</_field_char_enum>
+					<_field_pad name="generated_pad101c" length="3" />
+					<_field_custom name="mapping" />
+					<_field_struct name="mapping">
+						<_field_custom name="" />
+						<_field_data_64 name="data" />
+						<_field_custom name="" />
+						</_field_struct>
+					<_field_custom name="Velocity and Acceleration Input Modifiers" />
+					<_field_real name="maximum value" />
+					<_field_real name="camera scale (axial)" />
+					<_field_real name="camera scale (perpendicular)" />
+					<_field_custom name="" />
+					</_field_struct>
+				<_field_custom name="" />
+				<_field_custom name="Up/Down" />
+				<_field_struct name="up/down">
+					<_field_char_enum name="Input Variable">
+						<Item Name="linear velocity" />
+						<Item Name="linear acceleration" />
+						<Item Name="angular velocity yaw" />
+						<Item Name="angular velocity pitch" />
+						<Item Name="angular velocity roll" />
+						<Item Name="angle yaw" />
+						<Item Name="angle pitch" />
+						<Item Name="angle roll" />
+						<Item Name="aim screen yaw" />
+						<Item Name="aim screen pitch" />
+					</_field_char_enum>
+					<_field_pad name="generated_pad101c" length="3" />
+					<_field_custom name="mapping" />
+					<_field_struct name="mapping">
+						<_field_custom name="" />
+						<_field_data_64 name="data" />
+						<_field_custom name="" />
+						</_field_struct>
+					<_field_custom name="Velocity and Acceleration Input Modifiers" />
+					<_field_real name="maximum value" />
+					<_field_real name="camera scale (axial)" />
+					<_field_real name="camera scale (perpendicular)" />
+					<_field_custom name="" />
+					</_field_struct>
+				<_field_custom name="" />
+				</_field_block_64>
+			<_field_custom name="" />
+			</_field_struct>
+		<_field_string_id name="unit markup name for weapon class override" />
+		<_field_tag_reference_64 name="seat acceleration" />
+		<_field_real name="pain major total damage threshold" />
+		<_field_custom name="pings" />
+		<_field_real name="soft ping threshold" />
+		<_field_real name="soft ping interrupt time" />
+		<_field_real name="hard ping threshold" />
+		<_field_real name="hard ping interrupt time" />
+		<_field_real name="soft death direction speed threshold" />
+		<_field_real name="hard death threshold" />
+		<_field_real name="feign death threshold" />
+		<_field_real name="feign death time" />
+		<_field_real name="pain screen duration" />
+		<_field_real name="pain screen region fade out duration" />
+		<_field_real_fraction name="pain screen region fade out weight threshold" />
+		<_field_angle name="pain screen angle tolerance" />
+		<_field_angle name="pain screen angle randomness" />
+		<_field_real name="defensive screen duration" />
+		<_field_real_fraction name="defensive screen scrub fallback fraction" />
+		<_field_custom name="" />
+		<_field_real name="distance of dive anim" />
+		<_field_real_fraction name="terminal velocity fall ratio" />
+		<_field_custom name="stun" />
+		<_field_real_fraction name="stun movement penalty" />
+		<_field_real_fraction name="stun turning penalty" />
+		<_field_real_fraction name="stun jumping penalty" />
+		<_field_real name="minimum stun time" />
+		<_field_real name="maximum stun time" />
+		<_field_custom name="" />
+		<_field_real name="feign death chance" />
+		<_field_real name="feign repeat chance" />
+		<_field_tag_reference_64 name="spawned turret character" />
+		<_field_custom name="aiming/looking" />
+		<_field_string_id name="target aiming pivot marker name" />
+		<_field_angle name="aiming velocity maximum" />
+		<_field_angle name="aiming acceleration maximum" />
+		<_field_real_fraction name="casual aiming modifier" />
+		<_field_angle name="looking velocity maximum" />
+		<_field_angle name="looking acceleration maximum" />
+		<_field_real name="Dropped ability object velocity" />
+		<_field_custom name="" />
+		<_field_real name="object velocity maximum" />
+		<_field_string_id name="right_hand_node" />
+		<_field_string_id name="left_hand_node" />
+		<_field_struct name="more damn nodes">
+			<_field_string_id name="preferred_gun_node" />
+			<_field_custom name="" />
+			<_field_string_id name="preferred_grenade_marker" />
+			<_field_explanation name="Weapon Specific Markers" />
+			<_field_block_64 name="weapon specific markers">
+				<_field_string_id name="complete weapon name" />
+				<_field_string_id name="weapon class" />
+				<_field_string_id name="weapon name" />
+				<_field_custom name="" />
+				<_field_string_id name="right hand marker" />
+				<_field_custom name="" />
+				<_field_string_id name="left hand marker" />
+				</_field_block_64>
+			</_field_struct>
+		<_field_custom name="melee damage" />
+		<_field_tag_reference_64 name="melee damage" />
+		<_field_tag_reference_64 name="native melee override" />
+		<_field_struct name="your momma">
+			<_field_tag_reference_64 name="boarding melee damage" />
+			<_field_tag_reference_64 name="boarding melee response" />
+			<_field_tag_reference_64 name="eviction melee damage" />
+			<_field_tag_reference_64 name="eviction melee response" />
+			<_field_tag_reference_64 name="landing melee damage" />
+			<_field_tag_reference_64 name="flurry melee damage" />
+			<_field_tag_reference_64 name="obstacle smash damage" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_short_enum name="motion sensor blip style enemy">
+			<Item Name="major" />
+			<Item Name="minor" />
+		</_field_short_enum>
+		<_field_short_enum name="motion sensor blip style friendly">
+			<Item Name="major" />
+			<Item Name="minor" />
+		</_field_short_enum>
+		<_field_short_enum name="item owner size">
+			<Item Name="small" />
+			<Item Name="medium" />
+			<Item Name="large" />
+			<Item Name="huge" />
+		</_field_short_enum>
+		<_field_pad name="generated_pad9055" length="2" />
+		<_field_real name="motion tracker range modifier" />
+		<_field_string_id name="equipment variant name" />
+		<_field_string_id name="grounded equipment variant name" />
+		<_field_block_64 name="Hud audio cues">
+			<_field_block_64 name="Hud audio cues">
+				<_field_tag_reference_64 name="sound" />
+				<_field_long_flags name="latched to">
+					<Item Name="health recharging" />
+					<Item Name="health recharging - from healing" />
+					<Item Name="health minor damaged" />
+					<Item Name="health major damaged" />
+					<Item Name="health critical damaged" />
+					<Item Name="health minor" />
+					<Item Name="health major" />
+					<Item Name="health critical" />
+					<Item Name="shield recharging" />
+					<Item Name="shield recharging - from healing" />
+					<Item Name="shield minor damaged" />
+					<Item Name="shield major damaged" />
+					<Item Name="shield critical damaged" />
+					<Item Name="shield minor" />
+					<Item Name="shield major" />
+					<Item Name="shield critical" />
+					<Item Name="player tracked" />
+					<Item Name="player locked" />
+					<Item Name="player downed" />
+				</_field_long_flags>
+				<_field_real name="scale" />
+				</_field_block_64>
+			<_field_custom name="health thresholds" />
+			<_field_real name="health minor" />
+			<_field_real name="health major" />
+			<_field_real name="health critical" />
+			<_field_custom name="" />
+			<_field_custom name="shield thresholds" />
+			<_field_real name="shield minor" />
+			<_field_real name="shield major" />
+			<_field_real name="shield critical" />
+			<_field_custom name="" />
+			</_field_block_64>
+		<_field_block_64 name="dialogue variants">
+			<_field_short_integer name="variant number" />
+			<_field_pad name="generated_padef78" length="2" />
+			<_field_tag_reference_64 name="dialogue" />
+			</_field_block_64>
+		<_field_custom name="standard grenade throw" />
+		<_field_real name="grenade angle" />
+		<_field_real name="grenade angle max elevation" />
+		<_field_real name="grenade angle min elevation" />
+		<_field_real name="grenade velocity" />
+		<_field_real_euler_angles_3d name="grenade rotational velocity min" />
+		<_field_real_euler_angles_3d name="greande rotational velocity max" />
+		<_field_custom name="grenade throw speed scalar" />
+		<_field_struct name="grenade throw speed scalar">
+			<_field_real name="Base Value" />
+			<_field_real_bounds name="Value Bounds" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_custom name="primary weapon toss" />
+		<_field_real name="weapon angle" />
+		<_field_real name="weapon angle max elevation" />
+		<_field_real name="weapon angle min elevation" />
+		<_field_real name="weapon velocity" />
+		<_field_real_euler_angles_3d name="weapon rotational velocity min" />
+		<_field_real_euler_angles_3d name="weapon rotational velocity max" />
+		<_field_custom name="" />
+		<_field_block_64 name="powered seats">
+			<_field_real name="driver powerup time" />
+			<_field_real name="driver powerdown time" />
+			</_field_block_64>
+		<_field_block_64 name="weapons">
+			<_field_tag_reference_64 name="weapon" />
+			<_field_string_id name="weapon name" />
+			<_field_string_id name="variant name" />
+			<_field_long_enum name="position">
+				<Item Name="primary or backpack" />
+				<Item Name="secondary" />
+			</_field_long_enum>
+			<_field_byte_flags name="weapon flags">
+				<Item Name="Cannot fire any weapon while boosting" />
+			</_field_byte_flags>
+			<_field_pad name="generated_paddad2" length="3" />
+			<_field_angle name="maximum firing cone angle" />
+			<_field_real name="max firing cone angle cosine" />
+			<_field_real name="minimum retarget time" />
+			<_field_real name="blind fire time" />
+			<_field_real name="lead fraction" />
+			<_field_real_bounds name="engagement range" />
+			<_field_real name="proximity score multiplier" />
+			<_field_real name="direction score multiplier" />
+			<_field_real name="attacker score multiplier" />
+			<_field_real name="targeting weight hologram" />
+			<_field_real name="targeting weight auto turret" />
+			<_field_real name="primary fire delay from idle" />
+			<_field_real name="secondary fire delay from idle" />
+			<_field_real name="caution duration" />
+			<_field_real name="alert angular speed max" />
+			<_field_real name="idle angular speed max" />
+			<_field_angle name="targeting yaw min" />
+			<_field_angle name="targeting yaw max" />
+			<_field_angle name="targeting pitch min" />
+			<_field_angle name="targeting pitch max" />
+			<_field_angle name="idle scanning yaw min" />
+			<_field_angle name="idle scanning yaw max" />
+			<_field_angle name="idle scanning pitch min" />
+			<_field_angle name="idle scanning pitch max" />
+			<_field_real name="idle scanning min interest distance" />
+			<_field_tag_reference_64 name="alert mode effect" />
+			<_field_custom name="" />
+			<_field_string_id name="alert mode effect marker" />
+			<_field_string_id name="alert mode effect primary scale" />
+			<_field_string_id name="alert mode effect secondary scale" />
+			<_field_block_64 name="sentry properties">
+				<_field_byte_flags name="behavior">
+					<Item Name="performs yaw scanning" />
+					<Item Name="secondary barrel starts enabled" />
+					<Item Name="only use vehicle range scale if secondary barrel active" />
+					<Item Name="only use vehicle score bonus if secondary barrel active" />
+				</_field_byte_flags>
+				<_field_pad name="generated_pad4624" length="3" />
+				<_field_angle name="sight cone angle" />
+				<_field_real name="sight cone cosine" />
+				<_field_real name="alert range" />
+				<_field_real name="attack range" />
+				<_field_real name="attack range score multiplier" />
+				<_field_real name="light vehicle range scale" />
+				<_field_real name="heavy vehicle range scale" />
+				<_field_real name="flying vehicle range scale" />
+				<_field_real name="light vehicle score bonus" />
+				<_field_real name="heavy vehicle score bonus" />
+				<_field_real name="flying vehicle score bonus" />
+				<_field_real name="current target score bonus" />
+				<_field_real name="startup time" />
+				<_field_real name="primary fire time" />
+				<_field_real name="secondary fire time" />
+				<_field_tag_reference_64 name="player entered alert range sound" />
+				<_field_tag_reference_64 name="player exited alert range sound" />
+				<_field_custom name="Node graph events" />
+				<_field_explanation name="Events to fire on state transitions" />
+				<_field_block_64 name="Transition Events">
+					<_field_long_enum name="From state">
+						<Item Name="Startup" />
+						<Item Name="Idle" />
+						<Item Name="Alert" />
+						<Item Name="Attack" />
+						<Item Name="Inactive" />
+						<Item Name="Any state" />
+					</_field_long_enum>
+					<_field_long_enum name="To state">
+						<Item Name="Startup" />
+						<Item Name="Idle" />
+						<Item Name="Alert" />
+						<Item Name="Attack" />
+						<Item Name="Inactive" />
+						<Item Name="Any state" />
+					</_field_long_enum>
+					<_field_string_id name="Event" />
+					</_field_block_64>
+				<_field_custom name="" />
+				</_field_block_64>
+			<_field_real name="target camouflage threshold" />
+			</_field_block_64>
+		<_field_block_64 name="target tracking">
+			<_field_byte_flags name="target tracking flags">
+				<Item Name="only enable when aimed down sight" />
+				<Item Name="never lose target lock" />
+				<Item Name="only enable when in alt fire" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pada390" length="3" />
+			<_field_block_64 name="tracking types">
+				<_field_string_id name="tracking type" />
+				</_field_block_64>
+			<_field_real name="acquire time" />
+			<_field_real name="grace time" />
+			<_field_real name="decay time" />
+			<_field_byte_integer name="max target locks" />
+			<_field_pad name="generated_padbd71" length="3" />
+			<_field_tag_reference_64 name="tracking sound" />
+			<_field_tag_reference_64 name="locked sound" />
+			</_field_block_64>
+		<_field_block_64 name="seats">
+			<_field_long_flags name="flags">
+				<Item Name="invisible" />
+				<Item Name="locked" />
+				<Item Name="driver" />
+				<Item Name="gunner" />
+				<Item Name="third person camera" />
+				<Item Name="allows weapons" />
+				<Item Name="third person on enter" />
+				<Item Name="first person camera slaved to gun." />
+				<Item Name="not valid without driver" />
+				<Item Name="allow AI noncombatants" />
+				<Item Name="boarding seat" />
+				<Item Name="ai firing disabled by max acceleration" />
+				<Item Name="boarding enters seat" />
+				<Item Name="boarding need any passenger" />
+				<Item Name="invalid for player" />
+				<Item Name="invalid for non-player" />
+				<Item Name="invalid for hero" />
+				<Item Name="gunner (player only)" />
+				<Item Name="invisible under major damage" />
+				<Item Name="melee instant killable" />
+				<Item Name="leader preference" />
+				<Item Name="allows exit and detach" />
+				<Item Name="blocks headshots" />
+				<Item Name="exits to ground" />
+				<Item Name="forward from attachment" />
+				<Item Name="disallow AI shooting" />
+				<Item Name="prevents weapon stowing" />
+				<Item Name="takes top level aoe damage" />
+				<Item Name="disallow exit" />
+				<Item Name="local aiming" />
+				<Item Name="pelvis relative attachment" />
+				<Item Name="apply velocity on death exit" />
+			</_field_long_flags>
+			<_field_long_flags name="secondary flags">
+				<Item Name="skip obstacle check" />
+				<Item Name="search parent for entry marker" />
+				<Item Name="gunner release aim on exit" />
+				<Item Name="fully open before allowing exit" />
+				<Item Name="finish melee before allowing exit" />
+				<Item Name="kill parent if unit in seat dies" />
+				<Item Name="co-pilot" />
+				<Item Name="ejectable seat" />
+				<Item Name="kill on ejection" />
+				<Item Name="use head marker for navpoint" />
+				<Item Name="allows equipment and grenade switching" />
+			</_field_long_flags>
+			<_field_long_enum name="passenger seat designator">
+				<Item Name="MidCenter" />
+				<Item Name="LeftBack" />
+				<Item Name="LeftFront" />
+				<Item Name="MidLeftBack" />
+				<Item Name="MidLeft" />
+				<Item Name="MidLeftFront" />
+				<Item Name="RightBack" />
+				<Item Name="RightFront" />
+				<Item Name="MidRightBack" />
+				<Item Name="MidRight" />
+				<Item Name="MidRightFront" />
+				<Item Name="LeftFrontRow1" />
+				<Item Name="LeftFrontRow2" />
+				<Item Name="LeftFrontRow3" />
+				<Item Name="LeftFrontRow4" />
+				<Item Name="LeftBackRow1" />
+				<Item Name="LeftBackRow2" />
+				<Item Name="LeftBackRow3" />
+				<Item Name="LeftBackRow4" />
+				<Item Name="RightFrontRow1" />
+				<Item Name="RightFrontRow2" />
+				<Item Name="RightFrontRow3" />
+				<Item Name="RightFrontRow4" />
+				<Item Name="RightBackRow1" />
+				<Item Name="RightBackRow2" />
+				<Item Name="RightBackRow3" />
+				<Item Name="RightBackRow4" />
+			</_field_long_enum>
+			<_field_char_enum name="seat has infinite grenades of type">
+				<Item Name="none" />
+				<Item Name="fragmentation grenade" />
+				<Item Name="plasma grenade" />
+				<Item Name="lightning grenade" />
+				<Item Name="spike grenade" />
+				<Item Name="sapper grenade" />
+				<Item Name="stasis grenade" />
+			</_field_char_enum>
+			<_field_char_enum name="seat selection priority">
+				<Item Name="normal" />
+				<Item Name="high" />
+			</_field_char_enum>
+			<_field_pad name="generated_pad811e" length="2" />
+			<_field_string_id name="label text" />
+			<_field_string name="label" />
+			<_field_custom name="" />
+			<_field_string_id name="marker name" />
+			<_field_custom name="" />
+			<_field_string_id name="entry marker(s) name" />
+			<_field_custom name="" />
+			<_field_string_id name="exit marker name" />
+			<_field_custom name="" />
+			<_field_string_id name="ui marker name" />
+			<_field_string_id name="ui navpoint name" />
+			<_field_custom name="" />
+			<_field_string_id name="boarding grenade marker" />
+			<_field_string_id name="boarding grenade string" />
+			<_field_string_id name="boarding melee string" />
+			<_field_string_id name="in-seat string" />
+			<_field_block_64 name="ai model targets">
+				<_field_string_id name="model target name" />
+				</_field_block_64>
+			<_field_real_fraction name="ping scale" />
+			<_field_real name="turnover time" />
+			<_field_explanation name="seat acceleration spring" />
+			<_field_tag_reference_64 name="seat acceleration" />
+			<_field_real name="AI scariness" />
+			<_field_short_enum name="ai seat type">
+				<Item Name="NONE" />
+				<Item Name="passenger" />
+				<Item Name="gunner" />
+				<Item Name="small cargo" />
+				<Item Name="large cargo" />
+				<Item Name="driver" />
+			</_field_short_enum>
+			<_field_short_block_index name="boarding seat" />
+			<_field_block_64 name="additional boarding seats">
+				<_field_short_block_index name="seat" />
+				</_field_block_64>
+			<_field_custom name="seat switching" />
+			<_field_explanation name="explanation" />
+			<_field_struct name="seat switching">
+				<_field_custom name="up" />
+				<_field_struct name="up">
+					<_field_string_id name="destinationSeat" />
+					<_field_string_id name="animation" />
+					<_field_real name="seat switch cooldown time" />
+					</_field_struct>
+				<_field_custom name="" />
+				<_field_custom name="down" />
+				<_field_struct name="down">
+					<_field_string_id name="destinationSeat" />
+					<_field_string_id name="animation" />
+					<_field_real name="seat switch cooldown time" />
+					</_field_struct>
+				<_field_custom name="" />
+				<_field_custom name="left" />
+				<_field_struct name="left">
+					<_field_string_id name="destinationSeat" />
+					<_field_string_id name="animation" />
+					<_field_real name="seat switch cooldown time" />
+					</_field_struct>
+				<_field_custom name="" />
+				<_field_custom name="right" />
+				<_field_struct name="right">
+					<_field_string_id name="destinationSeat" />
+					<_field_string_id name="animation" />
+					<_field_real name="seat switch cooldown time" />
+					</_field_struct>
+				<_field_custom name="" />
+				</_field_struct>
+			<_field_custom name="" />
+			<_field_real_fraction name="listener interpolation factor" />
+			<_field_real_fraction name="listener orientation interpolation" />
+			<_field_real_fraction name="listener blend towards locked axis" />
+			<_field_explanation name="speed dependent turn rates" />
+			<_field_real_bounds name="yaw rate bounds" />
+			<_field_real_bounds name="pitch rate bounds" />
+			<_field_real name="pitch interpolation time" />
+			<_field_real name="min speed reference" />
+			<_field_real name="max speed reference" />
+			<_field_real name="speed exponent" />
+			<_field_explanation name="camera fields" />
+			<_field_struct name="unit camera">
+				<_field_custom name="Unit Camera" />
+				<_field_word_flags name="flags">
+					<Item Name="pitch bounds absolute space" />
+					<Item Name="only collides with environment" />
+					<Item Name="hides player-unit from camera" />
+					<Item Name="use aiming vector instead of marker forward" />
+				</_field_word_flags>
+				<_field_pad name="generated_padc79e" length="2" />
+				<_field_custom name="" />
+				<_field_string_id name="camera marker name" />
+				<_field_angle name="pitch auto-level" />
+				<_field_angle_bounds name="pitch range" />
+				<_field_block_64 name="camera tracks">
+					<_field_tag_reference_64 name="track" />
+					<_field_tag_reference_64 name="screen effect" />
+					<_field_real name="transition time in" />
+					<_field_real name="transition time out" />
+					</_field_block_64>
+				<_field_angle name="pitch minimum spring" />
+				<_field_angle name="pitch mmaximum spring" />
+				<_field_angle name="spring velocity" />
+				<_field_angle name="look acceleration" />
+				<_field_angle name="look deceleration" />
+				<_field_real_fraction name="look acc smoothing fraction" />
+				<_field_angle name="field of view bias" />
+				<_field_struct name="camera obstruction">
+					<_field_real_fraction name="cylinder fraction" />
+					<_field_angle name="obstruction test angle" />
+					<_field_real name="obstruction max inward accel" />
+					<_field_real name="obstruction max outward accel" />
+					<_field_real name="obstruction max velocity" />
+					<_field_real name="obstruction return delay" />
+					</_field_struct>
+				<_field_block_64 name="displacement">
+					<_field_real name="maximum camera velocity" />
+					<_field_custom name="Forward/Back" />
+					<_field_struct name="forward/back">
+						<_field_char_enum name="Input Variable">
+							<Item Name="linear velocity" />
+							<Item Name="linear acceleration" />
+							<Item Name="angular velocity yaw" />
+							<Item Name="angular velocity pitch" />
+							<Item Name="angular velocity roll" />
+							<Item Name="angle yaw" />
+							<Item Name="angle pitch" />
+							<Item Name="angle roll" />
+							<Item Name="aim screen yaw" />
+							<Item Name="aim screen pitch" />
+						</_field_char_enum>
+						<_field_pad name="generated_pad101c" length="3" />
+						<_field_custom name="mapping" />
+						<_field_struct name="mapping">
+							<_field_custom name="" />
+							<_field_data_64 name="data" />
+							<_field_custom name="" />
+							</_field_struct>
+						<_field_custom name="Velocity and Acceleration Input Modifiers" />
+						<_field_real name="maximum value" />
+						<_field_real name="camera scale (axial)" />
+						<_field_real name="camera scale (perpendicular)" />
+						<_field_custom name="" />
+						</_field_struct>
+					<_field_custom name="" />
+					<_field_custom name="Left/Right" />
+					<_field_struct name="left/right">
+						<_field_char_enum name="Input Variable">
+							<Item Name="linear velocity" />
+							<Item Name="linear acceleration" />
+							<Item Name="angular velocity yaw" />
+							<Item Name="angular velocity pitch" />
+							<Item Name="angular velocity roll" />
+							<Item Name="angle yaw" />
+							<Item Name="angle pitch" />
+							<Item Name="angle roll" />
+							<Item Name="aim screen yaw" />
+							<Item Name="aim screen pitch" />
+						</_field_char_enum>
+						<_field_pad name="generated_pad101c" length="3" />
+						<_field_custom name="mapping" />
+						<_field_struct name="mapping">
+							<_field_custom name="" />
+							<_field_data_64 name="data" />
+							<_field_custom name="" />
+							</_field_struct>
+						<_field_custom name="Velocity and Acceleration Input Modifiers" />
+						<_field_real name="maximum value" />
+						<_field_real name="camera scale (axial)" />
+						<_field_real name="camera scale (perpendicular)" />
+						<_field_custom name="" />
+						</_field_struct>
+					<_field_custom name="" />
+					<_field_custom name="Up/Down" />
+					<_field_struct name="up/down">
+						<_field_char_enum name="Input Variable">
+							<Item Name="linear velocity" />
+							<Item Name="linear acceleration" />
+							<Item Name="angular velocity yaw" />
+							<Item Name="angular velocity pitch" />
+							<Item Name="angular velocity roll" />
+							<Item Name="angle yaw" />
+							<Item Name="angle pitch" />
+							<Item Name="angle roll" />
+							<Item Name="aim screen yaw" />
+							<Item Name="aim screen pitch" />
+						</_field_char_enum>
+						<_field_pad name="generated_pad101c" length="3" />
+						<_field_custom name="mapping" />
+						<_field_struct name="mapping">
+							<_field_custom name="" />
+							<_field_data_64 name="data" />
+							<_field_custom name="" />
+							</_field_struct>
+						<_field_custom name="Velocity and Acceleration Input Modifiers" />
+						<_field_real name="maximum value" />
+						<_field_real name="camera scale (axial)" />
+						<_field_real name="camera scale (perpendicular)" />
+						<_field_custom name="" />
+						</_field_struct>
+					<_field_custom name="" />
+					</_field_block_64>
+				<_field_custom name="" />
+				</_field_struct>
+			<_field_tag_reference_64 name="hud screen reference" />
+			<_field_tag_reference_64 name="alt hud screen reference" />
+			<_field_string_id name="enter seat string" />
+			<_field_block_64 name="button callouts">
+				<_field_string_id name="text" />
+				</_field_block_64>
+			<_field_angle name="pitch minimum" />
+			<_field_angle name="pitch maximum" />
+			<_field_angle name="pitch minimum for AI operator" />
+			<_field_angle name="pitch maximum for AI operator" />
+			<_field_angle name="yaw minimum" />
+			<_field_angle name="yaw maximum" />
+			<_field_angle name="yaw minimum for AI operator" />
+			<_field_angle name="yaw maximum for AI operator" />
+			<_field_tag_reference_64 name="built-in gunner" />
+			<_field_explanation name="entry fields" />
+			<_field_real name="entry radius" />
+			<_field_angle name="entry marker cone angle" />
+			<_field_angle name="entry marker facing angle" />
+			<_field_real name="maximum relative velocity" />
+			<_field_tag_reference_64 name="equipment" />
+			<_field_real name="open time" />
+			<_field_real name="close time" />
+			<_field_string_id name="open function name" />
+			<_field_string_id name="opening function name" />
+			<_field_string_id name="closing function name" />
+			<_field_string_id name="invisible seat region" />
+			<_field_long_integer name="runtime invisible seat region index" />
+			<_field_explanation name="seat death grab crate" />
+			<_field_tag_reference_64 name="seat death grab crate" />
+			<_field_string_id name="Seat Selection String" />
+			<_field_real name="bailout velocity" />
+			<_field_explanation name="Seat Ejection Fields" />
+			<_field_real name="maximum acceleration" />
+			<_field_real name="maximum centrifugal force" />
+			</_field_block_64>
+		<_field_real name="maximum seat switch linear velocity" />
+		<_field_angle name="maximum seat switch angular velocity" />
+		<_field_short_enum name="empty mount behavior">
+			<Item Name="Reset Team when empty and parentless" />
+			<Item Name="Keep last team when empty and parentless" />
+		</_field_short_enum>
+		<_field_pad name="generated_pad7674" length="2" />
+		<_field_custom name="open/close" />
+		<_field_real name="opening time" />
+		<_field_real name="closing time" />
+		<_field_custom name="" />
+		<_field_tag_reference_64 name="docking site" />
+		<_field_explanation name="Deprecated Unit Power Component settings.  Please use the new settings in the OBJECT section above." />
+		<_field_block_64 name="power component">
+			<_field_explanation name="Power Component System" />
+			<_field_block_64 name="power source configurations">
+				<_field_string_id name="name" />
+				<_field_real_fraction name="capacity" />
+				</_field_block_64>
+			<_field_block_64 name="power sources">
+				<_field_string_id name="region name" />
+				<_field_long_integer name="runtime region index" />
+				<_field_explanation name="Model Region Damage State Configurations" />
+				<_field_block_64 name="state configurations">
+					<_field_short_enum name="region state">
+						<Item Name="default" />
+						<Item Name="minor damage" />
+						<Item Name="medium damage" />
+						<Item Name="major damage" />
+						<Item Name="destroyed" />
+					</_field_short_enum>
+					<_field_short_block_index name="configuration" />
+					</_field_block_64>
+				</_field_block_64>
+			<_field_custom name="communication node capacity" />
+			<_field_block_64 name="communication node power sources">
+				<_field_short_block_index name="component" />
+				</_field_block_64>
+			<_field_string_id name="communication node power modifier id" />
+			<_field_custom name="" />
+			<_field_custom name="locomotion capacity" />
+			<_field_block_64 name="locomotion power sources">
+				<_field_short_block_index name="component" />
+				</_field_block_64>
+			<_field_string_id name="locomotion power modifier id" />
+			<_field_custom name="locomotion power modifier" />
+			<_field_struct name="locomotion power modifier">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="" />
+			<_field_custom name="weapon capacity" />
+			<_field_block_64 name="weapon power sources">
+				<_field_short_block_index name="component" />
+				</_field_block_64>
+			<_field_string_id name="weapon power modifier id" />
+			<_field_custom name="" />
+			</_field_block_64>
+		<_field_custom name="Boost" />
+		<_field_tag_reference_64 name="boost definition" />
+		<_field_explanation name="Deprecated Boost Fields.  Please use the Boost Definition field above." />
+		<_field_struct name="boost">
+			<_field_tag_reference_64 name="boost collision damage" />
+			<_field_long_flags name="flags">
+				<Item Name="pegs throttle" />
+			</_field_long_flags>
+			<_field_real name="boost peak power" />
+			<_field_real name="boost rise time" />
+			<_field_real name="boost fall time" />
+			<_field_real name="boost power per second" />
+			<_field_real name="boost low warning threshold" />
+			<_field_real name="recharge rate" />
+			<_field_real name="recharge delay" />
+			<_field_real name="post boost weapon delay" />
+			<_field_custom name="trigger to boost" />
+			<_field_struct name="trigger to boost">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			<_field_long_enum name="tutorial id">
+				<Item Name="None" />
+				<Item Name="Assassination" />
+				<Item Name="Camera" />
+				<Item Name="Crouch" />
+				<Item Name="Grenade" />
+				<Item Name="Jump" />
+				<Item Name="Melee" />
+				<Item Name="Movement" />
+				<Item Name="Shoot" />
+				<Item Name="Tracking" />
+				<Item Name="Clamber" />
+				<Item Name="Slide" />
+				<Item Name="Sprint" />
+				<Item Name="Thruster" />
+				<Item Name="Zoom" />
+				<Item Name="BansheeBoost" />
+				<Item Name="BansheeTrick" />
+				<Item Name="BansheeSwitchWeapons" />
+				<Item Name="GhostBoost" />
+				<Item Name="MantisRockets" />
+				<Item Name="MantisStomp" />
+				<Item Name="VTOLAscend" />
+				<Item Name="VTOLDescend" />
+				<Item Name="VTOLEvade" />
+				<Item Name="VTOLSwitchWeapons" />
+				<Item Name="VTOLShoot" />
+				<Item Name="JeepDrive" />
+				<Item Name="JeepHandbrake" />
+				<Item Name="JeepShoot" />
+				<Item Name="WraithBoost" />
+				<Item Name="SeatSwitch" />
+				<Item Name="OrdersGeneral" />
+				<Item Name="OrdersClear" />
+				<Item Name="OrdersEnemy" />
+				<Item Name="OrdersMove" />
+				<Item Name="OrdersVehicle" />
+				<Item Name="OrdersWeapon" />
+			</_field_long_enum>
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_long_enum name="tutorial weapon swap id">
+			<Item Name="None" />
+			<Item Name="Assassination" />
+			<Item Name="Camera" />
+			<Item Name="Crouch" />
+			<Item Name="Grenade" />
+			<Item Name="Jump" />
+			<Item Name="Melee" />
+			<Item Name="Movement" />
+			<Item Name="Shoot" />
+			<Item Name="Tracking" />
+			<Item Name="Clamber" />
+			<Item Name="Slide" />
+			<Item Name="Sprint" />
+			<Item Name="Thruster" />
+			<Item Name="Zoom" />
+			<Item Name="BansheeBoost" />
+			<Item Name="BansheeTrick" />
+			<Item Name="BansheeSwitchWeapons" />
+			<Item Name="GhostBoost" />
+			<Item Name="MantisRockets" />
+			<Item Name="MantisStomp" />
+			<Item Name="VTOLAscend" />
+			<Item Name="VTOLDescend" />
+			<Item Name="VTOLEvade" />
+			<Item Name="VTOLSwitchWeapons" />
+			<Item Name="VTOLShoot" />
+			<Item Name="JeepDrive" />
+			<Item Name="JeepHandbrake" />
+			<Item Name="JeepShoot" />
+			<Item Name="WraithBoost" />
+			<Item Name="SeatSwitch" />
+			<Item Name="OrdersGeneral" />
+			<Item Name="OrdersClear" />
+			<Item Name="OrdersEnemy" />
+			<Item Name="OrdersMove" />
+			<Item Name="OrdersVehicle" />
+			<Item Name="OrdersWeapon" />
+		</_field_long_enum>
+		<_field_explanation name="Lipsync" />
+		<_field_struct name="lipsync">
+			<_field_real_fraction name="attack weight" />
+			<_field_real_fraction name="decay weight" />
+			</_field_struct>
+		<_field_explanation name="Exit and Detach" />
+		<_field_tag_reference_64 name="exit and detach damage" />
+		<_field_tag_reference_64 name="exit and detach weapon" />
+		<_field_block_64 name="exit and detach variants">
+			<_field_string_id name="variant name" />
+			<_field_tag_reference_64 name="exit and detach weapon" />
+			<_field_tag_reference_64 name="exit and detach damage" />
+			</_field_block_64>
+		<_field_explanation name="Vehicle Death Telemetry Rule" />
+		<_field_char_enum name="Death Telemetry Rule">
+			<Item Name="Default" />
+			<Item Name="Always Send Event" />
+			<Item Name="Never Send Event" />
+		</_field_char_enum>
+		<_field_pad name="generated_pad29bf" length="1" />
+		<_field_explanation name="Experience" />
+		<_field_short_integer name="experience for kill" />
+		<_field_short_integer name="experience for assist" />
+		<_field_pad name="generated_pad0fde" length="2" />
+		<_field_real name="bailout threshold" />
+		<_field_real_fraction name="iron sight weapon dampening" />
+		<_field_custom name="Birthing" />
+		<_field_struct name="birth">
+			<_field_short_block_index name="seat" />
+			<_field_pad name="generated_pada2d2" length="2" />
+			<_field_string_id name="birthing region" />
+			</_field_struct>
+		<_field_custom name="" />
+		<_field_real_fraction name="procedural recoil scaler" />
+		<_field_tag_reference_64 name="flinch system" />
+		<_field_explanation name="Active Camouflage Malleable Properties" />
+		<_field_struct name="active camouflage properties">
+			<_field_char_enum name="camo level">
+				<Item Name="poor" />
+				<Item Name="good" />
+				<Item Name="excellent" />
+				<Item Name="invisible" />
+				<Item Name="ai" />
+			</_field_char_enum>
+			<_field_byte_flags name="flags">
+				<Item Name="No speed scaling" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad06e4" length="2" />
+			<_field_custom name="grenade throw penalty" />
+			<_field_struct name="grenade throw penalty">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="interpolation time" />
+			<_field_struct name="interpolation time">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="melee penalty" />
+			<_field_struct name="melee penalty">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="minimum dinged amount" />
+			<_field_struct name="minimum dinged amount">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="maximum duration" />
+			<_field_struct name="maximum duration">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			</_field_struct>
+		<_field_tag_reference_64 name="active camouflage energy gain effect" />
+		<_field_struct name="damage properties">
+			<_field_explanation name="Damage scaling malleable properties" />
+			<_field_custom name="Weapon damage scalar" />
+			<_field_struct name="Weapon damage scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="Melee damage scalar" />
+			<_field_struct name="Melee damage scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="Melee knockback scalar" />
+			<_field_struct name="Melee knockback scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="Melee recovery speed scalar" />
+			<_field_struct name="Melee recovery speed scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="Grenade damage scalar" />
+			<_field_struct name="Grenade damage scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="Grenade knockback scalar" />
+			<_field_struct name="Grenade knockback scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="Body vampirism scalar" />
+			<_field_struct name="Body vampirism scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="Shield vampirism scalar" />
+			<_field_struct name="Shield vampirism scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="Area of effect radius scalar" />
+			<_field_struct name="Area of effect radius scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			</_field_struct>
+		<_field_struct name="weapon properties">
+			<_field_explanation name="Weapon trait malleable properties" />
+			<_field_custom name="weapon switch speed scalar" />
+			<_field_struct name="weapon switch speed scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="weapon empty reload speed scalar" />
+			<_field_struct name="weapon empty reload speed scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="weapon overheat loss scalar" />
+			<_field_struct name="weapon overheat loss scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="weapon tactical reload speed scalar" />
+			<_field_struct name="weapon tactical reload speed scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="weapon tactical cooling scalar" />
+			<_field_struct name="weapon tactical cooling scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="movement speed (with turret) scalar" />
+			<_field_struct name="movement speed (with turret) scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="weapon magazine cycling speed scalar" />
+			<_field_struct name="weapon magazine cycling speed scalar">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			</_field_struct>
+		<_field_struct name="emp properties">
+			<_field_explanation name="EMP malleable properties" />
+			<_field_custom name="EMP disable duration scalar " />
+			<_field_struct name="EMP disable duration scalar ">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_custom name="EMP disable duration MP scalar " />
+			<_field_struct name="EMP disable duration MP scalar ">
+				<_field_real name="Base Value" />
+				<_field_real_bounds name="Value Bounds" />
+				</_field_struct>
+			<_field_tag_reference_64 name="EMP unit modifiers" />
+			</_field_struct>
+		<_field_tag_reference_64 name="emp disabled effect" />
+		<_field_string_id name="recording unit type" />
+		<_field_custom name="" />
+		<_field_tag_reference_64 name="knockback collision damage override" />
+		<_field_tag_reference_64 name="legacy networking override" />
+		</_field_struct>
+	<_field_custom name="$$$ VEHICLE $$$" />
+	<_field_tag_reference_64 name="parent" />
+	<_field_long_flags name="flags">
+		<Item Name="no friction w/driver" />
+		<Item Name="autoaim when teamless" />
+		<Item Name="ai weapon cannot rotate" />
+		<Item Name="ai does not require driver" />
+		<Item Name="ai driver enable" />
+		<Item Name="ai driver flying" />
+		<Item Name="ai driver can-sidestep" />
+		<Item Name="ai driver hovering" />
+		<Item Name="noncombat vehicle" />
+		<Item Name="does not cause collision damage" />
+		<Item Name="huge vehicle physics group" />
+		<Item Name="ai auto turret" />
+		<Item Name="ai sentry turret" />
+		<Item Name="ignore camera pitch" />
+		<Item Name="auto turret" />
+		<Item Name="ignore kill volumes" />
+		<Item Name="targetable when open" />
+		<Item Name="vehicle wants to recieve reduced weapon acceleration when on ground" />
+		<Item Name="vehicle wants to recieve reduced weapon acceleration when airborne" />
+		<Item Name="do not force units to exit when upside down" />
+		<Item Name="vehicle creates enemy spawn influencers" />
+		<Item Name="driver cannot take damage" />
+		<Item Name="player cannot flip vehicle" />
+		<Item Name="do not kill riders at terminal velocity" />
+		<Item Name="people in this vehicle use radio only" />
+		<Item Name="Treat the offhand dual wielded weapon as a secondary primary weapon" />
+		<Item Name="Override the player's nav point while they are in this vehicle" />
+	</_field_long_flags>
+	<_field_explanation name="physics type" />
+	<_field_struct name="physics types">
+		<_field_custom name="" />
+		<_field_block_64 name="type-human_tank">
+			<_field_angle name="forward arc" />
+			<_field_angle name="perpendicular forward arc" />
+			<_field_real name="flip window" />
+			<_field_real name="pegged fraction" />
+			<_field_real name="forward turn scale" />
+			<_field_real name="reverse turn scale" />
+			<_field_explanation name="forward differential" />
+			<_field_real name="maximum left differential" />
+			<_field_real name="maximum right differential" />
+			<_field_real name="differential acceleration" />
+			<_field_real name="differential deceleration" />
+			<_field_explanation name="reverse differential" />
+			<_field_real name="maximum left reverse differential" />
+			<_field_real name="maximum right reverse differential" />
+			<_field_real name="differential reverse acceleration" />
+			<_field_real name="differential reverse deceleration" />
+			<_field_struct name="engine">
+				<_field_explanation name="engine" />
+				<_field_real name="engine moment" />
+				<_field_real name="engine min angular velocity" />
+				<_field_real name="engine max angular velocity" />
+				<_field_block_64 name="gears">
+					<_field_explanation name="loaded torque" />
+					<_field_struct name="loaded torque curve">
+						<_field_struct name="function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_struct>
+					<_field_explanation name="cruising torque" />
+					<_field_struct name="cruising torque curve">
+						<_field_struct name="function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_struct>
+					<_field_explanation name="gearing" />
+					<_field_real name="min time to upshift" />
+					<_field_real name="engine up-shift scale" />
+					<_field_real name="gear ratio" />
+					<_field_real name="min time to downshift" />
+					<_field_real name="engine down-shift scale" />
+					<_field_real name="audio engine uprev rate" />
+					<_field_real name="audio engine shift up RPM value" />
+					<_field_real name="audio engine downrev rate" />
+					<_field_real name="audio engine shift down RPM value" />
+					<_field_tag_reference_64 name="gear shift sound - shifting up" />
+					<_field_tag_reference_64 name="gear shift sound - shifting down" />
+					</_field_block_64>
+				<_field_tag_reference_64 name="gear shift sound" />
+				<_field_block_64 name="load and cruise sound">
+					<_field_string_id name="load cruise function" />
+					<_field_long_block_index name="attachment index" />
+					</_field_block_64>
+				</_field_struct>
+			<_field_explanation name="wheel circumferance" />
+			<_field_real name="wheel circumferance" />
+			<_field_real name="gravity adjust" />
+			<_field_explanation name="New Tank Controls" />
+			<_field_byte_flags name="control flags">
+				<Item Name="Enable New Control" />
+				<Item Name="Use Linear Velocity" />
+				<Item Name="Use Angular Velocity" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad4b05" length="3" />
+			<_field_real name="at rest forward angle(purple)" />
+			<_field_real name="at rest reverse angle(violet)" />
+			<_field_real name="at rest side on reverse angle closest to front(green)" />
+			<_field_real name="at rest side on reverse angle furthest from front(blue)" />
+			<_field_real name="at rest facing forward reverse angle(yellow)" />
+			<_field_real name="at rest facing backward reverse angle(pink)" />
+			<_field_real name="in motion opposing direction angle" />
+			<_field_real name="in motion speed" />
+			</_field_block_64>
+		<_field_block_64 name="type-human_jeep">
+			<_field_struct name="steering control">
+				<_field_explanation name="steering overdampening" />
+				<_field_angle name="overdampen cusp angle" />
+				<_field_real name="overdampen exponent" />
+				<_field_angle name="ebrake overdampen cusp angle" />
+				<_field_real name="ebrake overdampen exponent" />
+				<_field_custom name="Throttle Steering" />
+				<_field_angle name="throttle steering angle" />
+				<_field_real name="throttle steering interpolation rate" />
+				<_field_custom name="" />
+				</_field_struct>
+			<_field_struct name="turning control">
+				<_field_explanation name="turning" />
+				<_field_real name="maximum left turn" />
+				<_field_real name="maximum right turn (negative)" />
+				<_field_real name="turn rate" />
+				</_field_struct>
+			<_field_struct name="engine">
+				<_field_explanation name="engine" />
+				<_field_real name="engine moment" />
+				<_field_real name="engine min angular velocity" />
+				<_field_real name="engine max angular velocity" />
+				<_field_block_64 name="gears">
+					<_field_explanation name="loaded torque" />
+					<_field_struct name="loaded torque curve">
+						<_field_struct name="function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_struct>
+					<_field_explanation name="cruising torque" />
+					<_field_struct name="cruising torque curve">
+						<_field_struct name="function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_struct>
+					<_field_explanation name="gearing" />
+					<_field_real name="min time to upshift" />
+					<_field_real name="engine up-shift scale" />
+					<_field_real name="gear ratio" />
+					<_field_real name="min time to downshift" />
+					<_field_real name="engine down-shift scale" />
+					<_field_real name="audio engine uprev rate" />
+					<_field_real name="audio engine shift up RPM value" />
+					<_field_real name="audio engine downrev rate" />
+					<_field_real name="audio engine shift down RPM value" />
+					<_field_tag_reference_64 name="gear shift sound - shifting up" />
+					<_field_tag_reference_64 name="gear shift sound - shifting down" />
+					</_field_block_64>
+				<_field_tag_reference_64 name="gear shift sound" />
+				<_field_block_64 name="load and cruise sound">
+					<_field_string_id name="load cruise function" />
+					<_field_long_block_index name="attachment index" />
+					</_field_block_64>
+				</_field_struct>
+			<_field_explanation name="wheel circumferance" />
+			<_field_real name="wheel circumferance" />
+			<_field_real name="gravity adjust" />
+			<_field_real name="antiroll torque factor" />
+			<_field_struct name="air control torque function">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_real name="air control torque max" />
+			<_field_custom name="Wheel Identification" />
+			<_field_short_block_index name="front left wheel" />
+			<_field_short_block_index name="front right wheel" />
+			<_field_short_block_index name="back left wheel" />
+			<_field_short_block_index name="back right wheel" />
+			<_field_custom name="" />
+			</_field_block_64>
+		<_field_block_64 name="type-human_plane">
+			<_field_explanation name="velocity control variables" />
+			<_field_real name="maximum forward speed" />
+			<_field_real name="maximum reverse speed" />
+			<_field_real name="speed acceleration" />
+			<_field_real name="speed deceleration" />
+			<_field_real name="speed accel against direction" />
+			<_field_real name="maximum forward speed during boost" />
+			<_field_real name="maximum left slide" />
+			<_field_real name="maximum right slide" />
+			<_field_real name="slide acceleration" />
+			<_field_real name="slide deceleration" />
+			<_field_real name="slide accel against direction" />
+			<_field_real name="maximum slide speed during boost" />
+			<_field_real name="maximum up rise" />
+			<_field_real name="maximum down rise" />
+			<_field_real name="rise acceleration" />
+			<_field_real name="rise deceleration" />
+			<_field_real name="rise accel against direction" />
+			<_field_real name="maximum rise speed during boost" />
+			<_field_explanation name="human plane tuning variables" />
+			<_field_real name="flying torque scale" />
+			<_field_real name="air friction deceleration" />
+			<_field_real name="thrust scale" />
+			<_field_real name="turn rate scale when boosting" />
+			<_field_real name="maximum roll" />
+			<_field_struct name="steering animation">
+				<_field_explanation name="steering animation and interpolation&#10;" />
+				<_field_real name="interpolation scale" />
+				<_field_angle name="max angle" />
+				</_field_struct>
+			</_field_block_64>
+		<_field_block_64 name="type-alien_scout">
+			<_field_struct name="steering control">
+				<_field_explanation name="steering overdampening" />
+				<_field_angle name="overdampen cusp angle" />
+				<_field_real name="overdampen exponent" />
+				<_field_angle name="ebrake overdampen cusp angle" />
+				<_field_real name="ebrake overdampen exponent" />
+				<_field_custom name="Throttle Steering" />
+				<_field_angle name="throttle steering angle" />
+				<_field_real name="throttle steering interpolation rate" />
+				<_field_custom name="" />
+				</_field_struct>
+			<_field_explanation name="velocity control variables" />
+			<_field_real name="maximum forward speed" />
+			<_field_real name="maximum reverse speed" />
+			<_field_real name="speed acceleration" />
+			<_field_real name="speed deceleration" />
+			<_field_real name="maximum left slide" />
+			<_field_real name="maximum right slide" />
+			<_field_real name="slide acceleration" />
+			<_field_real name="slide deceleration" />
+			<_field_real name="AI deceleration multiplier" />
+			<_field_real name="slide accel against direction" />
+			<_field_real name="slide speed at top speed" />
+			<_field_byte_flags name="flags">
+				<Item Name="locked camera" />
+			</_field_byte_flags>
+			<_field_pad name="generated_pad1c8d" length="3" />
+			<_field_real name="drag coeficient" />
+			<_field_real name="constant deceleration" />
+			<_field_real name="torque scale" />
+			<_field_explanation name="engine object function" />
+			<_field_struct name="engine gravity function">
+				<_field_string_id name="object function damage region" />
+				<_field_real name="min anti gravity engine speed" />
+				<_field_real name="max anti gravity engine speed" />
+				<_field_real name="engine speed acceleration" />
+				<_field_real name="maximum vehicle speed" />
+				</_field_struct>
+			<_field_explanation name="contrail object function" />
+			<_field_struct name="contrail gravity function">
+				<_field_string_id name="object function damage region" />
+				<_field_real name="min anti gravity engine speed" />
+				<_field_real name="max anti gravity engine speed" />
+				<_field_real name="engine speed acceleration" />
+				<_field_real name="maximum vehicle speed" />
+				</_field_struct>
+			<_field_explanation name="engine rotation function" />
+			<_field_real_bounds name="gear rotation speed" />
+			<_field_struct name="steering animation">
+				<_field_explanation name="steering animation and interpolation&#10;" />
+				<_field_real name="interpolation scale" />
+				<_field_angle name="max angle" />
+				</_field_struct>
+			<_field_struct name="scout physics">
+				<_field_byte_flags name="flags">
+					<Item Name="hovercraft" />
+					<Item Name="slope scales speed" />
+				</_field_byte_flags>
+				<_field_pad name="generated_padddec" length="3" />
+				<_field_explanation name="Air control" />
+				<_field_real name="air control angular velocity factor" />
+				<_field_real name="air control throttle acceleration" />
+				<_field_real name="air control throttle bonus clamp min" />
+				<_field_real name="air control throttle bonus clamp max" />
+				<_field_real name="air control angular acceleration" />
+				<_field_real_fraction name="air control auto level strength" />
+				<_field_explanation name="Brake control" />
+				<_field_real name="brake lift angular acceleration" />
+				<_field_real name="brake lift acceleration up" />
+				<_field_real name="brake airborne lift acceleration forward" />
+				<_field_real name="brake airborne lift acceleration up" />
+				</_field_struct>
+			</_field_block_64>
+		<_field_block_64 name="type-alien_fighter">
+			<_field_struct name="steering control">
+				<_field_explanation name="steering overdampening" />
+				<_field_angle name="overdampen cusp angle" />
+				<_field_real name="overdampen exponent" />
+				<_field_angle name="ebrake overdampen cusp angle" />
+				<_field_real name="ebrake overdampen exponent" />
+				<_field_custom name="Throttle Steering" />
+				<_field_angle name="throttle steering angle" />
+				<_field_real name="throttle steering interpolation rate" />
+				<_field_custom name="" />
+				</_field_struct>
+			<_field_struct name="turning control">
+				<_field_explanation name="turning" />
+				<_field_real name="maximum left turn" />
+				<_field_real name="maximum right turn (negative)" />
+				<_field_real name="turn rate" />
+				</_field_struct>
+			<_field_explanation name="velocity control variables" />
+			<_field_real name="maximum forward speed" />
+			<_field_real name="maximum reverse speed" />
+			<_field_real name="speed acceleration" />
+			<_field_real name="speed deceleration" />
+			<_field_real name="boost maximum forward speed" />
+			<_field_real name="boost maximum reverse speed" />
+			<_field_real name="boost speed acceleration" />
+			<_field_real name="boost speed deceleration" />
+			<_field_real name="maximum left slide" />
+			<_field_real name="maximum right slide" />
+			<_field_real name="slide acceleration" />
+			<_field_real name="slide deceleration" />
+			<_field_real name="slide accel against direction" />
+			<_field_explanation name="torque scale" />
+			<_field_real name="flying torque scale" />
+			<_field_real name="flying torque cap cusp" />
+			<_field_real name="flying torque cap exponent" />
+			<_field_explanation name="fixed gun offset" />
+			<_field_angle name="fixed gun yaw" />
+			<_field_angle name="fixed gun pitch" />
+			<_field_explanation name="alien fighter trick variables" />
+			<_field_real name="maximum trick frequency" />
+			<_field_real name="loop trick duration" />
+			<_field_real name="roll trick duration" />
+			<_field_explanation name="alien fighter fake flight control" />
+			<_field_real name="zero gravity speed" />
+			<_field_real name="full gravity speed" />
+			<_field_real name="strafe boost scale" />
+			<_field_real name="off stick deceleration scale" />
+			<_field_real name="cruising throttle" />
+			<_field_real name="dive speed scale" />
+			</_field_block_64>
+		<_field_block_64 name="type-turret">
+			<_field_word_flags name="flags">
+				<Item Name="powered by parent" />
+				<Item Name="idles in default position" />
+				<Item Name="reverse yaw motor direction" />
+				<Item Name="reverse pitch motor direction" />
+				<Item Name="reverse elevate motor direction" />
+				<Item Name="targetable when open" />
+			</_field_word_flags>
+			<_field_pad name="generated_pad4605" length="2" />
+			<_field_string_id name="physical yaw node" />
+			<_field_string_id name="physical pitch node" />
+			<_field_string_id name="physical elevate node" />
+			<_field_angle name="operating elevation angle" />
+			</_field_block_64>
+		<_field_block_64 name="type-vtol">
+			<_field_struct name="turning control">
+				<_field_explanation name="turning" />
+				<_field_real name="maximum left turn" />
+				<_field_real name="maximum right turn (negative)" />
+				<_field_real name="turn rate" />
+				</_field_struct>
+			<_field_custom name="" />
+			<_field_string_id name="left lift marker" />
+			<_field_custom name="" />
+			<_field_string_id name="right lift marker" />
+			<_field_custom name="" />
+			<_field_string_id name="thrust marker" />
+			<_field_struct name="trigger to throttle">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_struct name="descent to boost">
+				<_field_struct name="descent to boost">
+					<_field_custom name="function" />
+					<_field_struct name="function">
+						<_field_custom name="" />
+						<_field_data_64 name="data" />
+						<_field_custom name="" />
+						</_field_struct>
+					</_field_struct>
+				<_field_real name="max downward speed" />
+				</_field_struct>
+			<_field_explanation name="minimum and maximum up acceleration" />
+			<_field_real name="maximum up acceleration" />
+			<_field_real name="maximum down acceleration" />
+			<_field_real name="vertical deceleration time" />
+			<_field_explanation name="lift arm pivot" />
+			<_field_real name="lift arm pivot length" />
+			<_field_real name="lift arm pivot length negative z" />
+			<_field_explanation name="turn, left and forward accelerations" />
+			<_field_real name="maximum turn acceleration" />
+			<_field_real name="turn acceleration gain" />
+			<_field_explanation name="interpolation parameters" />
+			<_field_real name="interpolation speed domain" />
+			<_field_explanation name="function explanation" />
+			<_field_struct name="SPEED_TROTTLE_CEILING()">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_struct name="INTERPOLATION_ACC()">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_struct name="A_B_INTERPOLATION() interpolation mapping">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_block_64 name="speed interpolated parameters">
+				<_field_real name="rotor damping" />
+				<_field_real name="maximum left acceleration" />
+				<_field_real name="maximum forward acceleration" />
+				<_field_real name="drag coeficient" />
+				<_field_real name="constant deceleration" />
+				<_field_real name="magic angular acc exp" />
+				<_field_real name="magic angular acc scale" />
+				<_field_real name="magic angular acc k" />
+				</_field_block_64>
+			<_field_angle name="lift angles acc" />
+			<_field_real name="alt. lock offset coefficient" />
+			<_field_real name="alt. lock velocity coefficient" />
+			<_field_explanation name="prop rotation" />
+			<_field_real_bounds name="prop rotation speed" />
+			<_field_explanation name="landing" />
+			<_field_real name="landing time" />
+			<_field_real name="takeoff time" />
+			<_field_real name="landing linear velocity" />
+			<_field_real name="landing angular velocity" />
+			<_field_real name="auto take off height offset" />
+			<_field_word_flags name="flags">
+				<Item Name="dodge overloaded on boost trigger" />
+				<Item Name="disable weapons when boosting" />
+				<Item Name="allow boost in z" />
+				<Item Name="manual altitude lock" />
+			</_field_word_flags>
+			<_field_pad name="generated_padac32" length="2" />
+			<_field_explanation name="dodge boost" />
+			<_field_struct name="dodge boost force application">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_struct name="dodge boost velocity">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_real name="dodge boost trigger time" />
+			<_field_real name="dodge boost duration" />
+			<_field_real name="dodge boost recharge duration" />
+			<_field_tag_reference_64 name="dodge boost damage response" />
+			<_field_explanation name="steering overdampening" />
+			<_field_struct name="steering control">
+				<_field_explanation name="steering overdampening" />
+				<_field_angle name="overdampen cusp angle" />
+				<_field_real name="overdampen exponent" />
+				<_field_angle name="ebrake overdampen cusp angle" />
+				<_field_real name="ebrake overdampen exponent" />
+				<_field_custom name="Throttle Steering" />
+				<_field_angle name="throttle steering angle" />
+				<_field_real name="throttle steering interpolation rate" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_block_64>
+		<_field_block_64 name="type-chopper">
+			<_field_struct name="steering control">
+				<_field_explanation name="steering overdampening" />
+				<_field_angle name="overdampen cusp angle" />
+				<_field_real name="overdampen exponent" />
+				<_field_angle name="ebrake overdampen cusp angle" />
+				<_field_real name="ebrake overdampen exponent" />
+				<_field_custom name="Throttle Steering" />
+				<_field_angle name="throttle steering angle" />
+				<_field_real name="throttle steering interpolation rate" />
+				<_field_custom name="" />
+				</_field_struct>
+			<_field_struct name="turning control">
+				<_field_explanation name="turning" />
+				<_field_real name="maximum left turn" />
+				<_field_real name="maximum right turn (negative)" />
+				<_field_real name="turn rate" />
+				</_field_struct>
+			<_field_struct name="engine">
+				<_field_explanation name="engine" />
+				<_field_real name="engine moment" />
+				<_field_real name="engine min angular velocity" />
+				<_field_real name="engine max angular velocity" />
+				<_field_block_64 name="gears">
+					<_field_explanation name="loaded torque" />
+					<_field_struct name="loaded torque curve">
+						<_field_struct name="function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_struct>
+					<_field_explanation name="cruising torque" />
+					<_field_struct name="cruising torque curve">
+						<_field_struct name="function">
+							<_field_custom name="function" />
+							<_field_struct name="function">
+								<_field_custom name="" />
+								<_field_data_64 name="data" />
+								<_field_custom name="" />
+								</_field_struct>
+							</_field_struct>
+						</_field_struct>
+					<_field_explanation name="gearing" />
+					<_field_real name="min time to upshift" />
+					<_field_real name="engine up-shift scale" />
+					<_field_real name="gear ratio" />
+					<_field_real name="min time to downshift" />
+					<_field_real name="engine down-shift scale" />
+					<_field_real name="audio engine uprev rate" />
+					<_field_real name="audio engine shift up RPM value" />
+					<_field_real name="audio engine downrev rate" />
+					<_field_real name="audio engine shift down RPM value" />
+					<_field_tag_reference_64 name="gear shift sound - shifting up" />
+					<_field_tag_reference_64 name="gear shift sound - shifting down" />
+					</_field_block_64>
+				<_field_tag_reference_64 name="gear shift sound" />
+				<_field_block_64 name="load and cruise sound">
+					<_field_string_id name="load cruise function" />
+					<_field_long_block_index name="attachment index" />
+					</_field_block_64>
+				</_field_struct>
+			<_field_real name="wheel circumferance" />
+			<_field_real_vector_3d name="pivot offset" />
+			<_field_explanation name="Yaw Correction" />
+			<_field_real name="yaw correction coefficient 2" />
+			<_field_real name="yaw correction coefficient 1" />
+			<_field_real name="yaw correction coefficient 0" />
+			<_field_real name="bank to slide ratio" />
+			<_field_real name="bank slide exponent" />
+			<_field_real name="bank to turn ratio" />
+			<_field_real name="bank turn exponent" />
+			<_field_real name="bank fraction" />
+			<_field_real name="bank rate" />
+			<_field_real name="wheel accel" />
+			<_field_real name="gyroscopic damping" />
+			</_field_block_64>
+		<_field_block_64 name="type-guardian">
+			<_field_struct name="steering control">
+				<_field_explanation name="steering overdampening" />
+				<_field_angle name="overdampen cusp angle" />
+				<_field_real name="overdampen exponent" />
+				<_field_angle name="ebrake overdampen cusp angle" />
+				<_field_real name="ebrake overdampen exponent" />
+				<_field_custom name="Throttle Steering" />
+				<_field_angle name="throttle steering angle" />
+				<_field_real name="throttle steering interpolation rate" />
+				<_field_custom name="" />
+				</_field_struct>
+			<_field_real name="maximum forward speed" />
+			<_field_real name="maximum reverse speed" />
+			<_field_real name="speed acceleration" />
+			<_field_real name="speed deceleration" />
+			<_field_real name="maximum left slide" />
+			<_field_real name="maximum right slide" />
+			<_field_real name="slide acceleration" />
+			<_field_real name="slide deceleration" />
+			<_field_real name="torque scale" />
+			<_field_real name="anti-gravity force z-offset" />
+			</_field_block_64>
+		<_field_block_64 name="type-jackal-glider">
+			<_field_struct name="steering control">
+				<_field_explanation name="steering overdampening" />
+				<_field_angle name="overdampen cusp angle" />
+				<_field_real name="overdampen exponent" />
+				<_field_angle name="ebrake overdampen cusp angle" />
+				<_field_real name="ebrake overdampen exponent" />
+				<_field_custom name="Throttle Steering" />
+				<_field_angle name="throttle steering angle" />
+				<_field_real name="throttle steering interpolation rate" />
+				<_field_custom name="" />
+				</_field_struct>
+			<_field_explanation name="velocity control variables" />
+			<_field_real name="maximum forward speed" />
+			<_field_real name="maximum reverse speed" />
+			<_field_real name="speed acceleration" />
+			<_field_real name="speed deceleration" />
+			<_field_real name="maximum left slide" />
+			<_field_real name="maximum right slide" />
+			<_field_real name="slide acceleration" />
+			<_field_real name="slide deceleration" />
+			<_field_real name="torque scale" />
+			<_field_explanation name="engine object function" />
+			<_field_struct name="engine object function">
+				<_field_string_id name="object function damage region" />
+				<_field_real name="min anti gravity engine speed" />
+				<_field_real name="max anti gravity engine speed" />
+				<_field_real name="engine speed acceleration" />
+				<_field_real name="maximum vehicle speed" />
+				</_field_struct>
+			<_field_explanation name="contrail object function" />
+			<_field_struct name="contrail object function">
+				<_field_string_id name="object function damage region" />
+				<_field_real name="min anti gravity engine speed" />
+				<_field_real name="max anti gravity engine speed" />
+				<_field_real name="engine speed acceleration" />
+				<_field_real name="maximum vehicle speed" />
+				</_field_struct>
+			<_field_struct name="steering animation">
+				<_field_explanation name="steering animation and interpolation&#10;" />
+				<_field_real name="interpolation scale" />
+				<_field_angle name="max angle" />
+				</_field_struct>
+			<_field_real name="flying velocity threshold" />
+			<_field_angle name="flying look threshold" />
+			<_field_real name="flying hover threshold" />
+			<_field_real name="grounded hover threshold" />
+			<_field_real name="landing grounded time" />
+			<_field_angle name="ground turn radius" />
+			<_field_real name="ground acceleration" />
+			<_field_explanation name="wing lift" />
+			<_field_real name="wing lift q" />
+			<_field_real name="wing lift k" />
+			<_field_real name="wing lift function ceiling" />
+			<_field_real name="aileron to angular acceleartion scale" />
+			<_field_angle name="aileron yaw tilt angle" />
+			<_field_explanation name="wing" />
+			<_field_struct name="wing surface">
+				<_field_char_enum name="offset axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="pivot axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="rotation axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="normal axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_real name="offset distance" />
+				<_field_real name="pivot distance" />
+				<_field_explanation name="normal force" />
+				<_field_real name="q" />
+				<_field_real name="k" />
+				<_field_real name="function ceiling" />
+				<_field_angle name="maximum angle" />
+				<_field_real name="render debug radius" />
+				</_field_struct>
+			<_field_explanation name="ailerons" />
+			<_field_struct name="aileron surface">
+				<_field_char_enum name="offset axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="pivot axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="rotation axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="normal axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_real name="offset distance" />
+				<_field_real name="pivot distance" />
+				<_field_explanation name="normal force" />
+				<_field_real name="q" />
+				<_field_real name="k" />
+				<_field_real name="function ceiling" />
+				<_field_angle name="maximum angle" />
+				<_field_real name="render debug radius" />
+				</_field_struct>
+			<_field_explanation name="elevator" />
+			<_field_struct name="elevator surface">
+				<_field_char_enum name="offset axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="pivot axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="rotation axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="normal axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_real name="offset distance" />
+				<_field_real name="pivot distance" />
+				<_field_explanation name="normal force" />
+				<_field_real name="q" />
+				<_field_real name="k" />
+				<_field_real name="function ceiling" />
+				<_field_angle name="maximum angle" />
+				<_field_real name="render debug radius" />
+				</_field_struct>
+			<_field_explanation name="tail" />
+			<_field_struct name="tail surface">
+				<_field_char_enum name="offset axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="pivot axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="rotation axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="normal axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_real name="offset distance" />
+				<_field_real name="pivot distance" />
+				<_field_explanation name="normal force" />
+				<_field_real name="q" />
+				<_field_real name="k" />
+				<_field_real name="function ceiling" />
+				<_field_angle name="maximum angle" />
+				<_field_real name="render debug radius" />
+				</_field_struct>
+			<_field_explanation name="rudder" />
+			<_field_struct name="rudder surface">
+				<_field_char_enum name="offset axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="pivot axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="rotation axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="normal axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_real name="offset distance" />
+				<_field_real name="pivot distance" />
+				<_field_explanation name="normal force" />
+				<_field_real name="q" />
+				<_field_real name="k" />
+				<_field_real name="function ceiling" />
+				<_field_angle name="maximum angle" />
+				<_field_real name="render debug radius" />
+				</_field_struct>
+			<_field_explanation name="taxi" />
+			<_field_struct name="taxi surface">
+				<_field_char_enum name="offset axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="pivot axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="rotation axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_char_enum name="normal axis">
+					<Item Name="foward" />
+					<Item Name="left" />
+					<Item Name="up" />
+				</_field_char_enum>
+				<_field_real name="offset distance" />
+				<_field_real name="pivot distance" />
+				<_field_explanation name="normal force" />
+				<_field_real name="q" />
+				<_field_real name="k" />
+				<_field_real name="function ceiling" />
+				<_field_angle name="maximum angle" />
+				<_field_real name="render debug radius" />
+				</_field_struct>
+			<_field_explanation name="ground drag" />
+			<_field_struct name="ground drag struct">
+				<_field_explanation name="drag" />
+				<_field_real name="q" />
+				<_field_real name="k" />
+				<_field_real name="constant deceleration" />
+				</_field_struct>
+			<_field_explanation name="air drag" />
+			<_field_struct name="air drag struct">
+				<_field_explanation name="drag" />
+				<_field_real name="q" />
+				<_field_real name="k" />
+				<_field_real name="constant deceleration" />
+				</_field_struct>
+			<_field_explanation name="takeoff drag" />
+			<_field_struct name="takeoff drag struct">
+				<_field_explanation name="drag" />
+				<_field_real name="q" />
+				<_field_real name="k" />
+				<_field_real name="constant deceleration" />
+				</_field_struct>
+			</_field_block_64>
+		<_field_block_64 name="type-space-fighter">
+			<_field_struct name="steering control">
+				<_field_explanation name="steering overdampening" />
+				<_field_angle name="overdampen cusp angle" />
+				<_field_real name="overdampen exponent" />
+				<_field_angle name="ebrake overdampen cusp angle" />
+				<_field_real name="ebrake overdampen exponent" />
+				<_field_custom name="Throttle Steering" />
+				<_field_angle name="throttle steering angle" />
+				<_field_real name="throttle steering interpolation rate" />
+				<_field_custom name="" />
+				</_field_struct>
+			<_field_struct name="turning control">
+				<_field_explanation name="turning" />
+				<_field_real name="maximum left turn" />
+				<_field_real name="maximum right turn (negative)" />
+				<_field_real name="turn rate" />
+				</_field_struct>
+			<_field_explanation name="velocity control variables" />
+			<_field_real name="full throttle speed" />
+			<_field_real name="neutral throttle speed" />
+			<_field_real name="reverse throttle speed" />
+			<_field_real name="speed acceleration" />
+			<_field_real name="speed deceleration" />
+			<_field_real name="maximum left slide" />
+			<_field_real name="maximum right slide" />
+			<_field_real name="slide acceleration" />
+			<_field_real name="slide deceleration" />
+			<_field_real name="slide accel against direction" />
+			<_field_explanation name="torque scale" />
+			<_field_real name="flying torque scale" />
+			<_field_explanation name="fixed gun offset" />
+			<_field_angle name="fixed gun yaw" />
+			<_field_angle name="fixed gun pitch" />
+			<_field_explanation name="alien fighter trick variables" />
+			<_field_real name="maximum trick frequency" />
+			<_field_real name="loop trick duration" />
+			<_field_real name="roll trick duration" />
+			<_field_explanation name="alien fighter fake flight control" />
+			<_field_real name="strafe boost scale" />
+			<_field_real name="off stick deceleration scale" />
+			<_field_real name="dive speed scale" />
+			<_field_angle name="roll max velocity" />
+			<_field_angle name="roll acceleration" />
+			<_field_angle name="roll deceleration" />
+			<_field_real_fraction name="roll smoothing fraction" />
+			<_field_explanation name="autolevel" />
+			<_field_real name="autolevel time" />
+			<_field_angle name="autolevel pitch cutoff" />
+			<_field_angle name="autolevel max velocity" />
+			<_field_angle name="autolevel max acceleration" />
+			<_field_angle name="autolevel max user ang. vel." />
+			<_field_real name="autolevel spring k" />
+			<_field_real name="autolevel spring c" />
+			<_field_explanation name="cosmetic roll" />
+			<_field_real name="cosmetic roll scale" />
+			<_field_angle name="cosmetic roll max bank" />
+			<_field_angle name="cosmetic roll max velocity" />
+			<_field_angle name="cosmetic roll acceleration" />
+			<_field_real name="cosmetic roll spring k" />
+			<_field_real name="cosmetic roll spring c" />
+			<_field_explanation name="new roll" />
+			<_field_long_flags name="roll flags">
+				<Item Name="use new roll" />
+			</_field_long_flags>
+			<_field_angle name="maximum left stick roll angle" />
+			<_field_real name="left stick rate smoothing" />
+			<_field_real name="left stick trend smoothing" />
+			<_field_angle name="maximum right stick roll angle" />
+			<_field_real name="right stick rate smoothing" />
+			<_field_real name="right stick trend smoothing" />
+			<_field_explanation name="turn deceleration" />
+			<_field_angle name="turn deceleration threshold" />
+			<_field_real_fraction name="turn deceleration fraction" />
+			<_field_explanation name="soft ceiling turn back" />
+			<_field_long_flags name="turn back flags">
+				<Item Name="turn back to tangent" />
+			</_field_long_flags>
+			<_field_real name="turn back latched period" />
+			<_field_struct name="turn back distance to turn rate">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_explanation name="thrust params" />
+			<_field_real name="ideal thrust decay" />
+			<_field_real name="ideal thrust increase" />
+			<_field_real name="minimum thrust decay" />
+			<_field_real name="minimum thrust increase" />
+			<_field_real name="maximum thrust increase" />
+			<_field_explanation name="dive params" />
+			<_field_real name="minimum dive angle" />
+			<_field_real name="maximum dive angle" />
+			<_field_explanation name="strafe params" />
+			<_field_real name="strafe boost power" />
+			<_field_explanation name="wingtip params" />
+			<_field_real name="wingtip contrail turn" />
+			<_field_real name="wingtip min turn" />
+			<_field_explanation name="Safety" />
+			<_field_real name="dangerous trajectory prediction time" />
+			</_field_block_64>
+		<_field_block_64 name="type-revenant">
+			<_field_struct name="tank block">
+				<_field_angle name="forward arc" />
+				<_field_angle name="perpendicular forward arc" />
+				<_field_real name="flip window" />
+				<_field_real name="pegged fraction" />
+				<_field_real name="forward turn scale" />
+				<_field_real name="reverse turn scale" />
+				<_field_explanation name="forward differential" />
+				<_field_real name="maximum left differential" />
+				<_field_real name="maximum right differential" />
+				<_field_real name="differential acceleration" />
+				<_field_real name="differential deceleration" />
+				<_field_explanation name="reverse differential" />
+				<_field_real name="maximum left reverse differential" />
+				<_field_real name="maximum right reverse differential" />
+				<_field_real name="differential reverse acceleration" />
+				<_field_real name="differential reverse deceleration" />
+				<_field_struct name="engine">
+					<_field_explanation name="engine" />
+					<_field_real name="engine moment" />
+					<_field_real name="engine min angular velocity" />
+					<_field_real name="engine max angular velocity" />
+					<_field_block_64 name="gears">
+						<_field_explanation name="loaded torque" />
+						<_field_struct name="loaded torque curve">
+							<_field_struct name="function">
+								<_field_custom name="function" />
+								<_field_struct name="function">
+									<_field_custom name="" />
+									<_field_data_64 name="data" />
+									<_field_custom name="" />
+									</_field_struct>
+								</_field_struct>
+							</_field_struct>
+						<_field_explanation name="cruising torque" />
+						<_field_struct name="cruising torque curve">
+							<_field_struct name="function">
+								<_field_custom name="function" />
+								<_field_struct name="function">
+									<_field_custom name="" />
+									<_field_data_64 name="data" />
+									<_field_custom name="" />
+									</_field_struct>
+								</_field_struct>
+							</_field_struct>
+						<_field_explanation name="gearing" />
+						<_field_real name="min time to upshift" />
+						<_field_real name="engine up-shift scale" />
+						<_field_real name="gear ratio" />
+						<_field_real name="min time to downshift" />
+						<_field_real name="engine down-shift scale" />
+						<_field_real name="audio engine uprev rate" />
+						<_field_real name="audio engine shift up RPM value" />
+						<_field_real name="audio engine downrev rate" />
+						<_field_real name="audio engine shift down RPM value" />
+						<_field_tag_reference_64 name="gear shift sound - shifting up" />
+						<_field_tag_reference_64 name="gear shift sound - shifting down" />
+						</_field_block_64>
+					<_field_tag_reference_64 name="gear shift sound" />
+					<_field_block_64 name="load and cruise sound">
+						<_field_string_id name="load cruise function" />
+						<_field_long_block_index name="attachment index" />
+						</_field_block_64>
+					</_field_struct>
+				<_field_explanation name="wheel circumferance" />
+				<_field_real name="wheel circumferance" />
+				<_field_real name="gravity adjust" />
+				<_field_explanation name="New Tank Controls" />
+				<_field_byte_flags name="control flags">
+					<Item Name="Enable New Control" />
+					<Item Name="Use Linear Velocity" />
+					<Item Name="Use Angular Velocity" />
+				</_field_byte_flags>
+				<_field_pad name="generated_pad4b05" length="3" />
+				<_field_real name="at rest forward angle(purple)" />
+				<_field_real name="at rest reverse angle(violet)" />
+				<_field_real name="at rest side on reverse angle closest to front(green)" />
+				<_field_real name="at rest side on reverse angle furthest from front(blue)" />
+				<_field_real name="at rest facing forward reverse angle(yellow)" />
+				<_field_real name="at rest facing backward reverse angle(pink)" />
+				<_field_real name="in motion opposing direction angle" />
+				<_field_real name="in motion speed" />
+				</_field_struct>
+			<_field_explanation name="velocity control variables" />
+			<_field_real name="maximum forward speed" />
+			<_field_real name="maximum reverse speed" />
+			<_field_real name="speed acceleration" />
+			<_field_real name="speed deceleration" />
+			<_field_real name="maximum left slide" />
+			<_field_real name="maximum right slide" />
+			<_field_real name="slide acceleration" />
+			<_field_real name="slide deceleration" />
+			<_field_struct name="scout physics">
+				<_field_byte_flags name="flags">
+					<Item Name="hovercraft" />
+					<Item Name="slope scales speed" />
+				</_field_byte_flags>
+				<_field_pad name="generated_padddec" length="3" />
+				<_field_explanation name="Air control" />
+				<_field_real name="air control angular velocity factor" />
+				<_field_real name="air control throttle acceleration" />
+				<_field_real name="air control throttle bonus clamp min" />
+				<_field_real name="air control throttle bonus clamp max" />
+				<_field_real name="air control angular acceleration" />
+				<_field_real_fraction name="air control auto level strength" />
+				<_field_explanation name="Brake control" />
+				<_field_real name="brake lift angular acceleration" />
+				<_field_real name="brake lift acceleration up" />
+				<_field_real name="brake airborne lift acceleration forward" />
+				<_field_real name="brake airborne lift acceleration up" />
+				</_field_struct>
+			<_field_real name="drag coeficient" />
+			<_field_real name="constant deceleration" />
+			<_field_real name="torque scale" />
+			</_field_block_64>
+		<_field_custom name="" />
+		</_field_struct>
+	<_field_explanation name="General Vehicle Physics" />
+	<_field_struct name="havok vehicle physics">
+		<_field_real name="gravity scale" />
+		<_field_long_integer name="iteration count" />
+		<_field_block_64 name="anti gravity point configurations">
+			<_field_string_id name="name" />
+			<_field_explanation name="Operational Range- Height" />
+			<_field_real name="inner distance" />
+			<_field_real name="outer distance" />
+			<_field_explanation name="Banking" />
+			<_field_real name="banking lift" />
+			<_field_real name="steering banking factor" />
+			<_field_explanation name="Maximum Lifting Force" />
+			<_field_real name="strength" />
+			<_field_explanation name="Error" />
+			<_field_real_fraction name="error" />
+			<_field_explanation name="Operational Range- Orientation" />
+			<_field_angle name="inner rotational limit" />
+			<_field_angle name="outer rotational limit" />
+			<_field_explanation name="Damping" />
+			<_field_real name="compression damping" />
+			<_field_real name="extension damping" />
+			<_field_custom name="Ground Impact Effects" />
+			<_field_tag_reference_64 name="combined material effects" />
+			<_field_tag_reference_64 name="visual material effects" />
+			<_field_tag_reference_64 name="sound material effects" />
+			<_field_custom name="" />
+			</_field_block_64>
+		<_field_block_64 name="anti gravity points">
+			<_field_custom name="" />
+			<_field_string_id name="marker name" />
+			<_field_string_id name="region name" />
+			<_field_long_integer name="runtime region index" />
+			<_field_custom name="" />
+			<_field_string_id name="looping sound marker" />
+			<_field_block_64 name="state configurations">
+				<_field_short_enum name="region state">
+					<Item Name="default" />
+					<Item Name="minor damage" />
+					<Item Name="medium damage" />
+					<Item Name="major damage" />
+					<Item Name="destroyed" />
+				</_field_short_enum>
+				<_field_short_block_index name="configuration" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_block_64 name="friction point configurations">
+			<_field_string_id name="name" />
+			<_field_real name="radius" />
+			<_field_explanation name="Normal Force Simulation" />
+			<_field_real name="ground depth" />
+			<_field_real name="ground damp factor" />
+			<_field_explanation name="Physics Simulation Noise Reduction" />
+			<_field_real_fraction name="ground normal blend rate" />
+			<_field_real name="max normal force contribution to friction" />
+			<_field_explanation name="Traction" />
+			<_field_real name="static friction" />
+			<_field_real name="kinetic friction" />
+			<_field_real name="slide speed difference" />
+			<_field_real name="e-brake static friction" />
+			<_field_real name="e-brake kinetic friction" />
+			<_field_real name="e-brake slide speed difference" />
+			<_field_real name="AI static friction override" />
+			<_field_real name="AI kinetic friction override" />
+			<_field_angle name="world space slope to stop all traction" />
+			<_field_angle name="local space slope to start traction loss" />
+			<_field_angle name="local space slope to stop all traction" />
+			<_field_angle name="local space slope to stop hit checks" />
+			<_field_explanation name="Grounded Vehicle Stabilizing Torque" />
+			<_field_struct name="grounded speed to down torque function">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_struct name="nearly grounded speed to down torque function">
+				<_field_custom name="function" />
+				<_field_struct name="function">
+					<_field_custom name="" />
+					<_field_data_64 name="data" />
+					<_field_custom name="" />
+					</_field_struct>
+				</_field_struct>
+			<_field_custom name="Ground Impact Effects" />
+			<_field_tag_reference_64 name="combined material effects" />
+			<_field_tag_reference_64 name="visual material effects" />
+			<_field_tag_reference_64 name="sound material effects" />
+			<_field_custom name="" />
+			<_field_long_flags name="flags">
+				<Item Name="suspension is destroyed" />
+			</_field_long_flags>
+			</_field_block_64>
+		<_field_block_64 name="friction points">
+			<_field_custom name="" />
+			<_field_string_id name="marker name" />
+			<_field_string_id name="region name" />
+			<_field_long_integer name="runtime region index" />
+			<_field_real_fraction name="load fraction" />
+			<_field_real name="turn ratio" />
+			<_field_long_flags name="flags">
+				<Item Name="powered" />
+				<Item Name="attached to e-brake" />
+			</_field_long_flags>
+			<_field_custom name="" />
+			<_field_string_id name="looping sound marker" />
+			<_field_string_id name="grinding object function" />
+			<_field_string_id name="rolling object function" />
+			<_field_block_64 name="state configurations">
+				<_field_short_enum name="region state">
+					<Item Name="default" />
+					<Item Name="minor damage" />
+					<Item Name="medium damage" />
+					<Item Name="major damage" />
+					<Item Name="destroyed" />
+				</_field_short_enum>
+				<_field_short_block_index name="configuration" />
+				</_field_block_64>
+			</_field_block_64>
+		<_field_explanation name="Grounded Vehicle Stabilizing Downforce" />
+		<_field_real name="maximum speed for downForce" />
+		<_field_angle name="angle to exclude downforce" />
+		<_field_struct name="grounded speed to COM downforce function">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_struct name="nearly grounded speed to COM downforce function">
+			<_field_custom name="function" />
+			<_field_struct name="function">
+				<_field_custom name="" />
+				<_field_data_64 name="data" />
+				<_field_custom name="" />
+				</_field_struct>
+			</_field_struct>
+		<_field_explanation name="Airborne Vehicle Rotational Stabilization" />
+		<_field_real_vector_3d name="airborne angular stabilization coefficients" />
+		</_field_struct>
+	<_field_block_64 name="tricks">
+		<_field_string_id name="animation name" />
+		<_field_char_enum name="activation type">
+			<Item Name="trick button + left" />
+			<Item Name="trick button + right" />
+			<Item Name="trick button + up" />
+			<Item Name="trick button + down" />
+			<Item Name="peg-flick-jump left" />
+			<Item Name="peg-flick-jump right" />
+			<Item Name="peg-flick-jump up" />
+			<Item Name="peg-flick-jump down" />
+			<Item Name="double-jump left" />
+			<Item Name="double-jump right" />
+			<Item Name="double-jump up" />
+			<Item Name="double-jump down" />
+		</_field_char_enum>
+		<_field_char_enum name="velocity preservation">
+			<Item Name="none" />
+			<Item Name="trick relative" />
+			<Item Name="world relative" />
+		</_field_char_enum>
+		<_field_byte_flags name="flags">
+			<Item Name="use following camera" />
+			<Item Name="do not slam player control" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad983c" length="1" />
+		<_field_real name="camera interpolation time" />
+		<_field_real name="trick exit time" />
+		<_field_real_bounds name="trick exit camera interpolation time" />
+		<_field_real name="trick exit displacement reference" />
+		<_field_real name="cooldown time" />
+		<_field_long_enum name="tutorial id">
+			<Item Name="None" />
+			<Item Name="Assassination" />
+			<Item Name="Camera" />
+			<Item Name="Crouch" />
+			<Item Name="Grenade" />
+			<Item Name="Jump" />
+			<Item Name="Melee" />
+			<Item Name="Movement" />
+			<Item Name="Shoot" />
+			<Item Name="Tracking" />
+			<Item Name="Clamber" />
+			<Item Name="Slide" />
+			<Item Name="Sprint" />
+			<Item Name="Thruster" />
+			<Item Name="Zoom" />
+			<Item Name="BansheeBoost" />
+			<Item Name="BansheeTrick" />
+			<Item Name="BansheeSwitchWeapons" />
+			<Item Name="GhostBoost" />
+			<Item Name="MantisRockets" />
+			<Item Name="MantisStomp" />
+			<Item Name="VTOLAscend" />
+			<Item Name="VTOLDescend" />
+			<Item Name="VTOLEvade" />
+			<Item Name="VTOLSwitchWeapons" />
+			<Item Name="VTOLShoot" />
+			<Item Name="JeepDrive" />
+			<Item Name="JeepHandbrake" />
+			<Item Name="JeepShoot" />
+			<Item Name="WraithBoost" />
+			<Item Name="SeatSwitch" />
+			<Item Name="OrdersGeneral" />
+			<Item Name="OrdersClear" />
+			<Item Name="OrdersEnemy" />
+			<Item Name="OrdersMove" />
+			<Item Name="OrdersVehicle" />
+			<Item Name="OrdersWeapon" />
+		</_field_long_enum>
+		</_field_block_64>
+	<_field_char_enum name="vehicle size">
+		<Item Name="small" />
+		<Item Name="large" />
+	</_field_char_enum>
+	<_field_char_integer name="complex suspension sample count" />
+	<_field_pad name="generated_pad9b33" length="2" />
+	<_field_angle name="complex suspension distribution angle" />
+	<_field_real name="complex suspension wheel diameter" />
+	<_field_real name="complex suspension wheel width" />
+	<_field_real name="minimum flipping angular velocity" />
+	<_field_real name="maximum flipping angular velocity" />
+	<_field_angle name="upside down angle" />
+	<_field_real name="crouch transition time" />
+	<_field_real name="HOOJYTSU" />
+	<_field_real name="seat enterance acceleration scale" />
+	<_field_real name="seat exit accelersation scale" />
+	<_field_string_id name="blur function name" />
+	<_field_real name="blur speed" />
+	<_field_string_id name="flip message" />
+	<_field_explanation name="sounds and effects" />
+	<_field_tag_reference_64 name="Player vehicle sound bank" />
+	<_field_tag_reference_64 name="Surface sound material effects" />
+	<_field_tag_reference_64 name="light suspension sound" />
+	<_field_real name="Light suspension sound displacement threshold" />
+	<_field_tag_reference_64 name="medium suspension sound" />
+	<_field_real name="Medium suspension sound displacement threshold" />
+	<_field_tag_reference_64 name="hard suspension sound" />
+	<_field_real name="Hard suspension sound displacement threshold" />
+	<_field_real name="fake audio speed - speed increase amount" />
+	<_field_real name="fake audio speed - boost speed increase amount" />
+	<_field_real name="fake audio speed - speed decrease amount" />
+	<_field_real name="fake audio speed - non-boost limit" />
+	<_field_real name="fake audio speed - max speed scale" />
+	<_field_block_64 name="Sound RTPCs">
+		<_field_long_block_index name="Attachment Index" />
+		<_field_string_id name="Function" />
+		<_field_string_id name="RTPC Name" />
+		<_field_long_integer name="RTPC name hash value" />
+		</_field_block_64>
+	<_field_block_64 name="Sound Sweeteners">
+		<_field_string_id name="Function" />
+		<_field_tag_reference_64 name="sound" />
+		<_field_real name="Switch point" />
+		<_field_long_integer name="Mode" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="special effect" />
+	<_field_tag_reference_64 name="driver boost damage effect or response" />
+	<_field_tag_reference_64 name="rider boost damage effect or response" />
+	<_field_string_id name="vehicle name" />
+	<_field_block_64 name="AI cruise control">
+		<_field_explanation name="ai speed control" />
+		<_field_real name="Proportional" />
+		<_field_real name="Integral" />
+		<_field_real name="Derivative" />
+		<_field_real name="Slow down rate" />
+		</_field_block_64>
+	<_field_block_64 name="UI display info">
+		<_field_string_id name="name" />
+		<_field_string_id name="alt name " />
+		<_field_string_id name="description" />
+		<_field_string_id name="help text" />
+		<_field_string_id name="icon string id" />
+		<_field_tag_reference_64 name="sprite" />
+		<_field_long_integer name="sprite index" />
+		<_field_tag_reference_64 name="alt sprite" />
+		<_field_long_integer name="alt sprite index" />
+		<_field_long_integer name="damage sprite index" />
+		<_field_tag_reference_64 name="ui vehicle screen reference" />
+		</_field_block_64>
+	<_field_tag_reference_64 name="UI Vehicle Display info" />
+	<_field_long_enum name="Vehicle Nav Point Sequence Index">
+		<Item Name="TacticalObjective" />
+		<Item Name="SubObjective" />
+		<Item Name="MainObjective" />
+		<Item Name="SupplyCache" />
+		<Item Name="MoveToIndicator" />
+		<Item Name="ChatterIndicator" />
+		<Item Name="AttackCommandFg" />
+		<Item Name="ReviveFg" />
+		<Item Name="ReviveBg" />
+		<Item Name="BleedoutTimerStroke" />
+		<Item Name="ReviveCommand" />
+		<Item Name="ReviveHelpPulse" />
+		<Item Name="WzBossFg" />
+		<Item Name="WzBossBg" />
+		<Item Name="WzReqFg" />
+		<Item Name="WzHomeBaseFg" />
+		<Item Name="AttackFg" />
+		<Item Name="DefendFg" />
+		<Item Name="CircleBg" />
+		<Item Name="DiamondBg" />
+		<Item Name="SquareBg" />
+		<Item Name="HexBg" />
+		<Item Name="CircleStroke" />
+		<Item Name="DiamondStroke" />
+		<Item Name="SquareStroke" />
+		<Item Name="HexStroke" />
+		<Item Name="ExclamationFg" />
+		<Item Name="DeadIndicator" />
+		<Item Name="SpeakingIndicator" />
+		<Item Name="WeaponPadFg" />
+		<Item Name="CubeFg" />
+		<Item Name="FlagFg" />
+		<Item Name="LetterAFg" />
+		<Item Name="LetterBFg" />
+		<Item Name="LetterCFg" />
+		<Item Name="BombFg" />
+		<Item Name="CrownFg" />
+		<Item Name="SmallOffscreenArrow" />
+		<Item Name="FriendlyArrow" />
+		<Item Name="EnemyArrow" />
+		<Item Name="SeekIndicator" />
+		<Item Name="LockOnIndicator" />
+		<Item Name="ReqBg" />
+		<Item Name="Num0Fg" />
+		<Item Name="Num1Fg" />
+		<Item Name="Num2Fg" />
+		<Item Name="Num3Fg" />
+		<Item Name="Num4Fg" />
+		<Item Name="Num5Fg" />
+		<Item Name="Num6Fg" />
+		<Item Name="Num7Fg" />
+		<Item Name="Num8Fg" />
+		<Item Name="Num9Fg" />
+		<Item Name="FrameIdentifier1" />
+		<Item Name="FrameIdentifier2" />
+		<Item Name="FrameIdentifier3" />
+		<Item Name="FrameIdentifier4" />
+		<Item Name="AbilityAutoTurret" />
+		<Item Name="AbilityCloak" />
+		<Item Name="AbilityGravSphere" />
+		<Item Name="AbilityHealthBlast" />
+		<Item Name="AbilityHex" />
+		<Item Name="AbilityHologram" />
+		<Item Name="AbilityLocationDart" />
+		<Item Name="AbilityMedicDrone" />
+		<Item Name="AbilityTrap" />
+		<Item Name="Flipbook1" />
+		<Item Name="Flipbook2" />
+		<Item Name="Flipbook3" />
+		<Item Name="Flipbook4" />
+		<Item Name="Flipbook5" />
+		<Item Name="Flipbook6" />
+		<Item Name="Flipbook7" />
+		<Item Name="Flipbook8" />
+		<Item Name="Flipbook9" />
+		<Item Name="Flipbook10" />
+		<Item Name="Flipbook11" />
+		<Item Name="Flipbook12" />
+		<Item Name="Flipbook13" />
+		<Item Name="Flipbook14" />
+		<Item Name="Flipbook15" />
+		<Item Name="Flipbook16" />
+		<Item Name="Flipbook17" />
+		<Item Name="Flipbook18" />
+		<Item Name="Flipbook19" />
+		<Item Name="Flipbook20" />
+		<Item Name="Flipbook21" />
+		<Item Name="Flipbook22" />
+		<Item Name="Flipbook23" />
+		<Item Name="Flipbook24" />
+	</_field_long_enum>
+	<_field_custom name="" />
+	<_field_pad name="generated_pade54b" length="4" />
+	</plugin>

@@ -1,0 +1,42 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Menu Item Definitions">
+		<_field_string_id name="Property" />
+		<_field_string_id name="Title" />
+		<_field_string_id name="Description" />
+		<_field_long_string name="Property Name Literal" />
+		<_field_short_enum name="Value Type">
+			<Item Name="None" />
+			<Item Name="Bool" />
+			<Item Name="Float" />
+			<Item Name="Vector" />
+			<Item Name="Color" />
+			<Item Name="String" />
+			<Item Name="Tag" />
+			<Item Name="CustomString" />
+		</_field_short_enum>
+		<_field_pad name="generated_pad36ce" length="2" />
+		<_field_real name="Float Min" />
+		<_field_real name="Float Max" />
+		<_field_real name="Float Step" />
+		<_field_string_id name="String List" />
+		<_field_block_64 name="Strings">
+			<_field_string_id name="String" />
+			<_field_long_string name="String Literal" />
+			</_field_block_64>
+		<_field_string_id name="Callback Name" />
+		<_field_string_id name="Submenu Id" />
+		<_field_string_id name="Submenu Description" />
+		<_field_byte_flags name="Forge Boolean Flags">
+			<Item Name="IsHidden" />
+		</_field_byte_flags>
+		<_field_pad name="generated_pad8383" length="3" />
+		</_field_block_64>
+	<_field_pad name="generated_pad82b6" length="4" />
+	</plugin>

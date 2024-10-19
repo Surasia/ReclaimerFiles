@@ -1,0 +1,45 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_custom name="Two Player Game, Player Two" />
+	<_field_struct name="2P, P2">
+		<_field_real_point_3d name="Offset" />
+		<_field_real_euler_angles_2d name="Offset Facing" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="Three Player Game, Player Two" />
+	<_field_struct name="3P, P2">
+		<_field_real_point_3d name="Offset" />
+		<_field_real_euler_angles_2d name="Offset Facing" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="Three Player Game, Player Three" />
+	<_field_struct name="3P, P3">
+		<_field_real_point_3d name="Offset" />
+		<_field_real_euler_angles_2d name="Offset Facing" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="Four Player Game, Player Two" />
+	<_field_struct name="4P, P2">
+		<_field_real_point_3d name="Offset" />
+		<_field_real_euler_angles_2d name="Offset Facing" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="Four Player Game, Player Three" />
+	<_field_struct name="4P, P3">
+		<_field_real_point_3d name="Offset" />
+		<_field_real_euler_angles_2d name="Offset Facing" />
+		</_field_struct>
+	<_field_custom name="" />
+	<_field_custom name="Four Player Game, Player Four" />
+	<_field_struct name="4P, P4">
+		<_field_real_point_3d name="Offset" />
+		<_field_real_euler_angles_2d name="Offset Facing" />
+		</_field_struct>
+	<_field_custom name="" />
+	</plugin>

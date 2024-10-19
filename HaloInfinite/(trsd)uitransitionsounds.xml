@@ -1,0 +1,35 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="Transition sounds">
+		<_field_string_id name="Display Name" />
+		<_field_tag_reference_64 name="Sound" />
+		<_field_real name="Transition sound time" />
+		<_field_short_enum name="Platform type">
+			<Item Name="SpartanPlatform0" />
+			<Item Name="SpartanPlatform1" />
+			<Item Name="SpartanPlatform2" />
+			<Item Name="SpartanPlatform3" />
+			<Item Name="SpartanPlatform4" />
+			<Item Name="SpartanPlatform5" />
+			<Item Name="SpartanPlatform6" />
+			<Item Name="SpartanPlatform7" />
+			<Item Name="SpartanPlatform8" />
+			<Item Name="SpartanPlatform9" />
+			<Item Name="SpartanPlatform10" />
+			<Item Name="SpartanPlatform11" />
+			<Item Name="SpartanPlatformsCount" />
+			<Item Name="VehiclePlatform" />
+		</_field_short_enum>
+		<_field_short_enum name="Platform direction">
+			<Item Name="Raise" />
+			<Item Name="Lower" />
+		</_field_short_enum>
+		</_field_block_64>
+	<_field_pad name="generated_pade975" length="4" />
+	</plugin>

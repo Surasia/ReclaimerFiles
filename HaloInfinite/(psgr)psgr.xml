@@ -1,0 +1,26 @@
+<plugin>
+	<_field_struct name="ActorCellEntryTag">
+		<_field_struct name="AnyTag">
+			<_field_int64_integer name="vtable space" />
+			<_field_struct name="internal struct">
+				<_field_long_integer name="global tag ID" />
+				<_field_pad name="local tag handle" length="4" />
+				</_field_struct>
+			</_field_struct>
+		<_field_tag_reference_64 name="Character" />
+		<_field_tag_reference_64 name="Primary Weapon" />
+		<_field_tag_reference_64 name="Secondary Weapon" />
+		<_field_pad name="generated_padbb57" length="4" />
+		</_field_struct>
+	<_field_short_enum name="Seat Preference">
+		<Item Name="DEFAULT" />
+		<Item Name="passenger" />
+		<Item Name="gunner" />
+		<Item Name="driver" />
+		<Item Name="small cargo" />
+		<Item Name="large cargo" />
+		<Item Name="NO driver" />
+		<Item Name="NO vehicle" />
+	</_field_short_enum>
+	<_field_pad name="generated_pade676" length="6" />
+	</plugin>

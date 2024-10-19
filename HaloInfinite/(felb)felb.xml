@@ -1,0 +1,19 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_block_64 name="frame event containers">
+		<_field_string_id name="animation name" />
+		<_field_block_64 name="anim events">
+			<_field_string_id name="linked frame event id" />
+			<_field_short_integer name="frame offset" />
+			<_field_pad name="generated_pad359b" length="2" />
+			<_field_string_id name="marker name" />
+			</_field_block_64>
+		</_field_block_64>
+	<_field_pad name="generated_pad33c2" length="4" />
+	</plugin>

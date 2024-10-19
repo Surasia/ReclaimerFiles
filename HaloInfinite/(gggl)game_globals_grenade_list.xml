@@ -1,0 +1,53 @@
+<plugin>
+	<_field_struct name="AnyTag">
+		<_field_int64_integer name="vtable space" />
+		<_field_struct name="internal struct">
+			<_field_long_integer name="global tag ID" />
+			<_field_pad name="local tag handle" length="4" />
+			</_field_struct>
+		</_field_struct>
+	<_field_explanation name="Maximum Grenade Count" />
+	<_field_custom name="maximum count" />
+	<_field_struct name="maximum count">
+		<_field_short_integer name="Base Value" />
+		<_field_short_bounds name="Value Bounds" />
+		</_field_struct>
+	<_field_explanation name="Slot Count" />
+	<_field_custom name="slot count" />
+	<_field_struct name="slot count">
+		<_field_short_integer name="Base Value" />
+		<_field_short_bounds name="Value Bounds" />
+		</_field_struct>
+	<_field_block_64 name="grenades">
+		<_field_explanation name="UI" />
+		<_field_string_id name="Display Text StringID" />
+		<_field_string_id name="Description Text StringID" />
+		<_field_string_id name="Help Text StringID" />
+		<_field_tag_reference_64 name="Grenade switching sound" />
+		<_field_explanation name="Initial Grenade Count" />
+		<_field_custom name="initial count" />
+		<_field_struct name="initial count">
+			<_field_short_integer name="Base Value" />
+			<_field_short_bounds name="Value Bounds" />
+			</_field_struct>
+		<_field_pad name="generated_pad5ef2" length="2" />
+		<_field_tag_reference_64 name="throwing effect" />
+		<_field_tag_reference_64 name="equipment" />
+		<_field_tag_reference_64 name="projectile" />
+		<_field_tag_reference_64 name="equipment (PvE)" />
+		<_field_tag_reference_64 name="projectile (PvE)" />
+		<_field_block_64 name="UI display info">
+			<_field_string_id name="name" />
+			<_field_string_id name="alt name " />
+			<_field_string_id name="description" />
+			<_field_string_id name="help text" />
+			<_field_string_id name="icon string id" />
+			<_field_tag_reference_64 name="sprite" />
+			<_field_long_integer name="sprite index" />
+			<_field_tag_reference_64 name="alt sprite" />
+			<_field_long_integer name="alt sprite index" />
+			<_field_long_integer name="damage sprite index" />
+			<_field_tag_reference_64 name="ui vehicle screen reference" />
+			</_field_block_64>
+		</_field_block_64>
+	</plugin>
